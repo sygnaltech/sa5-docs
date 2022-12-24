@@ -1,6 +1,14 @@
+---
+layout: post
+title: Blogging Like a Hacker
+ver: 1.1234
+---
+
 # What is WFU?
 
-\{{ title \}}
+{{ title }}
+
+Version: {{ ver }}
 
 \{{ book.title \}}
 
