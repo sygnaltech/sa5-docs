@@ -20,13 +20,13 @@ Install this JS in BODY, site-wide or on the specific pages you want the script 
 Add this CSS script to the HEAD of your site or page.
 
 ```
-<link rel="stylesheet" href="{{ site.liburl }}/dist/css/webflow-html.css">
+<link rel="stylesheet" href="{{ book.liburl }}/dist/css/webflow-html.css">
 ```
 
 Add this JS reference to the BODY of your site or page.
 
 ```
-<script type="module" src="{{ site.liburl }}/src/nocode/webflow-html.js"></script>
+<script type="module" src="{{ book.language }}/src/nocode/webflow-html.js"></script>
 ```
 
 { $book.variables }
