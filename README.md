@@ -1,5 +1,6 @@
 # What is WFU?
 
+{{ version }} 
 {{ book.version }}
 
 **Sygnal Webflow Utils v3.341 (WFU)** is a collection of javascript libraries that add functionality to [Webflow](https://webflow.com/) sites. It focuses on overcoming certain limitations of Webflow, and adding certain capabilities.
