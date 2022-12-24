@@ -1,4 +1,10 @@
-{
+{ 
+    
+    "title": "Sygnal Webflow Utils (WFU)",
+    "description": "Tools for a better Webflow",
+    "author": "Sygnal",
+    "language": "en",
+    
     "variables": {
         "version": "v3.36",   
         
