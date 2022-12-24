@@ -17,6 +17,14 @@ Why?
 
 Install this JS in BODY, site-wide or on the specific pages you want the script to affect.
 
+{ $book.variables }
+
+{ $book.variables.version }
+
+{ $book.version }
+
+Test book&#x20;
+
 {% code overflow="wrap" %}
 ```html
 <script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.34/src/nocode/webflow-form.js"></script>
