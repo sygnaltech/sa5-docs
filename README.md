@@ -1,12 +1,14 @@
 # What is WFU?
 
-{{ title }} 
+\{{ title \}}
 
-{{ book.title }} 
+\{{ book.title \}}
 
-{{ version }} 
+\{{ version \}}
 
-{{ book.version }}
+\{{ book.version \}}
+
+This is \{{ book.title \}} - \{{ title \}} - \{{ book.version \}}&#x20;
 
 **Sygnal Webflow Utils v3.341 (WFU)** is a collection of javascript libraries that add functionality to [Webflow](https://webflow.com/) sites. It focuses on overcoming certain limitations of Webflow, and adding certain capabilities.
 
