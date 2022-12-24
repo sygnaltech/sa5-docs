@@ -1,5 +1,9 @@
 {
     "variables": {
-        "version": "v3.36"   
+        "version": "v3.36",   
+        
+        "liburl": "https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.35", 
+        "libver": "3.35" 
+        
     }
 }
