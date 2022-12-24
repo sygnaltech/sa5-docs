@@ -19,6 +19,8 @@ Install this JS in BODY, site-wide or on the specific pages you want the script 
 
 { $book.variables }
 
+\{{ book.version \}}
+
 { $book.variables.version }
 
 { $book.version }
