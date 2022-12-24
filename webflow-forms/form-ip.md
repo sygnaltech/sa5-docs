@@ -1,3 +1,7 @@
+
+{% set liburl = "https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.35" %}
+{% set libver = "3.35" %}
+
 # Form IP
 
 ### DEMO - Webflow Forms w/ IP Info <a href="#demo---webflow-forms-w-ip-info" id="demo---webflow-forms-w-ip-info"></a>
@@ -29,13 +33,9 @@ Add this JS reference to the BODY of your site or page.
 <script type="module" src="{{ book.language }}/src/nocode/webflow-html.js"></script>
 ```
 
-{ $book.variables }
 
-\{{ book.version \}}
+{{ book.version }}
 
-{ $book.variables.version }
-
-{ $book.version }
 
 Test book&#x20;
 
