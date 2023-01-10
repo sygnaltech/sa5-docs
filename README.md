@@ -1,26 +1,18 @@
 ---
-layout: post
 title: Blogging Like a Hacker
 ver: 1.1234
 ---
 
-# What is WFU?
+# What is Sygnal Attributes?
 
-{{ title }}
+{% hint style="success" %}
+In Jan-2023, **Sygnal's Webflow Utils ( WFU )** library was renamed as \
+**Sygnal Attributes** to align with our focus in easy integration into your Webflow projects.
 
-Version: {{ ver }}
+It is still the same great library, still 100% open source, and 100% free to use. &#x20;
+{% endhint %}
 
-\{{ book.title \}}
-
-\{{ version \}}
-
-\{{ book.version \}}
-
-This is \{{ book.title \}} - \{{ title \}} - \{{ book.version \}}&#x20;
-
-More test \{{title\}} sdfa
-
-**Sygnal Webflow Utils v3.341 (WFU)** is a collection of javascript libraries that add functionality to [Webflow](https://webflow.com/) sites. It focuses on overcoming certain limitations of Webflow, and adding certain capabilities.
+**Sygnal Attributes** is a collection of JavaScript libraries that add functionality to [Webflow](https://webflow.com/) sites. It focuses on overcoming certain limitations of Webflow, and adding certain capabilities.
 
 Some of the most popular features include;
 
