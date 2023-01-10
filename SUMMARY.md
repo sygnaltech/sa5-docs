@@ -1,10 +1,12 @@
 # Table of contents
 
 * [What is Sygnal Attributes?](README.md)
+* [Dynamic data TEST page](readme-1.md)
 
 ## Overview
 
 * [What's New?](overview/whats-new.md)
+* [Copy of What's New?](overview/whats-new-1.md)
 
 ## Webflow-Data
 

@@ -1,14 +1,10 @@
----
-layout: post
-title: Blogging Like a Hacker
-ver: 1.1234
----
+# Dynamic data TEST page
 
-# What is WFU?
+\{{ title \}}
 
-{{ title }}
+/
 
-Version: {{ ver }}
+Version: \{{ ver \}}
 
 \{{ book.title \}}
 
@@ -16,7 +12,7 @@ Version: {{ ver }}
 
 \{{ book.version \}}
 
-This is \{{ book.title \}} - \{{ title \}} - \{{ book.version \}}&#x20;
+This is \{{ book.title \}} - \{{ title \}} - \{{ book.version \}}
 
 More test \{{title\}} sdfa
 
