@@ -1,6 +1,7 @@
 # Table of contents
 
 * [➡ Github Repo](https://github.com/sygnaltech/webflow-util)
+* [Legacy Docs ( WFU )](https://wfu.sygnal.com/)
 
 ## 📘 Overview
 
@@ -17,8 +18,8 @@
 
 * [What are Data Sources?](datasources/what-are-data-sources.md)
 * [webflow-data](datasources/webflow-data.md)
-* [Macro Expansion](datasources/macro-expansion.md)
-* [Count Items](datasources/count-items.md)
+* [Macro Expansion](webflow-data/macro-expansion.md)
+* [Count Items](webflow-data/count-items.md)
 * [Data Source Types](datasources/data-sources/README.md)
   * [Webflow Collection List](datasources/data-sources/webflow-collection-list.md)
   * [Github Data](datasources/data-sources/github-data.md)
