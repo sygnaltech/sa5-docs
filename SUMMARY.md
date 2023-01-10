@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is WFU?](README.md)
+* [What is Sygnal Attributes?](README.md)
 
 ## Overview
 
