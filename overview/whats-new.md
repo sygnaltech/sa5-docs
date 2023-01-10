@@ -1,8 +1,46 @@
 # What's New?
 
-### v3.35 <a href="#v335" id="v335"></a>
+### v3.40 <a href="#v340" id="v340"></a>
 
 Under development.
+
+### v3.39 <a href="#v339" id="v339"></a>
+
+* webflow-html
+  * Enhanced sorting so that nested lists can be sorted as well
+  * Added sequence numbering
+
+### v3.38 <a href="#v338" id="v338"></a>
+
+* webflow-url
+  * Bugfix on url morphing in certain page constructions
+
+### v3.371 <a href="#v3371" id="v3371"></a>
+
+* webflow-membership-routing
+  * Added internal tracing
+  * Revisions to . path handling
+
+### v3.37 <a href="#v337" id="v337"></a>
+
+* webflow-membership-routing
+  * Refactored to utilize the login form’s internal redirect
+  * Expanded to support log-in forms on other pages
+
+### v3.36 <a href="#v336" id="v336"></a>
+
+* webflow-membership-routing
+  * Added advanced log-in & sign-up routing
+* webflow-membership
+  * Refactored expanded login button area feature
+
+### v3.35 <a href="#v335" id="v335"></a>
+
+* webflow-html
+  * Added dynamic limit items by breakpoint
+  * Added dynamic random sort, on refresh
+
+
 
 ### v3.34 <a href="#v334" id="v334"></a>
 

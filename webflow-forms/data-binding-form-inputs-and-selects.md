@@ -1,6 +1,6 @@
 # Data-binding Form INPUTs & SELECTs
 
-Data-binding is the original feature that WFU was built around. It developed out of a need to populate Form SELECTs with dynamic data from Webflow Collection Lists.
+Data-binding is the original feature that SA was built around. It developed out of a need to populate Form SELECTs with dynamic data from Webflow Collection Lists.
 
 In this latest version, support for form INPUTs ( textboxes ) has been added, using HTML5’s autocomplete features.
 
@@ -8,7 +8,7 @@ In this latest version, support for form INPUTs ( textboxes ) has been added, us
 
 ### How it Works <a href="#how-it-works" id="how-it-works"></a>
 
-In WFU, data-binding involves two steps;
+In SA, data-binding involves two steps;
 
 1. Creating a JSON datasource using a Webflow Collection List.
 2. Processing that JSON into HTML and linking it to the INPUTs and SELECTs you designate.

@@ -1,4 +1,10 @@
-# DEMO - Webflow Form w/ Webhook
+# Form Webhook Handler
+
+DEMO - Webflow Form w/ Webhook
+
+{% embed url="https://webflow-forms-demo.webflow.io/auto/zapier-webhook" %}
+
+{% embed url="https://webflow-forms-demo.webflow.io/auto/webhook-success" %}
 
 Webflow forms can be redirected to a webhook for external processing, by specifying the `action` in Webflow’s designer. This gives you a lot of capability, including business logic and immediate processing of your form data, however Webflow does not have any in-built way to handle the webhook’s response.
 

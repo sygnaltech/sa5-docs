@@ -1,0 +1,75 @@
+# Dynamic Attributes
+
+**This library allows you to dynamically apply custom attributes to HTML elements.**
+
+* This is most valuable within a Webflow Collection List, where the attributes are changing and unknown in advance.
+* Attributes are applied in WFU’s post-processing script, executed immediately after the page loads.
+* WFU has no restrictions on what custom attributes you can add, or which elements you can add them to. This means that Webflow’s reserved fields are not a barrier here.&#x20;
+
+Dynamic attributes are not natively visible. _View source_ in order to see the dynamic attributes in the HTML of this demo page.
+
+For demonstration purposes, I’ve applied the attributes as `style` attributes, which apply a visible background color.
+
+### Limitations <a href="#limitations" id="limitations"></a>
+
+* None identified.
+
+### Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+#### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
+
+Add this CSS script to the HEAD of your site or page.
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/dist/css/webflow-html.css">
+```
+
+Add this JS reference to the BODY of your site or page.
+
+```
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/src/nocode/webflow-html.js"></script>
+```
+
+#### STEP 2 -Add an HTML Embed with your custom Attributes <a href="#step-2--add-an-html-embed-with-your-custom-attributes" id="step-2--add-an-html-embed-with-your-custom-attributes"></a>
+
+Put an HTML Embed right after, or right inside of the element you wish to affect.
+
+Paste in the following code.
+
+```
+<data 
+  wfu-attr="style" 
+  wfu-attr-target="prev" 
+  wfu-attr-val="background-color: yellow;"
+  ></data>
+```
+
+* `wfu-attr` indicates the name of the attribute you want to add
+* `wfu-attr-target` identifies the element you want to apply it to, one of;
+  * `prev` indicates the prior sibling.
+  * `next` indicates the following sibling.
+  * `parent` indicates the containing element.
+* `wfu-attr-val` is the value you want applied. Use Webflow’s CMS field embed for this, for dynamic values.
+
+NOTE: Any existing attribute will be overwritten.
+
+* Yes you can put multiple attributes in the same embed, and even target them differently
+
+### Future <a href="#future" id="future"></a>
+
+May allow value modification;
+
+* Prepend, append
+* Regex transforms
+
+May allow advanced targeting;
+
+* jQuery or CSS selectors
+
+\
+
+
+\
+[https://wfu.sygnal.com/docs/webflow-html/dynamicattributes/](https://wfu.sygnal.com/docs/webflow-html/dynamicattributes/)

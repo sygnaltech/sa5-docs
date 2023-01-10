@@ -9,6 +9,8 @@ ver: 1.1234
 In Jan-2023, **Sygnal's Webflow Utils ( WFU )** library was renamed as \
 **Sygnal Attributes** to align with our focus in easy integration into your Webflow projects.
 
+In documentation we'll often abbreviate this as **SA**, however the attributes themselves will continue to use the legacy `wfu-` prefix.
+
 It is still the same great library, still 100% open source, and 100% free to use. &#x20;
 {% endhint %}
 
