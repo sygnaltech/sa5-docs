@@ -4,33 +4,35 @@ description: Hide or show any element based on login state
 
 # Conditional Element Display
 
-{% embed url="https://wfu.sygnal.com/docs/webflow-membership/conditional-element-display/" %}
-See original docs.
-{% endembed %}
-
 {% hint style="info" %}
 As of mid Dec 2022, Webflow has added an initial version of login-state element gating, however there are some incompatability issues with components. This solution will remain available while those issues are being worked out.
 {% endhint %}
 
+## Overview
+
 This feature allows you to hide/show elements based on the logged-in / logged-out state of the current user.
 
-You can;
+You can currently;
 
 * Show elements only when logged-in
 * Show elements only when logged-out
 
 {% hint style="danger" %}
-This library only affects the visibility of the target elements, not their existence. Do not use this for secure information, as it cannot prevent users from accessing that content if they view source or disable scripts.
+**SECURITY NOTE:** This library only affects the visibility of the target elements, not their existence. Do not use this for secure information, as it cannot prevent users from accessing that content if they view source or disable scripts.
 {% endhint %}
 
 ## Future Plans
 
-|                      | Login/Logout                                                   | Access-Group                               | User-Specific                                |
-| -------------------- | -------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------- |
-| Static Pages         | Webflow-native                                                 | Webflow-native                             | Webflow, but only for the /access-group page |
-| CMS Collection Pages | Webflow-native                                                 | Webflow-native                             | ( no use case )                              |
-| Elements             | <p>Webflow ( unstable, secure )<br>SA ( stable, insecure )</p> | Webflow under development, suggested 1Q23  | ( no use case )                              |
-| CMS Collection Items | <p>( no use case )<br>Covered by -></p>                        | NEEDED                                     | NEEDED                                       |
+As of Jan-2023 here's the general feature map for Webflow's Membership access gating. Where known, Webflow's current or planned direction is shown.&#x20;
+
+Notes are given where SA is considering development.&#x20;
+
+|                      | Login/Logout                                                   | Access-Group                                       | User-Specific                                      |
+| -------------------- | -------------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
+| Static Pages         | Webflow-native                                                 | Webflow-native                                     | Webflow, but only for the /access-group page       |
+| CMS Collection Pages | Webflow-native                                                 | Webflow-native                                     | ( no use case )                                    |
+| Elements             | <p>Webflow ( unstable, secure )<br>SA ( stable, insecure )</p> | Webflow under development, suggested 1Q23          | ( no use case )                                    |
+| CMS Collection Items | <p>( no use case )<br>Covered by -></p>                        | <p>NEEDED<br>Webflow - unknown<br>SA - planned</p> | <p>NEEDED<br>Webflow - unknown<br>SA - planned</p> |
 
 * Element gating
   * Add access-group-level gating
@@ -74,4 +76,8 @@ Add this JS reference to the BODY of your site or page.
 
 See above for details.
 
-\
+## Additional Resources
+
+{% embed url="https://wfu.sygnal.com/docs/webflow-membership/conditional-element-display/" %}
+See original docs.
+{% endembed %}
