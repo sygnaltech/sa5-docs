@@ -25,6 +25,13 @@ This library only affects the visibility of the target elements, not their exist
 
 ## Future Plans
 
+|                      | Login/Logout                                                   | Access-Group                               | User-Specific                                |
+| -------------------- | -------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------- |
+| Static Pages         | Webflow-native                                                 | Webflow-native                             | Webflow, but only for the /access-group page |
+| CMS Collection Pages | Webflow-native                                                 | Webflow-native                             | ( no use case )                              |
+| Elements             | <p>Webflow ( unstable, secure )<br>SA ( stable, insecure )</p> | Webflow under development, suggested 1Q23  | ( no use case )                              |
+| CMS Collection Items | <p>( no use case )<br>Covered by -></p>                        | NEEDED                                     | NEEDED                                       |
+
 * Element gating
   * Add access-group-level gating
 * Collection Item gating
