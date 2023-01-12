@@ -1,5 +1,5 @@
 ---
-description: Hide or show any element based on login state
+description: Hide or show any element in Webflow, based on login state
 ---
 
 # Conditional Element Display
