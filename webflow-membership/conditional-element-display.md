@@ -4,10 +4,6 @@ description: Hide or show any element based on login state
 
 # Conditional Element Display
 
-
-
-
-
 {% embed url="https://wfu.sygnal.com/docs/webflow-membership/conditional-element-display/" %}
 See original docs.
 {% endembed %}
@@ -26,6 +22,14 @@ You can;
 {% hint style="danger" %}
 This library only affects the visibility of the target elements, not their existence. Do not use this for secure information, as it cannot prevent users from accessing that content if they view source or disable scripts.
 {% endhint %}
+
+## Future Plans
+
+* Element gating
+  * Add access-group-level gating
+* Collection Item gating
+  * Add access-group-level gating
+  * Add User-level gating&#x20;
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
@@ -46,7 +50,7 @@ There are currently no configuration options for this library, so we’ll use a 
 Add this CSS script to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
-```
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/dist/css/webflow-membership.css">
 ```
 {% endcode %}
@@ -54,7 +58,7 @@ Add this CSS script to the HEAD of your site or page.
 Add this JS reference to the BODY of your site or page.
 
 {% code overflow="wrap" %}
-```
+```html
 <script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/src/nocode/webflow-membership.js"></script>
 ```
 {% endcode %}
