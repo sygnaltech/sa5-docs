@@ -5,7 +5,7 @@ description: Hide or show any element based on login state
 # Conditional Element Display
 
 {% hint style="info" %}
-As of mid Dec 2022, Webflow has added an initial version of login-state element gating, however there are some incompatability issues with components. This solution will remain available while those issues are being worked out.
+In Dec 2022, Webflow has added an initial version of login-state element gating, however there are some incompatibility issues with components, and certain utility pages. This solution will remain available while those issues are being worked out.
 {% endhint %}
 
 ## Overview
@@ -18,21 +18,25 @@ You can currently;
 * Show elements only when logged-out
 
 {% hint style="danger" %}
-**SECURITY NOTE:** This library only affects the visibility of the target elements, not their existence. Do not use this for secure information, as it cannot prevent users from accessing that content if they view source or disable scripts.
+**SECURITY NOTE:** This attributes-based approach only affects the _visibility_ of the target elements, _not their existence_. Do not use this for secure information, as it cannot prevent users from accessing that content if they view source or disable scripts.\
+\
+_Webflow's solution handles conditional visibility securely server-side, so you will want to utilize Webflow's native CV feature as soon as you are able to._
 {% endhint %}
 
 ## Future Plans
 
 As of Jan-2023 here's the general feature map for Webflow's Membership access gating. Where known, Webflow's current or planned direction is shown.&#x20;
 
-Notes are given where SA is considering development.&#x20;
+Notes are given where the Sygnal Attributes ( SA ) project is considering development.&#x20;
 
-|                      | Login/Logout                                                   | Access-Group                                       | User-Specific                                      |
-| -------------------- | -------------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
-| Static Pages         | Webflow-native                                                 | Webflow-native                                     | Webflow, but only for the /access-group page       |
-| CMS Collection Pages | Webflow-native                                                 | Webflow-native                                     | ( no use case )                                    |
-| Elements             | <p>Webflow ( unstable, secure )<br>SA ( stable, insecure )</p> | Webflow under development, suggested 1Q23          | ( no use case )                                    |
-| CMS Collection Items | <p>( no use case )<br>Covered by -></p>                        | <p>NEEDED<br>Webflow - unknown<br>SA - planned</p> | <p>NEEDED<br>Webflow - unknown<br>SA - planned</p> |
+|                                                                | Login/Logout                                                                                        | Access-Group                                                                                                                                                               | User-Specific                                                                                                                                                             |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Static Pages                                                   | <p>Webflow <br>( <mark style="color:green;">released</mark> )</p>                                   | <p>Webflow<br>( <mark style="color:green;">released</mark> )</p>                                                                                                           | <p>( <mark style="color:yellow;">no use case</mark> )<br>Excepting the /user-account page.</p>                                                                            |
+| CMS Collection Pages ( [all or none](#user-content-fn-1)[^1] ) | <p>Webflow<br>( <mark style="color:green;">released</mark> )</p>                                    | <p>Webflow<br>( <mark style="color:green;">released</mark> )</p>                                                                                                           | ( <mark style="color:yellow;">no use case</mark> )                                                                                                                        |
+| Elements                                                       | <p>Webflow<br>( <mark style="color:orange;">partial support</mark> )<br>SA ( stable, insecure )</p> | <p>Webflow<br>under development, planned 1Q23 </p>                                                                                                                         | ( <mark style="color:yellow;">no use case</mark> )                                                                                                                        |
+| CMS Collection Items                                           | <p>( <mark style="color:yellow;">no use case</mark> )<br>Covered by -></p>                          | <p><mark style="color:red;"></mark><a data-footnote-ref href="#user-content-fn-2"><mark style="color:red;">NEEDED</mark></a><br>Webflow - unknown<br>SA - planned 1Q23</p> | <p><mark style="color:red;"></mark><a data-footnote-ref href="#user-content-fn-3"><mark style="color:red;">NEEDED</mark></a><br>Webflow - unknown<br>SA - considering</p> |
+
+Current SA priorities;&#x20;
 
 * Element gating
   * Add access-group-level gating
@@ -60,7 +64,7 @@ Add this CSS script to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/dist/css/webflow-membership.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.0/dist/css/webflow-membership.min.css">
 ```
 {% endcode %}
 
@@ -68,7 +72,7 @@ Add this JS reference to the BODY of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/src/nocode/webflow-membership.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.0/src/nocode/webflow-membership.min.js"></script>
 ```
 {% endcode %}
 
@@ -81,3 +85,9 @@ See above for details.
 {% embed url="https://wfu.sygnal.com/docs/webflow-membership/conditional-element-display/" %}
 See original docs.
 {% endembed %}
+
+[^1]: CMS CP gating refers to the page entirely, not gating of individual collection items.
+
+[^2]: Needed to mix paid, free & levelled content such as courses, blog articles.&#x20;
+
+[^3]: Needed for app-like capability, dashboards, invoice histories, order histories, client deliverables, and other user-specific content delivery.
