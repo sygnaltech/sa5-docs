@@ -10,7 +10,7 @@
 * [Library Modules](overview/whats-new-1.md)
 * [Technical Notes & Goals](overview/technical-notes-and-goals.md)
 
-## Webflow-Data
+## 📘 Webflow-Data
 
 * [Overview](webflow-data/overview.md)
 
@@ -25,22 +25,22 @@
   * [Github Data](datasources/data-sources/github-data.md)
   * [Google Sheets](datasources/data-sources/google-sheets.md)
 
-## Webflow Forms
+## 📘 Webflow Forms
 
 * [Data-binding Form INPUTs & SELECTs](webflow-forms/data-binding-form-inputs-and-selects.md)
 * [Form Webhook Handler](webflow-forms/demo-webflow-form-w-webhook.md)
 * [Form IP Info](webflow-forms/form-ip.md)
 * [Dynamic data TEST page](webflow-forms/readme.md)
 
-## WEBFLOW-TABLE
+## 📘 WEBFLOW-TABLE
 
 * [HTML Tables](webflow-table/html-tables.md)
 
-## WEBFLOW-CONTENT
+## 📘 WEBFLOW-CONTENT
 
 * [Lipsum Generator](webflow-content/lipsum-generator.md)
 
-## WEBFLOW-HTML
+## 📘 WEBFLOW-HTML
 
 * [JSON Formatter](webflow-html/json-formatter.md)
 * [Repeater](webflow-html/repeater.md)
@@ -55,38 +55,38 @@
 * [Hide Section w/ Empty Collection Lists](webflow-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML](webflow-html/decode-html.md)
 
-## WEBFLOW-UI
+## 📘 WEBFLOW-UI
 
 * [Ratings Component](webflow-ui/ratings-component.md)
 
-## WEBFLOW-DEMO
+## 📘 WEBFLOW-DEMO
 
 * [Webflow Preview Link](webflow-demo/webflow-preview-link.md)
 
-## WEBFLOW-URL
+## 📘 WEBFLOW-URL
 
 * [CMS Relative Link Fixups](webflow-url/cms-relative-link-fixups.md)
 * [External Link Targeting](webflow-url/external-link-targeting.md)
 * [URL Query Params Passthrough](webflow-url/url-query-params-passthrough.md)
 
-## WEBFLOW-VIDEO
+## 📘 WEBFLOW-VIDEO
 
 * [Background Video Poster](webflow-video/background-video-poster.md)
 
-## WEBFLOW-COMMERCE
+## 📘 WEBFLOW-COMMERCE
 
 * [Payment Providers](webflow-commerce/payment-providers.md)
 
-## WEBFLOW-MEMBERSHIP
+## 📘 WEBFLOW-MEMBERSHIP
 
 * [Conditional Element Display](webflow-membership/conditional-element-display.md)
 * [Expand Login Button](webflow-membership/expand-login-button.md)
 * [Advanced Log-In & Sign-Up Flow](webflow-membership/advanced-log-in-and-sign-up-flow.md)
 
-## WEBFLOW-FORMAT
+## 📘 WEBFLOW-FORMAT
 
 * [Format Numbers & Currencies](webflow-format/format-numbers-and-currencies.md)
 
-## WEBFLOW-ELEMENTS
+## 📘 WEBFLOW-ELEMENTS
 
 * [CMS + Lightbox & Captions](webflow-elements/cms-+-lightbox-and-captions.md)
