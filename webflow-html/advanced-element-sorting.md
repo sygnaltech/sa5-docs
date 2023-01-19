@@ -88,6 +88,14 @@ Add this JS reference to the BODY of your site or page.
 
 See above for details.
 
+### STEP 3 - \[ OPTIONAL ] Change the default sort type ( _string_ ) and order ( _ascending_ ), using the `wfu-sort-dir` and `wfu-sort-type` attributes.
+
+See above for details.
+
+### STEP 4 - Define your sort key
+
+See above for details.
+
 ## Resources
 
 {% embed url="https://wfu.sygnal.com/docs/webflow-html/sort/" %}
