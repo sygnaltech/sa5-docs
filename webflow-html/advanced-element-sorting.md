@@ -1,5 +1,5 @@
 ---
-description: Sort your elements any way you like
+description: Sort Webflow's collection list items any way you like
 ---
 
 # Advanced Element Sorting
