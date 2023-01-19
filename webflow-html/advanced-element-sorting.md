@@ -19,6 +19,20 @@ This attribute allows to do all of these;
 * Sort by text, date, numbers, or even semvers
 * Sort ascending, descending or randomly ( on every page refresh )
 
+## Demonstrations
+
+{% embed url="https://sort-by-option-or-ref.webflow.io/" %}
+Demonstration
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/sort-by-option-or-ref" %}
+Cloneable
+{% endembed %}
+
+{% embed url="https://www.sygnal.com/lessons/sorting-by-option-field" %}
+Tutorial
+{% endembed %}
+
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
 ### `wfu-sort` attribute <a href="#wfu-sort-attribute" id="wfu-sort-attribute"></a>
