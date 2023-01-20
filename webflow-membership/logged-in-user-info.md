@@ -17,6 +17,12 @@ Use cases include;
 * Auto-fill the logged-in user's email in a form email field, so they don't have to type it every time.
 * Have a unique identifier for the user, for integrating into external systems via logic, script, or automation.
 
+## Demonstration
+
+{% embed url="https://webflow.com/made-in-webflow/website/get-membership-user-info" %}
+Webflow cloneable demonstration
+{% endembed %}
+
 ## User Information
 
 When a user is logged in, the UserInfo object contains this information;
@@ -47,6 +53,14 @@ For example;
 Drop in the script below. User information loads automatically, and asynchronously.
 
 If a user is logged in, your callback JS function will be called, and you can do what you want with the user's available info.&#x20;
+
+## Security
+
+{% hint style="success" %}
+We protect user data.
+{% endhint %}
+
+User data is _sensitive_ and it's important to treat it carefully. Even basic contact information such as email addresses should never
 
 ## Getting Started ( LOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 
