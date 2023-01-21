@@ -60,7 +60,11 @@ If a user is logged in, your callback JS function will be called, and you can do
 We protect user data.
 {% endhint %}
 
-User data is _sensitive_ and it's important to treat it carefully. Even basic contact information such as email addresses should never
+We consider _all_ user data to be _sensitive_ and it's important to treat it carefully. Even basic contact information such as email addresses should never be kept longer than necessary. To maximize security, we build the user information object on first request, and then disposed of it as soon as the browser tab is closed.&#x20;
+
+In our testing, this gives the best user data security, while maximizing your site's performance- both of which are primary concerns for us and our clients.&#x20;
+
+_Questions?_ Let us know - web@sygnal.com.&#x20;
 
 ## Getting Started ( LOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 
