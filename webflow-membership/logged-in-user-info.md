@@ -54,13 +54,14 @@ Drop in the script below. User information loads automatically, and asynchronous
 
 If a user is logged in, your callback JS function will be called, and you can do what you want with the user's available info.&#x20;
 
-## Security
+## Data Security
 
 {% hint style="success" %}
-We protect user data.
+**We protect user data.**\
+****We consider _all_ user data to be _sensitive_ and it's important to treat it carefully.&#x20;
 {% endhint %}
 
-We consider _all_ user data to be _sensitive_ and it's important to treat it carefully. Even basic contact information such as email addresses should never be kept longer than necessary. To maximize security, we build the user information object on first request, and then disposed of it as soon as the browser tab is closed.&#x20;
+Even basic contact information should never be kept in the browser cache longer than necessary. To maximize security, we build the user information object on first request, and then dispose of it as soon as the browser tab is closed.&#x20;
 
 In our testing, this gives the best user data security, while maximizing your site's performance- both of which are primary concerns for us and our clients.&#x20;
 
