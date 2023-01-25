@@ -90,7 +90,7 @@
 
 ## 📘 WEBFLOW-ELEMENTS
 
-* [CMS + Lightbox & Captions](webflow-elements/cms-+-lightbox-and-captions.md)
+* [CMS & Lightbox + Captions](webflow-elements/cms-and-lightbox-+-captions.md)
 
 ## 📘 webflow-track
 
