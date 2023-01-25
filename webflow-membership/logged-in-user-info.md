@@ -69,6 +69,10 @@ _Questions?_ Let us know - web@sygnal.com.&#x20;
 
 ## Getting Started ( LOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 
+{% hint style="warning" %}
+Note that the library builds the User object at the point of login. If you install the library, and are already logged in, it will not have your User information. Make certain to log out, and then log back in to capture your user info correctly.
+{% endhint %}
+
 ### STEP 1 - Add the Configuration Code <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
 Add this script to the custom code BODY of your site.
