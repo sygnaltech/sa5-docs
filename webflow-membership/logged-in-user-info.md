@@ -54,7 +54,7 @@ For example;
 The $user convention is used _only_ in the `wfu-bind` custom attribute. If you want to access the user object in _JavaScript_, see the next section.&#x20;
 {% endhint %}
 
-## Accessing the User object in JavaScript <a href="#usage-notes" id="usage-notes"></a>
+### Accessing the User object in JavaScript <a href="#usage-notes" id="usage-notes"></a>
 
 If you want to access the user object in code, you can do this most easily in the callback function, where the user object is already passed. Here you know the user object has been initialized and contains data, so it's the best place to access it.
 
