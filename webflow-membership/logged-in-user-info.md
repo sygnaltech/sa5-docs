@@ -35,7 +35,9 @@ When a user is logged in, the UserInfo object contains this information;
 
 Any of these can be accessed directly from the User object, which is provided in the callback function as soon as it is available.
 
-## Data Binding
+## Accessing User Information
+
+### Data Binding
 
 You can automatically data-bind user information to any element you like, using custom attributes.&#x20;
 
@@ -47,6 +49,22 @@ For example;
   wfu-bind = $user.email
 * To data-bind the User's pseudonym to a text field, add the custom attribute;\
   `wfu-bind = $user.name_short`
+
+{% hint style="info" %}
+The $user convention is used _only_ in the `wfu-bind` custom attribute. If you want to access the user object in _JavaScript_, see the next section.&#x20;
+{% endhint %}
+
+## Accessing the User object in JavaScript <a href="#usage-notes" id="usage-notes"></a>
+
+If you want to access the user object in code, you can do this most easily in the callback function, where the user object is already passed. Here you know the user object has been initialized and contains data, so it's the best place to access it.
+
+{% code overflow="wrap" %}
+```javascript
+async function myCallback(user) {
+  alert(user.email); // Show the current user's email
+} 
+```
+{% endcode %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
@@ -79,6 +97,7 @@ Add this script to the custom code BODY of your site.
 
 {% code overflow="wrap" %}
 ```html
+<!-- Sygnal Attr | User Info -->
 <script type="module">
 import { WfuUserInfo, WfuUser } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.2/src/modules/webflow-membership.js'; 
 import { WfuDataBinder } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.2/src/modules/webflow-databind.min.js'; 
