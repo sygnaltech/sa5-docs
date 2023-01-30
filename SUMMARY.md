@@ -57,7 +57,7 @@
 
 ## 📘 WEBFLOW-UI
 
-* [Ratings Component](webflow-ui/ratings-component.md)
+* [5-Star Ratings Component](webflow-ui/5-star-ratings-component.md)
 
 ## 📘 WEBFLOW-DEMO
 
