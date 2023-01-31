@@ -51,13 +51,13 @@
 * [Advanced Element Filtering](webflow-html/advanced-element-filtering.md)
 * [Limit Items by Breakpoint](webflow-html/limit-items-by-breakpoint.md)
 * [Numeric Sequencing](webflow-html/numeric-sequencing.md)
-* [Truncate Text with Ellipsis](webflow-html/truncate-text-with-ellipsis.md)
+* [Truncate Text w/ Ellipsis](webflow-html/truncate-text-w-ellipsis.md)
 * [Hide Section w/ Empty Collection Lists](webflow-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML](webflow-html/decode-html.md)
 
 ## 📘 WEBFLOW-UI
 
-* [5-Star Ratings Component](webflow-ui/5-star-ratings-component.md)
+* [5-Star Ratings Component](webflow-ui/ratings-component.md)
 
 ## 📘 WEBFLOW-DEMO
 
