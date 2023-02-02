@@ -1,8 +1,8 @@
 ---
-description: In Webflow Memberships, get information about the current user
+description: In Webflow Memberships, get details of the currently logged-in user
 ---
 
-# Logged-in User Info
+# Current User Info
 
 {% hint style="info" %}
 This is phase one of a developing feature. Currently it provides access to the logged-in User's **email address** and a user-unique **alternate ID** only.
