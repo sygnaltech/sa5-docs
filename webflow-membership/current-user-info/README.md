@@ -8,6 +8,15 @@ description: In Webflow Memberships, get details of the currently logged-in user
 **2023-Feb-03** - v4.4 released - Added access to the user's _name_, and fixed a bug that could happen on automatic-first-login ( during Webflow's email-verification-link onboarding process ) that would result in a garbled-looking email address.
 {% endhint %}
 
+{% hint style="warning" %}
+**BETA PHASE 2  |  Help us with testing!** \
+Click the link below to see the current status and detail of where we need BETA testing support from the community.&#x20;
+{% endhint %}
+
+{% content-ref url="current-user-info-beta-testing.md" %}
+[current-user-info-beta-testing.md](current-user-info-beta-testing.md)
+{% endcontent-ref %}
+
 {% hint style="info" %}
 This is phase two of a developing feature. Currently it provides access to the logged-in User's **name**, **email address** and a user-unique **alternate ID** only.
 {% endhint %}
