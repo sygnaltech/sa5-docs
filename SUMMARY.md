@@ -83,7 +83,8 @@
 * [Conditional Element Display](webflow-membership/conditional-element-display.md)
 * [Expand Login Button](webflow-membership/expand-login-button.md)
 * [Advanced Log-In & Sign-Up Flow](webflow-membership/advanced-log-in-and-sign-up-flow.md)
-* [Current User Info](webflow-membership/current-user-info.md)
+* [Current User Info](webflow-membership/current-user-info/README.md)
+  * [Current User Info \[ BETA testing \]](webflow-membership/current-user-info/current-user-info-beta-testing.md)
 
 ## 📘 WEBFLOW-FORMAT
 
