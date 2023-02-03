@@ -5,7 +5,11 @@ description: In Webflow Memberships, get details of the currently logged-in user
 # Current User Info
 
 {% hint style="info" %}
-This is phase one of a developing feature. Currently it provides access to the logged-in User's **email address** and a user-unique **alternate ID** only.
+**2023-Feb-03** - v4.4 released - Added access to the user's _name_, and fixed a bug that could happen on automatic-first-login ( during Webflow's email-verification-link onboarding process ) that would result in a garbled-looking email address.
+{% endhint %}
+
+{% hint style="info" %}
+This is phase two of a developing feature. Currently it provides access to the logged-in User's **name**, **email address** and a user-unique **alternate ID** only.
 {% endhint %}
 
 ## Overview
@@ -28,6 +32,7 @@ Webflow cloneable demonstration
 When a user is logged in, the UserInfo object contains this information;
 
 * `email` - The user's email address
+* `name` - The user's name, as they've specified in account info
 * `name_short` - A pseudonym, composed from the email's name@ portion
 * `name_short_clean` - The name\_short pseudonym, without the @
 * `name_short_tcase` - The name\_short\_clean pseudonym, title cased
@@ -46,9 +51,9 @@ Simply use the `wfu-bind` custom attribute, with `$user.` and the value you want
 For example;
 
 * To data-bind the User's email address to an input field, add the custom attribute;\
-  wfu-bind = $user.email
-* To data-bind the User's pseudonym to a text field, add the custom attribute;\
-  `wfu-bind = $user.name_short`
+  `wfu-bind = $user.email`
+* To data-bind the User's name to a text field, add the custom attribute;\
+  `wfu-bind = $user.name`
 
 {% hint style="info" %}
 The $user convention is used _only_ in the `wfu-bind` custom attribute. If you want to access the user object in _JavaScript_, see the next section.&#x20;
