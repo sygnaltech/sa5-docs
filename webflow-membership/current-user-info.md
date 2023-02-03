@@ -4,7 +4,7 @@ description: In Webflow Memberships, get details of the currently logged-in user
 
 # Current User Info
 
-{% hint style="info" %}
+{% hint style="success" %}
 **2023-Feb-03** - v4.4 released - Added access to the user's _name_, and fixed a bug that could happen on automatic-first-login ( during Webflow's email-verification-link onboarding process ) that would result in a garbled-looking email address.
 {% endhint %}
 
@@ -29,7 +29,7 @@ Webflow cloneable demonstration
 
 ## User Information
 
-When a user is logged in, the UserInfo object contains this information;
+When a user is logged in, the User Info object contains this information;
 
 * `email` - The user's email address
 * `name` - The user's name, as they've specified in account info
@@ -56,7 +56,7 @@ For example;
   `wfu-bind = $user.name`
 
 {% hint style="info" %}
-The $user convention is used _only_ in the `wfu-bind` custom attribute. If you want to access the user object in _JavaScript_, see the next section.&#x20;
+The `$user` convention is used _only_ in the `wfu-bind` custom attribute. If you want to access the user object in _JavaScript_, see the next section.&#x20;
 {% endhint %}
 
 ### Accessing the User object in JavaScript <a href="#usage-notes" id="usage-notes"></a>
@@ -92,10 +92,6 @@ _Questions?_ Let us know - web@sygnal.com.&#x20;
 
 ## Getting Started ( LOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 
-{% hint style="warning" %}
-Note that the library builds the User object at the point of login. If you install the library, and are already logged in, it will not have your User information. Make certain to log out, and then log back in to capture your user info correctly.
-{% endhint %}
-
 ### STEP 1 - Add the Configuration Code <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
 Add this script to the custom code BODY of your site.
@@ -104,8 +100,8 @@ Add this script to the custom code BODY of your site.
 ```html
 <!-- Sygnal Attr | User Info -->
 <script type="module">
-import { WfuUserInfo, WfuUser } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.2/src/modules/webflow-membership.js'; 
-import { WfuDataBinder } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.2/src/modules/webflow-databind.min.js'; 
+import { WfuUserInfo, WfuUser } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.4/src/modules/webflow-membership.js'; 
+import { WfuDataBinder } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.4/src/modules/webflow-databind.min.js'; 
 
 $(function() {
   var membership = new WfuUserInfo({
