@@ -27,8 +27,21 @@ One of the most sought-after capabilities in Webflow Memberships BETA is the abi
 
 Use cases include;
 
+* Personalize your site by displaying the user's name&#x20;
 * Auto-fill the logged-in user's email in a form email field, so they don't have to type it every time.
 * Have a unique identifier for the user, for integrating into external systems via logic, script, or automation.
+
+Features;
+
+* Get the current user's name & email
+* Get a unique, User-specific alternate ID which can be used for system integrations&#x20;
+* Get custom user fields ( _coming soon_ )
+* Get access groups ( _coming soon_ )
+
+Limitations;&#x20;
+
+* Changes to user information, e.g. changing the user's name won't be reflected in the user object until the next login&#x20;
+* Currently the Webflow UserID is not easily available, we're looking at efficient solutions for this.&#x20;
 
 ## Demonstration
 
@@ -40,8 +53,8 @@ Webflow cloneable demonstration
 
 When a user is logged in, the User Info object contains this information;
 
-* `email` - The user's email address
 * `name` - The user's name, as they've specified in account info
+* `email` - The user's email address
 * `name_short` - A pseudonym, composed from the email's name@ portion
 * `name_short_clean` - The name\_short pseudonym, without the @
 * `name_short_tcase` - The name\_short\_clean pseudonym, title cased
