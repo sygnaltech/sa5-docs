@@ -4,12 +4,20 @@ description: In Webflow Memberships, get details of the currently logged-in user
 
 # Current User Info
 
+{% hint style="info" %}
+Questions? Comments? Suggestions? Join the new [Sygnal Attributes group](https://www.facebook.com/groups/sygnal) on Facebook.
+{% endhint %}
+
+{% hint style="success" %}
+**2023-Feb-05** - v4.5 released - Added user custom fields support, with data-binding..
+{% endhint %}
+
 {% hint style="success" %}
 **2023-Feb-03** - v4.4 released - Added access to the user's _name_, and fixed a bug that could happen on automatic-first-login ( during Webflow's email-verification-link onboarding process ) that would result in a garbled-looking email address.
 {% endhint %}
 
 {% hint style="warning" %}
-**BETA PHASE 2  |  Help us with testing!** \
+**BETA PHASE 3  |  Help us with testing!** \
 Click the link below to see the current status and detail of where we need BETA testing support from the community.&#x20;
 {% endhint %}
 
@@ -18,7 +26,7 @@ Click the link below to see the current status and detail of where we need BETA 
 {% endcontent-ref %}
 
 {% hint style="info" %}
-This is phase two of a developing feature. Currently it provides access to the logged-in User's **name**, **email address** and a user-unique **alternate ID** only.
+This is phase three of a developing feature. Currently it provides access to the logged-in User's **name**, **email address, custom fields** and a user-unique **alternate ID**.
 {% endhint %}
 
 ## Overview
@@ -33,14 +41,17 @@ Use cases include;
 
 Features;
 
-* Get the current user's name & email
+* Get the current user's email
+* Get the current user's name ( _released in v4.4_ )
 * Get a unique, User-specific alternate ID which can be used for system integrations&#x20;
-* Get custom user fields ( _coming soon_ )
+* Get [custom user fields](custom-user-fields.md) ( _released in v4.5_ )
 * Get access groups ( _coming soon_ )
+* Heavily optimized, with a multi-layered, asynchronous load approach to assembling the user data. &#x20;
 
 Limitations;&#x20;
 
-* Changes to user information, e.g. changing the user's name won't be reflected in the user object until the next login&#x20;
+* Changes to user information, e.g. changing the user's name on the Account Info page won't be reflected in the user object until the next login&#x20;
+* For custom user fields, the File field type ( only ) is unsupported for now&#x20;
 * Currently the Webflow UserID is not easily available, we're looking at efficient solutions for this.&#x20;
 
 ## Demonstration
@@ -59,6 +70,7 @@ When a user is logged in, the User Info object contains this information;
 * `name_short_clean` - The name\_short pseudonym, without the @
 * `name_short_tcase` - The name\_short\_clean pseudonym, title cased
 * `user_id_alt` - A unique ID for the User. This is _not_ the Webflow Membership's ID, and cannot be used with Webflow's API - but is equally usable for 3rd party system integration and tracking.
+* `data` - A map of the user's custom fields. These are named using Webflow's internal data field names, which is based on your individual user field slugs.
 
 Any of these can be accessed directly from the User object, which is provided in the callback function as soon as it is available.
 
@@ -76,6 +88,8 @@ For example;
   `wfu-bind = $user.email`
 * To data-bind the User's name to a text field, add the custom attribute;\
   `wfu-bind = $user.name`
+* To data-bind a custom user field, named City ( slug `city` ), add the custom attribute;\
+  `wfu-bind = $user.data.city`
 
 {% hint style="info" %}
 The `$user` convention is used _only_ in the `wfu-bind` custom attribute. If you want to access the user object in _JavaScript_, see the next section.&#x20;
@@ -89,6 +103,7 @@ If you want to access the user object in code, you can do this most easily in th
 ```javascript
 async function myCallback(user) {
   alert(user.email); // Show the current user's email
+  alert(user.data["city"]); // Show the current user's custom city field
 } 
 ```
 {% endcode %}
@@ -122,8 +137,8 @@ Add this script to the custom code BODY of your site.
 ```html
 <!-- Sygnal Attr | User Info -->
 <script type="module">
-import { WfuUserInfo, WfuUser } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.4/src/modules/webflow-membership.js'; 
-import { WfuDataBinder } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.4/src/modules/webflow-databind.min.js'; 
+import { WfuUserInfo, WfuUser } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.5/src/modules/webflow-membership.js'; 
+import { WfuDataBinder } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.5/src/modules/webflow-databind.min.js'; 
 
 $(function() {
   var membership = new WfuUserInfo({
@@ -133,7 +148,9 @@ $(function() {
 
 async function myCallback(user) {
   // Automatic data-binding using attributes
-  var dataBinder = new WfuDataBinder().bind(); 
+  var dataBinder = new WfuDataBinder({
+    user: user
+  }).bind(); 
 } 
 </script>
 ```
