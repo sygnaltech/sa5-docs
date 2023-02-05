@@ -86,6 +86,7 @@
 * [Current User Info](webflow-membership/current-user-info/README.md)
   * [Current User Info \[ BETA testing \]](webflow-membership/current-user-info/current-user-info-beta-testing.md)
   * [Custom User Fields](webflow-membership/current-user-info/custom-user-fields.md)
+  * [CUI FAQs](webflow-membership/current-user-info/cui-faqs.md)
 
 ## 📘 WEBFLOW-FORMAT
 
