@@ -5,8 +5,8 @@ description: Help us BETA test!
 # Current User Info \[ BETA testing ]
 
 {% hint style="info" %}
-**2023-Feb-04**\
-****The **Current User Info ( CUI )** project is released as **BETA v2**.
+**2023-Feb-05**\
+****The **Current User Info ( CUI )** project is released as **BETA PHASE 3**.
 {% endhint %}
 
 ## Testing Assistance Needed
@@ -15,7 +15,7 @@ Our team is busy building. If you're using CUI, please share any issues you enco
 
 ### Browser testing
 
-CUI BETA v2 has been determined stable with no identified bugs on Chrome, but has not been tested on other mainstream browsers, in particular;
+CUI BETA PHASE 3 has been determined stable with no identified bugs on Chrome, but has not been tested on other mainstream browsers, in particular;
 
 * Safari
 * Edge
@@ -23,7 +23,7 @@ CUI BETA v2 has been determined stable with no identified bugs on Chrome, but ha
 
 ### Test with 1st Login on Admin-initiated User Invites
 
-BETA v2 includes some new capabilities to reliably construct the User Info object during Webflow's sign-up onboarding process during the _auto-login_ that Webflow performs when the email verification link is clicked.&#x20;
+BETA PHASE 3 includes some new capabilities to reliably construct the User Info object during Webflow's sign-up onboarding process during the _auto-login_ that Webflow performs when the email verification link is clicked.&#x20;
 
 _This has been tested well with new member self-sign-ups._&#x20;
 

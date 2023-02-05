@@ -85,6 +85,7 @@
 * [Advanced Log-In & Sign-Up Flow](webflow-membership/advanced-log-in-and-sign-up-flow.md)
 * [Current User Info](webflow-membership/current-user-info/README.md)
   * [Current User Info \[ BETA testing \]](webflow-membership/current-user-info/current-user-info-beta-testing.md)
+  * [Custom User Fields](webflow-membership/current-user-info/custom-user-fields.md)
 
 ## 📘 WEBFLOW-FORMAT
 
