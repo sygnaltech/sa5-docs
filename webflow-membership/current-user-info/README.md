@@ -56,7 +56,7 @@ Limitations;&#x20;
 
 ## Demonstration
 
-{% embed url="https://webflow.com/made-in-webflow/website/get-membership-user-info" %}
+{% embed url="https://webflow.com/made-in-webflow/website/current-user-info-v3" %}
 Webflow cloneable demonstration
 {% endembed %}
 
