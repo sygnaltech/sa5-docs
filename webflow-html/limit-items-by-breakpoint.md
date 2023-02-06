@@ -80,7 +80,7 @@ Add this CSS script to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.3/dist/css/webflow-html.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.6/dist/css/webflow-html.css">
 ```
 {% endcode %}
 
@@ -88,7 +88,7 @@ Add this JS reference to the BODY of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.3/src/nocode/webflow-html.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.6/src/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 
