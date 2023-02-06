@@ -2,7 +2,7 @@
 
 ## User Custom Fields
 
-Webflow Memberships allows for custom fields as part of a User's account. These custom fields can be managed through;
+Webflow Memberships allows for custom fields as part of a User's account. These can be managed through;
 
 * The Designer user manager
 * The API
@@ -11,17 +11,13 @@ Webflow Memberships allows for custom fields as part of a User's account. These 
 
 CUI PHASE 3 provides access to these fields both through Sygnal Attributes data-binding and directly through JavaScript. All fields will be part of the `WfuUser` object, as a map under the `data` element.
 
+These will be named based on your defined field names, using Webflow's generated internal field names for each.&#x20;
+
 {% hint style="warning" %}
-In order for CUI to access these fields, they MUST be defined on your User Account page. You can hide them if you like, but they must exist.&#x20;
-{% endhint %}
-
-Custom fields are named using Webflow's generated internal field names for each. Typically this process is the same as slug-generation, e.g. a field named `Home Address` would be slugged and internally named as `home-address`.&#x20;
-
-{% hint style="info" %}
 The Webflow CMS and User data storage systems generate internal field names based on the generated slug, however there are situations where the slug and the internal field name will mismatch. For example, if you rename your slug field, Webflow will keep the original name as its internal field name.&#x20;
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="info" %}
 e.g. `Full Name` would be accessible in the user object as `user.data["full-name"]`
 {% endhint %}
 
