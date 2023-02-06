@@ -2,11 +2,15 @@
 
 ## Overview
 
-Webflow has a built-in **Limit Items** feature on Collection Lists, however it is not breakpoint-sensitive.
+Webflow has a built-in **Limit Items** feature on Collection Lists, however it is not [breakpoint](https://university.webflow.com/lesson/intro-to-breakpoints)-sensitive.
 
 This Sygnal Attributes solution dynamically adjusts the number of items shown for the breakpoint that the site is being viewed at, with no refresh needed.
 
-Demonstration
+### Demonstration
+
+{% embed url="https://webflow.com/made-in-webflow/website/limit-collection-items-by-breakpoint" %}
+Cloneable
+{% endembed %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
