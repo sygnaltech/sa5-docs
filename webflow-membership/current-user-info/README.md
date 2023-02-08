@@ -9,6 +9,10 @@ Questions? Comments? Suggestions? Join the new [Sygnal Attributes group](https:/
 {% endhint %}
 
 {% hint style="success" %}
+**2023-Feb-08** - v4.7 released - Changed object caching approach.
+{% endhint %}
+
+{% hint style="success" %}
 **2023-Feb-05** - v4.5 released - Added user custom fields support, with data-binding..
 {% endhint %}
 
@@ -137,8 +141,8 @@ Add this script to the custom code BODY of your site.
 ```html
 <!-- Sygnal Attr | User Info -->
 <script type="module">
-import { WfuUserInfo, WfuUser } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.5/src/modules/webflow-membership.js'; 
-import { WfuDataBinder } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.5/src/modules/webflow-databind.min.js'; 
+import { WfuUserInfo, WfuUser } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.7/src/modules/webflow-membership.js'; 
+import { WfuDataBinder } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.7/src/modules/webflow-databind.min.js'; 
 
 $(function() {
   var membership = new WfuUserInfo({
