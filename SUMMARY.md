@@ -88,6 +88,7 @@
   * [Custom User Fields](webflow-membership/current-user-info/custom-user-fields.md)
   * [CUI FAQs](webflow-membership/current-user-info/cui-faqs.md)
   * [Tips & Best Practices](webflow-membership/current-user-info/tips-and-best-practices.md)
+  * [The User object](webflow-membership/current-user-info/the-user-object.md)
 
 ## 📘 WEBFLOW-FORMAT
 
