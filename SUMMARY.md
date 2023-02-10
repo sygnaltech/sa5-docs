@@ -106,3 +106,7 @@
   * [Track Query String Params](webflow-track/webflow-cookies-and-storage-tracking/track-query-string-params.md)
   * [Track checkbox state](webflow-track/webflow-cookies-and-storage-tracking/track-checkbox-state.md)
   * [Cloneable Demo](https://webflow.com/made-in-webflow/website/user-tracking)
+
+## 📘 webflow-countup
+
+* [CountUp Animated Numbers](webflow-countup/countup.md)
