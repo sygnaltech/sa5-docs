@@ -1,10 +1,12 @@
 # Form Webhook Handler
 
-DEMO - Webflow Form w/ Webhook
+## Overview
 
-{% embed url="https://webflow-forms-demo.webflow.io/auto/zapier-webhook" %}
+Webflow has a nice form-builder capability with good styling options- however by default, the success and failure messages only work with Webflow's built-in form handler.
 
-{% embed url="https://webflow-forms-demo.webflow.io/auto/webhook-success" %}
+This library allows you to integrate Webflow forms with other services, and process their responses as success / fail, including error message and results display.&#x20;
+
+### Details
 
 Webflow forms can be redirected to a webhook for external processing, by specifying the `action` in Webflow’s designer. This gives you a lot of capability, including business logic and immediate processing of your form data, however Webflow does not have any in-built way to handle the webhook’s response.
 
@@ -16,14 +18,18 @@ The WFU forms handler bridges that gap;
 2. It analyzes the response to determine success or failure.
 3. It then displays the form success or failure message, depending on that result.
 
+## Webhook Handlers
+
 Because each webhook provider responds differently, we have several “handlers” for each situation;
 
 * The **Zapier** handler looks for “success” in the response, and displays the success message if it is present. However it’s important to note that Zapier’s success response only indicates that the data was received successfully. It does not indicate that the Zap ran successfully.
 * The **Make** (Integromat) handler can handle specific responses and display error messages.
 * The **n8n** handler can handle specific responses and display error messages.
-* The **Other** handler always displays the success message. It’s most useful for unknown webhookd providers, and in situations where success/failure aren’t that important, you just need to indicate to the user that their work is done. Use it for simple and less essential form submissions, like newsletter enrollments.
+* The **Other** handler _always_ displays the success message. It’s most useful for unknown webhookd providers, and in situations where success/failure aren’t that important, you just need to indicate to the user that their work is done. Use it for simple and less essential form submissions, like newsletter enrollments.
 
-#### Key advantages <a href="#key-advantages" id="key-advantages"></a>
+## Key advantages <a href="#key-advantages" id="key-advantages"></a>
+
+Why use a custom webhook form handler rather than Webflow's?
 
 * Immediate form processing, with no delays. If you’ve used e.g. Zapier’s Webflow trigger, it polls for new forms and can take 10 minutes for a form submission to be detected.
 * No need to use Webflow’s built-in forms email notification system. You can go direct to a Sales Force Automation (SFA) system, or to your own email notification with no unsubscribe link problems.
@@ -31,17 +37,20 @@ Because each webhook provider responds differently, we have several “handlers�
 * Make the form behave like a normal webflow form post, where it stays on the same page, and displays the form’s success message.
 * Handle error scenarios better, including unique server side logic and error messages ( with Make & n8n ).
 
-### Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-#### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
 Install this JS in BODY, site-wide or on the specific pages you want the script to affect.
 
+{% code overflow="wrap" %}
+```html
+<!-- Sygnal Attriutes | Form Handlers --> 
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.9/src/nocode/webflow-form.js"></script>
 ```
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.34/src/nocode/webflow-form.js"></script>
-```
+{% endcode %}
 
-#### STEP 2 - Setup your Zap, and link your Webflow form <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
+### STEP 2 - Setup your Zap, and link your Webflow form <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 
 Unlike most WFU elements, custom attributes are not needed.
 
@@ -52,7 +61,7 @@ Simply;
 * Design the form however you like
 * Make sure to customize your success and fail messages too.
 
-#### STEP 3 - Mark your Form for WFU’s handler <a href="#step-3---mark-your-form-for-wfus-handler" id="step-3---mark-your-form-for-wfus-handler"></a>
+### STEP 3 - Mark your Form for WFU’s handler <a href="#step-3---mark-your-form-for-wfus-handler" id="step-3---mark-your-form-for-wfus-handler"></a>
 
 Open the left-side Navigator panel in Webflow’s and select the `Form Block` element ( not the `Form` element ). On the `Form Block` element, add a custom attribute of `wfu-form-handler`, and specify the handler you want;
 
@@ -63,4 +72,8 @@ Open the left-side Navigator panel in Webflow’s and select the `Form Block` el
 
 Each will behave slightly differently in how it processes the response, since each webhook service does responses differently. See notes above.
 
-\
+## Additional References
+
+{% embed url="https://webflow-forms-demo.webflow.io/auto/zapier-webhook" %}
+
+{% embed url="https://webflow-forms-demo.webflow.io/auto/webhook-success" %}
