@@ -1,5 +1,9 @@
 # Form Webhook Handler
 
+{% hint style="success" %}
+v4.10 adds [Basin](https://usebasin.com/) support, to help alleviate SPAM and form handler issues.
+{% endhint %}
+
 ## Overview
 
 Webflow has a nice form-builder capability with good styling options- however by default, the success and failure messages only work with Webflow's built-in form handler.
@@ -25,6 +29,7 @@ Because each webhook provider responds differently, we have several “handlers�
 * The **Zapier** handler looks for “success” in the response, and displays the success message if it is present. However it’s important to note that Zapier’s success response only indicates that the data was received successfully. It does not indicate that the Zap ran successfully.
 * The **Make** (Integromat) handler can handle specific responses and display error messages.
 * The **n8n** handler can handle specific responses and display error messages.
+* The **Basin** handler shows success and fail messages depending on [Basin](https://usebasin.com/)'s response.
 * The **Other** handler _always_ displays the success message. It’s most useful for unknown webhookd providers, and in situations where success/failure aren’t that important, you just need to indicate to the user that their work is done. Use it for simple and less essential form submissions, like newsletter enrollments.
 
 ## Key advantages <a href="#key-advantages" id="key-advantages"></a>
@@ -46,25 +51,26 @@ Install this JS in BODY, site-wide or on the specific pages you want the script 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attriutes | Form Handlers --> 
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.9/src/nocode/webflow-form.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.10/src/nocode/webflow-form.js"></script>
 ```
 {% endcode %}
 
-### STEP 2 - Setup your Zap, and link your Webflow form <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
+### STEP 2 - Setup your webhook handlers, and link your Webflow form <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 
 Unlike most WFU elements, custom attributes are not needed.
 
 Simply;
 
-* Setup your Zapier webhook
+* Setup your webhook on Basin, Zapier, Make, n8n, or your form handler or automation provider of choice.&#x20;
 * Copy the webhook URL and in the Webflow designer, paste it into the `Action` setting of the form.
 * Design the form however you like
 * Make sure to customize your success and fail messages too.
 
 ### STEP 3 - Mark your Form for WFU’s handler <a href="#step-3---mark-your-form-for-wfus-handler" id="step-3---mark-your-form-for-wfus-handler"></a>
 
-Open the left-side Navigator panel in Webflow’s and select the `Form Block` element ( not the `Form` element ). On the `Form Block` element, add a custom attribute of `wfu-form-handler`, and specify the handler you want;
+Open the left-side Navigator panel in Webflow’s and select the `Form Block` element ( not the `Form` element ). On the `Form Block` element, add a custom attribute of `wfu-form-handler`, and specify the handler you want;&#x20;
 
+* Use `basin` for [Basin](https://usebasin.com/) webhooks.
 * Use `zapier` for Zapier webhooks.
 * Use `make` for Make ( Integromat ) webhooks.
 * Use `n8n` for n8n webhooks.
