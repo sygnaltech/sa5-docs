@@ -5,8 +5,11 @@ description: Help us BETA test!
 # Current User Info \[ BETA testing ]
 
 {% hint style="info" %}
-**2023-Feb-05**\
-****The **Current User Info ( CUI )** project is released as **BETA PHASE 3**.
+**2023-Feb-10**
+
+Are you using CUI? Help us improve the framework by sharing your use cases, feature requests, or any questions or problems you encounter.
+
+\-> [Join the Discourse group now](https://sygnal-attr.discourse.group/).
 {% endhint %}
 
 ## Testing Assistance Needed

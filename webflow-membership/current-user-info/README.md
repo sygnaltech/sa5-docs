@@ -9,33 +9,17 @@ Questions? Comments? Suggestions? Join the new [Sygnal Attributes group](https:/
 {% endhint %}
 
 {% hint style="success" %}
-**2023-Feb-08** - v4.7 released - Changed object caching approach.
-{% endhint %}
-
-{% hint style="success" %}
-**2023-Feb-05** - v4.5 released - Added user custom fields support, with data-binding..
-{% endhint %}
-
-{% hint style="success" %}
-**2023-Feb-03** - v4.4 released - Added access to the user's _name_, and fixed a bug that could happen on automatic-first-login ( during Webflow's email-verification-link onboarding process ) that would result in a garbled-looking email address.
+This is phase three of a developing feature. Currently it provides access to the logged-in User's **name**, **email address, custom user fields** and a user-unique **alternate ID**.
 {% endhint %}
 
 {% hint style="warning" %}
 **BETA PHASE 3  |  Help us with testing!** \
-Click the link below to see the current status and detail of where we need BETA testing support from the community.&#x20;
-{% endhint %}
-
-{% content-ref url="current-user-info-beta-testing.md" %}
-[current-user-info-beta-testing.md](current-user-info-beta-testing.md)
-{% endcontent-ref %}
-
-{% hint style="info" %}
-This is phase three of a developing feature. Currently it provides access to the logged-in User's **name**, **email address, custom fields** and a user-unique **alternate ID**.
+Learn how you can support the [BETA testing effort](current-user-info-beta-testing.md) here.&#x20;
 {% endhint %}
 
 ## Overview
 
-One of the most sought-after capabilities in Webflow Memberships BETA is the ability to access information about the logged in user.
+One of the most sought-after capabilities in **Webflow Memberships BETA** is the ability to access information about the logged in user.
 
 Use cases include;
 
@@ -60,9 +44,9 @@ Limitations;&#x20;
 
 ## Demonstration
 
-{% embed url="https://webflow.com/made-in-webflow/website/current-user-info-v3" %}
-Webflow cloneable demonstration
-{% endembed %}
+New cloneable, specific for v4.7-
+
+{% embed url="https://webflow.com/made-in-webflow/website/current-user-info" %}
 
 ## User Information
 
@@ -129,7 +113,11 @@ Even basic contact information should never be kept in the browser cache longer 
 
 In our testing, this gives the best user data security, while maximizing your site's performance- both of which are primary concerns for us and our clients.&#x20;
 
-_Questions?_ Let us know - web@sygnal.com.&#x20;
+_Questions?_ Let us know - attr@sygnal.com.&#x20;
+
+
+
+
 
 ## Getting Started ( LOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 
