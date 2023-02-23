@@ -84,12 +84,12 @@
 * [Conditional Element Display](webflow-membership/conditional-element-display.md)
 * [Expand Login Button](webflow-membership/expand-login-button.md)
 * [Advanced Log-In & Sign-Up Flow](webflow-membership/advanced-log-in-and-sign-up-flow.md)
-* [Current User Info](webflow-membership/current-user-info/README.md)
-  * [Current User Info \[ BETA testing \]](webflow-membership/current-user-info/current-user-info-beta-testing.md)
-  * [Custom User Fields](webflow-membership/current-user-info/custom-user-fields.md)
-  * [CUI FAQs](webflow-membership/current-user-info/cui-faqs.md)
-  * [Tips & Best Practices](webflow-membership/current-user-info/tips-and-best-practices.md)
-  * [The User object](webflow-membership/current-user-info/the-user-object.md)
+* [Get Logged-In User Info](webflow-membership/get-logged-in-user-info/README.md)
+  * [Current User Info \[ BETA testing \]](webflow-membership/get-logged-in-user-info/current-user-info-beta-testing.md)
+  * [Custom User Fields](webflow-membership/get-logged-in-user-info/custom-user-fields.md)
+  * [CUI FAQs](webflow-membership/get-logged-in-user-info/cui-faqs.md)
+  * [Tips & Best Practices](webflow-membership/get-logged-in-user-info/tips-and-best-practices.md)
+  * [The User object](webflow-membership/get-logged-in-user-info/the-user-object.md)
 
 ## 📘 WEBFLOW-FORMAT
 
