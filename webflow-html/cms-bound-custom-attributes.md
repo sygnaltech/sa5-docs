@@ -1,4 +1,16 @@
-# Dynamic Attributes
+# CMS-Bound Custom Attributes
+
+{% hint style="success" %}
+**NOW NATIVE TO WEBFLOW!**
+
+As of 16-Mar-2023, Webflow has added support for [CMS-bound custom attributes and ID's](https://webflow.com/feature/use-cms-data-in-custom-attributes)! Phenomenal, guys!
+{% endhint %}
+
+{% hint style="info" %}
+**DEPRECATED**
+
+This Attribute no longer needs development. It will remain in the Sygnal Attributes library to support projects already using it, however we recommend switching to the new Webflow-native feature when possible.&#x20;
+{% endhint %}
 
 **This library allows you to dynamically apply custom attributes to HTML elements.**
 
@@ -22,15 +34,19 @@ There are currently no configuration options for this library, so we’ll use a 
 
 Add this CSS script to the HEAD of your site or page.
 
-```
+{% code overflow="wrap" %}
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/dist/css/webflow-html.css">
 ```
+{% endcode %}
 
 Add this JS reference to the BODY of your site or page.
 
-```
+{% code overflow="wrap" %}
+```html
 <script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/src/nocode/webflow-html.js"></script>
 ```
+{% endcode %}
 
 #### STEP 2 -Add an HTML Embed with your custom Attributes <a href="#step-2--add-an-html-embed-with-your-custom-attributes" id="step-2--add-an-html-embed-with-your-custom-attributes"></a>
 
@@ -38,7 +54,7 @@ Put an HTML Embed right after, or right inside of the element you wish to affect
 
 Paste in the following code.
 
-```
+```html
 <data 
   wfu-attr="style" 
   wfu-attr-target="prev" 

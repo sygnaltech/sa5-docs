@@ -46,7 +46,7 @@
 * [JSON Formatter](webflow-html/json-formatter.md)
 * [Repeater](webflow-html/repeater.md)
 * [Auto-Size IFRAMEs](webflow-html/auto-size-iframes.md)
-* [Dynamic Attributes](webflow-html/dynamic-attributes.md)
+* [CMS-Bound Custom Attributes](webflow-html/cms-bound-custom-attributes.md)
 * [Nested Lists](webflow-html/nested-lists.md)
 * [Advanced Element Sorting](webflow-html/advanced-element-sorting.md)
 * [Advanced Element Filtering](webflow-html/advanced-element-filtering.md)
