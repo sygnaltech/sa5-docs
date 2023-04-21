@@ -41,11 +41,11 @@ Add this script to the `</body>` custom code area, either site-wide or on the sp
 
 ### STEP 2 - Apply `wfu-query-param` to Desired Elements <a href="#step-2---apply-wfu-query-param-to-desired-elements" id="step-2---apply-wfu-query-param-to-desired-elements"></a>
 
-_For example, use `wfu-query-param=X` if you want to apply the value of param `X` to that element._
+_For example, use_ `wfu-query-param=X` _if you want to apply the value of param  to that element._
 
 Applied to form INPUT elements, it will display the value in side the textbox.
 
-To create a hidden form INPUT element, create it in your FORM as an HTML Embed element, containing the HTML `<input>` element code, e.g.;
+To create a hidden form INPUT element, you can create it in your FORM as an HTML Embed element, containing the HTML `<input>` element code, e.g.;
 
 ```html
 <input wfu-query-param="test2" type="hidden" name="test2-field">
@@ -53,11 +53,13 @@ To create a hidden form INPUT element, create it in your FORM as an HTML Embed e
 
 Applied to any other elements, the inner text of the element will be replaced with the value of the param.
 
-All `<a>` links on the page will automatically be affected. You do not need the custom attribute on them, unless you’re wanting to specify which params are merged in.
+All `<a>` links on the page will automatically be affected. You do not need the custom attribute on them, unless you’re wanting to specify which params are merged in. This blanket approach exists because the primary use case we've built the tool for is referrer tracking, where clients want the UTM params passed through the site as fully as possible to a final form submit action.&#x20;
 
 The processing of a specific link can be suppressed by applying the `wfu-query-param` custom attribute with a hyphen (`-`) as the value.
 
-_Note that this will be expanded on eventually with configuration options, and the ability to merge querystrings._
+{% hint style="info" %}
+This feature will be expanded on eventually with configuration options, and the ability to merge querystrings.
+{% endhint %}
 
 ## Additional Notes
 
