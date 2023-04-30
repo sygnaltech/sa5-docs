@@ -55,7 +55,7 @@ There are currently two configuration options;
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Add this script to the custom code HEAD of your site.
+Add this script to your _site-wide_ HEAD custom code.
 
 {% code overflow="wrap" %}
 ```html
