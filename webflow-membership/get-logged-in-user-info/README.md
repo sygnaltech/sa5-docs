@@ -2,7 +2,7 @@
 description: In Webflow Memberships, get details of the currently logged-in user
 ---
 
-# Current User Info
+# Get Logged-In User Info
 
 {% hint style="info" %}
 Questions? Comments? Suggestions? Join the new [Sygnal Attributes group](https://www.facebook.com/groups/sygnal) on Facebook.
@@ -106,7 +106,7 @@ If a user is logged in, your callback JS function will be called, and you can do
 
 {% hint style="success" %}
 **We protect user data.**\
-****We consider _all_ user data to be _sensitive_ and it's important to treat it carefully.&#x20;
+We consider _all_ user data to be _sensitive_ and it's important to treat it carefully.&#x20;
 {% endhint %}
 
 Even basic contact information should never be kept in the browser cache longer than necessary. To maximize security, we build the user information object on first request, and then dispose of it as soon as the browser tab is closed.&#x20;

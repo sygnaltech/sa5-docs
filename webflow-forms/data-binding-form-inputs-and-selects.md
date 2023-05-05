@@ -27,7 +27,8 @@ There are currently no configuration options for the data-binding feature, so we
 
 Paste this code, exactly, into the **Before `</body>` tag** script area of your Page settings. If you are using data-binding on multiple pages, you might choose to do this in your site-wide settings.
 
-```
+{% code overflow="wrap" %}
+```html
 <script type="module">
     import { dataBindAll } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.34/src/locode/webflow-forms-helper.js';
     $(function () {
@@ -35,6 +36,7 @@ Paste this code, exactly, into the **Before `</body>` tag** script area of your 
     });
 </script>
 ```
+{% endcode %}
 
 #### STEP 2 - Create a Collection List Data Source <a href="#step-2---create-a-collection-list-data-source" id="step-2---create-a-collection-list-data-source"></a>
 

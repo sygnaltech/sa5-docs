@@ -34,7 +34,7 @@ wfu-truncate = 3
 
 {% hint style="warning" %}
 **Recently tested on Chrome ONLY.**\
-****Please double check your desired browsers to make sure the CSS works for your target audience.
+Please double check your desired browsers to make sure the CSS works for your target audience.
 {% endhint %}
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>

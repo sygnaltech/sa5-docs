@@ -1,3 +1,10 @@
+---
+description: >-
+  Add advanced filtering for CMS Collection List items and static elements on
+  your Webflow page, using custom attributes and a lo-code JavaScript filter
+  function.
+---
+
 # Advanced Element Filtering
 
 Webflow has a powerful conditional visibility feature, however sometimes it falls short when you have complex rules.

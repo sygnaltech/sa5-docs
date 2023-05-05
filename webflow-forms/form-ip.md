@@ -1,16 +1,6 @@
+# Form IP Info
 
-{% set liburl = "https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.35" %}
-{% set libver = "3.35" %}
-
-z{{liburl}}z
-
-```
-<link rel="stylesheet" href="{{ liburl }}/dist/css/webflow-html.css">
-```
-
-# Form IP
-
-### DEMO - Webflow Forms w/ IP Info <a href="#demo---webflow-forms-w-ip-info" id="demo---webflow-forms-w-ip-info"></a>
+#### DEMO - Webflow Forms w/ IP Info <a href="#demo---webflow-forms-w-ip-info" id="demo---webflow-forms-w-ip-info"></a>
 
 [View Demonstration in Webflow](https://webflow-forms-demo.webflow.io/special/ip-info)
 
@@ -21,29 +11,21 @@ Why?
 * Capture general geographic info, such as country and city.
 * Store IP ( where permitted, and part of your privacy policy ), as a verification of the send. Required by some services like Mailchimp, for loading external lists.
 
-### Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-#### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+### **STEP 1 - Add the Library**
 
 Install this JS in BODY, site-wide or on the specific pages you want the script to affect.
 
 Add this CSS script to the HEAD of your site or page.
 
+{% code overflow="wrap" %}
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.34/dist/css/webflow-html.css">
 ```
-<link rel="stylesheet" href="{{ book.liburl }}/dist/css/webflow-html.css">
-```
+{% endcode %}
 
 Add this JS reference to the BODY of your site or page.
-
-```
-<script type="module" src="{{ book.language }}/src/nocode/webflow-html.js"></script>
-```
-
-
-{{ book.version }}
-
-
-Test book&#x20;
 
 {% code overflow="wrap" %}
 ```html
@@ -51,8 +33,9 @@ Test book&#x20;
 ```
 {% endcode %}
 
-#### STEP 2 - Tag your For Block <a href="#step-2---tag-your-for-block" id="step-2---tag-your-for-block"></a>
+### **STEP 2 - Tag your Form Block**
+
+Place this custom attribute on your form block element;
 
 `[wfu-form-ipinfo]`
 
-\
