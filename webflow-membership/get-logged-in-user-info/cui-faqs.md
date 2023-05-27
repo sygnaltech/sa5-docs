@@ -1,6 +1,10 @@
+---
+description: Frequently Asked Questions (FAQs) about the User Info lib
+---
+
 # CUI FAQs
 
-> ### Can CUI be used to restrict the display of "user-linked" CMS items to a specific user?&#x20;
+### Can CUI be used to restrict the display of "user-linked" CMS items to a specific user?
 
 Yes, you can, with some limitations. CUI's role here is in helping you to identify the currently logged-in user. The additional pieces you'd require are-
 

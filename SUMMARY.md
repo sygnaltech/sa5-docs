@@ -89,6 +89,7 @@
   * [CUI FAQs](webflow-membership/get-logged-in-user-info/cui-faqs.md)
   * [Tips & Best Practices](webflow-membership/get-logged-in-user-info/tips-and-best-practices.md)
   * [The User object](webflow-membership/get-logged-in-user-info/the-user-object.md)
+  * [The User object Lifecycle](webflow-membership/get-logged-in-user-info/the-user-object-lifecycle.md)
 
 ## 📘 WEBFLOW-FORMAT
 

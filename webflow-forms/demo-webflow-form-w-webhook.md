@@ -1,7 +1,17 @@
+---
+description: >-
+  Post form data direct to webhooks, while supporting Webflow's inline success /
+  error messages
+---
+
 # Form Webhook Handler
 
 {% hint style="success" %}
 v4.10 adds [Basin](https://usebasin.com/) support, to help alleviate SPAM and form handler issues.
+{% endhint %}
+
+{% hint style="info" %}
+Currently supports HTTP POST to webhooks only. We may add HTTP GET support if users are in need of it.
 {% endhint %}
 
 ## Overview
@@ -57,18 +67,15 @@ Install this JS in BODY, site-wide or on the specific pages you want the script 
 
 ### STEP 2 - Setup your webhook handlers, and link your Webflow form <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 
-Unlike most WFU elements, custom attributes are not needed.
-
-Simply;
-
-* Setup your webhook on Basin, Zapier, Make, n8n, or your form handler or automation provider of choice.&#x20;
+* Setup your webhook on Basin, Zapier, Make, n8n, or your form handler or automation provider of choice. Design it to accept HTTP POST requests.
 * Copy the webhook URL and in the Webflow designer, paste it into the `Action` setting of the form.
 * Design the form however you like
+* Set the form method to POST
 * Make sure to customize your success and fail messages too.
 
 ### STEP 3 - Mark your Form for WFU’s handler <a href="#step-3---mark-your-form-for-wfus-handler" id="step-3---mark-your-form-for-wfus-handler"></a>
 
-Open the left-side Navigator panel in Webflow’s and select the `Form Block` element ( not the `Form` element ). On the `Form Block` element, add a custom attribute of `wfu-form-handler`, and specify the handler you want;&#x20;
+In the designer, select the `Form Block` element ( not the `Form` element ). On the `Form Block` element, add a custom attribute of `wfu-form-handler`, and specify the handler you want;&#x20;
 
 * Use `basin` for [Basin](https://usebasin.com/) webhooks.
 * Use `zapier` for Zapier webhooks.
