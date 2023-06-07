@@ -6,29 +6,29 @@ description: How to setup and access Webflow's Custom User Data fields from WFU
 
 ## User Custom Fields
 
-Webflow Memberships allows for custom fields as part of a User's account. These custom fields can be managed through;
+Webflow Memberships allows for [custom fields](https://university.webflow.com/lesson/user-pages-overview#custom-fields) as part of a User's account. These custom fields can be managed through;
 
-* The Designer user manager
-* The API
+* Through the Designer user manager
+* Through the Webflow API
 * During Sign Up, if you add those fields to the UI
 * On the User Account screen, if you add those fields to the UI
 
-We provide access to these fields both through Sygnal Attributes data-binding and directly through JavaScript. All fields will be part of the `WfuUser` object, as a map under the `data` element.
+We provide access to these fields both through Sygnal Attributes data-binding and directly through JavaScript. All fields are part of the `WfuUser` object, as a map under the `data` element.
 
 ## Important Setup Notes
 
-Things you need to know when setting this up...&#x20;
+_Very important things_ you need to know when setting this up...&#x20;
 
 {% hint style="info" %}
-Any Custom User Fields that you want access to MUST exist on your User Account page. To add them, you can simply add those fields to the page from the right-side configurator.
+Any Custom User Fields that you want to access MUST exist on your [User Account page](https://university.webflow.com/lesson/user-pages-overview#user-account-page). To add them, you can simply add those fields to the page from the right-side configurator.
 {% endhint %}
 
 {% hint style="info" %}
-After settings these fields, your users will need to log out and then log back in again in order for the custom user field data to load. See the [User object Lifecycle](the-user-object-lifecycle.md) for more.&#x20;
+After adding these Custom User Fields and setting up WFU's User Info lib properly, your users MUST log out and then log back in again in order for the newly-accessible custom user field data to load. See the [User object Lifecycle](the-user-object-lifecycle.md) for details on how user data loads.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
-If you do not want your users to see these fields on the screen, you can hide them using `display: none` on the style tab. Do _not_ try to hide them using the new visibility feature on the _settings_ tab, as Webflow will not render the elements at all, and the data will not be accessible in the User object.
+If you do not want your users to see these fields on the User Account screen, you can wrap them in a DIV and hide them using `display: none` on the style tab. Do _not_ try to hide them using Webflow's new visibility feature on the _settings_ tab, as Webflow will not render the elements at all, and the data will not be accessible to WFU for loading.
 {% endhint %}
 
 ## Access Custom User Fields
