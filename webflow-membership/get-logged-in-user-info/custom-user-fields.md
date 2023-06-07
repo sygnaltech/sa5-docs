@@ -13,18 +13,22 @@ Webflow Memberships allows for custom fields as part of a User's account. These 
 * During Sign Up, if you add those fields to the UI
 * On the User Account screen, if you add those fields to the UI
 
-CUI PHASE 3 provides access to these fields both through Sygnal Attributes data-binding and directly through JavaScript. All fields will be part of the `WfuUser` object, as a map under the `data` element.
+We provide access to these fields both through Sygnal Attributes data-binding and directly through JavaScript. All fields will be part of the `WfuUser` object, as a map under the `data` element.
 
 ## Important Setup Notes
 
-Any Custom User Fields that you want access to MUST exist on your User Account page. To add them, you can simply add those fields to the page from the right-side configurator.
+Things you need to know when setting this up...&#x20;
 
 {% hint style="info" %}
-If you do not want your users to see these fields on the screen, you can hide them using display: none on the style tab.&#x20;
+Any Custom User Fields that you want access to MUST exist on your User Account page. To add them, you can simply add those fields to the page from the right-side configurator.
 {% endhint %}
 
 {% hint style="info" %}
-Do not try to hide them using the new visibility feature on the settings tab, as Webflow will not render the elements at all, and the data will not be accessible in the User object.
+After settings these fields, your users will need to log out and then log back in again in order for the custom user field data to load. See the [User object Lifecycle](the-user-object-lifecycle.md) for more.&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+If you do not want your users to see these fields on the screen, you can hide them using `display: none` on the style tab. Do _not_ try to hide them using the new visibility feature on the _settings_ tab, as Webflow will not render the elements at all, and the data will not be accessible in the User object.
 {% endhint %}
 
 ## Access Custom User Fields

@@ -39,7 +39,7 @@ Features;
 Limitations;&#x20;
 
 * Changes to user information, e.g. changing the user's name on the Account Info page won't be reflected in the user object until the next login&#x20;
-* For custom user fields, the File field type ( only ) is unsupported for now&#x20;
+* For custom user fields, the File field type is unsupported for now&#x20;
 * Currently the Webflow UserID is not easily available, we're looking at efficient solutions for this.&#x20;
 
 ## Demonstration
