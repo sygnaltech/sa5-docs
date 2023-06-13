@@ -19,6 +19,8 @@ Learn how you can support the [BETA testing effort](current-user-info-beta-testi
 
 ## Overview
 
+_NOTE: because User Info is a complex module in Sygnal Attributes, documentation is split in to several pages. Make sure to note the sub-pages in the left nav, below this one._&#x20;
+
 One of the most sought-after capabilities in **Webflow Memberships BETA** is the ability to access information about the logged in user.
 
 Use cases include;
