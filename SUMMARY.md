@@ -14,17 +14,14 @@
 ## 📘 Webflow-Data
 
 * [Overview](webflow-data/overview.md)
-
-## 📘 Datasources
-
-* [What are Data Sources?](datasources/what-are-data-sources.md)
-* [webflow-data](datasources/webflow-data.md)
-* [Macro Expansion](webflow-data/macro-expansion.md)
-* [Count Items](webflow-data/count-items.md)
-* [Data Source Types](datasources/data-sources/README.md)
-  * [Webflow Collection List](datasources/data-sources/webflow-collection-list.md)
-  * [Github Data](datasources/data-sources/github-data.md)
-  * [Google Sheets](datasources/data-sources/google-sheets.md)
+* [What are Data Sources?](webflow-data/what-are-data-sources.md)
+* [Data Source Types](webflow-data/data-sources/README.md)
+  * [Webflow Collection List](webflow-data/data-sources/webflow-collection-list.md)
+  * [Github Data](webflow-data/data-sources/github-data.md)
+  * [Google Sheets](webflow-data/data-sources/google-sheets.md)
+* [Macro Expansion](webflow-data/macro-expansion/README.md)
+  * [Macro Expansion](webflow-data/macro-expansion/macro-expansion.md)
+  * [Count Items](webflow-data/macro-expansion/count-items.md)
 
 ## 📘 Webflow Forms
 

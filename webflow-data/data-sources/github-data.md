@@ -1,17 +1,19 @@
 # Github Data
 
-This module wraps the Github API to extract basic tag information about the specified repository.
+This module wraps the unsecured Github API to extract basic tag information about the specified public repository.
 
-The main purpose is to simply;
+## Use Cases
 
-1. Determining the tags that have been published
-2. Identifying the most recent tag, for reference in documentation
+1. Determine the tags that have been published
+2. Identifying the most recent tag details, for reference in documentation
 
-#### Results <a href="#results" id="results"></a>
+## Sample Data <a href="#results" id="results"></a>
 
-Latest version: v3.371
+Here's an example output of the APIs JSON.
 
-```
+With this, we can identify that the most recent version is `v3.371`.
+
+```json
 [
   {
     "name": "v3.371",
@@ -85,3 +87,37 @@ Latest version: v3.371
   }
 ]
 ```
+
+## Code example
+
+Here's an example that loads the userOrg and repo from HTML inputs, retrieves the Github data and then displays it.
+
+{% code overflow="wrap" %}
+```html
+<script type="module">
+import { getGithubRepoTagsUrl, getGithubRepoTags, getGithubRepoTagLatest } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/datasources/github-data.min.js'; 
+
+// On page load, load the github info
+$(function () { 
+
+  // Show the raw JSON response
+  getGithubRepoTags($("#userOrg").val(), $("#repo").val()) 
+    .then((res) => { 
+      $("#json1").text( JSON.stringify( res, null, 2 // pretty print ) ); 
+    }, (err) => { 
+      console.log(err); 
+    }); 
+    
+  // Show the latest tag version only
+  getGithubRepoTagLatest($("#userOrg").val(), $("#repo").val()) 
+    .then((res) => { 
+      $("#latest1").text( res ); 
+    }, (err) => { 
+      console.log(err); }); 
+    }); 
+    
+});
+</script>
+```
+{% endcode %}
+

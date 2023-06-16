@@ -16,7 +16,7 @@ In the Webflow designer;
 3. In the Collection List Item, add an `HTML Embed` element.
 4. Paste the following code into the `HTML Embed`.
 
-```
+```html
 <script type="application/json">
 {
   "id": "*** your item goes here ***",
@@ -61,13 +61,14 @@ Besides [data-binding](https://wfu.sygnal.com/docs/datasources/datasource/databi
 
 Want to display the number of items in a collection?
 
-1. Setup that colection as a data source using the instructions above. In this example, we’ll give the data source a `wfu-data` id of `blogposts`. Any unique datasource name will work (see above).
+1. Setup that collection as a data source using the instructions above. In this example, we’ll give the data source a `wfu-data` id of `blogposts`. Any unique datasource name will work (see above).
 2. Create an element on your page where you want to display the count. In this example, we’ll give it an ID of `myCounter`
 3. Paste the following code into your page’s **Before `</body>` tag** section.
 
-```
+{% code overflow="wrap" %}
+```html
 <script type="module">
-import { loadAllDataSources } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/src/datasources/webflow-collectionlist-data.js';
+import { loadAllDataSources } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/datasources/webflow-collectionlist-data.min.js';
 $(function () {
 
     // Create database
@@ -78,9 +79,8 @@ $(function () {
 });
 </script>
 ```
+{% endcode %}
 
-### How it Works <a href="#how-it-works" id="how-it-works"></a>
-
-SA **data sources** are simple JSON arrays built from Collection Lists that you prepare. These are stored in a Map collection that I refer database, which enables you to retrieve multiple data sources
+### &#x20;<a href="#how-it-works" id="how-it-works"></a>
 
 \
