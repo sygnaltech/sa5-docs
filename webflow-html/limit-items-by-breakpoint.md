@@ -61,7 +61,7 @@ This is most commonly used in combination with `wfu-sort`, using the `random` se
 
 ### Advanced note <a href="#advanced-note" id="advanced-note"></a>
 
-If you want to have the item limits also shown directly in the Designer, you can add the CSS code directly into an HTML Embed. Copy and paste the code below, it will fiit within Webflow's 10,000 character limit.
+If you want to have the item limits also shown directly in the Designer, you can add the CSS code directly into an HTML Embed. Copy and paste the code below. It's longer than it looks, however it will fit within Webflow's 10,000 character limit.
 
 ```html
 <!-- Limit Items by Breakpoint | Sygnal Attributes -->
@@ -84,7 +84,7 @@ Add this CSS script to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.6/dist/css/webflow-html.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-html.min.css">
 ```
 {% endcode %}
 
@@ -92,7 +92,7 @@ Add this JS reference to the BODY of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.6/src/nocode/webflow-html.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-html.min.js"></script>
 ```
 {% endcode %}
 

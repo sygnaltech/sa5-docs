@@ -49,7 +49,7 @@ You can sequence nested lists separately
 
 Create an HTML Embed inside of your Collection List Item, with this code;
 
-```
+```html
 <data wfu-sort-key=""></data>
 ```
 
@@ -67,15 +67,19 @@ There are currently no configuration options for this library, so we’ll use a 
 
 Add this CSS script to the HEAD of your site or page.
 
+{% code overflow="wrap" %}
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-html.min.css">
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/dist/css/webflow-html.css">
-```
+{% endcode %}
 
 Add this JS reference to the BODY of your site or page.
 
+{% code overflow="wrap" %}
+```html
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-html.min.js"></script>
 ```
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/src/nocode/webflow-html.js"></script>
-```
+{% endcode %}
 
 #### STEP 2 - Apply `wfu-sort` and configuration attributes to the elements you want to filter <a href="#step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter"></a>
 

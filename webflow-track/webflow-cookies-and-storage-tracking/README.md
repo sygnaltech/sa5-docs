@@ -78,7 +78,7 @@ Add this CSS script to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.2/dist/css/webflow-track.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-track.min.css">
 ```
 {% endcode %}
 
@@ -87,12 +87,12 @@ This is the base configuration.
 
 {% code overflow="wrap" %}
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.2/src/modules/webflow-track.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/modules/webflow-track.min.js"></script>
 
 <script type="module">
 
 import { WfuTracker } from 
-  'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.2/src/modules/webflow-track.min.js';
+  'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/modules/webflow-track.min.js';
 
 // On page load 
 $(function() {

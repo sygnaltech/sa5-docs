@@ -61,7 +61,7 @@ Add this script to your _site-wide_ HEAD custom code.
 ```html
 <!-- Membership routing -->
 <script type="module">
-import { WfuMembershipRouting } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.0/src/modules/webflow-membership-routing.min.js';
+import { WfuMembershipRouting } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/modules/webflow-membership-routing.min.js';
 new WfuMembershipRouting({
     routeAfterLogin: "/u/home",
     routeAfterFirstLogin: "/u/new"

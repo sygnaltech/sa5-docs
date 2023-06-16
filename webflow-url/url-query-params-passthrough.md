@@ -35,7 +35,7 @@ Add this script to the `</body>` custom code area, either site-wide or on the sp
 
 {% code overflow="wrap" %}
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.1/src/nocode/webflow-url.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-url.min.js"></script>
 ```
 {% endcode %}
 

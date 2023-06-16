@@ -43,7 +43,7 @@ This is the base configuration.
 
 {% code overflow="wrap" %}
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.8/src/nocode/webflow-countup.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-countup.min.js"></script>
 
 ```
 {% endcode %}

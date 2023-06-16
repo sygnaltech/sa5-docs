@@ -28,7 +28,7 @@ Place this code in your site or page level **/body** code,
 
 {% code overflow="wrap" %}
 ```javascript
-import { WfuCache, WfuCacheItem } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/modules/webflow-cache.js'; 
+import { WfuCache, WfuCacheItem } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/modules/webflow-cache.min.js'; 
 
 $(function() {
   const cache = new WfuCache({

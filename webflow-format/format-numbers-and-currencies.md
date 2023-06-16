@@ -37,15 +37,19 @@ There are currently no configuration options for this library, so we’ll use a 
 
 Add this CSS script to the HEAD of your site or page.
 
+{% code overflow="wrap" %}
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-format.min.css">
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/dist/css/webflow-format.css">
-```
+{% endcode %}
 
 Add this JS reference to the BODY of your site or page.
 
+{% code overflow="wrap" %}
+```html
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-format.min.js"></script>
 ```
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/src/nocode/webflow-format.js"></script>
-```
+{% endcode %}
 
 #### STEP 2 - Apply `wfu-format` to the elements you want to format <a href="#step-2---apply-wfu-format-to-the-elements-you-want-to-format" id="step-2---apply-wfu-format-to-the-elements-you-want-to-format"></a>
 

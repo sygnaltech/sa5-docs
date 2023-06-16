@@ -21,10 +21,10 @@ Important- this is not a no-code solution. It simply encapsulates the URL constr
 
 e.g.;
 
-```
+{% code overflow="wrap" %}
+```html
 <script type="module">
-
-import { WindcavePayment, PaypalPayment } from "https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/src/modules/webflow-commerce.min.js";
+import { WindcavePayment, PaypalPayment } from "https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/modules/webflow-commerce.min.js";
 
 $(function() {
   
@@ -40,5 +40,6 @@ $(function() {
 });
 </script>
 ```
+{% endcode %}
 
 \

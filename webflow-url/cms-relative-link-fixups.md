@@ -25,9 +25,11 @@ There are currently no configuration options for this library, so we’ll use a 
 
 Install JS in BODY, site-wide or on the specific pages you want the script to affect.
 
+{% code overflow="wrap" %}
+```html
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-url.min.js"></script>
 ```
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/src/nocode/webflow-url.js"></script>
-```
+{% endcode %}
 
 #### STEP 2 - Create CMS Links as desired <a href="#step-2---create-cms-links-as-desired" id="step-2---create-cms-links-as-desired"></a>
 

@@ -70,7 +70,7 @@ Install CSS in HEAD, generally site-wide.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.2/dist/css/webflow-ui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-ui.min.css">
 ```
 {% endcode %}
 
@@ -78,7 +78,7 @@ Install JS in BODY, generally site-wide.
 
 {% code overflow="wrap" %}
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.2/src/nocode/webflow-ui.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-ui.min.js"></script>
 ```
 {% endcode %}
 

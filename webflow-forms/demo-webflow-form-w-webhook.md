@@ -61,7 +61,7 @@ Install this JS in BODY, site-wide or on the specific pages you want the script 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attriutes | Form Handlers --> 
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.10/src/nocode/webflow-form.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-form.min.js"></script>
 ```
 {% endcode %}
 

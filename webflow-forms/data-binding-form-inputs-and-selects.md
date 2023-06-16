@@ -30,7 +30,7 @@ Paste this code, exactly, into the **Before `</body>` tag** script area of your 
 {% code overflow="wrap" %}
 ```html
 <script type="module">
-    import { dataBindAll } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.34/src/locode/webflow-forms-helper.js';
+    import { dataBindAll } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/locode/webflow-forms-helper.min.js';
     $(function () {
         dataBindAll();
     });

@@ -29,12 +29,7 @@ As of Jan-2023 here's the general feature map for Webflow's Membership access ga
 
 Notes are given where the Sygnal Attributes ( SA ) project is considering development.&#x20;
 
-|                                                                | Login/Logout                                                                                        | Access-Group                                                                                                                                                               | User-Specific                                                                                                                                                             |
-| -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Static Pages                                                   | <p>Webflow <br>( <mark style="color:green;">released</mark> )</p>                                   | <p>Webflow<br>( <mark style="color:green;">released</mark> )</p>                                                                                                           | <p>( <mark style="color:yellow;">no use case</mark> )<br>Excepting the /user-account page.</p>                                                                            |
-| CMS Collection Pages ( [all or none](#user-content-fn-1)[^1] ) | <p>Webflow<br>( <mark style="color:green;">released</mark> )</p>                                    | <p>Webflow<br>( <mark style="color:green;">released</mark> )</p>                                                                                                           | ( <mark style="color:yellow;">no use case</mark> )                                                                                                                        |
-| Elements                                                       | <p>Webflow<br>( <mark style="color:orange;">partial support</mark> )<br>SA ( stable, insecure )</p> | <p>Webflow<br>under development, planned 1Q23 </p>                                                                                                                         | ( <mark style="color:yellow;">no use case</mark> )                                                                                                                        |
-| CMS Collection Items                                           | <p>( <mark style="color:yellow;">no use case</mark> )<br>Covered by -></p>                          | <p><mark style="color:red;"></mark><a data-footnote-ref href="#user-content-fn-2"><mark style="color:red;">NEEDED</mark></a><br>Webflow - unknown<br>SA - planned 1Q23</p> | <p><mark style="color:red;"></mark><a data-footnote-ref href="#user-content-fn-3"><mark style="color:red;">NEEDED</mark></a><br>Webflow - unknown<br>SA - considering</p> |
+<table><thead><tr><th width="171"> </th><th width="172">Login/Logout</th><th>Access-Group</th><th>User-Specific</th></tr></thead><tbody><tr><td>Static Pages</td><td>Webflow <br>( <mark style="color:green;">released</mark> )</td><td>Webflow<br>( <mark style="color:green;">released</mark> )</td><td>( <mark style="color:yellow;">no use case</mark> )<br>Excepting the /user-account page.</td></tr><tr><td>CMS Collection Pages ( <a data-footnote-ref href="#user-content-fn-1">all or none</a> )</td><td>Webflow<br>( <mark style="color:green;">released</mark> )</td><td>Webflow<br>( <mark style="color:green;">released</mark> )</td><td>( <mark style="color:yellow;">no use case</mark> )</td></tr><tr><td>Elements</td><td>Webflow<br>( <mark style="color:orange;">partial support</mark> )<br>SA ( stable, insecure )</td><td>Webflow<br>under development, planned 1Q23 </td><td>( <mark style="color:yellow;">no use case</mark> )</td></tr><tr><td>CMS Collection Items</td><td>( <mark style="color:yellow;">no use case</mark> )<br>Covered by -></td><td><a data-footnote-ref href="#user-content-fn-2"><mark style="color:red;">NEEDED</mark></a><br>Webflow - unknown<br>SA - planned 1Q23</td><td><a data-footnote-ref href="#user-content-fn-3"><mark style="color:red;">NEEDED</mark></a><br>Webflow - unknown<br>SA - considering</td></tr></tbody></table>
 
 Current SA priorities;&#x20;
 
@@ -64,7 +59,7 @@ Add this CSS script to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.4/dist/css/webflow-membership.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-membership.min.css">
 ```
 {% endcode %}
 
@@ -72,7 +67,7 @@ Add this JS reference to the BODY of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.4/src/nocode/webflow-membership.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-membership.min.js"></script>
 ```
 {% endcode %}
 

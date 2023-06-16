@@ -37,9 +37,11 @@ There are currently no configuration options for this library, so we’ll use a 
 
 Install this JS in BODY, site-wide or on the specific pages you want the script to affect.
 
+{% code overflow="wrap" %}
+```html
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-video.min.js"></script>
 ```
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.39/src/nocode/webflow-video.js"></script>
-```
+{% endcode %}
 
 #### STEP 2 - Apply `wfu-data-poster-url` to the Background Videos <a href="#step-2---apply-wfu-data-poster-url-to-the-background-videos" id="step-2---apply-wfu-data-poster-url-to-the-background-videos"></a>
 
