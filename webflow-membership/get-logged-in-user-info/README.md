@@ -21,7 +21,7 @@ Learn how you can support the [BETA testing effort](current-user-info-beta-testi
 
 _NOTE: because User Info is a complex module in Sygnal Attributes, documentation is split in to several pages. Make sure to note the sub-pages in the left nav, below this one._&#x20;
 
-One of the most sought-after capabilities in **Webflow Memberships BETA** is the ability to access information about the logged in user.
+One of the most sought-after capabilities in **Webflow Memberships BETA** is the ability to access information about the _currently logged in user_.
 
 Use cases include;
 
@@ -41,18 +41,20 @@ Features;
 Limitations;&#x20;
 
 * Changes to user information, e.g. changing the user's name on the Account Info page won't be reflected in the user object until the next login&#x20;
+* Currently this library depends on the User Account screen in order to access user data and compose the user object. You can do what you want with your User Account page however those user fields must exist in the page ( even hidden ) in order for this library to work.  &#x20;
 * For custom user fields, the File field type is unsupported for now&#x20;
 * Currently the Webflow UserID is not easily available, we're looking at efficient solutions for this.&#x20;
+* Read-only. The library is designed to read user data, but not to update it.&#x20;
 
 ## Demonstration
 
-New cloneable, specific for v4.7-
+Here's a new cloneable, specific for v4.7-
 
 {% embed url="https://webflow.com/made-in-webflow/website/current-user-info" %}
 
-## User Information
+## Accessing User Information
 
-When a user is logged in, the User Info object contains this information;
+When a user is logged in, the User Info is constructed and the object contains this information;
 
 * `name` - The user's name, as they've specified in account info
 * `email` - The user's email address
@@ -63,8 +65,6 @@ When a user is logged in, the User Info object contains this information;
 * `data` - A map of the user's custom fields. These are named using Webflow's internal data field names, which is based on your individual user field slugs.
 
 Any of these can be accessed directly from the User object, which is provided in the callback function as soon as it is available.
-
-## Accessing User Information
 
 ### Data Binding
 
@@ -104,6 +104,14 @@ Drop in the script below. User information loads automatically, and asynchronous
 
 If a user is logged in, your callback JS function will be called, and you can do what you want with the user's available info.&#x20;
 
+{% hint style="danger" %}
+**IMPORTANT:** This library depends on the User Account screen as the mechanism to access and load User data.&#x20;
+
+The basic fields MUST exist, including Name, Email, and the Privacy and Opt-in checkboxes. These fields may be hidden, but they must exist in the page. Custom User Data fields must also exist if you want them, see [Custom User Fields](custom-user-fields.md) for details.&#x20;
+
+_If you have removed any fields or need to add custom fields, you can add these in using the right side designer menu when the form is selected on the User Account page._&#x20;
+{% endhint %}
+
 ## Data Security
 
 {% hint style="success" %}
@@ -115,11 +123,7 @@ Even basic contact information should never be kept in the browser cache longer 
 
 In our testing, this gives the best user data security, while maximizing your site's performance- both of which are primary concerns for us and our clients.&#x20;
 
-_Questions?_ Let us know - attr@sygnal.com.&#x20;
-
-
-
-
+_Questions?_ Let us know - **attr@sygnal.com**.&#x20;
 
 ## Getting Started ( LOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 
