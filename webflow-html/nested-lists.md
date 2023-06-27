@@ -5,7 +5,12 @@ description: Add nested lists to Webflow's rich text elements
 # Nested Lists
 
 * Easily indicate nesting depth by prefixing list items with `>`’s.
-* Also supports `+` and `-` prefixing for special PRO and CON lists.
+* Jump up and down nested depths as much as you want. You can go from level 1 to level 4 to level 2, and the code will generate the missing levels properly.
+* Also supports `+` and `-` prefixing for special PRO and CON lists.&#x20;
+
+{% hint style="warning" %}
+On special item styling such as the **PRO** and **CON** special styling, note that if you have styled list items specially you may experience styling conflicts.
+{% endhint %}
 
 ## Demonstration <a href="#demo---nested-lists" id="demo---nested-lists"></a>
 
