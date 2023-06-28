@@ -45,6 +45,7 @@
 * [CMS-Bound Custom Attributes](webflow-html/cms-bound-custom-attributes.md)
 * [Nested Lists](webflow-html/nested-lists.md)
 * [Advanced Element Sorting](webflow-html/advanced-element-sorting.md)
+* [Dynamic Attributes](webflow-html/dynamic-attributes.md)
 * [Advanced Element Filtering](webflow-html/advanced-element-filtering.md)
 * [Limit Items by Breakpoint](webflow-html/limit-items-by-breakpoint.md)
 * [Limit Items to Multiple-of](webflow-html/limit-items-to-multiple-of.md)

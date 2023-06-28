@@ -10,4 +10,4 @@ Webflow does not have a Table element, so we’ve added the ability to generate 
 
 Retrieve data from a Google sheet, and convert it to JSON.
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (2).png>)
