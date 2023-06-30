@@ -75,3 +75,9 @@ async function userInfoUpdatedPageCallback(user) {
 ```
 {% endcode %}
 
+Keep in mind, in JS you can do anything you want with the user data. Modify tracking URLs, pre-populate form fields, customize user experiences and so on.&#x20;
+
+{% hint style="warning" %}
+Be very wary of privacy, privacy regulations, GDPR and your privacy policy, as always.&#x20;
+{% endhint %}
+
