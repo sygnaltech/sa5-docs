@@ -113,3 +113,7 @@
 ## 📘 webflow-cache <a href="#cache" id="cache"></a>
 
 * [Cache Utility Lib](cache/cache.md)
+
+## 📘 webflow-seo <a href="#seo" id="seo"></a>
+
+* [JSON-LD Article \[EXPERIMENTAL\]](seo/article.md)
