@@ -1,37 +1,69 @@
 ---
-title: Blogging Like a Hacker
-ver: 1.1234
-description: Webflow Utils ( WFU ), reloaded for 2023
+description: What's new, and what's changing.
 ---
 
-# What is Sygnal Attributes?
+# Sygnal Attributes v5
+
+**In July-2023, we've started work on Sygnal Attributes v5 ( SA5 )!** &#x20;
+
+You’ll begin seeing some small feature additions initially, and minor feature and interface improvements as we migrate code from v4.
 
 {% hint style="success" %}
-In Jan-2023, **Sygnal's Webflow Utils ( WFU )** library was renamed as \
-**Sygnal Attributes** to align with our focus in easy integration into your Webflow projects.
-
-It is still the same great library, still 100% open source, and 100% free to use. &#x20;
+None of this work will affect your current websites. Since all CDN urls are version-locked, you’ll continue to use the same libraries you are using now.
 {% endhint %}
+
+## **What’s new in v5?**
+
+**The tech changes we're making in v5 open the doors to a lot of new capabilities.**
+
+Initially, you'll notice these;
+
+* Faster load times
+* More robust features
+* Integrated debugging
+* No more jQuery dependencies
+
+## The v5 Tech Stack
+
+* We’re changing from a JavaScript ES6 codebase to TypeScript
+* We’re changing fully from CSS to SASS.
+* We’re eliminating all use of jQuery in the libraries.
+* We’re separating classes through the library into discrete source files
+* We’re bundling the distributed files differently for even greater efficiency
+
+We’re excited about the tremendous capabilities the new stack gives us.
+
+## The v4 to v5 Migration Plan
+
+Because we're migrating the libraries gradually, our plan is to run v4 and v5 libraries side-by-side in the same time. You'll be able to use either, or both, depending on the features you want.
+
+_Documentation will contain install instructions for each, for the feature you're using._&#x20;
+
+## **Switching to v5**
+
+If you _choose to_ switch to the upgraded v5 libraries at some point, you’ll see a few minor integration changes;
+
+**Javascript** \<script> elements;
+
+* Will be moved from the **before-/body** section to the **before-/head** section of your pages and site-wide code settings.
+* The library URLs will change to point at the `/dist/` path, rather than the `/src/` path.
+* You'll also notice that the `type=module` is dropped
+
+**CSS** `<link>` elements will essentially remain unchanged, and will continue to point to `/dist/css/`
 
 {% hint style="info" %}
-In documentation we'll often abbreviate **Sygnal Attributes** as **SA**, however the attributes themselves will continue to use the legacy `wfu-` prefix for convenience.
+All of this is covered in the docs for each feature, and we’ll update the docs as each library is migrated, so that you can upgrade them if you choose to.
 {% endhint %}
 
-**Sygnal Attributes** is a collection of JavaScript libraries that add functionality to [Webflow](https://webflow.com/) sites. It focuses on overcoming certain limitations of Webflow, and adding certain capabilities.
+### What about attribute or code changes?
 
-Some of the most popular features include;
+When v5 is completed, you should be able to simply reference the new libraries _with no changes_ to your _custom attributes_ or existing features- and you’ll still get the extended feature set and performance benefits.
 
-* Data-binding form INPUT and SELECT elements to your collection lists
-* Adding custom attributes dynamically to elements within a collection list.
-* Adding tables support, with data sourced from Google Sheets
-* Multilingual support through language-detection and a dynamic content-switcher
+If any breaking changes are introduced in v5, we'll specify the feature that is affected and what is different in its capabilities or configuration. You'll know before you upgrade that features.
 
-All of these features work with Webflow’s native hosting, and are focused on creating as much capability within Webflow as possible - with no 3rd party plug-ins or monthly service fees.
+### Will I need to upgrade to v5 eventually?
 
-This project is also a practical exploration into the use of Javascript ES6 modules, NPM, and other state-of-the art web dev technologies, and how they can be used to enhance Webflow sites.
+**Nope!** If you’re happy with things as they are and don’t need any of the new features, you don’t need to change a thing.&#x20;
 
-_This library will be expanded as needed, and broken into modules for convenient selection of the parts you need._
+_**Even when v5 is fully released, v4 will continue to run indefinitely.**_&#x20;
 
-## Getting Started <a href="#getting-started" id="getting-started"></a>
-
-* The Github Repo is [sygnal/webflow-util](https://github.com/sygnaltech/webflow-util)

@@ -6,7 +6,8 @@
 
 ## 📘 Overview
 
-* [What is Sygnal Attributes?](README.md)
+* [Sygnal Attributes v5](README.md)
+* [What is Sygnal Attributes?](<README (1).md>)
 * [What's New?](overview/whats-new.md)
 * [Library Modules](overview/whats-new-1.md)
 * [Technical Notes & Goals](overview/technical-notes-and-goals.md)
