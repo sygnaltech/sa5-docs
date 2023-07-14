@@ -6,12 +6,6 @@ Sygnal’s **Lipsum** generator allows you to dynamically and randomly create li
 
 
 
-{% swagger method="get" path="" baseUrl="" summary="" %}
-{% swagger-description %}
 
-{% endswagger-description %}
-{% endswagger %}
-
-[https://wfu.sygnal.com/docs/webflow-content/lipsum/](https://wfu.sygnal.com/docs/webflow-content/lipsum/)
 
 \

@@ -1,7 +1,5 @@
 # Format Numbers & Currencies
 
-{% embed url="https://wfu.sygnal.com/docs/webflow-format/numbers/" %}
-
 Webflow supports the storage of numbers, including integers and decimals, in the CMS, but has virtually no formatting options.
 
 For decimal values, Webflow allows you to specify the number of decimal places you want to see in the CMS-bound field, however there are no options for commas, units, or currency formats.
@@ -17,7 +15,7 @@ This library allows you to format those numbers in commonly recognized formats, 
 
 And more will come as [users request](mailto:wfu@sygnal.com).
 
-### Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
 #### `wfu-format` attribute <a href="#wfu-format-attribute" id="wfu-format-attribute"></a>
 
@@ -29,9 +27,9 @@ wfu-format = usd
 
 Also, use Webflow’s designer to format the number of decimal places you want to see, as we’ll apply this in your formatted result.
 
-### Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-#### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
@@ -51,7 +49,7 @@ Add this JS reference to the BODY of your site or page.
 ```
 {% endcode %}
 
-#### STEP 2 - Apply `wfu-format` to the elements you want to format <a href="#step-2---apply-wfu-format-to-the-elements-you-want-to-format" id="step-2---apply-wfu-format-to-the-elements-you-want-to-format"></a>
+### STEP 2 - Apply `wfu-format` to the elements you want to format <a href="#step-2---apply-wfu-format-to-the-elements-you-want-to-format" id="step-2---apply-wfu-format-to-the-elements-you-want-to-format"></a>
 
 See above for details.
 

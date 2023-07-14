@@ -10,7 +10,7 @@ In Webflow's Memberships BETA \[ Jan-2023 ] the login / logout button offers lim
 
 This attribute allows the surrounding container to extend the login/logout element's area.
 
-### Use Cases
+## Use Cases
 
 * Make your login button include an icon, or additional text
 * Create a larger area
@@ -58,8 +58,6 @@ Add this JS reference to the BODY of your site or page.
 
 See above for details.
 
-## Additional Resources
 
-{% embed url="https://wfu.sygnal.com/docs/webflow-membership/expand-login-button/" %}
 
 \

@@ -1,7 +1,5 @@
 # Payment Providers
 
-{% embed url="https://wfu.sygnal.com/docs/webflow-commerce/payment-provider/" %}
-
 Webflow has an in-build e-commerce solution, however it adds a substantial monthly cost and lacks some capabilities. Sometimes you just need something simple, and crude, and cheap.
 
 Fortunately, there are some payment providers who can be easily integrated using a simple payment URL format.
@@ -15,9 +13,9 @@ Currently we support two providers-
 
 Important- this is not a no-code solution. It simply encapsulates the URL construction.
 
-### Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-#### STEP 1 - Write your Code <a href="#step-1---write-your-code" id="step-1---write-your-code"></a>
+### STEP 1 - Write your Code <a href="#step-1---write-your-code" id="step-1---write-your-code"></a>
 
 e.g.;
 

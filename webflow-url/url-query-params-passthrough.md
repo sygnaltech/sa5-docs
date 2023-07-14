@@ -61,8 +61,6 @@ The processing of a specific link can be suppressed by applying the `wfu-query-p
 This feature will be expanded on eventually with configuration options, and the ability to merge querystrings.
 {% endhint %}
 
-## Additional Notes
 
-{% embed url="https://wfu.sygnal.com/docs/webflow-url/query/" %}
 
 \

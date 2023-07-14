@@ -100,7 +100,3 @@ Add this JS reference to the BODY of your site or page.
 
 See above for details.
 
-\
-
-
-{% embed url="https://wfu.sygnal.com/docs/webflow-html/limit-items-by-breakpoint/" %}

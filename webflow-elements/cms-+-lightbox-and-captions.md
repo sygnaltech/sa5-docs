@@ -66,11 +66,7 @@ Add this JS reference to the BODY of your site or page.
 
 See above for details.
 
-## Resources
 
-{% embed url="https://wfu.sygnal.com/docs/webflow-elements/cms-lightbox-captions/" %}
-Legacy docs
-{% endembed %}
 
 
 

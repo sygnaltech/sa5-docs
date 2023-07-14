@@ -8,22 +8,15 @@ Webflow does not have a Table element, so we’ve added the ability to generate 
 
 Retrieve data from a Google sheet, and convert it to JSON.
 
-Demonstration
-
 Template looks like this
 
-```
+```html
 <template id="template1">
 <div>
     <p><b>#{{Rank}} - {{Country}} ({{Region}})</b> - {{Population}}</p>
 </div>
 </template>
 ```
-
-Resulting data;
-
-\
-
 
 Retrieve data from a Google sheet, and convert it to JSON.
 
@@ -36,7 +29,7 @@ Retrieve data from a Google sheet, and convert it to JSON.
 * Converts to JSON.
 * Repeats using an HTML template
 
-DEMO - Google Sheet to HTML Template Repeater ( NoCode )
+### DEMO - Google Sheet to HTML Template Repeater ( NoCode )
 
 **NoCode** version using `wfu-` attributes.
 

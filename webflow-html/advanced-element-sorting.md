@@ -110,6 +110,3 @@ See above for details.
 
 See above for details.
 
-## Resources
-
-{% embed url="https://wfu.sygnal.com/docs/webflow-html/sort/" %}

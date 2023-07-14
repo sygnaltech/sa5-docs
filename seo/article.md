@@ -2,10 +2,10 @@
 description: Generate valid JSON-LD Structured data from CMS Content
 ---
 
-# JSON-LD Article \[EXPERIMENTAL]
+# JSON-LD Article \[EXPERIMENTAL] ❺🧪
 
 {% hint style="danger" %}
-**EXPERIMENTAL ALPHA**
+**EXPERIMENTAL ALPHA** ⑤
 
 DO NOT USE this in production code, as it may be removed. We'll see if this approach works. Testing with Google is in progress.&#x20;
 {% endhint %}

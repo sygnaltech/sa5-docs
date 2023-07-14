@@ -19,7 +19,5 @@ Automatically sizes the IFRAME to fit its content.
 * May not work with cross-domain content.
 * May not respond to dynamic IFRAME content changes.
 
-### Limitations <a href="#limitations" id="limitations"></a>
-
 \
 \

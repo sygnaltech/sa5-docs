@@ -75,11 +75,7 @@ Add this JS reference to the BODY of your site or page.
 
 See above for details.
 
-## Additional Resources
 
-{% embed url="https://wfu.sygnal.com/docs/webflow-membership/conditional-element-display/" %}
-See original docs.
-{% endembed %}
 
 [^1]: CMS CP gating refers to the page entirely, not gating of individual collection items.
 

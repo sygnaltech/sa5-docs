@@ -17,9 +17,9 @@ WFU’s advanced filtering feature allows you to expand on this. Choose which el
 
 All of this and much more can be done by simply attaching WFU’s filtering attributes to any element. WFU will evaluate the expression or the function, and display your element if these return `true`.
 
-### Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
-#### `wfu-filter` attribute <a href="#wfu-filter-attribute" id="wfu-filter-attribute"></a>
+### `wfu-filter` attribute <a href="#wfu-filter-attribute" id="wfu-filter-attribute"></a>
 
 Use `wfu-filter` with a specific formula to suppress the current node.
 
@@ -29,7 +29,7 @@ wfu-filter = new Date().getHours() >= 12
 
 Best used for short and simple expressions.
 
-#### `wfu-filter-func` attribute <a href="#wfu-filter-func-attribute" id="wfu-filter-func-attribute"></a>
+### `wfu-filter-func` attribute <a href="#wfu-filter-func-attribute" id="wfu-filter-func-attribute"></a>
 
 Use `wfu-filter-func` to call a function you define, and to pass in the element as a jQuery object. From there, you can perform any checks or calculations you want and then return `true` if you’d like the element to display, or `false` if you want to hide it.
 
@@ -64,9 +64,9 @@ And then define a function by that name, e.g.;
 
 Make sure to give it a single parameter, as it will be passed the element you are evaluating in the filter.
 
-### Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-#### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
@@ -86,7 +86,7 @@ Add this JS reference to the BODY of your site or page.
 ```
 {% endcode %}
 
-#### STEP 2 - Apply `wfu-filter` or `wfu-filter-func` to the elements you want to filter <a href="#step-2---apply-wfu-filter-or-wfu-filter-func-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-filter-or-wfu-filter-func-to-the-elements-you-want-to-filter"></a>
+### STEP 2 - Apply `wfu-filter` or `wfu-filter-func` to the elements you want to filter <a href="#step-2---apply-wfu-filter-or-wfu-filter-func-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-filter-or-wfu-filter-func-to-the-elements-you-want-to-filter"></a>
 
 See above for details.
 

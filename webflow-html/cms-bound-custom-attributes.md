@@ -1,4 +1,4 @@
-# CMS-Bound Custom Attributes
+# CMS-Bound Custom Attributes ⛔
 
 {% hint style="success" %}
 **NOW NATIVE TO WEBFLOW!**
@@ -7,7 +7,7 @@ As of 16-Mar-2023, Webflow has added support for [CMS-bound custom attributes an
 {% endhint %}
 
 {% hint style="info" %}
-**DEPRECATED**
+**DEPRECATED** ⛔
 
 This Attribute no longer needs development. It will remain in the Sygnal Attributes library to support projects already using it, however we recommend switching to the new Webflow-native feature when possible.&#x20;
 {% endhint %}
@@ -87,5 +87,3 @@ May allow advanced targeting;
 \
 
 
-\
-[https://wfu.sygnal.com/docs/webflow-html/dynamicattributes/](https://wfu.sygnal.com/docs/webflow-html/dynamicattributes/)

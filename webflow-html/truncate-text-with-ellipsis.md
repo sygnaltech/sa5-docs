@@ -14,10 +14,6 @@ Custom CSS is applied only in your published site, so you will not see the trunc
 
 ## Demonstration <a href="#demonstration" id="demonstration"></a>
 
-{% embed url="https://wfu.sygnal.com/docs/webflow-html/truncate/" %}
-Legacy docs
-{% endembed %}
-
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
 ### `wfu-truncate` attribute <a href="#wfu-truncate-attribute" id="wfu-truncate-attribute"></a>

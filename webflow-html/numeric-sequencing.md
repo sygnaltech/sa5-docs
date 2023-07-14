@@ -1,24 +1,22 @@
 # Numeric Sequencing
 
-{% embed url="https://wfu.sygnal.com/docs/webflow-html/seq/" %}
-
 Allows you to apply a numeric sequence across a series of elements.
 
 Numbering is always in a traditional 1, 2, 3… style of sequencing.
 
 NOTE: This is primarily useful for sorting and filtering demos, because CSS has a numeric sequencing feature built in for live display.
 
-### Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
-#### `wfu-seq-group` attribute <a href="#wfu-seq-group-attribute" id="wfu-seq-group-attribute"></a>
+### `wfu-seq-group` attribute <a href="#wfu-seq-group-attribute" id="wfu-seq-group-attribute"></a>
 
 Place on any element. Give an arbitrary named group, for matching the items after, e.g. `articles`
 
-#### `wfu-seq` attribute <a href="#wfu-seq-attribute" id="wfu-seq-attribute"></a>
+### `wfu-seq` attribute <a href="#wfu-seq-attribute" id="wfu-seq-attribute"></a>
 
 Place on any child element within that group. Give it the same group name as its parent.
 
-#### Notes <a href="#notes" id="notes"></a>
+### Notes <a href="#notes" id="notes"></a>
 
 The HTML DOM is a large tree of element and sub-elements.
 
@@ -59,9 +57,9 @@ Remember to specify `date` in the above configuration if you’re wanting to sor
 
 Any other field you choose will be sorted alphabetically.
 
-### Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-#### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
@@ -81,7 +79,7 @@ Add this JS reference to the BODY of your site or page.
 ```
 {% endcode %}
 
-#### STEP 2 - Apply `wfu-sort` and configuration attributes to the elements you want to filter <a href="#step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter"></a>
+### STEP 2 - Apply `wfu-sort` and configuration attributes to the elements you want to filter <a href="#step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter"></a>
 
 See above for details.
 

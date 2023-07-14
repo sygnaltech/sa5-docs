@@ -43,10 +43,10 @@
 * [JSON Formatter](webflow-html/json-formatter.md)
 * [Repeater](webflow-html/repeater.md)
 * [Auto-Size IFRAMEs](webflow-html/auto-size-iframes.md)
-* [CMS-Bound Custom Attributes](webflow-html/cms-bound-custom-attributes.md)
+* [CMS-Bound Custom Attributes ⛔](webflow-html/cms-bound-custom-attributes.md)
 * [Nested Lists](webflow-html/nested-lists.md)
 * [Advanced Element Sorting](webflow-html/advanced-element-sorting.md)
-* [Dynamic Attributes](webflow-html/dynamic-attributes.md)
+* [Dynamic Attributes ❺](webflow-html/dynamic-attributes.md)
 * [Advanced Element Filtering](webflow-html/advanced-element-filtering.md)
 * [Limit Items by Breakpoint](webflow-html/limit-items-by-breakpoint.md)
 * [Limit Items to Multiple-of](webflow-html/limit-items-to-multiple-of.md)
@@ -113,8 +113,9 @@
 
 ## 📘 webflow-cache <a href="#cache" id="cache"></a>
 
-* [Cache Utility Lib](cache/cache.md)
+* [Data Caching ❺](cache/cache/README.md)
+  * [Cache Setup v4](cache/cache/v4.md)
 
 ## 📘 webflow-seo <a href="#seo" id="seo"></a>
 
-* [JSON-LD Article \[EXPERIMENTAL\]](seo/article.md)
+* [JSON-LD Article \[EXPERIMENTAL\] ❺🧪](seo/article.md)

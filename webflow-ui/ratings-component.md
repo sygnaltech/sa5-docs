@@ -52,7 +52,7 @@ However, Webflow does not directly provide access to the fill attribute, or SVG�
 Due to the way the shaded area works, the color and darkness is not easily specified.
 {% endhint %}
 
-### Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
 * The rating stars are SVG, so the component will scale to whatever width you define in the designer.
 * You can use fractional amounts. Generally, .0 or .5 display nicely, other fractions may show too little of the star edges to be clearly understood.
@@ -136,8 +136,6 @@ CMS Collection setup;
 * Configure the field’s minimum to 0, maximum to 5, with precision 1.0. A precision of 1 is fine if you will not be using fractional ratings like 3.5.
 * Set the field to required, if you will always have a rating. If you won’t always have a rating, leave it as not required, and configure the Embed element so that it is conditionally visible and hidden in no-rating situations.
 
-## Additional References
 
-{% embed url="https://wfu.sygnal.com/docs/webflow-ui/ratings/" %}
 
 \
