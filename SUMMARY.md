@@ -59,6 +59,10 @@
 
 * [5-Star Ratings Component](webflow-ui/ratings-component.md)
 
+## 📘 WEBFLOW-BLOG
+
+* [GitHub Gists ❺](webflow-blog/github-gists.md)
+
 ## 📘 WEBFLOW-DEMO
 
 * [Webflow Preview Link](webflow-demo/webflow-preview-link.md)
