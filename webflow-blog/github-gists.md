@@ -44,11 +44,11 @@ When clicked, it will locate the identified HTML Embed, and extract, clean and f
 
 There are currently no configuration options for this feature, so we’ll use a _no-code_ integration approach.
 
-Install JS in HEAD, generally site-wide.
+Install JS in **HEAD**, generally site-wide.
 
 {% code overflow="wrap" %}
 ```html
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@v5.1-alpha.3/dist/nocode/webflow-blog.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@v5.1/dist/nocode/webflow-blog.min.js"></script>
 ```
 {% endcode %}
 

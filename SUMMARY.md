@@ -10,7 +10,8 @@
 * [What is Sygnal Attributes?](<README (1).md>)
 * [What's New?](overview/whats-new.md)
 * [Library Modules](overview/whats-new-1.md)
-* [Technical Notes & Goals](overview/technical-notes-and-goals.md)
+* [Technical Notes & Goals](overview/technical-notes-and-goals/README.md)
+  * [CSS Media Queries](overview/technical-notes-and-goals/css-media-queries.md)
 
 ## 📘 Webflow-Data
 
@@ -47,6 +48,7 @@
 * [Nested Lists](webflow-html/nested-lists.md)
 * [Advanced Element Sorting](webflow-html/advanced-element-sorting.md)
 * [Dynamic Attributes ❺](webflow-html/dynamic-attributes.md)
+* [Breakpoints ❺](webflow-html/breakpoints.md)
 * [Advanced Element Filtering](webflow-html/advanced-element-filtering.md)
 * [Limit Items by Breakpoint](webflow-html/limit-items-by-breakpoint.md)
 * [Limit Items to Multiple-of](webflow-html/limit-items-to-multiple-of.md)
