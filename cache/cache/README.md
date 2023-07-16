@@ -78,6 +78,7 @@ Place this code in your site or page level **/head** code,
 
 {% code overflow="wrap" %}
 ```javascript
+<!-- Sygnal Attributes 5 | Cache -->
 <script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.1-alpha.2/dist/webflow-cache.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.1-alpha.2/dist/webflow-cache/webflow-cache-item.min.js"></script>
 

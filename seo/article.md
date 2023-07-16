@@ -39,6 +39,7 @@ It includes a few things;
 
 {% code overflow="wrap" %}
 ```html
+<!-- Sygnal Attributes 5 | SEO -->
 <script type="application/ld+json" id="ldJsonArticle">
 </script>
 <script 

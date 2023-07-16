@@ -66,6 +66,7 @@ Add this to the **before HEAD** custom code area of your site or page.
 
 {% code overflow="wrap" %}
 ```html
+<!-- Sygnal Attributes 5 | HTML -->
 <script defer
 src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.1.1/dist/nocode/webflow-html.min.js"
 ></script> 

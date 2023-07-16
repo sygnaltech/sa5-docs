@@ -48,6 +48,7 @@ Install JS in **HEAD**, generally site-wide.
 
 {% code overflow="wrap" %}
 ```html
+<!-- Sygnal Attributes 5 | Blog -->
 <script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@v5.1.1/dist/nocode/webflow-blog.min.js"></script>
 ```
 {% endcode %}
