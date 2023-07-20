@@ -42,9 +42,7 @@ It includes a few things;
 <!-- Sygnal Attributes 5 | SEO -->
 <script type="application/ld+json" id="ldJsonArticle">
 </script>
-<script 
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.1-alpha/dist/experimental/webflow-seo.js"
-src-dev="https://memetican-ideal-train-qvvrv94vq9f9vq6-3000.preview.app.github.dev/dist/experimental/webflow-seo.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.1/dist/experimental/webflow-seo.min.js"></script>
 <script> 
 
 // Setup the JSON-LD Generator

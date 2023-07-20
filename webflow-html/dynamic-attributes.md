@@ -60,7 +60,7 @@ Add this to the **before HEAD** custom code area of your site or page.
 ```html
 <!-- Sygnal Attributes 5 | HTML -->
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.0/dist/nocode/webflow-html.min.js"
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.1/dist/nocode/webflow-html.min.js"
 ></script> 
 ```
 {% endcode %}

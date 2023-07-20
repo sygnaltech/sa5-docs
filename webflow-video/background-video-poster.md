@@ -38,7 +38,7 @@ Install JS in **HEAD**, generally site-wide.
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Video -->
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@v5.1.1/dist/nocode/webflow-video.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@v5.2.1/dist/nocode/webflow-video.min.js"></script>
 ```
 {% endcode %}
 
