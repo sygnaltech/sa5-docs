@@ -1,4 +1,4 @@
-# Background Video Poster
+# Background Video Poster ❺
 
 In HTML, a [video poster](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#attr-poster) refers to an image that should be shown while the video is downloading.
 
@@ -31,13 +31,14 @@ On page load, WFU will find your background videos with that special attribute, 
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
+There are currently no configuration options for this feature, so we’ll use a _no-code_ integration approach.
 
-Install this JS in BODY, site-wide or on the specific pages you want the script to affect.
+Install JS in **HEAD**, generally site-wide.
 
 {% code overflow="wrap" %}
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-video.min.js"></script>
+<!-- Sygnal Attributes 5 | Video -->
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@v5.1.1/dist/nocode/webflow-video.min.js"></script>
 ```
 {% endcode %}
 

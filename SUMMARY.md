@@ -78,7 +78,7 @@
 
 ## 📘 WEBFLOW-VIDEO
 
-* [Background Video Poster](webflow-video/background-video-poster.md)
+* [Background Video Poster ❺](webflow-video/background-video-poster.md)
 
 ## 📘 WEBFLOW-COMMERCE
 
@@ -127,3 +127,7 @@
 ## 📘 webflow-seo <a href="#seo" id="seo"></a>
 
 * [JSON-LD Article \[EXPERIMENTAL\] ❺🧪](seo/article.md)
+
+## 📘 webflow-fixup <a href="#fixup" id="fixup"></a>
+
+* [Webflow Fixups ❺🧪](fixup/article.md)
