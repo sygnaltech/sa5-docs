@@ -40,7 +40,28 @@ window.sa5.hotkeys = (hotkeyHandler) => {
 </script>
 ```
 
-Based on the hotkey pressed, you can perform whatever scripting you like.&#x20;
+Based on the hotkey pressed, you can perform whatever scripting you like.
+
+The hotkeys you want are described in the first parameter of the register function. You can have modifier keys, and you can have multiple keys assigned to the same handler event.
+
+Here are some examples;
+
+* ctrl+alt+q - modifier keys
+* ctrl+a,ctrl+b,r,f - multiple hotkeys on the same handler
+* ⌘+s,ctrl+s - Apple and Windows
+
+## Technical Notes
+
+Based on [Hotkeys.js](https://github.com/jaywcjlove/hotkeys-js).
+
+Hotkeys.js has been tested and should work in.
+
+```
+Internet Explorer 6+
+Safari
+Firefox
+Chrome
+```
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
