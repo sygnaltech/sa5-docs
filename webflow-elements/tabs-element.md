@@ -2,7 +2,7 @@
 description: Interact with Webflow's Tabs Element
 ---
 
-# Tabs Element
+# Tabs Element ❺
 
 
 
@@ -14,7 +14,10 @@ Not yet released.
 
 ## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
-This feature allows you to display a caption inside of Webflow’s lightboxes, which is automatically pulled from the CMS.
+This feature allows you to work with the Webflow tabs element.
+
+* Switch tabs programmatically- first, next, prev, and last, or go to a specific tab index
+* Get the current tab index
 
 ## Demonstration
 
@@ -72,21 +75,24 @@ For the goto action, specifies the tab you want to navigate to.&#x20;
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this CSS script to the HEAD of your site or page.
+{% hint style="info" %}
+This feature is using WFU's v5 new TypeScript-based library, so it is has different URLs and _code placement_ from the v4 JS-based library.&#x20;
+
+You can use both the v4 and v5 libraries simultaneously to get the full feature set during migration.
+{% endhint %}
+
+Add this to the **before HEAD** custom code area of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-elements.min.css">
+<!-- Sygnal Attributes 5 | Tabs -->
+<script defer
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.1/dist/webflow-core/tabs.js"
+></script> 
 ```
 {% endcode %}
 
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-elements.min.js"></script>
-```
-{% endcode %}
+Nothing is needed in the before BODY code area.&#x20;
 
 ### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
 
