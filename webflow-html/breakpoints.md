@@ -20,6 +20,13 @@ Now, there's a way to do that too.&#x20;
 * A great example of this is our responsive pagination example that uses our breakpoints library with custom code to update Finsweet's CMS Load APIs.&#x20;
 * Reload an IFRAME or other element that cannot adapt responsively across breakpoint changes.&#x20;
 
+## Demonstration <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+On sygnal.com;
+
+* Press F2 to access the user-specific homepage ( for logged in users only )
+* CTRL+P Takes you to search results
+
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
 When you include this library in your site or page, you can easily add a custom code callback to handle events when the breakpoints change.
@@ -78,6 +85,10 @@ Nothing is needed in the before BODY code area.&#x20;
 ### STEP 2 - Implement your callback handlers <a href="#step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter"></a>
 
 See above for details.
+
+## Future
+
+* We may add special registration methods that perform simple tasks without code, such as navigation&#x20;
 
 ## Resources
 

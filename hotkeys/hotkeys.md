@@ -9,10 +9,13 @@ description: Capture specific hotkeys to perform specific tasks
 Supercharge your site by providing quick capabilities through hotkeys.
 
 * Help menus
-* Filter reset
+* Search
+* Filter resets
 * Navigation
 
 ## Use Cases
+
+Here are a few examples;
 
 * F1 - show your own help menus
 * ESC - filter reset
@@ -31,11 +34,11 @@ Here's what that would look like;
 
 ```html
 <script>
-window.sa5 = window.sa5 || {};
-window.sa5.hotkeys = (hotkeyHandler) => {
+window.sa5 = window.sa5 || [];
+window.sa5.push(['hotkeys', (hotkeyHandler) => {
   hotkeyHandler.register("f2", () => {
     console.log("f2 pressed");
-  });
+  }]);
 }
 </script>
 ```
@@ -49,6 +52,12 @@ Here are some examples;
 * ctrl+alt+q - modifier keys
 * ctrl+a,ctrl+b,r,f - multiple hotkeys on the same handler
 * ⌘+s,ctrl+s - Apple and Windows
+
+This setup is also designed so that you can have register hotkeys in multiple separate code blocks on the same page. Why would want to do that?&#x20;
+
+* Register some hotkeys in your site-wide code, so that they work on all pages
+* Register additional hotkeys on a specific page or collection page
+* Register additional hotkeys in a custom code element, within a component, so that they travel with that component anywhere you use it &#x20;
 
 ## Technical Notes
 

@@ -49,7 +49,6 @@
 * [Advanced Element Sorting](webflow-html/advanced-element-sorting.md)
 * [Dynamic Attributes ❺](webflow-html/dynamic-attributes.md)
 * [Breakpoints ❺](webflow-html/breakpoints.md)
-* [Hotkeys ❺](webflow-html/hotkeys.md)
 * [Advanced Element Filtering](webflow-html/advanced-element-filtering.md)
 * [Limit Items by Breakpoint](webflow-html/limit-items-by-breakpoint.md)
 * [Limit Items to Multiple-of](webflow-html/limit-items-to-multiple-of.md)
@@ -61,6 +60,10 @@
 ## 📘 WEBFLOW-UI
 
 * [5-Star Ratings Component](webflow-ui/ratings-component.md)
+
+## 📘 WEBFLOW-HOTKEYS <a href="#hotkeys" id="hotkeys"></a>
+
+* [Hotkeys ❺](hotkeys/hotkeys.md)
 
 ## 📘 WEBFLOW-BLOG
 
@@ -130,4 +133,4 @@
 
 ## 📘 webflow-fixup <a href="#fixup" id="fixup"></a>
 
-* [Webflow Fixups ❺🧪](fixup/article.md)
+* [Webflow Fixups ❺](fixup/article.md)
