@@ -75,9 +75,9 @@
 
 ## 📘 WEBFLOW-URL
 
-* [CMS Relative Link Fixups](webflow-url/cms-relative-link-fixups.md)
-* [External Link Targeting](webflow-url/external-link-targeting.md)
-* [URL Query Params Passthrough](webflow-url/url-query-params-passthrough.md)
+* [Relative Link Fixups ❺](webflow-url/relative-link-fixups.md)
+* [External Link Targeting ❺](webflow-url/external-link-targeting.md)
+* [URL Query Params Passthrough ❺](webflow-url/url-query-params-passthrough.md)
 
 ## 📘 WEBFLOW-VIDEO
 

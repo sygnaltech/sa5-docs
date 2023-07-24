@@ -2,15 +2,23 @@
 description: Pass query params through to forms, automatically
 ---
 
-# URL Query Params Passthrough
+# URL Query Params Passthrough ❺
 
-## Overview
+{% hint style="warning" %}
+In SA5, the automatic transport of querystring params to links in the page is temporarily suppressed, while we re-evaluate the use cases and user needs here.
+{% endhint %}
+
+## Overview & Use Cases
 
 Extract querystring parameters from your URL, and apply the contents to tagged elements on your page.
 
 * Use querystring data in your FORM data, to collect it for submissions ( e.g. `utm_` params )
 * Pass querystring data through to other links on the page, so it will get carried through
 * Use querystring data in visible fields, e.g. to personalize a page from an Email newsletter link click ( “Hey Mary!” )
+
+## Demos  <a href="#usage-notes" id="usage-notes"></a>
+
+{% embed url="https://url-tracking.webflow.io/query" %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
@@ -20,22 +28,26 @@ This tool will carry any URL querystring params into your webpage, and apply the
 
 * On any INPUT elements with a custom attribute of `wfu-query-param=X`, WFU will replace the `value` attribute with the value of the querystring param `X`. This works with `type=hidden` INPUT elements as well, so the data can be passed through invisibly.
 * On any other elements with a custom attribute of `wfu-query-param=X`, WFU will replace the inner text of the element with the value of the querystring param `X`.
-* For **all** links on your page, WFU will modify the link’s `href`, depending on what you request.
-  * `wfu-query-param=*`, or an absence of the `wfu-query-param` attribute, will merge all params from the page’s current URL into the link href.
-  * `wfu-query-param=foo,bar,bat`, will only merge the querystring params named `foo`, `bar`, and `bat` from the page’s current URL into the link href.
-  * `wfu-query-param=-` (a hypen) will suppress processing of this link, and no changes will be made.
+
+Temporarily Suppressed;&#x20;
+
+* ~~For **all** links on your page, WFU will modify the link’s `href`, depending on what you request.~~
+  * ~~`wfu-query-param=*`, or an absence of the `wfu-query-param` attribute, will merge all params from the page’s current URL into the link href.~~
+  * ~~`wfu-query-param=foo,bar,bat`, will only merge the querystring params named `foo`, `bar`, and `bat` from the page’s current URL into the link href.~~
+  * ~~`wfu-query-param=-` (a hypen) will suppress processing of this link, and no changes will be made.~~
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+### STEP 1 - Add the Library  <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
+There are currently no configuration options for this feature, so we’ll use a _no-code_ integration approach.
 
-Add this script to the `</body>` custom code area, either site-wide or on the specific pages you want the script to affect.
+Install JS in **HEAD**, generally site-wide.
 
 {% code overflow="wrap" %}
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-url.min.js"></script>
+<!-- Sygnal Attributes 5 | Urls -->
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@v5.2.5/dist/nocode/webflow-url.min.js"></script>
 ```
 {% endcode %}
 
