@@ -1,8 +1,8 @@
 ---
-description: Pass query params through to forms, automatically
+description: Pass querystring params through to forms and text elements, automatically
 ---
 
-# URL Query Params Passthrough ❺
+# URL Query Params ❺
 
 {% hint style="warning" %}
 In SA5, the automatic transport of querystring params to links in the page is temporarily suppressed, while we re-evaluate the use cases and user needs here.
