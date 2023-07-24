@@ -19,6 +19,12 @@ Extract querystring parameters from your URL, and apply the contents to tagged e
 ## Demos  <a href="#usage-notes" id="usage-notes"></a>
 
 {% embed url="https://url-tracking.webflow.io/query" %}
+Demonstration page
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/url-tracking" %}
+Cloneable site
+{% endembed %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 

@@ -46,8 +46,14 @@ When your page publishes, these links will become invalid, prefixed with `http:/
 The demo links in this page, shown as starting with a ? querystring, are relative links that this library fixes up.&#x20;
 
 {% embed url="https://url-tracking.webflow.io/relative-links" %}
+Demonstration page
+{% endembed %}
 
-## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+{% embed url="https://webflow.com/made-in-webflow/website/url-tracking" %}
+Cloneable site
+{% endembed %}
+
+## Usage Notes  <a href="#usage-notes" id="usage-notes"></a>
 
 **Webflow’s CMS feature has a significant limitation in that the CMS knows nothing about its containing site.**
 

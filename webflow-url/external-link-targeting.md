@@ -13,6 +13,12 @@ It will only add a target if none is specified.
 ## Demonstration
 
 {% embed url="https://url-tracking.webflow.io/external-links" %}
+Demonstration page
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/url-tracking" %}
+Cloneable site
+{% endembed %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
