@@ -1,3 +1,7 @@
+---
+description: Hide an entire section when the collection lists in it are empty
+---
+
 # Hide Section w/ Empty Collection Lists
 
 Want to hide a section when the Collection Lists it contains are empty?
