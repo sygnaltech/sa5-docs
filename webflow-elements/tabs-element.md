@@ -4,14 +4,6 @@ description: Interact with Webflow's Tabs Element
 
 # Tabs Element ❺
 
-
-
-{% hint style="danger" %}
-**COMING SOON**
-
-Not yet released.
-{% endhint %}
-
 ## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
 This feature allows you to work with the Webflow tabs element.
@@ -20,6 +12,10 @@ This feature allows you to work with the Webflow tabs element.
 * Get the current tab index
 
 ## Demonstration
+
+Check the tabs demonstrations here-&#x20;
+
+{% embed url="https://webflow.com/made-in-webflow/website/webflow-tabs-hacks" %}
 
 ## Use Cases <a href="#usage-notes" id="usage-notes"></a>
 
@@ -32,8 +28,6 @@ Future; &#x20;
 
 * Respond to custom code notifications on a tab change.
 * Choose to allow or prevent tab changes.&#x20;
-
-<mark style="color:orange;">Change to 1-based indexing.</mark>&#x20;
 
 ## Setup <a href="#prepare-your-collection-list" id="prepare-your-collection-list"></a>
 
@@ -48,6 +42,16 @@ This makes the tab element accessible in code, and selectable by the other tabs 
 
 * Register it in the list of elements&#x20;
 * Error if it's not unique ( and avoid load )&#x20;
+
+wfu-tab-default attribute
+
+Add the wfu-tab-default custom attribute to a specific tab directly. This tab will be automatically selected on page load.
+
+## Future
+
+{% hint style="danger" %}
+These are under consideration for implementation, and not yet implemented.&#x20;
+{% endhint %}
 
 ### `wfu-tabs-action` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
@@ -85,10 +89,10 @@ Add this to the **before HEAD** custom code area of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attributes 5 | Tabs -->
+<!-- Sygnal Attributes 5 | Tabs --> 
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.1/dist/webflow-core/tabs.js"
-></script> 
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.3/dist/webflow-html.js"
+></script>
 ```
 {% endcode %}
 
@@ -97,6 +101,17 @@ Nothing is needed in the before BODY code area.&#x20;
 ### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
 
 See above for details.
+
+## Advanced ( optional )&#x20;
+
+For advanced use, you can access the tabs library directly;&#x20;
+
+```html
+<!-- Sygnal Attributes 5 | Tabs -->
+<script defer
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.3/dist/webflow-core/tabs.js"
+></script> 
+```
 
 
 
