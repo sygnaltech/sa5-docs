@@ -16,7 +16,7 @@ SA's Dynamic Attributes feature overcomes this by allowing you to create proxy a
 
 If you've never encountered it, this is what happens in Webflow when you attempt to use a reserved attribute name.&#x20;
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (2).png>)
 
 Here's a partial list of reserved attribute names, as [documented](https://discourse.webflow.com/t/list-feature-availability-limits/23610) by samliew;&#x20;
 

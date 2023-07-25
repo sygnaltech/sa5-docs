@@ -41,6 +41,8 @@ In the Webflow designer and editor, if you try to enter any of these as a link i
 
 When your page publishes, these links will become invalid, prefixed with `http://`, for example `http://./foo`, which the browser cannot access.
 
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ## Demonstration <a href="#usage-notes" id="usage-notes"></a>
 
 The demo links in this page, shown as starting with a ? querystring, are relative links that this library fixes up.&#x20;
