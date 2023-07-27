@@ -107,7 +107,7 @@ If a user is logged in, any data-bound fields will be populated automatically. Y
 {% hint style="danger" %}
 **IMPORTANT:** This library depends on Webflow's User Account  page ( at`/user-account` ) as the mechanism to access and load User data.&#x20;
 
-All basic user info fields MUST exist, including Name, Email, and the Privacy and Opt-in checkboxes. These fields may be hidden, but they MUST exist in the page. Custom User Data fields must also exist if you want them, see [Custom User Fields](custom-user-fields.md) for details.&#x20;
+All basic user info fields MUST exist, including Name, Email, and the Opt-in checkbox. These fields may be hidden, but they MUST exist in the page. Custom User Data fields must also exist if you want them, see [Custom User Fields](custom-user-fields.md) for details.&#x20;
 
 _If you have removed any fields or need to add custom fields, you can add these in using the right side designer menu when the form is selected on the User Account page._&#x20;
 {% endhint %}
