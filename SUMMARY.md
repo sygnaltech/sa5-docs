@@ -45,8 +45,8 @@
 * [Limit Items by Breakpoint ❺](webflow-html/limit-items-by-breakpoint.md)
 * [Limit Items to Multiple-of ❺](webflow-html/limit-items-to-multiple-of.md)
 * [Numeric Sequencing ❺](webflow-html/numeric-sequencing.md)
-* [Truncate Text w/ Ellipsis](webflow-html/truncate-text-with-ellipsis.md)
-* [Hide Section w/ Empty Collection Lists](webflow-html/hide-section-w-empty-collection-lists.md)
+* [Truncate Text w/ Ellipsis ❺](webflow-html/truncate-text-with-ellipsis.md)
+* [Hide Section w/ Empty Collection Lists ❺](webflow-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML ❺](webflow-html/decode-html.md)
 
 ## 📘 WEBFLOW-UI

@@ -1,4 +1,8 @@
-# Truncate Text w/ Ellipsis
+---
+description: Line-Clamp your plain-text content to a maximum number of lines, for layout.
+---
+
+# Truncate Text w/ Ellipsis ❺
 
 ## Overview&#x20;
 
@@ -13,6 +17,14 @@ Custom CSS is applied only in your published site, so you will not see the trunc
 {% endhint %}
 
 ## Demonstration <a href="#demonstration" id="demonstration"></a>
+
+{% embed url="https://webflow-smart-elements.webflow.io/line-clamping" %}
+Demonstration
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/webflow-tabs-hacks" %}
+Cloneable
+{% endembed %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
@@ -39,13 +51,12 @@ Please double check your desired browsers to make sure the CSS works for your ta
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-_This is a CSS-only solution._
-
-Add this CSS script to the HEAD of your site or page.
+Add this code to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-html.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/css/webflow-html.min.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 
