@@ -2,9 +2,16 @@
 description: Add nested lists to Webflow's rich text elements
 ---
 
-# Nested Lists
+# Nested Lists ❺
 
 * Easily indicate nesting depth by prefixing list items with `>`’s.
+* Supports both ordered ( OL ) and unordered ( UL ) lists.&#x20;
+* Compatible with editor mode.&#x20;
+
+{% hint style="info" %}
+With SA5, we've made some structural changes in "empty next" situations, to enforce semantically valid HTML5. The design of these features is being revisited;
+{% endhint %}
+
 * Jump up and down nested depths as much as you want. You can go from level 1 to level 4 to level 2, and the code will generate the missing levels properly.
 * Also supports `+` and `-` prefixing for special PRO and CON lists.&#x20;
 
@@ -16,13 +23,25 @@ On special item styling such as the **PRO** and **CON** special styling, note th
 
 See here for a demonstration of nested lists and the markup we use;
 
-{% embed url="https://nested-lists-richtext.webflow.io/nested-list" %}
-Demonstration of nested lists in action
-{% endembed %}
+{% embed url="https://webflow-smart-elements.webflow.io/rich-text" %}
 
-{% embed url="https://preview.webflow.com/preview/nested-lists-richtext?pageId=631bd2167b03fde593551fab&preview=229cc8bfcbde11d0f0160c2394d802dd" %}
-The readonly project view, for implementation.
-{% endembed %}
+## Usage Notes
+
+### I want the lists in this rich text element to be nested. <a href="#step-2---apply-wfu-listsnested-to-desired-elements" id="step-2---apply-wfu-listsnested-to-desired-elements"></a>
+
+Add this custom attribute to your RTE or list element;
+
+```html
+wfu-lists=nested
+```
+
+_Positioning is important_, make sure you’re placing this custom attribute on the correct element.
+
+## Future
+
+Themes
+
+Pros & cons
 
 ## Getting Started ( NOCODE )
 
@@ -34,17 +53,12 @@ Add this CSS script to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-html.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.6/dist/css/webflow-html.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.6/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 
 Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-html.min.js"></script>
-```
-{% endcode %}
 
 ### STEP 2 - Apply `wfu-lists=nested` to Desired Elements <a href="#step-2---apply-wfu-listsnested-to-desired-elements" id="step-2---apply-wfu-listsnested-to-desired-elements"></a>
 
