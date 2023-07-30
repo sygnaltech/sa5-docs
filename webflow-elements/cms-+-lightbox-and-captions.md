@@ -2,7 +2,7 @@
 description: Display CMS-Managed Captions in Webflow’s Lightboxes
 ---
 
-# CMS & Lightbox + Captions
+# CMS & Lightbox + Captions ❺
 
 ## Overivew <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
@@ -46,19 +46,12 @@ The CMS field you've bound to Alt Text will be displayed as the caption in light
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this CSS script to the HEAD of your site or page.
+Add this code to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-elements.min.css">
-```
-{% endcode %}
-
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-elements.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.9/dist/css/webflow-elements.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.9/dist/nocode/webflow-elements.js"></script>
 ```
 {% endcode %}
 
