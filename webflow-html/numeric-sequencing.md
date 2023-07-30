@@ -1,10 +1,26 @@
-# Numeric Sequencing
+---
+description: Assign a numeric sequence to arbitrary elements in a group.
+---
+
+# Numeric Sequencing ❺
 
 Allows you to apply a numeric sequence across a series of elements.
 
-Numbering is always in a traditional 1, 2, 3… style of sequencing.
+Numbering is always in a traditional 1, 2, 3… style of sequencing.&#x20;
 
+{% hint style="info" %}
 NOTE: This is primarily useful for sorting and filtering demos, because CSS has a numeric sequencing feature built in for live display.
+{% endhint %}
+
+## Demonstration
+
+{% embed url="https://webflow-smart-elements.webflow.io/sequence" %}
+Demonstration
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/webflow-tabs-hacks" %}
+Cloneable
+{% endembed %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
@@ -28,34 +44,14 @@ The purpose of these capabilities is to allow you to use numbering on a Webflow 
 
 NOTE: Primarily I’d recommend this for demos, where you need to number items and then permute them. In most numbering situations, CSS numbering is generally a better alternative for general sequencing.
 
-#### Future <a href="#future" id="future"></a>
+## Future <a href="#future" id="future"></a>
 
-If there is a need, I can expand this to allow for control of;
+Depending on client needs and user requests, we may expand this to allow for control of;
 
 * Starting number
 * Step size
 * Increasing or decreasing count
 * Support for decimal values
-
-web AT sygnal.com
-
-* Avoid using the same
-
-Avoid using the same group name on an element that is a child of another element.
-
-You can sequence nested lists separately
-
-Create an HTML Embed inside of your Collection List Item, with this code;
-
-```html
-<data wfu-sort-key=""></data>
-```
-
-As the attribute value for `wfu-sort-key`, insert the field that you want to sort by, using Webflow’s ‘**+ Add Field** at the top-right of the HTML Embed Code Editor window.
-
-Remember to specify `date` in the above configuration if you’re wanting to sort by dates.
-
-Any other field you choose will be sorted alphabetically.
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
@@ -63,23 +59,16 @@ Any other field you choose will be sorted alphabetically.
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this CSS script to the HEAD of your site or page.
+Add this code to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-html.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/css/webflow-html.min.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-html.min.js"></script>
-```
-{% endcode %}
-
-### STEP 2 - Apply `wfu-sort` and configuration attributes to the elements you want to filter <a href="#step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter"></a>
+### STEP 2 - Apply configuration attributes to the elements you want to filter <a href="#step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter"></a>
 
 See above for details.
 

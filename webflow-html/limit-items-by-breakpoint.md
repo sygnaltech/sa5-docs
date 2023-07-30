@@ -1,4 +1,10 @@
-# Limit Items by Breakpoint
+---
+description: >-
+  Make your collection list & static content fully responsive by controlling the
+  quantity
+---
+
+# Limit Items by Breakpoint ❺
 
 ## Overview
 
@@ -26,7 +32,9 @@ Important, use only ONE of these configuration approaches per collection list.
 
 Use this when you want breakpoint-specific item counts, but desktop and higher breakpoints should all show the same item count.&#x20;
 
-See [demonstration](https://limit-collection-items-by-breakpoint.webflow.io/desktop).
+{% embed url="https://limit-collection-items-by-breakpoint.webflow.io/desktop" %}
+Demonstration
+{% endembed %}
 
 * `wfu-limit-items-D-max` the number to show for desktops and _higher breakpoints_
 * `wfu-limit-items-T` the number to show for tablet
@@ -35,9 +43,11 @@ See [demonstration](https://limit-collection-items-by-breakpoint.webflow.io/desk
 
 ### OPTION 2 - Specify _every_ breakpoint config <a href="#or-use-the-breakpoint-variations" id="or-use-the-breakpoint-variations"></a>
 
-Use this if you want breakpoint-specific counts at every breakpoint.&#x20;
+Use this if you want breakpoint-specific counts at every breakpoint. &#x20;
 
-See [demonstration](https://limit-collection-items-by-breakpoint.webflow.io/).
+{% embed url="https://limit-collection-items-by-breakpoint.webflow.io/" %}
+Demonstration
+{% endembed %}
 
 * `wfu-limit-items-1920` the number to show for 1920px
 * `wfu-limit-items-1440` the number to show for 1440px
@@ -80,19 +90,16 @@ Place the HTML Embed inside of your site-wide nav or footer symbol if you want i
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this CSS script to the HEAD of your site or page.
+Add this code to the **HEAD** of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-html.min.css">
-```
-{% endcode %}
-
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-html.min.js"></script>
+<link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/css/webflow-html.css"
+  >
+<script defer
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/nocode/webflow-html.js"
+  ></script>
 ```
 {% endcode %}
 

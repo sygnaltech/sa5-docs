@@ -35,24 +35,16 @@
 
 * [HTML Tables](webflow-table/html-tables.md)
 
-## 📘 WEBFLOW-CONTENT
-
-* [Lipsum Generator](webflow-content/lipsum-generator.md)
-
 ## 📘 WEBFLOW-HTML
 
-* [JSON Formatter](webflow-html/json-formatter.md)
-* [Repeater](webflow-html/repeater.md)
-* [Auto-Size IFRAMEs](webflow-html/auto-size-iframes.md)
-* [CMS-Bound Custom Attributes ⛔](webflow-html/cms-bound-custom-attributes.md)
 * [Nested Lists ❺](webflow-html/nested-lists.md)
 * [Advanced Element Sorting ❺](webflow-html/advanced-element-sorting.md)
 * [Dynamic Attributes ❺](webflow-html/dynamic-attributes.md)
 * [Breakpoints ❺](webflow-html/breakpoints.md)
 * [Advanced Element Filtering ❺](webflow-html/advanced-element-filtering.md)
-* [Limit Items by Breakpoint](webflow-html/limit-items-by-breakpoint.md)
+* [Limit Items by Breakpoint ❺](webflow-html/limit-items-by-breakpoint.md)
 * [Limit Items to Multiple-of ❺](webflow-html/limit-items-to-multiple-of.md)
-* [Numeric Sequencing](webflow-html/numeric-sequencing.md)
+* [Numeric Sequencing ❺](webflow-html/numeric-sequencing.md)
 * [Truncate Text w/ Ellipsis](webflow-html/truncate-text-with-ellipsis.md)
 * [Hide Section w/ Empty Collection Lists](webflow-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML ❺](webflow-html/decode-html.md)
@@ -134,3 +126,11 @@
 ## 📘 webflow-fixup <a href="#fixup" id="fixup"></a>
 
 * [Webflow Fixups ❺](fixup/article.md)
+
+## 📘 Deprecated Features <a href="#deprecated" id="deprecated"></a>
+
+* [Repeater ⛔](deprecated/repeater.md)
+* [Auto-Size IFRAMEs ⛔](deprecated/auto-size-iframes.md)
+* [Lipsum Generator ⛔](deprecated/lipsum-generator.md)
+* [CMS-Bound Custom Attributes ⛔](deprecated/cms-bound-custom-attributes.md)
+* [JSON Formatter ⛔](deprecated/json-formatter.md)
