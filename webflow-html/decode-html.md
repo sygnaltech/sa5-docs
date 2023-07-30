@@ -1,15 +1,21 @@
-# Decode HTML
+---
+description: Decode a plain-text field containing HTML
+---
 
-Do you have a chunk of HTML stored in the CMS, which you need decoded when it emits into your page?
+# Decode HTML ❺
 
-Simply position and data-bind your HTML Embed as normal, and then add a cu
+Store HTML directly in CMS text fields, and render them in decoded form on the page.
+
+## Use Cases&#x20;
 
 Good for…
 
-* 3rd party embed like soundcloud, and YouTube
+* 3rd party embeds like SoundCloud, and YouTube
 * JSON+LD embeds
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+
+Create an HTML Embed or plain-text element on your page, data-bound to the CMS if you like.
 
 ### `wfu-decode` attribute <a href="#wfu-decode-attribute" id="wfu-decode-attribute"></a>
 
@@ -21,21 +27,12 @@ Note that the CSS will hide this element initially until after it’s decoded, a
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-This is a CSS-only solution.
-
-Add this CSS script to the HEAD of your site or page.
+Add this script to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-html.min.css">
-```
-{% endcode %}
-
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-html.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.8/dist/css/webflow-html.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.8/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 

@@ -1,23 +1,25 @@
 ---
-description: >-
-  Add advanced filtering for CMS Collection List items and static elements on
-  your Webflow page, using custom attributes and a lo-code JavaScript filter
-  function.
+description: Filtering any element or Collection List using custom logic.
 ---
 
-# Advanced Element Filtering
+# Advanced Element Filtering ❺
 
-Webflow has a powerful conditional visibility feature, however sometimes it falls short when you have complex rules.
+Webflow has a powerful conditional visibility feature, however it falls short when you have complex or dynamic rules.&#x20;
 
-WFU’s advanced filtering feature allows you to expand on this. Choose which elements you want to be visible depending on simple javascript expression or a javascript function.
+SA5's advanced filtering allows you to filter any element using a simple JavaScript expression or evaluation function.
 
-* Display certain elements only between certain hours of the day, certain days of the week, seasonally, etc.
-* Show collection list items based on the time of day.
-* Show employees who have a birthday today, or this month.
+## Use Cases
 
-All of this and much more can be done by simply attaching WFU’s filtering attributes to any element. WFU will evaluate the expression or the function, and display your element if these return `true`.
+Here are a few ways you could use it;&#x20;
+
+* Display certain elements only between certain hours of the day, certain days of the week, months or seasons of the year, etc.&#x20;
+* Show employees who have a birthday today, or this month.&#x20;
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+
+The basic approach is to attach the filter attribute to the elements you want to conditionally display, and then add simple JavaScript logic that is evaluated.&#x20;
+
+Elements will be displayed If the evaluation returns `true`.
 
 ### `wfu-filter` attribute <a href="#wfu-filter-attribute" id="wfu-filter-attribute"></a>
 
@@ -31,15 +33,15 @@ Best used for short and simple expressions.
 
 ### `wfu-filter-func` attribute <a href="#wfu-filter-func-attribute" id="wfu-filter-func-attribute"></a>
 
-Use `wfu-filter-func` to call a function you define, and to pass in the element as a jQuery object. From there, you can perform any checks or calculations you want and then return `true` if you’d like the element to display, or `false` if you want to hide it.
+Use `wfu-filter-func` to call a function you define, and to pass in the element as an HTML element. From there, you can perform any checks or calculations you want and then return `true` if you’d like the element to display, or `false` if you want to hide it.
 
 ```
 wfu-filter-func = isBirthday
 ```
 
-And then define a function by that name, e.g.;
+And then define a function by that name, e.g.;&#x20;
 
-```
+```html
 <script>
   function isBirthday(item) {
     
@@ -62,7 +64,17 @@ And then define a function by that name, e.g.;
 </script>
 ```
 
-Make sure to give it a single parameter, as it will be passed the element you are evaluating in the filter.
+Here's another example that filters based on an in-text match;
+
+```html
+<script>
+window.filterText = function(e) {
+    return e.textContent.toLowerCase().includes("blog"); 
+}
+</script>
+```
+
+Make sure to give it a single parameter, as it will be passed the element you are evaluating in the filter. The evaluation function you create must be top level, so it will be referenced from the `window` object. &#x20;
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
@@ -74,15 +86,8 @@ Add this CSS script to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-html.min.css">
-```
-{% endcode %}
-
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-html.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.8/dist/css/webflow-html.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.8/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 

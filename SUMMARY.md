@@ -46,16 +46,16 @@
 * [Auto-Size IFRAMEs](webflow-html/auto-size-iframes.md)
 * [CMS-Bound Custom Attributes ⛔](webflow-html/cms-bound-custom-attributes.md)
 * [Nested Lists ❺](webflow-html/nested-lists.md)
-* [Advanced Element Sorting](webflow-html/advanced-element-sorting.md)
+* [Advanced Element Sorting ❺](webflow-html/advanced-element-sorting.md)
 * [Dynamic Attributes ❺](webflow-html/dynamic-attributes.md)
 * [Breakpoints ❺](webflow-html/breakpoints.md)
-* [Advanced Element Filtering](webflow-html/advanced-element-filtering.md)
+* [Advanced Element Filtering ❺](webflow-html/advanced-element-filtering.md)
 * [Limit Items by Breakpoint](webflow-html/limit-items-by-breakpoint.md)
-* [Limit Items to Multiple-of](webflow-html/limit-items-to-multiple-of.md)
+* [Limit Items to Multiple-of ❺](webflow-html/limit-items-to-multiple-of.md)
 * [Numeric Sequencing](webflow-html/numeric-sequencing.md)
 * [Truncate Text w/ Ellipsis](webflow-html/truncate-text-with-ellipsis.md)
 * [Hide Section w/ Empty Collection Lists](webflow-html/hide-section-w-empty-collection-lists.md)
-* [Decode HTML](webflow-html/decode-html.md)
+* [Decode HTML ❺](webflow-html/decode-html.md)
 
 ## 📘 WEBFLOW-UI
 

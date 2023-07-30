@@ -2,7 +2,7 @@
 description: Sort Webflow's collection list items any way you like
 ---
 
-# Advanced Element Sorting
+# Advanced Element Sorting ❺
 
 ## Overview
 
@@ -20,6 +20,16 @@ This attribute allows to do all of these;
 * Sort ascending, descending or randomly ( on every page refresh )
 
 ## Demonstrations
+
+{% embed url="https://webflow-smart-elements.webflow.io/collection-lists" %}
+Demonstration site
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/webflow-tabs-hacks" %}
+Cloneable
+{% endembed %}
+
+### Additional demos
 
 {% embed url="https://sort-by-option-or-ref.webflow.io/" %}
 Demonstration
@@ -64,11 +74,7 @@ Defaults to `string` when unspecified or unrecognized.
 
 The sort field is controlled by specifying a Sort Key. This gives you complete control over the field that is being used for sorting.&#x20;
 
-Create an HTML Embed inside of your Collection List Item, with this code;
-
-```html
-<data wfu-sort-key=""></data>
-```
+Create a custom attribute on your Collection List item, and use Webflow's CMS binding feature.
 
 As the attribute value for `wfu-sort-key`, insert the field that you want to sort by, using Webflow’s ‘**+ Add Field** at the top-right of the HTML Embed Code Editor window.&#x20;
 
@@ -82,19 +88,12 @@ Remember, Sygnal Attributes will always treat your value as a **string** for sor
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this CSS script to the HEAD of your site or page.
+Add this code to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-html.min.css">
-```
-{% endcode %}
-
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-html.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.8/dist/css/webflow-html.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.8/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 

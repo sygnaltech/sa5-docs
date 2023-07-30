@@ -62,7 +62,7 @@ Apply the wfu-list-theme custom attribute to the list.
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this CSS script to the HEAD of your site or page.
+Add this code to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
@@ -70,8 +70,6 @@ Add this CSS script to the HEAD of your site or page.
 <script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.7/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
-
-Add this JS reference to the BODY of your site or page.
 
 ### STEP 2 - Apply `wfu-lists=nested` to Desired Elements <a href="#step-2---apply-wfu-listsnested-to-desired-elements" id="step-2---apply-wfu-listsnested-to-desired-elements"></a>
 

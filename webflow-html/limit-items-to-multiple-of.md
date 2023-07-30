@@ -2,13 +2,21 @@
 description: Limit a list to a multiple of X items
 ---
 
-# Limit Items to Multiple-of
+# Limit Items to Multiple-of ❺
 
-## Overview
+## Use Cases
 
-Layout your collection lists in grids and show the maximum number of items available while limiting the items to an even multiple.
+* Layout your collection lists in grids and show the maximum number of items available while limiting the items to an even multiple.
 
 ## Demonstration
+
+{% embed url="https://webflow-smart-elements.webflow.io/collection-lists" %}
+Demonstration site
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/webflow-tabs-hacks" %}
+Cloneables
+{% endembed %}
 
 {% embed url="https://codepen.io/memetican/pen/VwBEEeL/dd18f85cbd0e7cf9d0387b20b8d50899" %}
 
@@ -36,19 +44,12 @@ If you want to make certain a minimum number of items appears, you can also appl
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this CSS script to the HEAD of your site or page.
+Add this code to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-html.min.css">
-```
-{% endcode %}
-
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-html.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.8/dist/css/webflow-html.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.8/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 
