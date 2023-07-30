@@ -51,7 +51,7 @@
 
 ## 📘 WEBFLOW-UI
 
-* [5-Star Ratings Component](webflow-ui/ratings-component.md)
+* [5-Star Ratings Component ❺](webflow-ui/ratings-component.md)
 
 ## 📘 WEBFLOW-HOTKEYS <a href="#hotkeys" id="hotkeys"></a>
 
