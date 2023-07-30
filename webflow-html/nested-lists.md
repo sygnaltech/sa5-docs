@@ -21,6 +21,12 @@ With SA5, we've made some structural changes, to enforce semantically valid HTML
 See here for a demonstration of nested lists and the markup we use;
 
 {% embed url="https://webflow-smart-elements.webflow.io/rich-text" %}
+Demonstration Page
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/webflow-tabs-hacks" %}
+Cloneable
+{% endembed %}
 
 ## Usage Notes
 
