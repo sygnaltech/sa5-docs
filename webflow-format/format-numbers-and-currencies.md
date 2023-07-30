@@ -1,4 +1,8 @@
-# Format Numbers & Currencies
+---
+description: Give your number & currency display the look you want
+---
+
+# Format Numbers & Currencies ❺
 
 Webflow supports the storage of numbers, including integers and decimals, in the CMS, but has virtually no formatting options.
 
@@ -14,6 +18,12 @@ This library allows you to format those numbers in commonly recognized formats, 
 * `,` or `comma` - thousands formatting with commas
 
 And more will come as [users request](mailto:wfu@sygnal.com).
+
+## Demonstration <a href="#usage-notes" id="usage-notes"></a>
+
+{% embed url="https://webflow.com/made-in-webflow/website/format-numbers-currency" %}
+Demonstration and Cloneable
+{% endembed %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
@@ -33,19 +43,13 @@ Also, use Webflow’s designer to format the number of decimal places you want t
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this CSS script to the HEAD of your site or page.
+Add this code to the **HEAD** of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-format.min.css">
-```
-{% endcode %}
-
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-format.min.js"></script>
+<!-- Sygnal Attributes 5 | Format -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/css/webflow-format.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/nocode/webflow-format.js"></script>
 ```
 {% endcode %}
 

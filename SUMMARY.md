@@ -102,7 +102,7 @@
 
 ## 📘 WEBFLOW-FORMAT
 
-* [Format Numbers & Currencies](webflow-format/format-numbers-and-currencies.md)
+* [Format Numbers & Currencies ❺](webflow-format/format-numbers-and-currencies.md)
 
 ## 📘 WEBFLOW-ELEMENTS
 
