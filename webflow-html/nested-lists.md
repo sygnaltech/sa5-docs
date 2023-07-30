@@ -7,16 +7,13 @@ description: Add nested lists to Webflow's rich text elements
 * Easily indicate nesting depth by prefixing list items with `>`’s.
 * Supports both ordered ( OL ) and unordered ( UL ) lists.&#x20;
 * Compatible with editor mode.&#x20;
+* Additionally prefix items with `+` or `-` for special PRO and CON lists
+* Themes support - `default`, `modern`, `fun`
 
-{% hint style="info" %}
-With SA5, we've made some structural changes in "empty next" situations, to enforce semantically valid HTML5. The design of these features is being revisited;
-{% endhint %}
-
-* Jump up and down nested depths as much as you want. You can go from level 1 to level 4 to level 2, and the code will generate the missing levels properly.
-* Also supports `+` and `-` prefixing for special PRO and CON lists.&#x20;
+## Important Change Notes <a href="#demo---nested-lists" id="demo---nested-lists"></a>
 
 {% hint style="warning" %}
-On special item styling such as the **PRO** and **CON** special styling, note that if you have styled list items specially you may experience styling conflicts.
+With SA5, we've made some structural changes, to enforce semantically valid HTML5 even when list levels are skipped, e.g. level 1 to level 3. This creates strange layout complications due to the fact that there is an empty LI element to contain each nested list properly. We recommend you avoid skipping levels.&#x20;
 {% endhint %}
 
 ## Demonstration <a href="#demo---nested-lists" id="demo---nested-lists"></a>
@@ -37,11 +34,21 @@ wfu-lists=nested
 
 _Positioning is important_, make sure you’re placing this custom attribute on the correct element.
 
-## Future
+### I want this list item to be indented
 
-Themes
+Simply prefix the list items with > to indicate the depth. We recommend you do not skip levels.
 
-Pros & cons
+### I want this list item to be a PRO or CON item
+
+Prefix with a + for a PRO, or a - for a CON.&#x20;
+
+### I want a different theme for my lists.
+
+Apply the wfu-list-theme custom attribute to the list.
+
+* `default` ( applied automatically when none is specified )
+* `modern`
+* `fun`
 
 ## Getting Started ( NOCODE )
 
@@ -53,8 +60,8 @@ Add this CSS script to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.6/dist/css/webflow-html.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.6/dist/nocode/webflow-html.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.7/dist/css/webflow-html.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.7/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 
