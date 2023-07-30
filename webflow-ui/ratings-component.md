@@ -9,7 +9,7 @@ description: Add a fractional 5-star rating element to your site
 Generate CMS-compatible 5-star ratings on your site using a simple HTML embed and a dynamic custom attribute;
 
 ```html
-<div wfu="rating" wfu-rating="5.0"></div>
+<div wfu-ui="rating" wfu-rating="5.0"></div>
 ```
 
 ## Examples
@@ -19,19 +19,19 @@ See here for a [demonstration](https://wfu.sygnal.com/docs/webflow-ui/ratings/).
 View source to see the specifics on how these demos work.
 
 ```html
-<div wfu="rating" wfu-rating="5.0"></div>
+<div wfu-ui="rating" wfu-rating="5.0"></div>
 ```
 
 ```html
-<div wfu="rating" wfu-rating="1.5"></div>
+<div wfu-ui="rating" wfu-rating="1.5"></div>
 ```
 
 ```html
-<div wfu="rating" wfu-rating="3.5"></div>
+<div wfu-ui="rating" wfu-rating="3.5"></div>
 ```
 
 ```html
-<div wfu="rating" wfu-rating="3.5" style="width: 200px;"></div>
+<div wfu-ui="rating" wfu-rating="3.5" style="width: 200px;"></div>
 ```
 
 ### Coloring <a href="#coloring" id="coloring"></a>
@@ -66,23 +66,14 @@ Due to the way the shaded area works, the color and darkness is not easily speci
 
 There are currently no configuration options for the data-binding feature, so we’ll use a _no-code_ integration approach.
 
-Install CSS in HEAD, generally site-wide.
+Install code in **before HEAD**, generally site-wide.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-ui.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.11/dist/css/webflow-ui.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.11/dist/nocode/webflow-ui.js"></script>
 ```
 {% endcode %}
-
-Install JS in BODY, generally site-wide.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-ui.min.js"></script>
-```
-{% endcode %}
-
-\*Update the version numbers as needed.
 
 ### STEP 2 - Create an EMBED where you want a WFU Rating component to appear. <a href="#step-2---create-an-embed-where-you-want-a-wfu-rating-component-to-appear" id="step-2---create-an-embed-where-you-want-a-wfu-rating-component-to-appear"></a>
 
@@ -90,7 +81,7 @@ Paste this code into the EMBED;
 
 {% code overflow="wrap" %}
 ```html
-<div wfu="rating" wfu-rating="3.5">
+<div wfu-ui="rating" wfu-rating="3.5">
     RATING
 </div>
 ```
@@ -101,7 +92,7 @@ Alternatively, you can put anything into the DIV and it will be deleted when the
 We recommend placing stars there for convenience. If you are using this with Webflow, you can place an **HTML Embed** element inside of your div, with the following contents, to create visible stars.
 
 ```html
-<div wfu="rating" wfu-rating="3.5">
+<div wfu-ui="rating" wfu-rating="3.5">
     <svg viewBox="0 0 576 512" width="20%" title="star">
         <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
     </svg><svg viewBox="0 0 576 512" width="20%" title="star">
