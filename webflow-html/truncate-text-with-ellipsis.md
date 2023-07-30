@@ -51,10 +51,11 @@ Please double check your desired browsers to make sure the CSS works for your ta
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this code to the HEAD of your site or page.
+Add this code to the **before HEAD** of your site or page.
 
 {% code overflow="wrap" %}
 ```html
+<!-- Sygnal Attributes 5 | HTML -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/css/webflow-html.min.css">
 <script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/nocode/webflow-html.js"></script>
 ```

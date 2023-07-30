@@ -40,10 +40,11 @@ If ALL of the collection lists within that section are empty, the entire section
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Add this code to the **HEAD** of your site or page.
+Add this code to the **before HEAD** of your site or page.
 
 {% code overflow="wrap" %}
 ```html
+<!-- Sygnal Attributes 5 | HTML -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/css/webflow-html.min.css">
 <script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/nocode/webflow-html.js"></script>
 ```

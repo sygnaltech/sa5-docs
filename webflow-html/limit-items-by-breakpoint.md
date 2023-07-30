@@ -90,16 +90,13 @@ Place the HTML Embed inside of your site-wide nav or footer symbol if you want i
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this code to the **HEAD** of your site or page.
+Add this code to the **before HEAD** of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/css/webflow-html.css"
-  >
-<script defer
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/nocode/webflow-html.js"
-  ></script>
+<!-- Sygnal Attributes 5 | HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/css/webflow-html.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 
