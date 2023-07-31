@@ -16,6 +16,10 @@ In Webflow, a [preview link](https://university.webflow.com/lesson/share-your-pr
 
 If you develop Webflow sites, and want to make it easy for someone to click a button that switches the current page into a design mode view, this utility enables that.
 
+## Demonstration <a href="#how-to-use-it" id="how-to-use-it"></a>
+
+{% embed url="https://webflow-smart-elements.webflow.io/demo" %}
+
 ## How to Use it <a href="#how-to-use-it" id="how-to-use-it"></a>
 
 * You must have created a preview link to your site, and extract the preview link Id. It looks something like this- `4d388483d99c6cc36c58ae966e92c615`.

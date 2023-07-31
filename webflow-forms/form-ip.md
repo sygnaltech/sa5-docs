@@ -1,35 +1,63 @@
-# Form IP Info
+---
+description: >-
+  Capture the current user's IP and geo-location data as part of your form
+  submits.
+---
 
-#### DEMO - Webflow Forms w/ IP Info <a href="#demo---webflow-forms-w-ip-info" id="demo---webflow-forms-w-ip-info"></a>
+# Form IP Info ❺
 
-[View Demonstration in Webflow](https://webflow-forms-demo.webflow.io/special/ip-info)
+Captures the sender’s IP and geolocation info and appends it to the tagged form as hidden fields.
 
-Captures the sender’s IP info and appends it to the tagged form as hidden fields.
+## Demonstration <a href="#demo---webflow-forms-w-ip-info" id="demo---webflow-forms-w-ip-info"></a>
 
-Why?
+{% embed url="https://webflow-forms-demo.webflow.io/special/ip-info" %}
+Demonstration
+{% endembed %}
+
+## Use cases
 
 * Capture general geographic info, such as country and city.
-* Store IP ( where permitted, and part of your privacy policy ), as a verification of the send. Required by some services like Mailchimp, for loading external lists.
+* Store IP ( where permitted, and part of your privacy policy ), as a verification of the send. Required by some services like Mailchimp, for loading external lists.&#x20;
+
+### Handler Options&#x20;
+
+Currently the only supported handler is **GeoJS**.
+
+{% embed url="https://www.geojs.io/" %}
+
+### Sample Data
+
+This is an example of the data appended to the form.
+
+The `name` and `value` fields come through with your form content.&#x20;
+
+```html
+<input type="hidden" name="ip-ip" value="125.236.192.7">
+<input type="hidden" name="ip-continent_code" value="OC">
+<input type="hidden" name="ip-address" value="undefined">
+<input type="hidden" name="ip-country" value="New Zealand">
+<input type="hidden" name="ip-country-code" value="undefined">
+<input type="hidden" name="ip-region" value="Auckland">
+<input type="hidden" name="ip-city" value="Auckland">
+<input type="hidden" name="ip-timezone" value="Pacific/Auckland">
+<input type="hidden" name="ip-latitude" value="-36.8506">
+<input type="hidden" name="ip-longitude" value="174.7679">
+```
+
+## Future
+
+* Separate this data lib from the data-binding lib, and allow it to be used independently.&#x20;
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 ### **STEP 1 - Add the Library**
 
-Install this JS in BODY, site-wide or on the specific pages you want the script to affect.
-
-Add this CSS script to the HEAD of your site or page.
+Add this code to the **before HEAD** of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-html.min.css">
-```
-{% endcode %}
-
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-form.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.13/dist/css/webflow-form.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.13/dist/nocode/webflow-form.js"></script>
 ```
 {% endcode %}
 
