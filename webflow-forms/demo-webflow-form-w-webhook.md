@@ -4,7 +4,7 @@ description: >-
   error messages
 ---
 
-# Form Webhook Handler
+# Form Webhook Handler ❺
 
 {% hint style="success" %}
 v4.10 adds [Basin](https://usebasin.com/) support, to help alleviate SPAM and form handler issues.
@@ -19,6 +19,10 @@ Currently supports HTTP POST to webhooks only. We may add HTTP GET support if us
 Webflow has a nice form-builder capability with good styling options- however by default, the success and failure messages only work with Webflow's built-in form handler.
 
 This library allows you to integrate Webflow forms with other services, and process their responses as success / fail, including error message and results display.&#x20;
+
+Demonstration
+
+{% embed url="https://webflow-forms-demo.webflow.io/auto/zapier-webhook" %}
 
 ### Details
 
@@ -56,12 +60,13 @@ Why use a custom webhook form handler rather than Webflow's?
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Install this JS in BODY, site-wide or on the specific pages you want the script to affect.
+Install this code in **before BODY**, site-wide or on the specific pages you want the script to affect.
 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attriutes | Form Handlers --> 
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-form.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.14/dist/css/webflow-form.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.14/dist/nocode/webflow-form.js"></script>
 ```
 {% endcode %}
 

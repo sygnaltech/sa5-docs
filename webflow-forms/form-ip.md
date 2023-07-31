@@ -29,12 +29,12 @@ Currently the only supported handler is **GeoJS**.
 
 This is an example of the data appended to the form.
 
-The `name` and `value` fields come through with your form content.&#x20;
+The `name` and `value` fields come through with your form content. \
+Only non-blank results will be sent.&#x20;
 
 ```html
 <input type="hidden" name="ip-ip" value="125.236.192.7">
 <input type="hidden" name="ip-continent_code" value="OC">
-<input type="hidden" name="ip-address" value="undefined">
 <input type="hidden" name="ip-country" value="New Zealand">
 <input type="hidden" name="ip-country-code" value="undefined">
 <input type="hidden" name="ip-region" value="Auckland">
