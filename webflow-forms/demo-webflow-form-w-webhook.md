@@ -16,15 +16,15 @@ Currently supports HTTP POST to webhooks only. We may add HTTP GET support if us
 
 ## Overview
 
-Webflow has a nice form-builder capability with good styling options- however by default, the success and failure messages only work with Webflow's built-in form handler.
+Webflow has a nice form-builder capability with good styling options- however by default, the success and failure messages _only_ work with Webflow's built-in form handler.
 
-This library allows you to integrate Webflow forms with other services, and process their responses as success / fail, including error message and results display.&#x20;
+**SA5 Forms** allows you to integrate Webflow forms with other services, and process their responses as success / fail, including error message and results display.&#x20;
 
-Demonstration
+## Demonstration
 
 {% embed url="https://webflow-forms-demo.webflow.io/auto/zapier-webhook" %}
 
-### Details
+## Details
 
 Webflow forms can be redirected to a webhook for external processing, by specifying the `action` in Webflow’s designer. This gives you a lot of capability, including business logic and immediate processing of your form data, however Webflow does not have any in-built way to handle the webhook’s response.
 
@@ -64,7 +64,7 @@ Install this code in **before BODY**, site-wide or on the specific pages you wan
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attriutes | Form Handlers --> 
+<!-- Sygnal Attributes 5 | Form Handlers --> 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.14/dist/css/webflow-form.css">
 <script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.14/dist/nocode/webflow-form.js"></script>
 ```
