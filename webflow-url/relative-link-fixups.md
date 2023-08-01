@@ -57,23 +57,31 @@ Cloneable site
 
 ## Usage Notes  <a href="#usage-notes" id="usage-notes"></a>
 
+### In Webflow Link Elements
+
+We identify and support these formats;
+
+* Any link beginning with a `.`, meaning current page
+* Any link beginning with a querystring demarcation `?`. &#x20;
+
+### In CMS Link Fields
+
 **Webflow’s CMS feature has a significant limitation in that the CMS knows nothing about its containing site.**
 
 As a result of this design gap, it’s currently not possible to link from a CMS collection item to a known page in your site, in the same way you can link within the designer.
 
-We support these formats;
-
-* Any link beginning with a `.`, meaning current page
-* Any link beginning with a querystring demarcator `?`. &#x20;
-
-CMS’s have a Link field type, however a second limitation prevents the use of relative paths, which means you cannot even link to e.g. /about/.
+CMS’s have a Link field type, however a second limitation prevents the use of relative paths, which means you cannot even link to e.g. `/about/`.
 
 How to use;
 
-* In any CMS where you want a relative link to a site page, simply place that link in a CMS link field, with `https://self/` as the protocol and hostname.
+* In any CMS where you want a relative link to a site page, simply place that link in a CMS link field, with `http://self/` or `https://self/` as the protocol and hostname.
   * e.g. to link to `/about`, you’d write it as `https://self/about`.
 
 The link fixup library will find and correct this link to a proper relative link of `/about`.
+
+{% hint style="success" %}
+As of SA5 v5.2.15 support has been added for CMS-based relative links that include querystrings or hashtags.&#x20;
+{% endhint %}
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
@@ -86,7 +94,7 @@ Install JS in **HEAD**, generally site-wide.
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Urls -->
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@v5.2.5/dist/nocode/webflow-url.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@v5.2.15/dist/nocode/webflow-url.js"></script>
 ```
 {% endcode %}
 
