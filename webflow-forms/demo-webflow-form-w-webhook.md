@@ -65,8 +65,8 @@ Install this code in **before BODY**, site-wide or on the specific pages you wan
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Form Handlers --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.14/dist/css/webflow-form.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.14/dist/nocode/webflow-form.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.16/dist/css/webflow-form.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.16/dist/nocode/webflow-form.js"></script>
 ```
 {% endcode %}
 
