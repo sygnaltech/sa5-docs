@@ -4,41 +4,82 @@ description: Display your nested Collection List Lightboxes in separate groups
 
 # CMS & Lightbox + Groups ❺
 
-## Overivew <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
+## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
-This feature allows you to display a caption inside of Webflow’s lightboxes, which is automatically pulled from the CMS.
+Webflow's [lightbox element](https://university.webflow.com/lesson/lightbox) is CMS compatible, however it has some limitations.
 
-{% hint style="info" %}
-Works with CMS-stored images, thumbnails, and captions. Does not support captioning video, due some complexities matching captions to the currently displayed video.
-{% endhint %}
+One limitation is that it [does not provide](https://discourse.webflow.com/t/full-cms-lightbox/33669) the ability to bind the lightbox group. This means that if you are using the CMS multi-image field, and you are using a nested collection list to display them, you cannot lightbox-group these images together.  &#x20;
+
+Common examples of where designers need this;
+
+* Product catalogs where you have multiple product shots
+* Real estate sites
+* Event sites&#x20;
+
+SA5 offers a no-code attributes-based solution to add this capability.&#x20;
+
+![](<../.gitbook/assets/image (4).png>)
 
 ## Demonstration
 
-{% embed url="https://webflow.com/made-in-webflow/website/cms-lightbox-captions" %}
-Cloneable demo site.
+{% embed url="https://cms-lightbox-groups.webflow.io/" %}
+Demonstration
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/cms-lightbox-groups" %}
+Cloneable
 {% endembed %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
-### Prepare your CMS <a href="#prepare-your-cms" id="prepare-your-cms"></a>
+{% hint style="info" %}
+SA5 will assigns lightbox groups _regionally_ in your element hierarchy.&#x20;
 
-* Include a photo in your collection items
-* Include a plain text, single-line caption
+Place the attribute on any element, and all of the lightboxes that are descendants of that element will be assigned the same lightbox group.&#x20;
+{% endhint %}
 
-### Prepare your Collection List <a href="#prepare-your-collection-list" id="prepare-your-collection-list"></a>
+### Enable the _Link with other lightboxes_ feature
 
-* Setup your Collection List
-* Add your Lightbox Element
-* Data bind it, as usual, to the thumb and main images you want
-  * Also set Alt Text to the plain text caption you want
+This may not be necessary for the library to work, but it's best to enable the **Link with other lightboxes** feature on each of your lightboxes. Leave the **Group name** blank.&#x20;
 
-### `wfu-lightbox-captions` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
+![](<../.gitbook/assets/image (5).png>)
 
-Add the `wfu-lightbox-captions` custom attribute (no value needed) to the Lightbox Link, which is the _outermost_ lightbox element.
+### Add the `wfu-lightbox-group` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
-_That's it!_&#x20;
+Add the `wfu-lightbox-group` custom attribute with the group name you want to any parent element of the lightbox, and all subordinate lightboxes ( descendants of that element ) will be assigned that same lightbox group.&#x20;
 
-The CMS field you've bound to Alt Text will be displayed as the caption in lightbox view.
+> What value should I assign to the attributes?
+
+You can assign any unique value you choose for your group.&#x20;
+
+To create separate groups for each of your parent list items, use Webflow's [CMS-bound custom-attribute feature](https://university.webflow.com/lesson/custom-attributes#how-to-use-cms-data-in-custom-attributes) and set it to the parent item's `slug`. This ensures that each group has a unique name.&#x20;
+
+{% hint style="info" %}
+If you have other lightboxes on your page outside of the collection lists, make certain their group names (if any) do not conflict with your CMS item slugs. An easy way to do this is to prefix them with a hyphen or underscore.&#x20;
+{% endhint %}
+
+> Where should I place the attribute?
+
+For this nested list scenario, there are two common strategies.&#x20;
+
+Collection lists individually have a 3-level hierarchy of Collection List Wrapper, Collection List, and Collection Item, which we'll refer to here as _wrapper_, _list_, and _item_. &#x20;
+
+In a nested list arrangement, they'll appear like this;&#x20;
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Example of a nested list, in which the parent contains a lightbox image, and the child Multi-image</p></figcaption></figure>
+
+In this example, the parent collection list has a main image which is light-boxed, and it has a nested collection list - bound to a multi-image field - whose images are also light-boxed. &#x20;
+
+Here you typically choose one of two configuration options;
+
+1. If you want all of the images _including the main image_ to be grouped together in the same lightbox, then place the attribute on the parent's _item_ element.
+2. If you want the child thumbnails to appear in the same lightbox, but exclude the parent's image, then place the attribute on the child's _wrapper_ element.
+
+Remember to bind your custom attribute value to the parent item's slug, so that they all get the same unique group name.&#x20;
+
+{% hint style="danger" %}
+Avoid placing the attribute on two elements that have a parent-child relationship to one another, as this will create an undefined situation as to which group will be applied.&#x20;
+{% endhint %}
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
