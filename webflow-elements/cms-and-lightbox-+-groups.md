@@ -99,7 +99,9 @@ Add this code to the HEAD of your site or page.
 
 See above for details.
 
+## Credits
 
+Full credit to [Travis Orams](https://discourse.webflow.com/u/oramsdesign) for [detailing](https://discourse.webflow.com/t/full-cms-lightbox/33669) the original solution approach. SA5 uses a similar group-setting approach, without the need to replace the lightbox element manually.&#x20;
 
 
 
