@@ -99,6 +99,7 @@
 ## 📘 WEBFLOW-ELEMENTS
 
 * [CMS & Lightbox + Captions ❺](webflow-elements/cms-+-lightbox-and-captions.md)
+* [CMS & Lightbox + Groups ❺](webflow-elements/cms-and-lightbox-+-groups.md)
 * [Tabs Element ❺](webflow-elements/tabs-element.md)
 
 ## 📘 webflow-track
