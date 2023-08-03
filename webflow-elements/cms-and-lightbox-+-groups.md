@@ -4,11 +4,11 @@ description: Display your nested Collection List Lightboxes in separate groups
 
 # CMS & Lightbox + Groups ❺
 
-## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
-
 Webflow's [lightbox element](https://university.webflow.com/lesson/lightbox) is CMS compatible, however it has some limitations.
 
 One limitation is that it [does not provide](https://discourse.webflow.com/t/full-cms-lightbox/33669) the ability to bind the lightbox group. This means that if you are using the CMS multi-image field, and you are using a nested collection list to display them, you cannot lightbox-group these images together.  &#x20;
+
+## Use Cases
 
 Common examples of where designers need this;
 
@@ -17,8 +17,6 @@ Common examples of where designers need this;
 * Event sites&#x20;
 
 SA5 offers a no-code attributes-based solution to add this capability.&#x20;
-
-![](<../.gitbook/assets/image (4).png>)
 
 ## Demonstration
 
