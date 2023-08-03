@@ -91,6 +91,7 @@ Add this code to the HEAD of your site or page.
 
 {% code overflow="wrap" %}
 ```html
+<!-- Sygnal Attributes 5 | Elements -->  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.17/dist/css/webflow-elements.css">
 <script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.17/dist/nocode/webflow-elements.js"></script>
 ```
