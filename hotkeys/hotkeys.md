@@ -15,11 +15,11 @@ Supercharge your site by providing quick capabilities through hotkeys.
 
 ## Use Cases
 
-Here are a few examples;
+Here are a few examples;&#x20;
 
-* F1 - show your own help menus
-* ESC - filter reset
-* CTRL+P - user account custom preferences&#x20;
+* `F1` - show your own help menus
+* `ESC` - filter reset
+* `CTRL+P` - user account custom preferences&#x20;
 
 Best practices;
 
@@ -38,8 +38,8 @@ window.sa5 = window.sa5 || [];
 window.sa5.push(['hotkeys', (hotkeyHandler) => {
   hotkeyHandler.register("f2", () => {
     console.log("f2 pressed");
-  }]);
-}
+  });
+}]);
 </script>
 ```
 
@@ -49,9 +49,9 @@ The hotkeys you want are described in the first parameter of the register functi
 
 Here are some examples;
 
-* ctrl+alt+q - modifier keys
-* ctrl+a,ctrl+b,r,f - multiple hotkeys on the same handler
-* ⌘+s,ctrl+s - Apple and Windows
+* `ctrl+alt+q` - modifier keys
+* `ctrl+a,ctrl+b,r,f` - multiple hotkeys on the same handler
+* `⌘+s,ctrl+s` - Apple and Windows
 
 This setup is also designed so that you can have register hotkeys in multiple separate code blocks on the same page. Why would want to do that?&#x20;
 
@@ -90,7 +90,7 @@ Add this to the **before HEAD** custom code area of your site or page.
 ```html
 <!-- Sygnal Attributes 5 | Hotkeys -->
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.1/dist/nocode/webflow-hotkeys.min.js"
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/nocode/webflow-hotkeys.min.js"
 ></script> 
 ```
 {% endcode %}

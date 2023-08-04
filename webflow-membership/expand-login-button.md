@@ -2,7 +2,7 @@
 description: Expand Webflow's login/logout button to a surrounding container
 ---
 
-# Expand Login Button
+# Expand Login Button ❺
 
 ## Overview <a href="#expand-the-login-button-with-a-container" id="expand-the-login-button-with-a-container"></a>
 
@@ -38,19 +38,14 @@ This is important, it’s the inner element that the expanded button will perfor
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this CSS script to the HEAD of your site or page.
+Add this code to the **site-wide** **before-HEAD** area of your site.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-membership.min.css">
-```
-{% endcode %}
-
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-membership.min.js"></script>
+<!-- Sygnal Attributes 5 | Memberships --> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/css/webflow-membership.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/nocode/webflow-membership.min.js"></script>
+<script>
 ```
 {% endcode %}
 

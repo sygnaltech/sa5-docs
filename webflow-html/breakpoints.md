@@ -35,11 +35,11 @@ Here's what that would look like;
 
 ```html
 <script>
-window.sa5 = window.sa5 || {};
-window.sa5.breakpointChanged = 
+window.sa5 = window.sa5 || [];
+window.sa5.push(['breakpointChanged', 
   (name, breakpoint) => {
-   console.log("BREAKPOINT", name); 
-  };
+    console.log("BREAKPOINT", name); 
+  }]);
 </script>
 ```
 
@@ -75,7 +75,7 @@ Add this to the **before HEAD** custom code area of your site or page.
 ```html
 <!-- Sygnal Attributes 5 | HTML -->
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.1/dist/nocode/webflow-html.min.js"
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/nocode/webflow-html.min.js"
 ></script> 
 ```
 {% endcode %}

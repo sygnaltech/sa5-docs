@@ -2,7 +2,7 @@
 description: Hide or show any element in Webflow, based on login state
 ---
 
-# Conditional Element Display
+# Conditional Element Display ❺
 
 {% hint style="info" %}
 In Dec 2022, Webflow has added an initial version of login-state element gating, however there are some incompatibility issues with components, and certain utility pages. This solution will remain available while those issues are being worked out.
@@ -55,19 +55,14 @@ Add the `wfu-hide-logged-in` custom attribute (no value needed) when you want an
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this CSS script to the HEAD of your site or page.
+Add this code to the **before-HEAD** area of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-membership.min.css">
-```
-{% endcode %}
-
-Add this JS reference to the BODY of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-membership.min.js"></script>
+<!-- Sygnal Attributes 5 | Memberships --> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/css/webflow-membership.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/nocode/webflow-membership.min.js"></script>
+<script>
 ```
 {% endcode %}
 

@@ -48,6 +48,8 @@
 * [Truncate Text w/ Ellipsis ❺](webflow-html/truncate-text-with-ellipsis.md)
 * [Hide Section w/ Empty Collection Lists ❺](webflow-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML ❺](webflow-html/decode-html.md)
+* [Content Embeds ❺🧪](webflow-html/content-embeds.md)
+* [Markdown ❺🧪](webflow-html/markdown.md)
 
 ## 📘 WEBFLOW-UI
 
@@ -81,10 +83,10 @@
 
 ## 📘 WEBFLOW-MEMBERSHIP
 
-* [Conditional Element Display](webflow-membership/conditional-element-display.md)
-* [Expand Login Button](webflow-membership/expand-login-button.md)
+* [Conditional Element Display ❺](webflow-membership/conditional-element-display.md)
+* [Expand Login Button ❺](webflow-membership/expand-login-button.md)
 * [Advanced Log-In & Sign-Up Flow](webflow-membership/advanced-log-in-and-sign-up-flow.md)
-* [Get Logged-In User Info](webflow-membership/get-logged-in-user-info/README.md)
+* [Get Logged-In User Info ❺](webflow-membership/get-logged-in-user-info/README.md)
   * [Current User Info \[ BETA testing \]](webflow-membership/get-logged-in-user-info/current-user-info-beta-testing.md)
   * [Custom User Fields](webflow-membership/get-logged-in-user-info/custom-user-fields.md)
   * [CUI FAQs](webflow-membership/get-logged-in-user-info/cui-faqs.md)

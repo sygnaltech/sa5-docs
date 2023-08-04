@@ -1,8 +1,8 @@
 ---
-description: In Webflow Memberships, get details of the currently logged-in user
+description: Get the details of the currently logged-in user In Webflow Memberships
 ---
 
-# Get Logged-In User Info
+# Get Logged-In User Info ❺
 
 {% hint style="info" %}
 Questions? Comments? Suggestions? Join the new [Sygnal Attributes group](https://www.facebook.com/groups/sygnal) on Facebook.
@@ -12,10 +12,12 @@ Questions? Comments? Suggestions? Join the new [Sygnal Attributes group](https:/
 This is phase three of a developing feature. Currently it provides access to the logged-in User's **name**, **email address, custom user fields** and a user-unique **alternate ID**.
 {% endhint %}
 
-{% hint style="warning" %}
-**BETA PHASE 3  |  Help us with testing!** \
-Learn how you can support the [BETA testing effort](current-user-info-beta-testing.md) here.&#x20;
-{% endhint %}
+## What's New in v5?
+
+* All internal upgraded to TypeScript, and integrated into our SA5 libraries
+* Added support for accessing user info from the User Account page itself
+* Added dynamic updates. Save updated User Account info and the User Info object is rebuilt &#x20;
+* Simpler setup and configuration. Data-binding is enabled by default. &#x20;
 
 ## Overview
 
@@ -48,7 +50,7 @@ Limitations;&#x20;
 
 ## Demonstration
 
-Here's a new cloneable, specific for v4.7-
+Here's a new cloneable, specific for SA5-
 
 {% embed url="https://webflow.com/made-in-webflow/website/current-user-info" %}
 
@@ -90,11 +92,14 @@ The `$user` convention is used _only_ in the `wfu-bind` custom attribute. If you
 If you want to access the user object in code, you can do this most easily in the callback function, where the user object is already passed. Here you know the user object has been initialized and contains data, so it's the best place to access it.
 
 {% code overflow="wrap" %}
-```javascript
-async function myCallback(user) {
-  alert(user.email); // Show the current user's email
-  alert(user.data["city"]); // Show the current user's custom city field
-} 
+```html
+<script>
+window.sa5 = window.sa5 || [];
+window.sa5.push(['userInfoChanged', 
+  (user) => {
+    console.log("USER INFO CHANGED", user); 
+  }]); 
+</script> 
 ```
 {% endcode %}
 
@@ -129,37 +134,27 @@ _Questions?_ Let us know - **attr@sygnal.com**.&#x20;
 
 ### STEP 1 - Add the Configuration Code <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Add this script to the custom code BODY of your site.
+Add this script to the **site wide** custom code **before HEAD** area of your site.
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attr | User Info -->
-<script type="module">
-import { WfuUserInfo, WfuUser } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.7/src/modules/webflow-membership.js'; 
-import { WfuDataBinder } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.7/src/modules/webflow-databind.min.js'; 
-
-$(function() {
-  var membership = new WfuUserInfo({
-    userInfoUpdatedCallback: myCallback
-  }).init(); 
-});  
-
-async function myCallback(user) {
-  // Automatic data-binding using attributes
-  var dataBinder = new WfuDataBinder({
-    user: user
-  }).bind(); 
-} 
-</script>
+<!-- Sygnal Attributes 5 | Memberships --> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/css/webflow-membership.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/nocode/webflow-membership.min.js"></script>
+<script>
+window.sa5 = window.sa5 || [];
+window.sa5.push(['userInfoChanged', 
+  (user) => {
+    console.log("USER INFO CHANGED", user); 
+  }]); 
+</script> 
 ```
 {% endcode %}
 
-Note the 3 parts here;
+Note the 2 parts here;
 
-1. The library imports
-2. The library setup and configuration, which happens on DOM ready&#x20;
-   * Which includes your callback function name
-3. Your callback function, which data binds that user info
+1. The CSS and JS library imports
+2. Your optional callback function, can do special handling&#x20;
 
 ### STEP 2 - Use the `data-bind` attribute to automatically load data into DOM elements&#x20;
 
