@@ -6,11 +6,12 @@ description: Sort Webflow's collection list items any way you like
 
 ## Overview
 
-Webflow's collection lists have a few limitations on the native sort functionality;&#x20;
+Webflow's collection lists offer a native sort functionality, however it has a number of limitations;&#x20;
 
 * The inability to sort on **Ref** fields
 * The inability to sort on **Option** fields
 * The inability to sort nested collection list items
+* The inability to sort content in fields within an item
 * Random sorting works well, but only changes the order every 12 hours&#x20;
 
 This attribute allows to do all of these;
@@ -45,9 +46,15 @@ Tutorial
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
+Sorting is configured on two sets of elements- the **parent** element, which contains the list of things you are sorting, and the **item** elements, which are the elements being sorted.&#x20;
+
+In the case of a Collection List, the parent is the Collection List element ( not the Collection List Wrapper ), and the item is the Collection List Item element. These are the bottom two purple elements you see in a collection list element hierarchy.
+
+If you are not sorting a collection list, any parent-item set can be configured for sorting. &#x20;
+
 ### `wfu-sort` attribute <a href="#wfu-sort-attribute" id="wfu-sort-attribute"></a>
 
-Place on any Collection List directly ( not the Collection List Wrapper ). No value is needed.
+Place this attribute on the **parent** element, to indicate it will be sorted. No value is needed.&#x20;
 
 ### `wfu-sort-dir` attribute <a href="#wfu-sort-dir-attribute" id="wfu-sort-dir-attribute"></a>
 
@@ -57,9 +64,11 @@ Sort direction defaults to ascending. If you want to specify the direction, add 
 * `desc` for descending
 * `random` for random ( on every page refresh )
 
+Place this attribute on the **parent** element.
+
 ### `wfu-sort-type` attribute <a href="#wfu-sort-type-attribute" id="wfu-sort-type-attribute"></a>
 
-The field type always defaults to sorting as a string. If you want to specify the data type of the field being sorted, add this attribute with a value of;
+Sort type always defaults to string-based sorting ( an alphanumeric sort ). If you want to specify the data type of the field being sorted, add this attribute with a value of;
 
 * `string` to sort as strings
 * `number` to parse sort as numbers
@@ -68,18 +77,24 @@ The field type always defaults to sorting as a string. If you want to specify th
 
 Defaults to `string` when unspecified or unrecognized.
 
-\*\* Note that semver sorting is a numeric-only implementation of the sort rules. It is not designed to handle alphanumerics in pre-release identifiers.
-
-### Creating your Sort Key <a href="#creating-your-sort-key" id="creating-your-sort-key"></a>
-
-The sort field is controlled by specifying a Sort Key. This gives you complete control over the field that is being used for sorting.&#x20;
-
-Create a custom attribute on your Collection List item, and use Webflow's CMS binding feature.
-
-As the attribute value for `wfu-sort-key`, insert the field that you want to sort by, using Webflow’s ‘**+ Add Field** at the top-right of the HTML Embed Code Editor window.&#x20;
+Place this attribute on the **parent** element.
 
 {% hint style="info" %}
-Remember, Sygnal Attributes will always treat your value as a **string** for sort purposes, unless you  specify otherwise. If you want sorting to occur as a number, date, or semver, make sure to specify that attribute.
+Note that this library does not currently have any localization configurations, so sorting in non-English locales may not work as expected.&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+`semver` sorting is a simplified numeric-only implementation of the sort rules. It is not designed to handle alphanumerics, such as pre-release identifiers.
+{% endhint %}
+
+### `wfu-sort-key` attribute <a href="#creating-your-sort-key" id="creating-your-sort-key"></a>
+
+The value to sort by is known as the **sort key**, and is specified as the value of the `wfu-sort-key` attribute. This gives you complete control over the field that is being used for sorting, and you can use dynamic or static content.&#x20;
+
+Place this attribute on the **item** element.
+
+{% hint style="success" %}
+The most common way to set the value of this field is to pull the content directly from your associated CMS item. To do that, use Webflow's custom attribute CMS binding feature to insert whatever field you want to use as the sort key for that item.&#x20;
 {% endhint %}
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
@@ -106,7 +121,7 @@ See above for details.
 
 See above for details.
 
-### STEP 4 - Define your sort key
+### STEP 4 - Use the `wfu-sort-key` to define your item sort key
 
 See above for details.
 
