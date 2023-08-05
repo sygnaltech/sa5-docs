@@ -2,7 +2,7 @@
 description: Simple payment-link tools
 ---
 
-# Payment Providers
+# Payment Providers ❺
 
 {% hint style="info" %}
 The tools here are not related to Webflow's native ECommerce platform. They are simple payment link tools to provide crude payment capability through services like Paypal and Windcave.&#x20;
@@ -24,6 +24,8 @@ Windcave example
 {% endembed %}
 
 ### Windcave Example <a href="#step-1---write-your-code" id="step-1---write-your-code"></a>
+
+Place in the **before BODY** custom code area.
 
 {% code overflow="wrap" %}
 ```html

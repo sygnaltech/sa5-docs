@@ -4,7 +4,7 @@ description: >-
   (UX)
 ---
 
-# Webflow Cookies & Storage tracking
+# Webflow Cookies & Storage Tracking ❺
 
 ## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
@@ -18,8 +18,12 @@ This library makes it easier by;
 
 ## Demonstration <a href="#usage-notes" id="usage-notes"></a>
 
+{% embed url="https://webflow.com/made-in-webflow/website/user-tracking" %}
+Cloneable
+{% endembed %}
+
 {% embed url="https://user-tracking.webflow.io/" %}
-Webflow Cloneable
+Demo
 {% endembed %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
@@ -74,66 +78,27 @@ This library has configuration options, so we've taken a LOCODE approach to its 
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-Add this CSS script to the HEAD of your site or page.
+Add this CSS script to site-wide **before HEAD**.
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-track.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.21/dist/css/webflow-track.css">
 ```
 {% endcode %}
 
-Add this JS reference to the BODY of your site or page.\
+Add this JS reference to the site-wide **before BODY**.\
 This is the base configuration.
 
 {% code overflow="wrap" %}
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/modules/webflow-track.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.21/dist/webflow-track.js"></script>
 
-<script type="module">
-
-import { WfuTracker } from 
-  'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/modules/webflow-track.min.js';
-
-// On page load 
-$(function() {
-    
+<script>
   // Create the tracker type you want
   // 'cookies' is default. 'localStorage' and 'sessionStorage' are options 
-  window.tracker = new WfuTracker({
-    "method": "cookies", 
+  window.tracker = new window.sa5.Sa5Tracker({
+    "method": "cookies",
   });
-  
-  // Update the UI to reflect current tracking state
-  // especially controls, and conditional visibility 
-  updateTracked();
-  
-});
-
-// Refresh UI to show what is being tracked
-// with the current tracker type 
-function updateTracked() {
-
-  // Show anything marked to show on tracked state
-  $("[wfu-show-tracked]").each(function () {
-    if(window.tracker.isTracked($(this).attr("wfu-show-tracked")))
-      $(this).show();
-    else
-      $(this).hide();
-  });
-  
-  // Hide anything marked to hide on tracked state
-  $("[wfu-hide-tracked]").each(function () {
-    if(!window.tracker.isTracked($(this).attr("wfu-hide-tracked")))
-      $(this).show();
-    else
-      $(this).hide();
-  });
-    
-  // PLACE ADDITIONAL CODE HERE
-  // When directed to in the feature-specific instructions
-    
-}
-
 </script>
 ```
 {% endcode %}

@@ -25,7 +25,7 @@ Place this in the /BODY custom code area of the page you're expecting the querys
       const urlParams = new URLSearchParams(location.search);
     
       if(urlParams.has('referrer')) {
-        tracker.track("referrer", urlParams.get("referrer")); 
+        window.tracker.track("referrer", urlParams.get("referrer")); 
       }
     
     }
