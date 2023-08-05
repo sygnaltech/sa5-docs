@@ -81,7 +81,7 @@
 
 ## 📘 WEBFLOW-COMMERCE
 
-* [Payment Providers](webflow-commerce/payment-providers.md)
+* [Payment Providers ❺](webflow-commerce/payment-providers.md)
 
 ## 📘 WEBFLOW-MEMBERSHIP
 
