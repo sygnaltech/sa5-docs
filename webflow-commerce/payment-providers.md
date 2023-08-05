@@ -1,43 +1,72 @@
+---
+description: Simple payment-link tools
+---
+
 # Payment Providers
 
-Webflow has an in-build e-commerce solution, however it adds a substantial monthly cost and lacks some capabilities. Sometimes you just need something simple, and crude, and cheap.
-
-Fortunately, there are some payment providers who can be easily integrated using a simple payment URL format.
-
-This library allows you to easily construct those URLs.
+{% hint style="info" %}
+The tools here are not related to Webflow's native ECommerce platform. They are simple payment link tools to provide crude payment capability through services like Paypal and Windcave.&#x20;
+{% endhint %}
 
 Currently we support two providers-
 
 * Windcave
 * Paypal
 
-Important- this is not a no-code solution. It simply encapsulates the URL construction.
+## Usage Notes | Windcave
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+{% embed url="https://www.windcave.com/developer-ecommerce-payform" %}
 
-### STEP 1 - Write your Code <a href="#step-1---write-your-code" id="step-1---write-your-code"></a>
+### Demonstration
 
-e.g.;
+{% embed url="https://codepen.io/memetican/pen/oNQVEOK/22f9b91499d51f57f2ed1be29c29d9a6" %}
+Windcave example
+{% endembed %}
+
+### Windcave Example <a href="#step-1---write-your-code" id="step-1---write-your-code"></a>
 
 {% code overflow="wrap" %}
 ```html
-<script type="module">
-import { WindcavePayment, PaypalPayment } from "https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/modules/webflow-commerce.min.js";
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.20/dist/webflow-commerce.js"></script>
 
-$(function() {
-  
-    var payPaypal = new PaypalPayment();
-    payPaypal.business = "pay@sygnal.com"; // your Paypal email
-    payPaypal.amount = totalWithFees; // the numeric total amount
-    payPaypal.currency_code = "NZD"; // currency you want
-    payPaypal.item_name = orderDescription; // what was ordered
-    
-    // Set this URL on your payment link 
-    $("#btn-pay-paypal").attr("href", payPaypal.generateUrl());
+<script>
+    var payment = new window.sa5.WindcavePayment();
 
-});
+    // Configure the payment link
+    payment.userid = 'user id';
+    payment.amount = '10.00';
+    payment.currencyname = 'USD';
+    payment.txndata1 = '';
+    payment.txndata2 = '';
+    payment.txndata3 = '';
+    payment.email = 'email@foo.bar';
+
+    // Do something with the payment link
+    console.log(payment.generateUrl());
 </script>
 ```
 {% endcode %}
 
-\
+## Usage Notes | PayPal
+
+### PayPal Example
+
+{% code overflow="wrap" %}
+```html
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.20/dist/webflow-commerce.js"></script>
+
+<script>
+    var payment = new window.sa5.PaypalPayment();
+
+    // Configure the payment link
+    payment.business = 'user id';
+    payment.amount = '10.00';
+    payment.currencyname = 'USD';
+    payment.item_name = 'widget';
+
+    // Do something with the payment link
+    console.log(payment.generateUrl());
+</script>
+
+```
+{% endcode %}
