@@ -2,7 +2,7 @@
 description: Redirect users anywhere you want, after login
 ---
 
-# Advanced Log-In & Sign-Up Flow
+# Advanced Log-In & Sign-Up Flow ❺
 
 {% hint style="warning" %}
 **BETA** - While Memberships is in BETA, this library will track that BETA status.
@@ -55,27 +55,30 @@ There are currently two configuration options;
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Add this script to your _site-wide_ HEAD custom code.
+Add this script to your _site-wide_ **before HEAD** custom code.
 
 {% code overflow="wrap" %}
 ```html
-<!-- Membership routing -->
-<script type="module">
-import { WfuMembershipRouting } from 'https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/modules/webflow-membership-routing.min.js';
-new WfuMembershipRouting({
-    routeAfterLogin: "/u/home",
-    routeAfterFirstLogin: "/u/new"
-}).routeUser();
+<!-- Sygnal Attributes 5 | Memberships -->
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.19/dist/nocode/webflow-membership.min.js"></script>
+
+<script>
+window.sa5 = window.sa5 || [];
+window.sa5.push(['getMembershipRoutingConfig', 
+  (config) => {
+    config.routeAfterFirstLogin = '/u/new';
+    config.routeAfterLogin = '/u/home';
+    return config;
+  }]); 
 </script>
 ```
 {% endcode %}
 
-Configure the routing options to paths you prefer. These can be secured pages (which require login), or un-secured.
+Configure the routing options to paths you prefer. In the example above, we've used `/u/new` and `/u/home`. Replace these with the URLs you want. If you do not want a special first-login route, you can remove that line.&#x20;
 
-Note that if you use a secured page, you will want to make certain that all of the users you redirect there have the appropriate access group.
+{% hint style="info" %}
+These paths can be to secured pages (which require login), or un-secured. If they are to secured pages, make certain they are accessible to all users who login- this means auto-assigning an access group to newly registered users.  &#x20;
+{% endhint %}
 
 _See notes above._
 
-## Additional Resources
-
-{% embed url="https://wfu.sygnal.com/docs/webflow-membership/advanced-login-flow/" %}

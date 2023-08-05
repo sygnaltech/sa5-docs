@@ -2,23 +2,23 @@
 description: Help us BETA test!
 ---
 
-# Current User Info \[ BETA testing ]
+# BETA testing
 
 {% hint style="info" %}
-**2023-Feb-10**
+**2023-Aug-05**
 
-Are you using CUI? Help us improve the framework by sharing your use cases, feature requests, or any questions or problems you encounter.
+Are you using SA5's User Info module? Help us improve the framework by sharing your use cases, feature requests, or any questions or problems you encounter.
 
 \-> [Join the Discourse group now](https://sygnal-attr.discourse.group/).
 {% endhint %}
 
 ## Testing Assistance Needed
 
-Our team is busy building. If you're using CUI, please share any issues you encounter, or any testing you're able to complete.
+Our team is busy building. If you're using this module, please share any issues you encounter, or any testing you're able to complete.
 
 ### Browser testing
 
-CUI BETA PHASE 3 has been determined stable with no identified bugs on Chrome, but has not been tested on other mainstream browsers, in particular;
+The SA5 BETA has been determined stable with no identified bugs on Chrome, but has not been tested on other mainstream browsers, in particular;
 
 * Safari
 * Edge
@@ -26,7 +26,7 @@ CUI BETA PHASE 3 has been determined stable with no identified bugs on Chrome, b
 
 ### Test with 1st Login on Admin-initiated User Invites
 
-BETA PHASE 3 includes some new capabilities to reliably construct the User Info object during Webflow's sign-up onboarding process during the _auto-login_ that Webflow performs when the email verification link is clicked.&#x20;
+SA5 BETA includes some new capabilities to reliably construct the User Info object during Webflow's sign-up onboarding process during the _auto-login_ that Webflow performs when the email verification link is clicked.&#x20;
 
 _This has been tested well with new member self-sign-ups._&#x20;
 

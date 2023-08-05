@@ -11,9 +11,9 @@ Webflow Memberships allows for [custom fields](https://university.webflow.com/le
 * Through the Designer user manager
 * Through the Webflow API
 * During Sign Up, if you add those fields to the UI
-* On the User Account screen, if you add those fields to the UI
+* On the User Account `/user-account` screen, if you add those fields to the UI
 
-We provide access to these fields both through Sygnal Attributes data-binding and directly through JavaScript. All fields are part of the `WfuUser` object, as a map under the `data` element.
+We provide access to these fields both through Sygnal Attributes data-binding and directly through JavaScript. All fields are part of the `Sa5User` object, as a map under the `data` element.
 
 ## Important Setup Notes
 

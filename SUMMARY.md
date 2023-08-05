@@ -12,6 +12,8 @@
 * [Library Modules](overview/whats-new-1.md)
 * [Technical Notes & Goals](overview/technical-notes-and-goals/README.md)
   * [CSS Media Queries](overview/technical-notes-and-goals/css-media-queries.md)
+  * [Callback Handlers](overview/technical-notes-and-goals/callback-handlers.md)
+  * [Custom Attributes](overview/technical-notes-and-goals/custom-attributes.md)
 
 ## 📘 Webflow-Data
 
@@ -85,15 +87,15 @@
 
 * [Conditional Element Display ❺](webflow-membership/conditional-element-display.md)
 * [Expand Login Button ❺](webflow-membership/expand-login-button.md)
-* [Advanced Log-In & Sign-Up Flow](webflow-membership/advanced-log-in-and-sign-up-flow.md)
-* [Get Logged-In User Info ❺](webflow-membership/get-logged-in-user-info/README.md)
-  * [Current User Info \[ BETA testing \]](webflow-membership/get-logged-in-user-info/current-user-info-beta-testing.md)
-  * [Custom User Fields](webflow-membership/get-logged-in-user-info/custom-user-fields.md)
-  * [CUI FAQs](webflow-membership/get-logged-in-user-info/cui-faqs.md)
-  * [Tips & Best Practices](webflow-membership/get-logged-in-user-info/tips-and-best-practices.md)
-  * [The User object](webflow-membership/get-logged-in-user-info/the-user-object.md)
-  * [The User object Lifecycle](webflow-membership/get-logged-in-user-info/the-user-object-lifecycle.md)
-  * [Troubleshooting](webflow-membership/get-logged-in-user-info/troubleshooting.md)
+* [Advanced Log-In & Sign-Up Flow ❺](webflow-membership/advanced-log-in-and-sign-up-flow.md)
+* [Logged-In User Info ❺](webflow-membership/logged-in-user-info/README.md)
+  * [BETA testing](webflow-membership/logged-in-user-info/beta-testing.md)
+  * [Custom User Fields](webflow-membership/logged-in-user-info/custom-user-fields.md)
+  * [User Info FAQs](webflow-membership/logged-in-user-info/user-info-faqs.md)
+  * [Tips & Best Practices](webflow-membership/logged-in-user-info/tips-and-best-practices.md)
+  * [The User object](webflow-membership/logged-in-user-info/the-user-object.md)
+  * [The User object Lifecycle](webflow-membership/logged-in-user-info/the-user-object-lifecycle.md)
+  * [Troubleshooting](webflow-membership/logged-in-user-info/troubleshooting.md)
 
 ## 📘 WEBFLOW-FORMAT
 

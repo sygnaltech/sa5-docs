@@ -15,21 +15,21 @@ For convenience, the User object contains metadata describing what has already b
 
 To use that in your callback, just check for the kind of data you're needing, before you attempt to use it. This is how to determine if e.g. `user.name` is blank, or just not loaded yet. &#x20;
 
+{% hint style="warning" %}
+SA5 Upgrade changes how callbacks work, so these docs need to be revisited and are likely out of date.&#x20;
+{% endhint %}
+
 ```html
 <script>
 async function userInfoUpdatedSiteCallback(user) {
-  
-  // General data-binding   
-  var dataBinder = new WfuDataBinder().bind(); 
-  
+   
   // Check for the fields you needed
   if(!user.user_data_loaded.custom_fields) {
     // Your code here
     // ...
     return;
   }
-
-  
+ 
   // Call page user data callback, if existing 
   if (window.userInfoUpdatedPageCallback)
   	window.userInfoUpdatedPageCallback(user);

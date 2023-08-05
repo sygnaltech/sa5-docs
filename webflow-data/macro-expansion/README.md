@@ -83,6 +83,6 @@ Global population is growing!
 
 Currently, there are 241 countries in the world, of which 52 are in Europe.
 
-Of a total global population of 7,780,381,869, 14 of our contries are over 100 million population, with 2 over 1 billion.
+Of a total global population of 7,780,381,869, 14 of our countries are over 100 million population, with 2 over 1 billion.
 
 \
