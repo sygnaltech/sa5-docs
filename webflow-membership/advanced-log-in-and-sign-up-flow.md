@@ -27,13 +27,17 @@ There are a few things you _might_ want to do that you cannot do natively yet;
 * Redirect an [undirected login](advanced-log-in-and-sign-up-flow.md#terminology) to a page, including query string params.&#x20;
 * Handle a user's [first login](advanced-log-in-and-sign-up-flow.md#terminology) after sign-up specially, by redirecting them to a New User page.
 
-## Terminology
-
 {% hint style="info" %}
 **Directed login.** Occurs when a user attempts to access a gated page, and is not logged in. The login page is presented, and then after a successful login, the user is directed to the originally requested page.\
 **Undirected login.** Refers to a direct login, where the user clicked the login button. After the login is completed, the user can be sent to a pre-determined page, by default the home page of the website. \
 **First login.** Refers to the first successful login that a user performs after sign-up.
 {% endhint %}
+
+## Demonstration
+
+{% embed url="https://webflow.com/made-in-webflow/website/memberships-login-routing" %}
+Demonstration & cloneable
+{% endembed %}
 
 ## Important Update
 
