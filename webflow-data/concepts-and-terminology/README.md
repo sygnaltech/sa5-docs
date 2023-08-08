@@ -67,33 +67,8 @@ Some Data Sources require a name to reference them, since you can have several o
 
 In some places you'll see the abbreviation DSN used in attributes and docs. This refers to the unique name of a data source, which is used to locate the database within the datastore.&#x20;
 
-## Data Source Descriptor ( DSD )
+## Data Path
 
-A single string which identifies the specific data you want. DSD's are typically used in data-binding, to identify the data we want bound.&#x20;
-
-At a minimum, a DSD typically includes a **Data Source Type** and a **Data Source Name**.&#x20;
-
-For example;&#x20;
-
-`$cookie.my-cookie`
-
-In more complex Data Sources, additional specifiers are needed, for example;&#x20;
-
-`$db.my-db.my-record.my-field`
-
-* `$db` indicates that the Data Source Type is a database. SA5 will resolve this by doing a lookup in the Datastore.
-* `my-db` is the Data Source Name, which will be registered in the Datastore. For a CMS data source this would typically be the CMS collection slug, or similar.
-* `my-record` is a unique record ID, for Keyed Data Sources. For a CMS data source this would typically be the CMS item slug. &#x20;
-
-{% hint style="info" %}
-Informally, the portion of the DSD following the Type & DSN is referred to as the Data Item Name.&#x20;
-{% endhint %}
-
-{% hint style="info" %}
-Currently, DSD's always identify a single point value, which can be bound to a text item, input field, `{{ macro }}` expansion, etc. However in the future, it may also be used to retrieve objects or object-sets.&#x20;
-{% endhint %}
-
-Examples;
-
-<table><thead><tr><th width="196.33333333333331"></th><th width="170">Data Source Type</th><th></th></tr></thead><tbody><tr><td>$user.name</td><td>User object</td><td>Name value</td></tr><tr><td>$user.data.custom-url</td><td>User object</td><td><p></p><p>Custom user </p></td></tr><tr><td>@name</td><td>User object</td><td></td></tr><tr><td>$cookie.foo</td><td>Cookie</td><td>The cookie named <code>foo</code></td></tr><tr><td>$local.bar</td><td>Local storage</td><td></td></tr><tr><td>$session.bat</td><td>Session storage</td><td></td></tr><tr><td>$query.foo</td><td>Query string </td><td></td></tr><tr><td>$db.my-db.my-record.my-field</td><td>Database</td><td></td></tr></tbody></table>
-
+{% content-ref url="data-paths.md" %}
+[data-paths.md](data-paths.md)
+{% endcontent-ref %}

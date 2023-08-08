@@ -4,6 +4,8 @@ description: Cool Stuff We're Thinking About
 
 # Developing Concepts
 
+## Data path
+
 ## Tables/Records/Columns v. Sets/Objects/Fields
 
 These are similar concepts and in most cases we'd relate this using a mental spreadsheet paradigm as Tables & Rows. However, the Sets and Keys and Objects paradigm seems more in line with some of the data we're working with;

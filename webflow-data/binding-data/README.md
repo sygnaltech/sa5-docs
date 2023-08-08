@@ -64,6 +64,22 @@ Templates are text marked up with field DSD's like this;&#x20;
 
 When the template is processed, these are expanded.&#x20;
 
+## Data Paths
+
+At the center of data binding is SA5's data paths, which are formatted strings that specifically identify the data that you want to bind.&#x20;
+
+A data path is a dot-notated string with several parts;
+
+`<data-source type>.<data-source-name>.<object-id>.<field-id>`
+
+|        |   |   |
+| ------ | - | - |
+| $user  |   |   |
+| @name  |   |   |
+| $db    |   |   |
+| $query |   |   |
+| $url   |   |   |
+
 ### Dynamic DSD References, using Data-Binding Context
 
 You can specify fixed reference items using a fully-qualified DSD like this, however if the template is in a dynamic context such as a collection list or collection page, SA5 allows you to set the context for partial DSDs to operate in.&#x20;

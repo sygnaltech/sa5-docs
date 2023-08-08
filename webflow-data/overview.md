@@ -2,7 +2,7 @@
 description: All about SA5's Data Source & Data-Binding capabilities
 ---
 
-# Overview ❺
+# Data Sources & Data-Binding ❺
 
 **SA5's Data Source & Data Binding features allow you to creatively integrate data into your Webflow sites.**&#x20;
 
@@ -62,10 +62,6 @@ Data Binding can be applied to;
   * Checkboxes, to set the checked/unchecked state
   * Select fields, to select the current item&#x20;
 
-
-
-
-
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
@@ -80,8 +76,28 @@ Install this code in **before HEAD**, site-wide or on the specific pages you wan
 ```
 {% endcode %}
 
-### STEP 2 - Setup your attributes <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
+### STEP 2 - Setup any custom data sources you want <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 
-See above for details.&#x20;
+Currently this primarily refers to Collection List based data sources.&#x20;
+
+{% content-ref url="data-sources/collection-list-data-source.md" %}
+[collection-list-data-source.md](data-sources/collection-list-data-source.md)
+{% endcontent-ref %}
+
+### STEP 3 - Setup your data-binding attributes <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
+
+Apply your data-binding attributes to the elements you want, and create the templates you want. The specifics depend on the elemnts you are binding, and the data sources you are using.
+
+See the [Binding Data](binding-data/) section for details.&#x20;
+
+Here are some popular data sources you can bind to-
+
+* Query string params
+* Url & url parts
+* Collection list data
+* User Info&#x20;
+* Cookies & Web Storage
+
+
 
 \

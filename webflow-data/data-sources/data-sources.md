@@ -5,7 +5,7 @@ description: Data Source Types
 # Data Source Types
 
 {% hint style="warning" %}
-DOCUMENTATION IN-PROGRESS. Use this as notes.&#x20;
+**DOCUMENTATION IN-PROGRESS.** Use this as notes.&#x20;
 {% endhint %}
 
 ## User Info
@@ -17,6 +17,8 @@ The details of that object can be data-bound.&#x20;
 $user.name
 
 $user.email
+
+[user-info-data-source.md](user-info-data-source.md "mention")
 
 
 
