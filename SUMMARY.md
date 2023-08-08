@@ -17,19 +17,31 @@
 
 ## 📘 Webflow-Data
 
-* [Overview](webflow-data/overview.md)
-* [What are Data Sources?](webflow-data/what-are-data-sources.md)
-* [Data Source Types](webflow-data/data-sources/README.md)
-  * [Webflow Collection List](webflow-data/data-sources/webflow-collection-list.md)
-  * [Github Data](webflow-data/data-sources/github-data.md)
-  * [Google Sheets](webflow-data/data-sources/google-sheets.md)
-* [Macro Expansion](webflow-data/macro-expansion/README.md)
-  * [Macro Expansion](webflow-data/macro-expansion/macro-expansion.md)
-  * [Count Items](webflow-data/macro-expansion/count-items.md)
+* [Overview ❺](webflow-data/overview.md)
+* [Concepts & Terminology](webflow-data/concepts-and-terminology/README.md)
+  * [Developing Concepts](webflow-data/concepts-and-terminology/developing-concepts.md)
+* [Data Sources](webflow-data/data-sources/README.md)
+  * [Data Source Types](webflow-data/data-sources/data-sources/README.md)
+    * [Collection List Data Source](webflow-data/data-sources/data-sources/collection-list-data-source.md)
+    * [User Info Data Source](webflow-data/data-sources/data-sources/user-info-data-source.md)
+    * [GitHub Data Data Source](webflow-data/data-sources/data-sources/github-data-data-source.md)
+    * [Google Sheets Data Source](webflow-data/data-sources/data-sources/google-sheets-data-source.md)
+  * [Developing Concepts | Collection List Data Sources](webflow-data/data-sources/developing-concepts-or-collection-list-data-sources.md)
+  * [Defining Custom Data Sources](webflow-data/data-sources/defining-custom-data-sources.md)
+* [Binding Data](webflow-data/binding-data/README.md)
+  * [Data-Binding Query Params](webflow-data/binding-data/data-binding-query-params.md)
+  * [Data-Binding Cookies & Web Storage](webflow-data/binding-data/data-binding-cookies-and-web-storage.md)
+  * [Template Processors](webflow-data/binding-data/template-processors.md)
+  * [Form Elements](webflow-data/binding-data/form-elements.md)
+  * [Developing Concepts on Data-Binding](webflow-data/binding-data/developing-concepts-on-data-binding.md)
+  * [Macro Expansion](webflow-data/binding-data/macro-expansion/README.md)
+    * [Macro Expansion](webflow-data/binding-data/macro-expansion/macro-expansion.md)
+    * [Count Items](webflow-data/binding-data/macro-expansion/count-items.md)
+  * [Preloaders](webflow-data/binding-data/preloaders.md)
 
 ## 📘 Webflow Forms
 
-* [Data-binding Form INPUTs & SELECTs](webflow-forms/data-binding-form-inputs-and-selects.md)
+* [Data-binding Form INPUTs & SELECTs ❺](webflow-forms/data-binding-form-inputs-and-selects.md)
 * [Form Webhook Handler ❺](webflow-forms/demo-webflow-form-w-webhook.md)
 * [Form IP Info ❺](webflow-forms/form-ip.md)
 
@@ -41,9 +53,9 @@
 
 * [Nested Lists ❺](webflow-html/nested-lists.md)
 * [Advanced Element Sorting ❺](webflow-html/advanced-element-sorting.md)
+* [Advanced Element Filtering ❺](webflow-html/advanced-element-filtering.md)
 * [Dynamic Attributes ❺](webflow-html/dynamic-attributes.md)
 * [Breakpoints ❺](webflow-html/breakpoints.md)
-* [Advanced Element Filtering ❺](webflow-html/advanced-element-filtering.md)
 * [Limit Items by Breakpoint ❺](webflow-html/limit-items-by-breakpoint.md)
 * [Limit Items to Multiple-of ❺](webflow-html/limit-items-to-multiple-of.md)
 * [Numeric Sequencing ❺](webflow-html/numeric-sequencing.md)
@@ -96,6 +108,8 @@
   * [The User object](webflow-membership/logged-in-user-info/the-user-object.md)
   * [The User object Lifecycle](webflow-membership/logged-in-user-info/the-user-object-lifecycle.md)
   * [Troubleshooting](webflow-membership/logged-in-user-info/troubleshooting.md)
+  * [Getting Webflow's UserID](webflow-membership/logged-in-user-info/getting-webflows-userid.md)
+  * [Future User Info Ideas](webflow-membership/logged-in-user-info/future-user-info-ideas.md)
 
 ## 📘 WEBFLOW-FORMAT
 

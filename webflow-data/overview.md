@@ -1,45 +1,87 @@
 ---
-description: What is Webflow Data?
+description: All about SA5's Data Source & Data-Binding capabilities
 ---
 
-# Overview
+# Overview ❺
 
-**Data makes your website interesting.**
+**SA5's Data Source & Data Binding features allow you to creatively integrate data into your Webflow sites.**&#x20;
 
-Webflow’s CMS and Collection Lists offer some great capabilities but they also have limitations-
+SA5's Data features have two facets-&#x20;
 
-* Inability to display data in a table
-* Limitations on nesting colleciton lists
-* Inability to populate an element’s custom attributes with data from a Collection List
+* **Data Sources** refer to the ability to assemble, store, and retrieve data from Collection Lists, remote sources, the querystring, webStorage, cookies, and more. The data is collected and organized into a Datastore.&#x20;
+* **Data Binding** uses these sources to pull data into your page, text element, rich text templates, form fields, and more. It lets you easily display data from these sources using simple markup.&#x20;
 
-WFU enables new ways for you to access and integrate data into your Webflow site- both from the Webflow CMS, and from external sources such as public APIs.
+{% hint style="success" %}
+The **Data Source** & **Data Binding** portions of Sygnal Attributes comprise probably the largest and most complex part of our libraries. They're used by themselves, but are also relied on by our other libraries. We'll be migrating and adding new capabilities as we go.  &#x20;
+{% endhint %}
 
-Capabilities are divided into two groups-
+## Use Cases
 
-Creating JSON data sources;
+The features here are meant to be very flexible, but here are a few common use cases we see often;&#x20;
 
-* Turning a Webflow CollectionList into a usable Data source
-* Turning a remote JSON or CSV resource into a usable Data source
+* Populate form fields from querystring params ( see [demo](https://data-binding.webflow.io/query?code=ID6079\&name=Trial+User+1\&color=blue\&accept=true) )
+* Populate form fields from webStorage or cookies, as part of a referral tracking system ( see [demo](https://data-binding.webflow.io/webstorage) )
+* Populate form fields with current user data, such as the user's email & name
+* Perform "mad libs" style text replacements in rich text content, mixed from Collection List fields and other sources ( see [demo](https://data-binding.webflow.io/cms) )&#x20;
 
-Data-binding Webflow elements to those sources;
+In combination, these can be used to move data easily through your site, and to pass information back to your server in hidden fields as users submit forms.&#x20;
 
-* Binding lists to FORM Dropdown elements, as select options
-* Binding lists to FORM Text elements, as autocomplete options
+### Features Coming Soon
 
-### What can you do? <a href="#what-can-you-do" id="what-can-you-do"></a>
+We'll be rebuilding and adding these features soon;&#x20;
 
+* Pulling external data from Google Sheets and Google Docs
+* Pulling external data from custom public ( unsecured ) APIs&#x20;
+* Support for custom datasource registrations, such as adding your own objects for databinding purposes&#x20;
 * Display the count of items in a datasource
 
-### How it Works <a href="#how-it-works" id="how-it-works"></a>
+## Key Points
 
-WFU **data sources** are simple JSON arrays built from Collection Lists that you prepare. These are stored in a Map collection that I refer database, which enables you to retrieve multiple data sources
+SA5 Data Sources & Data-Binding are;&#x20;
 
-### Data Shapes <a href="#data-shapes" id="data-shapes"></a>
+* **Inbound-only.** Our data & data-binding features are one-way. They're designed to integrate information into your site from various sources - but not to update external data stores. If you are looking for round-trip capabilities, it's likely you need an application platform like Wized + Xano.&#x20;
+* **Versatile.** Mix and match static and dynamic data at will.&#x20;
+* **Extensible.** Add your own data sources.&#x20;
 
-WFU utilizes 3 types of JSON simple structural patterns which I refer to as **data shapes**;
+Data Sources include;
 
-1. **Table.** A JSON array in which each element contains the same set of keys. Typically this is constructed from a tabular source such as a Webflow Collection List, or a CSV file.
-2. **List.** A Table with only one or two fields per element. Lists are primarily used for data-binding to FORM controls.
-3. **Dictionary.** A List, which has a `key` field and a `value` field. The key field content is expected to be unique. Dictionaries are used for lookups in template processing.
+* Collection-lists, which are prepared to allow&#x20;
+* Arbitrary, static data-sets
+* Query string params
+* LocalStorage items
+* SessionStorage items
+* Cookies
+
+Data Binding can be applied to;
+
+* Any text element&#x20;
+* Rich text elements, to `{{ expand }}` macro content&#x20;
+* Form input fields, specifically
+  * Text fields, to set the current text input
+  * Textarea fields, to set the current text input
+  * Checkboxes, to set the checked/unchecked state
+  * Select fields, to select the current item&#x20;
+
+
+
+
+
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+Install this code in **before HEAD**, site-wide or on the specific pages you want the script to affect.
+
+{% code overflow="wrap" %}
+```html
+<!-- Sygnal Attributes 5 | Data --> 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.23/dist/css/webflow-data.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.23/dist/nocode/webflow-data.js"></script> 
+```
+{% endcode %}
+
+### STEP 2 - Setup your attributes <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
+
+See above for details.&#x20;
 
 \

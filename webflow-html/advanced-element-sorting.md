@@ -97,6 +97,17 @@ Place this attribute on the **item** element.
 The most common way to set the value of this field is to pull the content directly from your associated CMS item. To do that, use Webflow's custom attribute CMS binding feature to insert whatever field you want to use as the sort key for that item.&#x20;
 {% endhint %}
 
+## Future <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+Future features we're considering...
+
+* Secondary and tertiary sorting, where additional sorting rules are applied when two items are considered sort-equivalent.
+* Script-defined sorting, where the rules override what the attributes define.&#x20;
+* Custom sorting rules, handled by a callback. &#x20;
+* Script-triggered re-sorting, triggerable by script.&#x20;
+  * Used for e.g. a dropdown of multiple sort configs. &#x20;
+* Memory of past sort settings&#x20;
+
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>

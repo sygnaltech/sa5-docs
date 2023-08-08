@@ -2,7 +2,7 @@
 description: Get the details of the currently logged-in user In Webflow Memberships
 ---
 
-# Get Logged-In User Info ❺
+# Logged-In User Info ❺
 
 {% hint style="info" %}
 Questions? Comments? Suggestions? Join the new [Sygnal Attributes group](https://www.facebook.com/groups/sygnal) on Facebook.
@@ -42,10 +42,10 @@ Features;
 
 Limitations;&#x20;
 
-* Changes to user information, e.g. changing the user's name on the Account Info page won't be reflected in the user object until the next login&#x20;
+* ~~Changes to user information, e.g. changing the user's name on the Account Info page won't be reflected in the user object until the next login~~&#x20;
 * Currently this library depends on the User Account screen in order to access user data and compose the user object. You can do what you want with your User Account page however those user fields must exist in the page ( even hidden ) in order for this library to work.  &#x20;
 * For custom user fields, the File field type is unsupported for now&#x20;
-* Currently the Webflow UserID is not easily available, we're looking at efficient solutions for this.&#x20;
+* Currently the Webflow UserID is not easily available. See here for [solutions](getting-webflows-userid.md), if you need it for external system integrations with Webflow's API.&#x20;
 * Read-only. The library is designed to read user data, but not to update it.&#x20;
 
 ## Demonstration
@@ -129,6 +129,23 @@ Even basic contact information should never be kept in the browser cache longer 
 In our testing, this gives the best user data security, while maximizing your site's performance- both of which are primary concerns for us and our clients.&#x20;
 
 _Questions?_ Let us know - **attr@sygnal.com**.&#x20;
+
+### Personally Identifiable Information ( PII )
+
+In Webflow Memberships, the only unique, persistent identifier we have access to client-side is the user's email address, which can not be changed.&#x20;
+
+However as this absolutely qualifies as PII, we do not want to use this as an identifier for integrating with other external systems.&#x20;
+
+To provide for this, we manufacture an Alt User ID as a one-way hash of the user's email. Use this when you need to "attach" data in an external system.&#x20;
+
+## Future <a href="#getting-started-locode" id="getting-started-locode"></a>
+
+* Callback on login
+  * Login on external system, retrieve data
+* Callback on first login
+  * Setup account on external system
+* Inactivity logout timer settings&#x20;
+* Login activity logging&#x20;
 
 ## Getting Started ( LOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 

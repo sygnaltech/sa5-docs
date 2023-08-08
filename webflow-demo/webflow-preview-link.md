@@ -28,6 +28,16 @@ Limitations;
 
 * Does not work with Collection pages, since they require an additional collection item ID that is not emitted into the page.
 
+## Future
+
+Easy link to cloneable from shortname demo site&#x20;
+
+Cloning trigger option&#x20;
+
+e.g. current-user-info.webflow.io maps to&#x20;
+
+[https://webflow.com/made-in-webflow/website/current-user-info](https://webflow.com/made-in-webflow/website/current-user-info)
+
 ## Implementation <a href="#implementation" id="implementation"></a>
 
 Add this code to the **before BODY** of your site or page.&#x20;

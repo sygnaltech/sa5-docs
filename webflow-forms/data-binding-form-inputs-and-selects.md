@@ -1,4 +1,4 @@
-# Data-binding Form INPUTs & SELECTs
+# Data-binding Form INPUTs & SELECTs ❺
 
 Data-binding is the original feature that SA was built around. It developed out of a need to populate Form SELECTs with dynamic data from Webflow Collection Lists.
 
@@ -76,5 +76,23 @@ If you’re not seeing anything in your dropdown when you open your SELECT, or w
 For INPUT elements, the value posted is whatever the user types in that textbox. Pretty simple.
 
 For SELECTS, the value posted is the `id` you specified in your script block. Make sure you chose the right field for that, and that you have no extraneous spaces.
+
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+Install this code in **before HEAD**, site-wide or on the specific pages you want the script to affect.
+
+{% code overflow="wrap" %}
+```html
+<!-- Sygnal Attributes 5 | Data --> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.23/dist/css/webflow-data.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.23/dist/nocode/webflow-data.js"></script>
+```
+{% endcode %}
+
+### STEP 2 - Setup your attributes <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
+
+See above for details.&#x20;
 
 \

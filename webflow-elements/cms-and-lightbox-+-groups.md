@@ -40,7 +40,7 @@ Place the attribute on any element, and all of the lightboxes that are descendan
 
 This may not be necessary for the library to work, but it's best to enable the **Link with other lightboxes** feature on each of your lightboxes. Leave the **Group name** blank.&#x20;
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (1).png>)
 
 ### Add the `wfu-lightbox-group` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 

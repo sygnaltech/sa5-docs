@@ -2,7 +2,11 @@
 description: Use Google Sheets as a Datasource in Webflow
 ---
 
-# Google Sheets
+# Google Sheets Data Source
+
+{% hint style="info" %}
+Needs Redesigned.
+{% endhint %}
 
 Sygnal Attributes can use a public Google Sheet as a datasource. It retrieves the Google Sheet data as CSV and converts it to JSON for easy use.&#x20;
 
