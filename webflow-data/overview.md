@@ -1,10 +1,8 @@
 ---
-description: All about SA5's Data Source & Data-Binding capabilities
+description: Creatively data into your Webflow sites
 ---
 
 # Data Sources & Data-Binding ❺
-
-**SA5's Data Source & Data Binding features allow you to creatively integrate data into your Webflow sites.**&#x20;
 
 SA5's Data features have two facets-&#x20;
 
@@ -20,6 +18,7 @@ The **Data Source** & **Data Binding** portions of Sygnal Attributes comprise pr
 The features here are meant to be very flexible, but here are a few common use cases we see often;&#x20;
 
 * Populate form fields from querystring params ( see [demo](https://data-binding.webflow.io/query?code=ID6079\&name=Trial+User+1\&color=blue\&accept=true) )
+* Populate form fields to include the current URL or path ( see [demo](https://data-binding.webflow.io/url) )
 * Populate form fields from webStorage or cookies, as part of a referral tracking system ( see [demo](https://data-binding.webflow.io/webstorage) )
 * Populate form fields with current user data, such as the user's email & name
 * Perform "mad libs" style text replacements in rich text content, mixed from Collection List fields and other sources ( see [demo](https://data-binding.webflow.io/cms) )&#x20;
@@ -32,8 +31,8 @@ We'll be rebuilding and adding these features soon;&#x20;
 
 * Pulling external data from Google Sheets and Google Docs
 * Pulling external data from custom public ( unsecured ) APIs&#x20;
-* Support for custom datasource registrations, such as adding your own objects for databinding purposes&#x20;
-* Display the count of items in a datasource
+* Support for custom data source registrations, such as adding your own objects for databinding purposes&#x20;
+* Display the count of items in a data source
 
 ## Key Points
 
@@ -48,6 +47,7 @@ Data Sources include;
 * Collection-lists, which are prepared to allow&#x20;
 * Arbitrary, static data-sets
 * Query string params
+* The current URL & URL parts
 * LocalStorage items
 * SessionStorage items
 * Cookies
