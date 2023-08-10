@@ -158,6 +158,10 @@
 
 * [Webflow Fixups ❺](fixup/article.md)
 
+## 📘 webflow-modals <a href="#modals" id="modals"></a>
+
+* [Webflow Modals & Popups ❺🧪](modals/article.md)
+
 ## 📘 webflow-404 <a href="#404" id="404"></a>
 
 * [404 Page Enhancements](404/404-page-enhancements.md)
