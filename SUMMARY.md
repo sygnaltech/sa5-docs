@@ -51,6 +51,10 @@
 
 * [HTML Tables](webflow-table/html-tables.md)
 
+## 📘 WEBFLOW-INTERACTIONS <a href="#webflow-ix" id="webflow-ix"></a>
+
+* [Dynamic Interaction Trigger Links ❺](webflow-ix/dynamic-interaction-trigger-links.md)
+
 ## 📘 WEBFLOW-HTML
 
 * [Nested Lists ❺](webflow-html/nested-lists.md)
