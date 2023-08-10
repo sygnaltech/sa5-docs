@@ -70,6 +70,7 @@
 * [Decode HTML ❺](webflow-html/decode-html.md)
 * [Content Embeds ❺🧪](webflow-html/content-embeds.md)
 * [Markdown ❺🧪](webflow-html/markdown.md)
+* [Richtext ❺🧪](webflow-html/richtext.md)
 
 ## 📘 WEBFLOW-UI
 
@@ -148,11 +149,19 @@
 
 ## 📘 webflow-seo <a href="#seo" id="seo"></a>
 
+* [Noindex ❺🧪](seo/noindex.md)
+* [Nofollow ❺🧪](seo/nofollow.md)
 * [JSON-LD Article \[EXPERIMENTAL\] ❺🧪](seo/article.md)
+* [Developing Concepts](seo/article-1.md)
 
 ## 📘 webflow-fixup <a href="#fixup" id="fixup"></a>
 
 * [Webflow Fixups ❺](fixup/article.md)
+
+## 📘 webflow-404 <a href="#404" id="404"></a>
+
+* [404 Page Enhancements](404/404-page-enhancements.md)
+* [Webflow Fixups ❺](404/article.md)
 
 ## 📘 Deprecated Features <a href="#deprecated" id="deprecated"></a>
 
