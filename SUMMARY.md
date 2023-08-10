@@ -103,9 +103,6 @@
 
 ## 📘 WEBFLOW-MEMBERSHIP
 
-* [Conditional Element Display ❺](webflow-membership/conditional-element-display.md)
-* [Expand Login Button ❺](webflow-membership/expand-login-button.md)
-* [Advanced Log-In & Sign-Up Flow ❺](webflow-membership/advanced-log-in-and-sign-up-flow.md)
 * [Logged-In User Info ❺](webflow-membership/logged-in-user-info/README.md)
   * [BETA testing](webflow-membership/logged-in-user-info/beta-testing.md)
   * [Custom User Fields](webflow-membership/logged-in-user-info/custom-user-fields.md)
@@ -116,6 +113,9 @@
   * [Troubleshooting](webflow-membership/logged-in-user-info/troubleshooting.md)
   * [Getting Webflow's UserID](webflow-membership/logged-in-user-info/getting-webflows-userid.md)
   * [Future User Info Ideas](webflow-membership/logged-in-user-info/future-user-info-ideas.md)
+* [Advanced Log-In & Sign-Up Flow ❺](webflow-membership/advanced-log-in-and-sign-up-flow.md)
+* [Conditional Element Display ❺](webflow-membership/conditional-element-display.md)
+* [Expand Login Button ❺](webflow-membership/expand-login-button.md)
 
 ## 📘 WEBFLOW-FORMAT
 

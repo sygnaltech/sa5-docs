@@ -147,7 +147,18 @@ To provide for this, we manufacture an Alt User ID as a one-way hash of the user
 * Inactivity logout timer settings&#x20;
 * Login activity logging&#x20;
 
-## Getting Started ( LOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
+## Getting Started ( NOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
+
+{% hint style="danger" %}
+**IMPORTANT:** If you are upgrading from SA4, it's important to note that the code is now completely different and much simpler.&#x20;
+
+* It's now in the site-wide before HEAD rather than the before BODY code area
+* You no longer include the data-binding library
+* You do not need to initialize the data-binding library
+* The script is no longer `type=module`, and it needs `defer`&#x20;
+
+Don't blindly copy and paste URLs, you're much better to copy the code block here, and replace the old one directly. If you are using the custom callback feature, it is redesign as well, see STEP 3 for that new code.&#x20;
+{% endhint %}
 
 ### STEP 1 - Add the Configuration Code <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
@@ -158,6 +169,21 @@ Add this script to the **site wide** custom code **before HEAD** area of your si
 <!-- Sygnal Attributes 5 | Memberships --> 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/css/webflow-membership.css"> 
 <script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/nocode/webflow-membership.min.js"></script>
+```
+{% endcode %}
+
+### STEP 2 - Use the `wfu-bind` attribute to automatically load data into DOM elements&#x20;
+
+SA5's Data-Binding feature can access logged-in user info as well, and you can easily data-bind it to text elements, titles, spans, form INPUT elements, and more. You can use this to, for example, automatically populate a form field with the logged-in User's email address.
+
+See above for details.&#x20;
+
+### STEP 3 - ( OPTIONAL ) Add custom code to use User Info specially
+
+Place this also in the **before HEAD** of your site, just after the library code above. If it's page-specific, you can instead place it on the **before HEAD** of specific pages if you plike.&#x20;
+
+{% code overflow="wrap" %}
+```html
 <script>
 window.sa5 = window.sa5 || [];
 window.sa5.push(['userInfoChanged', 
@@ -168,16 +194,7 @@ window.sa5.push(['userInfoChanged',
 ```
 {% endcode %}
 
-Note the 2 parts here;
-
-1. The CSS and JS library imports
-2. Your optional callback function, can do special handling&#x20;
-
-### STEP 2 - Use the `data-bind` attribute to automatically load data into DOM elements&#x20;
-
-The Sygnal Attributes DataBinder can automatically make use of logged-in user info as well, and data-bind it to DOM elements.
-
-You can use this to, for example, automatically populate a form field with the logged-in User's email address.
-
-See above for details.&#x20;
+{% hint style="warning" %}
+You should be able to have multiple instances of this code block, for example site-wide, and page specific, at the same time - however this has not been production tested. Test it carefully if you want to experiment with this approach.&#x20;
+{% endhint %}
 
