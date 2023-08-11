@@ -152,7 +152,7 @@
 * [Noindex ❺🧪](seo/noindex.md)
 * [Nofollow ❺🧪](seo/nofollow.md)
 * [JSON-LD Article \[EXPERIMENTAL\] ❺🧪](seo/article.md)
-* [Developing Concepts](seo/article-1.md)
+* [SA5 Data](seo/article-1.md)
 
 ## 📘 webflow-fixup <a href="#fixup" id="fixup"></a>
 
