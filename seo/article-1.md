@@ -14,6 +14,24 @@ Sygnal Structured Data is a special \<script> code block format that is designed
 
 This makes it easy to work with in our client side code and create data sources, drive business logic, or to create JSON-LD.&#x20;
 
+## Testing Notes <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
+
+I'm going to begin an open BETA of SA5 Data soon, however we're doing some final design work around typed values, nulls, and whitespace handling.&#x20;
+
+To mitigate these changes we'll release the BETA format under;&#x20;
+
+```html
+<script type="sygnal/sa5-data-proto">
+```
+
+Things we may change or add future support for;
+
+* Path to strongly typed values, **int**, **boolean**, and **null**
+* Handling of **nulls** v. identification of an object start tag
+* Testing whitespace around key, and value, and delimiter
+* Allowing for delimiter value-type attributes, + ? :: $
+* Docs and language around multiline literals&#x20;
+
 ## How Does it Work? <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
 Here's a very simple example of what SA5 Data looks like.&#x20;
