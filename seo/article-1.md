@@ -2,7 +2,7 @@
 description: Developing Concepts in SEO Tools
 ---
 
-# SA5 Data
+# SA5 Data ❺🧪
 
 {% hint style="danger" %}
 **EXPERIMENTAL ALPHA** ⑤
@@ -35,6 +35,10 @@ This would be parsed as the JavaScript object;&#x20;
   "brief": "Software Engineer"
 }
 ```
+
+In a Webflow HTML Embed, an example might look like this;
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Nested Objects
 
@@ -138,23 +142,34 @@ Sygnal designed **SA5 Data** because other approaches like raw JSON embeds creat
 
 * Represent data as `key: value` pairs.
 * Each pair should be on a new line.
+* Whitespace will be trimmed from both the key and the value
+* The first colon on the line is a delimiter, thus the key cannot contain a : but the value can
 
-**Strings**:
+**Values**:
 
-* Strings don't need to be enclosed in quotes. However if an embedded CMS field might contain line breaks, or essential whitespace at the start or end of the field, wrap it in angle brackets `<` `>` to ensure the whitespace and line breaks are correctly interpreted.&#x20;
+*
+* Do not enclose values in quotes. They are not needed and would be considered part of the string content.
+* All values must be HTML-encoded.
+  * `<` must be encoded as `&lt;`
+  * `>` must be encoded as `&gt;`
+  * `&` must be encoded as `&amp;`
+* If an embedded CMS field might contain line breaks, or essential whitespace at the start or end of the field, wrap it in angle brackets `<` `>` to ensure the whitespace and line breaks are correctly interpreted.&#x20;
+*   If a value is delimited by `<` and `>` characters, the whitespace and line feeds within those angle brackets are considered part of the value.
 
-**Indentation**:
+    ```plaintext
+    plaintextCopy codemulti-line-value: <This is a
+    multi-line value with preserved whitespace and line breaks.>
+    ```
 
-* Use consistent indentation (preferably spaces) to represent nested structures. The level of indentation indicates the depth of nesting.
-
-**Nesting**:
+**Indentation & Nesting**:
 
 * Nested structures are indicated by indentation.
+* Use consistent indentation (preferably spaces) to represent nested structures. The level of indentation indicates the depth of nesting.
 * For each nested level, increase the indentation consistently (e.g., by two or four spaces).
 
 **No Commas or Brackets**:
 
-* Unlike JSON, SSD doesn't use commas to separate key-value pairs or brackets to denote objects.
+* Unlike JSON, SA5 Data doesn't use commas to separate key-value pairs or brackets to denote objects.
 
 ## Technical Notes
 
@@ -162,6 +177,30 @@ In the resulting JavaScript object-
 
 * Webflow's HTML encoded fields are decoded
 * Line breaks are encoded as `\n`&#x20;
+
+## Examples
+
+
+
+```
+// Some code
+<script type="sygnal/sa5-data">
+name: John Doe
+age: 30
+description: <John is a software engineer
+from Springfield. He loves coding and
+is passionate about technology.>
+address:
+    street: 123 Main St
+    city: Springfield
+    country: US
+</script>
+
+```
+
+
+
+
 
 ## Future
 
