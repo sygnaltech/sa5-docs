@@ -57,7 +57,20 @@ When you are want CMS-sourced modals such as product pop-ups or glossary pop-ups
 
 Now, anywhere in your page, you can link to `##slug` to trigger that item.&#x20;
 
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
+Install this code in **before HEAD**, site-wide or on the specific pages you want the script to affect.
 
+{% code overflow="wrap" %}
+```html
+<!-- Sygnal Attributes 5 | Interactions --> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.25/dist/nocode/webflow-ix.js"></script> 
+```
+{% endcode %}
+
+### STEP 2 - Setup your data-binding attributes <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
+
+Apply the attributes you want. See above.&#x20;
 
