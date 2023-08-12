@@ -56,46 +56,7 @@ This would be parsed as the JavaScript object;&#x20;
 
 In a Webflow HTML Embed, an example might look like this;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-### Nested Objects
-
-Objects can be nested by specifying the object key on one line, and indenting the nested object beneath it;&#x20;
-
-```html
-<script type="sygnal/sa5-data">
-@context: http://schema.org
-@type: Person
-name: John Doe
-jobTitle: Software Engineer
-address:
-    @type: PostalAddress
-    streetAddress: 123 Main St
-    addressLocality: Springfield
-    addressRegion: IL
-    postalCode: 12345
-    addressCountry: US
-</script>
-```
-
-Which is parsed as;&#x20;
-
-```json
-{
-  "@context": "http://schema.org",
-  "@type": "Person",
-  "name": "John Doe",
-  "jobTitle": "Software Engineer",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "123 Main St",
-    "addressLocality": "Springfield",
-    "addressRegion": "IL",
-    "postalCode": "12345",
-    "addressCountry": "US"
-  }
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>HTML Embed example setup</p></figcaption></figure>
 
 ## Multiline Content
 
@@ -189,9 +150,6 @@ Here `address` and `postalCode` are both nested objects.&#x20;
 name:$ John Doe
 age:# 23
 isActive:? true
-description: <John is a software engineer
-from Springfield. He loves coding and
-is passionate about technology.>
 address::
     street: 
     city: Springfield
@@ -200,6 +158,25 @@ address::
         code:# 
         region: 
 </script>
+```
+
+Generates the following JSON object;&#x20;
+
+```json
+{
+  "name": "John Doe",
+  "age": 23,
+  "isActive": true,
+  "address": {
+    "street": null,
+    "city": "Springfield",
+    "country": null,
+    "postalCode": {
+      "code": null,
+      "region": null
+    }
+  }
+}
 ```
 
 ## Technical Guide
