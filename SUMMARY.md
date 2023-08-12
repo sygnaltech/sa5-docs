@@ -18,6 +18,8 @@
 ## 📘 Webflow-Data
 
 * [Data Sources & Data-Binding ❺](webflow-data/overview.md)
+* [SA5 Data ❺🧪](webflow-data/article/README.md)
+  * [SA5 Data BETA Kit](webflow-data/article/sa5-data-beta-kit.md)
 * [Concepts & Terminology](webflow-data/concepts-and-terminology/README.md)
   * [Data Paths](webflow-data/concepts-and-terminology/data-paths.md)
   * [Developing Concepts](webflow-data/concepts-and-terminology/developing-concepts.md)
@@ -152,7 +154,6 @@
 * [Noindex ❺🧪](seo/noindex.md)
 * [Nofollow ❺🧪](seo/nofollow.md)
 * [JSON-LD Article \[EXPERIMENTAL\] ❺🧪](seo/article.md)
-* [SA5 Data ❺🧪](seo/article-1.md)
 
 ## 📘 webflow-fixup <a href="#fixup" id="fixup"></a>
 

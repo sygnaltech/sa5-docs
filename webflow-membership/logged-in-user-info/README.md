@@ -167,8 +167,8 @@ Add this script to the **site wide** custom code **before HEAD** area of your si
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Memberships --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/css/webflow-membership.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/nocode/webflow-membership.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.25/dist/css/webflow-membership.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.25/dist/nocode/webflow-membership.min.js"></script>
 ```
 {% endcode %}
 
@@ -180,7 +180,7 @@ See above for details.&#x20;
 
 ### STEP 3 - ( OPTIONAL ) Add custom code to use User Info specially
 
-Place this also in the **before HEAD** of your site, just after the library code above. If it's page-specific, you can instead place it on the **before HEAD** of specific pages if you plike.&#x20;
+Place this also in the **before HEAD** of your site, just after the library code above. If it's page-specific, you can instead place it on the **before HEAD** of specific pages if you like.&#x20;
 
 {% code overflow="wrap" %}
 ```html

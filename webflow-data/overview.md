@@ -71,8 +71,8 @@ Install this code in **before HEAD**, site-wide or on the specific pages you wan
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Data --> 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.23/dist/css/webflow-data.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.23/dist/nocode/webflow-data.js"></script> 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.25/dist/css/webflow-data.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.25/dist/nocode/webflow-data.js"></script> 
 ```
 {% endcode %}
 

@@ -1,24 +1,24 @@
 ---
-description: Developing Concepts in SEO Tools
+description: Add data to your custom code
 ---
 
 # SA5 Data ❺🧪
 
-{% hint style="danger" %}
-**EXPERIMENTAL ALPHA** ⑤
+{% hint style="info" %}
+**BETA TESTING**
 
-DO NOT USE this in production code, as it may be removed. We'll see if this approach works. Testing with Google is in progress.&#x20;
+This library is in beta testing.&#x20;
 {% endhint %}
 
-Sygnal Structured Data is a special \<script> code block format that is designed to easily capture CMS and static data, and encode it in a JavaScript object.&#x20;
+**SA5 Structured Data** is a special `<script>` code block format that is designed to easily capture CMS and static data, and encode it in a JavaScript object. It is designed to model the core capabilities of the JSON format, but in a way that is easier to use in Webflow and which correctly handles Webflow's embed field encoding.&#x20;
 
 This makes it easy to work with in our client side code and create data sources, drive business logic, or to create JSON-LD.&#x20;
 
-## Testing Notes <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
+## BETA Testing Notes <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
-I'm going to begin an open BETA of SA5 Data soon, however we're doing some final design work around typed values, nulls, and whitespace handling.&#x20;
+**SA5 Data** is in open BETA. We're doing some final design work around typed values, nulls, and whitespace handling.&#x20;
 
-To mitigate these changes we'll release the BETA format under;&#x20;
+To mitigate any further changes we'll release the BETA format under a separate BETA type specifier;&#x20;
 
 ```html
 <script type="sygnal/sa5-data-proto">
@@ -56,7 +56,7 @@ This would be parsed as the JavaScript object;&#x20;
 
 In a Webflow HTML Embed, an example might look like this;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Nested Objects
 
@@ -133,6 +133,75 @@ The use of angle brackets was chosen because Webflow HTML encodes all values it 
 Also use angle brackets if whitespace characters at the start or end of your field content are an essential part of your data.&#x20;
 {% endhint %}
 
+## Typed Values&#x20;
+
+By default, values are interpreted as string values, and JavaScript objects are created accordingly. However you can identify any field as a **numeric** or **boolean** type when appropriate.&#x20;
+
+This is done by adding a symbol immediately after the `:` delimiter;
+
+* `:` or `:$` indicate a **string** value
+* `:#` indicates a **numeric** value
+* `:?` indicates a **boolean** value
+
+Here's an example structure;
+
+```html
+<script type="sygnal/sa5-data">
+name:$ John Doe
+age:# 23
+isActive:? true
+description: <John is a software engineer
+from Springfield. He loves coding and
+is passionate about technology.>
+</script>
+```
+
+## Null Values
+
+Blank values are expressed as `nulls` in your object, regardless of the type.
+
+Here, `age` and `isActive` are **nulls**;&#x20;
+
+```html
+<script type="sygnal/sa5-data">
+name:$ John Doe
+age:# 
+isActive:? 
+description: <John is a software engineer
+from Springfield. He loves coding and
+is passionate about technology.>
+</script>
+```
+
+## Nested Objects
+
+**SA5 Data** also supports nested objects.
+
+To indicate a nested object,&#x20;
+
+1. Place your field key on a line by itself, with a _double-colon_ `::` suffix&#x20;
+2. Indent the fields within your nested object beneath it&#x20;
+
+Here `address` and `postalCode` are both nested objects.&#x20;
+
+```html
+<script type="sygnal/sa5-data">
+name:$ John Doe
+age:# 23
+isActive:? true
+description: <John is a software engineer
+from Springfield. He loves coding and
+is passionate about technology.>
+address::
+    street: 
+    city: Springfield
+    country: 
+    postalCode::
+        code:# 
+        region: 
+</script>
+```
+
 ## Technical Guide
 
 **SA5 Data** is a custom notation designed to represent structured data in a human-readable format. It is designed specifically to work with Webflow's Custom Code areas and HTML Embeds, and to work with Webflow's HTML-encoded CMS field embeds.&#x20;
@@ -154,30 +223,33 @@ Sygnal designed **SA5 Data** because other approaches like raw JSON embeds creat
 
 **Script Tag:**
 
-* Every SSD block starts with a `<script type="sygnal/`sa5-data`">` tag and ends with a `</script>` tag.
+* Every SA5 Data block starts with a `<script type="sygnal/`sa5-data`">` tag and ends with a `</script>` tag.
 
 **Key-Value Pairs**:
 
 * Represent data as `key: value` pairs.
 * Each pair should be on a new line.
 * Whitespace will be trimmed from both the key and the value
-* The first colon on the line is a delimiter, thus the key cannot contain a : but the value can
+* The first colon on the line is a delimiter, thus the key cannot contain a `:` but the value can
 
 **Values**:
 
-*
 * Do not enclose values in quotes. They are not needed and would be considered part of the string content.
-* All values must be HTML-encoded.
+* All values must be HTML-encoded. This happens automatically with Webflow's embedded fields. If you have static string content;&#x20;
   * `<` must be encoded as `&lt;`
   * `>` must be encoded as `&gt;`
   * `&` must be encoded as `&amp;`
-* If an embedded CMS field might contain line breaks, or essential whitespace at the start or end of the field, wrap it in angle brackets `<` `>` to ensure the whitespace and line breaks are correctly interpreted.&#x20;
 *   If a value is delimited by `<` and `>` characters, the whitespace and line feeds within those angle brackets are considered part of the value.
 
     ```plaintext
-    plaintextCopy codemulti-line-value: <This is a
+    multi-line-value: <This is a
     multi-line value with preserved whitespace and line breaks.>
     ```
+* Value type defaults to strings, and will be created in the JavaScript object accordingly. However you can also define numeric and boolean types by appending a type identifier to the value separator;
+  * `:` or `:$` indicates a **string** value
+  * `:#` indicates a **numeric** value
+  * `:?` indicates a **boolean** value
+* Empty values of any time resolve to `null` values.
 
 **Indentation & Nesting**:
 
@@ -193,32 +265,10 @@ Sygnal designed **SA5 Data** because other approaches like raw JSON embeds creat
 
 In the resulting JavaScript object-
 
+* Value types are all string, unless identified as boolean or numeric &#x20;
+* Empty values are always `null`&#x20;
 * Webflow's HTML encoded fields are decoded
 * Line breaks are encoded as `\n`&#x20;
-
-## Examples
-
-
-
-```
-// Some code
-<script type="sygnal/sa5-data">
-name: John Doe
-age: 30
-description: <John is a software engineer
-from Springfield. He loves coding and
-is passionate about technology.>
-address:
-    street: 123 Main St
-    city: Springfield
-    country: US
-</script>
-
-```
-
-
-
-
 
 ## Future
 
