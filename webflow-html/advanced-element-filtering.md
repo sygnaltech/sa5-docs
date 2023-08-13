@@ -15,18 +15,44 @@ Here are a few ways you could use it;&#x20;
 * Display certain elements only between certain hours of the day, certain days of the week, months or seasons of the year, etc.&#x20;
 * Show employees who have a birthday today, or this month.&#x20;
 
+## Demonstration <a href="#usage-notes" id="usage-notes"></a>
+
+{% embed url="https://webflow-smart-elements.webflow.io/filter" %}
+Demo
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/webflow-tabs-hacks" %}
+Cloneable
+{% endembed %}
+
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
 The basic approach is to attach the filter attribute to the elements you want to conditionally display, and then add simple JavaScript logic that is evaluated.&#x20;
 
 Elements will be displayed If the evaluation returns `true`.
 
-### `wfu-filter` attribute <a href="#wfu-filter-attribute" id="wfu-filter-attribute"></a>
+### `wfu-filter-match` attribute
 
-Use `wfu-filter` with a specific formula to suppress the current node.
+Specify a **CSS selector** to match. If the element matches the selector, the element will be displayed. This is most powerful when paired with Webflow's CMS-bound custom attributes, and an evaluation string.&#x20;
+
+For example, suppose your CMS items have a numeric field indicating the day of week. In JavaScript convention, 0 is Sunday, 1 is Monday, through to 6 is Saturday.&#x20;
+
+If you store that number in a CMS field and then bind it to a custom attribute, you can easily create a custom attribute on your Collection Item of e.g. `weekday` = `2`&#x20;
+
+You can then use the SA5's match filter attribute with a [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS\_selectors) and a [JavaScript template literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template\_literals), create a match filter like this;&#x20;
 
 ```
-wfu-filter = new Date().getHours() >= 12
+wfu-filter-match = [weekday=${new Date().getDay()}]
+```
+
+This indicates that the element should be displayed IF the weekday atribute is equal to today's weekday number, according the the visitor's local system clock.&#x20;
+
+### `wfu-filter-eval` attribute <a href="#wfu-filter-attribute" id="wfu-filter-attribute"></a>
+
+Specify a formula for evaluation. If it evaluates to true, the element will be displayed.
+
+```
+wfu-filter-eval = new Date().getHours() >= 12
 ```
 
 Best used for short and simple expressions.
