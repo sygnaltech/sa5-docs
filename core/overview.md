@@ -18,11 +18,7 @@ It provides;
 Most of these capabilities are internal-facing and are probably not useful to Webflow designers and developers. However there are a few important features here that are particularly useful to advanced designers.
 {% endhint %}
 
-## Design-Time Support
 
-Often in the designer there are&#x20;
-
-\[wfu-design]
 
 
 

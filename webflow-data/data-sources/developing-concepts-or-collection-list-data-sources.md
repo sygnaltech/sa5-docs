@@ -35,7 +35,7 @@ Data Sources enable Sygnal Attributes data-binding capabilities, but you can use
 ## Alternate formats
 
 {% hint style="success" %}
-We've recently added [SA5 Data](../../article/) as our standard data source.&#x20;
+We've recently added [SA5 Data](../article/) as our standard data source.&#x20;
 {% endhint %}
 
 

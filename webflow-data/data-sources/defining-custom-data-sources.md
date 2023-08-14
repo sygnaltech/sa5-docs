@@ -4,7 +4,7 @@ description: How to Create a Data Source
 
 # Defining Custom Data Sources
 
-Currently the only Custom Data Source is [Collection List Data Sources](collection-list-data-source/).
+Currently the only Custom Data Source is [Collection List Data Sources](collection-list-data-source.md).
 
 ## Future
 
