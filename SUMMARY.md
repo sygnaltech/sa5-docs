@@ -26,13 +26,13 @@
 * [Data Sources](webflow-data/data-sources/README.md)
   * [Data Source Types](webflow-data/data-sources/data-sources.md)
   * [Url Data Source](webflow-data/data-sources/url-data-source.md)
-  * [Collection List Data Source](webflow-data/data-sources/collection-list-data-source.md)
+  * [Collection List Data Source](webflow-data/data-sources/collection-list-data-source/README.md)
+    * [Developing Concepts | Collection List Data Sources](webflow-data/data-sources/collection-list-data-source/developing-concepts-or-collection-list-data-sources.md)
   * [User Info Data Source](webflow-data/data-sources/user-info-data-source.md)
   * [Query Params Data Source](webflow-data/data-sources/query-params-data-source.md)
   * [Cookies & Web Storage Data Sources](webflow-data/data-sources/cookies-and-web-storage-data-sources.md)
   * [GitHub Data Data Source](webflow-data/data-sources/github-data-data-source.md)
   * [Google Sheets Data Source](webflow-data/data-sources/google-sheets-data-source.md)
-  * [Developing Concepts | Collection List Data Sources](webflow-data/data-sources/developing-concepts-or-collection-list-data-sources.md)
   * [Defining Custom Data Sources](webflow-data/data-sources/defining-custom-data-sources.md)
 * [Binding Data](webflow-data/binding-data/README.md)
   * [Form Elements](webflow-data/binding-data/form-elements.md)
@@ -159,6 +159,11 @@
 ## 📘 webflow-fixup <a href="#fixup" id="fixup"></a>
 
 * [Webflow Fixups ❺](fixup/article.md)
+
+## 📘 webflow-core <a href="#core" id="core"></a>
+
+* [SA5 Core ❺](core/overview.md)
+* [Webflow Designer Support ❺](core/overview-1.md)
 
 ## 📘 webflow-modals <a href="#modals" id="modals"></a>
 

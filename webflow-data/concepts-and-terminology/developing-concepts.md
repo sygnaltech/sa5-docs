@@ -6,6 +6,80 @@ description: Cool Stuff We're Thinking About
 
 ## Data path
 
+### Targeted-Selectors
+
+Datastore -> DatasourceType -> DSN -> Object ID -> Field Name&#x20;
+
+Object Lists
+
+Individual Objects
+
+Individual Object fields
+
+Object slice ( one field
+
+Object slice subset&#x20;
+
+## Architecture
+
+Datastore is part of Core
+
+Types are loaded as modules
+
+Sources are added either automatically ( user login ) or manually ( datastore load callback )&#x20;
+
+Dynamic v. Pre-Loaded&#x20;
+
+? Query to e.g. google sheet &#x20;
+
+<table><thead><tr><th width="149.33333333333331">Type</th><th width="271">DSN</th><th width="220">Object</th><th>Field</th></tr></thead><tbody><tr><td>data</td><td></td><td>x.y.z</td><td>key</td></tr><tr><td>data</td><td>from Collection List<br>?wfu-data-dsn</td><td>object id</td><td>key</td></tr><tr><td>data</td><td>from GSheet CSV<br>assigned name dsn<br>Specific sheet!</td><td>row <br>Spec identifies PK col<br>or numeric row is used</td><td>column</td></tr><tr><td>user</td><td>-</td><td>( SA5 user object )<br>.data</td><td>field</td></tr><tr><td>query</td><td></td><td></td><td>key</td></tr><tr><td>url</td><td></td><td></td><td>part</td></tr><tr><td>cookie</td><td>-</td><td></td><td>key</td></tr><tr><td>localStorage</td><td>-</td><td></td><td>key</td></tr><tr><td>webStorage</td><td>-</td><td></td><td>key</td></tr><tr><td>userAgent</td><td>-</td><td>( aspect )</td><td>( item ) </td></tr></tbody></table>
+
+## Dynamic Fields
+
+e.g. Image metadata&#x20;
+
+? Is image EXIF preserved in the non-resized versions?&#x20;
+
+? If so, can we get it, or disable CTRL+O&#x20;
+
+## EXIF
+
+RichText char count, word count...&#x20;
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXIF Reader</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.js"></script>
+</head>
+<body>
+
+<img src="path_to_your_image.jpg" id="myImage" alt="Your Image" />
+
+<script>
+    const image = document.getElementById('myImage');
+
+    image.onload = function() {
+        EXIF.getData(image, function() {
+            const allMetaData = EXIF.getAllTags(this);
+            const dateTime = EXIF.getTag(this, "DateTimeOriginal");
+            
+            console.log(allMetaData);  // Logs all EXIF data
+            console.log(dateTime);     // Logs the original date and time the photo was taken
+        });
+    }
+</script>
+
+</body>
+</html>
+
+```
+
+[https://codepen.io/memetican/pen/poQMNVo/0fb93debe7ff2da1aabe70186e1933b6](https://codepen.io/memetican/pen/poQMNVo/0fb93debe7ff2da1aabe70186e1933b6)
+
 ## Tables/Records/Columns v. Sets/Objects/Fields
 
 These are similar concepts and in most cases we'd relate this using a mental spreadsheet paradigm as Tables & Rows. However, the Sets and Keys and Objects paradigm seems more in line with some of the data we're working with;
@@ -15,7 +89,7 @@ These are similar concepts and in most cases we'd relate this using a mental spr
 
 This becomes even more relevant as we add other types of data to the Datastore, which does not follow the CMS's table-like composition.&#x20;
 
-From a naming perspecting
+From a naming perspective &#x20;
 
 #### Challenges;
 
