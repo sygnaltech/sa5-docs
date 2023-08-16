@@ -99,6 +99,7 @@
 ## 📘 WEBFLOW-VIDEO
 
 * [Background Video Poster ❺](webflow-video/background-video-poster.md)
+* [Video Player ❺](webflow-video/video-player.md)
 
 ## 📘 WEBFLOW-COMMERCE
 
@@ -130,6 +131,7 @@
 * [CMS & Lightbox + Groups ❺](webflow-elements/cms-and-lightbox-+-groups.md)
 * [Tabs Element ❺](webflow-elements/tabs-element.md)
 * [Slider Element ❺](webflow-elements/slider-element.md)
+* [Button Element ❺](webflow-elements/button-element.md)
 
 ## 📘 webflow-track
 
