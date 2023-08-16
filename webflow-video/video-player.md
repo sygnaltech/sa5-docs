@@ -4,8 +4,8 @@ description: Control and get events from your Webflow video players and embeds.
 
 # Video Player ❺
 
-{% hint style="info" %}
-Currently only supports Vimeo HTML Embeds, as a test.&#x20;
+{% hint style="warning" %}
+Currently only supports **Vimeo HTML Embeds**, as our initial test.&#x20;
 {% endhint %}
 
 ## Use Cases
@@ -14,10 +14,20 @@ Currently only supports Vimeo HTML Embeds, as a test.&#x20;
 * Perform actions as the playback happens, at different times in the video, either by second, or by % complete.&#x20;
 * Perform a specific action such as enabling a button when the video reaches a certain point of playback.
 
+## Demonstration <a href="#usage-notes" id="usage-notes"></a>
+
+{% embed url="https://video-player-control.webflow.io/" %}
+Demo
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/video-player-control" %}
+Cloneable
+{% endembed %}
+
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
-{% hint style="info" %}
-Currently only supports Vimeo HTML Embeds, as a test.&#x20;
+{% hint style="warning" %}
+Currently only supports **Vimeo HTML Embeds**, as our initial test.&#x20;
 {% endhint %}
 
 This initial release is focused on player state change eventing.
