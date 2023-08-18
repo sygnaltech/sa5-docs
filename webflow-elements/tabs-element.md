@@ -20,7 +20,13 @@ This feature allows you to work with the Webflow tabs element.
 
 Check the tabs demonstrations here-&#x20;
 
+{% embed url="https://webflow-smart-elements.webflow.io/tabs" %}
+Demo
+{% endembed %}
+
 {% embed url="https://webflow.com/made-in-webflow/website/webflow-tabs-hacks" %}
+Cloneable
+{% endembed %}
 
 ## Use Cases <a href="#usage-notes" id="usage-notes"></a>
 
@@ -29,15 +35,13 @@ Enhance navigation;&#x20;
 * Link a button or other element to your tab element, to trigger navigation to the first, last, next, or previous tab. These elements can be anywhere on your page, including within the tab element. You can have as many of them as you like.&#x20;
 * Programmatically navigate the tabs element using JavaScript.&#x20;
 
-Future; &#x20;
+Add dynamic page behaviors;&#x20;
 
-* Respond to custom code notifications on a tab change.
-* Choose to allow or prevent tab changes.&#x20;
+* Do something on your page when a tab is changed.
 
-## Setup <a href="#prepare-your-collection-list" id="prepare-your-collection-list"></a>
+## Usage Notes <a href="#prepare-your-collection-list" id="prepare-your-collection-list"></a>
 
-* Setup your tabs element.
-* Setup other "control" elements that will affect it ( optional ).&#x20;
+Setup your tabs element using these attributes.
 
 ### `wfu-tabs` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
@@ -45,38 +49,9 @@ Add the `wfu-tabs` custom attribute to the a Tab element. Give it a unique label
 
 This makes the tab element accessible in code, and selectable by the other tabs custom attributes.
 
-* Register it in the list of elements&#x20;
-* Error if it's not unique ( and avoid load )&#x20;
+### `wfu-tab-default` attribute
 
-wfu-tab-default attribute
-
-Add the wfu-tab-default custom attribute to a specific tab directly. This tab will be automatically selected on page load.
-
-## Future
-
-{% hint style="danger" %}
-These are under consideration for implementation, and not yet implemented.&#x20;
-{% endhint %}
-
-### `wfu-tabs-action` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
-
-I want a button or link to change tabs by index or text label.
-
-To any button or link, you can define an action;
-
-* first - select the first tab
-* prev - select the previous tab
-* next - select the next tab
-* last - select the last tab
-* <mark style="color:orange;">goto - select the specified tab</mark>
-* <mark style="color:orange;">goto ( name ) - matches first one only, starting from tab 1</mark>&#x20;
-
-### `wfu-tabs-action-tab` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
-
-For the goto action, specifies the tab you want to navigate to.&#x20;
-
-* <mark style="color:orange;">number - indicates the tab index, 0, 1, 2...  ( index )</mark>
-* <mark style="color:orange;">name - matches first one only, starting from tab 1</mark>&#x20;
+Add the `wfu-tab-default` custom attribute to a specific tab directly. This tab will be automatically selected on page load.
 
 ## JavaScript API
 
@@ -131,6 +106,48 @@ Methods;
 * `goToLast()` navigates to the last tab
 * `goToPrev()` navigates to the prev tab
 * `goToNext()` navigates to the next tab
+
+## Future
+
+Plan to add;&#x20;
+
+* Console log error if more than one tab element is accidentally assigned the same unique name.&#x20;
+
+Some things we're considering;&#x20;
+
+{% hint style="danger" %}
+These are under consideration for implementation, and not yet implemented.&#x20;
+{% endhint %}
+
+### Pre-change event
+
+Fire an event before a tab change happens, and allow the responding code to approve/deny the change. This is very interesting, for special flows such as multi-step forms.&#x20;
+
+However it requires;
+
+* Completely overriding the default webflow.js event handler
+* Replacement of that default handler with an SA5 variant&#x20;
+* An event origination flag, i.e. user-initiated v. code-initiated&#x20;
+
+### `wfu-tabs-action` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
+
+I want a button or link to change tabs by index or text label.
+
+To any button or link, you can define an action;
+
+* first - select the first tab
+* prev - select the previous tab
+* next - select the next tab
+* last - select the last tab
+* <mark style="color:orange;">goto - select the specified tab</mark>
+* <mark style="color:orange;">goto ( name ) - matches first one only, starting from tab 1</mark>&#x20;
+
+### `wfu-tabs-action-tab` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
+
+For the goto action, specifies the tab you want to navigate to.&#x20;
+
+* <mark style="color:orange;">number - indicates the tab index, 0, 1, 2...  ( index )</mark>
+* <mark style="color:orange;">name - matches first one only, starting from tab 1</mark>&#x20;
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
