@@ -249,6 +249,10 @@ In the resulting JavaScript object-
 
 ## Future
 
+Support for assembled objects. In rare cases, some pieces of the object may be outside of the `sa5-data` block, particularly items that cannot be Field-embedded such as rich text content.
+
+In this case, we might support a special attribute on those elements such as `[wfu-data-item]` along with field, db, dsn identifiers, and specify the field for an object-merge. e.g. `article.text` would indicate the nested `article` object, with a `text` field. Objects would be created as needed. I am probably in favor of an object-merge approach.&#x20;
+
 As multiline string delimiters, `<` `>` are concise and unambiguous, however we are also considering the use of `"""`, ` ``` ` or `\\\` delimiters to make them more visible.&#x20;
 
 {% hint style="info" %}

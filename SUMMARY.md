@@ -99,7 +99,10 @@
 ## 📘 WEBFLOW-VIDEO
 
 * [Background Video Poster ❺](webflow-video/background-video-poster.md)
-* [Video Player ❺](webflow-video/video-player.md)
+* [Video Player ❺](webflow-video/video-player/README.md)
+  * [Video Playback Spec 🧪](webflow-video/video-player/video-playback-spec.md)
+  * [YouTube Video Data 🧪](webflow-video/video-player/youtube-video-data.md)
+  * [Loom Video Data 🧪](webflow-video/video-player/loom-video-data.md)
 
 ## 📘 WEBFLOW-COMMERCE
 
