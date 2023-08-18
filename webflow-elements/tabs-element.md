@@ -4,12 +4,17 @@ description: Interact with Webflow's Tabs Element
 
 # Tabs Element ❺
 
+{% hint style="success" %}
+**2023-Aug-19** - Added `tabChanged` callback event. Tabs has also been moved into the elements library, and is using our standarized "deck" interface which means the methods and properties here should align with similar deck-type elements such as the Slider.&#x20;
+{% endhint %}
+
 ## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
 This feature allows you to work with the Webflow tabs element.
 
 * Switch tabs programmatically- first, next, prev, and last, or go to a specific tab index
 * Get the current tab index
+* Receive JavaScript events when the tab is changed, even if it is changed by code&#x20;
 
 ## Demonstration
 
@@ -73,6 +78,60 @@ For the goto action, specifies the tab you want to navigate to.&#x20;
 * <mark style="color:orange;">number - indicates the tab index, 0, 1, 2...  ( index )</mark>
 * <mark style="color:orange;">name - matches first one only, starting from tab 1</mark>&#x20;
 
+## JavaScript API
+
+### Events
+
+To receive events from tab changes setup an SA5 callback with the `tabChanged` event. When called, it will contain the tabs object, and the index of the new tab ( 0-based ).&#x20;
+
+If you have multiple tabs elements marked with \[wfu-tabs], you can assign a unique name, and access it through `tabs.name`, as in this example;&#x20;
+
+```html
+<script>
+window.sa5 = window.sa5 || [];
+window.sa5.push(['tabChanged', 
+  (tabs, index) => {
+    
+    console.log("TAB CHANGED", tabs.name, slider, index); 
+
+    switch(tabs.name) {
+      case "demo1": // Demo 1 tabs changed
+
+        break;
+      case "demo2": // Demo 2 tabs changed
+
+        break;
+    }
+
+  }]); 
+</script>
+```
+
+### Element Control <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
+
+Outside of callback events, you can also access the SA5 Tabs object by constructing one;
+
+```javascript
+const tabs = new sa5.WebflowTabs(
+    $("[wfu-tabs=demo1]")[0]
+); 
+```
+
+Once you have this, you can call its methods and properties;
+
+Properties;
+
+* name property returns the `[wfu-tabs]` name, if one was set.
+* `currentIndex` returns the 0-based index of the current slide.
+* `currentNum` returns the 1-based index.&#x20;
+
+Methods;
+
+* `goToFirst()` navigates to the first tab
+* `goToLast()` navigates to the last tab
+* `goToPrev()` navigates to the prev tab
+* `goToNext()` navigates to the next tab
+
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
@@ -89,10 +148,8 @@ Add this to the **before HEAD** custom code area of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attributes 5 | Tabs --> 
-<script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.3/dist/webflow-html.js"
-></script>
+<!-- Sygnal Attributes 5 | Elements -->
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/nocode/webflow-elements.js"></script>
 ```
 {% endcode %}
 
@@ -102,16 +159,9 @@ Nothing is needed in the before BODY code area.&#x20;
 
 See above for details.
 
-## Advanced ( optional )&#x20;
+### STEP 3 - ( OPTIONAL ) Use the API & Callbacks to control the element from your custom code
 
-For advanced use, you can access the tabs library directly;&#x20;
-
-```html
-<!-- Sygnal Attributes 5 | Tabs -->
-<script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.3/dist/webflow-core/tabs.js"
-></script> 
-```
+See above for details.
 
 
 

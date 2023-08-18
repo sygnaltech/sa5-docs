@@ -109,14 +109,18 @@ Add this to the **before HEAD** custom code area of your site or page.
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attributes 5 | HTML -->
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.27/dist/nocode/webflow-html.js"></script>
+<!-- Sygnal Attributes 5 | Elements -->
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/nocode/webflow-elements.js"></script>
 ```
 {% endcode %}
 
 Nothing is needed in the before BODY code area.&#x20;
 
 ### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
+
+See above for details.
+
+### STEP 3 - ( OPTIONAL ) Use the API & Callbacks to control the element from your custom code
 
 See above for details.
 
