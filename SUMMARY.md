@@ -130,12 +130,13 @@
 
 ## 📘 WEBFLOW-ELEMENTS
 
-* [About SA5's Elements Lib](webflow-elements/about-sa5s-elements-lib.md)
-* [Tabs Element ❺](webflow-elements/tabs-element.md)
-* [Slider Element ❺](webflow-elements/slider-element.md)
-* [Button Element ❺](webflow-elements/button-element.md)
-* [CMS & Lightbox + Captions ❺](webflow-elements/cms-+-lightbox-and-captions.md)
-* [CMS & Lightbox + Groups ❺](webflow-elements/cms-and-lightbox-+-groups.md)
+* [About SA5's Elements Lib](webflow-elements/about.md)
+* [Tabs Element ❺](webflow-elements/tabs.md)
+* [Slider Element ❺](webflow-elements/slider.md)
+* [Button Element ❺](webflow-elements/button.md)
+* [Lightbox Element ❺](webflow-elements/lightbox/README.md)
+  * [CMS & Lightbox + Groups ❺](webflow-elements/lightbox/cms-and-lightbox-+-groups.md)
+  * [CMS & Lightbox + Captions ❺](webflow-elements/lightbox/cms-and-lightbox-+-captions.md)
 
 ## 📘 webflow-track
 
