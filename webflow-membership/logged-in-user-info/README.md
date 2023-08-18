@@ -167,8 +167,8 @@ Add this script to the **site wide** custom code **before HEAD** area of your si
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Memberships --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.25/dist/css/webflow-membership.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.25/dist/nocode/webflow-membership.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.31/dist/css/webflow-membership.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.31/dist/nocode/webflow-membership.js"></script>
 ```
 {% endcode %}
 

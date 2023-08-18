@@ -90,7 +90,7 @@ Add this to the **before HEAD** custom code area of your site or page.
 ```html
 <!-- Sygnal Attributes 5 | Hotkeys -->
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/nocode/webflow-hotkeys.min.js"
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.31/dist/nocode/webflow-hotkeys.js"
 ></script> 
 ```
 {% endcode %}

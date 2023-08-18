@@ -64,7 +64,7 @@ Add this script to your _site-wide_ **before HEAD** custom code.
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Memberships -->
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.19/dist/nocode/webflow-membership.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.31/dist/nocode/webflow-membership.js"></script>
 
 <script>
 window.sa5 = window.sa5 || [];
