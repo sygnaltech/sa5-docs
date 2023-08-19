@@ -26,7 +26,7 @@ Add this script to the **site wide** custom code **before HEAD** area of your si
 ```
 {% endcode %}
 
-F
+
 
 
 
