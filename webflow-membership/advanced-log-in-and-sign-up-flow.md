@@ -59,13 +59,15 @@ There are currently two configuration options;
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Add this script to your _site-wide_ **before HEAD** custom code.
+First, **add the library** as detailed in [Quick Start](quick-start.md).
+
+### STEP 2 - Add your Configuration Callback
+
+Add this script right after the library in your _site-wide_ **before HEAD** custom code.
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attributes 5 | Memberships -->
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.31/dist/nocode/webflow-membership.js"></script>
-
+<!-- Sygnal Attributes 5 | Memberships | Config -->
 <script>
 window.sa5 = window.sa5 || [];
 window.sa5.push(['getMembershipRoutingConfig', 

@@ -162,15 +162,7 @@ Don't blindly copy and paste URLs, you're much better to copy the code block her
 
 ### STEP 1 - Add the Configuration Code <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Add this script to the **site wide** custom code **before HEAD** area of your site.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Memberships --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.31/dist/css/webflow-membership.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.31/dist/nocode/webflow-membership.js"></script>
-```
-{% endcode %}
+First, **add the library** as detailed in [Quick Start](../quick-start.md).
 
 ### STEP 2 - Use the `wfu-bind` attribute to automatically load data into DOM elements&#x20;
 
@@ -184,6 +176,7 @@ Place this also in the **before HEAD** of your site, just after the library code
 
 {% code overflow="wrap" %}
 ```html
+<!-- Sygnal Attributes 5 | Memberships | User Info Changed Event -->
 <script>
 window.sa5 = window.sa5 || [];
 window.sa5.push(['userInfoChanged', 
