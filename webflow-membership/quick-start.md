@@ -1,8 +1,10 @@
 ---
-description: SA5 Memberships Quick Start
+description: >-
+  How to Easily Add SA5's User Info & Advanced Routing Enhancements to Your
+  Webflow Memberships Site
 ---
 
-# Quick Start
+# Quick Start | SA5 Memberships
 
 {% hint style="success" %}
 All of SA5's Membership features are now consolidated into a single library, so you only need one library include.&#x20;
@@ -42,7 +44,7 @@ See SA5's full list of **data source descriptors** for [User Info](https://attr.
 
 If you want to use the user's info in custom code, use the [callback option](https://attr.sygnal.com/webflow-membership/logged-in-user-info#step-3-optional-add-custom-code-to-use-user-info-specially), and you get the full [user object](https://attr.sygnal.com/webflow-membership/logged-in-user-info/the-user-object).
 
-### Log-In & Sign-Up Flow Quick Start
+## Log-In & Sign-Up Flow Quick Start
 
 **We use the same library above for this module.**
 

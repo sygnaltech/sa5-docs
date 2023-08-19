@@ -111,7 +111,7 @@
 ## 📘 WEBFLOW-MEMBERSHIP
 
 * [About SA5's Memberships Lib](webflow-membership/about.md)
-* [Quick Start](webflow-membership/quick-start.md)
+* [Quick Start | SA5 Memberships](webflow-membership/quick-start.md)
 * [Logged-In User Info ❺](webflow-membership/logged-in-user-info/README.md)
   * [BETA testing](webflow-membership/logged-in-user-info/beta-testing.md)
   * [Custom User Fields](webflow-membership/logged-in-user-info/custom-user-fields.md)
