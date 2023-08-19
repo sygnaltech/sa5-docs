@@ -46,26 +46,7 @@ When you use this feature with Webflow's CMS-bound attributes, you can initializ
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
-
-{% hint style="info" %}
-This feature is using WFU's v5 new TypeScript-based library, so it is has different URLs and _code placement_ from the v4 JS-based library.&#x20;
-
-You can use both the v4 and v5 libraries simultaneously to get the full feature set during migration.
-{% endhint %}
-
-Add this to the **before HEAD** custom code area of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | HTML -->
-<script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.1/dist/nocode/webflow-html.min.js"
-></script> 
-```
-{% endcode %}
-
-Nothing is needed in the before BODY code area.&#x20;
+First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
 
 ### STEP 2 - Apply `x-` prefixed custom attributes to any elements <a href="#step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter"></a>
 
