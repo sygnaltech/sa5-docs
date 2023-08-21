@@ -42,10 +42,22 @@ If you store that number in a CMS field and then bind it to a custom attribute, 
 You can then use the SA5's match filter attribute with a [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS\_selectors) and a [JavaScript template literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template\_literals), create a match filter like this;&#x20;
 
 ```
-wfu-filter-match = [weekday=${new Date().getDay()}]
+wfu-filter-match = [weekday='${new Date().getDay()}']
 ```
 
-This indicates that the element should be displayed IF the weekday atribute is equal to today's weekday number, according the the visitor's local system clock.&#x20;
+This indicates that the element should be displayed IF the weekday attribute is equal to today's weekday number, according the the visitor's local system clock.&#x20;
+
+{% hint style="info" %}
+The constructions can be complex as they involve 3 combined syntaxes;&#x20;
+
+* [CSS selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS\_selectors), which are very powerful. In this example, our selector takes the form `[weekday='2']` which matches all elements that have the `weekday` attribute, with the value `2`.&#x20;
+* [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template\_literals), the `${` ... `}` part, which allows us to embed evaluated JS content such as today's weekday.
+* The [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) expression, in this case `new Date().getDay()` which returns [today's weekday number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Date/getDay) 0 - 6. &#x20;
+{% endhint %}
+
+{% hint style="info" %}
+This feature is useful in very compact situations where your filter-match expression is concise. If it gets long or complex, use `wfu-filter-func` instead.&#x20;
+{% endhint %}
 
 ### `wfu-filter-eval` attribute <a href="#wfu-filter-attribute" id="wfu-filter-attribute"></a>
 
