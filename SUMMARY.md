@@ -7,7 +7,7 @@
 ## 📘 Overview
 
 * [Sygnal Attributes v5](README.md)
-* [What is Sygnal Attributes?](<README (1).md>)
+* [What is Sygnal Attributes?](overview/readme.md)
 * [What's New?](overview/whats-new.md)
 * [Library Modules](overview/whats-new-1.md)
 * [Technical Notes & Goals](overview/technical-notes-and-goals/README.md)
@@ -26,8 +26,8 @@
 * [Data Sources](webflow-data/data-sources/README.md)
   * [Data Source Types](webflow-data/data-sources/data-sources.md)
   * [Url Data Source](webflow-data/data-sources/url-data-source.md)
-  * [Collection List Data Source](webflow-data/data-sources/collection-list-data-source.md)
-    * [Developing Concepts | Collection List Data Sources](webflow-data/data-sources/developing-concepts-or-collection-list-data-sources.md)
+  * [Collection List Data Source](webflow-data/data-sources/collection-list-data-source/README.md)
+    * [Developing Concepts | Collection List Data Sources](webflow-data/data-sources/collection-list-data-source/developing-concepts-or-collection-list-data-sources.md)
   * [User Info Data Source](webflow-data/data-sources/user-info-data-source.md)
   * [Query Params Data Source](webflow-data/data-sources/query-params-data-source.md)
   * [Cookies & Web Storage Data Sources](webflow-data/data-sources/cookies-and-web-storage-data-sources.md)
@@ -69,7 +69,7 @@
 * [Limit Items by Breakpoint ❺](webflow-html/limit-items-by-breakpoint.md)
 * [Limit Items to Multiple-of ❺](webflow-html/limit-items-to-multiple-of.md)
 * [Numeric Sequencing ❺](webflow-html/numeric-sequencing.md)
-* [Truncate Text w/ Ellipsis ❺](webflow-html/truncate-text-with-ellipsis.md)
+* [Truncate Text w/ Ellipsis ❺](webflow-html/truncate-text-w-ellipsis.md)
 * [Hide Section w/ Empty Collection Lists ❺](webflow-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML ❺](webflow-html/decode-html.md)
 * [Content Embeds ❺🧪](webflow-html/content-embeds.md)
@@ -78,7 +78,7 @@
 
 ## 📘 WEBFLOW-UI
 
-* [5-Star Ratings Component ❺](webflow-ui/ratings-component.md)
+* [5-Star Ratings Component ❺](webflow-ui/5-star-ratings-component.md)
 
 ## 📘 WEBFLOW-HOTKEYS <a href="#hotkeys" id="hotkeys"></a>
 

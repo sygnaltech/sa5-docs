@@ -10,7 +10,7 @@ description: Fix common Webflow issues in the Editor and published site.
 
 Problem- this appears even when you are not logged into the editor.
 
-### ![](<../.gitbook/assets/image (3) (1).png>)
+### ![](<../.gitbook/assets/image (10).png>)
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
