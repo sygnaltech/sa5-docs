@@ -56,7 +56,7 @@ This would be parsed as the JavaScript object;&#x20;
 
 In a Webflow HTML Embed, an example might look like this;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>HTML Embed example setup</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>HTML Embed example setup</p></figcaption></figure>
 
 ## Multiline Content
 

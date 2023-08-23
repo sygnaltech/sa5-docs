@@ -41,7 +41,7 @@ The WFU forms handler bridges that gap;
 Because each webhook provider responds differently, we have several “handlers” for each situation;
 
 * The **Zapier** handler looks for “success” in the response, and displays the success message if it is present. However it’s important to note that Zapier’s success response only indicates that the data was received successfully. It does not indicate that the Zap ran successfully.
-* The **Make** (Integromat) handler can handle specific responses and display error messages.
+* The **Make** ( Integromat ) handler can handle specific responses and display error messages, if you use the HTTP Response node in Make. If you have the request return immediately, you will simply get 'Accepted' from Make as the success text.&#x20;
 * The **n8n** handler can handle specific responses and display error messages.
 * The **Basin** handler shows success and fail messages depending on [Basin](https://usebasin.com/)'s response.
 * The **Other** handler _always_ displays the success message. It’s most useful for unknown webhookd providers, and in situations where success/failure aren’t that important, you just need to indicate to the user that their work is done. Use it for simple and less essential form submissions, like newsletter enrollments.
@@ -60,13 +60,13 @@ Why use a custom webhook form handler rather than Webflow's?
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Install this code in **before BODY**, site-wide or on the specific pages you want the script to affect.
+Install this code in **before HEAD**, site-wide or on the specific pages you want the script to affect.
 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Form Handlers --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.16/dist/css/webflow-form.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.16/dist/nocode/webflow-form.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.33/dist/css/webflow-form.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.33/dist/nocode/webflow-form.js"></script>
 ```
 {% endcode %}
 
