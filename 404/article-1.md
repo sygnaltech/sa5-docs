@@ -22,6 +22,8 @@ Click the link to see the 404 lib auto-populate a Webflow site search input.&#x2
 
 ## Usage Notes <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
+Click to expand the feature you want.
+
 <details>
 
 <summary>I want this Search input to auto-populate from the current path</summary>
