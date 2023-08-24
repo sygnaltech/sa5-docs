@@ -6,21 +6,19 @@ description: Add a Smart Search to Your 404 Pages.
 
 Did you delete a blog article, or rename the slug and forget to redirect it?&#x20;
 
-404's happen- but they don't need to be the end of the road.&#x20;
+404's happen- but they don't need to be the end of the road. Help your visitors get where their going by automatically populating Webflow's search component with the URL path keywords they were originally trying to reach?
 
-Help your visitors get where their going by automatically populating Webflow's search component with the URL path keywords they were originally trying to reach?
+## Demo <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
-## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
+This URL points to a Webflow site, for which the page does not exist;
 
-Goals
+```
+https://www.coachmike.live/blog/anger-management-for-couples
+```
 
-* Smart routing and redirect for special paths
-* Smart search feature, populate from url&#x20;
-* Logging
+Click the link to see the 404 lib auto-populate a Webflow site search input.&#x20;
 
-[https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)
-
-[https://developers.google.com/search/docs/crawling-indexing/http-network-errors#http-status-codes](https://developers.google.com/search/docs/crawling-indexing/http-network-errors#http-status-codes)
+{% embed url="https://www.coachmike.live/blog/anger-management-for-couples" %}
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
