@@ -183,8 +183,8 @@
 
 ## 📘 webflow-404 <a href="#404" id="404"></a>
 
-* [404 Page Enhancements](404/404-page-enhancements.md)
-* [Webflow Fixups ❺](404/article.md)
+* [About SA5's 404 Lib](404/article.md)
+* [404 Search ❺](404/article-1.md)
 
 ## 📘 Deprecated Features <a href="#deprecated" id="deprecated"></a>
 
