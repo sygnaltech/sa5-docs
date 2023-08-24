@@ -26,6 +26,10 @@ If you use Response webhooks as well ( as in the scenario below ), you can retur
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+Here's a walkthrough of the scenario setup.&#x20;
+
+{% embed url="https://www.loom.com/share/f7ad76c67e72463296a5a09788182d41" %}
+
 ### Returning Data&#x20;
 
 Use HTTP Response Codes to indicate success or failure.&#x20;
@@ -37,9 +41,16 @@ Use HTTP Response Codes to indicate success or failure.&#x20;
 
 Use both Make's **Custom Webhook** and **Webhook Response** nodes together to communicate information back to your users. &#x20;
 
-Use `2xx` codes on successful processing, and `4xx` or `5xx` codes for errors. [Choose codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) that are meaningful and make sense to your situation.&#x20;
+In your Webhook Response nodes-
 
-Use Make's **Router** to configure a full range of success and error responses. &#x20;
+* Use `2xx` codes on successful processing, and `4xx` or `5xx` codes for errors. [Choose codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) that are meaningful and make sense to your situation.&#x20;
+* Set a response header to indicate a JSON response;
+  * key: `Content-Type`
+  * value: `application/json`
+* Set the Body to a valid JSON string;
+  * e.g. `{ "message": "Success." }`
+
+Use Make's **Router** to configure a full range of success and error responses, as needed. &#x20;
 
 [https://www.make.com/en/help/tools/webhooks](https://www.make.com/en/help/tools/webhooks)
 
