@@ -60,8 +60,8 @@
 
 ## 📘 WEBFLOW-HTML
 
-* [About SA5's HTML Lib](webflow-html/about.md)
-* [Quick Start | SA5 HTML](webflow-html/quick-start.md)
+* [🔍 About SA5's HTML Lib](webflow-html/about.md)
+* [🚀 Quick Start | SA5 HTML](webflow-html/quick-start.md)
 * [Nested Lists ❺](webflow-html/nested-lists.md)
 * [Advanced Element Sorting ❺](webflow-html/advanced-element-sorting.md)
 * [Advanced Element Filtering ❺](webflow-html/advanced-element-filtering.md)
@@ -183,7 +183,8 @@
 
 ## 📘 webflow-404 <a href="#404" id="404"></a>
 
-* [About SA5's 404 Lib](404/article.md)
+* [🔍 About SA5's 404 Lib](404/article.md)
+* [🚀 Quick Start | SA5 404](404/quick-start-or-sa5-404.md)
 * [404 Search ❺](404/article-1.md)
 
 ## 📘 Deprecated Features <a href="#deprecated" id="deprecated"></a>

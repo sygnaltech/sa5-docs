@@ -2,7 +2,7 @@
 description: Make Your 404 Pages More Functional.
 ---
 
-# About SA5's 404 Lib
+# 🔍 About SA5's 404 Lib
 
 This feature is all about make Webflow's 404 pages more functional.
 

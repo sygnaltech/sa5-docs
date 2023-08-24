@@ -4,7 +4,7 @@ description: >-
   Webflow Memberships Site
 ---
 
-# Quick Start | SA5 HTML
+# 🚀 Quick Start | SA5 HTML
 
 {% hint style="success" %}
 All of SA5's HTML features are now consolidated into a single library, so you only need one library include.&#x20;

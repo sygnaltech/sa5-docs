@@ -2,7 +2,7 @@
 description: About the SA5 HTML Library
 ---
 
-# About SA5's HTML Lib
+# 🔍 About SA5's HTML Lib
 
 This this lib contains a huge range of tools that involve HTML manipulation.
 
