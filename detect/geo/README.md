@@ -19,9 +19,73 @@ Watch this space.
 * Route visitors to a Country-specific home page
 * Route visitors to a City-specific contact-us page
 
-## Future Plans
+## Feature Roadmap
+
+{% tabs %}
+{% tab title="Completed" %}
+* Route user by Country
+* Routing table support
+  * Supports routing any defined path, e.g. /about to any Geo-specific variants you have, e.g. `/about/gb`, `/about/au`, `/jp/about`.&#x20;
+  * Routed sources and destinations are unlimited, no enforced path rules.&#x20;
+* Standardized GeoInfo object, to consistently describe the detection regardless of the GeoIP handler source&#x20;
+* Cached responses, for minimal GeoIP service traffic
+  * One request per unique user&#x20;
+
+GeoIP handlers;
+
+* IPInfo support. 50,000 requests/mo free.&#x20;
+{% endtab %}
+
+{% tab title="Planned" %}
+* Route user by Continent
+* Route user by City
+* Cache duration as a setting
+* Named route efficiency
+  * Modify page paths on e.g. Home / to the routed page variant, to avoid unnecessary redirects. &#x20;
+
+Override support;
+
+* The ability to apply the current setting to a Dropdown, and automatically indicate the current Country, City, etc.
+* The ability to change country, city, etc and have that override the detected settings.&#x20;
+
+GeoIP handlers;
 
 * Support for multiple Geoip handlers&#x20;
+  * Ability to select in config
+{% endtab %}
+
+{% tab title="Considering" %}
+Developer support;
+
+* Expose and document the Detect objects for use in code, e.g.;
+  * Data-binding support, populate a form's Zip code field, select a country, etc.&#x20;
+  * Auto-center maps&#x20;
+* Automatic Filter-binding support for FS-Filter
+
+GeoZone definitions;&#x20;
+
+* Collection of countries, cities, zips, etc into a Zone, like "Europe"&#x20;
+
+GeoIP handlers;
+
+* Ability to select the GeoIP handler dynamically in config&#x20;
+* Fallback handlers&#x20;
+{% endtab %}
+
+{% tab title="More Ideas" %}
+GeoZone definitions;
+
+* Point-and-radius
+* Sort list by nearest ( branch locators, etc. )&#x20;
+* Zip to data chaining&#x20;
+
+GeoIP handlers;
+
+* Possibly a Sygnal-specific Geoip handler&#x20;
+{% endtab %}
+{% endtabs %}
+
+
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
@@ -59,13 +123,7 @@ window['sa5_route'] = [{
 </script>
 ```
 
-{% hint style="danger" %}
-**ALPHA PRE-RELEASE.** Not advised for production use. Use v4 for production sites.&#x20;
-{% endhint %}
-
-### Setup the Cache
-
-Place this code in your site or page level **/head** code,
+###
 
 
 

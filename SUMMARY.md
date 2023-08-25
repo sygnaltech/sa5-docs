@@ -159,6 +159,7 @@
 
 ## 📘 webflow-track
 
+* [Likes & Favorites Tracking](webflow-track/likes-and-favorites-tracking.md)
 * [Webflow Cookies & Storage Tracking ❺](webflow-track/webflow-cookies-and-storage-tracking/README.md)
   * [Conditional Element Visibility](webflow-track/webflow-cookies-and-storage-tracking/conditional-element-visibility.md)
   * [Tracking Page Visits](webflow-track/webflow-cookies-and-storage-tracking/tracking-page-visits.md)
