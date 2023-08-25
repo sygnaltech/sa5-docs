@@ -22,9 +22,9 @@ Cloneable
 
 We have two slightly different solutions here, depending on your needs. In both solutions, if ALL of the collection lists within the attribute-tagged section are empty, the entire section will be hidden.
 
-However there are important distinctions-
+**Click the toggle next to the solution you want.**
 
-If you want a solution that works with all browsers, use the suppress feature.
+If you want a solution that works with all browsers, use the _suppress_ feature.
 
 <details>
 
