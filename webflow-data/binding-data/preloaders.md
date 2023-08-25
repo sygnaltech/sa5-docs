@@ -5,7 +5,8 @@ description: Configure How Your Placeholders Look Before Data-Binding
 # Preloaders
 
 {% hint style="warning" %}
-EXPERIMENTING: Not yet part of SA5 release code.&#x20;
+EXPERIMENTAL\
+Not yet part of SA5 release code.&#x20;
 {% endhint %}
 
 Preloaders refer to the display of elements prior to data-binding. Once data-binding is complete, the preloader state / elements are removed and the data-bound element(s) are shown.&#x20;

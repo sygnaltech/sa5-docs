@@ -1,5 +1,9 @@
 # Macro Expansion
 
+{% hint style="danger" %}
+OUTDATED SA4 DOCS
+{% endhint %}
+
 WFU macro expansion allows you to populate specific values in your Webflow pages, from a remote data source.
 
 Insert text strings, numeric values, or calculated spreadsheet results anywhere you like.
