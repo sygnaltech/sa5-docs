@@ -2,7 +2,7 @@
 description: Data Source Types
 ---
 
-# Data Source Types
+# Data Source Types 📝
 
 {% hint style="warning" %}
 **DOCUMENTATION IN-PROGRESS.** Use this as notes.&#x20;
@@ -10,23 +10,20 @@ description: Data Source Types
 
 ## User Info
 
-If you are using **Webflow Memberships** and **SA5's User Info library**, then SA5 constructs a User Info object whenever a user is currently logged in.
+If you are using **Webflow Memberships** and [SA5's User Info library](data-sources.md#user-info), then SA5 constructs a User Info object whenever a user is currently logged in.
 
 The details of that object can be data-bound.&#x20;
 
-$user.name
-
-$user.email
+* `$user.name`
+* `$user.email`
 
 [user-info-data-source.md](user-info-data-source.md "mention")
 
+[Custom user fields](../../webflow-membership/logged-in-user-info/custom-user-fields.md) can also be accessed, under `$user.data.your-field-name`.
 
+You can use this in element data-binding, with the&#x20;
 
-If you have custom user fields, these will also appear
-
-, they a
-
-
+\{{ $user.data.your-field-name \}}&#x20;
 
 Descriptors beginning with $user &#x20;
 
@@ -44,7 +41,7 @@ wfu-bind = $user.data.link-field
 This functionality is available when you are using the User Info library.
 {% endhint %}
 
-## Query
+## Query String
 
 $query
 

@@ -2,7 +2,12 @@
 description: Create and Use Custom Collection List Data Sources
 ---
 
-# Collection List Data Source
+# Collection List Data Source 📝
+
+{% hint style="warning" %}
+**DOCS OUTDATED**\
+We'll rewrite soon. Use the main [SA5 Data docs](../../article/) currently for this.&#x20;
+{% endhint %}
 
 SA5 allows you to create a Data Source from any Webflow Collection List.&#x20;
 

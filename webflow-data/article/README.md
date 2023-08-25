@@ -10,13 +10,17 @@ description: Add data to your custom code
 This library is in beta testing.&#x20;
 {% endhint %}
 
-**SA5 Structured Data** is a special `<script>` code block format that is designed to easily capture CMS and static data, and encode it in a JavaScript object. It is designed to model the core capabilities of the JSON format, but in a way that is easier to use in Webflow and which correctly handles Webflow's embed field encoding.&#x20;
+**SA5 Structured Data** uses a `<script>` code block format to easily capture CMS and static data, and transform it into a JavaScript object. The syntax is designed specifically to provide a reliable bridge from Webflow's HTML Embeds to JavaScript's JSON objects.&#x20;
+
+
+
+for Webflow- it models the core capabilities of the JSON format, but in a way that is easier to use in Webflow and which correctly handles Webflow's embed field encoding.&#x20;
 
 This makes it easy to work with in our client side code and create data sources, drive business logic, or to create JSON-LD.&#x20;
 
 ## BETA Testing Notes <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
-**SA5 Data** is in open BETA. We're doing some final design work around typed values, nulls, and whitespace handling.&#x20;
+**SA5 Data** is in open BETA. We're doing some final community testing around typed values, nulls, and whitespace handling.&#x20;
 
 To mitigate any further changes we'll release the BETA format under a separate BETA type specifier;&#x20;
 
@@ -24,15 +28,13 @@ To mitigate any further changes we'll release the BETA format under a separate B
 <script type="sygnal/sa5-data-proto">
 ```
 
-Things we may change or add future support for;
+{% hint style="info" %}
+Use this for now, in place of `sygnal/sa5-data` as the script type.&#x20;
+{% endhint %}
 
-* Path to strongly typed values, **int**, **boolean**, and **null**
-* Handling of **nulls** v. identification of an object start tag
-* Testing whitespace around key, and value, and delimiter
-* Allowing for delimiter value-type attributes, + ? :: $
-* Docs and language around multiline literals&#x20;
+## How Do I Use It? <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
-## How Does it Work? <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
+**SA5 Data** blocks are placed in HTML Embeds inside of any Collection List or Collection Page. They describe the JSON object you want to create.&#x20;
 
 Here's a very simple example of what SA5 Data looks like.&#x20;
 
@@ -54,47 +56,27 @@ This would be parsed as the JavaScript object;&#x20;
 }
 ```
 
-In a Webflow HTML Embed, an example might look like this;
+And can be used in [SA5 Data-Binding](../binding-data/), or in your custom JavaScript code.&#x20;
+
+Typically, you would use Webflow's Field embeds to compose the SA5 Data object from Webflow's CMS Embed fields. An example might look like this;
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>HTML Embed example setup</p></figcaption></figure>
 
-## Multiline Content
-
-There is an edge case problem here, which is that in Webflow a CMS text field can be set to multiline, and can contain line breaks. To resolve this unambiguously, wrap Webflow's embedded variable in angle brackets `<` `>`
-
-Objects can be nested by specifying the object key on one line, and indenting the nested object beneath it;&#x20;
-
-```html
-<script type="sygnal/sa5-data">
-name: The Catcher in the Rye
-author: J.D. Salinger
-description: <In "The Catcher in the Rye," the protagonist, Holden Caulfield, 
-recounts his experiences in New York City after being expelled 
-from an elite prep school.> 
-</script>
-```
-
-Which is parsed as;&#x20;
-
-{% code overflow="wrap" %}
-```json
-{
-  "name": "The Catcher in the Rye",
-  "author": "J.D. Salinger",
-  "description": "In \"The Catcher in the Rye,\" the protagonist, Holden Caulfield,\nrecounts his experiences in New York City after being expelled\nfrom an elite prep school."
-}
-```
-{% endcode %}
-
 {% hint style="success" %}
-The use of angle brackets was chosen because Webflow HTML encodes all values it embeds, which means that angle brackets cannot exist in the embedded content itself.&#x20;
+The resulting JSON object is stored in SA5's Datastore so that you can easily access all of the data on your page, even hundreds of data items.&#x20;
 {% endhint %}
 
-{% hint style="info" %}
-Also use angle brackets if whitespace characters at the start or end of your field content are an essential part of your data.&#x20;
-{% endhint %}
+In the `<script>` element, you can see two custom attributes, `wfu-data-dsn` and `wfu-data-item-id`. These identify the collection and the item uniquely, so that you could later retrieve it easily.
 
-## Typed Values&#x20;
+For example if this collection contained an item with a slug of `102-hemingway`, then you could access it directly through [data-binding](../binding-data/);&#x20;
+
+`wfu-bind` = `$data.listings.102-hemingway.name`
+
+## Features
+
+To provide a full bridge between Webflow's CMS Data and structured JSON objects, the SA5 Data syntax has support for typed values ( string, number, boolean ), null values, nested objects, and multiline strings.&#x20;
+
+### Typed Values&#x20;
 
 By default, values are interpreted as string values, and JavaScript objects are created accordingly. However you can identify any field as a **numeric** or **boolean** type when appropriate.&#x20;
 
@@ -117,7 +99,7 @@ is passionate about technology.>
 </script>
 ```
 
-## Null Values
+### Null Values
 
 Blank values are expressed as `nulls` in your object, regardless of the type.
 
@@ -134,7 +116,7 @@ is passionate about technology.>
 </script>
 ```
 
-## Nested Objects
+### Nested Objects
 
 **SA5 Data** also supports nested objects.
 
@@ -178,6 +160,42 @@ Generates the following JSON object;&#x20;
   }
 }
 ```
+
+### Multiline Content
+
+There is an edge case problem here, which is that in Webflow a CMS text field can be set to multiline, and can contain line breaks. To resolve this unambiguously, wrap Webflow's embedded variable in angle brackets `<` `>`
+
+Objects can be nested by specifying the object key on one line, and indenting the nested object beneath it;&#x20;
+
+```html
+<script type="sygnal/sa5-data">
+name: The Catcher in the Rye
+author: J.D. Salinger
+description: <In "The Catcher in the Rye," the protagonist, Holden Caulfield, 
+recounts his experiences in New York City after being expelled 
+from an elite prep school.> 
+</script>
+```
+
+Which is parsed as;&#x20;
+
+{% code overflow="wrap" %}
+```json
+{
+  "name": "The Catcher in the Rye",
+  "author": "J.D. Salinger",
+  "description": "In \"The Catcher in the Rye,\" the protagonist, Holden Caulfield,\nrecounts his experiences in New York City after being expelled\nfrom an elite prep school."
+}
+```
+{% endcode %}
+
+{% hint style="success" %}
+The use of angle brackets was chosen because Webflow HTML encodes all values it embeds, which means that angle brackets cannot exist in the embedded content itself.&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+Also use angle brackets if whitespace characters at the start or end of your field content are an essential part of your data.&#x20;
+{% endhint %}
 
 ## Technical Guide
 

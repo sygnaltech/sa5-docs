@@ -2,7 +2,11 @@
 description: Cool Stuff We're Thinking About
 ---
 
-# Developing Concepts
+# Developing Concepts 📝
+
+{% hint style="warning" %}
+This section contains **internal team notes** on directions we're working. As it develops into complete features, we'll organize those features in the docs. Feel free to ask questions or make suggestions in the [forums](https://sygnal-attr.discourse.group/).
+{% endhint %}
 
 ## Data path
 
@@ -32,7 +36,7 @@ Dynamic v. Pre-Loaded&#x20;
 
 ? Query to e.g. google sheet &#x20;
 
-<table><thead><tr><th width="149.33333333333331">Type</th><th width="271">DSN</th><th width="220">Object</th><th>Field</th></tr></thead><tbody><tr><td>data</td><td></td><td>x.y.z</td><td>key</td></tr><tr><td>data</td><td>from Collection List<br>?wfu-data-dsn</td><td>object id</td><td>key</td></tr><tr><td>data</td><td>from GSheet CSV<br>assigned name dsn<br>Specific sheet!</td><td>row <br>Spec identifies PK col<br>or numeric row is used</td><td>column</td></tr><tr><td>user</td><td>-</td><td>( SA5 user object )<br>.data</td><td>field</td></tr><tr><td>query</td><td></td><td></td><td>key</td></tr><tr><td>url</td><td></td><td></td><td>part</td></tr><tr><td>cookie</td><td>-</td><td></td><td>key</td></tr><tr><td>localStorage</td><td>-</td><td></td><td>key</td></tr><tr><td>webStorage</td><td>-</td><td></td><td>key</td></tr><tr><td>userAgent</td><td>-</td><td>( aspect )</td><td>( item ) </td></tr></tbody></table>
+<table><thead><tr><th width="149.33333333333331">Type</th><th width="271">DSN</th><th width="220">Object</th><th>Field</th></tr></thead><tbody><tr><td>data</td><td></td><td>x.y.z</td><td>key</td></tr><tr><td>data</td><td>from Collection List<br>?wfu-data-dsn</td><td>object id</td><td>key</td></tr><tr><td>data</td><td>from GSheet CSV<br>assigned name dsn<br>Specific sheet!</td><td>row <br>Spec identifies PK col<br>or numeric row is used</td><td>column</td></tr><tr><td>user</td><td>-</td><td>( SA5 user object )<br>.data</td><td>field</td></tr><tr><td>query</td><td></td><td></td><td>key</td></tr><tr><td>url</td><td></td><td></td><td>part</td></tr><tr><td>cookie</td><td>-</td><td></td><td>key</td></tr><tr><td>localStorage</td><td>-</td><td></td><td>key</td></tr><tr><td>webStorage</td><td>-</td><td></td><td>key</td></tr><tr><td>geoData</td><td></td><td></td><td></td></tr><tr><td>userAgent</td><td>-</td><td>( aspect )</td><td>( item ) </td></tr></tbody></table>
 
 ## Dynamic Fields
 
