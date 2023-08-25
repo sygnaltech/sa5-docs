@@ -21,8 +21,8 @@ Add this script to the **site wide** custom code **before HEAD** area of your si
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | HTML --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/css/webflow-html.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/nocode/webflow-html.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.35/dist/css/webflow-html.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.35/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 
