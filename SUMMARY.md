@@ -15,6 +15,20 @@
   * [Callback Handlers](overview/technical-notes-and-goals/callback-handlers.md)
   * [Custom Attributes](overview/technical-notes-and-goals/custom-attributes.md)
 
+## 📘 webflow-cache <a href="#cache" id="cache"></a>
+
+* [🔍 About SA5's Cache Lib](cache/about.md)
+* [🚀 Quick Start | SA5 Cache](cache/quick-start.md)
+* [Data Caching ❺](cache/cache/README.md)
+  * [Cache Setup v4](cache/cache/v4.md)
+
+## 📘 webflow-detect <a href="#detect" id="detect"></a>
+
+* [🔍 About SA5's Detect Lib](detect/about.md)
+* [🚀 Quick Start | SA5 Detect](detect/quick-start.md)
+* [Geolocation Detection ❺](detect/geo/README.md)
+  * [Cache Setup v4](detect/geo/v4.md)
+
 ## 📘 Webflow-Data
 
 * [Data Sources & Data-Binding ❺](webflow-data/overview.md)
@@ -43,20 +57,12 @@
     * [Count Items](webflow-data/binding-data/macro-expansion/count-items.md)
   * [Preloaders](webflow-data/binding-data/preloaders.md)
 
-## 📘 Webflow Forms
+## 📘 Webflow-Forms
 
 * [Data-binding Form INPUTs & SELECTs ❺](webflow-forms/data-binding-form-inputs-and-selects.md)
 * [Form Webhook Handler ❺](webflow-forms/demo-webflow-form-w-webhook/README.md)
   * [Make ( Integromat ) Handler](webflow-forms/demo-webflow-form-w-webhook/make-integromat-handler.md)
 * [Form IP Info ❺](webflow-forms/form-ip.md)
-
-## 📘 WEBFLOW-TABLE
-
-* [HTML Tables](webflow-table/html-tables.md)
-
-## 📘 WEBFLOW-INTERACTIONS <a href="#webflow-ix" id="webflow-ix"></a>
-
-* [Dynamic Interaction Trigger Links ❺](webflow-ix/dynamic-interaction-trigger-links.md)
 
 ## 📘 WEBFLOW-HTML
 
@@ -77,21 +83,33 @@
 * [Markdown ❺🧪](webflow-html/markdown.md)
 * [Richtext ❺🧪](webflow-html/richtext.md)
 
-## 📘 WEBFLOW-UI
+## 📘 WEBFLOW-BLOG
 
-* [5-Star Ratings Component ❺](webflow-ui/5-star-ratings-component.md)
+* [GitHub Gists ❺](webflow-blog/github-gists.md)
+
+## 📘 WEBFLOW-TABLE
+
+* [HTML Tables](webflow-table/html-tables.md)
 
 ## 📘 WEBFLOW-HOTKEYS <a href="#hotkeys" id="hotkeys"></a>
 
 * [Hotkeys ❺](hotkeys/hotkeys.md)
 
-## 📘 WEBFLOW-BLOG
+## 📘 WEBFLOW-INTERACTIONS <a href="#webflow-ix" id="webflow-ix"></a>
 
-* [GitHub Gists ❺](webflow-blog/github-gists.md)
+* [Dynamic Interaction Trigger Links ❺](webflow-ix/dynamic-interaction-trigger-links.md)
+
+## 📘 WEBFLOW-COMMERCE
+
+* [Payment Providers ❺](webflow-commerce/payment-providers.md)
 
 ## 📘 WEBFLOW-DEMO
 
 * [Webflow Preview Link ❺](webflow-demo/webflow-preview-link.md)
+
+## 📘 WEBFLOW-UI
+
+* [5-Star Ratings Component ❺](webflow-ui/5-star-ratings-component.md)
 
 ## 📘 WEBFLOW-URL
 
@@ -107,9 +125,19 @@
   * [YouTube Video Data 🧪](webflow-video/video-player/youtube-video-data.md)
   * [Loom Video Data 🧪](webflow-video/video-player/loom-video-data.md)
 
-## 📘 WEBFLOW-COMMERCE
+## 📘 WEBFLOW-ELEMENTS
 
-* [Payment Providers ❺](webflow-commerce/payment-providers.md)
+* [About SA5's Elements Lib](webflow-elements/about.md)
+* [Tabs Element ❺](webflow-elements/tabs.md)
+* [Slider Element ❺](webflow-elements/slider.md)
+* [Button Element ❺](webflow-elements/button.md)
+* [Lightbox Element ❺](webflow-elements/lightbox/README.md)
+  * [CMS & Lightbox + Groups ❺](webflow-elements/lightbox/cms-and-lightbox-+-groups.md)
+  * [CMS & Lightbox + Captions ❺](webflow-elements/lightbox/cms-and-lightbox-+-captions.md)
+
+## 📘 WEBFLOW-FORMAT
+
+* [Format Numbers & Currencies ❺](webflow-format/format-numbers-and-currencies.md)
 
 ## 📘 WEBFLOW-MEMBERSHIP
 
@@ -129,20 +157,6 @@
 * [Conditional Element Display ❺](webflow-membership/conditional-element-display.md)
 * [Expand Login Button ❺](webflow-membership/expand-login-button.md)
 
-## 📘 WEBFLOW-FORMAT
-
-* [Format Numbers & Currencies ❺](webflow-format/format-numbers-and-currencies.md)
-
-## 📘 WEBFLOW-ELEMENTS
-
-* [About SA5's Elements Lib](webflow-elements/about.md)
-* [Tabs Element ❺](webflow-elements/tabs.md)
-* [Slider Element ❺](webflow-elements/slider.md)
-* [Button Element ❺](webflow-elements/button.md)
-* [Lightbox Element ❺](webflow-elements/lightbox/README.md)
-  * [CMS & Lightbox + Groups ❺](webflow-elements/lightbox/cms-and-lightbox-+-groups.md)
-  * [CMS & Lightbox + Captions ❺](webflow-elements/lightbox/cms-and-lightbox-+-captions.md)
-
 ## 📘 webflow-track
 
 * [Webflow Cookies & Storage Tracking ❺](webflow-track/webflow-cookies-and-storage-tracking/README.md)
@@ -153,14 +167,17 @@
   * [Track Checkbox State](webflow-track/webflow-cookies-and-storage-tracking/track-checkbox-state.md)
   * [Cloneable Demo](https://webflow.com/made-in-webflow/website/user-tracking)
 
+## 📘 webflow-modals <a href="#modals" id="modals"></a>
+
+* [Webflow Modals & Popups ❺🧪](modals/article.md)
+
+## 📘 webflow-fixup <a href="#fixup" id="fixup"></a>
+
+* [Webflow Fixups ❺](fixup/article.md)
+
 ## 📘 webflow-countup
 
 * [CountUp Animated Numbers](webflow-countup/countup.md)
-
-## 📘 webflow-cache <a href="#cache" id="cache"></a>
-
-* [Data Caching ❺](cache/cache/README.md)
-  * [Cache Setup v4](cache/cache/v4.md)
 
 ## 📘 webflow-seo <a href="#seo" id="seo"></a>
 
@@ -168,18 +185,10 @@
 * [Nofollow ❺🧪](seo/nofollow.md)
 * [JSON-LD Article \[EXPERIMENTAL\] ❺🧪](seo/article.md)
 
-## 📘 webflow-fixup <a href="#fixup" id="fixup"></a>
-
-* [Webflow Fixups ❺](fixup/article.md)
-
 ## 📘 webflow-core <a href="#core" id="core"></a>
 
 * [SA5 Core ❺](core/overview.md)
 * [Webflow Designer Support ❺](core/overview-1.md)
-
-## 📘 webflow-modals <a href="#modals" id="modals"></a>
-
-* [Webflow Modals & Popups ❺🧪](modals/article.md)
 
 ## 📘 webflow-404 <a href="#404" id="404"></a>
 
