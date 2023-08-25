@@ -2,10 +2,10 @@
 description: Track likes, favorites, page visits, and more.
 ---
 
-# Likes & Favorites Tracking
+# Likes & Favorites Tracking ❺🧪
 
 {% hint style="danger" %}
-UNDER DEVELOPMENT
+**UNDER DEVELOPMENT**
 {% endhint %}
 
 This feature described a general-purpose external tracking mechanism, integrated with Webflow.

@@ -56,6 +56,8 @@
     * [Macro Expansion](webflow-data/binding-data/macro-expansion/macro-expansion.md)
     * [Count Items](webflow-data/binding-data/macro-expansion/count-items.md)
   * [Preloaders](webflow-data/binding-data/preloaders.md)
+* [Advanced DBs 📝](webflow-data/advanced-dbs/README.md)
+  * [External Data](webflow-data/advanced-dbs/external-data.md)
 
 ## 📘 Webflow-Forms
 
@@ -159,7 +161,6 @@
 
 ## 📘 webflow-track
 
-* [Likes & Favorites Tracking](webflow-track/likes-and-favorites-tracking.md)
 * [Webflow Cookies & Storage Tracking ❺](webflow-track/webflow-cookies-and-storage-tracking/README.md)
   * [Conditional Element Visibility](webflow-track/webflow-cookies-and-storage-tracking/conditional-element-visibility.md)
   * [Tracking Page Visits](webflow-track/webflow-cookies-and-storage-tracking/tracking-page-visits.md)
@@ -167,6 +168,7 @@
   * [Track Query String Params](webflow-track/webflow-cookies-and-storage-tracking/track-query-string-params.md)
   * [Track Checkbox State](webflow-track/webflow-cookies-and-storage-tracking/track-checkbox-state.md)
   * [Cloneable Demo](https://webflow.com/made-in-webflow/website/user-tracking)
+* [Likes & Favorites Tracking ❺🧪](webflow-track/clicks.md)
 
 ## 📘 webflow-modals <a href="#modals" id="modals"></a>
 
