@@ -5,8 +5,7 @@ description: Add special features to your rich-text content.
 # Richtext ❺🧪
 
 {% hint style="warning" %}
-**NOT YET AVAILABLE** 🧪
-
+**NOT YET AVAILABLE** 🧪\
 Currently in ALPHA experimentation.&#x20;
 {% endhint %}
 

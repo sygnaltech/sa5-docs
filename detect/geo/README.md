@@ -2,15 +2,12 @@
 description: Route Visitors and Display Conditional Elements Based on Country or City.
 ---
 
-# Geolocation Detection ❺
+# Geolocation Detection ❺🧪
 
 {% hint style="danger" %}
-**UNDER DEVELOPMENT**
-
+**UNDER DEVELOPMENT**\
 Watch this space.
 {% endhint %}
-
-## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
 
 

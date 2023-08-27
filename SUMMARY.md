@@ -26,7 +26,7 @@
 
 * [🔍 About SA5's Detect Lib](detect/about.md)
 * [🚀 Quick Start | SA5 Detect](detect/quick-start.md)
-* [Geolocation Detection ❺](detect/geo/README.md)
+* [Geolocation Detection ❺🧪](detect/geo/README.md)
   * [Cache Setup v4](detect/geo/v4.md)
 
 ## 📘 Webflow-Data
@@ -70,7 +70,6 @@
 
 * [🔍 About SA5's HTML Lib](webflow-html/about.md)
 * [🚀 Quick Start | SA5 HTML](webflow-html/quick-start.md)
-* [Nested Lists ❺](webflow-html/nested-lists.md)
 * [Advanced Element Sorting ❺](webflow-html/advanced-element-sorting.md)
 * [Advanced Element Filtering ❺](webflow-html/advanced-element-filtering.md)
 * [Dynamic Attributes ❺](webflow-html/dynamic-attributes.md)
@@ -85,9 +84,16 @@
 * [Markdown ❺🧪](webflow-html/markdown.md)
 * [Richtext ❺🧪](webflow-html/richtext.md)
 
-## 📘 WEBFLOW-BLOG
+## 📘 WEBFLOW-RICHTEXT
 
-* [GitHub Gists ❺](webflow-blog/github-gists.md)
+* [🔍 About SA5's Blog Lib](webflow-richtext/about.md)
+* [🚀 Quick Start | SA5 Rich Text](webflow-richtext/quick-start.md)
+* [Nested Lists ❺](webflow-richtext/nested-lists.md)
+* [GitHub Gists ❺](webflow-richtext/github-gists/README.md)
+  * [Why Gist?](webflow-richtext/github-gists/why-gist.md)
+  * [Technical Notes](webflow-richtext/github-gists/technical-notes.md)
+* [URL Expanders 🧪](webflow-richtext/url-expanders.md)
+* [Text SPAN Formatting 🧪](webflow-richtext/text-span-formatting.md)
 
 ## 📘 WEBFLOW-TABLE
 
