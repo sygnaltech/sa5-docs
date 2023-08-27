@@ -22,6 +22,8 @@ This attribute allows to do all of these;
 
 ## Demonstrations
 
+Sort elements dynamically using a script
+
 {% embed url="https://webflow-smart-elements.webflow.io/collection-lists" %}
 Demonstration site
 {% endembed %}
