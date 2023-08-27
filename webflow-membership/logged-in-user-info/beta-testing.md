@@ -7,7 +7,7 @@ description: Help us BETA test!
 {% hint style="info" %}
 **2023-Aug-05**
 
-Are you using SA5's User Info module? Help us improve the framework by sharing your use cases, feature requests, or any questions or problems you encounter.
+Are you using **SA5's User Info** module? Help us improve the framework by sharing your use cases, feature requests, or any questions or problems you encounter.
 
 \-> [Join the Discourse group now](https://sygnal-attr.discourse.group/).
 {% endhint %}

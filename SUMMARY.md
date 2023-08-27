@@ -90,6 +90,7 @@
 * [🚀 Quick Start | SA5 Rich Text](webflow-richtext/quick-start.md)
 * [Nested Lists ❺](webflow-richtext/nested-lists.md)
 * [GitHub Gists ❺](webflow-richtext/github-gists/README.md)
+  * [▶️ Video Tutorials](webflow-richtext/github-gists/video-tutorials.md)
   * [Why Gist?](webflow-richtext/github-gists/why-gist.md)
   * [Technical Notes](webflow-richtext/github-gists/technical-notes.md)
 * [URL Expanders 🧪](webflow-richtext/url-expanders.md)
