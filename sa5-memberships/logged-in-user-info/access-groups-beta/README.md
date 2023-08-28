@@ -29,7 +29,7 @@ In particular, we need;
 [Post in the SA5 forum here](https://sygnal-attr.discourse.group/)
 {% endhint %}
 
-In a similar fashion to the Custom User Fields, SA5'S Access Groups feature requires a specific setup approach in order to work. Make certain to follow the setup precisely.&#x20;
+In a similar fashion to the Custom User Fields, **SA5'S Access Groups** feature requires a specific setup approach in order to work. Make certain to follow the setup precisely.&#x20;
 
 ## How SA5's Access Groups Feature Works
 
@@ -82,7 +82,7 @@ window.sa5.push(['getMembershipConfig',
 ```
 {% endcode %}
 
-Note that this is not the same configuration block as we use for [Advanced Membership Routing](../advanced-log-in-and-sign-up-flow.md). This callback handler is keyed `getMembershipConfig`, while routing uses `getMembershipRoutingConfig`. They are unrelated and have different configuration options. You can use both, if you are using both features concurrently.&#x20;
+Note that this is not the same configuration block as we use for [Advanced Membership Routing](../../advanced-log-in-and-sign-up-flow.md). This callback handler is keyed `getMembershipConfig`, while routing uses `getMembershipRoutingConfig`. They are unrelated and have different configuration options. You can use both, if you are using both features concurrently.&#x20;
 
 There are two options you can configure;
 
