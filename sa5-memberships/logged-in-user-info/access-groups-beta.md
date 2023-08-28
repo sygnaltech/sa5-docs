@@ -11,7 +11,11 @@ This feature is in BETA. and not recommended for use on production sites.  &#x20
 
 SA5's new **Access Groups** feature adds access group information into the User Info object, and makes it available to you in the callback.&#x20;
 
-In a similar fashion to the Custom User Fields, SA5'S Access Groups feature requires a specific setup approach in order to work. Make certain to follow the setup precisely.&#x20;
+From there, you write any custom code you like to hide elements, show elements, redirect users away from pages you do not want them on, and so on.&#x20;
+
+As a best practice, you can use the `user.user_data_loaded.access_groups` to determine if access group loading has completed. It will be true once that portion of the user object is loaded, and then you can check the `user.access_groups` array to see which groups they are a member of.
+
+Later, depending on the use cases shared in the forum, we plan to add attributes-based features like access-group-based conditional visibility, and possibly access-group-based routing. &#x20;
 
 {% hint style="success" %}
 **BETA TEAM - WE NEED YOUR FEEDBACK!**
@@ -24,6 +28,8 @@ In particular, we need;
 
 [Post in the SA5 forum here](https://sygnal-attr.discourse.group/)
 {% endhint %}
+
+In a similar fashion to the Custom User Fields, SA5'S Access Groups feature requires a specific setup approach in order to work. Make certain to follow the setup precisely.&#x20;
 
 ## How SA5's Access Groups Feature Works
 
