@@ -19,7 +19,7 @@ The details of that object can be data-bound.&#x20;
 
 [user-info-data-source.md](user-info-data-source.md "mention")
 
-[Custom user fields](../../sa5-membership/logged-in-user-info/custom-user-fields.md) can also be accessed, under `$user.data.your-field-name`.
+[Custom user fields](../../sa5-memberships/logged-in-user-info/custom-user-fields.md) can also be accessed, under `$user.data.your-field-name`.
 
 You can use this in element data-binding, with the&#x20;
 

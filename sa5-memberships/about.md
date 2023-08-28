@@ -2,7 +2,7 @@
 description: Why it exists and how it extends Webflow's Memberships
 ---
 
-# About SA5's Memberships Lib
+# 🔍 About SA5's Webflow Memberships Lib
 
 This library extends Webflow's Memberships feature with a few much needed features;
 

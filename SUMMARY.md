@@ -149,23 +149,24 @@
 
 * [Format Numbers & Currencies ❺](sa5-format/format-numbers-and-currencies.md)
 
-## 📘 sa5-membership
+## 📘 sa5-memberships
 
-* [About SA5's Webflow Memberships Lib](sa5-membership/about.md)
-* [Quick Start | SA5 Memberships](sa5-membership/quick-start.md)
-* [Logged-In User Info ❺](sa5-membership/logged-in-user-info/README.md)
-  * [BETA testing](sa5-membership/logged-in-user-info/beta-testing.md)
-  * [Custom User Fields](sa5-membership/logged-in-user-info/custom-user-fields.md)
-  * [User Info FAQs](sa5-membership/logged-in-user-info/user-info-faqs.md)
-  * [Tips & Best Practices](sa5-membership/logged-in-user-info/tips-and-best-practices.md)
-  * [The User object](sa5-membership/logged-in-user-info/the-user-object.md)
-  * [The User object Lifecycle](sa5-membership/logged-in-user-info/the-user-object-lifecycle.md)
-  * [Troubleshooting](sa5-membership/logged-in-user-info/troubleshooting.md)
-  * [Getting Webflow's UserID](sa5-membership/logged-in-user-info/getting-webflows-userid.md)
-  * [Future User Info Ideas](sa5-membership/logged-in-user-info/future-user-info-ideas.md)
-* [Advanced Log-In & Sign-Up Flow ❺](sa5-membership/advanced-log-in-and-sign-up-flow.md)
-* [Conditional Element Display ❺](sa5-membership/conditional-element-display.md)
-* [Expand Login Button ❺](sa5-membership/expand-login-button.md)
+* [🔍 About SA5's Webflow Memberships Lib](sa5-memberships/about.md)
+* [🚀 Quick Start | SA5 Memberships](sa5-memberships/quick-start.md)
+* [Logged-In User Info ❺](sa5-memberships/logged-in-user-info/README.md)
+  * [BETA testing](sa5-memberships/logged-in-user-info/beta-testing.md)
+  * [Access Groups \[ BETA \]](sa5-memberships/logged-in-user-info/access-groups-beta.md)
+  * [Custom User Fields](sa5-memberships/logged-in-user-info/custom-user-fields.md)
+  * [User Info FAQs](sa5-memberships/logged-in-user-info/user-info-faqs.md)
+  * [Tips & Best Practices](sa5-memberships/logged-in-user-info/tips-and-best-practices.md)
+  * [The User object](sa5-memberships/logged-in-user-info/the-user-object.md)
+  * [The User object Lifecycle](sa5-memberships/logged-in-user-info/the-user-object-lifecycle.md)
+  * [Troubleshooting](sa5-memberships/logged-in-user-info/troubleshooting.md)
+  * [Getting Webflow's UserID](sa5-memberships/logged-in-user-info/getting-webflows-userid.md)
+  * [Future User Info Ideas](sa5-memberships/logged-in-user-info/future-user-info-ideas.md)
+* [Advanced Log-In & Sign-Up Flow ❺](sa5-memberships/advanced-log-in-and-sign-up-flow.md)
+* [Conditional Element Display ❺](sa5-memberships/conditional-element-display.md)
+* [Expand Login Button ❺](sa5-memberships/expand-login-button.md)
 
 ## 📘 sa5-track
 
