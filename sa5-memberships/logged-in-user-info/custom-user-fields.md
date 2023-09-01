@@ -24,7 +24,7 @@ Any Custom User Fields that you want to access MUST exist on your [User Account 
 {% endhint %}
 
 {% hint style="info" %}
-After adding these Custom User Fields and setting up WFU's User Info lib properly, your users MUST log out and then log back in again in order for the newly-accessible custom user field data to load. See the [User object Lifecycle](the-user-object-lifecycle.md) for details on how user data loads.&#x20;
+After adding these Custom User Fields and setting up WFU's User Info lib properly, your users MUST log out and then log back in again in order for the newly-accessible custom user field data to load. See the [User object Lifecycle](the-user-object/the-user-object-lifecycle.md) for details on how user data loads.&#x20;
 {% endhint %}
 
 {% hint style="info" %}

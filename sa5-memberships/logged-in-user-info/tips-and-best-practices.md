@@ -1,3 +1,7 @@
+---
+description: Best Practices Using SA5's User Info Library
+---
+
 # Tips & Best Practices
 
 ## Use the Callback Function Effectively

@@ -36,18 +36,7 @@ This is important, it’s the inner element that the expanded button will perfor
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
-
-Add this code to the **site-wide** **before-HEAD** area of your site.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Memberships --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/css/webflow-membership.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.18/dist/nocode/webflow-membership.min.js"></script>
-<script>
-```
-{% endcode %}
+First, **add the library** as detailed in [Quick Start](quick-start.md).
 
 ### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
 

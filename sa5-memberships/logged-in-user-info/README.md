@@ -8,19 +8,6 @@ description: Get the details of the currently logged-in user In Webflow Membersh
 Questions? Comments? Suggestions? Join the new [Sygnal Attributes group](https://www.facebook.com/groups/sygnal) on Facebook.
 {% endhint %}
 
-{% hint style="success" %}
-This is phase three of a developing feature. Currently it provides access to the logged-in User's **name**, **email address, custom user fields** and a user-unique **alternate ID**.
-{% endhint %}
-
-## What's New in v5?
-
-* All internal upgraded to TypeScript, and integrated into our SA5 libraries
-* Added support for accessing user info from the User Account page itself
-* Added dynamic updates. Save updated User Account info and the User Info object is rebuilt &#x20;
-* Simpler setup and configuration. Data-binding is enabled by default. &#x20;
-
-## Overview
-
 _NOTE: because User Info is a complex module in Sygnal Attributes, documentation is split in to several pages. Make sure to note the sub-pages in the left nav, below this one._&#x20;
 
 One of the most sought-after capabilities in **Webflow Memberships BETA** is the ability to access information about the _currently logged in user_.
@@ -33,19 +20,17 @@ Use cases include;
 
 Features;
 
-* Get the current user's email
-* Get the current user's name ( _released in v4.4_ )
+* Get the current user's email, name, and marketing opt-in status&#x20;
 * Get a unique, User-specific alternate ID which can be used for system integrations&#x20;
-* Get [custom user fields](custom-user-fields.md) ( _released in v4.5_ )
-* Get access groups ( _coming soon_ )
+* Get [custom user fields](custom-user-fields.md)&#x20;
+* Get [access groups](access-groups-beta/) ( _in BETA_ )
 * Heavily optimized, with a multi-layered, asynchronous load approach to assembling the user data. &#x20;
 
 Limitations;&#x20;
 
-* ~~Changes to user information, e.g. changing the user's name on the Account Info page won't be reflected in the user object until the next login~~&#x20;
-* Currently this library depends on the User Account screen in order to access user data and compose the user object. You can do what you want with your User Account page however those user fields must exist in the page ( even hidden ) in order for this library to work.  &#x20;
 * For custom user fields, the File field type is unsupported for now&#x20;
 * Currently the Webflow UserID is not easily available. See here for [solutions](getting-webflows-userid.md), if you need it for external system integrations with Webflow's API.&#x20;
+* Currently this library depends on the User Account screen in order to access user data and compose the user object. You can do what you want with your User Account page however those user fields must exist in the page ( even hidden ) in order for this library to work.  &#x20;
 * Read-only. The library is designed to read user data, but not to update it.&#x20;
 
 ## Demonstration
@@ -160,7 +145,7 @@ To provide for this, we manufacture an Alt User ID as a one-way hash of the user
 Don't blindly copy and paste URLs, you're much better to copy the code block here, and replace the old one directly. If you are using the custom callback feature, it is redesign as well, see STEP 3 for that new code.&#x20;
 {% endhint %}
 
-### STEP 1 - Add the Configuration Code <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
 First, **add the library** as detailed in [Quick Start](../quick-start.md).
 

@@ -92,8 +92,8 @@ There are two options you can configure;
 ### STEP 3 - Update the Library to BETA & Check Your Work
 
 {% hint style="warning" %}
-**IMPORTANT LIBRARY VERSION UPDATE** \
-You will need to update your Webflow Memberships library version overall to use this. Do _not_ install multiple copies or versions of the library on the same site.&#x20;
+**IMPORTANT BETA LIBRARY VERSION** \
+You will need to update your Webflow Memberships library version overall to use this. Do _not_ install multiple copies or versions of the library on the same site. The entire BETA-library plus sample config and custom code would look like this;&#x20;
 {% endhint %}
 
 {% code overflow="wrap" %}
