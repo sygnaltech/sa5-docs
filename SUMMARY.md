@@ -7,6 +7,7 @@
 ## 📘 Overview
 
 * [Sygnal Attributes v5](README.md)
+* [How to Add Custom Code](overview/how-to-add-custom-code.md)
 * [What is Sygnal Attributes?](overview/readme.md)
 * [What's New?](overview/whats-new.md)
 * [Library Modules](overview/whats-new-1.md)
