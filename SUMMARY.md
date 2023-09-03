@@ -84,7 +84,6 @@
 * [Decode HTML ❺](sa5-html/decode-html.md)
 * [Content Embeds ❺🧪](sa5-html/content-embeds.md)
 * [Markdown ❺🧪](sa5-html/markdown.md)
-* [Richtext ❺🧪](sa5-html/richtext.md)
 
 ## 📘 sa5-richtext
 
@@ -97,6 +96,7 @@
   * [Technical Notes](sa5-richtext/github-gists/technical-notes.md)
 * [URL Expanders 🧪](sa5-richtext/url-expanders.md)
 * [Text SPAN Formatting 🧪](sa5-richtext/text-span-formatting.md)
+* [Richtext ❺🧪](sa5-richtext/richtext.md)
 
 ## 📘 sa5-table
 

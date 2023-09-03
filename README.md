@@ -9,10 +9,6 @@ description: Webflow Tools that Make Your Site Better
 The tools here are 100% free, and 100% designed for Webflow. &#x20;
 {% endhint %}
 
-
-
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td><p>SA</p><p>Add capabilities to your page and collection lists;</p></td><td>Add capabilities to your page and collection lists;</td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>SA5 Rich Text</strong></td><td><ul><li>Nested lists</li><li>Auto-target external links to a new tab</li></ul></td><td>Add capabilities to your rich text elements;</td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>SA5 User Info</strong></td><td><ul><li>Get name, email, custom data fields, and access groups</li><li>Route users specially</li></ul></td><td>Get the logged-in user's details, including access groups!</td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
-
 A lot of new features have already been released and many more are in the works. With that comes a _major rewrite_ of this documentation.&#x20;
 
 We've begun including our dev team and roadmap notes in these docs so that they are available for community comment and discussion.&#x20;
@@ -32,7 +28,7 @@ We've begun including our dev team and roadmap notes in these docs so that they 
 
 ## **What’s new in v5?**
 
-**The tech changes we've make in v5 open the doors to a lot of new capabilities.**
+**The tech changes we've made in v5 open the doors to a lot of new capabilities.**
 
 {% hint style="success" %}
 If you are using v4, none of these changes will affect your current websites. \
@@ -41,11 +37,11 @@ Since all of our CDN URLs are version-locked, you’ll continue to use the same 
 
 ### The v5 Tech Stack
 
-* We’re changing from a JavaScript ES6 codebase to TypeScript
-* We’re changing fully from CSS to SASS.
-* We’re eliminating all use of jQuery in the libraries.
-* We’re separating classes through the library into discrete source files
-* We’re bundling the distributed files differently for even greater efficiency
+* We’ve changing from a JavaScript ES6 codebase to TypeScript
+* We’ve changed fully from CSS to SASS.
+* We’ve eliminating all use of jQuery in the libraries.
+* We’ve separated classes through the library into discrete source files
+* We’ve bundled the distributed files differently for even greater efficiency
 * We've integrated debugging features&#x20;
 
 We’re excited about the tremendous capabilities the new stack gives us.
@@ -68,13 +64,9 @@ All of this is covered in the docs for each feature, and we’ll update the docs
 
 #### What about attribute or code changes?
 
-When v5 is completed, you should be able to simply reference the new libraries _with no changes_ to your _custom attributes_ or existing features- and you’ll still get the extended feature set and performance benefits.
-
-If any breaking changes are introduced in v5, we'll specify the feature that is affected and what is different in its capabilities or configuration. You'll know before you upgrade that features.
+You can simply reference the new libraries _with no changes_ to your _custom attributes_ or existing features- and you’ll still get the enhanced features and performance benefits.
 
 #### Will I need to upgrade to v5 eventually?
 
-**Nope!** If you’re happy with things as they are and don’t need any of the new features, you don’t need to change a thing.&#x20;
-
-_**Even when v5 is fully released, v4 will continue to run indefinitely.**_&#x20;
+**Nope!** If you’re happy with things as they are and don’t need any of the new features, you don’t need to change a thing. v4 will continue to run indefinitely.&#x20;
 
