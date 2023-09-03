@@ -16,7 +16,7 @@ COMING SOON.
 This feature is using SA5's new TypeScript-based library, so it is has different URLs and _code placement_ from the v4 JS-based library.&#x20;
 {% endhint %}
 
-Add this script to the **site wide** custom code **before HEAD** area of your site.
+[Add this script](../overview/how-to-add-custom-code.md) to the **site wide** custom code **HEAD** area of your site.&#x20;
 
 {% code overflow="wrap" %}
 ```html

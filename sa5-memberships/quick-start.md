@@ -12,7 +12,7 @@ All of SA5's Membership features are now consolidated into a single library, so 
 
 ## How to Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Add this script to the **site wide** custom code **before HEAD** area of your site.
+[Add this script](../overview/how-to-add-custom-code.md) to the **site wide** custom code **HEAD** area of your site.&#x20;
 
 {% code overflow="wrap" %}
 ```html

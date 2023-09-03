@@ -12,7 +12,7 @@ There are currently no configuration options for this library, so we’ll use a 
 This feature is using SA5's new TypeScript-based library, so it is has different URLs and _code placement_ from the v4 JS-based library.&#x20;
 {% endhint %}
 
-Add this to the **before HEAD** custom code area of your **404 page** only.
+[Add this script](../overview/how-to-add-custom-code.md) to the custom code **HEAD** area of your **404 page** only.
 
 {% code overflow="wrap" %}
 ```html
