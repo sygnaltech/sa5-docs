@@ -110,7 +110,7 @@
 ## 📘 sa5-trigger
 
 * [Dynamic Interaction Trigger Links ❺](sa5-trigger/dynamic-interaction-trigger-links.md)
-* [Future Plans 🧪](sa5-trigger/future-plans.md)
+* [Future Plans 🧪📝](sa5-trigger/future-plans.md)
 
 ## 📘 sa5-commerce
 
