@@ -15,6 +15,7 @@
   * [CSS Media Queries](overview/technical-notes-and-goals/css-media-queries.md)
   * [Callback Handlers](overview/technical-notes-and-goals/callback-handlers.md)
   * [Custom Attributes](overview/technical-notes-and-goals/custom-attributes.md)
+* [Documentation](overview/documentation.md)
 
 ## 📘 sa5-cache <a href="#cache" id="cache"></a>
 
@@ -106,9 +107,10 @@
 
 * [Hotkeys ❺](hotkeys/hotkeys.md)
 
-## 📘 sa5-interactions <a href="#webflow-ix" id="webflow-ix"></a>
+## 📘 sa5-trigger
 
-* [Dynamic Interaction Trigger Links ❺](webflow-ix/dynamic-interaction-trigger-links.md)
+* [Dynamic Interaction Trigger Links ❺](sa5-trigger/dynamic-interaction-trigger-links.md)
+* [Future Plans 🧪](sa5-trigger/future-plans.md)
 
 ## 📘 sa5-commerce
 
@@ -180,6 +182,7 @@
   * [Track Checkbox State](sa5-track/webflow-cookies-and-storage-tracking/track-checkbox-state.md)
   * [Cloneable Demo](https://webflow.com/made-in-webflow/website/user-tracking)
 * [Likes & Favorites Tracking ❺🧪](sa5-track/clicks.md)
+* [Recently Viewed Tracking ❺🧪](sa5-track/recently-viewed-tracking.md)
 
 ## 📘 sa5-modals <a href="#modals" id="modals"></a>
 
