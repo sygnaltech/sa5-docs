@@ -96,6 +96,7 @@
   * [▶️ Video Tutorials](sa5-richtext/github-gists/video-tutorials.md)
   * [Why Gist?](sa5-richtext/github-gists/why-gist.md)
   * [Technical Notes](sa5-richtext/github-gists/technical-notes.md)
+  * [Future](sa5-richtext/github-gists/future.md)
 * [URL Expanders 🧪](sa5-richtext/url-expanders.md)
 * [Text SPAN Formatting 🧪](sa5-richtext/text-span-formatting.md)
 * [Richtext ❺🧪](sa5-richtext/richtext.md)
