@@ -68,6 +68,7 @@
   * [▶️ Basin Handler](sa5-forms/webhook-handler/basin.md)
   * [▶️ Make ( Integromat ) Handler](sa5-forms/webhook-handler/make.md)
 * [Form IP Info ❺](sa5-forms/form-ip.md)
+* [File Uploads 📝](sa5-forms/file-uploads.md)
 
 ## 📘 sa5-html
 
