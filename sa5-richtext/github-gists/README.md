@@ -48,7 +48,21 @@ For a Rich Text-embedded Gist using the midnight theme, check out;
 To embed a Gist;
 
 * Drop an HTML embed anywhere on your page, or inside of a Rich Text element.
-* Paste in the gist share code, which is a simple line of script.
+* On the Gist page, copy the embed code ( top right ), and paste that code into your HTML embed. The code is a simple line of script that looks like this;
+
+{% code overflow="wrap" %}
+```html
+<script src="https://gist.github.com/memetican/b27a2d7c9649c379034deed0daf2ce5c.js"></script>
+```
+{% endcode %}
+
+* If you have a multi-file Gist, the above code will show all of the files in the Gist, one after another. If you want to show only one file, you can append a querystring to the script, e.g.;
+
+{% code overflow="wrap" %}
+```html
+<script src="https://gist.github.com/memetican/b27a2d7c9649c379034deed0daf2ce5c.js?file=richtext-loaded-event.html"></script>
+```
+{% endcode %}
 
 ### Themes
 
