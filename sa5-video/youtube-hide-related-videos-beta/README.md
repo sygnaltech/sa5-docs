@@ -15,7 +15,15 @@ It's not ideal...&#x20;
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-This SA5 attribute blocks the play and stop views with an overlay that can make this UX more elegant.&#x20;
+This SA5 attribute blocks the play and stop views with an overlay that can make this UX more elegant. At this point it is very simple.
+
+| Video paused overlay                        | Video finished overlay                      |
+| ------------------------------------------- | ------------------------------------------- |
+| ![](<../../.gitbook/assets/image (15).png>) | ![](<../../.gitbook/assets/image (14).png>) |
+
+{% hint style="success" %}
+It is possible to change the color and the icon however it requires knowledge of CSS. See our [Styling Options](styling-options.md) for details.&#x20;
+{% endhint %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
