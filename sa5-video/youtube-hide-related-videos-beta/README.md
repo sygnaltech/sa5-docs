@@ -45,4 +45,8 @@ First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20
 
 See above for details.
 
+## Credits
+
+This attribute is based on the work of Maximillian Laumeister who first [published this technique](https://www.maxlaumeister.com/articles/hide-related-videos-in-youtube-embeds/) in May 2018.&#x20;
+
 \
