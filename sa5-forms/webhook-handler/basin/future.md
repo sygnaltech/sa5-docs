@@ -13,7 +13,12 @@ Considering;&#x20;
 Add to form;
 
 * accept-charset="UTF-8"
-* enctype=“multipart/form-data”
+* enctype=“multipart/form-data”&#x20;
+
+## File Uploads&#x20;
+
+* ? Image from URL support
+* ? Drag and drop support to add a file
 
 ## Notes
 
