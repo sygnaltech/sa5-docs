@@ -24,7 +24,7 @@ If you specify a Request webhook only, with no response, Make will always return
 
 If you use Response webhooks as well ( as in the scenario below ), you can return both data and error messages if your business logic calls for it. This makes it possible to give specific feedback to the user after they submit the form.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Here's a walkthrough of the scenario setup.&#x20;
 

@@ -4,6 +4,10 @@ description: Fix CMS and in-page links to their correct relative form
 
 # Relative Link Fixups ❺
 
+{% hint style="success" %}
+This feature will likely be relocated into a CMS lib for CMS-related tooling.&#x20;
+{% endhint %}
+
 The two things that have fundamentally defined the web since the beginning are HTML, and URLs. Since the beginning, links have been at the center of the Internet universe.&#x20;
 
 But there are many different kinds of links;

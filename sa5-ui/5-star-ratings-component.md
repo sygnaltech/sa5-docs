@@ -2,7 +2,11 @@
 description: Add a fractional 5-star rating element to your site
 ---
 
-# 5-Star Ratings Component
+# 5-Star Ratings Component ❺
+
+{% hint style="success" %}
+Likely to move this into Elements.&#x20;
+{% endhint %}
 
 ## Overview
 

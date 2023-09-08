@@ -51,6 +51,7 @@
   * [Google Sheets Data Source](sa5-data/data-sources/google-sheets-data-source.md)
   * [Defining Custom Data Sources](sa5-data/data-sources/defining-custom-data-sources.md)
 * [Binding Data](sa5-data/binding-data/README.md)
+  * [Conditional Visibility](sa5-data/binding-data/conditional-visibility.md)
   * [Form Elements 📝](sa5-data/binding-data/form-elements.md)
   * [Templates & Macro Expansion 📝](sa5-data/binding-data/templates-and-macro-expansion.md)
   * [Developing Concepts on Data-Binding 📝](sa5-data/binding-data/developing-concepts-on-data-binding.md)
@@ -65,7 +66,9 @@
 
 * [Data-binding Form INPUTs & SELECTs ❺](sa5-forms/data-binding-form-inputs-and-selects.md)
 * [Smart Form Webhook Handler ❺](sa5-forms/webhook-handler/README.md)
-  * [▶️ Basin Handler](sa5-forms/webhook-handler/basin.md)
+  * [▶️ Basin Handler](sa5-forms/webhook-handler/basin/README.md)
+    * [File Uploads](sa5-forms/webhook-handler/basin/file-uploads.md)
+    * [Future](sa5-forms/webhook-handler/basin/future.md)
   * [▶️ Make ( Integromat ) Handler](sa5-forms/webhook-handler/make.md)
 * [Form IP Info ❺](sa5-forms/form-ip.md)
 * [File Uploads 📝](sa5-forms/file-uploads.md)
@@ -89,7 +92,8 @@
 
 ## 📘 sa5-richtext
 
-* [🔍 About SA5's Blog Lib](sa5-richtext/about.md)
+* [🔍 About SA5's Blog Lib](sa5-richtext/about/README.md)
+  * [Future](sa5-richtext/about/future.md)
 * [🚀 Quick Start | SA5 Rich Text](sa5-richtext/quick-start.md)
 * [Nested Lists ❺](sa5-richtext/nested-lists.md)
 * [GitHub Gists ❺](sa5-richtext/github-gists/README.md)
@@ -124,10 +128,12 @@
 
 ## 📘 sa5-ui
 
+* [DEPRECATING](sa5-ui/deprecating.md)
 * [5-Star Ratings Component ❺](sa5-ui/5-star-ratings-component.md)
 
 ## 📘 sa5-url
 
+* [DEPRECATING](sa5-url/deprecating.md)
 * [Relative Link Fixups ❺](sa5-url/relative-link-fixups.md)
 * [External Link Targeting ❺](sa5-url/external-link-targeting.md)
 * [URL Query Params ❺](sa5-url/url-query-params.md)

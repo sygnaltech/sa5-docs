@@ -4,6 +4,10 @@ description: Automatically open external links in a new tab
 
 # External Link Targeting ❺
 
+{% hint style="success" %}
+We are planning to move this into the Rich Text lib.
+{% endhint %}
+
 In most situations, you will automatically want external links to open in a new tab.
 
 This library automatically looks for FQDN links such as `https://...` and adds a `target=_blank`.
