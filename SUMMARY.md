@@ -134,7 +134,12 @@
 
 ## 📘 sa5-video
 
+* [🔍 About SA5's Webflow Video Lib](sa5-video/about.md)
+* [🚀 Quick Start | SA5 Video](sa5-video/quick-start.md)
 * [Background Video Poster ❺](sa5-video/background-video-poster.md)
+* [YouTube Hide Related Videos \[BETA\] ❺](sa5-video/youtube-hide-related-videos-beta/README.md)
+  * [Styling Options](sa5-video/youtube-hide-related-videos-beta/styling-options.md)
+  * [Future](sa5-video/youtube-hide-related-videos-beta/future.md)
 * [Video Player ❺](sa5-video/video-player/README.md)
   * [Video Playback Spec 🧪](sa5-video/video-player/video-playback-spec.md)
   * [YouTube Video Data 🧪](sa5-video/video-player/youtube-video-data.md)

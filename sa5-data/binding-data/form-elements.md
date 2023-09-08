@@ -2,7 +2,7 @@
 description: Binding data from form elements
 ---
 
-# Form Elements
+# Form Elements 📝
 
 
 
@@ -73,7 +73,7 @@ Would&#x20;
 
 Most values will be evaluated as **true**, with the exception of these specific values which are evaluated as **false**: `false`, `f`, `0`, `no`, `off`, as well as `undefined` or `null`. Falsy values are case-insensitive, so `False` is the same as `false`.&#x20;
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (1).png>)
 
 
 
