@@ -155,6 +155,7 @@
 
 * [About SA5's Elements Lib](sa5-elements/about.md)
 * [Tabs Element ❺](sa5-elements/tabs.md)
+* [Future](sa5-elements/tabs-1.md)
 * [Slider Element ❺](sa5-elements/slider.md)
 * [Button Element ❺](sa5-elements/button.md)
 * [Lightbox Element ❺](sa5-elements/lightbox/README.md)
