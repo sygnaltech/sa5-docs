@@ -25,6 +25,10 @@ This SA5 attribute blocks the play and stop views with an overlay that can make 
 It is possible to change the color and the icon however it requires knowledge of CSS. See our [Styling Options](styling-options.md) for details.&#x20;
 {% endhint %}
 
+## Demo <a href="#usage-notes" id="usage-notes"></a>
+
+{% embed url="https://video-player-control.webflow.io/youtube/hide-related" %}
+
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
 {% hint style="info" %}
