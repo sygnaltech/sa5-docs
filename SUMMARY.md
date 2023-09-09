@@ -33,6 +33,8 @@
 
 ## 📘 sa5-data
 
+* [🔍 About SA5's Data & Data-Binding Lib](sa5-data/about.md)
+* [🚀 Quick Start | SA5 Data & Data-Binding](sa5-data/quick-start.md)
 * [Data Sources & Data-Binding ❺](sa5-data/overview.md)
 * [SA5 Data ❺🧪](sa5-data/article/README.md)
   * [SA5 Data BETA Kit](sa5-data/article/sa5-data-beta-kit.md)
@@ -42,6 +44,7 @@
 * [Data Sources](sa5-data/data-sources/README.md)
   * [Data Source Types 📝](sa5-data/data-sources/data-sources.md)
   * [Url Data Source](sa5-data/data-sources/url-data-source.md)
+  * [URL Query Params ❺](sa5-data/data-sources/url-query-params.md)
   * [Collection List Data Source 📝](sa5-data/data-sources/collection-list-data-source/README.md)
     * [Developing Concepts | Collection List Data Sources](sa5-data/data-sources/collection-list-data-source/developing-concepts-or-collection-list-data-sources.md)
   * [User Info Data Source](sa5-data/data-sources/user-info-data-source.md)
@@ -136,7 +139,6 @@
 * [DEPRECATING](sa5-url/deprecating.md)
 * [Relative Link Fixups ❺](sa5-url/relative-link-fixups.md)
 * [External Link Targeting ❺](sa5-url/external-link-targeting.md)
-* [URL Query Params ❺](sa5-url/url-query-params.md)
 
 ## 📘 sa5-video
 
