@@ -5,12 +5,12 @@ description: Get the details of the currently logged-in user In Webflow Membersh
 # Logged-In User Info ❺
 
 {% hint style="info" %}
-Questions? Comments? Suggestions? Join the new [Sygnal Attributes group](https://www.facebook.com/groups/sygnal) on Facebook.
+Questions? Comments? Suggestions? Join the [Sygnal Attributes forum](https://sygnal-attr.discourse.group/) on discourse.
 {% endhint %}
 
-_NOTE: because User Info is a complex module in Sygnal Attributes, documentation is split in to several pages. Make sure to note the sub-pages in the left nav, below this one._&#x20;
+_NOTE: because User Info is a complex module in Sygnal Attributes, documentation is split in to several pages. Make sure to expand this item in the left nav, and explore the sub-pages below this one._&#x20;
 
-One of the most sought-after capabilities in **Webflow Memberships BETA** is the ability to access information about the _currently logged in user_.
+One of the most sought-after capabilities in **Webflow User Accounts** is the ability to access information about the _currently logged in user_.
 
 Use cases include;
 
@@ -23,7 +23,7 @@ Features;
 * Get the current user's email, name, and marketing opt-in status&#x20;
 * Get a unique, User-specific alternate ID which can be used for system integrations&#x20;
 * Get [custom user fields](custom-user-fields.md)&#x20;
-* Get [access groups](access-groups-beta/) ( _in BETA_ )
+* Get [access groups](access-groups-beta/)&#x20;
 * Heavily optimized, with a multi-layered, asynchronous load approach to assembling the user data. &#x20;
 
 Limitations;&#x20;
