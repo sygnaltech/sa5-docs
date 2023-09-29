@@ -18,7 +18,7 @@ This feature is using SA5's new TypeScript-based library, so it is has different
 ```html
 <!-- Sygnal Attributes 5 | 404 -->
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.34/dist/nocode/webflow-404.js"></script> 
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-404.js"></script> 
 ```
 {% endcode %}
 

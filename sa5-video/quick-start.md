@@ -15,8 +15,8 @@ All of SA5's Video features are now consolidated into a single library, so you o
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Video --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.2/dist/css/webflow-video.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.2/dist/nocode/webflow-video.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/css/webflow-video.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-video.js"></script>
 ```
 {% endcode %}
 
