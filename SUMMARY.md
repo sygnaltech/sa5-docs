@@ -200,9 +200,11 @@
 * [Likes & Favorites Tracking ❺🧪](sa5-track/clicks.md)
 * [Recently Viewed Tracking ❺🧪](sa5-track/recently-viewed-tracking.md)
 
-## 📘 sa5-modals <a href="#modals" id="modals"></a>
+## 📘 sa5-modals
 
-* [Webflow Modals & Popups ❺🧪](modals/article.md)
+* [🔍 About SA5's Webflow Modals & Popups Lib](sa5-modals/about.md)
+* [🚀 Quick Start | SA5 Modals & Popups](sa5-modals/quick-start.md)
+* [Webflow Modals & Popups ❺🧪](sa5-modals/article.md)
 
 ## 📘 sa5-fixup <a href="#fixup" id="fixup"></a>
 
