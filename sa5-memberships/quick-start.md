@@ -24,19 +24,6 @@ All of SA5's Membership features are now consolidated into a single library, so 
 
 Once you've added the library, both the User Info and the Advanced Log-In & Sign-Up Flow features are available to use.
 
-{% hint style="success" %}
-**ACCESS GROUPS BETA**  \
-If you want to use [access groups](logged-in-user-info/access-groups-beta/), you need a different BETA version of the library.
-{% endhint %}
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Memberships BETA -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.1-beta/dist/css/webflow-membership.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.1-beta/dist/nocode/webflow-membership.js"></script>
-```
-{% endcode %}
-
 ## User Info Quick Start
 
 {% hint style="success" %}
@@ -72,12 +59,6 @@ Users who are already logged in will need to log out, and log in again in order 
 However it requires configuration which is done through a configuration callback.
 
 See here for the code to [configure log-in & sign-up flow](https://attr.sygnal.com/webflow-membership/advanced-log-in-and-sign-up-flow#step-1---add-the-library).&#x20;
-
-
-
-
-
-
 
 
 
