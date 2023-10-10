@@ -19,6 +19,15 @@ All of SA5's Membership features are now consolidated into a single library, so 
 <!-- Sygnal Attributes 5 | Memberships --> 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/css/webflow-membership.css"> 
 <script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-membership.js"></script>
+<script>
+window.sa5 = window.sa5 || [];
+window.sa5.push(['getMembershipConfig', 
+  (config) => {
+    // Apply any configuration settings here
+    // such as access groups 
+    return config;
+  }]);
+</script>
 ```
 {% endcode %}
 
