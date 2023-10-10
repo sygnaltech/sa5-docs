@@ -23,7 +23,7 @@ Features;
 * Get the current user's email, name, and marketing opt-in status&#x20;
 * Get a unique, User-specific alternate ID which can be used for system integrations&#x20;
 * Get [custom user fields](custom-user-fields.md)&#x20;
-* Get [access groups](access-groups-beta/)&#x20;
+* Get [access groups](access-groups/)&#x20;
 * Heavily optimized, with a multi-layered, asynchronous load approach to assembling the user data. &#x20;
 
 Limitations;&#x20;

@@ -2,12 +2,7 @@
 description: Get the Access Groups of the Currently Logged-In User
 ---
 
-# Access Groups \[ BETA ]
-
-{% hint style="info" %}
-**BETA TESTING**\
-This feature is in BETA. and not recommended for use on production sites.  &#x20;
-{% endhint %}
+# Access Groups
 
 SA5's new **Access Groups** feature adds access group information into the User Info object, and makes it available to you in the callback.&#x20;
 
@@ -62,7 +57,7 @@ In these pages, the **name** of the folder and the names and contents of the pag
 
 ### STEP 2 - Configure SA5 Memberships
 
-In your SITE-wide before-HEAD custom code, where you load the library, configure **SA5 Memberships** with the list of Access Groups it should check for. This is done with a new Memberships configuration block.
+In your SITE-wide before-HEAD custom code, where you load the library, configure **SA5 Memberships** with the list of Access Groups it should check for. This is done with the new `getMembershipConfig` Memberships configuration block.
 
 In your script, it will look something like this;
 
@@ -82,6 +77,10 @@ window.sa5.push(['getMembershipConfig',
 ```
 {% endcode %}
 
+{% hint style="info" %}
+Make certain you have only one `getMembershipConfig` block to avoid confusing your configuration.&#x20;
+{% endhint %}
+
 Note that this is not the same configuration block as we use for [Advanced Membership Routing](../../advanced-log-in-and-sign-up-flow.md). This callback handler is keyed `getMembershipConfig`, while routing uses `getMembershipRoutingConfig`. They are unrelated and have different configuration options. You can use both, if you are using both features concurrently.&#x20;
 
 There are two options you can configure;
@@ -99,8 +98,8 @@ You will need to update your Webflow Memberships library version overall to use 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Memberships BETA -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.1-beta/dist/css/webflow-membership.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.1-beta/dist/nocode/webflow-membership.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/css/webflow-membership.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-membership.js"></script>
 <script>
 window.sa5 = window.sa5 || [];
 window.sa5.push(['getMembershipConfig', 

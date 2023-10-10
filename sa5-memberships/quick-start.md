@@ -40,7 +40,7 @@ The **User Info** library can be considered as 3 feature sets.&#x20;
 
 1. Basic under info like name, email, and opt-in is automatically accessible once the library is installed.&#x20;
 2. [Custom user fields](logged-in-user-info/custom-user-fields.md) requires special setup on your `/access-group` page. Make sure to read that section if you want to access that data.
-3. [Access groups](logged-in-user-info/access-groups-beta/), also requires a special setup. &#x20;
+3. [Access groups](logged-in-user-info/access-groups/), also requires a special setup. &#x20;
 {% endhint %}
 
 **User info** works automatically behind the scenes, and gathers data _when a User first logs in_.&#x20;
