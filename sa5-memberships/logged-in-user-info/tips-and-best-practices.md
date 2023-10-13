@@ -4,11 +4,29 @@ description: Best Practices Using SA5's User Info Library
 
 # Tips & Best Practices
 
-## Use the Callback Function Effectively
+## Use the `userInfoChanged` Callback Effectively
 
-_The best place to access and make use of user data is in the callback function._
+If you want to make special use of user data in your custom code, SA5's `userInfoChanged` callback is the best place to obtain that data once it's loaded.
 
-Note that this function will be called _several_ times as the user information is assembled from multiple sources _asynchronously_. This allows you to use information as soon as it's available, rather than waiting for everything to load.
+```html
+<!-- Sygnal Attributes 5 | Memberships | User Info Changed Event -->
+<script>
+window.sa5 = window.sa5 || [];
+window.sa5.push(['userInfoChanged', 
+  (user) => {
+    // Check to verify the fields you need are loaded (see below)
+    if(user.user_data_loaded.custom_fields) {
+        // Do something with custom fields 
+        // ...
+    	return;
+    }
+  }]); 
+</script>
+```
+
+Note that this function will be called _several_ times as the user information is assembled from multiple sources _asynchronously_. This is more robust and more performant as it allows you to use information as soon as it's available, rather than waiting for everything to load.&#x20;
+
+## How to determine when the data you need is loaded
 
 For convenience, the User object contains metadata describing what has already been loaded. This is stored in the `user_data_loaded` sub-object, which contains 4 fields;
 
@@ -19,16 +37,28 @@ For convenience, the User object contains metadata describing what has already b
 
 To use that in your callback, just check for the kind of data you're needing, before you attempt to use it. This is how to determine if e.g. `user.name` is blank, or just not loaded yet. &#x20;
 
+## Site-wide v. Page-specific Callbacks
+
+In some cases, you may want a site-wide handler that display information on all pages, such as the user's name in the nav. In other cases, you want special code to run only on a specific page.&#x20;
+
+SA5 was designed to support eventing at both levels. Simply repeat the code block pattern shown above site-wide or on any page, and both handlers will be called.&#x20;
+
+{% hint style="info" %}
+**IMPORTANT:** We use this feature regularly at Sygnal however it has not widely been tested by the BETA community. Use with caution.&#x20;
+{% endhint %}
+
+## <mark style="color:red;">DEPRECATED</mark> - SA4 Notes
+
 {% hint style="warning" %}
-SA5 Upgrade changes how callbacks work, so these docs need to be revisited and are likely out of date.&#x20;
+SA5 Upgrade changes how callback events work, so the docs below are considered out of date.&#x20;
 {% endhint %}
 
 ```html
 <script>
 async function userInfoUpdatedSiteCallback(user) {
    
-  // Check for the fields you needed
-  if(!user.user_data_loaded.custom_fields) {
+  // Check for the fields you needed - see above
+  if(user.user_data_loaded.custom_fields) {
     // Your code here
     // ...
     return;
@@ -80,8 +110,4 @@ async function userInfoUpdatedPageCallback(user) {
 {% endcode %}
 
 Keep in mind, in JS you can do anything you want with the user data. Modify tracking URLs, pre-populate form fields, customize user experiences and so on.&#x20;
-
-{% hint style="warning" %}
-Be very wary of privacy, privacy regulations, GDPR and your privacy policy, as always.&#x20;
-{% endhint %}
 
