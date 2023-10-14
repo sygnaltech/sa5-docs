@@ -4,7 +4,7 @@ description: Display CMS-Managed Captions in Webflow’s Lightboxes
 
 # CMS & Lightbox + Captions ❺
 
-## Overivew <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
+## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
 This feature allows you to display a caption inside of Webflow’s lightboxes, which is automatically pulled from the CMS.
 
@@ -44,17 +44,7 @@ The CMS field you've bound to Alt Text will be displayed as the caption in light
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
-
-Add this code to the HEAD of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Elements -->  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/css/webflow-elements.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/nocode/webflow-elements.js"></script>
-```
-{% endcode %}
+First, **add the library** as detailed in [Quick Start](../quick-start-or-sa5-elements.md).
 
 ### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
 

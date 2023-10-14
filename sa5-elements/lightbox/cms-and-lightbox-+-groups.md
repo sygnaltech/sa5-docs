@@ -83,17 +83,7 @@ Avoid placing the attribute on two elements that have a parent-child relationshi
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
-
-Add this code to the HEAD of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Elements -->  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/css/webflow-elements.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/nocode/webflow-elements.js"></script>
-```
-{% endcode %}
+First, **add the library** as detailed in [Quick Start](../quick-start-or-sa5-elements.md).
 
 ### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
 

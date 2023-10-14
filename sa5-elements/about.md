@@ -2,7 +2,7 @@
 description: About the SA5 Elements Library
 ---
 
-# About SA5's Elements Lib
+# 🔍 About SA5's Elements Lib
 
 {% hint style="success" %}
 **SA5 Elements** is a new library ( Aug 2023 ) that centralizes all of our Smart Webflow Elements, and other custom elements we've created. &#x20;

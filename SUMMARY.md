@@ -155,10 +155,12 @@
 
 ## 📘 sa5-elements
 
-* [About SA5's Elements Lib](sa5-elements/about.md)
-* [Tabs Element ❺](sa5-elements/tabs.md)
-* [Future](sa5-elements/tabs-1.md)
-* [Slider Element ❺](sa5-elements/slider.md)
+* [🔍 About SA5's Elements Lib](sa5-elements/about.md)
+* [🚀 Quick Start | SA5 Elements](sa5-elements/quick-start-or-sa5-elements.md)
+* [Tabs Element ❺](sa5-elements/tabs/README.md)
+  * [Future](sa5-elements/tabs/tabs.md)
+* [Slider Element ❺](sa5-elements/slider/README.md)
+  * [Slider Code Examples](sa5-elements/slider/slider-code-examples.md)
 * [Button Element ❺](sa5-elements/button.md)
 * [Lightbox Element ❺](sa5-elements/lightbox/README.md)
   * [CMS & Lightbox + Groups ❺](sa5-elements/lightbox/cms-and-lightbox-+-groups.md)

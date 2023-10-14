@@ -8,8 +8,8 @@ description: Interact with Webflow's Slider Element
 
 This feature allows you to work with the Webflow slider element.
 
-* Switch slides programmatically- first, next, prev, and last, or go to a specific slide index
-* Get the current slide index
+* Switch slides programmatically- first, next, prev, and last, or go to a specific slide number
+* Get the current slide number
 * Get notified when the slide changes
 
 ## Demonstration
@@ -34,8 +34,8 @@ Enhance navigation;&#x20;
 
 ## Setup <a href="#prepare-your-collection-list" id="prepare-your-collection-list"></a>
 
-* Setup your slider element.
-* Setup other "control" elements that will affect it ( optional ).&#x20;
+* Setup your Webflow slider element however you like
+* Setup other "control" elements that will affect it, such as buttons, etc ( optional ).&#x20;
 
 ### `wfu-slider` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
@@ -44,6 +44,8 @@ Add the `wfu-slider` custom attribute to the a Slider element. Give it a unique 
 This makes the slider element accessible in code.
 
 ## JavaScript API
+
+### Receiving Slide Changed Events
 
 To receive events from tab changes setup an SA5 callback with the `slideChanged` event. When called, it will contain the slider object, and the index of the new slide ( 0-based ).&#x20;
 
@@ -70,6 +72,8 @@ window.sa5.push(['slideChanged',
 </script>
 ```
 
+### Manipulating the Slider <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
+
 Outside of callback events, you can also access the SA5 Slider object by constructing one;
 
 ```javascript
@@ -82,40 +86,24 @@ Once you have this, you can call its methods and properties;
 
 Properties;
 
-* name property returns the `[wfu-slider]` name, if one was set.
-* `currentIndex` returns the 0-based index of the current slide.
-* `currentNum` returns the 1-based index.&#x20;
+* `name` property returns the `[wfu-slider]` name, if one was set.
+* `currentIndex` gets or sets the 0-based index of the current slide ( i.e. 5 slides would be numbered 0, 1, 2, 3, 4 ).
+* `currentNum` gets or sets the 1-based index of the current slide ( i.e. 5 slides would be numbered 1, 2, 3, 4, 5 ).&#x20;
 
-Methods;
+Methods;&#x20;
 
 * `goToFirst()` navigates to the first slide
 * `goToLast()` navigates to the last slide
 * `goToPrev()` navigates to the prev slide
 * `goToNext()` navigates to the next slide
 
+See [Slider Code Examples](slider-code-examples.md) for more.&#x20;
+
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
-
-{% hint style="info" %}
-This feature is using WFU's v5 new TypeScript-based library, so it is has different URLs and _code placement_ from the v4 JS-based library.&#x20;
-
-You can use both the v4 and v5 libraries simultaneously to get the full feature set during migration.
-{% endhint %}
-
-Add this to the **before HEAD** custom code area of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Elements -->  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/css/webflow-elements.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/nocode/webflow-elements.js"></script>
-```
-{% endcode %}
-
-Nothing is needed in the before BODY code area.&#x20;
+First, **add the library** as detailed in [Quick Start](../quick-start-or-sa5-elements.md).
 
 ### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
 
