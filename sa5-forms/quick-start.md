@@ -19,8 +19,8 @@ This feature is using SA5's new TypeScript-based library, so it is has different
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Forms --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/css/webflow-form.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-form.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.7/dist/css/webflow-form.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.7/dist/nocode/webflow-form.js"></script>
 ```
 {% endcode %}
 

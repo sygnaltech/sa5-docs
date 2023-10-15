@@ -6,12 +6,16 @@ description: >-
 
 # Smart Form Webhook Handler ❺
 
+{% hint style="warning" %}
+v5.3.7 has redefined the `other` handler to recognize error codes as errors, and to display the form's error message accordingly. If you need the original behavior where success is assumed regardless of the response code, use the new `success` handler.&#x20;
+{% endhint %}
+
 {% hint style="success" %}
 v4.10 adds [Basin](https://usebasin.com/) support, to help alleviate SPAM and form handler issues.
 {% endhint %}
 
 {% hint style="info" %}
-Currently supports HTTP POST to webhooks only. We may add HTTP GET support if users are in need of it.
+Currently supports HTTP POST to webhooks only. We may add HTTP GET support if users are in need of it. Use the forum to suggest future improvements.&#x20;
 {% endhint %}
 
 ## Overview
@@ -35,6 +39,7 @@ The WFU forms handler bridges that gap;
 1. It submits your form directly to the webhook you choose.
 2. It analyzes the response to determine success or failure.
 3. It then displays the form success or failure message, depending on that result.
+4. On a successful submit, if the form is configured with a redirect URL, then the submit button is given the _Please wait..._ text and the page is redirected instead. &#x20;
 
 ## Webhook Handlers
 
@@ -44,7 +49,8 @@ Because each webhook provider responds differently, we have several “handlers�
 * The **Make** ( Integromat ) handler can handle specific responses and display error messages, if you use the HTTP Response node in Make. If you have the request return immediately, you will simply get 'Accepted' from Make as the success text.&#x20;
 * The **n8n** handler can handle specific responses and display error messages.
 * The **Basin** handler shows success and fail messages depending on [Basin](https://usebasin.com/)'s response.
-* The **Other** handler _always_ displays the success message. It’s most useful for unknown webhookd providers, and in situations where success/failure aren’t that important, you just need to indicate to the user that their work is done. Use it for simple and less essential form submissions, like newsletter enrollments.
+* The **Other** handler is most useful for unknown webhook providers. It relies on the webhook to return a meaningful response code. Responses in the range 200-299 are considered success, and anything else is considered an error. Use it for simple and less essential form submissions, like newsletter enrollments.
+* The **Success** handler _always_ displays the success message, regardless of the response code. Use it in situations where success/failure aren’t that important, you just need to indicate to the user that their work is done.
 
 ## Key advantages <a href="#key-advantages" id="key-advantages"></a>
 
@@ -79,8 +85,9 @@ In the designer, select the `Form Block` element ( not the `Form` element ). On 
 * Use `make` for Make ( Integromat ) webhooks.
 * Use `n8n` for n8n webhooks.
 * Use `other` for all other webhooks.
+* Use `success` to assume success on any response.&#x20;
 
-Each will behave slightly differently in how it processes the response, since each webhook service does responses differently. See notes above.
+Each will behave slightly differently in how it processes the response, since each webhook service does responses differently. See notes above.&#x20;
 
 ## Additional References
 

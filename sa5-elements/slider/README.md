@@ -74,12 +74,12 @@ window.sa5.push(['slideChanged',
 
 ### Manipulating the Slider <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
-Outside of callback events, you can also access the SA5 Slider object by constructing one;
+Outside of callback events, you can also access the SA5 Slider object by constructing one explicitly;
 
 ```javascript
 const slider = new sa5.WebflowSlider(
-    $("[wfu-slider=demo1]")[0]
-); 
+    document.querySelector('[wfu-slider=demo1]')
+);
 ```
 
 Once you have this, you can call its methods and properties;
