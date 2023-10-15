@@ -50,16 +50,9 @@ Only non-blank results will be sent.&#x20;
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-### **STEP 1 - Add the Library**
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Add this code to the **before HEAD** of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.13/dist/css/webflow-form.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.13/dist/nocode/webflow-form.js"></script>
-```
-{% endcode %}
+First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
 
 ### **STEP 2 - Tag your Form Block**
 

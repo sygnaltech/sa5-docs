@@ -4,7 +4,7 @@ description: >-
   error messages
 ---
 
-# Form Webhook Handler ❺
+# Smart Form Webhook Handler ❺
 
 {% hint style="success" %}
 v4.10 adds [Basin](https://usebasin.com/) support, to help alleviate SPAM and form handler issues.
@@ -60,15 +60,7 @@ Why use a custom webhook form handler rather than Webflow's?
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Install this code in **before HEAD**, site-wide or on the specific pages you want the script to affect.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Form Handlers --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.33/dist/css/webflow-form.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.33/dist/nocode/webflow-form.js"></script>
-```
-{% endcode %}
+First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20;
 
 ### STEP 2 - Setup your webhook handlers, and link your Webflow form <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 

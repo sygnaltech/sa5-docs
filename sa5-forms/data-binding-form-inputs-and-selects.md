@@ -81,15 +81,7 @@ For SELECTS, the value posted is the `id` you specified in your script block. Ma
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Install this code in **before HEAD**, site-wide or on the specific pages you want the script to affect.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Data --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.23/dist/css/webflow-data.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.23/dist/nocode/webflow-data.js"></script>
-```
-{% endcode %}
+First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
 
 ### STEP 2 - Setup your attributes <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 
