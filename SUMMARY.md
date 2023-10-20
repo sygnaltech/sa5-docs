@@ -158,7 +158,7 @@
 ## 📘 sa5-elements
 
 * [🔍 About SA5's Elements Lib](sa5-elements/about.md)
-* [🚀 Quick Start | SA5 Elements](sa5-elements/quick-start-or-sa5-elements.md)
+* [🚀 Quick Start | SA5 Elements](sa5-elements/quick-start.md)
 * [Tabs Element ❺](sa5-elements/tabs/README.md)
   * [Future](sa5-elements/tabs/tabs.md)
 * [Slider Element ❺](sa5-elements/slider/README.md)
@@ -170,7 +170,11 @@
 
 ## 📘 sa5-format
 
+* [🔍 About SA5's Format Lib](sa5-format/about.md)
+* [🚀 Quick Start | SA5 Format](sa5-format/quick-start.md)
 * [Format Numbers & Currencies ❺](sa5-format/format-numbers-and-currencies.md)
+* [Format Dates ❺](sa5-format/format-dates/README.md)
+  * [Future - Date formatting](sa5-format/format-dates/future-date-formatting.md)
 
 ## 📘 sa5-memberships
 

@@ -103,7 +103,7 @@ See [Slider Code Examples](slider-code-examples.md) for more.&#x20;
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](../quick-start-or-sa5-elements.md).
+First, **add the library** as detailed in [Quick Start](../quick-start.md).
 
 ### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
 

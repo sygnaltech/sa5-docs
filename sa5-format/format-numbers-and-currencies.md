@@ -41,20 +41,9 @@ Also, use Webflow’s designer to format the number of decimal places you want t
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
+First, **add the library** as detailed in [Quick Start](quick-start.md).
 
-Add this code to the **HEAD** of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Format -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/css/webflow-format.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.10/dist/nocode/webflow-format.js"></script>
-```
-{% endcode %}
-
-### STEP 2 - Apply `wfu-format` to the elements you want to format <a href="#step-2---apply-wfu-format-to-the-elements-you-want-to-format" id="step-2---apply-wfu-format-to-the-elements-you-want-to-format"></a>
+### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
 
 See above for details.
 
-\
