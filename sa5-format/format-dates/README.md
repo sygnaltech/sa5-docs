@@ -26,29 +26,58 @@ Webflow offers a range of formats, and you ideally want to choose one that is th
 
 <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Ideally use this date format to ensure correct datetime parsing. </p></figcaption></figure>
 
-#### `wfu-format-handler` attribute ( required )
+### `wfu-format-handler` attribute ( optional )
 
 Use `wfu-format-handler` directly on the CMS-bound date field.
 
 ```
-wfu-format-handler = moment
+wfu-format-handler = ( handler )
 ```
 
-{% hint style="info" %}
-Currently SA5 uses **momentjs** for date formatting, due to a few features that it offers. It's likely we'll switch to **Luxon** at some point.
+Handler must be one of;
+
+* `day` or `dayjs` to use the DayJS library ( default )
+* ~~`moment` or `momentjs` to use the MomentJS library~~
+
+{% hint style="success" %}
+Currently SA5 supports **dayjs** for date formatting.&#x20;
 {% endhint %}
 
-#### `wfu-format-date` attribute ( required ) <a href="#wfu-format-attribute" id="wfu-format-attribute"></a>
+### `wfu-format-mode` attribute ( optional ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+Use `wfu-format-mode` directly on the CMS-bound date field.
+
+These are the modes;
+
+* `date` ( _default_ ) - Indicates we're formatting the data as-is.&#x20;
+* `from` -  Indicates the approximate relative timeperiod between the specified date and today, e.g. "10 months ago," or "in 8 days."
+* `to` - Indicates the approximate relative timeperiod between today and the specified date. This is the inverse of `from`.&#x20;
+* `age` - Indicates the exact age, in years, between the specified date and today. Designed for past dates, such as birthdates.&#x20;
+
+### `wfu-format-date` attribute ( required ) <a href="#wfu-format-attribute" id="wfu-format-attribute"></a>
 
 Use `wfu-format-date` directly on the CMS-bound date field.
+
+{% hint style="info" %}
+This attribute is required, however the value can be blank for `from`, `to`, or `age` modes.&#x20;
+{% endhint %}
 
 ```
 wfu-format-date = (format string)
 ```
 
-The format string will be the actual formatting string that describes the date & time format you desire. Momentjs supports a wide range of creative formats. Refer to Moment's docs to create the exact formatting string you want;&#x20;
+The format string will be the actual formatting string that describes the date & time format you desire. Day.js supports a wide range of creative formats. Refer to their docs to create the exact formatting string you want;&#x20;
 
-[https://momentjs.com/docs/#/displaying/format/](https://momentjs.com/docs/#/displaying/format/)
+Format strings are dependent on the handler. Currently Day.js is the only supported handler.&#x20;
+
+[https://day.js.org/docs/en/display/format](https://day.js.org/docs/en/display/format)
+
+### `wfu-format-suffix` attribute ( optional ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+Use `wfu-format-suffix` directly on the CMS-bound date field. &#x20;
+
+* `on` ( default ) will apply prefix and suffix text such as "in 3 months", or "3 months ago."&#x20;
+* `off` will display the raw numeric value only, e.g. "3."&#x20;
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 

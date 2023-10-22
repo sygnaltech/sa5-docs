@@ -4,9 +4,9 @@ description: What we're planning for SA5
 
 # Future - Date formatting
 
-Currently SA5 supports momentjs. It's already used by Webflow for date formatting and it offers a wide range of date formatting capabilities.
+Currently SA5 supports day.js. It offers a wide range of date formatting capabilities.
 
-{% embed url="https://momentjs.com/docs/#/displaying/format/" %}
+{% embed url="https://day.js.org/docs/en/display/format" %}
 
 The reason this feature requires you to specify a format handler is that it's likely we'll add other handlers in the future such as Luxon, which have different formatting string capabilities.&#x20;
 
@@ -18,9 +18,15 @@ Moment offers some pretty great features that we may extend into attributes, suc
 * Locale support. We'll wait to see how Webflow's localization features shape up.&#x20;
 * Calendar time
 
-## Luxon
+
+
+### Luxon
 
 Offers a different range of formatting strings and options.&#x20;
+
+### Moment
+
+{% embed url="https://momentjs.com/docs/#/displaying/format/" %}
 
 [https://moment.github.io/luxon/#/install](https://moment.github.io/luxon/#/install)
 
