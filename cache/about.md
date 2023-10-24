@@ -4,6 +4,12 @@ description: About the SA5 Cache Library
 
 # 🔍 About SA5's Cache Lib
 
+{% hint style="warning" %}
+SA5 Cache is primarily an internal mechanism within the library, and may become part of SA5 Core. We're considering whether an how to make it accessible and usable by other devs in their projects.&#x20;
+{% endhint %}
+
+## What is SA5 Cache?  <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
 This this lib is a tool for JavaScript devs to cache data for quick local access.
 
 It provides;

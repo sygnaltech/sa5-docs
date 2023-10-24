@@ -20,7 +20,6 @@
 ## 📘 sa5-cache <a href="#cache" id="cache"></a>
 
 * [🔍 About SA5's Cache Lib](cache/about.md)
-* [🚀 Quick Start | SA5 Cache](cache/quick-start.md)
 * [Data Caching ❺](cache/cache/README.md)
   * [Cache Setup v4](cache/cache/v4.md)
 
