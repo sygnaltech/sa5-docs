@@ -81,7 +81,7 @@ For SELECTS, the value posted is the `id` you specified in your script block. Ma
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
+First, **add the library** as detailed in [Quick Start](quick-start/).&#x20;
 
 ### STEP 2 - Setup your attributes <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 

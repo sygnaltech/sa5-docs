@@ -66,7 +66,7 @@ Why use a custom webhook form handler rather than Webflow's?
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20;
+First, **add the library** as detailed in [Quick Start](../quick-start/).&#x20;
 
 ### STEP 2 - Setup your webhook handlers, and link your Webflow form <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 

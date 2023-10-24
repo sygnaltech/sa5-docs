@@ -67,7 +67,8 @@
 
 ## 📘 sa5-forms
 
-* [🚀 Quick Start | SA5 Forms](sa5-forms/quick-start.md)
+* [🚀 Quick Start | SA5 Forms](sa5-forms/quick-start/README.md)
+  * [SA5 Forms Future](sa5-forms/quick-start/sa5-forms-future.md)
 * [🔍 About SA5's Forms Lib](sa5-forms/about.md)
 * [Data-binding Form INPUTs & SELECTs ❺](sa5-forms/data-binding-form-inputs-and-selects.md)
 * [Smart Form Webhook Handler ❺](sa5-forms/webhook-handler/README.md)

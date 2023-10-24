@@ -52,7 +52,7 @@ Only non-blank results will be sent.&#x20;
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
+First, **add the library** as detailed in [Quick Start](quick-start/).&#x20;
 
 ### **STEP 2 - Tag your Form Block**
 
