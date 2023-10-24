@@ -15,8 +15,8 @@ This feature is using SA5's new TypeScript-based library, so it is has different
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Data & Data-Binding --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/css/webflow-data.css"> 
-<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-data.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.12/dist/css/webflow-data.css"> 
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.12/dist/nocode/webflow-data.js"></script>
 ```
 {% endcode %}
 

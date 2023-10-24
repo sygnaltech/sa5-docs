@@ -7,34 +7,23 @@ description: Add data to your custom code
 {% hint style="info" %}
 **BETA TESTING**
 
-This library is in beta testing.&#x20;
+This library is in beta testing. Report any issues you encounter in the forum.
 {% endhint %}
 
-**SA5 Structured Data** uses a `<script>` code block format to easily capture CMS and static data, and transform it into a JavaScript object. The syntax is designed specifically to provide a reliable bridge from Webflow's HTML Embeds to JavaScript's JSON objects.&#x20;
+The primary purpose of SA5 Data is to provide a reliable means to expose Webflow's collection lists as a JSON data source that can be used in your custom code.&#x20;
 
+* Count and group data
+* Perform calculations
+* Generate running totals
+* and much more
 
-
-for Webflow- it models the core capabilities of the JSON format, but in a way that is easier to use in Webflow and which correctly handles Webflow's embed field encoding.&#x20;
-
-This makes it easy to work with in our client side code and create data sources, drive business logic, or to create JSON-LD.&#x20;
-
-## BETA Testing Notes <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
-
-**SA5 Data** is in open BETA. We're doing some final community testing around typed values, nulls, and whitespace handling.&#x20;
-
-To mitigate any further changes we'll release the BETA format under a separate BETA type specifier;&#x20;
-
-```html
-<script type="sygnal/sa5-data-proto">
-```
-
-{% hint style="info" %}
-Use this for now, in place of `sygnal/sa5-data` as the script type.&#x20;
-{% endhint %}
+Once the data is accessible to your scripts, you can do whatever you like with it.&#x20;
 
 ## How Do I Use It? <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
-**SA5 Data** blocks are placed in HTML Embeds inside of any Collection List or Collection Page. They describe the JSON object you want to create.&#x20;
+**SA5 Data** uses a specially-typed `<script>` code block to easily capture and describe your CMS and static data. The syntax is designed specifically to support Webflow's HTML-encoded field embeds as the source for your raw data.&#x20;
+
+**SA5 Data** blocks are placed in HTML Embeds, typically inside of any Collection List or Collection Page. They describe the JSON object you want to create.&#x20;
 
 Here's a very simple example of what SA5 Data looks like.&#x20;
 
@@ -56,7 +45,7 @@ This would be parsed as the JavaScript object;&#x20;
 }
 ```
 
-And can be used in [SA5 Data-Binding](../binding-data/), or in your custom JavaScript code.&#x20;
+And that resulting data can be used in [SA5 Data-Binding](../binding-data/), or in your custom JavaScript code.&#x20;
 
 Typically, you would use Webflow's Field embeds to compose the SA5 Data object from Webflow's CMS Embed fields. An example might look like this;
 

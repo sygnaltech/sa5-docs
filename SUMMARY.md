@@ -62,8 +62,9 @@
     * [Macro Expansion](sa5-data/binding-data/macro-expansion/macro-expansion.md)
     * [Count Items](sa5-data/binding-data/macro-expansion/count-items.md)
   * [Preloaders](sa5-data/binding-data/preloaders.md)
-* [Advanced DBs 📝](sa5-data/advanced-dbs/README.md)
-  * [External Data](sa5-data/advanced-dbs/external-data.md)
+* [Advanced Use](sa5-data/advanced-use.md)
+* [Future 📝](sa5-data/future/README.md)
+  * [External Data](sa5-data/future/external-data.md)
 
 ## 📘 sa5-forms
 
