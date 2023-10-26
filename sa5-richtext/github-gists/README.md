@@ -134,13 +134,18 @@ See above
 {% tab title="Planned" %}
 * More themes
 * Auto copy-button feature
+*
 {% endtab %}
 
 {% tab title="Considered" %}
 * Custom themes&#x20;
+* Line-range highlighting
+* Line-range excerpting&#x20;
 {% endtab %}
 
 {% tab title="More Ideas" %}
+
+
 
 {% endtab %}
 {% endtabs %}
