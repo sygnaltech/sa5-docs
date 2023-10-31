@@ -4,7 +4,7 @@ description: How to setup and access Webflow's Custom User Data fields from WFU
 
 # Custom User Fields
 
-## User Custom Fields
+## What are Custom Fields?
 
 Webflow Memberships allows for [custom fields](https://university.webflow.com/lesson/user-pages-overview#custom-fields) as part of a User's account. These custom fields can be managed through;
 
@@ -28,20 +28,52 @@ After adding these Custom User Fields and setting up WFU's User Info lib properl
 {% endhint %}
 
 {% hint style="info" %}
-If you do not want your users to see these fields on the User Account screen, you can wrap them in a DIV and hide them using `display: none` on the style tab. Do _not_ try to hide them using Webflow's new visibility feature on the _settings_ tab, as Webflow will not render the elements at all, and the data will not be accessible to WFU for loading.
+If you do not want your users to see these fields on the User Account screen, you can wrap them in a DIV and hide them using `display: none` on the style tab. Do _not_ try to hide them using Webflow's new visibility hidden feature on the _settings_ tab, as Webflow will not render the elements at all, and the data will not be accessible to WFU for loading.
 {% endhint %}
 
-## Access Custom User Fields
+## How to Access Custom User Fields
 
-Custom fields are named using Webflow's generated internal field names for each. Typically this process is the same as slug-generation, e.g. a field named `Home Address` would be slugged and internally named as `home-address`.&#x20;
+The SA5 user object creates an array of custom fields under `user.data`.&#x20;
 
-{% hint style="success" %}
-e.g. `Full Name` would _typically_ be accessible in the user object as `user.data["full-name"]`
-{% endhint %}
+### Accessing via Data-Binding
 
-{% hint style="info" %}
+You can use SA5's data-binding features with a custom attribute of `wfu-bind` and a value of `$user.data.FIELD-NAME` where the field name is your custom field name.&#x20;
+
+e.g. `$user.data.birthdate`
+
+### Accessing via Script
+
+You can access your custom fields directly in script on the user object, e.g.;
+
+```html
+<!-- Sygnal Attributes 5 | Memberships | User Info Changed Event -->
+<script>
+window.sa5 = window.sa5 || [];
+window.sa5.push(['userInfoChanged', 
+  (user) => {
+    // Check to verify the custom field data is loaded
+    if(user.user_data_loaded.custom_fields) {
+    
+        // Do something with your data 
+        console.log(user.data["full-name"]);
+
+    	return;
+    }
+  }]); 
+</script>
+```
+
+### How Custom User Fields are Named
+
+Custom fields are named using Webflow's generated internal field names for each. Typically this process is the same as slug-generation, e.g. a custom user field named `Home Address` would be slugged and internally named as `home-address`.&#x20;
+
+However, there are exceptions to this rule, described below. If you're not certain, it's best to view your `/user-account` page in browser devtools, and identify the field name that Webflow has assigned to your custom user fields. &#x20;
+
+{% hint style="warning" %}
 The Webflow CMS and User data storage systems generate internal field names based on the generated slug, however there are situations where the slug and the internal field name will mismatch. For example, if you rename your slug field, Webflow will keep the original name as its internal field name.&#x20;
 {% endhint %}
+
+## What Custom Field Types are Supported by SA5?
 
 As of Feb-2023, these are Webflow's current field types, and our current plans;&#x20;
 
@@ -55,8 +87,3 @@ As of Feb-2023, these are Webflow's current field types, and our current plans;&
 | Switch      | Boolean                                    | <mark style="color:green;">Yes.</mark>                                                                                   |
 | File        | An uploaded file, such as a profile photo  | <mark style="color:red;">Not in v3.</mark> Looking into how to retrieve the uploaded filename in the future.             |
 
-## Tools for user custom fields
-
-{% hint style="info" %}
-We're working on instructions and/or tools to assist you in identifying Webflow's custom user-field names, which can get confusing if you rename them.&#x20;
-{% endhint %}

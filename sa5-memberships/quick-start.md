@@ -31,7 +31,7 @@ window.sa5.push(['getMembershipConfig',
 ```
 {% endcode %}
 
-Once you've added the library, both the User Info and the Advanced Log-In & Sign-Up Flow features are available to use.
+Once you've added the library, both the [User Info](logged-in-user-info/) and the [Advanced Log-In & Sign-Up Flow](advanced-log-in-and-sign-up-flow.md) features are available to use.
 
 ## User Info Quick Start
 
@@ -39,8 +39,8 @@ Once you've added the library, both the User Info and the Advanced Log-In & Sign
 The **User Info** library can be considered as 3 feature sets.&#x20;
 
 1. Basic under info like name, email, and opt-in is automatically accessible once the library is installed.&#x20;
-2. [Custom user fields](logged-in-user-info/custom-user-fields.md) requires special setup on your `/access-group` page. Make sure to read that section if you want to access that data.
-3. [Access groups](logged-in-user-info/access-groups/), also requires a special setup. &#x20;
+2. [Custom user fields](logged-in-user-info/custom-user-fields.md) requires _special setup_ on your `/access-group` page. Make sure to read that section if you want to access that data.
+3. [Access groups](logged-in-user-info/access-groups/) also requires a special setup. Make sure to read those pages if you want access to your access group data.&#x20;
 {% endhint %}
 
 **User info** works automatically behind the scenes, and gathers data _when a User first logs in_.&#x20;
