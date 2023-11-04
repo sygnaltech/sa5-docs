@@ -238,7 +238,7 @@
 
 * [🔍 About SA5's 404 Lib](404/article.md)
 * [🚀 Quick Start | SA5 404](404/quick-start-or-sa5-404.md)
-* [404 Search ❺](404/article-1.md)
+* [404 Smart Search ❺](404/article-1.md)
 
 ## 📘 Deprecated Features <a href="#deprecated" id="deprecated"></a>
 
@@ -247,3 +247,9 @@
 * [Lipsum Generator ⛔](deprecated/lipsum-generator.md)
 * [CMS-Bound Custom Attributes ⛔](deprecated/cms-bound-custom-attributes.md)
 * [JSON Formatter ⛔](deprecated/json-formatter.md)
+
+## 📗 SA5-PROXY
+
+* [🔍 About SA5 Proxy](sa5-proxy/about.md)
+* [Transform Configuration ❺](sa5-proxy/transform-configuration.md)
+* [Proxy Tools](sa5-proxy/proxy-tools.md)

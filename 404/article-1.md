@@ -2,9 +2,12 @@
 description: Add a Smart Search to Your 404 Pages.
 ---
 
-# 404 Search ❺
+# 404 Smart Search ❺
 
-**Whoops. Did you delete a blog article, or rename the slug and forget to redirect it?**&#x20;
+{% hint style="info" %}
+**These are 100% internal R\&D.**\
+No public product is available, but if you need these features, contact us for details on how we can implement them for you.&#x20;
+{% endhint %}
 
 _404's happen_ - but they don't need to be the end of the road. Help your visitors get where their going by automatically populating Webflow's search component with the URL path keywords they were originally trying to reach?
 
