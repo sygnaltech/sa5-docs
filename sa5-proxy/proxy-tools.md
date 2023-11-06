@@ -2,6 +2,40 @@
 
 
 
+## SmartBundling
+
+Detect SA5 attributes, and load the necessary libs automatically.
+
+versioning?&#x20;
+
+smart bundling&#x20;
+
+## Memberships
+
+Extend memberships with e.g. user data
+
+Get user id
+
+## SA5 Data
+
+One big datasource;
+
+* Uses SA5 to define
+* Can contain multiple schemas
+* Auto-parsed by ?data
+
+Add ?data to any URL, you'll see the data for that page
+
+Future;
+
+Lockdown&#x20;
+
+
+
+
+
+? Can auto-parse from collection lists?&#x20;
+
 ## Path changes
 
 Aliasing CMS items&#x20;
