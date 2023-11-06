@@ -23,7 +23,7 @@ If you just want a specific type of image, the accept param can be added to rest
 
 You specify the [unique file-type specifiers](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#unique\_file\_type\_specifiers) of the files you want to allow, and browsers will generally do a good job of restricting the file types that can be uploaded based on that. &#x20;
 
-![](../../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (2).png>)
 
 Generally you can specify;&#x20;
 

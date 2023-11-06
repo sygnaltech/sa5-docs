@@ -1,6 +1,8 @@
 # Proxy Tools
 
+## HTML Decode chunks
 
+To support a kind of HTML Embed field in the CMS.&#x20;
 
 ## SmartBundling
 

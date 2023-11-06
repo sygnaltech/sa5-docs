@@ -12,7 +12,13 @@ Now you can easily add these content blocks to your Webflow rich text elements, 
 This feature makes use of the [GitHub Gist service](https://gist.github.com/), which is widely used and 100% free.
 {% endhint %}
 
-With SA5's Rich Text lib, you can simply drop an HTML embed anywhere in your rich text content and paste in the Gist's embed. That's it.&#x20;
+With SA5's Rich Text lib, you can simply drop an HTML embed anywhere in your rich text content and paste in the Gist's embed.&#x20;
+
+The code will be line numbered, and syntax-highlighted like this-
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+That's it.&#x20;
 
 And there's more...
 
@@ -71,21 +77,17 @@ In addition to the default Gist appearance, SA5 currently supports two themes;
 * `midnight`, inspired by CodePen
 * `darkmode`&#x20;
 
-<details>
+To assign a theme, add the following attribute to the rich text block. That theme will be applied to all embedded Gists.
 
-<summary>I want all of my Gists in this Rich Text element to have a specific theme</summary>
+`wfu-gist-theme=(theme)`&#x20;
 
-Add the class `wfu-gist-theme=(theme)` to the rich text element.&#x20;
+{% hint style="info" %}
+This feature can also be used with a standalone HTML Embed element that is not part of a Rich Text Block ( RTB ).&#x20;
+{% endhint %}
 
-</details>
-
-<details>
-
-<summary>I want the Gist in my standalone HTML Embed to have a specific theme</summary>
-
-Add the class `wfu-gist-theme=(theme)` to the HTML Embed element.&#x20;
-
-</details>
+{% hint style="info" %}
+For _static_ Rich Text Blocks that are not CMS-bound, you can assign custom attributes and classes directly to sub-elements.  In this case if you want to use different themes for different Gist embeds in the same RTB, you can assign the attribute directly to the HTML embed instead.&#x20;
+{% endhint %}
 
 ### Copy to Clipboard Feature
 
@@ -93,48 +95,30 @@ SA5 supports linking a button to your Gist to copy it.
 
 When clicked, it will locate the identified HTML Embed, and extract, clean and format the code contents, and copy them to the clipboard.&#x20;
 
-<details>
-
-<summary>I want this Button to copy the contents of this Gist to the clipboard</summary>
+I want this Button to copy the contents of this Gist to the clipboard
 
 * Tag your HTML Embed element with the custom attribute\
   `wfu-gist=(identifier)` using any unique identifier you want.
 * Tag your button with the custom attribute \
   `wfu-gist-copy=(identifier)`
 
-</details>
-
 {% hint style="warning" %}
 Currently this only works with explicitly named embeds, which means that it's not easily adaptable to CMS-sourced rich text content. We're adding a separate feature for that soon.&#x20;
 {% endhint %}
-
-## Themes
-
-{% tabs %}
-{% tab title="Default" %}
-
-{% endtab %}
-
-{% tab title="midnight" %}
-
-{% endtab %}
-
-{% tab title="darkmode" %}
-
-{% endtab %}
-{% endtabs %}
 
 ## Roadmap
 
 {% tabs %}
 {% tab title="Completed" %}
-See above
+* Theming Gist embeds
+* `midnight` theme
+* `darkmode` theme
+* Copy-to-clipboard support for _standalone_ HTML Embeds
 {% endtab %}
 
 {% tab title="Planned" %}
 * More themes
-* Auto copy-button feature
-*
+* Auto copy-button feature with each code embed
 {% endtab %}
 
 {% tab title="Considered" %}
@@ -144,7 +128,7 @@ See above
 {% endtab %}
 
 {% tab title="More Ideas" %}
-
+Admin editing link when in ?edit mode?&#x20;
 
 
 {% endtab %}
