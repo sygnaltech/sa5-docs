@@ -30,7 +30,9 @@ Future;
 
 Lockdown&#x20;
 
+Consider adding a filtered focus, e.g. #dsn.
 
+querying ?&#x20;
 
 
 
