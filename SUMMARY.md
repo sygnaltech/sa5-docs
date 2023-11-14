@@ -248,8 +248,15 @@
 * [CMS-Bound Custom Attributes ⛔](deprecated/cms-bound-custom-attributes.md)
 * [JSON Formatter ⛔](deprecated/json-formatter.md)
 
-## 📗 SA5-PROXY
+## 📗 HYPERFLOW
 
-* [🔍 About SA5 Proxy](sa5-proxy/about.md)
-* [Transform Configuration ❺](sa5-proxy/transform-configuration.md)
-* [Proxy Tools](sa5-proxy/proxy-tools.md)
+* [🔍 About SA5 Proxy](hyperflow/about.md)
+* [A/B Testing](hyperflow/a-b-testing.md)
+* [Transform Configuration ❺](hyperflow/transform-configuration.md)
+* [Proxy Tools](hyperflow/proxy-tools.md)
+* [Google Adsense](hyperflow/google-adsense.md)
+* [Sygnal DevProxy](hyperflow/sygnal-devproxy.md)
+* [Prerender.io](hyperflow/prerender.io.md)
+* [Security Headers](hyperflow/security-headers.md)
+* [Item Counts](hyperflow/item-counts.md)
+* [Page](hyperflow/page.md)

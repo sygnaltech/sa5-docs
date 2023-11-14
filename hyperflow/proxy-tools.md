@@ -1,5 +1,31 @@
 # Proxy Tools
 
+##
+
+## Favicon.ico
+
+```
+/favicon.ico
+```
+
+## x-attributes
+
+
+
+NoIndex
+
+```
+<meta name="robots" content="noindex" />
+```
+
+A "noindex" HTTP response header
+
+```
+X-Robots-Tag: noindex
+```
+
+
+
 ## HTML Decode chunks
 
 To support a kind of HTML Embed field in the CMS.&#x20;
