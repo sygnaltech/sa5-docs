@@ -1,25 +1,23 @@
 ---
-description: Add superpowers to your Webflow site.
+description: Add Superpowers to your Webflow site.
 ---
 
-# 🔍 About SA5 Proxy
+# 🔍 About Hyperflow
 
+{% hint style="info" %}
+**Hyperflow** is internal Sygnal tech that we progressively develop and utilize on our client projects. It's not part of SA5's open source archive, and not designed to be self-implemented. Each client configuration is unique, and we hand build, customize and configure each client's reverse proxy specially.&#x20;
 
+If you see features here that you need on your site, contact us.
 
-This feature is all about make Webflow's 404 pages more functional.
+https://www.sygnal.com/contact
+{% endhint %}
 
-* Help users get where they're going
+Hyperflow is a collection of Sygnal technologies that are delivered through a reverse proxy. They add a huge range of improvements to your Webflow site;
 
-## Future <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
-
-
-
-We may add these features;
-
-* Report on 404's for future review&#x20;
-* Possibly, handle special redirect and navigation situations
-
-[https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)
-
-[https://developers.google.com/search/docs/crawling-indexing/http-network-errors#http-status-codes](https://developers.google.com/search/docs/crawling-indexing/http-network-errors#http-status-codes)
+* Massive performance improvements
+* Special features, like location detection and gating
+* Added security&#x20;
+* Integration support, e.g. Google Adsense, Apple iTunes Store&#x20;
+* SEO capabilities
+* Flexible paths&#x20;
 

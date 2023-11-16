@@ -48,7 +48,7 @@ Examples
 
 Here's an example of an element that is bound to the current user's custom data, specifically a the custom data you've named `link-field`.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Setting defaults.** The value will only be applied if one is found, therefore you can specify a default value by setting initial content for the element itself. Here we have `...` but it can be whatever you prefer.

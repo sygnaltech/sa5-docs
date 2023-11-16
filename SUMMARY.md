@@ -250,7 +250,7 @@
 
 ## 📗 HYPERFLOW
 
-* [🔍 About SA5 Proxy](hyperflow/about.md)
+* [🔍 About Hyperflow](hyperflow/about.md)
 * [A/B Testing](hyperflow/a-b-testing.md)
 * [Transform Configuration ❺](hyperflow/transform-configuration.md)
 * [Proxy Tools](hyperflow/proxy-tools.md)
