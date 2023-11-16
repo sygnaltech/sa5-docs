@@ -259,4 +259,4 @@
 * [Prerender.io](hyperflow/prerender.io.md)
 * [Security Headers](hyperflow/security-headers.md)
 * [Item Counts](hyperflow/item-counts.md)
-* [Page](hyperflow/page.md)
+* [Site Redirector](hyperflow/site-redirector.md)
