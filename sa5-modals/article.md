@@ -2,7 +2,7 @@
 description: Webflow Modals, Popups & more
 ---
 
-# Webflow Modals & Popups ❺🧪
+# Webflow Modals & Popups Suppression ❺🧪
 
 This feature enables you to easily "close" and suppress UI elements so that they will not appear for a specified number of days, even on page reload.&#x20;
 
@@ -33,6 +33,10 @@ This library simplifies modal design into two parts-
 To implement this, build your modals or CTAs however you like.&#x20;
 
 The close functionality will be an element with a special custom attribute on it. When closed, SA5 will _remove_ the element from the DOM, and suppress it for as long as you've requested. &#x20;
+
+{% hint style="warning" %}
+In Webflow, modals are commonly "closed" using an interaction. It may include fade-out, slide-out, or spin-off-screen effects. SA5 simply deletes the element outright, so those exit animations would not be seen, the modal will simply disappear.&#x20;
+{% endhint %}
 
 ### I want this element to represent my suppressable content
 

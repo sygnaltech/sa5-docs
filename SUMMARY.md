@@ -213,7 +213,7 @@
 
 * [🔍 About SA5's Webflow Modals & Popups Lib](sa5-modals/about.md)
 * [🚀 Quick Start | SA5 Modals & Popups](sa5-modals/quick-start.md)
-* [Webflow Modals & Popups ❺🧪](sa5-modals/article.md)
+* [Webflow Modals & Popups Suppression ❺🧪](sa5-modals/article.md)
 
 ## 📘 sa5-fixup <a href="#fixup" id="fixup"></a>
 
