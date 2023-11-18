@@ -12,7 +12,7 @@ If you see features here that you need on your site, contact us.
 https://www.sygnal.com/contact
 {% endhint %}
 
-Hyperflow is a collection of Sygnal technologies that are delivered through a reverse proxy. They add a huge range of improvements to your Webflow site;
+**Hyperflow** is a collection of Sygnal technologies that are delivered through a reverse proxy. They add a huge range of improvements to your Webflow site;
 
 * Massive performance improvements
 * Special features, like location detection and gating
