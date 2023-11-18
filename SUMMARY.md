@@ -254,6 +254,7 @@
 * [A/B Testing](hyperflow/a-b-testing.md)
 * [Transform Configuration ❺](hyperflow/transform-configuration.md)
 * [Proxy Tools](hyperflow/proxy-tools.md)
+* [Path Remapping](hyperflow/path-remapping.md)
 * [Google Adsense](hyperflow/google-adsense.md)
 * [Sygnal DevProxy](hyperflow/sygnal-devproxy.md)
 * [Prerender.io](hyperflow/prerender.io.md)

@@ -66,31 +66,6 @@ querying ?&#x20;
 
 ? Can auto-parse from collection lists?&#x20;
 
-## Path changes
-
-Aliasing CMS items&#x20;
-
-* Fix canonical
-* Serve under arbitrary path
-* Redirect CMS item path
-* Fixup sitemap.xml
-
-Advantages;
-
-* No special linking needed&#x20;
-* Supports
-
-KV store configuration;&#x20;
-
-{% hint style="info" %}
-Key should have no protocol, and no www. prefix
-{% endhint %}
-
-* Key: `sygnal.com/orig-path/`
-* Value: `/dest-path/`&#x20;
-
-
-
 
 
 ## Sitemap.xml
