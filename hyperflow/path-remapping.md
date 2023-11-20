@@ -4,7 +4,13 @@ description: Give every CMS item the SEO path it deserves
 
 # Path Remapping
 
-## Remapping
+{% hint style="success" %}
+Sygnal gets so many requests for this, we've built a special expertise and internal toolset that enables us to deliver this functionality on Webflow-hosted sites.
+
+Check our our [service page](https://www.sygnal.com/services/webflow-fluid-paths) for details on our **Webflow Fluid Paths** offering.&#x20;
+{% endhint %}
+
+## What is Remapping?
 
 SEO specialists have long been frustrated by Webflow's inability to handle custom paths for each page, including CMS pages.&#x20;
 
