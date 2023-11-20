@@ -1,5 +1,5 @@
 ---
-description: Give every CMS item the SEO path it deserves
+description: Give every page on your site the path it deserves
 ---
 
 # Path Remapping
