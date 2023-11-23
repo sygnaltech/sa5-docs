@@ -47,6 +47,27 @@ Advantages;
 
 ### Remapping Paths
 
+`CONFIG`
+
+`mysite.com:remap`
+
+```json
+{
+  "version": 1,
+  "origin": "https://www.mysite.com",
+  "type": "static", 
+  "map": {
+    "/": "/",
+    "/about": "/about/1"
+  }
+}
+```
+
+* Version: 1
+* Origin: optional, used if the actual site is separate from the current site proxied
+* Map types
+* Config version converters?&#x20;
+
 All mapped paths are stored in the key-value store;&#x20;
 
 {% hint style="info" %}
