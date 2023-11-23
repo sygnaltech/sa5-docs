@@ -76,6 +76,7 @@
     * [File Uploads](sa5-forms/webhook-handler/basin/file-uploads.md)
     * [Future](sa5-forms/webhook-handler/basin/future.md)
   * [▶️ Make ( Integromat ) Handler](sa5-forms/webhook-handler/make.md)
+* [Email validation](sa5-forms/email-validation.md)
 * [Form IP Info ❺](sa5-forms/form-ip.md)
 * [File Uploads 📝](sa5-forms/file-uploads.md)
 
