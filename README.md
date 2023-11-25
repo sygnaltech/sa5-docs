@@ -21,7 +21,7 @@ We've begun including our dev team and roadmap notes in these docs so that they 
   * 🚀 **Quick Start**, which gives you the _library code_ you need&#x20;
 * Within each library the features are grouped separately
 * A _lot of features_ have **subpages**- make sure to click the **>** to expand those sections\
-  ![](<.gitbook/assets/image (1) (1) (1) (1) (1) (1).png>)
+  ![](<.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png>)
 * 🧪 indicates EXPERIMENTAL items, which are **not yet available**&#x20;
 * 📝 indicates NOTES, which are primarily for the dev team&#x20;
 * ▶️ indicates VIDEO TUTORIALS, which we're just beginning to add
