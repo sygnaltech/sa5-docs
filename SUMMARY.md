@@ -96,6 +96,7 @@
 * [Decode HTML ❺](sa5-html/decode-html.md)
 * [Content Embeds ❺🧪](sa5-html/content-embeds.md)
 * [Markdown ❺🧪](sa5-html/markdown.md)
+* [Layout (conceptual)](sa5-html/layout-conceptual.md)
 
 ## 📘 sa5-richtext
 
