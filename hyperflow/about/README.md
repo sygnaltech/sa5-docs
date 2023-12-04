@@ -4,6 +4,28 @@ description: Add Superpowers to your Webflow site.
 
 # 🔍 About Sygnal's Hyperflow
 
+Most of our clients bring us in for special projects that push Webflow beyond its capabilities. Popular areas are custom URL paths, faster sites, complex integrations, content security, dynamic SEO… so we’ve begun building these as a set of formal services that we can integrate for clients.
+
+We call this service framework [Sygnal Hyperflow](https://www.sygnal.com/services/hyperflow).
+
+All of the services in Hyperflow are built on a reverse proxy framework that we’ve custom-built for Webflow, and it basically lets us add all of the things Webflow can’t do natively.
+
+So far, the primary services include;
+
+* [Fluid paths](https://www.sygnal.com/services/webflow-fluid-paths). Assign any path to any page, with full SEO treatment- canonical URLs and sitemap are automatically updated.
+* [DevProxy](https://www.sygnal.com/services/webflow-reverse-proxy-for-advanced-development). Use a full professional development environment with Webflow for all of your custom code. Use Github, professional IDE’s, TypeScript and SASS, and get full Dev, Test, and Prod environments using your live site content.
+* [Performance boost](https://www.sygnal.com/services/webflow-reverse-proxy-for-performance) your Webflow-hosted with with edge caching and full image optimization, including your CMS-stored images.
+* [Cache your site](https://www.sygnal.com/services/webflow-reverse-proxy-to-reduce-hosting-costs) for substantial traffic reduction if you are at risk of exceeding your Webflow hosting plan limits.
+* [Custom SEO](https://www.sygnal.com/services/webflow-reverse-proxy-for-seo) - custom sitemaps, canonicals,
+* Merged sites. Combine several sites under a single domain.
+* Split sites. Break one Webflow hosted site into multiple, for e.g. lead funnel pages for your specific products.
+
+And we’re considering many others, like;
+
+* Webflow localization on custom domain like `mysite.de` and subdomains like `de.mysite.com`.
+
+
+
 **Hyperflow** is collection of services that Sygnal progressively develops and utilizes on our client projects.
 
 {% hint style="info" %}

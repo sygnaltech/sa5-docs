@@ -2,7 +2,7 @@
 description: Give every page on your site the path it deserves
 ---
 
-# Path Remapping
+# Hyperflow Fluid Paths
 
 {% hint style="success" %}
 Sygnal gets so many requests for this, we've built a special expertise and internal toolset that enables us to deliver this functionality on Webflow-hosted sites.
@@ -26,9 +26,9 @@ This makes things such as hierarchies `/school/course/chapter/lesson`, or `/rest
 We'll just have none of that, _thank you_.
 {% endhint %}
 
-## What is Remapping?
+## What is _Path Remapping_?
 
-Sygnal uses the term remapping to describe a process by which we;
+Sygnal uses the term **remapping** to describe a process by which we;
 
 * Serve any page on your site, under any path that you choose
 * Fix the canonical URL, accordingly

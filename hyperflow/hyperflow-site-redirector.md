@@ -2,11 +2,12 @@
 description: Used to redirect a custom map of URLs
 ---
 
-# Site Redirector
+# Hyperflow Site Redirector
 
 ## Use Cases
 
 * You've rebuilt and _rebranded_ your site on an entirely new platform. Both the URLs _and_ **domain name** have changed.&#x20;
+* You've split part of your site out into a new site, and you need clean redirection for all of those pages&#x20;
 * You want to keep your SEO and backlinks, so redirecting individual pages map-style is valuable
 
 ## Technical Notes

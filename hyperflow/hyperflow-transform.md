@@ -1,9 +1,45 @@
-# Transform Configuration ❺
+---
+description: Transform your Webflow Page content in unique ways
+---
+
+# Hyperflow Transform
 
 {% hint style="info" %}
 **These are 100% internal R\&D.**\
 No public product is available, but if you need these features, contact us for details on how we can implement them for you.&#x20;
 {% endhint %}
+
+## x-attributes
+
+
+
+NoIndex
+
+```
+<meta name="robots" content="noindex" />
+```
+
+A "noindex" HTTP response header
+
+```
+X-Robots-Tag: noindex
+```
+
+
+
+## HTML Decode chunks
+
+To support a kind of HTML Embed field in the CMS.&#x20;
+
+
+
+
+
+
+
+
+
+
 
 ## Configuration concept
 

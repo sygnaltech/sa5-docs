@@ -11,6 +11,52 @@ Google AdSense requires a special file at `/ads.txt` on your website, which Webf
 * Serves Google's required `/ads.txt` file, configured as you need
 * Config is stored in CF's KV's&#x20;
 
+
+
+
+
+
+
+## Google Adsense & Others
+
+Google Adsense and other advertising platforms require an `/ads.txt` file for verification.&#x20;
+
+This tool is a standalone worker, and is designed to work with a Cloudflare KV store;
+
+Key: **`HOSTNAME`**`-ads.txt`
+
+Value: Content you want, multiline should work if desired&#x20;
+
+{% hint style="info" %}
+HOSTNAME does NOT include www. for consistency. Other subdomains can be used.
+{% endhint %}
+
+e.g. key - `sygnal.com-ads.txt`
+
+
+
+{% hint style="info" %}
+This is done because Workers and KV store is account wide, while you may have multiple sites under it which need varying configurations.
+{% endhint %}
+
+
+
+Designed for situations like Google Adsense
+
+File is&#x20;
+
+Here's an example; &#x20;
+
+[https://sygnal.com/ads.txt](https://sygnal.com/ads.txt)
+
+
+
+
+
+
+
+
+
 ## Setup
 
 {% hint style="info" %}
