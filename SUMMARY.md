@@ -37,6 +37,7 @@
 * [Data Sources & Data-Binding ❺](sa5-data/overview.md)
 * [SA5 Data ❺🧪](sa5-data/article/README.md)
   * [SA5 Data BETA Kit](sa5-data/article/sa5-data-beta-kit.md)
+  * [JSON Data Variants](sa5-data/article/json-data-variants.md)
 * [Concepts & Terminology](sa5-data/concepts-and-terminology/README.md)
   * [Data Paths](sa5-data/concepts-and-terminology/data-paths.md)
   * [Developing Concepts 📝](sa5-data/concepts-and-terminology/developing-concepts.md)
@@ -254,7 +255,8 @@
 
 ## 📗 HYPERFLOW
 
-* [🔍 About Hyperflow](hyperflow/about.md)
+* [🔍 About Sygnal's Hyperflow](hyperflow/about/README.md)
+  * [Configuring Hyperflow Services](hyperflow/about/configure.md)
 * [A/B Testing](hyperflow/a-b-testing.md)
 * [Transform Configuration ❺](hyperflow/transform-configuration.md)
 * [Proxy Tools](hyperflow/proxy-tools.md)
@@ -269,3 +271,4 @@
 * [Item Counts](hyperflow/item-counts.md)
 * [Site Redirector](hyperflow/site-redirector.md)
 * [Custom Breakpoints](hyperflow/custom-breakpoints.md)
+* [Hyperflow Purge Cache](hyperflow/hyperflow-purge-cache.md)

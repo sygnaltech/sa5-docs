@@ -25,7 +25,13 @@ The config will likely use YAML to minimize syntax requrirements;&#x20;
 
 This convention follows the format for Media Types where `type/subtype+suffix` signifies that the content is a subtype that follows the serialization format of the suffix (in this case, JSON).
 
+
+
+Type: sygnal/
+
 ### Type: `sygnal/proxy+json`
+
+Changing to sygnal/hyperflow+json
 
 More verbose, but also more familiar to many web developers.&#x20;
 
@@ -50,6 +56,8 @@ More verbose, but also more familiar to many web developers.&#x20;
 
 
 ### Type: `sygnal/proxy+yaml`
+
+Changing to sygnal/hyperflow+yaml
 
 ```html
 <script type="sygnal/proxy+yaml">
