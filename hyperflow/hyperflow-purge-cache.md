@@ -28,3 +28,11 @@ Service Name: `purge-cache`&#x20;
 }
 ```
 
+Requires a secret;&#x20;
+
+Account > Workers & Pages > cloudflare-clear-cache > Settings > Variables
+
+Add CLOUDFLARE\_API\_TOKEN (value) Encrypted
+
+
+
