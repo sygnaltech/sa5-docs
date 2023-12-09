@@ -69,5 +69,14 @@ It's also important to consider how this will play into worker-routes, since the
 * **Dynamic maps** are the same, but are generated dynamically and typically managed within the CMS itself.&#x20;
 * **Algorithmic maps** work on match-based mapping and are custom-designed for each site.&#x20;
 
+## Administration Notes
 
+### Webflow Editor
+
+* Untested on fluid paths
+* Can edit on webflow.io
+
+Future;&#x20;
+
+* Special mode for FP shutdown possible when in editor mode
 

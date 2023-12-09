@@ -46,7 +46,7 @@ Worker routes;
 | `*mydomain.com/sitemap.xml` | cmsitem-redirect-sitemap | Define the route to your sitemap.xml.             |
 | `*mydomain.com/*`           | debug-rewrite            | Only needed for indirect proxy setups.            |
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note all config work is managed by the Config class within the cmsitem-redirect worker

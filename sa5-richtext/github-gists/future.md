@@ -24,5 +24,5 @@ This would be done by adding a copy button via a chrome extension.&#x20;
 
 Always looking for additional themes and color schemes that will work nicely.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

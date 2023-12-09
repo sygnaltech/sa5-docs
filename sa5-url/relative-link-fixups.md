@@ -5,7 +5,13 @@ description: Fix CMS and in-page links to their correct relative form
 # Relative Link Fixups ❺
 
 {% hint style="success" %}
-This feature will likely be relocated into a CMS lib for CMS-related tooling.&#x20;
+**NO LONGER NEEDED!**
+
+10-Dec-2023 - Webflow has fixed the CMS link field so that it will now accept _relative paths_. And there was much rejoicing.&#x20;
+
+* Rooted paths like `/about/us` are fully supported
+* Relative paths like `../about` are not supported, but who would use these today anyway?&#x20;
+* Localization is not directly supported \[ yet? ].  If your site is localized, and you place a link to `/about`, and your user is on the German alt locale of your primarily-English site, they will get `/about` rather than e.g. `/de/about` &#x20;
 {% endhint %}
 
 The two things that have fundamentally defined the web since the beginning are HTML, and URLs. Since the beginning, links have been at the center of the Internet universe.&#x20;

@@ -4,6 +4,8 @@ description: Add Google Adsense to your Webflow site
 
 # Google Adsense
 
+[https://www.carbonads.net/](https://www.carbonads.net/)
+
 ## What does this do?
 
 Google AdSense requires a special file at `/ads.txt` on your website, which Webflow does not support. Here we add that capability with a worker.
@@ -11,7 +13,7 @@ Google AdSense requires a special file at `/ads.txt` on your website, which Webf
 * Serves Google's required `/ads.txt` file, configured as you need
 * Config is stored in CF's KV's&#x20;
 
-
+[https://support.google.com/adsense/answer/12171612?hl=en\&visit\_id=638375256836288617-1363790772\&rd=1](https://support.google.com/adsense/answer/12171612?hl=en\&visit\_id=638375256836288617-1363790772\&rd=1)
 
 
 
