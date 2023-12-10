@@ -6,7 +6,7 @@ description: Pass querystring params through to forms and text elements, automat
 
 ## Overview & Use Cases
 
-Extract querystring parameters from your URL, and apply the contents to tagged elements on your page.
+Extract querystring parameters from your URL, and apply the contents to tagged elements on your page. &#x20;
 
 * Use querystring data in your FORM data, to collect it for submissions ( e.g. `utm_` params )
 * Pass querystring data through to other links on the page, so it will get carried through
@@ -35,6 +35,7 @@ This tool will carry any URL querystring params into your webpage, and apply the
 <input wfu-bind="?name" type="hidden" name="test2-field">
 ```
 
+* The querystring param you use in `wfu-bind` is case-sensitive. `?name` and `?Name` are different.&#x20;
 * Checkbox elements will be set to the boolean truthy value.
 * Select elements will be set to the matching select value.&#x20;
 * On any other elements with a custom attribute of `wfu-bind=X`, WFU will replace the inner text of the element with the value of the querystring param `X`.
