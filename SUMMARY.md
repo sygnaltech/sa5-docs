@@ -87,7 +87,7 @@
 * [🚀 Quick Start | SA5 HTML](sa5-html/quick-start.md)
 * [Advanced Element Sorting ❺](sa5-html/advanced-element-sorting.md)
 * [Advanced Element Filtering ❺](sa5-html/advanced-element-filtering.md)
-* [SA5 Dynamic Attributes](sa5-html/sa5-dynamic-attributes/README.md)
+* [SA5 Dynamic Attributes](sa5-html/dynamic-attributes.md)
   * [Future](sa5-html/sa5-dynamic-attributes/future.md)
 * [Breakpoints ❺](sa5-html/breakpoints.md)
 * [Limit Items by Breakpoint ❺](sa5-html/limit-items-by-breakpoint.md)
@@ -145,7 +145,7 @@
 ## 📘 sa5-url
 
 * [DEPRECATING](sa5-url/deprecating.md)
-* [Relative Link Fixups ❺](sa5-url/relative-link-fixups.md)
+* [Relative Link Fixups ❺⛔](sa5-url/relative-link-fixups.md)
 * [External Link Targeting ❺](sa5-url/external-link-targeting.md)
 
 ## 📘 sa5-video
@@ -259,6 +259,7 @@
 
 * [🔍 About Sygnal's Hyperflow](hyperflow/about/README.md)
   * [Configuring Hyperflow Services](hyperflow/about/configure.md)
+  * [Infrastructure Notes](hyperflow/about/infrastructure-notes.md)
 * [Hyperflow Transform](hyperflow/hyperflow-transform.md)
 * [Hyperflow Data](hyperflow/hyperflow-data.md)
 * [Proxy Tools](hyperflow/proxy-tools.md)
@@ -270,13 +271,13 @@
 * [Sygnal DevProxy](hyperflow/sygnal-devproxy.md)
 * [Hyperflow Site Redirector](hyperflow/hyperflow-site-redirector.md)
 * [Hyperflow User Accounts](hyperflow/hyperflow-user-accounts.md)
-* [Hyperflow Localization](hyperflow/hyperflow-localization/README.md)
+* [Hyperflow Localization](hyperflow/hyperflow-localization.md)
   * [Localization JS API](hyperflow/hyperflow-localization/localization-js-api.md)
   * [Locale Path Fixes](hyperflow/hyperflow-localization/locale-path-fixes.md)
   * [Locale-Specific Domains](hyperflow/hyperflow-localization/locale-specific-domains.md)
   * [Locale Switcher & Flags](hyperflow/hyperflow-localization/locale-switcher-and-flags.md)
 * [Hyperflow Hyperspeed](hyperflow/hyperflow-hyperspeed/README.md)
-  * [Hyperflow Purge Cache](hyperflow/hyperflow-hyperspeed/hyperflow-purge-cache/README.md)
+  * [Hyperflow Purge Cache](hyperflow/hyperflow-hyperspeed/hyperflow-purge-cache.md)
     * [Quickstart](hyperflow/hyperflow-hyperspeed/hyperflow-purge-cache/quickstart.md)
 * [Hyperflow SEO](hyperflow/hyperflow-seo/README.md)
   * [Page og:type](hyperflow/hyperflow-seo/page-og-type.md)
@@ -286,3 +287,4 @@
   * [Item Counts](hyperflow/future-service-concepts/item-counts.md)
   * [Security Headers](hyperflow/future-service-concepts/security-headers.md)
   * [Custom Breakpoints](hyperflow/future-service-concepts/custom-breakpoints.md)
+* [Hyperflow Core](hyperflow/hyperflow-core.md)

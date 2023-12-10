@@ -20,7 +20,7 @@ Webflow's ECommerce Products and Categories do not support Webflow's CMS bound c
 
 If you've never encountered it, this is what happens in Webflow when you attempt to use a reserved attribute name.&#x20;
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8).png>)
 
 Here's a partial list of reserved attribute names, as [documented](https://discourse.webflow.com/t/list-feature-availability-limits/23610) by samliew;&#x20;
 
@@ -50,7 +50,7 @@ When you use this feature with Webflow's CMS-bound attributes, you can initializ
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20;
+First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
 
 ### STEP 2 - Apply `x-` prefixed custom attributes to any elements <a href="#step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter"></a>
 

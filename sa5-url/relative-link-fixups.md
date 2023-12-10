@@ -2,21 +2,27 @@
 description: Fix CMS and in-page links to their correct relative form
 ---
 
-# Relative Link Fixups ❺
+# Relative Link Fixups ❺⛔
+
+
 
 {% hint style="success" %}
 **NO LONGER NEEDED!**
 
 10-Dec-2023 - Webflow has fixed the CMS link field so that it will now accept _relative paths_. And there was much rejoicing.&#x20;
 
-* Rooted paths like `/about/us` are fully supported
-* Relative paths like `../about` are not supported, but who would use these today anyway?&#x20;
-* Localization is not directly supported \[ yet? ].  If your site is localized, and you place a link to `/about`, and your user is on the German alt locale of your primarily-English site, they will get `/about` rather than e.g. `/de/about` &#x20;
+* Root-relative URLs like `/about/us` are fully supported
+* Page-relative URLs like `../about` are not supported, but who would use these today anyway?&#x20;
+* Localization of these URLs is not directly supported \[ yet? ].  Let's say your you have an English ( primary-locale ) site with a German alt-locale. If you store a link to `/about` in the CMS, and a user is viewing the German translated version of your CMS page, clicking that link will take them to `/about` rather than e.g. `/de/about`. This means they'll be switched back to the English locale.&#x20;
 {% endhint %}
+
+{% embed url="https://twitter.com/memetican/status/1733603236685422608" %}
 
 The two things that have fundamentally defined the web since the beginning are HTML, and URLs. Since the beginning, links have been at the center of the Internet universe.&#x20;
 
-But there are many different kinds of links;
+They even gave the World Wide Web its name.&#x20;
+
+But there are many different kinds of links;&#x20;
 
 1. <mark style="color:green;">**Absolute URLs**</mark>: These URLs provide the full path to the resource, including the protocol (http, https), domain name, directory path, and file or resource name. For example, `https://www.example.com/images/pic.jpg`.
 2. <mark style="color:green;">**Root-relative URLs**</mark>: These are a type of relative URL that start from the root of the website. They start with a slash (`/`). For example, `/images/pic.jpg` would resolve to `https://www.example.com/images/pic.jpg` if you're anywhere on `www.example.com`.

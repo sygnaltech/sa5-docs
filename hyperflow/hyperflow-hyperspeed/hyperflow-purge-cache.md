@@ -13,7 +13,7 @@ Purges the global Cloudflare cache for a site.  This works with our caching-prox
 
 ## Configuration
 
-Learn more about [Hyperflow configuration](../../about/configure.md) here.
+Learn more about [Hyperflow configuration](../about/configure.md) here.
 
 ### KV Store
 
