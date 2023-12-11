@@ -114,7 +114,8 @@
   * [Future](sa5-richtext/github-gists/future.md)
 * [URL Expanders 🧪](sa5-richtext/url-expanders.md)
 * [Text SPAN Formatting 🧪](sa5-richtext/text-span-formatting.md)
-* [Richtext ❺🧪](sa5-richtext/richtext.md)
+* [Richtext ❺🧪](sa5-richtext/richtext/README.md)
+  * [CSS Isolation](sa5-richtext/richtext/css-isolation.md)
 
 ## 📘 sa5-table
 
@@ -212,7 +213,7 @@
   * [Track Query String Params](sa5-track/webflow-cookies-and-storage-tracking/track-query-string-params.md)
   * [Track Checkbox State](sa5-track/webflow-cookies-and-storage-tracking/track-checkbox-state.md)
   * [Cloneable Demo](https://webflow.com/made-in-webflow/website/user-tracking)
-* [SA5 Referer Tracking](sa5-track/sa5-referer-tracking.md)
+* [SA5 Referer Tracking ❺🧪](sa5-track/sa5-referer-tracking.md)
 * [Likes & Favorites Tracking ❺🧪](sa5-track/clicks.md)
 * [Recently Viewed Tracking ❺🧪](sa5-track/recently-viewed-tracking.md)
 
@@ -288,3 +289,4 @@
   * [Security Headers](hyperflow/future-service-concepts/security-headers.md)
   * [Custom Breakpoints](hyperflow/future-service-concepts/custom-breakpoints.md)
 * [Hyperflow Core](hyperflow/hyperflow-core.md)
+* [Hyperflow Richtext](hyperflow/hyperflow-richtext.md)

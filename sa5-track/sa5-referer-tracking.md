@@ -4,7 +4,7 @@ description: >-
   trackable data.
 ---
 
-# SA5 Referer Tracking
+# SA5 Referer Tracking ❺🧪
 
 Track querystring params and automatically inject them into your forms as trackable data.
 
@@ -61,6 +61,31 @@ Wait up... isn't it spelled "referrer?"
 
 **"Referer"**: This is a common misspelling of "referrer." However, it has become standardized in the field of computer science, particularly in internet and web terminology. The term "referer" is used specifically to denote the referring URL in HTTP headers and web logging. This spelling originated from an error in the original HTTP specification (RFC 1945) and has been perpetuated in technical standards and programming ever since.
 {% endhint %}
+
+## Discussions and Setup
+
+\[quote="Kev99, post:3, topic:263427"] Pretty LInks is a company that’s for Word Press where you can shorten affiliate links/cloak, track clicks in detail, etc. Doesn’t sound like there is a third-party tool for Webflow from other companies yet. \[/quote]
+
+If you don't find a packaged solution, these are easy to build. Typically on Webflow I run with;
+
+* Wildcard redirect from e.g. `/link/(.*)` -> `/track?link=%1` to consolidate shortlink requests.
+* Script to lookup the affiliate code from CMS data, add a cookie\*\*, and redirect to the target page
+* I have a global script which injects a hidden field into all forms containing the affiliate code automatically just to keep things simple
+* I also inject that code into the GTM data layer, so that any GTM conversion events like button clicks also have that data.
+
+\*\* Depending on your marketing policy, you can set that cookie expiry to match how long that affiliate click is considered valid.
+
+\[quote="Kev99, post:3, topic:263427"] Google Analytics and Tag manager don’t offer the same flexibility and tracking as Pretty Links. \[/quote]
+
+I'm finding that hard to imagine ;) but what they do lack is simplicity. Massively over-engineered for basic stats tracking.
+
+Also you can make the entire system completely transparent ( no redirects ) using a reverse proxy to deliver the page directly via a rewrite.
+
+You should be able to adapt this approach for any stats-tracking platform, but in most cases we use the form submit data directly ( it goes into Salesforce / Pipedrive / Nutshell etc. ), or we're just after the conversion data which GTM feeds to Analytics.
+
+##
+
+##
 
 ## Usage Notes
 
