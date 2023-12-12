@@ -28,9 +28,13 @@ Cloneable
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
-### `wfu-truncate` attribute <a href="#wfu-truncate-attribute" id="wfu-truncate-attribute"></a>
+### Add the SA5 Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Use `wfu-truncate` to apply truncation to a text element.
+First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
+
+### I want this text element to be truncated to N lines
+
+Add the `wfu-truncate` custom attribute to apply truncation to any text element. If it exceeds the line count you specify, you'll see an ellipses ( ... ) at the point of truncation.&#x20;
 
 Use a value of `1` to `5` to specify the number of lines.
 
@@ -40,19 +44,8 @@ e.g.;
 wfu-truncate = 3
 ```
 
-{% hint style="warning" %}
-**Recently tested on Chrome ONLY.**\
-Please double check your desired browsers to make sure the CSS works for your target audience.
+{% hint style="info" %}
+Truncation will only appear in the published site, not in the designer.
 {% endhint %}
-
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
-
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
-
-### STEP 2 - Apply `wfu-truncate` to your text elements <a href="#step-2---apply-wfu-truncate-to-your-text-elements" id="step-2---apply-wfu-truncate-to-your-text-elements"></a>
-
-See above for details.
 
 \

@@ -271,6 +271,7 @@
   * [Google Adsense](hyperflow/hyperflow-files-and-folders/google-adsense.md)
 * [Sygnal DevProxy](hyperflow/sygnal-devproxy.md)
 * [Hyperflow Site Redirector](hyperflow/hyperflow-site-redirector.md)
+* [Hyperflow Coming Soon](hyperflow/hyperflow-coming-soon.md)
 * [Hyperflow User Accounts](hyperflow/hyperflow-user-accounts.md)
 * [Hyperflow Localization](hyperflow/hyperflow-localization.md)
   * [Localization JS API](hyperflow/hyperflow-localization/localization-js-api.md)
