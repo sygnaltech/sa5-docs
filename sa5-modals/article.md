@@ -1,8 +1,10 @@
 ---
-description: Webflow Modals, Popups & more
+description: >-
+  Automatically suppress your Webflow modals, popups & more after the user
+  closes them for a specified number of days.
 ---
 
-# Webflow Modals & Popups Suppression ❺🧪
+# Webflow Modals & Popups Suppression
 
 This feature enables you to easily "close" and suppress UI elements so that they will not appear for a specified number of days, even on page reload.&#x20;
 
@@ -38,7 +40,11 @@ The close functionality will be an element with a special custom attribute on it
 In Webflow, modals are commonly "closed" using an interaction. It may include fade-out, slide-out, or spin-off-screen effects. SA5 simply deletes the element outright, so those exit animations would not be seen, the modal will simply disappear.&#x20;
 {% endhint %}
 
-### I want this element to represent my suppressable content
+### Add the SA5 Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
+
+### I want this element to represent my suppressible content
 
 To the outermost element you want to suppress;
 
@@ -53,13 +59,7 @@ To the close element(s) within the modal;
 * Add an attribute of `wfu-modal-close` = `true`
 * Add an attribute of `wfu-modal-close-type` = `auto`
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Questions? Feature Requests?
 
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
-
-### STEP 2 - Add the custom attributes as above
-
-See _notes_ above. &#x20;
+Visit the SA5 forum link at the top of this page.
 
