@@ -1,5 +1,7 @@
 ---
-description: Line-Clamp your plain-text content to a maximum number of lines, for layout.
+description: >-
+  Line-clamp your plain-text content to a maximum number of lines, to keep your
+  layout tidy.
 ---
 
 # Truncate Text w/ Ellipsis ❺
@@ -8,12 +10,12 @@ description: Line-Clamp your plain-text content to a maximum number of lines, fo
 
 Often, it is desirable to truncate plain text excerpts so that they do not break your layout, particularly when that text is variable ( coming from the CMS ), and when your layout involves a grid arrangement such as a card layout.
 
-Modern CSS does provide a solution for this, but the required settings are not built into the Webflow designer \[yet].
+Modern CSS does provide a solution for this, but the required settings are not yet built into the Webflow designer.
 
 So, here’s a solution that gives you what you need.&#x20;
 
 {% hint style="info" %}
-Custom CSS is applied only in your published site, so you will not see the truncation in the designer.
+SA5's external CSS libs are only loaded in your published site, so you will not see the truncation in the designer.
 {% endhint %}
 
 ## Demonstration <a href="#demonstration" id="demonstration"></a>
@@ -34,7 +36,7 @@ First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
 
 ### I want this text element to be truncated to N lines
 
-Add the `wfu-truncate` custom attribute to apply truncation to any text element. If it exceeds the line count you specify, you'll see an ellipses ( ... ) at the point of truncation.&#x20;
+Add the `wfu-truncate` custom attribute your element. If it exceeds the line count you specify, you'll see an ellipses ( ... ) at the point of truncation.&#x20;
 
 Use a value of `1` to `5` to specify the number of lines.
 
@@ -48,4 +50,6 @@ wfu-truncate = 3
 Truncation will only appear in the published site, not in the designer.
 {% endhint %}
 
-\
+## Questions? Feature Requests?
+
+Visit the SA5 forum link at the top of this page.\
