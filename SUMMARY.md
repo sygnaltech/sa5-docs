@@ -98,8 +98,8 @@
 * [Decode HTML ❺](sa5-html/decode-html.md)
 * [Content Embeds ❺🧪](sa5-html/content-embeds.md)
 * [Markdown ❺🧪](sa5-html/markdown.md)
-* [Layout ❺🧪](sa5-html/layout.md)
-* [Transform ❺🧪](sa5-html/transform.md)
+* [Layout ❺🧪](sa5-html/layout-conceptual.md)
+* [Transform ❺🧪](sa5-html/transform-concept.md)
 
 ## 📘 sa5-richtext
 
@@ -215,8 +215,8 @@
   * [Cloneable Demo](https://webflow.com/made-in-webflow/website/user-tracking)
 * [SA5 Referer Tracking ❺🧪](sa5-track/sa5-referer-tracking.md)
 * [Future Plans](sa5-track/future/README.md)
-  * [Likes & Favorites Tracking ❺🧪](sa5-track/future/clicks.md)
-  * [Recently Viewed Tracking ❺🧪](sa5-track/future/recently-viewed-tracking.md)
+  * [Likes & Favorites Tracking ❺🧪](sa5-track/clicks.md)
+  * [Recently Viewed Tracking ❺🧪](sa5-track/recently-viewed-tracking.md)
 
 ## 📘 sa5-modals
 
@@ -300,7 +300,9 @@
 * [Hyperflow Richtext](hyperflow/hyperflow-richtext.md)
 * [Hyperflow Continuous Audio](hyperflow/hyperflow-continuous-audio.md)
 * [Hyperflow Single Page Application (SPA)](hyperflow/hyperflow-single-page-application-spa.md)
+* [Hyperflow RSS](hyperflow/hyperflow-rss.md)
 
 ## 📘 HYPERSERVE
 
 * [Hyperserve Concept](hyperserve/hyperserve-concept.md)
+* [Hyperflow Editor](hyperserve/hyperflow-editor.md)
