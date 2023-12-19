@@ -5,7 +5,7 @@ description: Redirect users anywhere you want, after login
 # Advanced Log-In & Sign-Up Flow ❺
 
 {% hint style="warning" %}
-**BETA** - While Memberships is in BETA, this library will track that BETA status.
+**LOCALIZATION** - If you are using Webflow's new localization features, there may be impacts with this library. Most notably, selecting an alternate locale, and then logging in likely will not detect and preserve that alternate locale. Let us know in the forum if you encounter any conflicts, we'd like to see sites operating with this configuration. &#x20;
 {% endhint %}
 
 {% hint style="info" %}

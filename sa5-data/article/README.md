@@ -25,6 +25,10 @@ Once the data is accessible to your scripts, you can do whatever you like with i
 
 **SA5 Data** blocks are placed in HTML Embeds, typically inside of any Collection List or Collection Page. They describe the JSON object you want to create.&#x20;
 
+{% hint style="info" %}
+Internally we refer to this syntax as HSON, or HTML Structured Object Notation. It has specific attributes.&#x20;
+{% endhint %}
+
 Here's a very simple example of what SA5 Data looks like.&#x20;
 
 ```html
@@ -256,7 +260,7 @@ In the resulting JavaScript object-
 
 ## Future
 
-Support for assembled objects. In rare cases, some pieces of the object may be outside of the `sa5-data` block, particularly items that cannot be Field-embedded such as rich text content.
+Support for process-assembled objects. In rare cases, some pieces of the object may be outside of the `sa5-data` block, particularly items that cannot be Field-embedded such as rich text content.
 
 In this case, we might support a special attribute on those elements such as `[wfu-data-item]` along with field, db, dsn identifiers, and specify the field for an object-merge. e.g. `article.text` would indicate the nested `article` object, with a `text` field. Objects would be created as needed. I am probably in favor of an object-merge approach.&#x20;
 
@@ -265,6 +269,21 @@ As multiline string delimiters, `<` `>` are concise and unambiguous, however we 
 {% hint style="info" %}
 We expect that the need for multiline strings support is relatively low.&#x20;
 {% endhint %}
+
+### Comments
+
+Some means to indicate comments, preferably;
+
+* Full line comments
+* End of line comments
+
+### Arrays
+
+Some means to indicate arrays.
+
+* Blank lines?
+* \[] and indent prefix?
+* Separate items with a shared context on a param? -> I like this&#x20;
 
 
 

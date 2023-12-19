@@ -98,8 +98,8 @@
 * [Decode HTML ❺](sa5-html/decode-html.md)
 * [Content Embeds ❺🧪](sa5-html/content-embeds.md)
 * [Markdown ❺🧪](sa5-html/markdown.md)
-* [Layout (conceptual)](sa5-html/layout-conceptual.md)
-* [Transform (concept)](sa5-html/transform-concept.md)
+* [Layout ❺🧪](sa5-html/layout.md)
+* [Transform ❺🧪](sa5-html/transform.md)
 
 ## 📘 sa5-richtext
 
@@ -214,8 +214,9 @@
   * [Track Checkbox State](sa5-track/webflow-cookies-and-storage-tracking/track-checkbox-state.md)
   * [Cloneable Demo](https://webflow.com/made-in-webflow/website/user-tracking)
 * [SA5 Referer Tracking ❺🧪](sa5-track/sa5-referer-tracking.md)
-* [Likes & Favorites Tracking ❺🧪](sa5-track/clicks.md)
-* [Recently Viewed Tracking ❺🧪](sa5-track/recently-viewed-tracking.md)
+* [Future Plans](sa5-track/future/README.md)
+  * [Likes & Favorites Tracking ❺🧪](sa5-track/future/clicks.md)
+  * [Recently Viewed Tracking ❺🧪](sa5-track/future/recently-viewed-tracking.md)
 
 ## 📘 sa5-modals
 
@@ -241,6 +242,12 @@
 
 * [SA5 Core ❺](core/overview.md)
 * [Webflow Designer Support ❺](core/overview-1.md)
+
+## 📘 sa5-localization
+
+* [🔍 About SA5's Localization Lib](sa5-localization/about.md)
+* [🚀 Quick Start | SA5 Localization](sa5-localization/quick-start.md)
+* [Sort locales in the order you choose](sa5-localization/sort-locales-in-the-order-you-choose.md)
 
 ## 📘 sa5-404 <a href="#404" id="404"></a>
 
@@ -291,3 +298,9 @@
   * [Custom Breakpoints](hyperflow/future-service-concepts/custom-breakpoints.md)
 * [Hyperflow Core](hyperflow/hyperflow-core.md)
 * [Hyperflow Richtext](hyperflow/hyperflow-richtext.md)
+* [Hyperflow Continuous Audio](hyperflow/hyperflow-continuous-audio.md)
+* [Hyperflow Single Page Application (SPA)](hyperflow/hyperflow-single-page-application-spa.md)
+
+## 📘 HYPERSERVE
+
+* [Hyperserve Concept](hyperserve/hyperserve-concept.md)
