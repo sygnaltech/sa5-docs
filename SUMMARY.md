@@ -100,6 +100,7 @@
 * [Markdown ❺🧪](sa5-html/markdown.md)
 * [Layout ❺🧪](sa5-html/layout-conceptual.md)
 * [Transform ❺🧪](sa5-html/transform-concept.md)
+* [CMS Code Injection ❺🧪](sa5-html/cms-code-injection.md)
 
 ## 📘 sa5-richtext
 
