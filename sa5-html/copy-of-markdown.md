@@ -2,20 +2,21 @@
 description: Embed markdown content, including tables and more.
 ---
 
-# Markdown ❺
+# Copy of Markdown ❺🧪
+
+{% hint style="warning" %}
+**NOT YET AVAILABLE** 🧪
+
+Currently in ALPHA experimentation.&#x20;
+{% endhint %}
 
 ## Usage Notes
 
-Use the `<markdown>` element inside of any HTML Embed.
+Embed as an element, anywhere
 
-* Works in standalone Embeds or as an embed within a rich text block
-* Works with static rich text blocks, or CMS-bound RTBs&#x20;
-* Supports any Markdown that Showdown supports, plus table extensions
-
-Here's an example of an H1 followed by a table;
-
-```html
+```
 <markdown>
+  
 # This is Markdown  
   
 | Day | Ponsonby Doctors | Viaduct Doctors |  
@@ -32,9 +33,44 @@ Here's an example of an H1 followed by a table;
 
 ### Markdown "elements"
 
-You can convert a standalone HTML Embed element into a markdown element without needing the `<markdown>` tag, using a custom attriute;&#x20;
+You can convert a standalone HTML Embed element into a&#x20;
 
-`[wfu-markdown]`
+\[wfu-markdown]
+
+### Embedding Tables from Google Docs
+
+{% code overflow="wrap" %}
+```html
+<script type="wfu-embed">
+{
+  "type": "gdoc",
+  "version": "1",
+  "src": "https://docs.google.com/document/d/1CFPmlJ0WmYbtQCyf8NaVCilnxfc0ah9wpm4XpE2b4zo/edit",
+  "selector": "table:eq(0)",
+  "theme": "default"
+}
+</script>
+```
+{% endcode %}
+
+Store HTML directly in CMS text fields, and render them in decoded form on the page.
+
+## Use Cases&#x20;
+
+Good for…
+
+* 3rd party embeds like SoundCloud, and YouTube
+* JSON+LD embeds
+
+## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+
+Create an HTML Embed or plain-text element on your page, data-bound to the CMS if you like.
+
+### `wfu-decode` attribute <a href="#wfu-decode-attribute" id="wfu-decode-attribute"></a>
+
+Add this to the HTML Embed element you want the contents decoded for. No value needed.
+
+Note that the CSS will hide this element initially until after it’s decoded, at which point we make it visible.
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
