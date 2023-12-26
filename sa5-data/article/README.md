@@ -2,12 +2,10 @@
 description: Add data to your custom code
 ---
 
-# SA5 Data ❺🧪
+# SA5 Data ( HSON ) ❺🧪
 
-{% hint style="info" %}
-**BETA TESTING**
-
-This library is in beta testing. Report any issues you encounter in the forum.
+{% hint style="success" %}
+We refer to this syntax as **HSON**, or **HTML Structured Object Notation**. It has specific design mechanics which allows us to unambiguously transform HTML-encoded content into script-friendly **JSON**. &#x20;
 {% endhint %}
 
 The primary purpose of SA5 Data is to provide a reliable means to expose Webflow's collection lists as a JSON data source that can be used in your custom code.&#x20;
@@ -25,11 +23,11 @@ Once the data is accessible to your scripts, you can do whatever you like with i
 
 **SA5 Data** blocks are placed in HTML Embeds, typically inside of any Collection List or Collection Page. They describe the JSON object you want to create.&#x20;
 
-{% hint style="info" %}
-Internally we refer to this syntax as HSON, or HTML Structured Object Notation. It has specific attributes.&#x20;
-{% endhint %}
-
 Here's a very simple example of what SA5 Data looks like.&#x20;
+
+{% hint style="info" %}
+We are likely to migrate the type to `sygnal/hson` for generic data descriptions.
+{% endhint %}
 
 ```html
 <script type="sygnal/sa5-data">

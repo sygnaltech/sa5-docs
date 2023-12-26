@@ -35,7 +35,7 @@
 * [🔍 About SA5's Data & Data-Binding Lib](sa5-data/about.md)
 * [🚀 Quick Start | SA5 Data & Data-Binding](sa5-data/quick-start.md)
 * [Data Sources & Data-Binding ❺](sa5-data/overview.md)
-* [SA5 Data ❺🧪](sa5-data/article/README.md)
+* [SA5 Data ( HSON ) ❺🧪](sa5-data/article/README.md)
   * [SA5 Data BETA Kit](sa5-data/article/sa5-data-beta-kit.md)
   * [JSON Data Variants](sa5-data/article/json-data-variants.md)
 * [Concepts & Terminology](sa5-data/concepts-and-terminology/README.md)
@@ -96,9 +96,7 @@
 * [Truncate Text w/ Ellipsis ❺](sa5-html/truncate-text-w-ellipsis.md)
 * [Hide Section w/ Empty Collection Lists ❺](sa5-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML ❺](sa5-html/decode-html.md)
-* [Content Embeds ❺🧪](sa5-html/content-embeds.md)
 * [Markdown ❺](sa5-html/markdown.md)
-* [Copy of Markdown ❺🧪](sa5-html/copy-of-markdown.md)
 * [Layout ❺🧪](sa5-html/layout-conceptual.md)
 * [Transform ❺🧪](sa5-html/transform-concept.md)
 * [CMS Code Injection ❺🧪](sa5-html/cms-code-injection.md)
@@ -244,6 +242,15 @@
 
 * [SA5 Core ❺](core/overview.md)
 * [Webflow Designer Support ❺](core/overview-1.md)
+
+## 📘 sa5-embeds
+
+* [🔍 About SA5's Embeds Lib](sa5-embeds/about.md)
+* [🚀 Quick Start | SA5 Embeds](sa5-embeds/quick-start.md)
+* [Table Embeds ❺🧪](sa5-embeds/table-embeds/README.md)
+  * [Google Doc Table Embeds](sa5-embeds/table-embeds/google-doc-table-embeds.md)
+  * [Google Sheets Table Embeds](sa5-embeds/table-embeds/google-sheets-table-embeds.md)
+  * [Future](sa5-embeds/table-embeds/future.md)
 
 ## 📘 sa5-localization
 
