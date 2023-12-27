@@ -234,9 +234,13 @@
 
 ## 📘 sa5-seo <a href="#seo" id="seo"></a>
 
+* [🔍 About SA5's SEO Lib](seo/about.md)
+* [🚀 Quick Start | SA5 SEO](seo/quick-start.md)
 * [Noindex ❺🧪](seo/noindex.md)
 * [Nofollow ❺🧪](seo/nofollow.md)
-* [JSON-LD Article \[EXPERIMENTAL\] ❺🧪](seo/article.md)
+* [JSON-LD](seo/json-ld/README.md)
+  * [JSON-LD Article ❺🧪](seo/json-ld/article.md)
+  * [JSON-LD Video ❺🧪](seo/json-ld/article-1.md)
 
 ## 📘 sa5-core <a href="#core" id="core"></a>
 
