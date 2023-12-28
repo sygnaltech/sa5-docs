@@ -238,9 +238,11 @@
 * [🚀 Quick Start | SA5 SEO](seo/quick-start.md)
 * [Noindex ❺🧪](seo/noindex.md)
 * [Nofollow ❺🧪](seo/nofollow.md)
-* [JSON-LD](seo/json-ld/README.md)
+* [JSON-LD ❺🧪](seo/json-ld/README.md)
   * [JSON-LD Article ❺🧪](seo/json-ld/article.md)
   * [JSON-LD Video ❺🧪](seo/json-ld/article-1.md)
+  * [JSON-LD Course Info ❺🧪](seo/json-ld/article-2.md)
+  * [JSON-LD Sitelinks Searchbox ❺🧪](seo/json-ld/article-3.md)
 
 ## 📘 sa5-core <a href="#core" id="core"></a>
 
@@ -314,6 +316,11 @@
 * [Hyperflow Continuous Audio](hyperflow/hyperflow-continuous-audio.md)
 * [Hyperflow Single Page Application (SPA)](hyperflow/hyperflow-single-page-application-spa.md)
 * [Hyperflow RSS](hyperflow/hyperflow-rss.md)
+* [Hyperflow CSS](hyperflow/hyperflow-css.md)
+* [Hyperflow User Accounts](hyperflow/hyperflow-user-accounts-1.md)
+* [Page](hyperflow/page.md)
+* [Hyperflow Cache](hyperflow/hyperflow-cache/README.md)
+  * [Purge Cache](hyperflow/hyperflow-cache/purge-cache.md)
 
 ## 📘 HYPERSERVE
 

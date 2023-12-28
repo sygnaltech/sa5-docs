@@ -2,7 +2,7 @@
 description: Add structured data to your Webflow site, easily
 ---
 
-# JSON-LD
+# JSON-LD ❺🧪
 
 {% hint style="danger" %}
 **EXPERIMENTAL ALPHA** ⑤
@@ -13,6 +13,8 @@ DO NOT USE this in production code, as it may be removed. We'll see if this appr
 
 Testing Google response to our script generated JSON-LD.&#x20;
 {% endhint %}
+
+{% embed url="https://developers.google.com/search/docs/appearance/structured-data/search-gallery" %}
 
 ## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
