@@ -318,6 +318,8 @@
 * [Hyperflow RSS](hyperflow/hyperflow-rss.md)
 * [Hyperflow CSS](hyperflow/hyperflow-css.md)
 * [Hyperflow User Accounts](hyperflow/hyperflow-user-accounts-1.md)
+* [Hyperflow Site Stats](hyperflow/hyperflow-site-stats.md)
+* [Hyperflow External Data](hyperflow/hyperflow-external-data.md)
 * [Page](hyperflow/page.md)
 * [Hyperflow Cache](hyperflow/hyperflow-cache/README.md)
   * [Purge Cache](hyperflow/hyperflow-cache/purge-cache.md)

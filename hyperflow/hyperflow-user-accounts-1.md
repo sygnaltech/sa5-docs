@@ -6,11 +6,95 @@ description: Supercharge Webflow User Accounts
 
 ## Overview
 
-ffads
+Webflow's User Accounts is a very limited system.&#x20;
+
+* No ability to connect it to external billing platforms.&#x20;
+* No ability to dynamically migrate live user accounts from another platform.
+* No access-group ga
+* Stale data, based on user account settings&#x20;
+* No ability to immediately revoke access&#x20;
+* No ability to change email address&#x20;
+
+### Why use Webflow?
+
+If we're going to extend Webflow's User Accounts infrastructure substantially, why bother using Webflow User Accounts at all? &#x20;
+
+It's certainly possible to replace the authentication, user data storage, admin, API, etc, however Webflow already provides;
+
+* A designer-integrated admin capability
+* A basic set of screens and processes for sign-up, log-in, and account management
+* An integrated model for \[ page level ] access-group gating
+* An API for accessing all of the User data&#x20;
+* A subscription billing mechanism, as an option&#x20;
+
+All built into the Webflow platform as part of the base subscription. We can use those parts and fix;
+
+* User data access within the site, for personalization
+* Element-level gating by access-group&#x20;
+* Improved security&#x20;
+* Mechanics like partial-content previews&#x20;
+* Possibly improved billing options, and integrations with other systems for the access-group determination.&#x20;
+
+### Access User Info in Site
+
+Access to user info is crucial to your ability to deliver a personalized experience.&#x20;
+
+<table><thead><tr><th></th><th>+ Hyperflow</th><th>+ SA5 User Info</th><th>Webflow User Accounts</th><th data-hidden>+ Hyperflow</th><th data-hidden>Webflow User Accounts</th><th data-hidden>+ SA5 User Info</th></tr></thead><tbody><tr><td>UserID</td><td>Yes, current</td><td>No</td><td>No</td><td></td><td></td><td></td></tr><tr><td>Name</td><td>Yes, current</td><td>Yes, as of last login</td><td>No</td><td></td><td></td><td></td></tr><tr><td>Email</td><td>Yes, current</td><td>Yes, as of last login</td><td>No</td><td></td><td></td><td></td></tr><tr><td>Custom User Data</td><td>Yes, current</td><td>Yes, as of last login</td><td>No</td><td></td><td></td><td></td></tr><tr><td>Account is active right now? *</td><td>Yes, current</td><td>No</td><td>No. Whether the account is active or exists is only tested at login.</td><td></td><td></td><td></td></tr><tr><td>Access Groups</td><td>Yes, current</td><td>Yes, as of last login</td><td>No, but page-level gating can utilize Access Groups to gate content</td><td></td><td></td><td></td></tr></tbody></table>
 
 
 
-<table><thead><tr><th></th><th data-hidden>+ Hyperflow</th><th data-hidden>Webflow User Accounts</th><th data-hidden>+ SA5 User Info</th></tr></thead><tbody><tr><td>GGdGGGteG</td><td>fds</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td>FUTURE PLANS</td><td></td><td></td><td></td></tr><tr><td>Access-group-gated Elements</td><td></td><td></td><td></td></tr></tbody></table>
+### Platform Capabilities
+
+
+
+<table><thead><tr><th></th><th>+ Hyperflow</th><th>+ SA5 User Info</th><th>Webflow User Accounts</th><th data-hidden>+ Hyperflow</th><th data-hidden>Webflow User Accounts</th><th data-hidden>+ SA5 User Info</th></tr></thead><tbody><tr><td>Access-group-gated Elements</td><td>Trivial, and secure</td><td>Possible, but access groups are from last login, and uses custom code. Also not secure as the elements are removed by client-side script.</td><td>No</td><td></td><td></td><td></td></tr><tr><td>Change a User's access groups immediately, e.g. over the phone</td><td>Yes</td><td>Partial. User would have to log out, and back in again.</td><td>Partial. User would have to log out, and back in again.</td><td></td><td></td><td></td></tr><tr><td>Have access group changes take effect immediately.</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td><td></td></tr><tr><td>Immediate lock-out</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+
+
+
+{% hint style="info" %}
+In Webflow, the login token and access groups are issued at the point of login. Once login is complete, that token lasts for about 3 days, and may even be auto-refreshed as the user visits.&#x20;
+
+The impact of this is essential to understand;
+
+* Adding or revoking access groups does not take effect until the next login
+* Deleting the account does not prevent access, or automatically log the user out
+* &#x20;A subscription expiry does not necessarily(?) revoke access&#x20;
+{% endhint %}
+
+## Future
+
+* Custom user data storage
+* 3rd party integrations
+  * e.g. Mailchimp list sync
+* Likes & favorites
+* Variable refresh models
+  * On-demand refresh for sensitive access updates
+  * Timed refresh
+    * Page-specific rules?&#x20;
+      * META data
+* Auto-logout&#x20;
+*
+
+Possible;
+
+* Voting and asset-based likes tracking
+* CMS field updates&#x20;
+* External subscription options via Stripe&#x20;
+  * Easy ability establish and cancel subscriptions
+  * Easy ability to change subscriptions \[ and pro-rate ]
+  * Immediate awareness of what subscription is active, and tie to access groups&#x20;
+  * Platforms
+    * Stripe
+    * BMAC
+    * Patreon
+* Change email address process;
+  * Create a new invite, and verify it
+  * Migrate existing account data
+    * Including billing
+  * Remove old account&#x20;
+* Dynamic access groups
+  * Certain access groups can be assigned through external systems like Stripe & BMAC.&#x20;
+    * Or synced by API &#x20;
 
 
 
