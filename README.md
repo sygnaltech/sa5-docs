@@ -13,7 +13,7 @@ A lot of new features have already been released and many more are in the works.
 
 We've begun including our dev team and roadmap notes in these docs so that they are available for community comment and discussion.&#x20;
 
-## Dec 2023 Overview of SA4
+## 2023 Review of SA5's Capabilities
 
 {% embed url="https://www.loom.com/share/f31effc1fa604bc7a701c25ebcda513f" %}
 
