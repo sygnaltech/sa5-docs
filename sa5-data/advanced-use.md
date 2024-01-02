@@ -16,7 +16,7 @@ Scenario;
 
 Let's suppose you have setup this SA5 Data source.
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 Once loaded, the data it will exist as a JavaScript Map in SA5's Datastore;
 

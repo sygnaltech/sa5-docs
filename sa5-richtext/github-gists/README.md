@@ -16,7 +16,7 @@ With SA5's Rich Text lib, you can simply drop an HTML embed anywhere in your ric
 
 The code will be line numbered, and syntax-highlighted like this-
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 That's it.&#x20;
 

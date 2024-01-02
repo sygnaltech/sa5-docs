@@ -40,7 +40,7 @@ Place the attribute on any element, and all of the lightboxes that are descendan
 
 This may not be necessary for the library to work, but it's best to enable the **Link with other lightboxes** feature on each of your lightboxes. Leave the **Group name** blank.&#x20;
 
-![](<../../.gitbook/assets/image (12).png>)
+![](<../../.gitbook/assets/image (31).png>)
 
 ### Add the `wfu-lightbox-group` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
@@ -64,7 +64,7 @@ Collection lists individually have a 3-level hierarchy of Collection List Wrappe
 
 In a nested list arrangement, they'll appear like this;&#x20;
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Example of a nested list, in which the parent contains a lightbox image, and the child Multi-image</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption><p>Example of a nested list, in which the parent contains a lightbox image, and the child Multi-image</p></figcaption></figure>
 
 In this example, the parent collection list has a main image which is light-boxed, and it has a nested collection list - bound to a multi-image field - whose images are also light-boxed. &#x20;
 

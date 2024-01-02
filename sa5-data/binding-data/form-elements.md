@@ -45,7 +45,7 @@ Manual
 
 Place the wfu-bind attribute on the Select Field element
 
-![](<../../.gitbook/assets/image (3) (1) (1).png>)
+![](<../../.gitbook/assets/image (22).png>)
 
 {% hint style="info" %}
 The value you assign is case-sensitive to e.g. querystring keys. &#x20;
@@ -73,7 +73,7 @@ Would&#x20;
 
 Most values will be evaluated as **true**, with the exception of these specific values which are evaluated as **false**: `false`, `f`, `0`, `no`, `off`, as well as `undefined` or `null`. Falsy values are case-insensitive, so `False` is the same as `false`.&#x20;
 
-![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (21).png>)
 
 
 

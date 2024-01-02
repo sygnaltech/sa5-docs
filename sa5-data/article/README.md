@@ -51,7 +51,7 @@ And that resulting data can be used in [SA5 Data-Binding](../binding-data/), or 
 
 Typically, you would use Webflow's Field embeds to compose the SA5 Data object from Webflow's CMS Embed fields. An example might look like this;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>HTML Embed example setup</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption><p>HTML Embed example setup</p></figcaption></figure>
 
 {% hint style="success" %}
 The resulting JSON object is stored in SA5's Datastore so that you can easily access all of the data on your page, even hundreds of data items.&#x20;

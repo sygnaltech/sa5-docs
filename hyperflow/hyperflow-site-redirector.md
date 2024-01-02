@@ -18,7 +18,7 @@ description: Used to redirect a custom map of URLs
 * Map is stored as a JSON object in the worker's KV store
 * Has a fallback for unmatched items&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ## Configuration Notes
 

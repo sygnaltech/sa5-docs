@@ -24,7 +24,7 @@ Demonstration and Cloneable
 Webflow offers a range of formats, and you ideally want to choose one that is the most internationally recognizable so that your localization settings do not confuse the parser. The best date format for this is halfway down the list and is shown here.&#x20;
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Ideally use this date format to ensure correct datetime parsing. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption><p>Ideally use this date format to ensure correct datetime parsing. </p></figcaption></figure>
 
 ### `wfu-format-handler` attribute ( optional )
 

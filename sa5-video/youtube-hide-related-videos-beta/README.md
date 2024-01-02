@@ -13,13 +13,13 @@ When an embedded YouTube video is paused or finished playing, a series of "relat
 
 It's not ideal...&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 This SA5 attribute blocks the play and stop views with an overlay that can make this UX more elegant. At this point it is very simple.
 
 | Video paused overlay                        | Video finished overlay                      |
 | ------------------------------------------- | ------------------------------------------- |
-| ![](<../../.gitbook/assets/image (15).png>) | ![](<../../.gitbook/assets/image (14).png>) |
+| ![](<../../.gitbook/assets/image (34).png>) | ![](<../../.gitbook/assets/image (33).png>) |
 
 {% hint style="success" %}
 It is possible to change the color and the icon however it requires knowledge of CSS. See our [Styling Options](styling-options.md) for details.&#x20;
@@ -34,7 +34,7 @@ It is possible to change the color and the icon however it requires knowledge of
 {% hint style="info" %}
 Currently this feature works with **Webflow's YouTube video element** specifically. Make sure you are using the right one.&#x20;
 
-![](<../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (15).png>)
 {% endhint %}
 
 Simply add a custom attribute of `wfu-youtube-norel` to any YouTube video on your page.&#x20;

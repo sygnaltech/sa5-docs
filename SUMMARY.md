@@ -87,7 +87,7 @@
 * [🚀 Quick Start | SA5 HTML](sa5-html/quick-start.md)
 * [Advanced Element Sorting ❺](sa5-html/advanced-element-sorting.md)
 * [Advanced Element Filtering ❺](sa5-html/advanced-element-filtering.md)
-* [SA5 Dynamic Attributes](sa5-html/dynamic-attributes.md)
+* [SA5 Dynamic Attributes](sa5-html/sa5-dynamic-attributes/README.md)
   * [Future](sa5-html/sa5-dynamic-attributes/future.md)
 * [Breakpoints ❺](sa5-html/breakpoints.md)
 * [Limit Items by Breakpoint ❺](sa5-html/limit-items-by-breakpoint.md)
@@ -97,8 +97,8 @@
 * [Hide Section w/ Empty Collection Lists ❺](sa5-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML ❺](sa5-html/decode-html.md)
 * [Markdown ❺](sa5-html/markdown.md)
-* [Layout ❺🧪](sa5-html/layout-conceptual.md)
-* [Transform ❺🧪](sa5-html/transform-concept.md)
+* [Layout ❺🧪](sa5-html/layout.md)
+* [Transform ❺🧪](sa5-html/transform.md)
 * [CMS Code Injection ❺🧪](sa5-html/cms-code-injection.md)
 
 ## 📘 sa5-richtext
@@ -216,8 +216,8 @@
   * [Cloneable Demo](https://webflow.com/made-in-webflow/website/user-tracking)
 * [SA5 Referer Tracking ❺🧪](sa5-track/sa5-referer-tracking.md)
 * [Future Plans](sa5-track/future/README.md)
-  * [Likes & Favorites Tracking ❺🧪](sa5-track/clicks.md)
-  * [Recently Viewed Tracking ❺🧪](sa5-track/recently-viewed-tracking.md)
+  * [Likes & Favorites Tracking ❺🧪](sa5-track/future/clicks.md)
+  * [Recently Viewed Tracking ❺🧪](sa5-track/future/recently-viewed-tracking.md)
 
 ## 📘 sa5-modals
 
@@ -296,13 +296,13 @@
 * [Hyperflow Site Redirector](hyperflow/hyperflow-site-redirector.md)
 * [Hyperflow Coming Soon](hyperflow/hyperflow-coming-soon.md)
 * [Hyperflow User Accounts](hyperflow/hyperflow-user-accounts.md)
-* [Hyperflow Localization](hyperflow/hyperflow-localization.md)
+* [Hyperflow Localization](hyperflow/hyperflow-localization/README.md)
   * [Localization JS API](hyperflow/hyperflow-localization/localization-js-api.md)
   * [Locale Path Fixes](hyperflow/hyperflow-localization/locale-path-fixes.md)
   * [Locale-Specific Domains](hyperflow/hyperflow-localization/locale-specific-domains.md)
   * [Locale Switcher & Flags](hyperflow/hyperflow-localization/locale-switcher-and-flags.md)
 * [Hyperflow Hyperspeed](hyperflow/hyperflow-hyperspeed/README.md)
-  * [Hyperflow Purge Cache](hyperflow/hyperflow-hyperspeed/hyperflow-purge-cache.md)
+  * [Hyperflow Purge Cache](hyperflow/hyperflow-hyperspeed/hyperflow-purge-cache/README.md)
     * [Quickstart](hyperflow/hyperflow-hyperspeed/hyperflow-purge-cache/quickstart.md)
 * [Hyperflow SEO](hyperflow/hyperflow-seo/README.md)
   * [Page og:type](hyperflow/hyperflow-seo/page-og-type.md)
@@ -324,6 +324,7 @@
 * [Page](hyperflow/page.md)
 * [Hyperflow Cache](hyperflow/hyperflow-cache/README.md)
   * [Purge Cache](hyperflow/hyperflow-cache/purge-cache.md)
+* [Hyperflow CMS](hyperflow/hyperflow-cms.md)
 
 ## 📘 HYPERSERVE
 
