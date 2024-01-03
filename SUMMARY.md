@@ -295,7 +295,8 @@
 * [Sygnal DevProxy](hyperflow/sygnal-devproxy.md)
 * [Hyperflow Site Redirector](hyperflow/hyperflow-site-redirector.md)
 * [Hyperflow Coming Soon](hyperflow/hyperflow-coming-soon.md)
-* [Hyperflow User Accounts](hyperflow/hyperflow-user-accounts.md)
+* [Hyperflow User Accounts](hyperflow/hyperflow-user-accounts/README.md)
+  * [User-Owned CMS Data](hyperflow/hyperflow-user-accounts/user-owned-cms-data.md)
 * [Hyperflow Localization](hyperflow/hyperflow-localization/README.md)
   * [Localization JS API](hyperflow/hyperflow-localization/localization-js-api.md)
   * [Locale Path Fixes](hyperflow/hyperflow-localization/locale-path-fixes.md)
@@ -321,10 +322,12 @@
 * [Hyperflow User Accounts](hyperflow/hyperflow-user-accounts-1.md)
 * [Hyperflow Site Stats](hyperflow/hyperflow-site-stats.md)
 * [Hyperflow External Data](hyperflow/hyperflow-external-data.md)
-* [Page](hyperflow/page.md)
+* [Hyperflow Page](hyperflow/hyperflow-page.md)
 * [Hyperflow Cache](hyperflow/hyperflow-cache/README.md)
   * [Purge Cache](hyperflow/hyperflow-cache/purge-cache.md)
 * [Hyperflow CMS](hyperflow/hyperflow-cms.md)
+* [Hyperflow APIs](hyperflow/hyperflow-apis/README.md)
+  * [Hyperflow YouTube API](hyperflow/hyperflow-apis/hyperflow-youtube-api.md)
 
 ## 📘 HYPERSERVE
 
