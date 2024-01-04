@@ -2,7 +2,11 @@
 description: Store site-wide content so that it can be easily accessed and integrated
 ---
 
-# Global Data Source
+# Global Data Source 🧪
+
+{% hint style="warning" %}
+Not yet available for production use.
+{% endhint %}
 
 {% hint style="success" %}
 Use `$global` to access.&#x20;
