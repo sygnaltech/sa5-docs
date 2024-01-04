@@ -4,6 +4,51 @@ description: Data-binding Current User
 
 # User Info Data Source
 
+## User Info
+
+If you are using **Webflow User Accounts** and [SA5's User Info library](user-info-data-source.md#user-info), then SA5 constructs a User Info object whenever a user is currently logged in.
+
+The details of that object can be data-bound.&#x20;
+
+* `$user.name`
+* `$user.email`
+
+[user-info-data-source.md](user-info-data-source.md "mention")
+
+[Custom user fields](../../sa5-user-accounts/logged-in-user-info/custom-user-fields.md) can also be accessed, under `$user.data.your-field-name`.
+
+You can use this in element data-binding, with the&#x20;
+
+`{{ $user.data.your-field-name }}`&#x20;
+
+{% hint style="success" %}
+**Shortcut.** `@` can be used as a shortcut in place of `$user.`, for example `@name` is equivalent to `$user.name`&#x20;
+{% endhint %}
+
+## Examples
+
+wfu-bind = $user.data.link-field
+
+\{{ $user.data.link-field \}}&#x20;
+
+{% hint style="success" %}
+This functionality is available when you are using [SA5's User Info](../../sa5-user-accounts/logged-in-user-info/) library.
+{% endhint %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 If you are using **Webflow Memberships** and **SA5's User Info library**, then SA5 constructs a User Info object whenever a user is logged in.
 
 The details of that object can be data-bound. e.g.;

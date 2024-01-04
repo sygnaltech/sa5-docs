@@ -4,11 +4,15 @@ description: Add Superpowers to your Webflow site.
 
 # 🔍 About Sygnal's Hyperflow
 
-Most of our clients bring us in for special projects that push Webflow beyond its capabilities. Popular areas are custom URL paths, faster sites, complex integrations, content security, dynamic SEO… so we’ve begun building these as a set of formal services that we can integrate for clients.
+**Most of our clients bring us in for special projects that push Webflow beyond its capabilities.**&#x20;
+
+Popular areas are custom URL paths, faster sites, complex integrations, content security, dynamic SEO… so we’ve begun building these as a set of formal services that we can integrate for clients.
 
 We call this service framework [Sygnal Hyperflow](https://www.sygnal.com/services/hyperflow).
 
+{% hint style="success" %}
 All of the services in Hyperflow are built on a reverse proxy framework that we’ve custom-built for Webflow, and it basically lets us add all of the things Webflow can’t do natively.
+{% endhint %}
 
 So far, the primary services include;
 
@@ -23,14 +27,21 @@ So far, the primary services include;
 And we’re considering many others, like;
 
 * Webflow localization on custom domain like `mysite.de` and subdomains like `de.mysite.com`.
+* Global variables, that can be updated externally.&#x20;
+* Supercharged User accounts.&#x20;
+* Continuous audio and SPAs.&#x20;
 
-
-
-**Hyperflow** is collection of services that Sygnal progressively develops and utilizes on our client projects.
+## Why is this part of the SA5 docs?
 
 {% hint style="info" %}
-Hyperflow is _not_ part of SA5's open source archive, and _not_ designed to be self-implemented. Each client configuration is unique, and we hand build, customize and configure each client's reverse proxy specially.&#x20;
+**Hyperflow is **_**not**_** part of SA5's open source archive, and **_**not**_** designed to be self-implemented.**&#x20;
 
+If we can expose the functionality through Webflow Apps and other self-install approaches, we will, however at present each client configuration is unique, and we hand build, customize and configure each client's reverse proxy specially.&#x20;
+
+_However, Hyperflow integrates with and augments SA5. For example, SA5 User Accounts will be supercharged when Hyperflow is setup for the site._&#x20;
+{% endhint %}
+
+{% hint style="success" %}
 If you see features here that you need on your site, _contact us_.
 
 [https://www.sygnal.com/contact](https://www.sygnal.com/contact)

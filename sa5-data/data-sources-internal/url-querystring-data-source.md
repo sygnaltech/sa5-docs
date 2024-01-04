@@ -2,15 +2,31 @@
 description: Pass querystring params through to forms and text elements, automatically
 ---
 
-# URL Query Params ❺
+# URL Querystring Data Source
 
-## Overview & Use Cases
+Extract querystring parameters from the current URL, and apply the contents to tagged elements on your page. &#x20;
 
-Extract querystring parameters from your URL, and apply the contents to tagged elements on your page. &#x20;
+## Use Cases
 
 * Use querystring data in your FORM data, to collect it for submissions ( e.g. `utm_` params )
 * Pass querystring data through to other links on the page, so it will get carried through
 * Use querystring data in visible fields, e.g. to personalize a page from an Email newsletter link click ( “Hey Mary!” )
+
+Examples
+
+$query
+
+{% hint style="success" %}
+**Shortcut.** `?` can be used as a shortcut in place of `$query.`, for example `?name` is equivalent to `$query.name`&#x20;
+{% endhint %}
+
+
+
+## Demonstration
+
+{% embed url="https://data-binding.webflow.io/query" %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/data-binding" %}
 
 ## Demos  <a href="#usage-notes" id="usage-notes"></a>
 

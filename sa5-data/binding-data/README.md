@@ -1,44 +1,45 @@
 ---
-description: How to Bind Data
+description: How SA5's databinding works
 ---
 
 # Binding Data
 
 SA5 supports binding data in two ways;&#x20;
 
-* **Element binding** replaces the entire content of the element. It is also element-aware, so that for example binding to a Text Element is different from binding to an Input Element.&#x20;
-* **Content binding** selectively binds data to the content within an element, using handlebars style macro-expressions like \{{ name \}}. This is useful for e.g. rich text elements and descriptive text where you only wish to replace specific words. Can be used with CMS content.   &#x20;
+* **Element binding** replaces the entire content of the element. It is also element-type-aware, so that for example binding to a _text element_ replaces the inner text content, while binding to a _form input element_ sets the value of that input element.&#x20;
+* **Content binding** selectively binds data to the content within an element, using handlebars style macro-expressions of the format `{{ data-path }}`. This is useful for e.g. rich text elements and descriptive text where you only wish to replace specific words. It is also designed to support CMS content.   &#x20;
 
 {% hint style="info" %}
 Currently, all binding is specific to a **Data Item**, which always resolves to a text value. In the future, lists, tables, objects and media elements may be added. &#x20;
 {% endhint %}
 
 {% hint style="info" %}
-Data-Binding is inbound-only. They're designed to integrate information into your site from various sources - but not to update external data stores. This may expand in future versions.
+Data-Binding is read-only. It's designed to integrate information into your site from various internal and external sources - but not to update those data sources.
 {% endhint %}
 
-## `wfu-bind = (DSD)`
+## `wfu-bind = (data-path)`
 
-Apply to any element which you want to replace the full content of with your data-bound content.&#x20;
-
-can be given the `wfu-bind` attribute, with a Data Source Descriptor.&#x20;
+Apply the `wfu-bind` attribute to any element which you want to replace the full content of with your data-bound content.&#x20;
 
 You can place `wfu-bind` on;
 
-* Text elements&#x20;
-* Paragraph elements
-* Heading elements&#x20;
+* Simple content elements;
+  * Text elements&#x20;
+  * Paragraph elements
+  * Heading elements&#x20;
+* Form elements, including;
+  * INPUT elements
+  * SELECT elements - case sensitive&#x20;
+  * TEXTAREA elements
+  * CHECKBOX elements
 
-Form elements, including;
+{% hint style="info" %}
+Complex elements, including sliders, tabs, and rich text blocks don't make sense here, since there isn't a clear point for content-binding a simple string value. Some elements such as images and video elements may be supported in the future.&#x20;
+{% endhint %}
 
-* INPUT elements
-* SELECT elements - case sensitive&#x20;
-* TEXTAREA elements
-* CHECKBOX elements
+The **data-path** value can be any valid SA5 data path that identifies a data point.&#x20;
 
-The DSD value can be any valid DSD that identifies a data point.&#x20;
-
-Examples
+Examples;
 
 `wfu-bind=$query.name`
 
@@ -54,15 +55,19 @@ Here's an example of an element that is bound to the current user's custom data,
 **Setting defaults.** The value will only be applied if one is found, therefore you can specify a default value by setting initial content for the element itself. Here we have `...` but it can be whatever you prefer.
 {% endhint %}
 
-## `wfu-bind-content`
+## `wfu-bind-content = (data-context)`
 
-Used to bind a plain-text or rich-text template element.
+SA5's _contextual binding_ is used to provide macro expansion support within the content of a plain-text or rich-text template element.
 
-Templates are text marked up with field DSD's like this;&#x20;
+Templates are text marked up with field that contain SA5 data paths, like this;&#x20;
 
 `{{ $user.data.link-field }}`
 
 When the template is processed, these are expanded.&#x20;
+
+{% hint style="success" %}
+For certain data sources such as `$db`, it's common to specify a **data context** on the element. This allows the context to change to e.g. a collection list item before the content binding occurs.&#x20;
+{% endhint %}
 
 ## Data Paths
 
@@ -72,13 +77,21 @@ A data path is a dot-notated string with several parts;
 
 `<data-source type>.<data-source-name>.<object-id>.<field-id>`
 
-|        |   |   |
-| ------ | - | - |
-| $user  |   |   |
-| @name  |   |   |
-| $db    |   |   |
-| $query |   |   |
-| $url   |   |   |
+<table><thead><tr><th width="196.33333333333331">Path Root</th><th width="100">Abbr</th><th width="170">Data Source Type</th><th>Data Path Examples</th></tr></thead><tbody><tr><td><code>$user</code></td><td><code>@</code></td><td>User object</td><td><ul><li><code>$user.name</code> - The current user's name</li><li><code>@data.birthdate</code> - A custom User field named birthdate</li></ul></td></tr><tr><td><code>$cookie</code></td><td></td><td>Cookie</td><td><ul><li><code>$cookie.foo</code> - The cookie named <code>foo</code></li></ul></td></tr><tr><td><code>$local</code></td><td></td><td>Local storage</td><td><ul><li><code>$local.myval</code> - A Webstorage Local-stored value named myval.</li></ul></td></tr><tr><td><code>$session</code></td><td></td><td>Session storage</td><td><ul><li><code>$session.myval</code> - A WebStorage Session-stored value named myval.</li></ul></td></tr><tr><td><code>$query</code></td><td><code>?</code></td><td>Query string </td><td><ul><li><code>$query.foo</code> - The query param named foo.</li><li><code>?foo</code> - The query param named foo.</li></ul></td></tr><tr><td><code>$db</code></td><td><code>+</code></td><td>Database</td><td><ul><li><code>$db.my-db.my-record.my-field</code> - Describes a value in an SA5 Datasource. </li></ul></td></tr><tr><td><code>$global</code></td><td></td><td>Site global vars</td><td><ul><li><code>$global.year</code> - The year property of a Global object you've created.</li></ul></td></tr></tbody></table>
+
+{% hint style="success" %}
+Abbreviations are shorthand for the full datasource type name, so e.g. `$user.name` and `@name` are considered identical.&#x20;
+{% endhint %}
+
+## SEO Notes
+
+Bound data may or may not be picked up by search indexing bots. Google is generally good at executing script and indexing the page after modification, however you will need to test this yourself. &#x20;
+
+## Deprecated Notes
+
+{% hint style="danger" %}
+Ignore the notes below, we're reviewing and integrating during migration.
+{% endhint %}
 
 ### Dynamic DSD References, using Data-Binding Context
 
@@ -95,29 +108,9 @@ These context elements can be on the same element as your `wfu-bind-content` tag
 
 
 
-Bind the entire element using wfu-bind, will replace the entire content.&#x20;
-
-In Webflow static ( not CMS-bound ) rich text and plain-text elements you can select text and create a bold, italic, or span sub-element.
-
-When that is created, you can select is separately, and you can assign custom attributes directly to it. In this way you can directly bind parts of a text or rich text element.&#x20;
-
-Another way is macro-expansion \{{ name \}}&#x20;
 
 
 
-
-
-
-
-## SEO Notes
-
-Bound data may or may not be picked up by search indexing bots. Google is generally good at executing script and indexing the page after modification, however you will need to test this yourself. &#x20;
-
-## Technical Notes
-
-SA5 uses Handlebars for the template processing.&#x20;
-
-{% embed url="https://handlebarsjs.com/" %}
 
 
 
