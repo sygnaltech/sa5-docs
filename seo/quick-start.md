@@ -14,10 +14,14 @@ All of SA5's Membership features are now consolidated into a single library, so 
 
 [Add this script](../overview/how-to-add-custom-code.md) to the **site wide** custom code **HEAD** area of your site. If this functionality is only needed on specific pages, you can add it to those page-specific HEADs instead. &#x20;
 
+{% hint style="warning" %}
+Currently no `defer` used during the experimental phase.
+{% endhint %}
+
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | SEO --> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.15/dist/nocode/webflow-seo.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.16/dist/webflow-seo.js"></script>
 ```
 {% endcode %}
 

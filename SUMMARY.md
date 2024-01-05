@@ -243,6 +243,7 @@
   * [JSON-LD Article ❺🧪](seo/json-ld/article.md)
   * [JSON-LD Video ❺🧪](seo/json-ld/article-1.md)
   * [JSON-LD Course Info ❺🧪](seo/json-ld/article-2.md)
+  * [JSON-LD WebPage](seo/json-ld/json-ld-webpage.md)
   * [JSON-LD Sitelinks Searchbox ❺🧪](seo/json-ld/article-3.md)
 
 ## 📘 sa5-core <a href="#core" id="core"></a>
