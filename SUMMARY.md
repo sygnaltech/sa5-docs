@@ -283,7 +283,8 @@
 
 * [🔍 About Sygnal's Hyperflow](hyperflow/about/README.md)
   * [Configuring Hyperflow Services](hyperflow/about/configure.md)
-  * [Infrastructure Notes](hyperflow/about/infrastructure-notes.md)
+  * [Infrastructure Notes](hyperflow/about/infrastructure-notes/README.md)
+    * [Edge Caching](hyperflow/about/infrastructure-notes/edge-caching.md)
 * [Hyperflow Transform](hyperflow/hyperflow-transform.md)
 * [Hyperflow Data](hyperflow/hyperflow-data.md)
 * [Proxy Tools](hyperflow/proxy-tools.md)
@@ -326,6 +327,7 @@
 * [Hyperflow Cache](hyperflow/hyperflow-cache/README.md)
   * [Purge Cache](hyperflow/hyperflow-cache/purge-cache.md)
 * [Hyperflow CMS](hyperflow/hyperflow-cms.md)
+* [Hyperflow Gitbook](hyperflow/hyperflow-gitbook.md)
 * [Hyperflow APIs](hyperflow/hyperflow-apis/README.md)
   * [Hyperflow YouTube API](hyperflow/hyperflow-apis/hyperflow-youtube-api.md)
   * [Google Business Profile API](hyperflow/hyperflow-apis/google-business-profile-api.md)
