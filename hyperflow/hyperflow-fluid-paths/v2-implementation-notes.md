@@ -39,3 +39,15 @@ For example;
 ### Automatically Remapping Paths
 
 We also have situationally-specific strategies for remapping paths internally, using a special field in your CMS collection. This allows you to define the remapping path per-item more simply from the CMS itself, but requires additional programming.&#x20;
+
+### Technical notes
+
+The rewriting, canonical, and sitemap changes are actually quite straightforward. The complex part is the generally URL map itself.
+
+If your site doesn't change often or your path permutations are very predictable, you can hardcode that map into your reverse proxy code. But if you need it to be more dynamic, you'll need a way to build and admin your map.
+
+One way is to use a separate CMS collection to store that map, and you publish it on a hidden page like **/\_map**. Your reverse proxy can then parse it into data, cache it, and use it for path resolution. My SEO clients prefer this approach because it lets them use entirely arbitrary paths.
+
+If you want to build an actual automatically self-managed hierarchy, that's actually more complex since you need to extract all of those ref & multiref relationships and construct that map dynamically. Due to its programming complexity, this is not recommended for most projects, I've only done this for universities which tend to have large and complexly organized sites.
+
+Keep in mind you will also want to correct your canonicals and your sitemap.

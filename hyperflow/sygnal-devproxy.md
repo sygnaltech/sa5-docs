@@ -13,6 +13,35 @@ It's most useful in situations where you have a production site, using CDN-deliv
 
 The subdomain acts as the prefix.
 
+### Multiple Entry Points
+
+e.g. `https://dev.mysite.com`
+
+Or for specific needs, can switch mode via Chrome Ext.&#x20;
+
+{% hint style="info" %}
+Document Chrome Extension.&#x20;
+{% endhint %}
+
+### Page Info
+
+In HTML comments;
+
+{% code overflow="wrap" %}
+```html
+<!DOCTYPE html>
+<!-- Origin: https://mysite.webflow.io/blog/best-non-wearable-sleep-tracker -->
+<!-- Last Published: Sat Jan 06 2024 03:09:21 GMT+0000 (Coordinated Universal Time) -->
+<!-- Age: 0 days, 0 hours, 36 minutes, 6 seconds -->
+```
+{% endcode %}
+
+## Future
+
+* Expose Page Info as JSON, display and manage in Chrome Ext
+* DEV / TEST modality to internal scripts&#x20;
+  * Via `<html>` `hf-mode=`
+
 ## Config
 
 ### DNS
