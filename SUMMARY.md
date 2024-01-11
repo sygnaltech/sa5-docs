@@ -332,8 +332,15 @@
 * [Hyperflow APIs](hyperflow/hyperflow-apis/README.md)
   * [Hyperflow YouTube API](hyperflow/hyperflow-apis/hyperflow-youtube-api.md)
   * [Google Business Profile API](hyperflow/hyperflow-apis/google-business-profile-api.md)
+* [Hyperflow A11y](hyperflow/hyperflow-a11y.md)
 
 ## 📘 HYPERSERVE
 
 * [Hyperserve Concept](hyperserve/hyperserve-concept.md)
 * [Hyperflow Editor](hyperserve/hyperflow-editor.md)
+
+## 📘 WEBFLOW CHROME EXT
+
+* [Webflow Designer Enhancements](webflow-chrome-ext/webflow-designer-enhancements/README.md)
+  * [Navigator | Hidden Items](webflow-chrome-ext/webflow-designer-enhancements/navigator-or-hidden-items.md)
+* [Hyperflow Editor](webflow-chrome-ext/hyperflow-editor.md)
