@@ -40,5 +40,36 @@ Its specifics will depend on the service you're configuring, but there are alway
 * `version` is an integer value indicating the version of the config
 * `origin` is reserved and identifies a 3rd party source as the proxied site. It's used for indirect proxy configurations. Origin always specifies the protocol and domain, as in `https://www.sygnal.com`
 
+## Embedded Configs
+
+HtmlRewriter can easily locate matched elements however it does not have the ability to pull the text content. For this reason it's currently easiest to use attributes.&#x20;
+
+{% code overflow="wrap" %}
+```html
+<script type="hyperflow/google-doc"
+  data-google-doc-id="1_t3yiiYHYM6Q5mGbb2piDq3QedOCo3XC12QhHnmd7q8"
+  ></script>
+```
+{% endcode %}
+
+### Notes
+
+It is possible to get text elements separately with HtmlRewriter, however it may not be possible to identify the containing element, in which case we have no context.
+
+Ideally, we want to standardize on JSON or HSON configs.&#x20;
+
+{% code overflow="wrap" %}
+```html
+<script type="hyperflow/google-doc">
+{
+  "type": "gdoc",
+  "version": "1",
+  "src": "https://docs.google.com/document/d/1_t3yiiYHYM6Q5mGbb2piDq3QedOCo3XC12QhHnmd7q8/edit",
+  "theme": "default"
+}
+</script>
+```
+{% endcode %}
+
 
 
