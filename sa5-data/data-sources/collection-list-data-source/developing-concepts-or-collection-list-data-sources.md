@@ -49,5 +49,27 @@ You can then use that source in several ways;
 * Display a list
 * Display the count of items in redesign
 
+## Notes
 
+```html
+<div class="user" data-user-id="123" data-user-name="Alice"></div>
+<div class="user" data-user-id="456" data-user-name="Bob"></div>
+```
 
+{% code overflow="wrap" %}
+```javascript
+// Select all elements with a certain class or query
+const userElements = document.querySelectorAll('.user');
+
+// Map over these elements to transform them into an array of objects
+const users = Array.from(userElements).map(el => {
+    return {
+        userId: el.dataset.userId,
+        userName: el.dataset.userName
+    };
+});
+
+console.log(users); // Outputs: [{ userId: "123", userName: "Alice" }, { userId: "456", userName: "Bob" }]
+
+```
+{% endcode %}
