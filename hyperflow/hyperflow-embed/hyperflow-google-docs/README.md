@@ -7,8 +7,9 @@ description: >-
 # Hyperflow Google Docs
 
 {% hint style="success" %}
-**FUNCTIONALLY COMPLETE.**&#x20;
+**PRODUCTION RELEASE.**&#x20;
 
+Learn more about this product on the [product page](https://www.sygnal.com/services/hyperflow-for-google-docs).\
 Part of `hf-google-doc`.&#x20;
 {% endhint %}
 
@@ -28,22 +29,7 @@ Part of `hf-google-doc`.&#x20;
 
 ## Feature Roadmap
 
-<table><thead><tr><th width="136">Feature</th><th>Current</th><th>Planned</th><th>Possible</th></tr></thead><tbody><tr><td>Multiple Doc Embeds</td><td>No</td><td>Yes</td><td><ul><li>Fully independent configs, including caching</li></ul></td></tr><tr><td>Caching</td><td>Basic, fixed 5 mins</td><td>Configurable length</td><td><ul><li>Global</li><li>fully configurable</li><li>part caching, i.e. transformed content only</li><li>by element, so different docs can have different cache settings</li></ul></td></tr><tr><td>Styling</td><td>Per Google Doc</td><td>Strip-style mode, apply a richtext class and use Webflow richtext elements.</td><td>Strips only from Webflow-supported elements, others are still carry original style classes to prevent breakage, e.g. tables </td></tr><tr><td>Partial Embeds</td><td>No, full doc only</td><td></td><td><ul><li>Considering</li></ul></td></tr><tr><td>ToC</td><td></td><td></td><td><ul><li>Utilize built-in header ID's for ToC purposes</li><li>Prefix IDs</li><li>Could auto-apply FS ToC classes? </li></ul></td></tr><tr><td>Google Document Access</td><td>Must be shared as "viewable by anyone with the link"</td><td></td><td>May consider direct API access, for private docs. </td></tr></tbody></table>
-
-## Testing Notes
-
-Tested-
-
-* Headings, paragraphs
-* Font family and color&#x20;
-* Images
-
-Untested-
-
-* Complex layouts
-* Tables
-* Smart embeds&#x20;
-* Links&#x20;
+<table><thead><tr><th width="136">Feature</th><th>Current</th><th>Planned</th><th>Possible</th></tr></thead><tbody><tr><td>Multiple Doc Embeds</td><td>No</td><td>Yes</td><td><ul><li>Fully independent configs, including caching</li></ul></td></tr><tr><td>Caching</td><td>Basic, fixed 5 mins</td><td>Configurable length</td><td><ul><li>Global</li><li>fully configurable</li><li>part caching, i.e. transformed content only</li><li>by element, so different docs can have different cache settings</li></ul></td></tr><tr><td>Styling</td><td><p>Matches Google Doc exactly;</p><ul><li>Headings, paragraphs</li><li>Font family, color, and highlight color  </li><li>Images</li><li>Complex layouts</li><li>Tables</li><li>Smart embeds</li><li>Links </li></ul></td><td>Strip-style mode, apply a richtext class and use Webflow richtext elements.</td><td>Strips only from Webflow-supported elements, others are still carry original style classes to prevent breakage, e.g. tables </td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td>Partial Embeds</td><td>No, full doc only</td><td></td><td><ul><li>Considering</li></ul></td></tr><tr><td>ToC</td><td></td><td></td><td><ul><li>Utilize built-in header ID's for ToC purposes</li><li>Prefix IDs</li><li>Could auto-apply FS ToC classes? </li></ul></td></tr><tr><td>Google Document Access</td><td>Must be shared as "viewable by anyone with the link"</td><td></td><td>May consider direct API access, for private docs. </td></tr></tbody></table>
 
 ## Setup notes
 
@@ -59,19 +45,3 @@ Untested-
   ></script>
 ```
 {% endcode %}
-
-## Legacy notes
-
-{% code overflow="wrap" %}
-```html
-<script type="hyperflow/google-doc">
-{
-  "type": "gdoc",
-  "version": "1",
-  "src": "https://docs.google.com/document/d/1_t3yiiYHYM6Q5mGbb2piDq3QedOCo3XC12QhHnmd7q8/edit",
-  "theme": "default"
-}
-</script>
-```
-{% endcode %}
-

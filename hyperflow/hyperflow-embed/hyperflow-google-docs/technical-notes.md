@@ -1,5 +1,31 @@
 # Technical Notes
 
+## Library Positioning
+
+* Combine into `hf-embed`
+  * Add handlers for embedding
+  * Config options
+* Merge into `hf-page` as a module option&#x20;
+
+## Config
+
+### Legacy notes
+
+{% code overflow="wrap" %}
+```html
+<script type="hyperflow/google-doc">
+{
+  "type": "gdoc",
+  "version": "1",
+  "src": "https://docs.google.com/document/d/1_t3yiiYHYM6Q5mGbb2piDq3QedOCo3XC12QhHnmd7q8/edit",
+  "theme": "default"
+}
+</script>
+```
+{% endcode %}
+
+
+
 ## Example CSS
 
 Example doc `<style>` before fixup.&#x20;
