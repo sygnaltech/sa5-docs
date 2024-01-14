@@ -326,6 +326,7 @@
 * [Hyperflow Embed](hyperflow/hyperflow-embed/README.md)
   * [Hyperflow Google Docs](hyperflow/hyperflow-embed/hyperflow-google-docs/README.md)
     * [Technical Notes](hyperflow/hyperflow-embed/hyperflow-google-docs/technical-notes.md)
+  * [Hyperflow Gitbook](hyperflow/hyperflow-embed/hyperflow-gitbook.md)
 * [Hyperflow Page](hyperflow/hyperflow-page.md)
 * [Hyperflow Cache](hyperflow/hyperflow-cache/README.md)
   * [Purge Cache](hyperflow/hyperflow-cache/purge-cache.md)
