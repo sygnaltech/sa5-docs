@@ -264,6 +264,7 @@
 
 * [🔍 About SA5's Localization Lib](sa5-localization/about.md)
 * [🚀 Quick Start | SA5 Localization](sa5-localization/quick-start.md)
+* [Localization Functions](sa5-localization/localization-functions.md)
 * [Sort locales in the order you choose](sa5-localization/sort-locales-in-the-order-you-choose.md)
 
 ## 📘 sa5-404 <a href="#404" id="404"></a>
@@ -301,6 +302,7 @@
   * [User-Owned CMS Data](hyperflow/hyperflow-user-accounts/user-owned-cms-data.md)
 * [Hyperflow Localization](hyperflow/hyperflow-localization/README.md)
   * [Localization JS API](hyperflow/hyperflow-localization/localization-js-api.md)
+  * [Hyperflow Localization Smart-Routing](hyperflow/hyperflow-localization/hyperflow-localization-smart-routing.md)
   * [Locale Path Fixes](hyperflow/hyperflow-localization/locale-path-fixes.md)
   * [Locale-Specific Domains](hyperflow/hyperflow-localization/locale-specific-domains.md)
   * [Locale Switcher & Flags](hyperflow/hyperflow-localization/locale-switcher-and-flags.md)

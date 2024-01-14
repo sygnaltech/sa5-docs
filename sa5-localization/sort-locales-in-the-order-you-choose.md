@@ -2,11 +2,12 @@
 
 
 
-Thanks to Ida from Webflow support for the approach idea here, which&#x20;
+* Match internal map?
+*
 
 
 
-```
+```javascript
 // Some code
 // Get the parent element
 const parentElement = document.getElementById('id-for-michael');
@@ -33,4 +34,10 @@ divs.forEach(div => div.remove());
 // Append divs in the new order to the parent element
 sortedDivs.forEach(div => parentElement.appendChild(div));
 ```
+
+
+
+{% hint style="info" %}
+**CREDIT** - Ida from Webflow support, for the approach idea.
+{% endhint %}
 

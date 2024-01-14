@@ -8,6 +8,17 @@ See subpages for features we're exploring.&#x20;
 
 * Locale path fixes
 * Locale-specific domains
+* Programmatic detection & control
+
+## SA5 Functionality
+
+
+
+* Get current locale
+* Get locales
+* Set locale
+* Remember locale
+* Get preferred locale
 
 Fixes Needed\
 As of 06-Dec-2023;&#x20;

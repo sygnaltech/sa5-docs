@@ -18,7 +18,7 @@ Add a CNAME for hf to @&#x20;
 
 Set it to proxy on&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Config
 
@@ -77,5 +77,5 @@ Click Try It!
 
 Check for a valid 201 response e.g.;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
