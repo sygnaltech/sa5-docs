@@ -337,6 +337,7 @@
 * [Hyperflow APIs](hyperflow/hyperflow-apis/README.md)
   * [Hyperflow YouTube API](hyperflow/hyperflow-apis/hyperflow-youtube-api.md)
   * [Google Business Profile API](hyperflow/hyperflow-apis/google-business-profile-api.md)
+* [Hyperflow vCard](hyperflow/hyperflow-vcard.md)
 * [Hyperflow A11y](hyperflow/hyperflow-a11y.md)
 * [Hyperflow Data](hyperflow/hyperflow-data-1.md)
 
