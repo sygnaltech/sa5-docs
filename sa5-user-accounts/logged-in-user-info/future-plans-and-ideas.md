@@ -2,7 +2,11 @@
 description: Stuff we Think About
 ---
 
-# Future User Info Ideas
+# ⏩ Future Plans & Ideas
+
+{% hint style="info" %}
+Much of the current advanced work we're doing with User Accounts utilizes a new framework we're developing called Hyperflow. It runs as a reverse proxy combined with integrated client-side libraries and offers a ton of advantages in capabilities and performance that the client-side only SA5 libs cannot.&#x20;
+{% endhint %}
 
 ## User Info as a Storage Mechanism
 

@@ -198,7 +198,7 @@
   * [User Info FAQs](sa5-user-accounts/logged-in-user-info/user-info-faqs.md)
   * [Troubleshooting](sa5-user-accounts/logged-in-user-info/troubleshooting.md)
   * [Getting Webflow's UserID](sa5-user-accounts/logged-in-user-info/getting-webflows-userid.md)
-  * [Future User Info Ideas](sa5-user-accounts/logged-in-user-info/future-user-info-ideas.md)
+  * [⏩ Future Plans & Ideas](sa5-user-accounts/logged-in-user-info/future-plans-and-ideas.md)
   * [BETA testing](sa5-user-accounts/logged-in-user-info/beta-testing.md)
   * [Technical Notes - Interfaces](sa5-user-accounts/logged-in-user-info/technical-notes-interfaces.md)
 * [Advanced Log-In & Sign-Up Flow ❺](sa5-user-accounts/advanced-log-in-and-sign-up-flow.md)
