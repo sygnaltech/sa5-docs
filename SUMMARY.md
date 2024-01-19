@@ -330,6 +330,7 @@
 * [Hyperflow CSS](hyperflow/hyperflow-css.md)
 * [Hyperflow User Accounts](hyperflow/hyperflow-user-accounts-1.md)
 * [Hyperflow Site Stats](hyperflow/hyperflow-site-stats.md)
+* [Hyperflow Page Collection](hyperflow/hyperflow-page-collection.md)
 * [Hyperflow Embed](hyperflow/hyperflow-embed/README.md)
   * [Hyperflow Google Docs](hyperflow/hyperflow-embed/hyperflow-google-docs/README.md)
     * [Technical Notes](hyperflow/hyperflow-embed/hyperflow-google-docs/technical-notes.md)

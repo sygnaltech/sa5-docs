@@ -38,6 +38,10 @@ NAME can be any unique arbitrary string to identify that container. It can also 
 
 Future;&#x20;
 
+`wfu-layout-priority` = NUMBER ( optional )
+
+Control the sequence of layout operations.&#x20;
+
 `wfu-layout-zone` = IDENTIFIER ( optional )&#x20;
 
 If you have multiple such layouts, you'll be able to also identify a zone as a namespace to prevent slugs from conflicting.&#x20;
