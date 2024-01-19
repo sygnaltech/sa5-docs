@@ -97,7 +97,9 @@
 * [Hide Section w/ Empty Collection Lists ❺](sa5-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML ❺](sa5-html/decode-html.md)
 * [Markdown ❺](sa5-html/markdown.md)
-* [Layout ❺🧪](sa5-html/layout.md)
+* [Layout ❺🧪](sa5-html/layout/README.md)
+  * [Tabs Layout Handler](sa5-html/layout/tabs-layout-handler.md)
+  * [Slider Layout Handler](sa5-html/layout/slider-layout-handler.md)
 * [Transform ❺🧪](sa5-html/transform.md)
 * [CMS Code Injection ❺🧪](sa5-html/cms-code-injection.md)
 
@@ -114,6 +116,7 @@
   * [Future](sa5-richtext/github-gists/future.md)
 * [URL Expanders 🧪](sa5-richtext/url-expanders.md)
 * [Text SPAN Formatting 🧪](sa5-richtext/text-span-formatting.md)
+* [Lightboxes 🧪](sa5-richtext/lightboxes.md)
 * [Richtext ❺🧪](sa5-richtext/richtext/README.md)
   * [CSS Isolation](sa5-richtext/richtext/css-isolation.md)
 
@@ -320,7 +323,8 @@
 * [Hyperflow Core](hyperflow/hyperflow-core.md)
 * [Hyperflow Richtext](hyperflow/hyperflow-richtext.md)
 * [Hyperflow Continuous Audio](hyperflow/hyperflow-continuous-audio.md)
-* [Hyperflow Single Page Application (SPA)](hyperflow/hyperflow-single-page-application-spa.md)
+* [Hyperflow Single Page Application (SPA)](hyperflow/hyperflow-single-page-application-spa/README.md)
+  * [Page Change Detection](hyperflow/hyperflow-single-page-application-spa/page-change-detection.md)
 * [Hyperflow RSS](hyperflow/hyperflow-rss.md)
 * [Hyperflow CSS](hyperflow/hyperflow-css.md)
 * [Hyperflow User Accounts](hyperflow/hyperflow-user-accounts-1.md)
@@ -340,6 +344,7 @@
 * [Hyperflow vCard](hyperflow/hyperflow-vcard.md)
 * [Hyperflow A11y](hyperflow/hyperflow-a11y.md)
 * [Hyperflow Data](hyperflow/hyperflow-data-1.md)
+* [Hyperflow Layout Templates](hyperflow/hyperflow-layout-templates.md)
 
 ## 📘 HYPERSERVE
 
