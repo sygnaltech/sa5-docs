@@ -36,7 +36,15 @@ Use cases-&#x20;
 
 NAME can be any unique arbitrary string to identify that container. It can also be bound to a collection list slug for more dynamic, powerful layouts.
 
-Future;&#x20;
+### Prior to loading the layout, I want the container to appear as...&#x20;
+
+`wfu-layout-preload`&#x20;
+
+* `visible` ( default ) - keep the element visible&#x20;
+* `hidden` - completely hidden from view
+* `invisible` - takes up space but otherwise not visible&#x20;
+
+#### Options ( Under Consideration )&#x20;
 
 `wfu-layout-priority` = NUMBER ( optional )
 

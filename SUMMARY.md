@@ -27,6 +27,8 @@
 
 * [🔍 About SA5's Detect Lib](detect/about.md)
 * [🚀 Quick Start | SA5 Detect](detect/quick-start.md)
+* [Page](detect/page.md)
+* [User Agent Detection](detect/user-agent-detection.md)
 * [Geolocation Detection ❺🧪](detect/geo/README.md)
   * [Cache Setup v4](detect/geo/v4.md)
 
@@ -231,6 +233,7 @@
 
 ## 📘 sa5-fixup <a href="#fixup" id="fixup"></a>
 
+* [Viewport META](fixup/viewport-meta.md)
 * [Webflow Fixups ❺](fixup/article.md)
 
 ## 📘 sa5-countup
@@ -291,6 +294,8 @@
   * [Configuring Hyperflow Services](hyperflow/about/configure.md)
   * [Infrastructure Notes](hyperflow/about/infrastructure-notes/README.md)
     * [Edge Caching](hyperflow/about/infrastructure-notes/edge-caching.md)
+* [Hyperflow Fixes](hyperflow/hyperflow-fixes/README.md)
+  * [Viewport META](hyperflow/hyperflow-fixes/viewport-meta.md)
 * [Hyperflow Transform](hyperflow/hyperflow-transform.md)
 * [Hyperflow Data](hyperflow/hyperflow-data.md)
 * [Proxy Tools](hyperflow/proxy-tools.md)
@@ -313,6 +318,8 @@
 * [Hyperflow Hyperspeed](hyperflow/hyperflow-hyperspeed/README.md)
   * [Hyperflow Purge Cache](hyperflow/hyperflow-hyperspeed/hyperflow-purge-cache/README.md)
     * [Quickstart](hyperflow/hyperflow-hyperspeed/hyperflow-purge-cache/quickstart.md)
+  * [Hyperflow Inline SVGs](hyperflow/hyperflow-hyperspeed/hyperflow-inline-svgs.md)
+  * [Hyperflow Image Optimization](hyperflow/hyperflow-hyperspeed/hyperflow-image-optimization.md)
 * [Hyperflow SEO](hyperflow/hyperflow-seo/README.md)
   * [Page og:type](hyperflow/hyperflow-seo/page-og-type.md)
   * [Prerender.io](hyperflow/hyperflow-seo/prerender.io.md)

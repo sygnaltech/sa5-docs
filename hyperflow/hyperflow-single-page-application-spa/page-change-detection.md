@@ -26,6 +26,6 @@ Query every N sec from a single source, headers only
 
 Look for changes in marker fields&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 [https://discourse.webflow.com/t/div-auto-refresh-without-site-reloading-each-2-minutes/267573/2?u=memetican](https://discourse.webflow.com/t/div-auto-refresh-without-site-reloading-each-2-minutes/267573/2?u=memetican)
