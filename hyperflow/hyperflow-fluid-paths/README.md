@@ -69,7 +69,7 @@ It's also important to consider how this will play into worker-routes, since the
 * **Dynamic maps** are the same, but are generated dynamically and typically managed within the CMS itself.&#x20;
 * **Algorithmic maps** work on match-based mapping and are custom-designed for each site.&#x20;
 
-## Administration Notes
+## Limitations
 
 ### Webflow Editor
 
@@ -79,4 +79,9 @@ It's also important to consider how this will play into worker-routes, since the
 Future;&#x20;
 
 * Special mode for FP shutdown possible when in editor mode
+
+### Localization
+
+* With non-localized paths, it's possible to adapt Fluid Paths to work fully.
+* With localized paths, the map becomes far more complex and is currently unsupported.&#x20;
 

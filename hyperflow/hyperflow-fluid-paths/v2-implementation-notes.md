@@ -1,6 +1,12 @@
 # v2 Implementation Notes
 
+## Future
+
+* Add localization base path support?&#x20;
+
 ## Technical Configuration Notes
+
+
 
 ### Remapping Paths
 
