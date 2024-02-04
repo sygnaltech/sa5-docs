@@ -64,7 +64,7 @@ If you want an element to be visible only when a the label `my-item` is tracked,
 wfu-show-tracked="my-item"
 ```
 
-Likewise, if you want an element to be hidden when a particular label is tracked, add this custom attribute to that element;
+Likewise, if you want an element to be hidden when a particular label is tracked, add this custom attribute to that element;&#x20;
 
 ```html
 wfu-hide-tracked="my-item"
@@ -74,25 +74,18 @@ wfu-hide-tracked="my-item"
 
 This library has configuration options, so we've taken a LOCODE approach to its design.
 
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+{% hint style="info" %}
+First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20;
+{% endhint %}
 
-There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
+### Add your code <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Add this CSS script to site-wide **before HEAD**.
+Add this JS reference to the site-wide **before BODY**. It can be page-specific if you only capture and retrieve tracking info on specific pages.&#x20;
 
-{% code overflow="wrap" %}
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.21/dist/css/webflow-track.css">
-```
-{% endcode %}
-
-Add this JS reference to the site-wide **before BODY**.\
 This is the base configuration.
 
 {% code overflow="wrap" %}
 ```html
-<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.21/dist/webflow-track.js"></script>
-
 <script>
   // Create the tracker type you want
   // 'cookies' is default. 'localStorage' and 'sessionStorage' are options 
@@ -103,6 +96,6 @@ This is the base configuration.
 ```
 {% endcode %}
 
-### STEP 2 - Apply the custom attributes and code pieces based on your configuration needs <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
+### Apply the custom attributes and code pieces based on your configuration needs <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
 
 See above, and the feature-specific sub pages for details.

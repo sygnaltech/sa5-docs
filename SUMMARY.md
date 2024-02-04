@@ -152,6 +152,7 @@
 
 * [DEPRECATING](sa5-url/deprecating.md)
 * [Relative Link Fixups ❺⛔](sa5-url/relative-link-fixups.md)
+* [Query Param Passthrough](sa5-url/query-param-passthrough.md)
 * [External Link Targeting ❺](sa5-url/external-link-targeting.md)
 
 ## 📘 sa5-video
@@ -176,6 +177,7 @@
 * [Slider Element ❺](sa5-elements/slider/README.md)
   * [Slider Code Examples](sa5-elements/slider/slider-code-examples.md)
   * [Future](sa5-elements/slider/future.md)
+* [Deck Controller Element ❺🧪](sa5-elements/deck-controller-element.md)
 * [Button Element ❺](sa5-elements/button.md)
 * [Lightbox Element ❺](sa5-elements/lightbox/README.md)
   * [CMS & Lightbox + Groups ❺](sa5-elements/lightbox/cms-and-lightbox-+-groups.md)
@@ -214,6 +216,8 @@
 
 ## 📘 sa5-track
 
+* [🔍 About SA5's Tracking Lib](sa5-track/about.md)
+* [🚀 Quick Start | SA5 Tracking](sa5-track/quick-start.md)
 * [Webflow Cookies & Storage Tracking ❺](sa5-track/webflow-cookies-and-storage-tracking/README.md)
   * [Conditional Element Visibility](sa5-track/webflow-cookies-and-storage-tracking/conditional-element-visibility.md)
   * [Tracking Page Visits](sa5-track/webflow-cookies-and-storage-tracking/tracking-page-visits.md)

@@ -6,6 +6,7 @@ description: SA5 Tabs Future Plans
 
 Plan to add;&#x20;
 
+* Select on # or query param, and scroll-to&#x20;
 * Detection of common hidden state scenarios, and numbering, selection etc. based on the visible indices only.&#x20;
   * Conditional visibility
 * Auto-select N ( e.g. if first is conditionally hidden, we get tab 2 )&#x20;
@@ -19,6 +20,8 @@ Some things we're considering;&#x20;
 These are under consideration for implementation, and not yet implemented.&#x20;
 {% endhint %}
 
+## Events <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
 ### Pre-change event
 
 Fire an event before a tab change happens, and allow the responding code to approve/deny the change. This is very interesting, for special flows such as multi-step forms.&#x20;
@@ -28,26 +31,6 @@ However it requires;
 * Completely overriding the default webflow.js event handler
 * Replacement of that default handler with an SA5 variant&#x20;
 * An event origination flag, i.e. user-initiated v. code-initiated&#x20;
-
-### `wfu-tabs-action` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
-
-I want a button or link to change tabs by index or text label.
-
-To any button or link, you can define an action;
-
-* first - select the first tab
-* prev - select the previous tab
-* next - select the next tab
-* last - select the last tab
-* <mark style="color:orange;">goto - select the specified tab</mark>
-* <mark style="color:orange;">goto ( name ) - matches first one only, starting from tab 1</mark>&#x20;
-
-### `wfu-tabs-action-tab` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
-
-For the goto action, specifies the tab you want to navigate to.&#x20;
-
-* <mark style="color:orange;">number - indicates the tab index, 0, 1, 2...  ( index )</mark>
-* <mark style="color:orange;">name - matches first one only, starting from tab 1</mark>&#x20;
 
 ## Change on Hover <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
