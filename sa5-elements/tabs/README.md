@@ -118,6 +118,17 @@ Methods;
 * `goToPrev()` navigates to the prev tab
 * `goToNext()` navigates to the next tab
 
+For example;
+
+```javascript
+$("#btnFirst").click(function() {
+  const tabs = new sa5.WebflowTabs(
+    $("[wfu-tabs=demo1]")[0]
+  ); 
+  tabs.goToFirst();
+})
+```
+
 ## Changelog <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 **2024-Feb-04** - Added nocode navigation support through [Deck Controller](../deck-controller-element.md) elements.
