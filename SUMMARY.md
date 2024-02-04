@@ -177,7 +177,7 @@
 * [Slider Element ❺](sa5-elements/slider/README.md)
   * [Slider Code Examples](sa5-elements/slider/slider-code-examples.md)
   * [Future](sa5-elements/slider/future.md)
-* [Deck Controller Element ❺🧪](sa5-elements/deck-controller-element.md)
+* [Deck Controller Element ❺](sa5-elements/deck-controller-element.md)
 * [Button Element ❺](sa5-elements/button.md)
 * [Lightbox Element ❺](sa5-elements/lightbox/README.md)
   * [CMS & Lightbox + Groups ❺](sa5-elements/lightbox/cms-and-lightbox-+-groups.md)

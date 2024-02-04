@@ -13,6 +13,7 @@ description: Interact with Webflow's Tabs Element
 This feature allows you to work with the Webflow tabs element.
 
 * Switch tabs programmatically- first, next, prev, and last, or go to a specific tab index
+  * See the [Deck Controller](../deck-controller-element.md) for a nocode control approach
 * Get the current tab index
 * Receive JavaScript events when the tab is changed, even if it is changed by code&#x20;
 

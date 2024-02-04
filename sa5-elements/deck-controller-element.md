@@ -2,7 +2,7 @@
 description: Control and navigate deck elements like Tabs and Sliders
 ---
 
-# Deck Controller Element ❺🧪
+# Deck Controller Element ❺
 
 The goal here is to provide simple no-code navigation capabilities using attributes that work across all deck-style elements, including Tabs and Sliders.&#x20;
 
@@ -14,7 +14,7 @@ These attributes should be placed on a button, link, or other element which you 
 
 ### `wfu-deck-action` = ( method ) <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
-I want my button or link to perform the following action on the targeted deck element.
+**Required.** I want my button or link to perform the following action on the targeted deck element.
 
 Method is one of;
 
@@ -26,13 +26,13 @@ Method is one of;
 
 ### `wfu-deck-target` = ( deck name )
 
-_Optional._ Specifies the `wfu-tabs` or `wfu-slider` name you want your action to target.
+**Optional.** Specifies the `wfu-tabs` or `wfu-slider` name you want your action to target.
 
 If unspecified, it will look for the nearest parent tabs or slider element as the target.&#x20;
 
 ### `wfu-deck-action-item` = ( item number or name )  <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
-For the `goto` action only, specifies the tab / slide you want to navigate to.&#x20;
+**Required for the `goto` action only.** Specifies the tab / slide you want to navigate to.&#x20;
 
 * a number - indicates the item number, 1, 2, 3...&#x20;
 * a string - activates the tab / slide with the specified name

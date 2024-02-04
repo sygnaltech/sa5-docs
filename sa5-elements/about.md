@@ -17,14 +17,19 @@ Currently this lib focuses on;
 
 ## Deck Elements
 
-We’re evolving a standardized “deck” interface for elements which share a deck-style UI. We define that as card-style UX where generally only one is visible or “primary” at a time;
+We’re evolving a standardized “deck” interface for elements which share a deck-style UI. We define that as card-style UX where generally only one card is visible or “primary” at a time;
 
 * Tabs elements
 * Slider elements
 * Accordion elements ( custom )
+* Tinder-style decks ( custom )&#x20;
 
 All of these share the same base API for next, prev, first, etc.\
 This way the element can be changed out without needing to rewrite your code.
+
+{% hint style="info" %}
+See the [Deck Controller](deck-controller-element.md) for easy nocode navigation of Tabs and Slider elements.
+{% endhint %}
 
 ## Future
 
