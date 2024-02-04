@@ -4,10 +4,6 @@ description: Interact with Webflow's Tabs Element
 
 # Tabs Element ❺
 
-{% hint style="success" %}
-**2023-Aug-19** - Added `tabChanged` callback event. Tabs has also been moved into the elements library, and is using our standarized "deck" interface which means the methods and properties here should align with similar deck-type elements such as the Slider.&#x20;
-{% endhint %}
-
 ## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
 This feature allows you to work with the Webflow tabs element.
@@ -80,14 +76,16 @@ window.sa5 = window.sa5 || [];
 window.sa5.push(['tabChanged', 
   (tabs, index) => {
     
-    console.log("TAB CHANGED", tabs.name, slider, index); 
+    console.log("TAB CHANGED", tabs.name, tabs, index); 
 
     switch(tabs.name) {
-      case "demo1": // Demo 1 tabs changed
-
+      case "demo1": 
+        // A tab was clicked in the Demo 1 tabs element
+        // index indicates which tab was clicked ( 0-based )
         break;
-      case "demo2": // Demo 2 tabs changed
-
+      case "demo2": 
+        // A tab was clicked in the Demo 2 tabs element
+        // index indicates which tab was clicked ( 0-based )
         break;
     }
 
@@ -119,6 +117,12 @@ Methods;
 * `goToLast()` navigates to the last tab
 * `goToPrev()` navigates to the prev tab
 * `goToNext()` navigates to the next tab
+
+## Changelog <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+**2024-Feb-04** - Added nocode navigation support through [Deck Controller](../deck-controller-element.md) elements.
+
+**2023-Aug-19** - Added `tabChanged` callback event. Tabs has also been moved into the elements library, and is using our standarized "deck" interface which means the methods and properties here should align with similar deck-type elements such as the Slider.&#x20;
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
