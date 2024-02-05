@@ -34,9 +34,10 @@ window.sa5.push(['urlConfig',
   (config) => {
     config.passthrough = true;
     config.passthroughConfig = {
-      ignorePatterns: []
+      ignorePatterns: ["ignore", /_page$/],
+      overwriteExisting: true,
+      internalOnly: false
     };
-    config.passthroughConfig.ignorePatterns.push("ignore");
     return config;
   }]); 
 </script>
@@ -67,6 +68,12 @@ You can have as many ignore patterns as you like, and can specify both literal s
 {% endhint %}
 
 Defaults to  `[ /_page$/ ]`.&#x20;
+
+Not thoroughly tested, but you should also be able to do add and remove operations like;&#x20;
+
+```javascript
+config.passthroughConfig.ignorePatterns.push("ignore");
+```
 
 #### passthroughConfig.overwriteExisting = true | false <a href="#getting-started-locode" id="getting-started-locode"></a>
 
