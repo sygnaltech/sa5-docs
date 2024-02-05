@@ -99,23 +99,16 @@ The link fixup library will find and correct this link to a proper relative link
 As of SA5 v5.2.15 support has been added for CMS-based relative links that include querystrings or hashtags.&#x20;
 {% endhint %}
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+
+## Getting Started ( LOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-There are currently no configuration options for this feature, so we’ll use a _no-code_ integration approach.
+First, **add the library** as detailed in [Quick Start](quick-start.md).
 
-Install JS in **HEAD**, generally site-wide.
+### STEP 2 - Add your Configuration Callback
 
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Urls -->
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@v5.2.15/dist/nocode/webflow-url.js"></script>
-```
-{% endcode %}
-
-### STEP 2 - Create Links as desired <a href="#step-2---create-cms-links-as-desired" id="step-2---create-cms-links-as-desired"></a>
-
-See above notes for the supported formats.
+Add this configuration section above right after the library in your **before HEAD** custom code. Typically this will be in the site-wide custom code configuration.&#x20;
 
 \

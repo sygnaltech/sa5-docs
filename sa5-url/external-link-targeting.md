@@ -28,23 +28,40 @@ Cloneable site
 
 Add the `wfu-external-links` custom attribute to any link, text, or richtext element. Can also be added to DIVs.&#x20;
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Configuration
+
+This library has extensive configuration options.&#x20;
+
+{% hint style="info" %}
+All **SA5 Url** lib features are handled in a single `urlConfig` configuration block, however feature-specific configurations are represented as sub objects. Typically you can enable or disable a feature, and provide a custom configuration if you choose.
+{% endhint %}
+
+Here is an example configuration for External link targeting;&#x20;
+
+```html
+<!-- Sygnal Attributes 5 | Url | Config -->
+<script>
+window.sa5 = window.sa5 || [];
+window.sa5.push(['urlConfig', 
+  (config) => {
+    config.targetExternal = true;
+    return config;
+  }]); 
+</script>
+```
+
+### Options&#x20;
+
+#### targetExternal = true | false
+
+Enables or disables external targeting. Defaults to false.&#x20;
+
+## Getting Started ( LOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-There are currently no configuration options for this feature, so we’ll use a _no-code_ integration approach.
+First, **add the library** as detailed in [Quick Start](quick-start.md).
 
-Install JS in **HEAD**, generally site-wide.
+### STEP 2 - Add your Configuration Callback
 
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Urls -->
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@v5.2.5/dist/nocode/webflow-url.min.js"></script>
-```
-{% endcode %}
-
-### STEP 2 - Create Links as desired <a href="#step-2---create-cms-links-as-desired" id="step-2---create-cms-links-as-desired"></a>
-
-See above notes for the supported formats.
-
-\
+Add this configuration section above right after the library in your **before HEAD** custom code. Typically this will be in the site-wide custom code configuration. \
