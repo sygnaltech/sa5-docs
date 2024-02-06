@@ -11,7 +11,7 @@ description: How to Easily Add SA5's Url Enhancements to Your Webflow Site
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Url --> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.17/dist/nocode/webflow-url.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.18/dist/nocode/webflow-url.js"></script>
 ```
 {% endcode %}
 

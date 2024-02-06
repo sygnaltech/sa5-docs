@@ -16,6 +16,7 @@
   * [Callback Handlers](overview/technical-notes-and-goals/callback-handlers.md)
   * [Custom Attributes](overview/technical-notes-and-goals/custom-attributes.md)
 * [Documentation](overview/documentation.md)
+* [Preloaders](overview/preloaders.md)
 
 ## 📘 sa5-cache <a href="#cache" id="cache"></a>
 
@@ -285,6 +286,13 @@
 * [🔍 About SA5's 404 Lib](404/article.md)
 * [🚀 Quick Start | SA5 404](404/quick-start-or-sa5-404.md)
 * [404 Smart Search ❺](404/article-1.md)
+
+## 📘 sa5-calc
+
+* [🔍 About SA5's Calc Lib](sa5-calc/article/README.md)
+  * [Future](sa5-calc/article/future.md)
+* [🚀 Quick Start | SA5 Calc](sa5-calc/quick-start-or-sa5-calc.md)
+* [Count & Sum Items ❺🧪](sa5-calc/article-1.md)
 
 ## 📘 Deprecated Features <a href="#deprecated" id="deprecated"></a>
 
