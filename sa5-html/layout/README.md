@@ -12,6 +12,10 @@ Webflow is great at creating static pages but the layouts come with inherent str
 
 SA5 Layout was designed to make complex layouts much easier by allowing elements to be moved after the page has loaded.&#x20;
 
+{% hint style="success" %}
+**SA5 Layout** is a _very_ flexible library. Because it has such a wide range of use cases, it can be difficult to understand its massive range of applications. Spend some time in the docs and demos and feel free to ask questions in the forum.&#x20;
+{% endhint %}
+
 ## Use Cases
 
 * Combine collection lists&#x20;
@@ -20,17 +24,28 @@ SA5 Layout was designed to make complex layouts much easier by allowing elements
 * Overcome nested-item limits in collection lists
 * Push static elements into a collection list&#x20;
 * Group elements on your page under grouping headings&#x20;
+* Build hierarchical site navigations
 
 CMS-bound tabs;&#x20;
 
-* Create tabs in a tabs element from a collection list
-* Create dynamic, grouped tabs like a country level and a city level, from 2 collection lists&#x20;
+* Create tabs dynamically from a collection list
+* Create dynamic, nested tabs e.g. country level and a city level, from CMS data&#x20;
 
 ## Features&#x20;
 
 * Tag any DIV as a named container element with a custom attribute
 * Tag any other elements to be moved into that DIV on page load
 * Use CMS-bound custom attributes to create CMS-driven groupings and layouts &#x20;
+
+## Demonstration
+
+{% embed url="https://cms-layouts.webflow.io/" %}
+Demonstration
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/cms-layouts" %}
+Cloneable
+{% endembed %}
 
 ## Usage - Layout Container
 
