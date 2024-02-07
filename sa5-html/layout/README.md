@@ -1,101 +1,116 @@
 ---
-description: Handle dynamic layouts in your Webflow-hosted site
+description: Create dynamic layouts in your Webflow-hosted site
 ---
 
 # Layout ❺🧪
 
-Features-
+{% hint style="info" %}
+**BETA.** This library is released in BETA. Questions or problems should be directed to the forum, link above.
+{% endhint %}
 
-* Tag any DIV as a container element
-* Tag any other elements to be moved into that DIV&#x20;
+Webflow is great at creating static pages but the layouts come with inherent structural limitations that are sometimes difficult to work around.
 
-Future-&#x20;
+SA5 Layout was designed to make complex layouts much easier by allowing elements to be moved after the page has loaded.&#x20;
 
-* Zones&#x20;
-* Copy v. Move &#x20;
-* Control the sequence of operations?&#x20;
-* Part control
-* Position control
-  * Sorting control?&#x20;
-* Handlers
-  * Tabs, slider&#x20;
-
-Use cases-&#x20;
+## Use Cases
 
 * Combine collection lists&#x20;
 * Handle complex layout requirements that would typically require a large number of collection lists
   * e.g. a calendar view&#x20;
 * Overcome nested-item limits in collection lists
 * Push static elements into a collection list&#x20;
+* Group elements on your page under grouping headings&#x20;
 
-## Usage Notes
+CMS-bound tabs;&#x20;
 
-### I want this DIV / element to be the target container for layout operations&#x20;
+* Create tabs in a tabs element from a collection list
+* Create dynamic, grouped tabs like a country level and a city level, from 2 collection lists&#x20;
 
-`wfu-layout` = NAME
+## Features&#x20;
 
-NAME can be any unique arbitrary string to identify that container. It can also be bound to a collection list slug for more dynamic, powerful layouts.
+* Tag any DIV as a named container element with a custom attribute
+* Tag any other elements to be moved into that DIV on page load
+* Use CMS-bound custom attributes to create CMS-driven groupings and layouts &#x20;
+
+## Usage - Layout Container
+
+### I want this DIV / tabs element to be the target container for layout operations&#x20;
+
+`wfu-layout` = ( layout container name )
+
+**layout container name** can be any unique arbitrary string to identify that container. It can also be bound to a collection list slug for more dynamic, powerful layouts. &#x20;
+
+### I want to restrict layouts to a zone ( advanced )&#x20;
+
+`wfu-layout-zone` ( optional ) = ( layout container namespace )
+
+**Optional.** Recommended when `wfu-layout` is bound to a CMS slug. &#x20;
+
+For complex nested layouts, the wfu-layout is often bound to a CMS item slug. To prevent conflicts, you can also create a namespace in the form of a zone.&#x20;
+
+{% hint style="info" %}
+When a layout container has a zone specified, it will only accept layout items which match both the container name and the zone attributes.&#x20;
+{% endhint %}
+
+### I want to use the following layout handler
+
+`wfu-layout-handler` (optional)
+
+* `auto` (default) - select the appropriate handler for the element
+* `default` - do not use a handler, this is the case for standard DIV layouts&#x20;
+* `tabs` - must be placed on a tabs outer element &#x20;
+* `slider` - must be placed on a slider outer element
+
+### Initialize the container (optional)
+
+`wfu-layout-init` (optional)
+
+* `none` (default) - do nothing&#x20;
+* `clear` - clear the contents / tabs / slides before layout&#x20;
 
 ### Prior to loading the layout, I want the container to appear as...&#x20;
 
-`wfu-layout-preload`&#x20;
+`wfu-preload`&#x20;
 
 * `visible` ( default ) - keep the element visible&#x20;
 * `hidden` - completely hidden from view
 * `invisible` - takes up space but otherwise not visible&#x20;
 
-#### Options ( Under Consideration )&#x20;
+## Usage - Layout Item
 
-`wfu-layout-priority` = NUMBER ( optional )
+### Target the item
 
-Control the sequence of layout operations.&#x20;
+`wfu-layout-target` = ( layout container name )
 
-`wfu-layout-zone` = IDENTIFIER ( optional )&#x20;
+Identifies the container this element should be moved to.&#x20;
 
-If you have multiple such layouts, you'll be able to also identify a zone as a namespace to prevent slugs from conflicting.&#x20;
+### I want to restrict layouts to a zone ( advanced )&#x20;
 
-{% hint style="warning" %}
-**FUTURE**
+`wfu-layout-zone` ( optional ) = ( layout container namespace )
 
-In Webflow, `wfu-layout` is often easily used with CMS data-bound attributes and item slugs.  Since this could create multiple targets with the same name on a page, you can use `wfu-layout-zone` with an arbitrary identifier to isolate these areas and prevent namespace conflicts or overlaps.&#x20;
+**Optional.** Recommended when `wfu-layout` is bound to a CMS slug. &#x20;
+
+For complex nested layouts, the wfu-layout is often bound to a CMS item slug. To prevent conflicts, you can also create a namespace in the form of a zone.&#x20;
+
+{% hint style="info" %}
+When a layout item has a zone specified, it will only be moved to zones which match both the container name and the zone attributes.&#x20;
 {% endhint %}
 
-### I want this element to be moved / copied into a layout container&#x20;
+{% hint style="success" %}
+**NAMESPACES**
 
-`wfu-layout-item-to` = CONTAINER-NAME&#x20;
+In Webflow, `wfu-layout` is often easily used with CMS data-bound attributes and item slugs.  Since this can create multiple targets with the same name on a page, you can use `wfu-layout-zone` with an arbitrary identifier to isolate these areas and prevent namespace conflicts or overlaps.&#x20;
+{% endhint %}
 
-Identifies an element to move into a new layout position&#x20;
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-## Future
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-Future under consideration;&#x20;
+First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20;
 
-`wfu-layout-item-method` =&#x20;
+### STEP 2 - Apply the custom attributes as desired <a href="#step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode" id="step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode"></a>
 
-* `move` (default) - move the item
-* `copy` - copy the item
+See above for details.
 
-`wfu-layout-item-part` =&#x20;
 
-* `element` (default) - move the element and its children
-* `children` - move only the children of the element
-
-`wfu-layout-item-position` =&#x20;
-
-* `bottom` | `end` (default) - layout at the bottom of the container
-* `top` | `start` - layout at the top of the container &#x20;
-
-`wfu-layout-handler` (optional)
-
-* (none) (default)
-* tabs - must be placed on a tabs container&#x20;
-
-`wfu-layout-init` (optional)
-
-* (none) (default) - do nothing
-* clear - clear the children&#x20;
-
-wfu-layout-item-name (special) = TEXT-STRING&#x20;
-
-* Used for e.g. tab name
 
