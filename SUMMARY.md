@@ -280,6 +280,7 @@
 * [🔍 About SA5's Localization Lib](sa5-localization/about.md)
 * [🚀 Quick Start | SA5 Localization](sa5-localization/quick-start.md)
 * [Localization Functions](sa5-localization/localization-functions.md)
+* [Locale URLs](sa5-localization/locale-urls.md)
 * [Sort locales in the order you choose](sa5-localization/sort-locales-in-the-order-you-choose.md)
 
 ## 📘 sa5-404 <a href="#404" id="404"></a>
@@ -360,6 +361,7 @@
 * [Hyperflow Embed](hyperflow/hyperflow-embed/README.md)
   * [Hyperflow Google Docs](hyperflow/hyperflow-embed/hyperflow-google-docs/README.md)
     * [Technical Notes](hyperflow/hyperflow-embed/hyperflow-google-docs/technical-notes.md)
+    * [Future](hyperflow/hyperflow-embed/hyperflow-google-docs/future.md)
   * [Hyperflow Gitbook](hyperflow/hyperflow-embed/hyperflow-gitbook.md)
 * [Hyperflow Page](hyperflow/hyperflow-page.md)
 * [Hyperflow Cache](hyperflow/hyperflow-cache/README.md)
