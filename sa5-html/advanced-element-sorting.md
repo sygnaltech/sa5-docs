@@ -109,6 +109,7 @@ Future features we're considering...
 * Script-triggered re-sorting, triggerable by script.&#x20;
   * Used for e.g. a dropdown of multiple sort configs. &#x20;
 * Memory of past sort settings&#x20;
+* Option to re-init IX2&#x20;
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 

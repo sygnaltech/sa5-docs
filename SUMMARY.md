@@ -275,6 +275,12 @@
   * [Google Sheets Table Embeds](sa5-embeds/table-embeds/google-sheets-table-embeds.md)
   * [Future](sa5-embeds/table-embeds/future.md)
 
+## 📘 sa5-state
+
+* [🔍 About SA5's State Lib](sa5-state/about.md)
+* [🚀 Quick Start | SA5 State](sa5-state/quick-start.md)
+* [State ❺🧪](sa5-state/state.md)
+
 ## 📘 sa5-localization
 
 * [🔍 About SA5's Localization Lib](sa5-localization/about.md)
