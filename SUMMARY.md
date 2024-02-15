@@ -86,7 +86,8 @@
 
 ## 📘 sa5-html
 
-* [🔍 About SA5's HTML Lib](sa5-html/about.md)
+* [🔍 About SA5's HTML Lib](sa5-html/about/README.md)
+  * [Webflow Interactions](sa5-html/about/webflow-interactions.md)
 * [🚀 Quick Start | SA5 HTML](sa5-html/quick-start.md)
 * [Advanced Element Sorting ❺](sa5-html/advanced-element-sorting.md)
 * [Advanced Element Filtering ❺](sa5-html/advanced-element-filtering.md)
@@ -377,6 +378,7 @@
 * [Hyperflow APIs](hyperflow/hyperflow-apis/README.md)
   * [Hyperflow YouTube API](hyperflow/hyperflow-apis/hyperflow-youtube-api.md)
   * [Google Business Profile API](hyperflow/hyperflow-apis/google-business-profile-api.md)
+* [Hyperflow Content Security](hyperflow/hyperflow-content-security.md)
 * [Hyperflow vCard](hyperflow/hyperflow-vcard.md)
 * [Hyperflow A11y](hyperflow/hyperflow-a11y.md)
 * [Hyperflow Data](hyperflow/hyperflow-data-1.md)
