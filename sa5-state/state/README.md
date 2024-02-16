@@ -82,7 +82,7 @@ Behavior;
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](../sa5-html/quick-start.md).&#x20;
+First, **add the library** as detailed in [Quick Start](../../sa5-html/quick-start.md).&#x20;
 
 ### STEP 2 - Apply `wfu-decode` to the HTML Embed element you want to decode <a href="#step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode" id="step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode"></a>
 
