@@ -1,6 +1,6 @@
 # Table of contents
 
-* [➡ Github Repo](https://github.com/sygnaltech/webflow-util)
+* [➡️ Github Repo](https://github.com/sygnaltech/webflow-util)
 * [Legacy Docs ( WFU )](https://wfu.sygnal.com/)
 * [👫 Sygnal Attributes Community](https://sygnal-attr.discourse.group/)
 
@@ -239,6 +239,12 @@
 * [🔍 About SA5's Webflow Modals & Popups Lib](sa5-modals/about.md)
 * [🚀 Quick Start | SA5 Modals & Popups](sa5-modals/quick-start.md)
 * [Webflow Modals & Popups Suppression](sa5-modals/article.md)
+
+## 📘 sa5-selectcustom
+
+* [🔍 About SA5's Custom Form Select Lib](sa5-selectcustom/about.md)
+* [🚀 Quick Start | SA5 Custom Form Select](sa5-selectcustom/quick-start.md)
+* [Custom Form Select ❺🧪](sa5-selectcustom/article.md)
 
 ## 📘 sa5-fixup <a href="#fixup" id="fixup"></a>
 
