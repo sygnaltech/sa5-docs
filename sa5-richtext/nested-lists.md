@@ -10,6 +10,24 @@ description: Add nested lists to Webflow's rich text elements
 * Additionally prefix items with `+` or `-` for special PRO and CON lists
 * Themes support - `default`, `modern`, `fun`
 
+## Webflow Update!
+
+In Mar 2024 Webflow has released native support for nested lists within rich text elements.
+
+I've not tested yet;
+
+* Whether it allows styling by list level
+* Element-specific styling like PROs and CONs
+* Whether it works with the Editor&#x20;
+
+[https://webflow.com/updates/display-code-on-your-website-without-writing-code-and-updates-to-ordered-lists](https://webflow.com/updates/display-code-on-your-website-without-writing-code-and-updates-to-ordered-lists)
+
+{% hint style="info" %}
+We'll keep nested list support as a part of SA5 even most or all of the capabilities become available natively in Webflow, to ensure current users can continue to use the indenting approach they're familiar with.
+
+Note however that we recommend at least trying Webflow's approach on new site builds and using it if it meets your needs. This would prevent any weirdness with end-clients possibly trying to use both nesting solutions at the same time on the same list, which would have unpredictable results. &#x20;
+{% endhint %}
+
 ## Nested List Markup Syntax
 
 To indent list items, simply prefix the list items with `>` to indicate the depth. We recommend you do not skip levels.
