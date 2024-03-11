@@ -26,7 +26,7 @@ Default is auto, when unspecified.&#x20;
 
 ## Technical Notes
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 This is the most basic Tabs rendition created, before webflow.js has initialized it.&#x20;

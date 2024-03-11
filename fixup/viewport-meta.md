@@ -12,7 +12,7 @@ Webflow generates the following viewport META, which cannot be configured.
 
 Some modern devices don't handle it well and you end up with an oddly scaled view;&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Solutions
 
