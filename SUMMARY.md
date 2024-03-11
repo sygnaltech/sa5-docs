@@ -106,6 +106,7 @@
   * [Slider Layout Handler](sa5-html/layout/slider-layout-handler.md)
   * [Future](sa5-html/layout/future.md)
 * [Transform ❺🧪](sa5-html/transform.md)
+* [Code Formatting ❺🧪](sa5-html/code-formatting.md)
 * [CMS Code Injection ❺🧪](sa5-html/cms-code-injection.md)
 
 ## 📘 sa5-richtext

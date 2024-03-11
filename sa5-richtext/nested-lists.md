@@ -4,29 +4,39 @@ description: Add nested lists to Webflow's rich text elements
 
 # Nested Lists ❺
 
-* Easily indicate nesting depth by prefixing list items with `>`’s.
-* Supports both ordered ( OL ) and unordered ( UL ) lists.&#x20;
-* Compatible with editor mode.&#x20;
-* Additionally prefix items with `+` or `-` for special PRO and CON lists
-* Themes support - `default`, `modern`, `fun`
+{% hint style="info" %}
+**Webflow Update!**
 
-## Webflow Update!
+In Mar 2024 Webflow has released [native support for nested lists](https://webflow.com/updates/display-code-on-your-website-without-writing-code-and-updates-to-ordered-lists) within rich text elements. We've not tested it extensively, however it passes initial review well.
 
-In Mar 2024 Webflow has released native support for nested lists within rich text elements.
+* Easy to use, simply hit tab on a list element to indent it
+* Works in the Editor ( absolutely key! )&#x20;
+{% endhint %}
 
-I've not tested yet;
+There is some manageable glitchiness while editing nested lists, where it may get confused and stack your item depth, but this is relatively easy to fix in the editor.&#x20;
 
-* Whether it allows styling by list level
-* Element-specific styling like PROs and CONs
-* Whether it works with the Editor&#x20;
+We've not tested;
 
-[https://webflow.com/updates/display-code-on-your-website-without-writing-code-and-updates-to-ordered-lists](https://webflow.com/updates/display-code-on-your-website-without-writing-code-and-updates-to-ordered-lists)
+* Whether nested lists can be varied ( ordered and unordered )
+* Whether specific levels can be styled uniquely in the designer
+
+## Future Notes
+
+We'll likely redesign SA5 Nested Lists so that it can take advantage of Webflow's new native nested list capabilities, and add certain features like our PROs and CONs capability, and possibly themes support.&#x20;
+
+## SA5 Nested Lists - Legacy Docs
 
 {% hint style="info" %}
 We'll keep nested list support as a part of SA5 even most or all of the capabilities become available natively in Webflow, to ensure current users can continue to use the indenting approach they're familiar with.
 
 Note however that we recommend at least trying Webflow's approach on new site builds and using it if it meets your needs. This would prevent any weirdness with end-clients possibly trying to use both nesting solutions at the same time on the same list, which would have unpredictable results. &#x20;
 {% endhint %}
+
+* Easily indicate nesting depth by prefixing list items with `>`’s.
+* Supports both ordered ( OL ) and unordered ( UL ) lists.&#x20;
+* Compatible with editor mode.&#x20;
+* Additionally prefix items with `+` or `-` for special PRO and CON lists
+* Themes support - `default`, `modern`, `fun`
 
 ## Nested List Markup Syntax
 
