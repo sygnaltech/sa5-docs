@@ -1,5 +1,29 @@
 # Sygnal DevProxy
 
+{% hint style="success" %}
+PRODUCTION. &#x20;
+
+app-dev-proxy&#x20;
+{% endhint %}
+
+Setup
+
+Add CONFIG
+
+e.g. dev.sygnal2.xyz
+
+dev-src
+
+
+
+
+
+
+
+
+
+
+
 This tool is designed to make it easy to swap out scripts and CSS to alternate DEV-mode versions and view your _live_ site with those scripts in place.&#x20;
 
 It's most useful in situations where you have a production site, using CDN-delivered scripts, and you need to switch them out for dev or testing.
@@ -43,6 +67,21 @@ In HTML comments;
   * Via `<html>` `hf-mode=`
 
 ## Config
+
+SITE-NAME:devproxy
+
+```
+{
+    	"version": 1, 
+	"origin": "https://www.sygnal.com",
+	"type": "static", 
+	"map": {
+		"/foo": "/about"
+	}
+}
+```
+
+
 
 ### DNS
 

@@ -33,6 +33,15 @@
 * [Geolocation Detection ❺🧪](detect/geo/README.md)
   * [Cache Setup v4](detect/geo/v4.md)
 
+## 📘 Copy of sa5-detect <a href="#detect" id="detect"></a>
+
+* [🔍 About SA5's Detect Lib](detect-1/about.md)
+* [🚀 Quick Start | SA5 Detect](detect-1/quick-start.md)
+* [Page](detect-1/page.md)
+* [User Agent Detection](detect-1/user-agent-detection.md)
+* [GTM Events ❺🧪](detect-1/geo/README.md)
+  * [Cache Setup v4](detect-1/geo/v4.md)
+
 ## 📘 sa5-data
 
 * [🔍 About SA5's Data & Data-Binding Lib](sa5-data/about.md)

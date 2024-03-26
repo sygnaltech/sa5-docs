@@ -4,8 +4,10 @@ description: Add embedded GitHub Gist capabilities to your blog.
 
 # GitHub Gists ❺
 
+## Webflow Update
+
 {% hint style="success" %}
-As of 22-Mar-2024, Webflow now has support for formatted Code Blocks in Rich Text elements, including editor support.  While it doesn't offer theming or the ability to specify the type of code you're formatting, it's very handy for many uses.
+As of 22-Mar-2024, Webflow now has support for formatted Code Blocks in Rich Text elements, including editor support.  While it doesn't offer theming or the ability to specify the type of code you're formatting \[yet], it's very handy for many uses.
 
 SA5's Gists feature is still useful if;
 
@@ -16,6 +18,8 @@ SA5's Gists feature is still useful if;
 
 But otherwise, we encourage you to use Webflow's native Code Blocks feature whenever possible, the integration is marvelous.&#x20;
 {% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption><p>Does not yet appear to be working in the Editor, but there is a code block configurator.</p></figcaption></figure>
 
 ## SA5 Docs
 
