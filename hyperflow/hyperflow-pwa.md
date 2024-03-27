@@ -6,6 +6,10 @@ R\&D
 
 Progressive Web Apps (PWAs) offer a blend of the best features available on the web and mobile applications. Here's a summary of the capabilities that PWAs provide, making them act and behave much like mobile apps:
 
+[https://progressier.com/](https://progressier.com/)
+
+[https://www.whalesync.com/sync/webflow-supabase](https://www.whalesync.com/sync/webflow-supabase)
+
 ## Why PWA's?&#x20;
 
 Progressive Web Apps (PWAs) offer a blend of the best features available on the web and mobile applications. Here's a summary of the capabilities that PWAs provide, making them act and behave much like mobile apps:
