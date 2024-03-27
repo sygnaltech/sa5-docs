@@ -405,6 +405,7 @@
 * [Hyperflow A11y](hyperflow/hyperflow-a11y.md)
 * [Hyperflow Data](hyperflow/hyperflow-data-1.md)
 * [Hyperflow Layout Templates](hyperflow/hyperflow-layout-templates.md)
+* [Hyperflow PWA](hyperflow/hyperflow-pwa.md)
 
 ## 📘 HYPERSERVE
 
