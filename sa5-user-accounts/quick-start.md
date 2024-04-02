@@ -4,7 +4,7 @@ description: >-
   Webflow Memberships Site
 ---
 
-# 🚀 Quick Start | SA5 Memberships
+# 🚀 Quick Start | SA5 User Accounts
 
 {% hint style="success" %}
 All of SA5's Membership features are now consolidated into a single library, so you only need one library include.&#x20;
@@ -33,12 +33,12 @@ window.sa5.push(['getMembershipConfig',
 
 Once you've added the library, both the [User Info](logged-in-user-info/) and the [Advanced Log-In & Sign-Up Flow](advanced-log-in-and-sign-up-flow.md) features are available to use.
 
-## User Info Quick Start
+## Current User Info Quick Start
 
 {% hint style="success" %}
 The **User Info** library can be considered as 3 feature sets.&#x20;
 
-1. Basic under info like name, email, and opt-in is automatically accessible once the library is installed.&#x20;
+1. Basic user info like name, email, and opt-in is automatically accessible once the library is installed.&#x20;
 2. [Custom user fields](logged-in-user-info/custom-user-fields.md) requires _special setup_ on your `/access-group` page. Make sure to read that section if you want to access that data.
 3. [Access groups](logged-in-user-info/access-groups/) also requires a special setup. Make sure to read those pages if you want access to your access group data.&#x20;
 {% endhint %}

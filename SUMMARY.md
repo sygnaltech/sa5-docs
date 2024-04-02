@@ -33,14 +33,14 @@
 * [Geolocation Detection ❺🧪](detect/geo/README.md)
   * [Cache Setup v4](detect/geo/v4.md)
 
-## 📘 Copy of sa5-detect <a href="#detect" id="detect"></a>
+## 📘 sa5-analytics
 
-* [🔍 About SA5's Detect Lib](detect-1/about.md)
-* [🚀 Quick Start | SA5 Detect](detect-1/quick-start.md)
-* [Page](detect-1/page.md)
-* [User Agent Detection](detect-1/user-agent-detection.md)
-* [GTM Events ❺🧪](detect-1/geo/README.md)
-  * [Cache Setup v4](detect-1/geo/v4.md)
+* [🔍 About SA5's Analytics Lib](sa5-analytics/about.md)
+* [🚀 Quick Start | SA5 Detect](sa5-analytics/quick-start.md)
+* [A/B and Multivariate Testing](sa5-analytics/a-b-and-multivariate-testing.md)
+* [GTM Events ❺🧪](sa5-analytics/geo/README.md)
+  * [Facebook](sa5-analytics/geo/facebook.md)
+  * [Google Analytics ( GA4 )](sa5-analytics/geo/google-analytics-ga4.md)
 
 ## 📘 sa5-data
 
@@ -129,6 +129,7 @@
   * [Why Gist?](sa5-richtext/github-gists/why-gist.md)
   * [Technical Notes](sa5-richtext/github-gists/technical-notes.md)
   * [Future](sa5-richtext/github-gists/future.md)
+* [Code Blocks 🧪](sa5-richtext/code-blocks.md)
 * [URL Expanders 🧪](sa5-richtext/url-expanders.md)
 * [Annotations 🧪](sa5-richtext/annotations.md)
 * [Text SPAN Formatting 🧪](sa5-richtext/text-span-formatting.md)
@@ -251,6 +252,8 @@
 * [🔍 About SA5's Webflow Modals & Popups Lib](sa5-modals/about.md)
 * [🚀 Quick Start | SA5 Modals & Popups](sa5-modals/quick-start.md)
 * [Webflow Modals & Popups Suppression](sa5-modals/article.md)
+* [Webflow Modals & Popups Auto-Open and Auto-Close](sa5-modals/article-1.md)
+* [Page 1](sa5-modals/page-1.md)
 
 ## 📘 sa5-selectcustom
 
@@ -341,6 +344,7 @@
   * [Infrastructure Notes](hyperflow/about/infrastructure-notes/README.md)
     * [Edge Caching](hyperflow/about/infrastructure-notes/edge-caching.md)
 * [Hyperflow Proxy](hyperflow/hyperflow-proxy.md)
+* [Hyperflow Security](hyperflow/hyperflow-security.md)
 * [Hyperflow Analytics](hyperflow/hyperflow-analytics.md)
 * [Hyperflow Fixes](hyperflow/hyperflow-fixes/README.md)
   * [Webflow Image Orientation](hyperflow/hyperflow-fixes/webflow-image-orientation.md)

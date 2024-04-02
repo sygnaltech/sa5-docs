@@ -9,46 +9,131 @@ description: Route Visitors and Display Conditional Elements Based on Country or
 Watch this space.
 {% endhint %}
 
+## Goals
 
+* Simplify GTM tracking
+  * Keep as much of the configuration as possible designer-accessible
+  * Custom attributes
+  * Embeds for data structures
+* Enable tracking of all kinds of events
+* Capture specific metadata, with the goal of being able to use it in analytics, advertising, and reporting systems like GA4&#x20;
+
+## Features ( Current )
+
+* Track click events, with metadata, on anything
+* Track load events, with metadata, on anything
+* Restrict GTM events to specific breakpoints
 
 ## Use Cases
 
-* Route visitors to a Country-specific home page
-* Route visitors to a City-specific contact-us page
+* Track click & display events on your CTAs, and display events, so you can determine conversions
+* Pass it through to GA4 for reporting, in combination with other data&#x20;
+
+Future;
+
+* A/B testing&#x20;
+* Capture user-specific form data&#x20;
+
+## Usage Notes
+
+{% hint style="info" %}
+SA5 simplifies the capture of events and passes them to GTM, however there is still configuration work required in GTM to receive that data, and in end systems like GA4, there is configuration work required to capture and display that data.&#x20;
+{% endhint %}
+
+SA5's GTM tracking config in the designer involves two parts;
+
+* An element that you wish to track events on. This _must_ be a container element, such as a DIV.
+* An Embed within that element that contains the detailed data for the dataLayer. The Embed must contain a script element with a type of `sa5/gtm-data` and there must be only one of these within your tracked elemen.
+
+The reason for this is that we want
+
+```html
+<script type="sa5/gtm-data">
+{
+  "event": "banner_interaction",
+  "banner_name": "sticky",
+  "interaction_type": "click"
+}
+</script>
+```
+
+{% hint style="info" %}
+This MUST be valid JSON.&#x20;
+{% endhint %}
+
+
+
+wfu-gtm-event
+
+* click - fires on a mouse click
+* load - fires on page load
+
+Future;
+
+scroll, interactions visibility&#x20;
+
+wfu-gtm-event-id
+
+Future.
+
+wfu-gtm-event-name
+
+Optional. Currently used for logging so that you can&#x20;
+
+Recommended to treat it as an identifier, meaning all-lowercase, and hyphens instead of spaces, e.g. desktop-qr
+
+## wfu-gtm-event-breakpoints
+
+This attribute allows you to restrict the breakpoints that an event will fire on.
+
+It's composed of a string which specifies the breakpoints you want to allow the event on, and each letter defined a breakpoint;
+
+321DTLP
+
+1920+ 1440+ 1280+ desktop 991- tablet 767- landscape 478- portrait
+
+
+
+Each breakpoint has an uppercase letter to describe it, in the table below.
+
+Each has a corresponding lowercase letter which describes a range.
+
+For example;
+
+* `D` indicates desktop specifically, i.e. 992px - 1280px.  `d` indicates Desktop-or-larger, 992px+
+* `T` indicates tablet, i.e. 768px - 991px. `t` indicates Tablet-or-smaller, 0px - 991px.
+
+
+
+<table><thead><tr><th>Breakpoint</th><th width="62"></th><th>Range</th><th width="65"></th><th>Range</th></tr></thead><tbody><tr><td>Mobile Portrait</td><td>P</td><td>0 - 480</td><td>p</td><td>0 - 480</td></tr><tr><td>Mobile Landscape</td><td>L</td><td>481 - 767</td><td>l</td><td>0 - 767</td></tr><tr><td>Tablet</td><td>T</td><td>768 - 991</td><td>t</td><td>0 - 991</td></tr><tr><td>Desktop</td><td>D</td><td>992 - 1280</td><td>d</td><td>992 - unlimited</td></tr><tr><td>Medium Large</td><td>M</td><td>1281 - 1440</td><td>m</td><td>1281 - unlimited</td></tr><tr><td>Large</td><td>R</td><td>1441 - 1920</td><td>r</td><td>1441 - unlimited</td></tr><tr><td>Extra Large</td><td>X</td><td>1921 - unlimited</td><td>x</td><td>1921 - unlimited</td></tr></tbody></table>
+
+You can combine these into any arrangement to describe the breakpoints you want.
+
+For example;
+
+* `Td` would mean Tablet and anything Desktop or larger
+* `PD` would mean only Mobile Portrait, and Desktop, but not Landscape, Tablet, or larger breakpoints.
 
 ## Feature Roadmap
 
 {% tabs %}
 {% tab title="Completed" %}
-* Route user by Country
-* Routing table support
-  * Supports routing any defined path, e.g. /about to any Geo-specific variants you have, e.g. `/about/gb`, `/about/au`, `/jp/about`.&#x20;
-  * Routed sources and destinations are unlimited, no enforced path rules.&#x20;
-* Standardized GeoInfo object, to consistently describe the detection regardless of the GeoIP handler source&#x20;
-* Cached responses, for minimal GeoIP service traffic
-  * One request per unique user&#x20;
+Events supported;
 
-GeoIP handlers;
+* click tracking
+* load tracking
 
-* IPInfo support. 50,000 requests/mo free.&#x20;
+Other;
+
+* Arbitrary data capture
 {% endtab %}
 
 {% tab title="Planned" %}
-* Route user by Continent
-* Route user by City
-* Cache duration as a setting
-* Named route efficiency
-  * Modify page paths on e.g. Home / to the routed page variant, to avoid unnecessary redirects. &#x20;
+Add events support;&#x20;
 
-Override support;
-
-* The ability to apply the current setting to a Dropdown, and automatically indicate the current Country, City, etc.
-* The ability to change country, city, etc and have that override the detected settings.&#x20;
-
-GeoIP handlers;
-
-* Support for multiple Geoip handlers&#x20;
-  * Ability to select in config
+* Forms
+* Scroll into view ( element seen )
+* Script-triggered events
 {% endtab %}
 
 {% tab title="Considering" %}
@@ -86,9 +171,7 @@ GeoIP handlers;
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
-### Routing Rules
-
-sticky
+###
 
 wfu-gtm-event = click
 

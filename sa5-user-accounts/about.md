@@ -2,19 +2,19 @@
 description: Why it exists and how it extends Webflow's Memberships
 ---
 
-# 🔍 About SA5's Webflow Memberships Lib
+# 🔍 About SA5's Webflow User Accounts Lib
 
 This library extends Webflow's Memberships feature with a few much needed features;
 
-## Access to User Info
+## Current User Info
 
-SA5 gives you the ability to access the currently logged-in user's info from anywhere in your site. Access User data in custom code, or conveniently through attribute-based data-binding.&#x20;
+SA5 gives you the ability to access the currently logged-in user's info from anywhere in your site. You can access user data in your custom code, or display it through our attribute-based data-binding.&#x20;
 
 You can access _everything_...
 
 * Name, email, and opt-in&#x20;
-* Custom user data fields that you've defined.&#x20;
-* Access groups \[ BETA ]
+* Custom user data fields that you've defined
+* The user's list of access groups&#x20;
 
 ## Memberships Navigation
 

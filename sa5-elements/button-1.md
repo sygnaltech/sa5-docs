@@ -29,7 +29,9 @@ Possible;
 * Support text entry, combobox&#x20;
 * Support quick selection filtering of available items e.g. countries&#x20;
 
+Auto open on page load
 
+[https://discourse.webflow.com/t/how-to-get-dropdown-open-on-page-load-automatically/158399/16](https://discourse.webflow.com/t/how-to-get-dropdown-open-on-page-load-automatically/158399/16)
 
 
 

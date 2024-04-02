@@ -1,10 +1,16 @@
 ---
-description: About the SA5 Detect Library
+description: Use GTM's dataLayer to capture all the information you want from your site.
 ---
 
-# 🔍 About SA5's Detect Lib
+# 🔍 About SA5's Analytics Lib
 
-This this lib supports detection of your visitor characteristics, and actions based on them.
+This this lib is designed to support analytics tracking using GTM and the dataLayer to capture data from your site. &#x20;
+
+It c
+
+Most of the examples here are focused on capturing the end data in Google Analytics ( GA4 ), however Facebook and other data targets are equally viable.
+
+It can also be used to supportsupports detection of your visitor characteristics, and actions based on them.
 
 Initially we are focused on geo-detection using a GEOIP methodology.&#x20;
 
