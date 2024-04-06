@@ -36,10 +36,13 @@ Because these are set as the link URLs, the test displayed to the user can be an
 
 ## Usage Notes
 
+
+
 ### Basic Setup
 
-* Create your interaction, and tie it to a button-click trigger
-* Assign the `[wfu-ix-id]` attribute to that element, and give it a unique ID
+* Create your interaction to do whatever you want
+* Create a button element, and set it to trigger your interaction on click
+* Assign the `[wfu-ix-id]` attribute to that button element, and give it a unique ID
 * Now on any link or button anywhere in your page, you can assign a `[wfu-ix-trigger]` attribute to that element
 * Or, in any link on your page, assign a URL with `##` with the ID you've assigned to the interaction you want
 
@@ -56,6 +59,30 @@ When you are want CMS-sourced modals such as product pop-ups or glossary pop-ups
 * Assign your `[wfu-ix-id]` custom attribute to that button, and set the value using Webflow's CMS data-binding feature, to the `slug` of the collection item
 
 Now, anywhere in your page, you can link to `##slug` to trigger that item.&#x20;
+
+## Considering <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+wfu-ix-trigger-type ( optional ) = click | timer
+
+wfu-ix-trigger-ms = 10000
+
+## Use Cases
+
+Trigger -> Interaction
+
+### You want to click an element, and have an interaction run
+
+
+
+### You want to click a link, like a dictionary definition or a map pin, and have an interaction run
+
+This data may be from the CMS&#x20;
+
+### You want an interaction to trigger automatically after N seconds
+
+
+
+
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 

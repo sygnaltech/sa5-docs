@@ -59,6 +59,16 @@ To the close element(s) within the modal;
 * Add an attribute of `wfu-modal-close` = `true`
 * Add an attribute of `wfu-modal-close-type` = `auto`
 
+## # Considering
+
+wfu-modal-action = open | close
+
+wfu-modal-action-method = auto | interaction
+
+wfu-modal-action-trigger = click | timer | scroll | exit
+
+wfu-modal-action-trigger-ms = 10000
+
 ## Questions? Feature Requests?
 
 Visit the SA5 forum link at the top of this page.

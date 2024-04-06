@@ -39,6 +39,7 @@
 * [🚀 Quick Start | SA5 Detect](sa5-analytics/quick-start.md)
 * [A/B and Multivariate Testing](sa5-analytics/a-b-and-multivariate-testing.md)
 * [GTM Events ❺🧪](sa5-analytics/geo/README.md)
+  * [Important dataLayer Notes](sa5-analytics/geo/important-datalayer-notes.md)
   * [Facebook](sa5-analytics/geo/facebook.md)
   * [Google Analytics ( GA4 )](sa5-analytics/geo/google-analytics-ga4.md)
 
@@ -196,7 +197,7 @@
   * [Future](sa5-elements/slider/future.md)
 * [Deck Controller Element ❺](sa5-elements/deck-controller-element.md)
 * [Button Element ❺](sa5-elements/button.md)
-* [Dropdown Element ❺🧪](sa5-elements/button-1.md)
+* [Dropdown Element ❺](sa5-elements/dropdown.md)
 * [Lightbox Element ❺](sa5-elements/lightbox/README.md)
   * [CMS & Lightbox + Groups ❺](sa5-elements/lightbox/cms-and-lightbox-+-groups.md)
   * [CMS & Lightbox + Captions ❺](sa5-elements/lightbox/cms-and-lightbox-+-captions.md)
