@@ -412,6 +412,7 @@
 * [Hyperflow Data](hyperflow/hyperflow-data-1.md)
 * [Hyperflow Layout Templates](hyperflow/hyperflow-layout-templates.md)
 * [Hyperflow PWA](hyperflow/hyperflow-pwa.md)
+* [Hyperflow Geo](hyperflow/hyperflow-geo.md)
 
 ## 📘 HYPERSERVE
 
