@@ -4,6 +4,26 @@ description: Future plans for SA5 dynamic attributes
 
 # Future
 
+## \<script> based transforms
+
+Generate an attribute from a specially-typed script block within it, with the purpose being to;
+
+* Easily mix static text and dynamic attributes
+* Support larger strings, e.g. JSON chunks
+* Resolve attribute content limitations in Webflow
+  * Inability to include double-quotes `"` in content&#x20;
+* Resolve attribute name limitations in Webflow
+
+Targeting can be parent, prev sibling or next sibling, or a target element(?) with an SA5 identifier
+
+[https://discourse.webflow.com/t/embed-cal-com-pop-up-via-element-click/277487/3](https://discourse.webflow.com/t/embed-cal-com-pop-up-via-element-click/277487/3)
+
+Supporting JSON chunks in the designer
+
+`&quot;` `/x0022`&#x20;
+
+Ideally design this so that it can also support Hyperflow processing.&#x20;
+
 
 
 ## Transforms
