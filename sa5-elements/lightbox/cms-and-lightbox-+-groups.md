@@ -4,9 +4,25 @@ description: Display your nested Collection List Lightboxes in separate groups
 
 # CMS & Lightbox + Groups ❺
 
-Webflow's [lightbox element](https://university.webflow.com/lesson/lightbox) is CMS compatible, however it has some limitations.
+Webflow's [lightbox element](https://university.webflow.com/lesson/lightbox) is CMS compatible, however it it [does not provide](https://discourse.webflow.com/t/full-cms-lightbox/33669) the ability to CMS-bind the lightbox group.&#x20;
 
-One limitation is that it [does not provide](https://discourse.webflow.com/t/full-cms-lightbox/33669) the ability to bind the lightbox group. This means that if you are using the CMS multi-image field, and you are using a nested collection list to display them, you cannot lightbox-group these images together.  &#x20;
+In a CMS-driven layout like this one, we may want specific groupings of images ( here, each purple box ) to have their own distinct lightbox group.&#x20;
+
+At present, this is not natively supported in Webflow.&#x20;
+
+**SA5 offers a no-code attributes-based solution to add this ability.**&#x20;
+
+<figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="danger" %}
+**Important Webflow ECommerce limitation**
+
+Webflow currently does not support CMS-bound custom attributes when a CMS collection is bound to the ECommerce Products or Categories collection. This creates a configuration problem for an attributes-based library, since those custom attributes are essential for the grouping.&#x20;
+
+Currently this SA5 feature should be considered incompatible with any collection list that is bound to Webflow ECommerce Products or Categories.
+
+_If you need that capability in your project, you can_ [_contact Sygnal_](https://sygnal.com/contact) _about building a custom, non-attributes version of this library for your project._&#x20;
+{% endhint %}
 
 ## Use Cases
 
@@ -16,9 +32,13 @@ Common examples of where designers need this;
 * Real estate sites
 * Event sites&#x20;
 
-SA5 offers a no-code attributes-based solution to add this capability.&#x20;
-
 ## Demonstration
+
+Here is a demonstration of CMS-driven lightbox grouping, with a cloneable.
+
+{% hint style="success" %}
+Use the cloneable as a reference for your own implementation. It will show you the exact placement and setup of the attributes for a typical product catalog configuration.
+{% endhint %}
 
 {% embed url="https://cms-lightbox-groups.webflow.io/" %}
 Demonstration
@@ -30,50 +50,60 @@ Cloneable
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
-{% hint style="info" %}
-SA5 will assigns lightbox groups _regionally_ in your element hierarchy.&#x20;
+This library is very flexible in its configuration options.&#x20;
 
-Place the attribute on any element, and all of the lightboxes that are descendants of that element will be assigned the same lightbox group.&#x20;
+The documentation here will focus on the most common use case - a product gallery where each product has a main photo and series of additional photos, which we want lightboxed together in a single group.
+
+![](<../../.gitbook/assets/image (47).png>)
+
+This setup is demonstrated in the cloneable above, and here's a **video walkthrough** on the implementation details.
+
+{% embed url="https://www.loom.com/share/761c02e34c5146e993c2b14afc40650a" %}
+
+{% hint style="info" %}
+Use the video as your primary reference for this type of build, however below are some additional notes for designers who want to vary the setup.&#x20;
 {% endhint %}
 
 ### Enable the _Link with other lightboxes_ feature
 
-This may not be necessary for the library to work, but it's best to enable the **Link with other lightboxes** feature on each of your lightboxes. Leave the **Group name** blank.&#x20;
+Enable the **Link with other lightboxes** feature on each of your lightboxes.&#x20;
+
+Leave the **Group name** _blank_.&#x20;
 
 ![](<../../.gitbook/assets/image (31).png>)
 
 ### Add the `wfu-lightbox-group` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
-Add the `wfu-lightbox-group` custom attribute with the group name you want to any parent element of the lightbox, and all subordinate lightboxes ( descendants of that element ) will be assigned that same lightbox group.&#x20;
+Add the `wfu-lightbox-group` custom attribute with the group name you want _to any parent element of the lightbox_, and all lightboxes _within_ that parent element ( descendants ) will be assigned that same lightbox group.&#x20;
 
-> What value should I assign to the attributes?
+For example,&#x20;
 
-You can assign any unique value you choose for your group.&#x20;
+`wfu-lightbox-group` = `mygroup`
 
-To create separate groups for each of your parent list items, use Webflow's [CMS-bound custom-attribute feature](https://university.webflow.com/lesson/custom-attributes#how-to-use-cms-data-in-custom-attributes) and set it to the parent item's `slug`. This ensures that each group has a unique name.&#x20;
+would assign that static string "mygroup" as the group name for _every lightbox that is within your tagged element_.&#x20;
+
+You can assign any unique value you choose for your group, but the purpose of this library is to make those groups dynamic, _based on your CMS data_.&#x20;
+
+To do that, we'll use Webflow's [CMS-bound custom-attribute feature](https://university.webflow.com/lesson/custom-attributes#how-to-use-cms-data-in-custom-attributes) and set it to the parent item's `slug`. This ensures that each group has a unique name.&#x20;
+
+`wfu-lightbox-group` = `{{ slug }}`
+
+{% hint style="info" %}
+SA5 supports this "attribute affects descendants" approach because of the way Webflow's nested collection lists work in relation to custom attributes. See the descussion of this in the video above.&#x20;
+{% endhint %}
+
+Choosing where to place the attribute matters, for two reasons;
+
+1. SA5 will apply the group you specify in the attribute to any lightboxes within that element
+2. Webflow's CMS-bound custom attributes have specific rules in what you can bind to, which means that elements within the _nested_ collection list cannot be bound to fields of the _parent_ collection list.
+
+In our nested list configuration, this means that the best place to place the attribute \[2] is on the parent collection list item \[1]. &#x20;
+
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you have other lightboxes on your page outside of the collection lists, make certain their group names (if any) do not conflict with your CMS item slugs. An easy way to do this is to prefix them with a hyphen or underscore.&#x20;
 {% endhint %}
-
-> Where should I place the attribute?
-
-For this nested list scenario, there are two common strategies.&#x20;
-
-Collection lists individually have a 3-level hierarchy of Collection List Wrapper, Collection List, and Collection Item, which we'll refer to here as _wrapper_, _list_, and _item_. &#x20;
-
-In a nested list arrangement, they'll appear like this;&#x20;
-
-<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption><p>Example of a nested list, in which the parent contains a lightbox image, and the child Multi-image</p></figcaption></figure>
-
-In this example, the parent collection list has a main image which is light-boxed, and it has a nested collection list - bound to a multi-image field - whose images are also light-boxed. &#x20;
-
-Here you typically choose one of two configuration options;
-
-1. If you want all of the images _including the main image_ to be grouped together in the same lightbox, then place the attribute on the parent's _item_ element.
-2. If you want the child thumbnails to appear in the same lightbox, but exclude the parent's image, then place the attribute on the child's _wrapper_ element.
-
-Remember to bind your custom attribute value to the parent item's slug, so that they all get the same unique group name.&#x20;
 
 {% hint style="danger" %}
 Avoid placing the attribute on two elements that have a parent-child relationship to one another, as this will create an undefined situation as to which group will be applied.&#x20;
@@ -91,7 +121,7 @@ See above for details.
 
 ## Credits
 
-Full credit to [Travis Orams](https://discourse.webflow.com/u/oramsdesign) for [detailing](https://discourse.webflow.com/t/full-cms-lightbox/33669) the original solution approach. SA5 uses a similar group-setting approach, without the need to replace the lightbox element manually.&#x20;
+Full credit to [Travis Orams](https://discourse.webflow.com/u/oramsdesign) for [detailing](https://discourse.webflow.com/t/full-cms-lightbox/33669) the original solution approach. SA5 uses a similar group-setting approach, but has redesigned it so that there is no need to replace the lightbox element manually.&#x20;
 
 
 
