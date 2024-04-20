@@ -22,6 +22,11 @@ Config;
 * Site-wide / page-specific config option for forms handling
 * Form-level, field-level, or auto&#x20;
 * Or suppress = none
+* Full, valid email verificaton&#x20;
+
+[https://discourse.webflow.com/t/prevent-form-submission-when-email-validation-fails-using-api/278067?u=memetican](https://discourse.webflow.com/t/prevent-form-submission-when-email-validation-fails-using-api/278067?u=memetican)
+
+
 
 [https://www.sygnal.com/lessons/validating-emails](https://www.sygnal.com/lessons/validating-emails)
 

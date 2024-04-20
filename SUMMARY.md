@@ -361,6 +361,7 @@
   * [v2 Implementation Notes](hyperflow/hyperflow-fluid-paths/v2-implementation-notes.md)
 * [Hyperflow Files & Folders](hyperflow/hyperflow-files-and-folders/README.md)
   * [Google Adsense](hyperflow/hyperflow-files-and-folders/google-adsense.md)
+  * [.well-known](hyperflow/hyperflow-files-and-folders/.well-known.md)
 * [Sygnal DevProxy](hyperflow/sygnal-devproxy.md)
 * [Hyperflow Site Redirector](hyperflow/hyperflow-site-redirector.md)
 * [Hyperflow Coming Soon](hyperflow/hyperflow-coming-soon.md)
