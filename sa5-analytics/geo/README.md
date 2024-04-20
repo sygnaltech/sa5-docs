@@ -34,6 +34,10 @@ Future;
 * A/B testing&#x20;
 * Capture user-specific form data&#x20;
 
+## Strategy Notes
+
+
+
 ## Usage Notes
 
 {% hint style="info" %}
@@ -51,6 +55,8 @@ The reason for this is that we want
 <script type="sa5/gtm-data">
 {
   "event": "banner_interaction",
+  "event_category": "System",
+  "event_label": "Offer",
   "banner_name": "sticky",
   "interaction_type": "click"
 }
@@ -191,6 +197,8 @@ sticky
 <script type="sa5/gtm-data">
 {
   "event": "banner_interaction",
+  "event_category": "System",
+  "event_label": "Offer",
   "banner_name": "desktop QR",
   "interaction_type": "close"
 }
@@ -201,17 +209,27 @@ sticky
 
 ## GTM Setup
 
-#### Create Data Layer Variables in GTM
+### Create Data Layer Variables in GTM
 
-For each piece of data you want to capture (e.g., `banner_name`, `interaction_type`, `variant`), you'll need to create a corresponding Data Layer Variable in GTM:
+For _each_ piece of data you want to capture (e.g., `banner_name`, `interaction_type`, `variant`), you'll need to create a corresponding Data Layer Variable in GTM:
 
 * Go to Variables in your GTM dashboard.
 * Click "New" to create a new variable.
 * Select "Data Layer Variable" as the variable type.
 * Enter the Data Layer Variable Name exactly as it appears in your data layer push (e.g., `banner_name`).
-* Name your variable (e.g., `DLV - Banner Name`) and save.
+* Name your variable (e.g., `DLV - Banner Name`) and save.&#x20;
 
-#### . Create a Trigger for `banner_interaction` Events
+Three
+
+* Event Category - `event_category`
+* ?? Event Action - `event_action`
+* Event Label - `event_label`
+
+These appear to map in GA4
+
+### Create a Trigger for `banner_interaction` Events
+
+This is one trigger.
 
 * Go to Triggers in your GTM dashboard.
 * Click "New" to create a new trigger.
@@ -220,7 +238,9 @@ For each piece of data you want to capture (e.g., `banner_name`, `interaction_ty
 * Choose "All Custom Events" to trigger for all instances of `banner_interaction`.
 * Name your trigger (e.g., `Trigger - Banner Interaction`) and save.
 
-#### Create a GA4 Event Tag
+### Create a GA4 Event Tag
+
+This is one Tag.&#x20;
 
 * Go to Tags in your GTM dashboard and click "New."
 * Choose "GA4 Event" as the tag type (make sure you've already set up a GA4 Configuration tag).
@@ -228,9 +248,17 @@ For each piece of data you want to capture (e.g., `banner_name`, `interaction_ty
 * For "Event Name," you can either directly use `banner_interaction` or define a variable if you plan to dynamically name events.
 * Under "Event Parameters," add parameters for each piece of data you want to send to GA4 (e.g., `banner_name`, `interaction_type`, `variant`). Use the Data Layer Variables you created earlier as values.
 * In the "Triggering" section, select the `banner_interaction` trigger you created.
-* Name your tag (e.g., `Tag - GA4 Banner Interaction Event`) and save.
+* Name your tag (e.g., `Tag - GA4 Banner Interaction Event`) and save.&#x20;
 
-#### Test & Publish
+Likely, consider adding these parameters;
+
+* `event_category` -&#x20;
+* `?? event_action` -&#x20;
+* `event_label` - Bind to \{{ Event Label \}}
+
+> These appear to be pre-defined in GA4&#x20;
+
+### Test & Publish
 
 * Use the "Preview" mode in GTM to test your setup. Make sure that the `banner_interaction` events are triggering the GA4 tag correctly and that the data appears as expected in your GA4 debug view or real-time events report.
 * Once you've verified that everything is working as expected, publish your changes in GTM.

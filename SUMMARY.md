@@ -373,6 +373,7 @@
   * [Locale Path Fixes](hyperflow/hyperflow-localization/locale-path-fixes.md)
   * [Locale-Specific Domains](hyperflow/hyperflow-localization/locale-specific-domains.md)
   * [Locale Switcher & Flags](hyperflow/hyperflow-localization/locale-switcher-and-flags.md)
+  * [Locale-Restricted Content](hyperflow/hyperflow-localization/locale-restricted-content.md)
 * [Hyperflow Hyperspeed](hyperflow/hyperflow-hyperspeed/README.md)
   * [Hyperflow Purge Cache](hyperflow/hyperflow-hyperspeed/hyperflow-purge-cache/README.md)
     * [Quickstart](hyperflow/hyperflow-hyperspeed/hyperflow-purge-cache/quickstart.md)

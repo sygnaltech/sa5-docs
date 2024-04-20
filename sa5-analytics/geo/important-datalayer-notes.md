@@ -14,6 +14,8 @@ e.g.
 <script type="sa5/gtm-data">
 {
   "event": "banner_interaction",
+  "event_category": "System",
+  "event_label": "Offer",
   "banner_name": "sticky",
   "interaction_type": "click",
   "position": "sticky-top",
@@ -30,6 +32,8 @@ Set a default base object, and override it. We merge them
 <script type="sa5/gtm-data-proto" event="banner_interaction">
 {
   "event": "banner_interaction",
+  "event_category": "System",
+  "event_label": "Offer",
   "banner_name": null,
   "interaction_type": null,
   "position": null,
