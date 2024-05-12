@@ -18,6 +18,7 @@
 * [Documentation](overview/documentation.md)
 * [Preloaders](overview/preloaders.md)
 * [Sygnal Attributes ( SA5 ) Support](overview/sygnal-attributes-sa5-support.md)
+* [SA5 Core](overview/sa5-core.md)
 
 ## 📘 sa5-cache <a href="#cache" id="cache"></a>
 
