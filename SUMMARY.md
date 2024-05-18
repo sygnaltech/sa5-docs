@@ -97,6 +97,7 @@
 * [Form Data Fixups](sa5-forms/form-data-fixups.md)
 * [Form IP Info ❺](sa5-forms/form-ip.md)
 * [File Uploads 📝](sa5-forms/file-uploads.md)
+* [File Downloads](sa5-forms/file-downloads.md)
 
 ## 📘 sa5-html
 
@@ -115,19 +116,26 @@
 * [Hide Section w/ Empty Collection Lists ❺](sa5-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML ❺](sa5-html/decode-html.md)
 * [Markdown ❺](sa5-html/markdown.md)
-* [Layout ❺🧪](sa5-html/layout/README.md)
-  * [Tabs Layout Handler](sa5-html/layout/tabs-layout-handler.md)
-  * [Slider Layout Handler](sa5-html/layout/slider-layout-handler.md)
-  * [Future](sa5-html/layout/future.md)
 * [Transform ❺🧪](sa5-html/transform.md)
 * [Code Formatting ❺🧪](sa5-html/code-formatting.md)
 * [CMS Code Injection ❺🧪](sa5-html/cms-code-injection.md)
 * [Responsive Tables ❺🧪](sa5-html/responsive-tables.md)
 * [Text Formatting](sa5-html/text-formatting.md)
 
+## 📘 sa5-layout
+
+* [🔍 About SA5's Layout Lib](sa5-layout/about/README.md)
+  * [Future](sa5-layout/about/future.md)
+* [Element Groups ❺🧪](sa5-layout/element-groups.md)
+* [Layout ❺🧪](sa5-layout/layout/README.md)
+  * [Tabs Layout Handler](sa5-layout/layout/tabs-layout-handler.md)
+  * [Slider Layout Handler](sa5-layout/layout/slider-layout-handler.md)
+  * [Future](sa5-layout/layout/future.md)
+* [🚀 Quick Start | SA5 Layout Lib](sa5-layout/quick-start.md)
+
 ## 📘 sa5-richtext
 
-* [🔍 About SA5's Blog Lib](sa5-richtext/about/README.md)
+* [🔍 About SA5's Rich Text Lib](sa5-richtext/about/README.md)
   * [Future](sa5-richtext/about/future.md)
 * [🚀 Quick Start | SA5 Rich Text](sa5-richtext/quick-start.md)
 * [Nested Lists ❺](sa5-richtext/nested-lists.md)
