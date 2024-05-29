@@ -149,6 +149,8 @@
 * [Annotations 🧪](sa5-richtext/annotations.md)
 * [Text SPAN Formatting 🧪](sa5-richtext/text-span-formatting.md)
 * [Lightboxes 🧪](sa5-richtext/lightboxes.md)
+* [Embeddables](sa5-richtext/embeddables.md)
+* [Parse To](sa5-richtext/parse-to.md)
 * [Richtext ❺🧪](sa5-richtext/richtext/README.md)
   * [CSS Isolation](sa5-richtext/richtext/css-isolation.md)
 
