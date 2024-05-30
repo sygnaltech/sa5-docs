@@ -161,6 +161,10 @@ FUTURE. Default item-level settings can be inherited from the dropdown's element
 
 ## Tips & Best Practices&#x20;
 
+### Have more than 100 CMS items to match?
+
+If the number is reasonable, say < 200 or < 300, you can place several consecutive collection lists, setup identically.  Do not enable pagination, instead use the from and to ranges, e.g. 1 to 100, 101 to 200, 201 to 300.&#x20;
+
 ### Site Search Item ( optional )
 
 Within the list, you can add an item which will take the user's entered text and initiate a full site search. Take advantage of this for a more comprehensive UX experience.
@@ -176,7 +180,7 @@ To use this, you must have Webflow's site-search configured.
 
 ## Styling
 
-The Dropdown Element
+### The Dropdown Element&#x20;
 
 * If this is in your header and can overlap a nav, you want a higher z-index.  Set this directly on the Dropdown Element, e.g. `z-index: 9999`.&#x20;
 
