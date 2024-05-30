@@ -25,38 +25,14 @@ The most common use cases for an autocomplete UX include;
 * Quick-select an a form input which requires specific values&#x20;
   * e.g. Choose from a list of countries
 
+## Usage Notes
+
 {% hint style="info" %}
-**FUTURE.**\
-MUST match exactly ( no partial entry ), and updates the main input. Prevent validation or even clear the field if no exact match is made.&#x20;
+**VIDEO TUTORIAL** \
+Here's a full walkthrough of a basic build, from a blank page, to help you understand your design options and how the attributes are applied.
 {% endhint %}
 
-## Notes
-
-Notes;
-
-* Designed to be self-contained, everything in an SA5 autocomplete element exists as content and child elements within the dropdown element itself.&#x20;
-* This makes it easy to reference elements, and allows you to easily have several autocomplete elements on the same page.&#x20;
-
-Future;
-
-* Possible sorting&#x20;
-* Possible ranking, e.g.&#x20;
-  * start-of string matches get a stronger signal than middle-of-string
-  * case-match v. non-case-match?&#x20;
-* Direct integration with search results&#x20;
-
-## SA5 Implementation Notes
-
-Notes;
-
-* Designed to be self-contained, everything in an SA5 autocomplete element exists as content and child elements within the dropdown element itself.&#x20;
-  * This makes it easy to reference elements, and allows you to easily have several autocomplete elements on the same page.
-* Designed to leverage Webflow's native dropdown element, so that it will close when you click outside of it.&#x20;
-* Designed to utilize CMS data when appropriate, via collection lists.&#x20;
-* Designed to integrate with site search if you also have that available.&#x20;
-* Designed to support complex list item styling and layouts&#x20;
-
-## Usage Notes
+{% embed url="https://www.loom.com/share/423e136f9d1a457394dfe5a7397eaf76" %}
 
 ### Dropdown Element
 
@@ -115,12 +91,11 @@ Future
 
 * inner text ( any )&#x20;
 * FUTURE - specific inner text, sub-tagged&#x20;
+* FUTURE - Exact match. MUST match exactly ( no partial entry ), and updates the main input. Prevent validation or even clear the field if no exact match is made. Used for some strict form entry use cases&#x20;
 
 Here you'll identify the matching string
 
 `wfu-autocomplete-item-match`= ( match string, typically bound to a CMS field )&#x20;
-
-
 
 `wfu-autocomplete-matching-rule`
 
@@ -209,9 +184,34 @@ To use this, you must have Webflow's site-search configured.
 * Can include icons
 * [https://icons.relume.io/](https://icons.relume.io/)
 
+## Technical Notes
 
+Notes;
 
+* Designed to be self-contained, everything in an SA5 autocomplete element exists as content and child elements within the dropdown element itself.&#x20;
+  * This makes it easy to reference elements, and allows you to easily have several autocomplete elements on the same page.
+* Designed to leverage Webflow's native dropdown element, so that it will close when you click outside of it.&#x20;
+* Designed to utilize CMS data when appropriate, via collection lists.&#x20;
+* Designed to integrate with site search if you also have that available.&#x20;
+* Designed to support complex list item styling and layouts &#x20;
 
+Future;
+
+* Possible sorting&#x20;
+* Possible ranking, e.g.&#x20;
+  * start-of string matches get a stronger signal than middle-of-string
+  * case-match v. non-case-match?&#x20;
+* Direct integration with search results&#x20;
+
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+First, **add the library** as detailed in [Quick Start](../quick-start.md).
+
+### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
+
+See above for details.&#x20;
 
 
 
