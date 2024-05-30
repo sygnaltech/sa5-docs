@@ -216,6 +216,8 @@
 * [Lightbox Element ❺](sa5-elements/lightbox/README.md)
   * [CMS & Lightbox + Groups ❺](sa5-elements/lightbox/cms-and-lightbox-+-groups.md)
   * [CMS & Lightbox + Captions ❺](sa5-elements/lightbox/cms-and-lightbox-+-captions.md)
+* [Autocomplete Element ❺](sa5-elements/autocomplete-element/README.md)
+  * [Future](sa5-elements/autocomplete-element/future.md)
 
 ## 📘 sa5-format
 
