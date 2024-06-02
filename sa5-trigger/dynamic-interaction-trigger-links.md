@@ -4,14 +4,18 @@ description: Trigger Your Click Interactions with Links
 
 # Dynamic Interaction Trigger Links ❺
 
-Webflow's interactions are powerful, but they are not easily script-accessible. Our goal is to make them even more useful by making them easier to trigger specific interactions from dynamic content such as rich-text links throughout your page.
+**Webflow's interactions are powerful, but they are not easily script-accessible.**&#x20;
+
+Our goal is to make them even more useful by making them easier to trigger specific interactions from dynamic content such as rich-text links throughout your page.
 
 ## Use Cases
 
-Perhaps the most common use case for this is triggering modal pop-ups. &#x20;
+Perhaps the most common use case for this is triggering Interaction-based modal pop-ups;
 
 * Trigger a CTA pop-up from text-links easily, even within CMS rich text content like a blog post.
-* Trigger CMS-based pop-ups similarly, but targeting the exact pop-up you want. Different offers, different CTA's, additional info, or display a definition when someone clicks a glossary term. &#x20;
+* Trigger CMS-based pop-ups, targeting the exact pop-up you want. Different offers, different CTA's, additional info, or display a definition when someone clicks a glossary term. &#x20;
+
+Although we primarily use this as an interaction trigger, you can think of this more as a proxy-click capability. This means that you can similarly trigger a tab change, a form submission, a slider advance, or anything else that can be clicked.&#x20;
 
 ## Special Note
 
@@ -36,8 +40,6 @@ Because these are set as the link URLs, the test displayed to the user can be an
 
 ## Usage Notes
 
-
-
 ### Basic Setup
 
 * Create your interaction to do whatever you want
@@ -60,29 +62,33 @@ When you are want CMS-sourced modals such as product pop-ups or glossary pop-ups
 
 Now, anywhere in your page, you can link to `##slug` to trigger that item.&#x20;
 
-## Considering <a href="#getting-started-nocode" id="getting-started-nocode"></a>
-
-wfu-ix-trigger-type ( optional ) = click | timer
-
-wfu-ix-trigger-ms = 10000
-
 ## Use Cases
 
-Trigger -> Interaction
+### You want to click an element, and have a popup appear
 
-### You want to click an element, and have an interaction run
+* Create your interaction-based popup so that it is triggered by a button. The button can be hidden, but it is needed to invoke the interaction.&#x20;
+* Add the `wfu-ix-id` custom attribute to that button&#x20;
+* To the triggering element, add the `wfu-ix-trigger` attribute  &#x20;
 
+### You want to click a text link, like a dictionary definition, product, or a staff member's name, and have a link-specific pop-up appear&#x20;
 
+* Create your interaction-based popup so that it is triggered by a button. The button can be hidden, but it is needed to invoke the interaction.&#x20;
+* Add the `wfu-ix-id` custom attribute to that button&#x20;
+* In your text, create any link you want, and set the link href so that it begins with `##` and then the ID you've assigned to the your modal button&#x20;
 
-### You want to click a link, like a dictionary definition or a map pin, and have an interaction run
-
-This data may be from the CMS&#x20;
+You can generate the modals and their triggering buttons from the CMS, and use the slug as the ID.  This makes it easy for you to invoke CMS-generated popups. &#x20;
 
 ### You want an interaction to trigger automatically after N seconds
 
+FUTURE.&#x20;
 
+## Getting Started ( NOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 
+There are currently no configuration options for the data-binding feature, so we’ll use a _no-code_ integration approach.
 
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+First, **add the library** as detailed in [Quick Start](../sa5-url/quick-start.md).
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 

@@ -164,6 +164,8 @@
 
 ## 📘 sa5-trigger
 
+* [🔍 About SA5's Trigger Lib](sa5-trigger/about.md)
+* [🚀 Quick Start | SA5 Trigger](sa5-trigger/quick-start.md)
 * [Dynamic Interaction Trigger Links ❺](sa5-trigger/dynamic-interaction-trigger-links.md)
 * [Future Plans 🧪📝](sa5-trigger/future-plans.md)
 
@@ -177,7 +179,8 @@
 
 ## 📘 sa5-ui
 
-* [DEPRECATING](sa5-ui/deprecating.md)
+* [🔍 About SA5's UI Lib](sa5-ui/about.md)
+* [🚀 Quick Start | SA5 UI](sa5-ui/quick-start.md)
 * [5-Star Ratings Component ❺](sa5-ui/5-star-ratings-component.md)
 
 ## 📘 sa5-url

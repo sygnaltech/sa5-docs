@@ -11,6 +11,18 @@ And also possibly;&#x20;
 
 * Trigger GTM datalayer and events &#x20;
 
+
+
+## Considering <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+wfu-ix-trigger-type ( optional ) = click | timer
+
+wfu-ix-trigger-ms = 10000
+
+
+
+
+
 ## Syntax Expansion
 
 Likely we'll support named or "slotted" formats;&#x20;

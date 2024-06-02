@@ -64,20 +64,13 @@ Due to the way the shaded area works, the color and darkness is not easily speci
 * Apply a class to the EMBED with a width and minimum height in order to make the Embed visible in the designer.
 * You can put temporary contents in the Embedded DIV for designer display, this will be wiped.
 
-## Getting Started <a href="#getting-started" id="getting-started"></a>
-
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+## Getting Started ( NOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 
 There are currently no configuration options for the data-binding feature, so we’ll use a _no-code_ integration approach.
 
-Install code in **before HEAD**, generally site-wide.
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-{% code overflow="wrap" %}
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.11/dist/css/webflow-ui.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.11/dist/nocode/webflow-ui.js"></script>
-```
-{% endcode %}
+First, **add the library** as detailed in [Quick Start](../sa5-url/quick-start.md).
 
 ### STEP 2 - Create an EMBED where you want a WFU Rating component to appear. <a href="#step-2---create-an-embed-where-you-want-a-wfu-rating-component-to-appear" id="step-2---create-an-embed-where-you-want-a-wfu-rating-component-to-appear"></a>
 
@@ -123,9 +116,11 @@ Set a min-height of 20px, to ensure the element is visible at design time, for l
 
 Set the `wfu-rating` attribute of the div to whatever value you want, between 0.0 and 5.0.
 
-You can make this a fixed value, however generally, you’d place this in a Collection List, and use a Rating value from the Collection.
+{% hint style="info" %}
+You can make the rating a fixed value, however generally, you’d place this in a Collection List, and bind the attribute to a Rating field from the Collection.
+{% endhint %}
 
-CMS Collection setup;
+Here's how to set that up;
 
 * Use a numeric field named e.g. `Rating`
 * Configure the field’s minimum to 0, maximum to 5, with precision 1.0. A precision of 1 is fine if you will not be using fractional ratings like 3.5.
