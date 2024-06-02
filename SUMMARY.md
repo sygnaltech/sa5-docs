@@ -158,9 +158,11 @@
 
 * [HTML Tables](sa5-table/html-tables.md)
 
-## 📘 sa5-hotkeys <a href="#hotkeys" id="hotkeys"></a>
+## 📘 sa5-hotkeys
 
-* [Hotkeys ❺](hotkeys/hotkeys.md)
+* [🔍 About SA5's Hotkeys Lib](sa5-hotkeys/about.md)
+* [🚀 Quick Start | SA5 Hotkeys](sa5-hotkeys/quick-start.md)
+* [Hotkeys ❺](sa5-hotkeys/hotkeys.md)
 
 ## 📘 sa5-trigger
 

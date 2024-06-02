@@ -88,20 +88,7 @@ There are currently no configuration options for the data-binding feature, so we
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](../sa5-url/quick-start.md).
-
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
-
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-Install this code in **before HEAD**, site-wide or on the specific pages you want the script to affect.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Interactions --> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.25/dist/nocode/webflow-ix.js"></script> 
-```
-{% endcode %}
+First, **add the library** as detailed in [Quick Start](quick-start.md).
 
 ### STEP 2 - Setup your data-binding attributes <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 

@@ -4,14 +4,15 @@ description: Capture specific hotkeys to perform specific tasks
 
 # Hotkeys ❺
 
-## Overview
+We use hotkeys all the time, like CTRL+C... but did you know that you can create hotkeys uniquely for your website?&#x20;
 
-Supercharge your site by providing quick capabilities through hotkeys.
+This is useful for all sorts of things...&#x20;
 
 * Help menus
 * Search
 * Filter resets
 * Navigation
+* Admin shortcuts, like switch-to-edit-mode&#x20;
 
 ## Use Cases
 
@@ -65,37 +66,18 @@ Based on [Hotkeys.js](https://github.com/jaywcjlove/hotkeys-js).
 
 Hotkeys.js has been tested and should work in.
 
-```
-Internet Explorer 6+
-Safari
-Firefox
-Chrome
-```
+* Chrome
+* Safari
+* Firefox&#x20;
+* Internet Explorer 6+&#x20;
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Getting Started ( NOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
+
+There are currently no configuration options for the data-binding feature, so we’ll use a _no-code_ integration approach.
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
-
-{% hint style="info" %}
-This feature is using WFU's v5 new TypeScript-based library, so it is has different URLs and _code placement_ from the v4 JS-based library.&#x20;
-
-You can use both the v4 and v5 libraries simultaneously to get the full feature set during migration.
-{% endhint %}
-
-Add this to the **before HEAD** custom code area of your site or page.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Hotkeys -->
-<script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.31/dist/nocode/webflow-hotkeys.js"
-></script> 
-```
-{% endcode %}
-
-Nothing is needed in the before BODY code area.&#x20;
+First, **add the library** as detailed in [Quick Start](quick-start.md).
 
 ### STEP 2 - Implement your callback handlers <a href="#step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter"></a>
 
