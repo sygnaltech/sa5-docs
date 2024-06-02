@@ -46,6 +46,10 @@ e.g. `x-value` = `foo` will be applied as `value` = `foo`&#x20;
 
 When you use this feature with Webflow's CMS-bound attributes, you can initialize the input field's value from any CMS field you choose.&#x20;
 
+{% hint style="info" %}
+Note that `<textarea>` elements do not initialize from a value attribute once the page has loaded. To make this more convenient, SA5 specially handles the situation where you are setting `x-value` on a `<textarea>` element, and it will set the property as well to ensure it initializes as expected.&#x20;
+{% endhint %}
+
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
