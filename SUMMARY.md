@@ -120,7 +120,7 @@
 * [Code Formatting ❺🧪](sa5-html/code-formatting.md)
 * [CMS Code Injection ❺🧪](sa5-html/cms-code-injection.md)
 * [Responsive Tables ❺🧪](sa5-html/responsive-tables.md)
-* [Text Formatting](sa5-html/text-formatting.md)
+* [Text Formatting ❺🧪](sa5-html/text-formatting.md)
 
 ## 📘 sa5-layout
 
