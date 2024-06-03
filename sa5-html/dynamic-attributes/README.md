@@ -2,7 +2,7 @@
 description: Create any custom attribute, even if it's reserved by Webflow
 ---
 
-# SA5 Dynamic Attributes
+# Dynamic Attributes
 
 ## Overview
 
@@ -31,8 +31,17 @@ _abbr, accept, action, align, alt, autofocus, autoplay, bgcolor, border, char, c
 This is a more technical feature, but it has an incredible range of uses. Here are a few;
 
 * Use `x-value` = ( your value ) to initialize an INPUT element from a CMS collection item. &#x20;
-  * Note, doing this on a Textarea element will initialize it as well, even though the content is bound from inner text.&#x20;
 * Use `x-type` = `date` on an INPUT element to change it to a date type&#x20;
+
+## Demos <a href="#usage-notes" id="usage-notes"></a>
+
+{% embed url="https://sa5-html.webflow.io/sa5-dynamic-attributes" %}
+Demo
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/sa5-html" %}
+Cloneable
+{% endembed %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
@@ -46,8 +55,26 @@ e.g. `x-value` = `foo` will be applied as `value` = `foo`&#x20;
 
 When you use this feature with Webflow's CMS-bound attributes, you can initialize the input field's value from any CMS field you choose.&#x20;
 
+## Special Element Handling <a href="#wfu-sort-dir-attribute" id="wfu-sort-dir-attribute"></a>
+
+### Textarea Elements
+
+Add the `x-value` attribute to a textarea element, and SA5 will ensure it is applied to the element on page load by setting both the element attribute and the element _property_.
+
 {% hint style="info" %}
-Note that `<textarea>` elements do not initialize from a value attribute once the page has loaded. To make this more convenient, SA5 specially handles the situation where you are setting `x-value` on a `<textarea>` element, and it will set the property as well to ensure it initializes as expected.&#x20;
+In many browsers, `<textarea>` elements behave differently than `<input>` elements, in that they will initialize their editable content from a value attribute but only if that attribute exists as part of the initial page content. If it is added later via script, it is not recognized. We resolve this by setting the property as well.&#x20;
+{% endhint %}
+
+### Checkbox Elements
+
+When you add the `x-checked` attribute directly to a checkbox element, SA5 will evaluate the value as true or false and set the checked state accordingly.&#x20;
+
+### Select Elements
+
+When you add the `x-value` attribute to a select element, SA5 will select the first matching option whose value matches the attribute value you've specified.&#x20;
+
+{% hint style="info" %}
+Note that in `<select>` elements, `<option>`s have both a value and text content. The text content you see is not what's selected on, so ensure your values are set correctly. &#x20;
 {% endhint %}
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
