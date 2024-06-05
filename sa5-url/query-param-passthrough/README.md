@@ -13,7 +13,7 @@ description: >-
 ## Use Cases
 
 * Pass UTM tracking params from the landing page, as the user navigates through the site. Capture them when the user submits a form.
-  * See SA5's Data-binding features for no-code binding of [querystring params](../sa5-data/data-sources/url-query-params.md) to form inputs.&#x20;
+  * See SA5's Data-binding features for no-code binding of [querystring params](../../sa5-data/data-sources/url-query-params.md) to form inputs.&#x20;
 * Pass referrer-tracking params in the same way&#x20;
 
 ## Configuration
@@ -91,7 +91,7 @@ Defaults to _true_.
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](quick-start.md).
+First, **add the library** as detailed in [Quick Start](../quick-start.md).
 
 ### STEP 2 - Add your Configuration Callback
 

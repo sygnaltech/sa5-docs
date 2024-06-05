@@ -189,7 +189,8 @@
 
 * [🔍 About SA5's Url Lib](sa5-url/about.md)
 * [🚀 Quick Start | SA5 Url](sa5-url/quick-start.md)
-* [Query Param Passthrough ❺](sa5-url/query-param-passthrough.md)
+* [Query Param Passthrough ❺](sa5-url/query-param-passthrough/README.md)
+  * [Future](sa5-url/query-param-passthrough/future.md)
 * [External Link Targeting ❺](sa5-url/external-link-targeting.md)
 * [Relative Link Fixups ❺⛔](sa5-url/relative-link-fixups.md)
 
