@@ -126,12 +126,12 @@
 
 * [🔍 About SA5's Layout Lib](sa5-layout/about/README.md)
   * [Future](sa5-layout/about/future.md)
+* [🚀 Quick Start | SA5 Layout Lib](sa5-layout/quick-start.md)
 * [Element Groups ❺🧪](sa5-layout/element-groups.md)
 * [Layout ❺🧪](sa5-layout/layout/README.md)
   * [Tabs Layout Handler](sa5-layout/layout/tabs-layout-handler.md)
   * [Slider Layout Handler](sa5-layout/layout/slider-layout-handler.md)
   * [Future](sa5-layout/layout/future.md)
-* [🚀 Quick Start | SA5 Layout Lib](sa5-layout/quick-start.md)
 
 ## 📘 sa5-richtext
 
