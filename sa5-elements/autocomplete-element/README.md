@@ -10,6 +10,16 @@ Autocomplete, or predictive input, is a popular UX pattern that helps users navi
 * A list, which appears and filters to display only items that partially-match the specified text.
   * Matching is typically anywhere in the string, and case-insensitive.
 
+## Demonstration
+
+Here's an example showing SA5's autocomplete element used for navigation.  In this example we have used a custom styled scrollbar, category headings and three collection lists, and the site search option.
+
+<div align="center">
+
+<figure><img src="../../.gitbook/assets/2024-06-09_10-39-20.gif" alt=""><figcaption></figcaption></figure>
+
+</div>
+
 ## Use Cases
 
 The most common use cases for an autocomplete UX include;
