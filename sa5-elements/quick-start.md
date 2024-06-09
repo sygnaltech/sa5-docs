@@ -10,9 +10,12 @@ description: How to Easily Add SA5's Video Enhancements to Your Webflow Site
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attributes 5 | elements --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.21/dist/css/webflow-elements.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.21/dist/nocode/webflow-elements.js"></script>
+<!-- Sygnal Attributes 5 | Elements --> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.24/dist/css/webflow-elements.css"> 
+<script defer 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.24/dist/nocode/webflow-elements.js"
+  dev-src="http://127.0.0.1:4000/dist/nocode/webflow-elements.js"
+  ></script>
 ```
 {% endcode %}
 
