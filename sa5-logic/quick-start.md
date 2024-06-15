@@ -1,8 +1,8 @@
 ---
-description: How to Easily Add SA5's Layout Enhancements to Your Webflow Site
+description: How to Easily Add SA5's Logic Enhancements to Your Webflow Site
 ---
 
-# 🚀 Quick Start | SA5 Layout Lib
+# 🚀 Quick Start | SA5 Logic Lib
 
 {% hint style="success" %}
 All of SA5's Layout features are now consolidated into a single library, so you only need one library include.&#x20;
@@ -22,9 +22,9 @@ This library is under development, and is not yet available.
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attributes 5 | Layout --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/css/webflow-layout.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-layout.js"></script>
+<!-- Sygnal Attributes 5 | Logic --> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/css/webflow-logic.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-logic.js"></script>
 ```
 {% endcode %}
 

@@ -133,6 +133,14 @@
   * [Slider Layout Handler](sa5-layout/layout/slider-layout-handler.md)
   * [Future](sa5-layout/layout/future.md)
 
+## 📘 sa5-logic
+
+* [🔍 About SA5's Logic Lib](sa5-logic/about/README.md)
+  * [Future](sa5-logic/about/future.md)
+* [🚀 Quick Start | SA5 Logic Lib](sa5-logic/quick-start.md)
+* [If ❺🧪](sa5-logic/if.md)
+* [Switch ❺🧪](sa5-logic/switch.md)
+
 ## 📘 sa5-richtext
 
 * [🔍 About SA5's Rich Text Lib](sa5-richtext/about/README.md)
