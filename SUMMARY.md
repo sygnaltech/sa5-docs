@@ -34,6 +34,7 @@
 * [User Agent Detection](detect/user-agent-detection.md)
 * [Geolocation Detection ❺🧪](detect/geo/README.md)
   * [Cache Setup v4](detect/geo/v4.md)
+* [Detect Incognito Mode](detect/detect-incognito-mode.md)
 
 ## 📘 sa5-analytics
 
