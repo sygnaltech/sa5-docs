@@ -163,6 +163,8 @@
 * [Parse To](sa5-richtext/parse-to.md)
 * [Richtext ❺🧪](sa5-richtext/richtext/README.md)
   * [CSS Isolation](sa5-richtext/richtext/css-isolation.md)
+* [Blockquotes](sa5-richtext/blockquotes.md)
+* [Call-Outs](sa5-richtext/call-outs.md)
 
 ## 📘 sa5-table
 
