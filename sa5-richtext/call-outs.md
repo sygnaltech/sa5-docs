@@ -57,7 +57,7 @@ Prefixes;&#x20;
 | `/caution` | `!`  | Caution. Orange. |
 | `/note`    |      |                  |
 | `/faq`     | `?`  |                  |
-| `/feature` |      | Success. Green.  |
+| `/feature` | `$`  | Success. Green.  |
 |            |      | Yellow           |
 |            |      | Purple           |
 
@@ -83,6 +83,24 @@ Control with CSS and `::before` styling&#x20;
 [https://codepen.io/memetican/pen/abrqvpe/17a1a0ec34b7dbfa470b32a4d80ec090](https://codepen.io/memetican/pen/abrqvpe/17a1a0ec34b7dbfa470b32a4d80ec090)
 
 
+
+
+
+Sygnal Style Guide | Main&#x20;
+
+
+
+
+
+Use a theme prefix for classes?&#x20;
+
+e.g. dark | light&#x20;
+
+vivid | pastel&#x20;
+
+
+
+.sa5-callout.is-info-pastel
 
 
 
