@@ -19,8 +19,8 @@ This feature is using SA5's new TypeScript-based library, so it is has different
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Rich Text --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/css/webflow-richtext.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-richtext.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/css/webflow-richtext.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-richtext.js"></script>
 ```
 {% endcode %}
 

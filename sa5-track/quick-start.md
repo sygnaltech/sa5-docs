@@ -11,8 +11,8 @@ description: How to Easily Add SA5's Tracking to Your Webflow Site
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Track --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.5/dist/css/webflow-track.css"> 
-<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.5/dist/webflow-track.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/css/webflow-track.css"> 
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/webflow-track.js"></script>
 ```
 {% endcode %}
 

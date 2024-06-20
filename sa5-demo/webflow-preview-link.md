@@ -44,7 +44,7 @@ Add this code to the **before BODY** of your site or page.&#x20;
 
 {% code overflow="wrap" %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.11/dist/css/webflow-demo.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.11/dist/nocode/webflow-demo.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/css/webflow-demo.css">
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-demo.js"></script>
 ```
 {% endcode %}

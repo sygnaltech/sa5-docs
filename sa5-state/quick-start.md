@@ -17,8 +17,8 @@ There are currently no configuration options for this library, so we’ll use a 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | State -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.14/dist/css/webflow-state.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.14/dist/nocode/webflow-state.js"></script> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/css/webflow-state.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-state.js"></script> 
 ```
 {% endcode %}
 

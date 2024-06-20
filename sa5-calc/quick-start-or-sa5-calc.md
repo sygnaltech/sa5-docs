@@ -18,7 +18,7 @@ This feature is not yet available for public use.&#x20;
 ```html
 <!-- Sygnal Attributes 5 | Calc -->
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-calc.js"></script> 
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-calc.js"></script> 
 ```
 {% endcode %}
 

@@ -11,7 +11,7 @@ description: How to Easily Add SA5's Trigger Enhancements to Your Webflow Site
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Trigger --> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.25/dist/nocode/webflow-ix.js"></script> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-ix.js"></script> 
 ```
 {% endcode %}
 

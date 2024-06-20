@@ -15,8 +15,8 @@ All of SA5's Membership features are now consolidated into a single library, so 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Modals --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.5/dist/css/webflow-modal.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.5/dist/nocode/webflow-modal.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/css/webflow-modal.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-modal.js"></script>
 ```
 {% endcode %}
 

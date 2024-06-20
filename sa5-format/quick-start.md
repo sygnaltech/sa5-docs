@@ -11,8 +11,8 @@ description: How to Easily Add SA5's Formatting to Your Webflow Site
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Format --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.11/dist/css/webflow-format.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.11/dist/nocode/webflow-format.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/css/webflow-format.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-format.js"></script>
 ```
 {% endcode %}
 

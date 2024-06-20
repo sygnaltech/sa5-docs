@@ -21,7 +21,7 @@ Currently no `defer` used during the experimental phase.
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | SEO --> 
-<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.16/dist/webflow-seo.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/webflow-seo.js"></script>
 ```
 {% endcode %}
 

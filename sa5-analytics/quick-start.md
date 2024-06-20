@@ -20,12 +20,12 @@ This feature is using SA5's new TypeScript-based library, so it is has different
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attributes 5 | Detect --> 
+<!-- Sygnal Attributes 5 | Analytics --> 
 <script>
 // Routing rules
 </script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/css/webflow-detect.css"> 
-<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.32/dist/nocode/webflow-detect.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/css/webflow-detect.css"> 
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-detect.js"></script>
 ```
 {% endcode %}
 

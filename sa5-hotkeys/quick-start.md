@@ -12,7 +12,7 @@ description: How to Easily Add SA5's Hotkeys Support to Your Webflow Site
 ```html
 <!-- Sygnal Attributes 5 | Hotkeys -->
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.31/dist/nocode/webflow-hotkeys.js"
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-hotkeys.js"
 ></script> 
 ```
 {% endcode %}

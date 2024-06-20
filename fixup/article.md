@@ -30,9 +30,9 @@ Add this to the **before HEAD** custom code area of your site or page.
 ```html
 <!-- Sygnal Attributes 5 | Webflow Fixup -->
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.2/dist/nocode/webflow-fixup.min.js"
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-fixup.min.js"
 ></script> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.2/dist/css/webflow-fixup.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/css/webflow-fixup.css">
 ```
 {% endcode %}
 

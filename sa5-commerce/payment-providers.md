@@ -29,7 +29,7 @@ Place in the **before BODY** custom code area.
 
 {% code overflow="wrap" %}
 ```html
-<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.20/dist/webflow-commerce.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/webflow-commerce.js"></script>
 
 <script>
     var payment = new window.sa5.WindcavePayment();
@@ -55,7 +55,7 @@ Place in the **before BODY** custom code area.
 
 {% code overflow="wrap" %}
 ```html
-<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.20/dist/webflow-commerce.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/webflow-commerce.js"></script>
 
 <script>
     var payment = new window.sa5.PaypalPayment();
