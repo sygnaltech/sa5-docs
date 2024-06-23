@@ -4,14 +4,45 @@ description: Tools for better modal & popup solutions in Webflow
 
 # 🔍 About SA5's Webflow Modals & Popups Lib
 
-This library extends Webflow with some capabilities to support modals & popups;
+Modals, popups, and banners are built with a wide range of styles and behaviors. In most cases, interactions are used to handle the show and hide effects, but Webflow doesn't offer any native capabilities for behaviors like;
 
-* Ability to close an element and have it remain closed on the next visit
-* Timed suppression on close, using a cookie
+* Suppression for N days after close
+* Exit intent triggers to open a modal
+
+We also felt that some basic modal mechanics should be more accessible to our clients, in the form of custom attributes that can be easily documented for configuration.
+
+* Timed-trigger for open ( defined in milliseconds )
+* Timed-trigger for close ( defined in milliseconds )
+* Scroll-trigger for open ( defined as page-scroll % )
+* Hover-trigger for open ( placed on any element )&#x20;
+* Click-trigger for open ( placed on any element )&#x20;
+
+The SA5 team wanted an attributes-based infrastructure that allows us to easily create and configure modals, popup and banner behavior in any project.&#x20;
+
+{% hint style="info" %}
+**What are modals?** To SA5, Modals, Popups, and Banners are all the same thing.  They're simply elements in your project which are assigned custom attributes to give them behaviors, so you can create the UX you want.&#x20;
+
+_For convenience, we use the term **modals** to describe any element that you want to assign display, hide, and suppress capabilities to._&#x20;
+{% endhint %}
+
+## Goals
+
+There are a few key goals in our design of this library;
+
+* Full flexibility of configuring how these elements behave, using attributes.&#x20;
+  * How and when triggers work to display, hide, and suppress elements&#x20;
+  * Supporting a wide range of triggers, such as click events, hover, scroll, timers, and exit intent&#x20;
+* Full compatibility with Webflow interactions&#x20;
+* Separation of the styling in interactions from the timing, so that the timing can be easily changed or exist in many variations throughout your project. For example, we want to be able to use interactions to define how a modal "flies in" to the page, but we do not want interactions to specify when that happens, or what kinds of things can trigger it.&#x20;
+  * We also want to separate the "what", so that we can arbitrarily set this up on any element. That can currently be achieved by using Webflow class-based targeting, a hidden sibling trigger button, and a sibling targeting constraint.&#x20;
+
+
+
+
 
 ## Future <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
-Modals, popups, and other UX elements take a huge range of forms. Webflow has no in-built features to support these, and interactions are often the go-to solution. We're gradually exploring ways to expand on this. &#x20;
+
 
 Currently when the element is suppressed, it is removed from the DOM. This is the simple way, however it precludes the ability to manually open and review a message, e.g.;&#x20;
 

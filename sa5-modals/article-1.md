@@ -1,6 +1,6 @@
 ---
 description: >-
-  Automatically show or hyour Webflow modals, popups & more after the user
+  Automatically show or hide your Webflow modals, popups & more after the user
   closes them for a specified number of days.
 ---
 
@@ -68,6 +68,59 @@ First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
 To the outermost element you want to suppress;
 
 * Add a custom attribute of `wfu-modal` = ( name ). Give it any custom name you like. That name will be used in the suppression tracking so you can e.g. have the same modal on every page, and suppress it site-wide.
+
+{% hint style="info" %}
+This name must be unique.
+{% endhint %}
+
+
+
+Multiple triggers ( scroll hover, exit, etc? )&#x20;
+
+
+
+### wfu-modal-trigger = load | click | scroll | hover | exit | timer
+
+Modal triggers display the modal element and fall into two categories - **automatic triggers** and **element triggers**.
+
+**Automatic** triggers occur due to some system event, and are always configured on the modal element directly. These include;
+
+* load triggers immediately on page load
+* timer triggers fire after a specified delay
+* scroll triggers fire at a % of page scrolled
+* exit triggers fire on an exit intent&#x20;
+
+**Element** triggers occur in relation to another element on the page, and are configured on that element;
+
+* `click` triggers
+* `hover` triggers
+* `scroll-into-view` triggers
+
+{% hint style="info" %}
+Element triggers require an additional attribute of `wfu-modal-trigger-target` which specifies the **name** of the modal you are triggering ( as defined by `wfu-modal` )
+{% endhint %}
+
+
+
+### wfu-modal-trigger-config
+
+OPTIONAL, except...&#x20;
+
+* for timer, this is set to ms
+* for scroll, this is set to % of scroll
+
+### wfu-modal-trigger-target = ( name )
+
+Used only with **element** triggers. Specifies the name of the modal you are triggering ( as defined by `wfu-modal` )
+
+Indicates the target element, for triggers which are on a separate element
+
+click, scroll
+
+
+
+
+
 * Add a custom attribute of `wfu-modal-trigger` = `load`.&#x20;
 * Add the suppression duration you want, using `wfu-modal-suppress-days` = ( days ). If unspecified, defaults to about 1 year.&#x20;
 
@@ -77,6 +130,26 @@ To the close element(s) within the modal;
 
 * Add an attribute of `wfu-modal-close` = `true`
 * Add an attribute of `wfu-modal-close-type` = `auto`
+
+
+
+wfu-modal-close-trigger = click | timer
+
+wfu-modal-close-trigger-config = ms&#x20;
+
+wfu-modal-close-trigger-target OPTIONAL = ( name )
+
+Can be placed on any element
+
+If placed on an element within the modal, an unspecified target will automatically target the current modal.&#x20;
+
+
+
+wfu-modal-close-method = remove | hide&#x20;
+
+
+
+
 
 ## Questions? Feature Requests?
 
