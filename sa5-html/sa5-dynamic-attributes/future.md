@@ -4,6 +4,23 @@ description: Future plans for SA5 dynamic attributes
 
 # Future
 
+## Special Elements&#x20;
+
+Checkbox
+
+`x-checked` - when used we'll evaluate the content to SA5 truthy or falsy.&#x20;
+
+* Truthy creates the `checked` attribute
+* Falsy does not&#x20;
+
+Select Option;&#x20;
+
+x-value - when used we'll scan the options list
+
+To set a default option in a `<select>` element, you use the `selected` attribute on the desired `<option>` element. Here's how you can do it in HTML:
+
+Note any data-binding SA5 must be done prior&#x20;
+
 ## \<script> based transforms
 
 Generate an attribute from a specially-typed script block within it, with the purpose being to;

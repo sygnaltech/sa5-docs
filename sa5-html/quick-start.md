@@ -7,7 +7,7 @@ description: >-
 # 🚀 Quick Start | SA5 HTML
 
 {% hint style="success" %}
-All of SA5's HTML features are now consolidated into a single library, so you only need one library include.&#x20;
+All of **SA5's HTML** features are now consolidated into a single library, so you only need one library include.&#x20;
 {% endhint %}
 
 ## How to Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>

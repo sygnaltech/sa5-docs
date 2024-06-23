@@ -10,9 +10,9 @@ Webflow's custom attributes feature is much more powerful with the new CMS bindi
 
 In certain cases, the ability to set these attributes is _crucial_.
 
-SA's Dynamic Attributes feature overcomes this by allowing you to create proxy attributes that are then applied to the page once the page has loaded.&#x20;
+**SA5's Dynamic Attributes** feature overcomes this by allowing you to create proxy attributes that are then applied to the page once the page has loaded.&#x20;
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Webflow's ECommerce Products and Categories do not support Webflow's CMS bound custom attributes. See the Future subpage here for some work we're doing on that.&#x20;
 {% endhint %}
 
@@ -30,18 +30,17 @@ _abbr, accept, action, align, alt, autofocus, autoplay, bgcolor, border, char, c
 
 This is a more technical feature, but it has an incredible range of uses. Here are a few;
 
-* Use `x-value` = ( your value ) to initialize an INPUT element from a CMS collection item. &#x20;
+* Use `x-value` = ( your value ) to initialize an INPUT, TEXTBOX, or SELECT element from a CMS collection item. &#x20;
+* Use `x-checked` = ( boolean value ) to initialize a checkbox element.&#x20;
 * Use `x-type` = `date` on an INPUT element to change it to a date type&#x20;
 
-## Demos <a href="#usage-notes" id="usage-notes"></a>
+{% hint style="warning" %}
+As of 2024-Jun-03, Webflow does not yet support attribute binding to switch ( boolean ) field types or to select ( option ) field types. In a pinch you could use CMS text fields instead.&#x20;
+{% endhint %}
 
-{% embed url="https://sa5-html.webflow.io/sa5-dynamic-attributes" %}
-Demo
-{% endembed %}
+## Demonstration <a href="#usage-notes" id="usage-notes"></a>
 
-{% embed url="https://webflow.com/made-in-webflow/website/sa5-html" %}
-Cloneable
-{% endembed %}
+
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
@@ -55,26 +54,26 @@ e.g. `x-value` = `foo` will be applied as `value` = `foo`&#x20;
 
 When you use this feature with Webflow's CMS-bound attributes, you can initialize the input field's value from any CMS field you choose.&#x20;
 
-## Special Element Handling <a href="#wfu-sort-dir-attribute" id="wfu-sort-dir-attribute"></a>
+### Special Element Handling <a href="#wfu-sort-dir-attribute" id="wfu-sort-dir-attribute"></a>
 
-### Textarea Elements
+To assist with the use case of initializing form fields, we've added special handling exceptions for specific element types;&#x20;
 
-Add the `x-value` attribute to a textarea element, and SA5 will ensure it is applied to the element on page load by setting both the element attribute and the element _property_.
+#### Textarea Elements
+
+Just like an input element, you can use the `x-value` attribute to initialize the content of a Textarea.&#x20;
+
+In browsers, Textarea elements behave a bit differently than Input elements. You can initialize them with a value attribute _before_ page load, but if the attribute is set later by script, that value will not be applied. We set the value _property_ as well to ensure it's applied.&#x20;
+
+#### Checkbox Elements ( Input type=checkbox )
+
+Use  the `x-checked` attribute directly on the Checkbox element itself.  We'll evaluate it as **true** or **false**, and set or remove the `checked` attribute accordingly.&#x20;
+
+#### Select Elements&#x20;
+
+Use  the `x-value` attribute.  We'll select the matching option, by value, if it exists. &#x20;
 
 {% hint style="info" %}
-In many browsers, `<textarea>` elements behave differently than `<input>` elements, in that they will initialize their editable content from a value attribute but only if that attribute exists as part of the initial page content. If it is added later via script, it is not recognized. We resolve this by setting the property as well.&#x20;
-{% endhint %}
-
-### Checkbox Elements
-
-When you add the `x-checked` attribute directly to a checkbox element, SA5 will evaluate the value as true or false and set the checked state accordingly.&#x20;
-
-### Select Elements
-
-When you add the `x-value` attribute to a select element, SA5 will select the first matching option whose value matches the attribute value you've specified.&#x20;
-
-{% hint style="info" %}
-Note that in `<select>` elements, `<option>`s have both a value and text content. The text content you see is not what's selected on, so ensure your values are set correctly. &#x20;
+Note that Select options have both a Name and a Value.  It's the Value that is matched, not the Name.  Ensure your Values are set correctly.&#x20;
 {% endhint %}
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
