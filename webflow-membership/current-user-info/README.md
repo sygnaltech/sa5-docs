@@ -1,5 +1,5 @@
 ---
-description: Get the details of the currently logged-in user In Webflow Memberships
+description: In Webflow Memberships, get details of the currently logged-in user
 ---
 
 # Logged-In User Info ❺
@@ -22,14 +22,14 @@ Features;
 
 * Get the current user's email, name, and marketing opt-in status&#x20;
 * Get a unique, User-specific alternate ID which can be used for system integrations&#x20;
-* Get [custom user fields](custom-user-fields.md)&#x20;
-* Get [access groups](access-groups/)&#x20;
+* Get [custom user fields](../../sa5-user-accounts/logged-in-user-info/custom-user-fields.md)&#x20;
+* Get [access groups](../../sa5-user-accounts/logged-in-user-info/access-groups/)&#x20;
 * Heavily optimized, with a multi-layered, asynchronous load approach to assembling the user data. &#x20;
 
 Limitations;&#x20;
 
 * For custom user fields, the File field type is unsupported for now&#x20;
-* Currently the Webflow UserID is not easily available. See here for [solutions](getting-webflows-userid.md), if you need it for external system integrations with Webflow's API.&#x20;
+* Currently the Webflow UserID is not easily available. See here for [solutions](../../sa5-user-accounts/logged-in-user-info/getting-webflows-userid.md), if you need it for external system integrations with Webflow's API.&#x20;
 * Currently this library depends on the User Account screen in order to access user data and compose the user object. You can do what you want with your User Account page however those user fields must exist in the page ( even hidden ) in order for this library to work.  &#x20;
 * Read-only. The library is designed to read user data, but not to update it.&#x20;
 
@@ -97,7 +97,7 @@ If a user is logged in, any data-bound fields will be populated automatically. Y
 {% hint style="danger" %}
 **IMPORTANT:** This library depends on Webflow's User Account  page ( at`/user-account` ) as the mechanism to access and load User data.&#x20;
 
-All basic user info fields MUST exist, including Name, Email, and the Opt-in checkbox. These fields may be hidden, but they MUST exist in the page. Custom User Data fields must also exist if you want them, see [Custom User Fields](custom-user-fields.md) for details.&#x20;
+All basic user info fields MUST exist, including Name, Email, and the Opt-in checkbox. These fields may be hidden, but they MUST exist in the page. Custom User Data fields must also exist if you want them, see [Custom User Fields](../../sa5-user-accounts/logged-in-user-info/custom-user-fields.md) for details.&#x20;
 
 _If you have removed any fields or need to add custom fields, you can add these in using the right side designer menu when the form is selected on the User Account page._&#x20;
 {% endhint %}
@@ -147,7 +147,7 @@ Don't blindly copy and paste URLs, you're much better to copy the code block her
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](../quick-start.md).
+First, **add the library** as detailed in [Quick Start](../../sa5-user-accounts/quick-start.md).
 
 ### STEP 2 - Use the `wfu-bind` attribute to automatically load data into DOM elements&#x20;
 

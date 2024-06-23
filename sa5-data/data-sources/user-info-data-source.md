@@ -32,7 +32,7 @@ wfu-bind = $user.data.link-field
 \{{ $user.data.link-field \}}&#x20;
 
 {% hint style="success" %}
-This functionality is available when you are using [SA5's User Info](../../sa5-user-accounts/logged-in-user-info/) library.
+This functionality is available when you are using [SA5's User Info](../../webflow-membership/current-user-info/) library.
 {% endhint %}
 
 

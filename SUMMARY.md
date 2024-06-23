@@ -250,7 +250,7 @@
 
 * [🔍 About SA5's Webflow User Accounts Lib](sa5-user-accounts/about.md)
 * [🚀 Quick Start | SA5 User Accounts](sa5-user-accounts/quick-start.md)
-* [Logged-In User Info ❺](sa5-user-accounts/logged-in-user-info/README.md)
+* [Logged-In User Info ❺](webflow-membership/current-user-info/README.md)
   * [Custom User Fields](sa5-user-accounts/logged-in-user-info/custom-user-fields.md)
   * [Webflow's UserID](sa5-user-accounts/logged-in-user-info/webflows-userid.md)
   * [Access Groups](sa5-user-accounts/logged-in-user-info/access-groups/README.md)

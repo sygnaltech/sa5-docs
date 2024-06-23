@@ -31,7 +31,7 @@ window.sa5.push(['getMembershipConfig',
 ```
 {% endcode %}
 
-Once you've added the library, both the [User Info](logged-in-user-info/) and the [Advanced Log-In & Sign-Up Flow](advanced-log-in-and-sign-up-flow.md) features are available to use.
+Once you've added the library, both the [User Info](../webflow-membership/current-user-info/) and the [Advanced Log-In & Sign-Up Flow](advanced-log-in-and-sign-up-flow.md) features are available to use.
 
 ## Current User Info Quick Start
 
@@ -45,7 +45,7 @@ The **User Info** library can be considered as 3 feature sets.&#x20;
 
 **User info** works automatically behind the scenes, and gathers data _when a User first logs in_.&#x20;
 
-To access User Info, you can use the [data-binding feature](logged-in-user-info/) on an element, such as a form field. Add a custom attribute of `wfu-bind` with the [DSD](https://attr.sygnal.com/webflow-membership/logged-in-user-info#accessing-user-information) you want to the element you want data-bound.&#x20;
+To access User Info, you can use the [data-binding feature](../webflow-membership/current-user-info/) on an element, such as a form field. Add a custom attribute of `wfu-bind` with the [DSD](https://attr.sygnal.com/webflow-membership/logged-in-user-info#accessing-user-information) you want to the element you want data-bound.&#x20;
 
 For example, this custom attribute setting on an INPUT element will data-bind the user's email;
 
