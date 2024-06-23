@@ -1,7 +1,3 @@
----
-description: Give your number & currency display the look you want
----
-
 # Format Numbers & Currencies ❺
 
 Webflow supports the storage of numbers, including integers and decimals, in the CMS, but has virtually no formatting options.
@@ -22,7 +18,7 @@ And more will come as [users request](mailto:wfu@sygnal.com).
 ## Demonstration <a href="#usage-notes" id="usage-notes"></a>
 
 {% embed url="https://webflow.com/made-in-webflow/website/format-numbers-currency" %}
-Demonstration and Cloneable
+Cloneable
 {% endembed %}
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
@@ -41,9 +37,26 @@ Also, use Webflow’s designer to format the number of decimal places you want t
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](quick-start.md).
+There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
 
-### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
+Add this CSS script to the HEAD of your site or page.
+
+{% code overflow="wrap" %}
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/dist/css/webflow-format.min.css">
+```
+{% endcode %}
+
+Add this JS reference to the BODY of your site or page.
+
+{% code overflow="wrap" %}
+```html
+<script type="module" src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@4.11/src/nocode/webflow-format.min.js"></script>
+```
+{% endcode %}
+
+### STEP 2 - Apply `wfu-format` to the elements you want to format <a href="#step-2---apply-wfu-format-to-the-elements-you-want-to-format" id="step-2---apply-wfu-format-to-the-elements-you-want-to-format"></a>
 
 See above for details.
 
+\

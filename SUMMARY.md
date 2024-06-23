@@ -242,7 +242,7 @@
 
 * [🔍 About SA5's Format Lib](sa5-format/about.md)
 * [🚀 Quick Start | SA5 Format](sa5-format/quick-start.md)
-* [Format Numbers & Currencies ❺](sa5-format/format-numbers-and-currencies.md)
+* [Format Numbers & Currencies ❺](webflow-format/format-numbers-and-currencies.md)
 * [Format Dates ❺](sa5-format/format-dates/README.md)
   * [Future - Date formatting](sa5-format/format-dates/future-date-formatting.md)
 
@@ -250,7 +250,7 @@
 
 * [🔍 About SA5's Webflow User Accounts Lib](sa5-user-accounts/about.md)
 * [🚀 Quick Start | SA5 User Accounts](sa5-user-accounts/quick-start.md)
-* [Logged-In User Info ❺](webflow-membership/current-user-info/README.md)
+* [Logged-In User Info ❺](webflow-membership/get-logged-in-user-info/README.md)
   * [Custom User Fields](sa5-user-accounts/logged-in-user-info/custom-user-fields.md)
   * [Webflow's UserID](sa5-user-accounts/logged-in-user-info/webflows-userid.md)
   * [Access Groups](sa5-user-accounts/logged-in-user-info/access-groups/README.md)
@@ -307,7 +307,7 @@
 
 ## 📘 sa5-countup
 
-* [CountUp Animated Numbers](sa5-countup/countup.md)
+* [CountUp Animated Numbers](webflow-countup/countup.md)
 
 ## 📘 sa5-seo <a href="#seo" id="seo"></a>
 
@@ -372,7 +372,7 @@
 * [Repeater ⛔](deprecated/repeater.md)
 * [Auto-Size IFRAMEs ⛔](deprecated/auto-size-iframes.md)
 * [Lipsum Generator ⛔](deprecated/lipsum-generator.md)
-* [CMS-Bound Custom Attributes ⛔](deprecated/cms-bound-custom-attributes.md)
+* [CMS-Bound Custom Attributes ⛔](webflow-html/cms-bound-custom-attributes.md)
 * [JSON Formatter ⛔](deprecated/json-formatter.md)
 
 ## 📘 HYPERSERVE
