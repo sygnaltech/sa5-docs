@@ -1,7 +1,5 @@
 ---
-title: Blogging Like a Hacker
-ver: 1.1234
-description: Webflow Utils ( WFU ), reloaded
+description: Webflow Utils ( WFU ), reloaded for 2023
 ---
 
 # What is Sygnal Attributes?

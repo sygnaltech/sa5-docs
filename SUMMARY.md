@@ -8,7 +8,7 @@
 
 * [Sygnal Attributes v5](README.md)
 * [How to Add Custom Code](overview/how-to-add-custom-code.md)
-* [What is Sygnal Attributes?](overview/readme.md)
+* [What is Sygnal Attributes?](<README (1).md>)
 * [What's New?](overview/whats-new.md)
 * [Library Modules](overview/whats-new-1.md)
 * [Technical Notes & Goals](overview/technical-notes-and-goals/README.md)
@@ -265,6 +265,7 @@
   * [⏩ Future Plans & Ideas](sa5-user-accounts/logged-in-user-info/future-plans-and-ideas.md)
   * [BETA testing](sa5-user-accounts/logged-in-user-info/beta-testing.md)
   * [Technical Notes - Interfaces](sa5-user-accounts/logged-in-user-info/technical-notes-interfaces.md)
+  * [Future Development](sa5-user-accounts/logged-in-user-info/future-development.md)
 * [Advanced Log-In & Sign-Up Flow ❺](sa5-user-accounts/advanced-log-in-and-sign-up-flow.md)
 * [Conditional Element Display ❺](sa5-user-accounts/conditional-element-display.md)
 * [Expand Login Button ❺](sa5-user-accounts/expand-login-button.md)
