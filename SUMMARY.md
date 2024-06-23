@@ -142,6 +142,13 @@
 * [If ❺🧪](sa5-logic/if.md)
 * [Switch ❺🧪](sa5-logic/switch.md)
 
+## 📘 sa5-booking
+
+* [🔍 About SA5's Booking Lib](sa5-booking/about.md)
+* [🚀 Quick Start | SA5 Booking Lib](sa5-booking/quick-start.md)
+* [GetTimely ❺🧪](sa5-booking/gettimely.md)
+* [SimplyBook ❺🧪](sa5-booking/simplybook.md)
+
 ## 📘 sa5-richtext
 
 * [🔍 About SA5's Rich Text Lib](sa5-richtext/about/README.md)
@@ -290,6 +297,7 @@
 
 * [🔍 About SA5's Webflow Modals & Popups Lib](sa5-modals/about.md)
 * [🚀 Quick Start | SA5 Modals & Popups](sa5-modals/quick-start.md)
+* [Webflow Modals ❺🧪](sa5-modals/webflow-modals.md)
 * [Webflow Modals & Popups Suppression](sa5-modals/article.md)
 * [Webflow Modals & Popups Auto-Open and Auto-Close](sa5-modals/article-1.md)
 * [Page 1](sa5-modals/page-1.md)
@@ -299,6 +307,12 @@
 * [🔍 About SA5's Custom Form Select Lib](sa5-selectcustom/about.md)
 * [🚀 Quick Start | SA5 Custom Form Select](sa5-selectcustom/quick-start.md)
 * [Custom Form Select ❺🧪](sa5-selectcustom/article.md)
+
+## 📘 sa5-effects
+
+* [🔍 About SA5's Effects Lib](sa5-effects/about.md)
+* [🚀 Quick Start | SA5 Effects](sa5-effects/quick-start.md)
+* [Depthmap (Fake 3D) Image ❺🧪](sa5-effects/article.md)
 
 ## 📘 sa5-fixup <a href="#fixup" id="fixup"></a>
 

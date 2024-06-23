@@ -59,7 +59,7 @@ To the close element(s) within the modal;
 * Add an attribute of `wfu-modal-close` = `true`
 * Add an attribute of `wfu-modal-close-type` = `auto`
 
-## # Considering
+## Considering
 
 wfu-modal-action = open | close
 
@@ -68,6 +68,18 @@ wfu-modal-action-method = auto | interaction
 wfu-modal-action-trigger = click | timer | scroll | exit
 
 wfu-modal-action-trigger-ms = 10000
+
+## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+This library uses attributes only, so we've taken a NOCODE approach to its design.
+
+{% hint style="info" %}
+First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
+{% endhint %}
+
+### Apply the custom attributes based on your configuration needs <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+See above, and the feature-specific sub pages for details.
 
 ## Questions? Feature Requests?
 
