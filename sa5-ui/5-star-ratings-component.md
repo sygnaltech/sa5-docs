@@ -18,7 +18,7 @@ Generate CMS-compatible 5-star ratings on your site using a simple HTML embed an
 
 ## Examples
 
-See here for a [demonstration](https://wfu.sygnal.com/docs/webflow-ui/ratings/).
+See here for a demonstration.
 
 View source to see the specifics on how these demos work.
 

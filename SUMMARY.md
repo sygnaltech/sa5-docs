@@ -1,7 +1,6 @@
 # Table of contents
 
 * [➡️ Github Repo](https://github.com/sygnaltech/webflow-util)
-* [Legacy Docs ( WFU )](https://wfu.sygnal.com/)
 * [👫 Sygnal Attributes Community](https://sygnal-attr.discourse.group/)
 
 ## 📘 Overview
