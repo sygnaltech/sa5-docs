@@ -242,7 +242,7 @@
 
 * [🔍 About SA5's Format Lib](sa5-format/about.md)
 * [🚀 Quick Start | SA5 Format](sa5-format/quick-start.md)
-* [Format Numbers & Currencies ❺](webflow-format/format-numbers-and-currencies.md)
+* [Format Numbers & Currencies ❺](sa5-format/format-numbers-and-currencies.md)
 * [Format Dates ❺](sa5-format/format-dates/README.md)
   * [Future - Date formatting](sa5-format/format-dates/future-date-formatting.md)
 

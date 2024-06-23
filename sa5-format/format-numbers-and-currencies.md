@@ -1,3 +1,7 @@
+---
+description: Give your number & currency display the look you want
+---
+
 # Format Numbers & Currencies ❺
 
 Webflow supports the storage of numbers, including integers and decimals, in the CMS, but has virtually no formatting options.
