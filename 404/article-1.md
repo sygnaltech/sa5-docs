@@ -16,12 +16,12 @@ _404's happen_ - but they don't need to be the end of the road. Help your visito
 This URL points to a Webflow site, for which the page does not exist;
 
 ```
-https://www.coachmike.live/blog/anger-management-for-couples
+https://www.sygnal.com/blog/export-redirects
 ```
 
 Click the link to see the 404 lib auto-populate a Webflow site search input.&#x20;
 
-{% embed url="https://www.coachmike.live/blog/anger-management-for-couples" %}
+{% embed url="https://www.sygnal.com/blog/export-redirects" %}
 
 ## Usage Notes <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
