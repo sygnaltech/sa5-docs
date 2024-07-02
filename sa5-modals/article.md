@@ -4,7 +4,13 @@ description: >-
   closes them for a specified number of days.
 ---
 
-# Webflow Modals & Popups Suppression
+# Dismissible Elements
+
+{% hint style="danger" %}
+Important, the attributes on this feature are likely to change as we complete development on the new modals feature.  We'll retain the "dismiss-only" feature, but it may change names to e.g. `wfu-dismiss` &#x20;
+{% endhint %}
+
+
 
 This feature enables you to easily "close" and suppress UI elements so that they will not appear for a specified number of days, even on page reload.&#x20;
 
@@ -12,7 +18,7 @@ It's primarily used for;
 
 * Alert banners
 * Notices
-* Modals & pop-ups
+* Interactions ( IX2 )-based modals & pop-ups&#x20;
 
 But can be used for any elements that you want to suppress.
 

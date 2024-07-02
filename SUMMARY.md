@@ -296,8 +296,8 @@
 
 * [🔍 About SA5's Webflow Modals & Popups Lib](sa5-modals/about.md)
 * [🚀 Quick Start | SA5 Modals & Popups](sa5-modals/quick-start.md)
-* [Webflow Modals ❺🧪](sa5-modals/webflow-modals.md)
-* [Webflow Modals & Popups Suppression](sa5-modals/article.md)
+* [Webflow Popups & Modals ❺🧪](sa5-modals/webflow-popups-and-modals.md)
+* [Dismissible Elements](sa5-modals/article.md)
 * [Webflow Modals & Popups Auto-Open and Auto-Close](sa5-modals/article-1.md)
 * [Page 1](sa5-modals/page-1.md)
 
