@@ -219,7 +219,7 @@ SA5 supports both manual triggers automatic triggers. &#x20;
 * Manual triggers are intentionally invoked by the user as part of the user flow, and will be invoked even if the user repeats that flow multiple times.
 * Automatic triggers occur outside of the user action, and should not occur again if the modal has already been invoked ( manually or automatically ). &#x20;
 
-<table><thead><tr><th width="167">Trigger</th><th width="465">Notes</th><th>Type</th></tr></thead><tbody><tr><td>button</td><td>Triggers the modal when the user clicks on a button or other element that is tagged. </td><td>manual</td></tr><tr><td><del>form</del></td><td>Triggers the modal when the user submits a form.</td><td>manual</td></tr><tr><td>timer</td><td>Triggers the modal when a timer has elapsed, starting from page load.</td><td>auto</td></tr><tr><td>scroll</td><td>Triggers the modal when the page has been scrolled x%.</td><td>auto</td></tr><tr><td>scrollintoview</td><td>Triggers the modal when a certain element is scrolled into view.</td><td>auto</td></tr><tr><td>exit</td><td>Triggers the modal on exit intent.</td><td>auto</td></tr></tbody></table>
+<table><thead><tr><th width="167">Trigger</th><th width="465">Notes</th><th>Type</th></tr></thead><tbody><tr><td>button</td><td>Triggers the modal when the user clicks on a button or other element that is tagged. </td><td>manual</td></tr><tr><td><del>form</del></td><td>Triggers the modal when the user submits a form.</td><td>manual</td></tr><tr><td><del>timer</del></td><td>Triggers the modal when a timer has elapsed, starting from page load.</td><td>auto</td></tr><tr><td><del>scroll</del></td><td>Triggers the modal when the page has been scrolled x%.</td><td>auto</td></tr><tr><td><del>scrollintoview</del></td><td>Triggers the modal when a certain element is scrolled into view.</td><td>auto</td></tr><tr><td><del>exit</del></td><td>Triggers the modal on exit intent.</td><td>auto</td></tr></tbody></table>
 
 {% hint style="info" %}
 Multiple triggers can be applied to the same modal, for example, two button triggers, a timer, and a scroll trigger can all invoke the same modal. To support this, the attributes for each trigger type are discrete ( see below ).&#x20;
@@ -227,7 +227,29 @@ Multiple triggers can be applied to the same modal, for example, two button trig
 
 ? Consider trigger once rule&#x20;
 
-### I want my modal to automatically trigger on a timer
+### I want this button or element to trigger my modal on click
+
+On the button or element to be clicked, add this attribute;
+
+`wfu-modal-trigger-click` = ( modal-name )
+
+Specify the modal's name. &#x20;
+
+`wfu-modal-trigger-action` = ( `open` | `close` | ~~`toggle`~~ )
+
+**Optional.** If specified, it determines the action that occurs.
+
+? Can be used with any trigger type?  Scroll etc.&#x20;
+
+* `open` ( default )&#x20;
+* `close`
+* `toggle`
+
+{% hint style="info" %}
+The purpose of this setup is to allow you to open a modal or close a modal from any element on your page.&#x20;
+{% endhint %}
+
+### ~~I want my modal to automatically trigger on a timer~~
 
 On the modal element itself, add this attribute;&#x20;
 
@@ -237,7 +259,7 @@ Duration is specified in SA5's duration format, which is an integer followed by 
 
 <table><thead><tr><th width="160">Suffix</th><th width="175">Unit </th><th>Examples</th></tr></thead><tbody><tr><td><code>ms</code> ( default )</td><td>Milliseconds</td><td><code>10000ms</code> = 10 seconds<br><code>10000</code> = 10 seconds</td></tr><tr><td><code>s</code></td><td>Seconds</td><td><code>30s</code> = 30 seconds</td></tr><tr><td><code>m</code></td><td>Minutes</td><td><code>20m</code> = 20 minutes</td></tr><tr><td><code>h</code></td><td>Hours</td><td>4h = 4 hours</td></tr><tr><td><code>d</code></td><td>Days</td><td><code>3d</code> = 3 days</td></tr><tr><td><code>w</code></td><td>Weeks</td><td><code>1w</code> = 1 week</td></tr><tr><td><code>M</code></td><td>Months</td><td><code>2M</code> = 2 months ( at 30 days per month )</td></tr><tr><td><code>y</code></td><td>Years</td><td><code>2y</code> = 2 years ( at 365 days per year )</td></tr></tbody></table>
 
-### I want my modal to automatically trigger on an exit intent
+### ~~I want my modal to automatically trigger on an exit intent~~
 
 This refers to the mouse leaving the browser window, which is thought to be leaving the site. &#x20;
 
@@ -247,7 +269,7 @@ On the modal element itself, add this attribute;&#x20;
 
 `wfu-modal-trigger-exit` = ( no value needed )&#x20;
 
-### I want my modal to automatically trigger on page scroll
+### ~~I want my modal to automatically trigger on page scroll~~
 
 Trigger the modal when the page scrolls a certain distance from the top, or a percentage of the total page height.&#x20;
 
@@ -259,21 +281,7 @@ On the modal element itself, add this attribute;&#x20;
 For a more precise scroll trigger, see the scroll into view trigger. &#x20;
 {% endhint %}
 
-### I want this button or element to trigger my modal on click
-
-On the button or element to be clicked, add this attribute;
-
-`wfu-modal-trigger-click` = ( modal-name )
-
-Specify the modal's name.&#x20;
-
-`wfu-modal-trigger-action` = ( `open` | `close` | ~~`toggle`~~ )
-
-( optional ). `open` is the default setting. &#x20;
-
-{% hint style="info" %}
-The purpose of this setup is to allow you to open a modal or close a modal from any element on your page.&#x20;
-{% endhint %}
+###
 
 ### I want my modal to trigger when this element is scrolled into view
 
@@ -286,6 +294,43 @@ On scroll into view;
 
 
 ## Pro Tips
+
+### Best Practices for Responsive Design
+
+Set the width of the modal element as you want it to appear for each breakpoint. &#x20;
+
+
+
+Set a max-height on the content part to support scrollable content.&#x20;
+
+{% hint style="info" %}
+For modal sizing you can use most units, e.g. `px`, `vh`, `vw`, `svh`, `svw`, `dvh`, `dvw` units, but avoid `%`.  The modal will be wrapped in a hidden container for layout purposes so % widths will be measured from the container, not the page.&#x20;
+{% endhint %}
+
+Consider styling the scrollbar.&#x20;
+
+### Designer Accessibility&#x20;
+
+If the modal is only on one page, you can place your modal(s) at the bottom of the page.
+
+Wrap it in an "admin DIV" and set the DIV to display: none.&#x20;
+
+When you want to edit the modal content, simply change the DIV to display: block, and you'll see the content.&#x20;
+
+If the modal is on multiple pages,&#x20;
+
+* Make it a component
+* Place the component in an "admin div"&#x20;
+
+If your clients will be editing the modal in the designer;&#x20;
+
+Place the modal component on a Style Guide page.  Since it is not wrapped in the "admin DIV" there, it will be visible and editable.&#x20;
+
+If your clients will be editing the modal using the Content Editor;&#x20;
+
+
+
+
 
 ### Style Guide Page
 
