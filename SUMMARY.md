@@ -98,6 +98,7 @@
 * [Form IP Info ❺](sa5-forms/form-ip.md)
 * [File Uploads 📝](sa5-forms/file-uploads.md)
 * [File Downloads](sa5-forms/file-downloads.md)
+* [Form Select Element](sa5-forms/form-select-element.md)
 
 ## 📘 sa5-html
 
