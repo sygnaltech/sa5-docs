@@ -30,12 +30,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 <link rel="stylesheet" 
   href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/css/webflow-modal.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-modal.css"
-  dpx-group="sa5"
+  devproxy-group="sa5"
   > 
 <script defer 
   src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/nocode/webflow-modal.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-modal.js"
-  dpx-group="sa5"
+  devproxy-group="sa5"
   ></script>
 ```
 {% endcode %}
