@@ -24,6 +24,16 @@ This UX can be difficult and inconvenient for users, especially those unfamiliar
 SA5 fixes this by overriding the browser's default UX behavior.&#x20;
 {% endhint %}
 
+## Demos
+
+{% embed url="https://sa5-forms.webflow.io/select" %}
+Click to see this feature in action.&#x20;
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/sa5-forms" %}
+Cloneable site in Made in Webflow.&#x20;
+{% endembed %}
+
 ## Usage Notes
 
 {% hint style="info" %}
