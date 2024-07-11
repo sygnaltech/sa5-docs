@@ -21,6 +21,30 @@ description: Proxy selects with a dropdown for better styling options
 
 Add the custom attributes for the features you need, described in each feature separately. &#x20;
 
+Add the custom attributes for the features you need, described in each feature separately. &#x20;
+
+## SA5 Library Developers
+
+For SA5 library developers, use the extended syntax to support [Sygnal DevProxy](https://engine.sygnal.com/devproxy).&#x20;
+
+{% code overflow="wrap" %}
+```html
+<!-- Sygnal Attributes 5 | Effects --> 
+<link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/css/webflow-effects.css"
+  dev-href="http://127.0.0.1:4000/dist/css/webflow-effects.css"
+  devproxy-group="sa5"
+  > 
+<script defer 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/nocode/webflow-effects.js" 
+  dev-src="http://127.0.0.1:4000/dist/nocode/webflow-effects.js"
+  devproxy-group="sa5"
+  ></script>
+```
+{% endcode %}
+
+
+
 
 
 

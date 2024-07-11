@@ -27,6 +27,30 @@ Currently no `defer` used during the experimental phase.
 
 Add the custom attributes for the features you need, described in each feature separately. &#x20;
 
+Add the custom attributes for the features you need, described in each feature separately. &#x20;
+
+## SA5 Library Developers
+
+For SA5 library developers, use the extended syntax to support [Sygnal DevProxy](https://engine.sygnal.com/devproxy).&#x20;
+
+{% code overflow="wrap" %}
+```html
+<!-- Sygnal Attributes 5 | SEO --> 
+<link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/css/webflow-seo.css"
+  dev-href="http://127.0.0.1:4000/dist/css/webflow-seo.css"
+  devproxy-group="sa5"
+  > 
+<script defer 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/nocode/webflow-seo.js" 
+  dev-src="http://127.0.0.1:4000/dist/nocode/webflow-seo.js"
+  devproxy-group="sa5"
+  ></script>
+```
+{% endcode %}
+
+
+
 
 
 

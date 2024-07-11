@@ -26,7 +26,31 @@ This feature is using SA5's new TypeScript-based library, so it is has different
 ```
 {% endcode %}
 
+## SA5 Library Developers
 
+
+
+Add the custom attributes for the features you need, described in each feature separately. &#x20;
+
+## SA5 Library Developers
+
+For SA5 library developers, use the extended syntax to support [Sygnal DevProxy](https://engine.sygnal.com/devproxy).&#x20;
+
+{% code overflow="wrap" %}
+```html
+<!-- Sygnal Attributes 5 | HTML --> 
+<link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/css/webflow-html.css"
+  dev-href="http://127.0.0.1:4000/dist/css/webflow-html.css"
+  devproxy-group="sa5"
+  > 
+<script defer 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/nocode/webflow-html.js" 
+  dev-src="http://127.0.0.1:4000/dist/nocode/webflow-html.js"
+  devproxy-group="sa5"
+  ></script>
+```
+{% endcode %}
 
 
 

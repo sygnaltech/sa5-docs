@@ -32,7 +32,7 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attributes 5 | Modals --> 
+<!-- Sygnal Attributes 5 | Calc --> 
 <link rel="stylesheet" 
   href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/css/webflow-calc.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-calc.css"

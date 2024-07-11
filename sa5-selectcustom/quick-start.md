@@ -16,7 +16,7 @@ UNDER DEVELOPMENT
 ```html
 <!-- Sygnal Attributes 5 | Select Custom --> 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/css/webflow-selectcustom.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-modal.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-selectcustom.js"></script>
 ```
 {% endcode %}
 
@@ -28,7 +28,7 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attributes 5 | Modals --> 
+<!-- Sygnal Attributes 5 | Select Custom --> 
 <link rel="stylesheet" 
   href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/css/webflow-selectcustom.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-selectcustom.css"
