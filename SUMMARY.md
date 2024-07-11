@@ -115,6 +115,7 @@
 * [Limit Items to Multiple-of ❺](sa5-html/limit-items-to-multiple-of.md)
 * [Numeric Sequencing ❺](sa5-html/numeric-sequencing.md)
 * [Truncate Text w/ Ellipsis ❺](sa5-html/truncate-text-w-ellipsis.md)
+* [Encoded Email](sa5-html/encoded-email.md)
 * [Hide Section w/ Empty Collection Lists ❺](sa5-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML ❺](sa5-html/decode-html.md)
 * [Markdown ❺](sa5-html/markdown.md)
