@@ -13,6 +13,50 @@ Future ideas include;&#x20;
   * Lightbox Galleries
   * Accordion
   * Dropdown Navs
+* Distributed layouts, where an item can be placed in one of multiple locations
+* Item sets, which acts as a card set
+
+## Distributed Layouts &&#x20;
+
+Some possibilities we're considering;&#x20;
+
+Allow multiple containers to have the same name, along with some optional rules for distribution.&#x20;
+
+* On layout distribute items randomly across those groups
+* Random distribution
+  * Place each item in a random container
+* Flow distribution
+  * N items in the first matching container
+  * M items in the second matching container
+  * etc. crop overflow&#x20;
+* Ordered segmentation
+  * 1 - 7 in this specific container
+  * 8 - 23 in that specific container
+  * 24+ in the other ( or crop overflow )&#x20;
+* Ordered segmentation by portion
+  * 50% to group 1, 50% to group 2&#x20;
+
+And possible mixes, like random ordered segmentation by portion
+
+Possible attributes;&#x20;
+
+Source elements, ordered, or random ( pre-build an element pointer list and randomie it? )&#x20;
+
+Container constraints. Item positions min and max. Max items total. % of allocation, and max.  Support multiple constraints, like width, max width, min width
+
+
+
+Use cases;
+
+[https://discourse.webflow.com/t/display-collection-data-outside-of-data-collection/286328/3](https://discourse.webflow.com/t/display-collection-data-outside-of-data-collection/286328/3)
+
+## Item Sets
+
+Card deck concept, we may want some deck level controls&#x20;
+
+Crop overflow... extra items that do not "fit", either leave where they are, or delete them.&#x20;
+
+
 
 ## Custom Callbacks
 

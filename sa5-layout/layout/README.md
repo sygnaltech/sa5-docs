@@ -5,12 +5,20 @@ description: Create dynamic layouts in your Webflow-hosted site
 # Layout ❺🧪
 
 {% hint style="info" %}
-**BETA.** This library is released in BETA. Questions or problems should be directed to the forum, link above.
+**BETA.** This library is available for use.\
+Some features and attribute names may change in the final release.
 {% endhint %}
 
-Webflow is great at creating static pages but the layouts come with inherent structural limitations that are sometimes difficult to work around.
+Webflow is great at designing static pages but its CMS layouts come with inherent structural limitations that can be difficult to work around.
 
-SA5 Layout was designed to make complex layouts much easier by allowing elements to be moved after the page has loaded.&#x20;
+* 100 collection items limit in a list
+* 5 nested collection items in a nested list
+* "closed" lists, i.e. no built in support for inserting static content in with your dynamic content
+* no CMS support for UX's like tabs&#x20;
+
+SA5 Layout was designed to make complex layouts much easier by allowing elements to be moved automatically _after_ the page has loaded, and we do this with a very versatile item / slot tagging approach.&#x20;
+
+**In the broadest sense tag any container element ( e.g. a DIV ) as a slot, and tag any elements as items to be put into that slot, and SA5's Layout engine will reorganize your entire page according to those rules.**&#x20;
 
 {% hint style="success" %}
 **SA5 Layout** is a _very_ flexible library. Because it has such a wide range of use cases, it can be difficult to understand its massive range of applications. Spend some time in the docs and demos and feel free to ask questions in the forum.&#x20;
@@ -18,24 +26,20 @@ SA5 Layout was designed to make complex layouts much easier by allowing elements
 
 ## Use Cases
 
-* Combine collection lists&#x20;
+* Combine collection lists, even from different collection sources
 * Handle complex layout requirements that would typically require a large number of collection lists
-  * e.g. a calendar view&#x20;
+  * e.g. events into a 31-slot month calendar view&#x20;
 * Overcome nested-item limits in collection lists
 * Push static elements into a collection list&#x20;
 * Group elements on your page under grouping headings&#x20;
+  * e.g. a glossary of terms and A-Z groupings&#x20;
 * Build hierarchical site navigations
 
 CMS-bound tabs;&#x20;
 
 * Create tabs dynamically from a collection list
-* Create dynamic, nested tabs e.g. country level and a city level, from CMS data&#x20;
-
-## Features&#x20;
-
-* Tag any DIV as a named container element with a custom attribute
-* Tag any other elements to be moved into that DIV on page load
-* Use CMS-bound custom attributes to create CMS-driven groupings and layouts &#x20;
+* Create dynamic, nested tab arrangements
+  * e.g. country level tabs containing city level tabs, from CMS data&#x20;
 
 ## Demonstration
 
@@ -47,41 +51,53 @@ Demonstration
 Cloneable
 {% endembed %}
 
-## Usage - Layout Container
+## Usage Notes - Configuring a Layout Container
 
-### I want this DIV / tabs element to be the target container for layout operations&#x20;
+{% hint style="info" %}
+A layout container is container element
+{% endhint %}
+
+### I want this container element to be a target container for layout operations&#x20;
 
 `wfu-layout` = ( layout container name )
 
 **layout container name** can be any unique arbitrary string to identify that container. It can also be bound to a collection list slug for more dynamic, powerful layouts. &#x20;
 
-### I want to restrict layouts to a zone ( advanced )&#x20;
+### I want to restrict layouts to a namespace ( advanced )&#x20;
 
-`wfu-layout-zone` ( optional ) = ( layout container namespace )
+**Optional.** This is used to namespace container names and avoid conflicts when there is a possibility of duplication.  Recommended when `wfu-layout` is bound to a CMS slug.&#x20;
 
-**Optional.** Recommended when `wfu-layout` is bound to a CMS slug. &#x20;
-
-For complex nested layouts, the wfu-layout is often bound to a CMS item slug. To prevent conflicts, you can also create a namespace in the form of a zone.&#x20;
+`wfu-layout-zone` = ( layout container namespace )
 
 {% hint style="info" %}
+For complex nested layouts, the wfu-layout is often bound to a CMS item slug and in a complex page layout there is a possibility of naming conflicts. To prevent conflicts, you can also create a namespace in the form of a zone.&#x20;
+
 When a layout container has a zone specified, it will only accept layout items which match both the container name and the zone attributes.&#x20;
 {% endhint %}
 
-### I want to use the following layout handler
+### Use a specific layout handler
 
-`wfu-layout-handler` (optional)
+**Optional.** Allows you to use specialized handlers, which e.g. create tabs&#x20;
 
-* `auto` (default) - select the appropriate handler for the element
+`wfu-layout-handler` = ( handler type )
+
+* `auto` ( default ) - select the appropriate handler for the element, based on the element you've applied the layout attribute to.&#x20;
 * `default` - do not use a handler, this is the case for standard DIV layouts&#x20;
 * `tabs` - must be placed on a tabs outer element &#x20;
 * `slider` - must be placed on a slider outer element
 
-### Initialize the container (optional)
+### Initialize the container
 
-`wfu-layout-init` (optional)
+**Optional.** If desired, you can specify how the container is initialized before loading.&#x20;
 
-* `none` (default) - do nothing&#x20;
+`wfu-layout-init` = ( setting )
+
+* `none` ( default ) - do nothing&#x20;
 * `clear` - clear the contents / tabs / slides before layout&#x20;
+
+{% hint style="info" %}
+The primary reason for this is that in the designer, you may want to use placeholder content inside of your container just to facilitate layout and design work.  That content may not be relevant to the published page, so you can have it cleared automatically if you prefer.&#x20;
+{% endhint %}
 
 ### Prior to loading the layout, I want the container to appear as...&#x20;
 
@@ -91,7 +107,7 @@ When a layout container has a zone specified, it will only accept layout items w
 * `hidden` - completely hidden from view
 * `invisible` - takes up space but otherwise not visible&#x20;
 
-## Usage - Layout Item
+## Usage Notes - Configuring a Layout Item
 
 ### Target the item
 
