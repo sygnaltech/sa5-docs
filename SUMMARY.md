@@ -8,6 +8,7 @@
 * [Sygnal Attributes v5](README.md)
 * [How to Add Custom Code](overview/how-to-add-custom-code.md)
 * [What is Sygnal Attributes?](<README (1).md>)
+* [Sponsor a Feature](overview/sponsor-a-feature.md)
 * [What's New?](overview/whats-new.md)
 * [Library Modules](overview/whats-new-1.md)
 * [Technical Notes & Goals](overview/technical-notes-and-goals/README.md)
