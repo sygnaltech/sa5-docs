@@ -1,5 +1,7 @@
 # Future
 
+**SA5 Layout** is continually evolving.  Want to [sponsor a feature](../../overview/sponsor.md)?  Learn more at the link.&#x20;
+
 Future ideas include;&#x20;
 
 * Copy v. Move &#x20;
@@ -16,7 +18,7 @@ Future ideas include;&#x20;
 * Distributed layouts, where an item can be placed in one of multiple locations
 * Item sets, which acts as a card set
 
-## Distributed Layouts &&#x20;
+## Distributed Layouts
 
 Some possibilities we're considering;&#x20;
 

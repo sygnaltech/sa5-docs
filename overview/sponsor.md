@@ -10,6 +10,8 @@ Occasionally, library users request special features or enhancements that aren't
 
 Now you can sponsor the development of those features, and they will be added to the library for everyone to use. &#x20;
 
+## How much?
+
 Cost depends on the feature, complexity, and our availability, but for many feature additions it would be quite low, in the $100 to $300 range.
 
 You get;
