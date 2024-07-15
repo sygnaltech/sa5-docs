@@ -18,6 +18,10 @@ Future ideas include;&#x20;
 * Distributed layouts, where an item can be placed in one of multiple locations
 * Item sets, which acts as a card set
 
+## Group Layouts
+
+Tar
+
 ## Distributed Layouts
 
 Some possibilities we're considering;&#x20;
@@ -37,6 +41,9 @@ Allow multiple containers to have the same name, along with some optional rules 
   * 24+ in the other ( or crop overflow )&#x20;
 * Ordered segmentation by portion
   * 50% to group 1, 50% to group 2&#x20;
+* Group-match layouts
+  * Identify possible matching groups ( regex, eval, custom function )
+  * Allocate to first,&#x20;
 
 And possible mixes, like random ordered segmentation by portion
 
@@ -46,7 +53,30 @@ Source elements, ordered, or random ( pre-build an element pointer list and rand
 
 Container constraints. Item positions min and max. Max items total. % of allocation, and max.  Support multiple constraints, like width, max width, min width
 
+In general;
 
+* Item-centric-layout. Go through each item, and identify where it lay it out.&#x20;
+  * Matching process, identifying which group(s) are suitable for placing this item
+  * Allocation process
+* Group-centric-layout. Go through each group, and identify what lays out in it. Group specifies the matching&#x20;
+  * Matching process, identifies which item(s) are suitable for placing in this group
+  * Allocation process
+    * % of items
+    * Min/max of items&#x20;
+
+Algo;&#x20;
+
+* Get all groups
+  * Segment by ns
+  * Capture ordinal positioning within NS
+  * Allow ordering override via attribute?&#x20;
+* Get all items, with positioning within NS
+  * Segment by ns&#x20;
+  * Capture ordinal positioning within NS
+    * Allow ordering override via attribute? &#x20;
+* Decide on group/item-centric layout
+  * Depends on layout type?&#x20;
+    * Should be consistent&#x20;
 
 Use cases;
 
