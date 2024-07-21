@@ -2,12 +2,7 @@
 description: Create dynamic layouts in your Webflow-hosted site
 ---
 
-# Layout ❺🧪
-
-{% hint style="info" %}
-**BETA.** This library is available for use.\
-Some features and attribute names may change in the final release.
-{% endhint %}
+# Layout ❺
 
 Webflow is great at designing static pages but its CMS layouts come with inherent structural limitations that can be difficult to work around.
 
@@ -43,11 +38,11 @@ CMS-bound tabs;&#x20;
 
 ## Demonstration
 
-{% embed url="https://cms-layouts.webflow.io/" %}
-Demonstration
+{% embed url="https://sa5-layout.webflow.io" %}
+Demos
 {% endembed %}
 
-{% embed url="https://webflow.com/made-in-webflow/website/cms-layouts" %}
+{% embed url="https://webflow.com/made-in-webflow/website/sa5-layout" %}
 Cloneable
 {% endembed %}
 
@@ -59,7 +54,7 @@ A layout container is container element
 
 ### I want this container element to be a target container for layout operations&#x20;
 
-`wfu-layout` = ( layout container name )
+`wfu-layout` = ( layout container name )&#x20;
 
 **layout container name** can be any unique arbitrary string to identify that container. It can also be bound to a collection list slug for more dynamic, powerful layouts. &#x20;
 
@@ -67,12 +62,12 @@ A layout container is container element
 
 **Optional.** This is used to namespace container names and avoid conflicts when there is a possibility of duplication.  Recommended when `wfu-layout` is bound to a CMS slug.&#x20;
 
-`wfu-layout-zone` = ( layout container namespace )
+`wfu-layout-ns` = ( layout container namespace )
 
 {% hint style="info" %}
-For complex nested layouts, the wfu-layout is often bound to a CMS item slug and in a complex page layout there is a possibility of naming conflicts. To prevent conflicts, you can also create a namespace in the form of a zone.&#x20;
+For complex nested layouts, the wfu-layout is often bound to a CMS item slug and in a complex page layout there is a possibility of naming conflicts. To prevent conflicts, you can also define a namespace.&#x20;
 
-When a layout container has a zone specified, it will only accept layout items which match both the container name and the zone attributes.&#x20;
+When a layout container has a namespace specified, it will only accept layout items which match _both_ the container name and the namespace attributes.&#x20;
 {% endhint %}
 
 ### Use a specific layout handler
@@ -132,6 +127,10 @@ When a layout item has a zone specified, it will only be moved to zones which ma
 
 In Webflow, `wfu-layout` is often easily used with CMS data-bound attributes and item slugs.  Since this can create multiple targets with the same name on a page, you can use `wfu-layout-zone` with an arbitrary identifier to isolate these areas and prevent namespace conflicts or overlaps.&#x20;
 {% endhint %}
+
+## Release Notes <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+Post-beta, we've changed `wfu-layout-zone` to `wfu-layout-ns`
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 

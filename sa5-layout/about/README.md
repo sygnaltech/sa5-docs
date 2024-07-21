@@ -13,7 +13,7 @@ This is a general purpose library with a huge range of capabilities and use case
 
 
 
-This library extends Webflow's Rich Text Element feature with a few much needed features;
+
 
 
 

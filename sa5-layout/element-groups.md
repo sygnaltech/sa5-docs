@@ -4,13 +4,13 @@ description: Dynamically show and hide elements on your page based on user actio
 
 # Element Groups ❺🧪
 
-Tab components and accordions are great when your elements are together in one area of your page, but what about when your layout is more complex?  What happens when the things you are clicking are scattered around the page, and the corresponding things that your showing and hiding are similarly scattered?
-
-SA5 Element Groups solves this by allowing you to define arbitrary elements groupings, and then conditionally display only those elements within a group that are tagged with a specific item name.
-
 {% hint style="danger" %}
 This feature is not yet available to the public.&#x20;
 {% endhint %}
+
+Tab components and accordions are great when your elements are together in one area of your page, but what about when your layout is more complex?  What happens when the things you are clicking are scattered around the page, and the corresponding things that your showing and hiding are similarly scattered?
+
+SA5 Element Groups solves this by allowing you to define arbitrary elements groupings, and then conditionally display only those elements within a group that are tagged with a specific item name.
 
 ## Concepts
 
