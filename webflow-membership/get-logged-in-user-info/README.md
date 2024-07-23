@@ -1,5 +1,7 @@
 ---
-description: In Webflow Memberships, get details of the currently logged-in user
+description: >-
+  In Webflow Memberships, get details of the currently logged-in user, anywhere
+  in your site.
 ---
 
 # Logged-In User Info ❺
@@ -8,15 +10,17 @@ description: In Webflow Memberships, get details of the currently logged-in user
 Questions? Comments? Suggestions? Join the [Sygnal Attributes forum](https://sygnal-attr.discourse.group/) on discourse.
 {% endhint %}
 
-_NOTE: because User Info is a complex module in Sygnal Attributes, documentation is split in to several pages. Make sure to expand this item in the left nav, and explore the sub-pages below this one._&#x20;
+_NOTE: because User Info is a complex module in Sygnal Attributes, documentation is split in to several pages. Make sure to find and expand this item in the left-side nav, and explore the sub-pages below this one, they contain important configuration information._&#x20;
 
-One of the most sought-after capabilities in **Webflow User Accounts** is the ability to access information about the _currently logged in user_.
+One of the most sought-after capabilities in **Webflow User Accounts** is the ability to access information about the _currently logged in user_, _anywhere_ in your site.
 
 Use cases include;
 
-* Personalize your site by displaying the user's name&#x20;
+* Personalize your site by displaying the user's name in the top navigation of all pages
 * Auto-fill the logged-in user's email in a form email field, so they don't have to type it every time.
 * Have a unique identifier for the user, for integrating into external systems via logic, script, or automation.
+* Use custom user field data anywhere in your site to personalize their experience... favorite color, darkmode, calculations based on their age, or gender... whatever you like.&#x20;
+* Customize any page of your site to specific access groups, so that certain elements only appear to those who should see them.&#x20;
 
 Features;
 
