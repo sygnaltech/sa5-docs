@@ -12,18 +12,6 @@ As a best practice, you can use the `user.user_data_loaded.access_groups` to det
 
 Later, depending on the use cases shared in the forum, we plan to add attributes-based features like access-group-based conditional visibility, and possibly access-group-based routing. &#x20;
 
-{% hint style="success" %}
-**BETA TEAM - WE NEED YOUR FEEDBACK!**
-
-In particular, we need;
-
-* Feedback on the feature and setup process
-* Feedback on this part of the documentation
-* Use cases for how you want to use Access Groups in controlling routing access, conditional visibility, etc. &#x20;
-
-[Post in the SA5 forum here](https://sygnal-attr.discourse.group/)
-{% endhint %}
-
 In a similar fashion to the Custom User Fields, **SA5'S Access Groups** feature requires a specific setup approach in order to work. Make certain to follow the setup precisely.&#x20;
 
 ## How SA5's Access Groups Feature Works
