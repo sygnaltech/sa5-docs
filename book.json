@@ -11,5 +11,12 @@
         "liburl": "https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@3.35", 
         "libver": "3.35" 
         
-    }
+    },
+    "plugins": ["edit-link"],
+    "pluginsConfig": {
+            "edit-link": {
+                "base": "https://github.com/sygnaltech/sa5-docs/edit/main",
+                "label": "Edit This Page"
+            }
+    }    
 }
