@@ -237,6 +237,7 @@
   * [Future](sa5-elements/tabs/tabs.md)
 * [Slider Element ❺](sa5-elements/slider/README.md)
   * [Slider Code Examples](sa5-elements/slider/slider-code-examples.md)
+  * [Advanced Slider Use](sa5-elements/slider/advanced-slider-use.md)
   * [Future](sa5-elements/slider/future.md)
 * [Deck Controller Element ❺](sa5-elements/deck-controller-element.md)
 * [Button Element ❺](sa5-elements/button.md)
@@ -371,7 +372,7 @@
 * [Locale URLs](sa5-localization/locale-urls.md)
 * [Sort locales in the order you choose](sa5-localization/sort-locales-in-the-order-you-choose.md)
 
-## 📘 sa5-404 <a href="#404" id="404"></a>
+## 📘 sa5-404 <a href="#id-404" id="id-404"></a>
 
 * [🔍 About SA5's 404 Lib](404/article.md)
 * [🚀 Quick Start | SA5 404](404/quick-start-or-sa5-404.md)
