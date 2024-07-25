@@ -37,6 +37,10 @@ Enhance navigation;&#x20;
 * Setup your Webflow slider element however you like
 * Setup other "control" elements that will affect it, such as buttons, etc ( optional ).&#x20;
 
+{% hint style="info" %}
+To control the Webflow native slider, SA5 uses the slider's navigation elements such as the bottom slide page dots. It's important that they are physically part of the slider, even if you make them invisible with display: none.  Do not mark navigation elements as visibility: hidden or SA5 will be unable to interact with your slider.&#x20;
+{% endhint %}
+
 ### `wfu-slider` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
 Add the `wfu-slider` custom attribute to the a Slider element. Give it a unique **name** to identify that element uniquely, e.g. `slider1`.&#x20;
