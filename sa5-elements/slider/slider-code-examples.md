@@ -2,7 +2,38 @@
 description: SA5 Slider Code Examples
 ---
 
-# Slider Code Examples
+# Slider JS API
+
+### Manipulating the Slider <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
+
+Outside of callback events, you can also access the SA5 Slider object by constructing one explicitly;
+
+```javascript
+const slider = new sa5.WebflowSlider(
+    document.querySelector('[wfu-slider=demo1]')
+);
+```
+
+Once you have this, you can call its methods and properties;
+
+Properties;
+
+* `name` property returns the `[wfu-slider]` name, if one was set.
+* `currentIndex` gets or sets the 0-based index of the current slide ( i.e. 5 slides would be numbered 0, 1, 2, 3, 4 ).
+* `currentNum` gets or sets the 1-based index of the current slide ( i.e. 5 slides would be numbered 1, 2, 3, 4, 5 ).&#x20;
+
+Methods;&#x20;
+
+* `goToFirst()` navigates to the first slide
+* `goToLast()` navigates to the last slide
+* `goToPrev()` navigates to the prev slide
+* `goToNext()` navigates to the next slide
+
+See [Slider Code Examples](slider-code-examples.md) for more.&#x20;
+
+
+
+
 
 These examples assume that;
 
