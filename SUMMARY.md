@@ -100,6 +100,7 @@
 * [File Uploads 📝](sa5-forms/file-uploads.md)
 * [File Downloads](sa5-forms/file-downloads.md)
 * [Form Select Element](sa5-forms/form-select-element.md)
+* [SA5 Forms API](sa5-forms/sa5-forms-api.md)
 
 ## 📘 sa5-html
 
@@ -245,6 +246,7 @@
 * [Lightbox Element ❺](sa5-elements/lightbox/README.md)
   * [CMS & Lightbox + Groups ❺](sa5-elements/lightbox/cms-and-lightbox-+-groups.md)
   * [CMS & Lightbox + Captions ❺](sa5-elements/lightbox/cms-and-lightbox-+-captions.md)
+* [Radio Button Element ❺🧪](sa5-elements/radio-button-element.md)
 * [Autocomplete Element ❺](sa5-elements/autocomplete-element/README.md)
   * [Styling](sa5-elements/autocomplete-element/styling.md)
   * [Future](sa5-elements/autocomplete-element/future.md)
