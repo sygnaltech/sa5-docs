@@ -247,6 +247,8 @@
 * [Lightbox Element ❺](sa5-elements/lightbox/README.md)
   * [CMS & Lightbox + Groups ❺](sa5-elements/lightbox/cms-and-lightbox-+-groups.md)
   * [CMS & Lightbox + Captions ❺](sa5-elements/lightbox/cms-and-lightbox-+-captions.md)
+  * [Lightbox JS API](sa5-elements/lightbox/slider-code-examples.md)
+  * [SA5 Lightbox Future](sa5-elements/lightbox/sa5-lightbox-future.md)
 * [Radio Button Element ❺🧪](sa5-elements/radio-button-element.md)
 * [Autocomplete Element ❺](sa5-elements/autocomplete-element/README.md)
   * [Styling](sa5-elements/autocomplete-element/styling.md)
