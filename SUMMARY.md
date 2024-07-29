@@ -26,6 +26,11 @@
 * [Data Caching ❺](cache/cache/README.md)
   * [Cache Setup v4](cache/cache/v4.md)
 
+## 📘 sa5-socialshare
+
+* [🔍 About SA5's Socialshare Lib](sa5-socialshare/about.md)
+* [Email Social Share ❺](sa5-socialshare/cache.md)
+
 ## 📘 sa5-detect <a href="#detect" id="detect"></a>
 
 * [🔍 About SA5's Detect Lib](detect/about.md)
