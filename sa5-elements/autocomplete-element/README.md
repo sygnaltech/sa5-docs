@@ -1,5 +1,7 @@
 ---
-description: A CMS-capable dropdown UI that makes it easier to pick from longer lists.
+description: >-
+  A CMS-capable dropdown UI that makes it easier to navigate & choose items from
+  longer lists.
 ---
 
 # Autocomplete Element ❺
@@ -46,48 +48,82 @@ Here's a full walkthrough of a basic build, from a blank page, to help you under
 
 ### Dropdown Element
 
-I want this dropdown element to be an SA5 autocomplete element.&#x20;
+To identify a dropdown as an SA5 autocomplete element, place this custom attribute on the Dropdown element itself.
 
-Place this custom attribute on the Dropdown element itself.
+`wfu-autocomplete` = ( name )
 
-`wfu-autocomplete` = ( no value needed )
+{% hint style="info" %}
+The name is used to identify the element in the future JS API for this element, however it is not currently used and can be left blank.&#x20;
+{% endhint %}
 
 ### Input Element
 
-You'll place a form an input element within the dropdown's toggle element so that it is always visible.&#x20;
+You'll place a form and an input element within the dropdown's **toggle element** so that it is always visible and accessible to your users.&#x20;
 
-Identify it with the following element-&#x20;
+Place this attribute on the **input** element directly;&#x20;
 
 `wfu-autocomplete-input` = ( no value needed )&#x20;
 
-Within the list, you'll place the elements you want to appear. This can include a collection list, or several.&#x20;
+Within the list portion of the dropdown, you'll place the elements you want to appear. This can include a collection list, and/or static items.&#x20;
 
-### List Item Elements
+### List Item Elements&#x20;
 
-Place this directly on the list items you want to be filtered.&#x20;
+Place this attribute directly on the list items you want to be matched & filtered;&#x20;
+
+`wfu-autocomplete-item` = ( no value needed )
 
 {% hint style="info" %}
 In the case of a collection list, place it on the Collection List Item element directly ( the innermost of the 3 element collection list structure ).&#x20;
 {% endhint %}
 
 {% hint style="warning" %}
-FUTURE. attributes applied to the parent of the list items ( the dropdown list itself ) can be used as a fallback default.&#x20;
-{% endhint %}
-
-`wfu-autocomplete-item` identifies the items that you want filtered as the user types text.
-
-{% hint style="info" %}
 Do not use this attribute on list items that should not be filtered, for example a Site Search item. &#x20;
 {% endhint %}
 
-`wfu-autocomplete-item-layout` defined the layout the item should use when made visible.&#x20;
+`wfu-autocomplete-item-layout` defines the layout the item should use when made visible.&#x20;
 
 * `block` ( default )
 * `flex`
 * `grid`
 * etc.&#x20;
 
-### Controlling the Matching Process
+{% hint style="info" %}
+Use this when you are using a special layout for your list items, e.g. a `flex` layout to display an icon next to your text.&#x20;
+{% endhint %}
+
+
+
+{% hint style="warning" %}
+FUTURE. attributes applied to the parent of the list items ( the dropdown list itself ) can be used as a fallback default.&#x20;
+{% endhint %}
+
+### Matching
+
+Matching refers to the process by which SA5 selects items that match your currently entered string, as you're typing. Currently, matching is case-insensitive, and can occur anywhere in the string.&#x20;
+
+Your individual items define a matching string, and we compare your query with those strings to identify the matches.
+
+Specify the matching string you want using this attribute on the list items;&#x20;
+
+`wfu-autocomplete-item-match`= ( match string, typically bound to a CMS field )&#x20;
+
+{% hint style="info" %}
+Typically this attribute is bound to a CMS field such as the name or title of the item.
+{% endhint %}
+
+For example, if you have an item with a match string of `Chicago pizza shops` and someone begins typing `pizz` it will match, as would `chi` or `shop`. As long as the query string exists within the match string, it's considered a match.&#x20;
+
+### Secondary matching
+
+You can also specify a second string that will _also_ be considered for matching, in the same way.&#x20;
+
+`wfu-autocomplete-item-match-secondary` = ( match string, typically bound to a CMS field )&#x20;
+
+{% hint style="info" %}
+Typically this attribute is bound to a CMS field such as a list of keywords that are relevant to the item, but _do not exist in the title_.&#x20;
+{% endhint %}
+
+### FUTURE - Controlling the Matching Process
 
 Matching can be controlled;
 
@@ -103,16 +139,14 @@ Future
 * FUTURE - specific inner text, sub-tagged&#x20;
 * FUTURE - Exact match. MUST match exactly ( no partial entry ), and updates the main input. Prevent validation or even clear the field if no exact match is made. Used for some strict form entry use cases&#x20;
 
-Here you'll identify the matching string
 
-`wfu-autocomplete-item-match`= ( match string, typically bound to a CMS field )&#x20;
 
 `wfu-autocomplete-matching-rule`
 
-* Default - anywhere in the string, all lowercase
-* Start of string only, case-insensitive
-* Regex, specific string?&#x20;
-* Custom - use a callback function?&#x20;
+* Default - anywhere in the string, case-insensitive&#x20;
+* FUTURE - Start of string only, case-insensitive
+* FUTURE - Regex, specific string?&#x20;
+* FUTURE - Custom - use a callback function?&#x20;
 
 \`wfu-autocomplete-matching-rule-config
 
