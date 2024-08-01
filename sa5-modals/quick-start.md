@@ -13,8 +13,8 @@ description: >-
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Modals --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/css/webflow-modal.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/nocode/webflow-modal.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.11/dist/css/webflow-modal.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.11/dist/nocode/webflow-modal.js"></script>
 ```
 {% endcode %}
 
@@ -28,13 +28,13 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | Modals --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.3/dist/css/webflow-modal.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.11/dist/css/webflow-modal.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-modal.css"
   test-href="https://sa5-test.netlify.app/dist/css/webflow-modal.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.3/dist/nocode/webflow-modal.js"
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.11/dist/nocode/webflow-modal.js"
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-modal.js"
   test-src="https://sa5-test.netlify.app/dist/nocode/webflow-modal.js"
   devproxy-group="sa5"

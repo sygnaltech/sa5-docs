@@ -23,7 +23,15 @@
 | Analytics                           | <ul><li>None</li></ul>                                                                                            | <ul><li>GTM</li></ul>                                                                                                                                                                                                                          |                                                                                                                                                                          |
 | Modal namespaces                    |                                                                                                                   | <ul><li>Likely to add for CMS-driven modal support </li></ul>                                                                                                                                                                                  |                                                                                                                                                                          |
 
-## Advanced Notes
+## Advanced Notes&#x20;
+
+### Controller Integration
+
+On open, close, etc, the modal or triggers invoke the action and the modal is the first responder, however the controller is informed and queried on some actions.&#x20;
+
+For example, a modal opening at 5000ms and then a different one opening at 8000ms might not be legit.  Or a modal opening on a timer, and then a scroll trigger, and then an exit-intent trigger...&#x20;
+
+
 
 ### Multi-Function Modals
 

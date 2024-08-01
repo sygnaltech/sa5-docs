@@ -6,8 +6,6 @@
 
 Set the width of the modal element as you want it to appear for each breakpoint. &#x20;
 
-
-
 Set a max-height on the content part to support scrollable content.&#x20;
 
 {% hint style="info" %}
@@ -62,3 +60,42 @@ If your clients use the Content Editor, rather than the designer, you can make t
   * Password protect it
 * In it, create pages for the main stylistic elements of your site, e.g. Blog page, Modals, etc.&#x20;
 * Drop your modal components on the modals page&#x20;
+
+## Scroll Bars
+
+On the modal\_content area, make it scrollable for larger content.
+
+You can custom-style the scrollbar elegantly;
+
+```html
+<style>
+    :root {
+      --sa5-modal-scrollbar-color: #188fd6; /* Define the scrollbar color variable */
+    }
+
+    /* Custom scrollbar styling for WebKit browsers */
+    .modal_content::-webkit-scrollbar {
+      width: 12px; /* Width of the scrollbar */
+    }
+
+    .modal_content::-webkit-scrollbar-track {
+      background: transparent; /* Transparent track for rounded corners to show */
+    }
+
+    .modal_content::-webkit-scrollbar-thumb {
+      background-color: var(--sa5-modal-scrollbar-color);
+      border-radius: 6px; /* Match the div's border radius */
+      border: 3px solid var(--sa5-modal-scrollbar-color); /* Padding to inset the scrollbar */
+    }
+
+    .modal_content::-webkit-scrollbar-thumb:hover {
+      background-color: #1e90ff; /* Slightly darker blue on hover */
+    }
+
+    /* Firefox scrollbar styling */
+    .modal_content {
+      scrollbar-width: thin;
+      scrollbar-color: var(--sa5-modal-scrollbar-color) transparent;
+    }
+</style>
+```

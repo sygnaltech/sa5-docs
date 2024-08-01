@@ -72,6 +72,16 @@ DIV wfu-modal = ( name )
 * The `wfu-modal-sidebar` is optional. Does it need an attribute? &#x20;
 * The `wfu-modal-button` is optional. It will be auto-created as an X if it does not exist&#x20;
 
+## Modal Lifecycle
+
+SA5 Modals have a lifecycle;
+
+* Closed ( pending )
+* Open
+* Closed ( suppressed )
+
+
+
 ## Usage Notes ( Modal Setup )
 
 Create your DIV containing your modal content, and apply the attributes below, depending on the configuration and behavior you choose;&#x20;
@@ -103,4 +113,34 @@ On the button or element to be clicked, add this attribute;
 `wfu-modal-trigger-click` = ( modal-name )
 
 Specify the modal's name. &#x20;
+
+### I want the modal to appear after X milliseconds
+
+Triggers the modal when a timer has elapsed, starting from page load.&#x20;
+
+Place this directly on the modal element.&#x20;
+
+`wfu-modal-trigger-timer` = ( time in milliseconds )
+
+{% hint style="info" %}
+1 second = 1,000 ms, so if you want to wait 5 seconds, set the value to `5000`.
+{% endhint %}
+
+## Usage Notes ( Modal Suppression Setup )
+
+After a modal is closed, we will likely want to suppress it for some period of time.
+
+`wfu-modal-suppress` = ( suppression setting )
+
+* `forever` - suppresses indefinitely
+* `session` - suppresses only for the duration of the webstorage session
+* FUTURE - we'll add specific durations
+
+Note that the suppression is handled using a cookie-based or web-storage-based suppression key which includes the name of the modal.  If you ever change the name of the modal, and republish your site, any existing suppression keys would be ignored.&#x20;
+
+{% hint style="success" %}
+The defined suppression state on the modal is applied immediately after the modal is opened. This ensures that it is honored regardless of how the modal is closed- including a CTA button navigation within the modal.&#x20;
+{% endhint %}
+
+
 
