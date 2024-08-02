@@ -1,10 +1,8 @@
 ---
-description: >-
-  How to Easily Add SA5's User Info & Advanced Routing Enhancements to Your
-  Webflow Memberships Site
+description: How to Easily Add SA5's Analytics to Your Webflow Site
 ---
 
-# 🚀 Quick Start | SA5 Detect
+# 🚀 Quick Start | SA5 Analytics
 
 {% hint style="danger" %}
 COMING SOON.

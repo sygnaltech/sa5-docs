@@ -44,8 +44,10 @@
 ## 📘 sa5-analytics
 
 * [🔍 About SA5's Analytics Lib](sa5-analytics/about.md)
-* [🚀 Quick Start | SA5 Detect](sa5-analytics/quick-start.md)
+* [🚀 Quick Start | SA5 Analytics](sa5-analytics/quick-start.md)
 * [A/B and Multivariate Testing](sa5-analytics/a-b-and-multivariate-testing.md)
+* [UTM Tracking](sa5-analytics/utm-tracking.md)
+* [Rel Attributes](sa5-analytics/rel-attributes.md)
 * [GTM Events ❺🧪](sa5-analytics/geo/README.md)
   * [Important dataLayer Notes](sa5-analytics/geo/important-datalayer-notes.md)
   * [Facebook](sa5-analytics/geo/facebook.md)
