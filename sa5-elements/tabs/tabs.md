@@ -51,7 +51,85 @@ However it requires;
 
 [https://webflow.com/made-in-webflow/website/simple-tab-link](https://webflow.com/made-in-webflow/website/simple-tab-link)
 
+Approaches-
 
+Event listener on links
+
+```
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+            
+            // Custom script when a hashtag link is clicked
+            customFunction();
+        }
+
+        // Update the URL hash without causing a page jump
+        history.pushState(null, null, `#${targetId}`);
+    });
+});
+
+function customFunction() {
+    console.log('Hashtag link clicked!');
+}
+
+```
+
+Hashchange event;
+
+```
+window.addEventListener('hashchange', function() {
+    console.log('Hash changed:', location.hash);
+
+    // Custom script when the hash changes
+    customFunction();
+});
+
+function customFunction() {
+    console.log('Hashtag link clicked!');
+}
+
+```
+
+Intercept Link Clicks with event delegation
+
+```
+document.addEventListener('click', function(event) {
+    const target = event.target;
+
+    if (target.tagName === 'A' && target.getAttribute('href').startsWith('#')) {
+        event.preventDefault();
+        const targetId = target.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+
+            // Custom script when a hashtag link is clicked
+            customFunction();
+        }
+
+        // Update the URL hash without causing a page jump
+        history.pushState(null, null, `#${targetId}`);
+    }
+});
+
+function customFunction() {
+    console.log('Hashtag link clicked!');
+}
+
+```
 
 
 
