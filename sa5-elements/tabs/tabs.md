@@ -38,7 +38,18 @@ However it requires;
 
 ## Select on Query or #&#x20;
 
+* `#hash` on query
+  * Use tab name as default
+  * Or explicit name ( e.g. CMS-based ) `wfu-tab`
+    * Auto-gen these on CMS layout to tabs
+      * Will need an `wfu-tab-ns` also&#x20;
+* Scroll-to option
+* URL change option as tab changes
+* In-page link from `#hash` links or NS `#ns.ksdfj`&#x20;
 
+
+
+[https://webflow.com/made-in-webflow/website/simple-tab-link](https://webflow.com/made-in-webflow/website/simple-tab-link)
 
 
 
