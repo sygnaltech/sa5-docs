@@ -21,7 +21,8 @@ _Here is a exceptionally simple example of how elements can be targeted to conta
 
 This technique can expanded in many ways;
 
-* Use CMS custom attribute binding and slugs to dynamically define your items and containers from Webflow's CMS.&#x20;
+* Use CMS custom attribute binding and slugs to dynamically define containers, for example country groupings, or product category groupings.&#x20;
+* Use CMS custom attribute binding and slugs to dynamically define and target your items to those containers.&#x20;
 * Use namespaces to avoid naming conflicts in complex layout builds.&#x20;
 * Make a tabs element a layout container, and tabs will be automatically created.  &#x20;
 
@@ -120,9 +121,9 @@ The primary reason for this is that in the designer, you may want to use placeho
 
 Identifies the container this element should be moved to.&#x20;
 
-### I want to restrict layouts to a zone ( advanced )&#x20;
+### I want to restrict layouts to a namespace ( advanced )&#x20;
 
-`wfu-layout-zone` ( optional ) = ( layout container namespace )
+`wfu-layout-ns` ( optional ) = ( layout container namespace )
 
 **Optional.** Recommended when `wfu-layout` is bound to a CMS slug. &#x20;
 
@@ -135,12 +136,8 @@ When a layout item has a zone specified, it will only be moved to zones which ma
 {% hint style="success" %}
 **NAMESPACES**
 
-In Webflow, `wfu-layout` is often easily used with CMS data-bound attributes and item slugs.  Since this can create multiple targets with the same name on a page, you can use `wfu-layout-zone` with an arbitrary identifier to isolate these areas and prevent namespace conflicts or overlaps.&#x20;
+In Webflow, `wfu-layout` is often easily used with CMS data-bound attributes and item slugs.  Since this can create multiple targets with the same name on a page, you can use `wfu-layout-ns` with an arbitrary identifier to isolate these areas and prevent namespace conflicts or overlaps.&#x20;
 {% endhint %}
-
-## Release Notes <a href="#getting-started-nocode" id="getting-started-nocode"></a>
-
-Post-beta, we've changed `wfu-layout-zone` to `wfu-layout-ns`
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
