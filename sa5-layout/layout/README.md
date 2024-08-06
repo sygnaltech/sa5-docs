@@ -15,6 +15,16 @@ SA5 Layout was designed to make complex layouts much easier by allowing elements
 
 **In the broadest sense tag any container element ( e.g. a DIV ) as a slot, and tag any elements as items to be put into that slot, and SA5's Layout engine will reorganize your entire page according to those rules.**&#x20;
 
+_Here is a exceptionally simple example of how elements can be targeted to containers, and re-organized on page load.  The_ `wfu-layout-target` _attribute is used to match and identify the wfu_`-layout` _container, and the element is moved._
+
+<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
+
+This technique can expanded in many ways;
+
+* Use CMS custom attribute binding and slugs to dynamically define your items and containers from Webflow's CMS.&#x20;
+* Use namespaces to avoid naming conflicts in complex layout builds.&#x20;
+* Make a tabs element a layout container, and tabs will be automatically created.  &#x20;
+
 {% hint style="success" %}
 **SA5 Layout** is a _very_ flexible library. Because it has such a wide range of use cases, it can be difficult to understand its massive range of applications. Spend some time in the docs and demos and feel free to ask questions in the forum.&#x20;
 {% endhint %}
