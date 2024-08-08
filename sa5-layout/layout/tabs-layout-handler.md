@@ -29,10 +29,12 @@ In `auto` mode, SA5 automatically detects when the `wfu-layout` attribute is pos
 
 The tabs themselves are given a text name;
 
-`wfu-layout-item-name` = ( name )
+`wfu-layout-item-name` = ( name )&#x20;
+
+Place this on any element with the `wfu-layout-target` attribute.&#x20;
 
 {% hint style="info" %}
-You can CMS bind this attribute as well.
+You can CMS-bind this attribute as well to pull the tab name from the CMS.
 {% endhint %}
 
 ## Demonstration
