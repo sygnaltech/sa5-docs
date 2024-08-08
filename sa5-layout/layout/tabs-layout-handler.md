@@ -15,6 +15,14 @@ SA5 automatically detects when the `wfu-layout` attribute is positioned on a tab
 
 ## Usage Notes
 
+Create and style your tabs element anywhere you like in your Webflow design.&#x20;
+
+### Setup your tabs element&#x20;
+
+`wfu-layout` = ( name )
+
+Add this directly to your tabs element, and assign it a unique name in your page.
+
 `wfu-layout-handler` = `auto` | `none` | `tabs`
 
 * `auto` ( default) - automatically detect
@@ -36,6 +44,18 @@ Place this on any element with the `wfu-layout-target` attribute.&#x20;
 {% hint style="info" %}
 You can CMS-bind this attribute as well to pull the tab name from the CMS.
 {% endhint %}
+
+### Initializing the tabs element&#x20;
+
+Here are some options on initializing the tabs element
+
+`wfu-layout-init` = ( setting )
+
+* `clear` - Removes any existing tabs before adding the new ones
+
+`wfu-preload` = ( setting )
+
+* `hidden` - Hides the tabs element on page load, until they're rendered.&#x20;
 
 ## Demonstration
 
