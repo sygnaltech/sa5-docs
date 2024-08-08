@@ -260,6 +260,7 @@
 * [Autocomplete Element ❺](sa5-elements/autocomplete-element/README.md)
   * [Styling](sa5-elements/autocomplete-element/styling.md)
   * [Future](sa5-elements/autocomplete-element/future.md)
+* [Accordion Element](sa5-elements/accordion-element.md)
 
 ## 📘 sa5-format
 
