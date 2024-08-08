@@ -4,19 +4,26 @@ description: Generate CMS-bound tabs and nested tabs
 
 # Tabs Layout Handler
 
+SA5 automatically detects when the `wfu-layout` attribute is positioned on a tabs element, and will create tabs automatically.&#x20;
+
 ## Use Cases
 
 * Create tabs from CMS content
 * Create nested tabs from two collection lists in a master-detail arrangement
+  * e.g. Categories and Products&#x20;
   * e.g. Countries and Cities&#x20;
 
 ## Usage Notes
 
-SA5 automatically detects when the wfu-layout attribute is positioned on a tabs element, and will create tabs automatically.&#x20;
+`wfu-layout-handler` = `auto` | `none` | `tabs`
 
-wfu-layout-handler = auto | none | tabs
+* `auto` ( default) - automatically detect
+* `none` - no layout engine needed, items are simply moved into the container
+* `tabs` - use the tabs layout handler
 
-Default is auto, when unspecified.&#x20;
+Place on any element which has the `wfu-layout` attribute.&#x20;
+
+In `auto` mode, SA5 automatically detects when the `wfu-layout` attribute is positioned on a tabs element, and will create tabs automatically.&#x20;
 
 ## Demonstration
 
