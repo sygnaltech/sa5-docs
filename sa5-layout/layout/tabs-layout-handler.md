@@ -13,6 +13,16 @@ SA5 automatically detects when the `wfu-layout` attribute is positioned on a tab
   * e.g. Categories and Products&#x20;
   * e.g. Countries and Cities&#x20;
 
+## Demo
+
+{% embed url="https://sa5-layout.webflow.io/tabs" %}
+Demo
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/sa5-layout" %}
+Cloneable
+{% endembed %}
+
 ## Usage Notes
 
 Create and style your tabs element anywhere you like in your Webflow design.&#x20;
