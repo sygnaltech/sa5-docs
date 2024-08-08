@@ -25,6 +25,16 @@ Place on any element which has the `wfu-layout` attribute.&#x20;
 
 In `auto` mode, SA5 automatically detects when the `wfu-layout` attribute is positioned on a tabs element, and will create tabs automatically.&#x20;
 
+### Setting tab names
+
+The tabs themselves are given a text name;
+
+`wfu-layout-item-name` = ( name )
+
+{% hint style="info" %}
+You can CMS bind this attribute as well.
+{% endhint %}
+
 ## Demonstration
 
 [https://cms-layouts.webflow.io/](https://cms-layouts.webflow.io/)

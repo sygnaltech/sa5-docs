@@ -113,9 +113,15 @@ Assign classes for easy styling?
 
 ## Tabs Layout
 
-Ability to do more complex tabs
+Ability to do more complex tabs&#x20;
+
+Specify a special sub-layout item which is pulled out of line for this purpose
 
 [https://www.apple.com/ca/today/calendar/](https://www.apple.com/ca/today/calendar/)
+
+Support other card-based layouts, such as accordion;&#x20;
+
+
 
 ## Future
 
