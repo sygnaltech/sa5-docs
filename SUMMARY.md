@@ -108,6 +108,7 @@
 * [File Downloads](sa5-forms/file-downloads.md)
 * [Form Select Element](sa5-forms/form-select-element.md)
 * [SA5 Forms API](sa5-forms/sa5-forms-api.md)
+* [Dynamic Forms](sa5-forms/dynamic-forms.md)
 
 ## 📘 sa5-html
 
