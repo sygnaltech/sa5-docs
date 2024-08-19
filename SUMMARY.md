@@ -243,7 +243,8 @@
 * [🔍 About SA5's Elements Lib](sa5-elements/about.md)
 * [🚀 Quick Start | SA5 Elements](sa5-elements/quick-start.md)
 * [Tabs Element ❺](sa5-elements/tabs/README.md)
-  * [Future](sa5-elements/tabs/tabs.md)
+  * [Tabs Future Plans](sa5-elements/tabs/tabs.md)
+  * [Tabs API](sa5-elements/tabs/tabs-api.md)
 * [Slider Element ❺](sa5-elements/slider/README.md)
   * [Slider JS API](sa5-elements/slider/slider-code-examples.md)
   * [Slider JS API Events](sa5-elements/slider/slider-js-api-events.md)
@@ -261,7 +262,9 @@
 * [Autocomplete Element ❺](sa5-elements/autocomplete-element/README.md)
   * [Styling](sa5-elements/autocomplete-element/styling.md)
   * [Future](sa5-elements/autocomplete-element/future.md)
-* [Accordion Element](sa5-elements/accordion-element.md)
+* [Accordion Element](sa5-elements/accordion-element/README.md)
+  * [Accordion Future Plans](sa5-elements/accordion-element/accordion-future-plans.md)
+  * [Accordion API](sa5-elements/accordion-element/accordion-api.md)
 
 ## 📘 sa5-format
 

@@ -2,11 +2,48 @@
 description: SA5 Tabs Future Plans
 ---
 
-# Future
+# Tabs Future Plans
 
-Plan to add;&#x20;
 
-* Select on # or query param, and scroll-to&#x20;
+
+## Roadmap&#x20;
+
+| Feature                   | Now                                                           | Planned                                             | Considering                                                              |
+| ------------------------- | ------------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------ |
+| Orientation               | Vertical or horizontal, defined by your Webflow tabs element  |                                                     |                                                                          |
+| Animations for open/close |                                                               |                                                     | Considering some means to support WF Interactions, or else GSAP themes.  |
+| Dynamic initialization    |                                                               | Select on # or query param, and scroll-to           |                                                                          |
+| Modes                     |                                                               | Tab change on hover                                 | _Tabcordion_                                                             |
+| Keyboard                  |                                                               | Possible keyword support, review a11y requirements  |                                                                          |
+
+{% hint style="success" %}
+The **Tabcordion** mode mentioned above is a conceptual hybridization of a tab element and an accordion.  It's intended to solve the issues surrounding tab elements on mobile devices.  How the implementation might best work is not yet determined.&#x20;
+{% endhint %}
+
+## JavaScript API
+
+### Methods&#x20;
+
+| Feature                     | Now                                                 | Planned | Considering |
+| --------------------------- | --------------------------------------------------- | ------- | ----------- |
+| Programmatic Navigation     | Navigate to tab number, first, last, next, and prev |         |             |
+| Add / remove / reorder tabs |                                                     |         | Considering |
+
+### Events
+
+| Feature              | Now                      | Planned                                                                              | Considering |
+| -------------------- | ------------------------ | ------------------------------------------------------------------------------------ | ----------- |
+| Tab changed event    | Occurs on any tab change | Will reconsider how this should work in multi-item mode                              |             |
+| Tab can change event |                          | Can open, can close, etc.  Give dev the ability to reject an open or close request.  |             |
+
+
+
+
+
+
+
+Additional thoughts;&#x20;
+
 * Detection of common hidden state scenarios, and numbering, selection etc. based on the visible indices only.&#x20;
   * Conditional visibility
 * Auto-select N ( e.g. if first is conditionally hidden, we get tab 2 )&#x20;

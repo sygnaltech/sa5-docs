@@ -6,7 +6,7 @@ description: Interact with Webflow's Tabs Element
 
 ## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
-This feature allows you to work with the Webflow tabs element.
+This feature allows you to work with the Webflow tabs element programmatically.&#x20;
 
 * Switch tabs programmatically- first, next, prev, and last, or go to a specific tab index
   * See the [Deck Controller](../deck-controller-element.md) for a nocode control approach
@@ -61,73 +61,6 @@ _Optional._ Add the `wfu-tab-name` custom attribute to a specific tab directly. 
 {% hint style="info" %}
 Tab names should be unique within the tabs element. Tab names are a discrete attribute so that they can be CMS bound attributes in the future.&#x20;
 {% endhint %}
-
-## JavaScript API
-
-### Events
-
-To receive events from tab changes setup an SA5 callback with the `tabChanged` event. When called, it will contain the tabs object, and the index of the new tab ( 0-based ).&#x20;
-
-If you have multiple tabs elements marked with \[wfu-tabs], you can assign a unique name, and access it through `tabs.name`, as in this example;&#x20;
-
-```html
-<script>
-window.sa5 = window.sa5 || [];
-window.sa5.push(['tabChanged', 
-  (tabs, index) => {
-    
-    console.log("TAB CHANGED", tabs.name, tabs, index); 
-
-    switch(tabs.name) {
-      case "demo1": 
-        // A tab was clicked in the Demo 1 tabs element
-        // index indicates which tab was clicked ( 0-based )
-        break;
-      case "demo2": 
-        // A tab was clicked in the Demo 2 tabs element
-        // index indicates which tab was clicked ( 0-based )
-        break;
-    }
-
-  }]); 
-</script>
-```
-
-### Element Control <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
-
-Outside of callback events, you can also access the SA5 Tabs object by constructing one;
-
-```javascript
-const tabs = new sa5.WebflowTabs(
-    $("[wfu-tabs=demo1]")[0]
-); 
-```
-
-Once you have this, you can call its methods and properties;
-
-Properties;
-
-* name property returns the `[wfu-tabs]` name, if one was set.
-* `currentIndex` returns the 0-based index of the current slide.
-* `currentNum` returns the 1-based index.&#x20;
-
-Methods;
-
-* `goToFirst()` navigates to the first tab
-* `goToLast()` navigates to the last tab
-* `goToPrev()` navigates to the prev tab
-* `goToNext()` navigates to the next tab
-
-For example;
-
-```javascript
-$("#btnFirst").click(function() {
-  const tabs = new sa5.WebflowTabs(
-    $("[wfu-tabs=demo1]")[0]
-  ); 
-  tabs.goToFirst();
-})
-```
 
 ## Changelog <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
