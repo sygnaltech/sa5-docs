@@ -13,7 +13,7 @@ Currently this lib focuses on;
 1. Providing JS API's for Webflow's existing elements, where it's useful. Change tabs, navigate the slider, disable buttons, etc.&#x20;
 2. Capturing key events that you can respond to in custom code, like a slide or tab change- whether it was done by a user, or automatically ( auto-slides ), or by script.&#x20;
 3. Adding functionality where it's missing, such as Lightbox captions from the CMS.&#x20;
-4. Adding new elements where it's useful&#x20;
+4. Adding new elements, such as the Accordion, where it's useful&#x20;
 
 ## Deck Elements
 
@@ -28,7 +28,7 @@ All of these share the same base API for next, prev, first, etc.\
 This way the element can be changed out without needing to rewrite your code.
 
 {% hint style="info" %}
-See the [Deck Controller](deck-controller-element.md) for easy nocode navigation of Tabs and Slider elements.
+See the [Deck Controller](../deck-controller-element.md) for easy nocode navigation of Tabs and Slider elements.
 {% endhint %}
 
 ## Future

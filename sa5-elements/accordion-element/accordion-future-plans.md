@@ -16,10 +16,10 @@
 
 ### Methods&#x20;
 
-| Feature                       | Now                                                   | Planned | Considering |
-| ----------------------------- | ----------------------------------------------------- | ------- | ----------- |
-| Programmatic Navigation       | Navigate to slide number, first, last, next, and prev |         |             |
-| Add / remove / reorder slides |                                                       |         | Considering |
+| Feature                       | Now                                                   | Planned | Considering                  |
+| ----------------------------- | ----------------------------------------------------- | ------- | ---------------------------- |
+| Programmatic Navigation       | Navigate to slide number, first, last, next, and prev |         | <p>nextLoop <br>prevLoop</p> |
+| Add / remove / reorder slides |                                                       |         | Considering                  |
 
 ### Events
 

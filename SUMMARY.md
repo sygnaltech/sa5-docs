@@ -240,7 +240,8 @@
 
 ## 📘 sa5-elements
 
-* [🔍 About SA5's Elements Lib](sa5-elements/about.md)
+* [🔍 About SA5's Elements Lib](sa5-elements/about/README.md)
+  * [Elements Lib Future Plans](sa5-elements/about/elements-lib-future-plans.md)
 * [🚀 Quick Start | SA5 Elements](sa5-elements/quick-start.md)
 * [Tabs Element ❺](sa5-elements/tabs/README.md)
   * [Tabs Future Plans](sa5-elements/tabs/tabs.md)
