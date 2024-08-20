@@ -16,6 +16,8 @@
 | Autocomplete            | New element                   | Released |      |
 | Accordion               | New element                   | Beta     | Deck |
 | Stacked ( like Tinder ) |                               |          | Deck |
+| Video                   |                               |          |      |
+| Background Video        |                               |          |      |
 
 ## JavaScript API&#x20;
 
