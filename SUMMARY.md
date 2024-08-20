@@ -91,7 +91,8 @@
 
 ## 📘 sa5-forms
 
-* [🔍 About SA5's Forms Lib](sa5-forms/about.md)
+* [🔍 About SA5's Forms Lib](sa5-forms/about/README.md)
+  * [SA5 Forms Roadmap](sa5-forms/about/sa5-forms-roadmap.md)
 * [🚀 Quick Start | SA5 Forms](sa5-forms/quick-start/README.md)
   * [SA5 Forms Future](sa5-forms/quick-start/sa5-forms-future.md)
 * [Data-binding Form INPUTs & SELECTs ❺](sa5-forms/data-binding-form-inputs-and-selects.md)
@@ -266,6 +267,7 @@
 * [Accordion Element](sa5-elements/accordion-element/README.md)
   * [Accordion Future Plans](sa5-elements/accordion-element/accordion-future-plans.md)
   * [Accordion API](sa5-elements/accordion-element/accordion-api.md)
+* [Lottie Element](sa5-elements/lottie-element.md)
 
 ## 📘 sa5-format
 

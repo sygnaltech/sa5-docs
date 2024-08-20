@@ -4,20 +4,25 @@
 
 ## Elements
 
-| Element                 | Type                          | Status   | API  |
-| ----------------------- | ----------------------------- | -------- | ---- |
-| Tabs                    | Extend native Webflow element | Released | Deck |
-| Slider                  | Extend native Webflow element | Released | Deck |
-| Deck Controller         | New element                   | Released |      |
-| Button                  | Extend native Webflow element | Released |      |
-| Dropdown                | Extend native Webflow element | Released |      |
-| Lightbox                | Extend native Webflow element | Released |      |
-| Radio Button            | Extend native Webflow element | Released |      |
-| Autocomplete            | New element                   | Released |      |
-| Accordion               | New element                   | Beta     | Deck |
-| Stacked ( like Tinder ) |                               |          | Deck |
-| Video                   |                               |          |      |
-| Background Video        |                               |          |      |
+| Element                 | Type                          | Status                                     | API  |
+| ----------------------- | ----------------------------- | ------------------------------------------ | ---- |
+| Tabs                    | Extend native Webflow element | <mark style="color:green;">Released</mark> | Deck |
+| Slider                  | Extend native Webflow element | <mark style="color:green;">Released</mark> | Deck |
+| Deck Controller         | New element                   | <mark style="color:green;">Released</mark> |      |
+| Button                  | Extend native Webflow element | <mark style="color:green;">Released</mark> |      |
+| Dropdown                | Extend native Webflow element | <mark style="color:green;">Released</mark> |      |
+| Lightbox                | Extend native Webflow element | <mark style="color:green;">Released</mark> |      |
+| Radio Button            | Extend native Webflow element | <mark style="color:green;">Released</mark> |      |
+| Autocomplete            | New element                   | <mark style="color:green;">Released</mark> |      |
+| Accordion               | New element                   | <mark style="color:blue;">Beta</mark>      | Deck |
+| Stacked ( like Tinder ) |                               |                                            | Deck |
+| Video                   |                               |                                            |      |
+| Background Video        |                               |                                            |      |
+| Lottie                  | Extend native Webflow element | <mark style="color:orange;">Alpha</mark>   |      |
+
+{% hint style="info" %}
+Forms & Form Elements will be part of the SA5 Forms library.&#x20;
+{% endhint %}
 
 ## JavaScript API&#x20;
 
