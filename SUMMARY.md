@@ -120,6 +120,7 @@
 * [Advanced Element Filtering ❺](sa5-html/advanced-element-filtering/README.md)
   * [Useful Filtering Examples](sa5-html/advanced-element-filtering/useful-filtering-examples.md)
 * [Dynamic Attributes](sa5-html/sa5-dynamic-attributes/README.md)
+  * [Smart Attributes 🧪](sa5-html/sa5-dynamic-attributes/smart-attributes.md)
   * [Future](sa5-html/sa5-dynamic-attributes/future.md)
 * [Breakpoints ❺](sa5-html/breakpoints.md)
 * [Limit Items by Breakpoint ❺](sa5-html/limit-items-by-breakpoint.md)

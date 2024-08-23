@@ -4,22 +4,79 @@ description: Future plans for SA5 dynamic attributes
 
 # Future
 
-## Special Elements&#x20;
+## Change to `x:` prefix
 
-Checkbox
+Currently we prefix attributes with `x-` however this convention is already used in Alpine JS.  While this is unlikely to create conflicts, we'd like to avoid the possibility of confusion as well.
 
-`x-checked` - when used we'll evaluate the content to SA5 truthy or falsy.&#x20;
+## Removing Attributes After processing
 
-* Truthy creates the `checked` attribute
-* Falsy does not&#x20;
+Default false, but can enable this as a lib config option.&#x20;
 
-Select Option;&#x20;
+## Prefix and Postfix
 
-x-value - when used we'll scan the options list
+`x:pre:(name)` = ( value )&#x20;
 
-To set a default option in a `<select>` element, you use the `selected` attribute on the desired `<option>` element. Here's how you can do it in HTML:
+`x:post:(name)` = ( value )
 
-Note any data-binding SA5 must be done prior&#x20;
+`x:format:(name)` = ( value )
+
+
+
+`x:pre:(attribute)` = ( value )
+
+`x:post:(attribute)` = ( value )
+
+```
+<img 
+  x:src="image.jpg" 
+  x:pre:src="https://cdn.example.com/" 
+  x:post:src="?version=123">
+```
+
+Would result in;
+
+```
+<img src="https://cdn.example.com/img.jpg?version=123"> 
+```
+
+
+
+
+
+```
+<img 
+    src="image.jpg" 
+    x:pre:src="https://cdn.example.com/" 
+    x:post:src="?version=123" 
+    x:format:src="{x:pre:src}{src}{x:post:src}" 
+/>
+
+```
+
+Use cases;
+
+* In a CMS-bound link, append `#hash` or `?query=foo` data.&#x20;
+* Append classes to your class list without overwriting them
+
+```
+<div class="foo" x:post:class="bar"></div>
+```
+
+Result;
+
+```
+<div class="foo bar"></div>
+```
+
+
+
+
+
+
+
+## Smart Attributes
+
+[Learn more](smart-attributes.md).
 
 ## \<script> based transforms
 
@@ -44,6 +101,8 @@ Ideally design this so that it can also support Hyperflow processing.&#x20;
 
 
 ## Transforms
+
+[Learn more](../transform.md)
 
 Dynamic Attributes are likely to become a facet of a larger SA5 concept we'll call DOM Transforms. Transforms allow for broad changes to happen, and have a specific instructional paradigm;
 
