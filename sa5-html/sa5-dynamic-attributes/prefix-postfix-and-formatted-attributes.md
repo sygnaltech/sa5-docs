@@ -1,36 +1,87 @@
-# Prefix, Postfix, and Formatted Attributes
+---
+description: Get fancier with your attribute replacements.
+---
+
+# Prefix, Postfix, and Formatted Attributes 🧪
+
+{% hint style="info" %}
+Feature under consideration.&#x20;
+{% endhint %}
+
+The `x:my-attr` syntax allows for a full replacement of an existing attribute, and solves two main limitations;
+
+* Reserved attributes that you cannot create in the Webflow Designer&#x20;
+* Attributes which do not support CMS / component property data-binding&#x20;
+
+However what if you want to modify an existing attribute, or create a composite attribute value from a blend of CMS-sourced and static content?
+
+## Prefix, Postfix, and Format
+
+Sygnal is considering the addition of 3 variations to the `x:` attribute processor;
+
+* `x:pre:(attr)` - prefixes the attribute with a new value, either static or data-bound
+* `x:post:(attr)` - postfixes ( appends ) the attribute with a new value, either static or data-bound
+* `x:format:(attr)` - creates a new attribute from a formatting string, that can combine several atributes and several pieces of static text into one resulting attribute value.&#x20;
+
+### Format String&#x20;
 
 
 
-
-
-## Processing Order&#x20;
+## Using the `x:` attributes together
 
 We'll use example of a `src` attribute here;&#x20;
 
-Scenarios;
+There are _three_ general Scenarios we want to support;
 
-`src` exists, and we want to modify it
+* A `src` attribute already exists, and we want to replace it
+* A `src` attribute already exists, and we want to modify it
+* A `src` does not exist, and we want to create it
 
-`src` does not exist, and we want to create it
+### Processing Rules
+
+Here's how the `x:` attributes will be applied to compose a new value;&#x20;
 
 1. `src` attribute is retrieved, if it exists
 
-Attribute replacements;&#x20;
+Attribute replacements occur;&#x20;
 
 1. `x:src` attribute overwrites that, if it exists
 2. `x:format:src` attribute overwrites that, if it exists
 
-Modifiers;&#x20;
+Attribute modifiers are applied;&#x20;
 
 1. `x:pre:src` prefixes the result
 2. `x:post:src` postfixes the result
 
-
+The final attribute value is then applied.&#x20;
 
 
 
 ## Use Cases
+
+Styling;
+
+* Append a class to your class list
+* Append a style to your style attribute, from the CMS
+
+```
+<div style="color: red; color: blue;">
+    This text will be blue.
+</div>
+
+```
+
+{% hint style="info" %}
+CSS properties are applied in the order they appear in the `style` attribute. When the same property is specified multiple times, the browser will apply the last value it encounters, effectively overriding any previous values for that property.
+{% endhint %}
+
+**Format:** `x:format:style="{background-style}; {margin-style}; {padding-style}"`
+
+Format: x:format:src="{x:pre:src}/{path}{x:post:src}"
+
+Format: x:format:class="{base-class} {status-class} {modifier-class}"
+
+Format: x:format:style="{background-style}; {margin-style}; {padding-style}"
 
 See Examples.&#x20;
 
