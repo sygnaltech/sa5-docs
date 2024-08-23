@@ -6,6 +6,16 @@ description: Control and navigate deck elements like Tabs and Sliders
 
 The Deck Controller provides simple no-code navigation capabilities using attributes that work across all deck-style elements, including SA5's [Tabs](tabs/), [Sliders](slider/). and [Accordion](accordion-element/).&#x20;
 
+{% hint style="warning" %}
+**BETA.** This feature is available however feature specifics and attribute names may change in the final release of this lib.&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+**IMPORTANT.** This control concept is most likely to be refitted into our growing SA5 [Element Actions](element-actions.md) handler.  It will work very similarly, and continue to be attribute-based but the attribute names will fully change.&#x20;
+{% endhint %}
+
+Important
+
 ## Attributes
 
 {% hint style="info" %}

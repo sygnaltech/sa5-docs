@@ -244,6 +244,7 @@
 * [🔍 About SA5's Elements Lib](sa5-elements/about/README.md)
   * [Elements Lib Future Plans](sa5-elements/about/elements-lib-future-plans.md)
 * [🚀 Quick Start | SA5 Elements](sa5-elements/quick-start.md)
+* [Element Actions ❺🧪](sa5-elements/element-actions.md)
 * [Tabs Element ❺](sa5-elements/tabs/README.md)
   * [Tabs Future Plans](sa5-elements/tabs/tabs.md)
   * [Tabs API](sa5-elements/tabs/tabs-api.md)
@@ -264,10 +265,13 @@
 * [Autocomplete Element ❺](sa5-elements/autocomplete-element/README.md)
   * [Styling](sa5-elements/autocomplete-element/styling.md)
   * [Future](sa5-elements/autocomplete-element/future.md)
-* [Accordion Element](sa5-elements/accordion-element/README.md)
+* [Accordion Element ❺](sa5-elements/accordion-element/README.md)
   * [Accordion Future Plans](sa5-elements/accordion-element/accordion-future-plans.md)
   * [Accordion API](sa5-elements/accordion-element/accordion-api.md)
-* [Lottie Element](sa5-elements/lottie-element.md)
+* [Lottie Element ❺🧪](sa5-elements/lottie-element.md)
+* [Locale Switcher Element ❺🧪](sa5-elements/locale-switcher-element/README.md)
+  * [Technical Notes](sa5-elements/locale-switcher-element/technical-notes.md)
+  * [JavaScript API](sa5-elements/locale-switcher-element/javascript-api.md)
 
 ## 📘 sa5-format
 
