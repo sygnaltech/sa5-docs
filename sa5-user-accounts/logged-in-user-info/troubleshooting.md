@@ -30,7 +30,7 @@ SA5's debug messages will appear in the console of your browser's DevTools.
 Make certain to enable Verbose debugging or many of the detail messages will not be visible to you.&#x20;
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Enable verbose debugging. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Enable verbose debugging. </p></figcaption></figure>
 
 ### Using Debug Messages
 
@@ -40,7 +40,7 @@ You can expand these to view the state of the data at that point in the load, fo
 
 The `user_data_loaded` field shows what it has completed loading so you can diagnose issues by comparing this to the data you have.  If `user_data_loaded.access_groups` shows true, but your `access_groups` are empty, you might have a configuration problem with access groups and you'd know to review the setup instructions there.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Can't access User Custom Fields
 

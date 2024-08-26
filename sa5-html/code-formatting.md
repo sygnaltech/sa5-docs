@@ -46,7 +46,7 @@ However, this styling will ONLY apply to code elements that Webflow identifies a
 
 Here's that same example with custom styling applied;&#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Here, the blue items were recognized as <strong>makefile</strong> syntax, while the pink items were <strong>undefined</strong> and had my own custom styling applied correctly.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Here, the blue items were recognized as <strong>makefile</strong> syntax, while the pink items were <strong>undefined</strong> and had my own custom styling applied correctly.</p></figcaption></figure>
 
 ### To Research
 
