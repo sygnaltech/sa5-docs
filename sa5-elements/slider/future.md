@@ -4,6 +4,16 @@ description: SA5 Slider Future plans
 
 # Future
 
+Pause on hover controls;
+
+[https://discourse.webflow.com/t/controlling-slider-preventing-hover-pause-with-jquery/160730](https://discourse.webflow.com/t/controlling-slider-preventing-hover-pause-with-jquery/160730)
+
+[https://discourse.webflow.com/t/disable-slider-pause-on-hover/133172/19](https://discourse.webflow.com/t/disable-slider-pause-on-hover/133172/19)
+
+Controls;
+
+* Pause / Play&#x20;
+
 Slide manufacture;
 
 * Add slides from static elements

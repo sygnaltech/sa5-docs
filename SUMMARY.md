@@ -258,7 +258,7 @@
   * [Slider JS API Events](sa5-elements/slider/slider-js-api-events.md)
   * [Advanced Slider Use](sa5-elements/slider/advanced-slider-use.md)
   * [Future](sa5-elements/slider/future.md)
-* [Deck Controller Element ❺](sa5-elements/deck-controller-element.md)
+* [Deck Controller Element ❺⛔](sa5-elements/deck-controller-element.md)
 * [Button Element ❺](sa5-elements/button.md)
 * [Dropdown Element ❺](sa5-elements/dropdown.md)
 * [Lightbox Element ❺](sa5-elements/lightbox/README.md)

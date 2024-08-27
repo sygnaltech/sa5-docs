@@ -21,17 +21,25 @@ Conceptual rules;&#x20;
 * Actions are the center of the config&#x20;
   * Target is optional for some actions &#x20;
 
-| Action   | Tabs, Swiper, Accordion | Locale Switcher | Any |
-| -------- | ----------------------- | --------------- | --- |
-| first    |                         |                 |     |
-| last     |                         |                 |     |
-| next     |                         |                 |     |
-| nextLoop |                         |                 |     |
-| prev     |                         |                 |     |
-| prevLoop |                         |                 |     |
-| goto     | Item #                  | ? Locale code   |     |
-| Hide     |                         |                 |     |
-| Show     |                         |                 |     |
+| Action            | Tabs, Swiper, Accordion |   | Locale Switcher              | Any |
+| ----------------- | ----------------------- | - | ---------------------------- | --- |
+| **Navigation**    |                         |   |                              |     |
+| `first`           | Yes                     |   | -                            | -   |
+| `last`            | Yes                     |   | -                            | -   |
+| `next`            | Yes                     |   | -                            | -   |
+| `nextLoop`        | Yes                     |   | -                            | -   |
+| `prev`            | Yes                     |   | -                            | -   |
+| `prevLoop`        | Yes                     |   | -                            | -   |
+| `goto`            | Yes, specify item #     |   | ~~Yes, specify locale code~~ |     |
+| **Visibility** 🧪 |                         |   |                              |     |
+| ~~`hide`~~        | Yes                     |   |                              | Yes |
+| ~~`show`~~        | Yes                     |   |                              | Yes |
+| ~~`toggle`~~      | Yes                     |   |                              | Yes |
+| **Collapsing** 🧪 |                         |   |                              |     |
+| ~~`open`~~        | -                       |   |                              |     |
+| ~~`close`~~       | -                       |   |                              |     |
+| **Forms** 🧪      |                         |   |                              |     |
+| ~~check~~         |                         |   |                              |     |
 
 
 
@@ -47,19 +55,17 @@ Method is one of;
 
 * `first` - select the first item
 * `prev` - select the previous item
-  * ~~`prevLoop`~~ - select the previous item or loop if we're on the first item ( considering )
+  * `prevLoop` - select the previous item or loop if we're on the first item
 * `next` - select the next item
-  * ~~`nextLoop`~~ - select the next item or loop if we're on the last item ( considering )
+  * `nextLoop` - select the next item or loop if we're on the last item
 * `last` - select the last item
 * `goto` - select the specified item, as specified by `wfu-deck-action-item`&#x20;
 
-### `wfu-action-target` = LOCALE-SWITCHER
+### `wfu-action-target` = ( target element name )
 
+**Optional.** Specifies the `wfu-name`, `wfu-tabs`, `wfu-slider` or `wfu-accordion` name you want your action to target.
 
-
-**Optional.** Specifies the `wfu-tabs`, `wfu-slider` or `wfu-accordion` name you want your action to target.
-
-If unspecified, it will look for the nearest parent deck element as the target. &#x20;
+If unspecified, it will look for the nearest named parent element as the target. &#x20;
 
 ### `wfu-action-item` = ( item number | name )  <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
