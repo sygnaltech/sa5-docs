@@ -340,7 +340,7 @@
     * [Future Triggers](sa5-modals/webflow-popups-and-modals/sa5-modals-roadmap-and-future/future-triggers.md)
 * [Dismissible Elements](sa5-modals/article.md)
 * [Webflow Modals & Popups Auto-Open and Auto-Close](sa5-modals/article-1.md)
-* [Page 1](sa5-modals/page-1.md)
+* [Side Panels 🧪](sa5-modals/page-1.md)
 
 ## 📘 sa5-selectcustom
 
