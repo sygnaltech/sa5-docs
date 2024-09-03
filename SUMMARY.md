@@ -106,6 +106,7 @@
 * [Form Data Fixups](sa5-forms/form-data-fixups.md)
 * [Form IP Info ❺](sa5-forms/form-ip.md)
 * [File Uploads 📝](sa5-forms/file-uploads.md)
+* [Custom Form Submit Button](sa5-forms/custom-form-submit-button.md)
 * [File Downloads](sa5-forms/file-downloads.md)
 * [Form Select Element](sa5-forms/form-select-element.md)
 * [SA5 Forms API](sa5-forms/sa5-forms-api.md)
