@@ -35,6 +35,10 @@ Cloneable demo site.
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
+### Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+First, **add the library** as detailed in [Quick Start](../quick-start.md).
+
 ### Prepare your CMS <a href="#prepare-your-cms" id="prepare-your-cms"></a>
 
 * Include a photo in your collection items
@@ -54,6 +58,33 @@ Add the `wfu-lightbox-captions` custom attribute (no value needed) to the Lightb
 _That's it!_&#x20;
 
 The CMS field you've bound to Alt Text will be displayed as the caption in lightbox view.
+
+## Styling Captions
+
+Lightbox captions are generated as follows;
+
+{% code overflow="wrap" %}
+```html
+<figcaption class="w-lightbox-caption">The Excaliburs are ready to rumble</figcaption>
+```
+{% endcode %}
+
+To style these, add an embed with custom CSS in your page;
+
+{% hint style="info" %}
+You can CSS-style any aspect of the caption bar.  Here we show text and background coloring only;&#x20;
+{% endhint %}
+
+```html
+<style>
+figcaption.w-lightbox-caption {
+  color: white;
+  background-color: teal; 
+}
+</style>
+```
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
