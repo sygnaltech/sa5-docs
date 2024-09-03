@@ -139,6 +139,9 @@
 * [CMS Code Injection ❺🧪](sa5-html/cms-code-injection.md)
 * [Responsive Tables ❺🧪](sa5-html/responsive-tables.md)
 * [Text Formatting ❺🧪](sa5-html/text-formatting.md)
+* [Components ❺🧪](sa5-html/components/README.md)
+  * [Component Object Positioning](sa5-html/components/component-object-positioning.md)
+* [Page 1](sa5-html/page-1.md)
 
 ## 📘 sa5-layout
 
