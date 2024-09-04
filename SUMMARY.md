@@ -194,6 +194,7 @@
   * [CSS Isolation](sa5-richtext/richtext/css-isolation.md)
 * [Blockquotes](sa5-richtext/blockquotes.md)
 * [Call-Outs](sa5-richtext/call-outs.md)
+* [Responsive Inline Images](sa5-richtext/responsive-inline-images.md)
 
 ## 📘 sa5-table
 
