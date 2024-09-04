@@ -39,7 +39,7 @@ Cloneable demo site.
 
 ### Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](../quick-start.md).
+First, **add the library** as detailed in [Quick Start](../../quick-start.md).
 
 ### Prepare your CMS <a href="#prepare-your-cms" id="prepare-your-cms"></a>
 
@@ -86,13 +86,13 @@ figcaption.w-lightbox-caption {
 </style>
 ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](../quick-start.md).
+First, **add the library** as detailed in [Quick Start](../../quick-start.md).
 
 ### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
 
