@@ -19,6 +19,13 @@ Demonstration
 * Capture general geographic info, such as country and city.
 * Store IP ( where permitted, and part of your privacy policy ), as a verification of the send. Required by some services like Mailchimp, for loading external lists.&#x20;
 
+## Getting Started <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+* First, **add the library** as detailed in [Quick Start](quick-start/).&#x20;
+* **Tag your Form Block.** Place this Place this custom attribute on your form block element:&#x20;
+
+`[wfu-form-ipinfo]`
+
 ### Handler Options&#x20;
 
 Currently the only supported handler is **GeoJS**.
@@ -48,15 +55,5 @@ Only non-blank results will be sent.&#x20;
 
 * Separate this data lib from the data-binding lib, and allow it to be used independently.&#x20;
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-First, **add the library** as detailed in [Quick Start](quick-start/).&#x20;
-
-### **STEP 2 - Tag your Form Block**
-
-Place this custom attribute on your form block element;
-
-`[wfu-form-ipinfo]`
 
