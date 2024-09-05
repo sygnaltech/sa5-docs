@@ -25,7 +25,12 @@ Demo
 Cloneable
 {% endembed %}
 
-## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+## Getting Started  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+1. First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20;
+2. Add the attributes below that you want for your desired behavior.&#x20;
+
+## Attributes
 
 The basic approach is to attach the filter attribute to the elements you want to conditionally display, and then add simple JavaScript logic that is evaluated.&#x20;
 
@@ -114,14 +119,6 @@ window.filterText = function(e) {
 
 Make sure to give it a single parameter, as it will be passed the element you are evaluating in the filter. The evaluation function you create must be top level, so it will be referenced from the `window` object. &#x20;
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20;
-
-### STEP 2 - Apply `wfu-filter` or `wfu-filter-func` to the elements you want to filter <a href="#step-2---apply-wfu-filter-or-wfu-filter-func-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-filter-or-wfu-filter-func-to-the-elements-you-want-to-filter"></a>
-
-See above for details.
 
 \

@@ -46,6 +46,13 @@ Cloneable
 Tutorial
 {% endembed %}
 
+## Getting Started  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+1. First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
+2. Apply `wfu-sort` and configuration attributes to the elements you want to filter
+3. **Optional.**  Change the default sort type ( _string_ ) and order ( _ascending_ ), using the `wfu-sort-dir` and `wfu-sort-type` attributes.
+4. **Optional.**  Use the `wfu-sort-key` to define your item sort key
+
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
 Sorting is configured on two sets of elements- the **parent** element, which contains the list of things you are sorting, and the **item** elements, which are the elements being sorted.&#x20;
@@ -56,7 +63,7 @@ If you are not sorting a collection list, any parent-item set can be configured 
 
 ### `wfu-sort` attribute <a href="#wfu-sort-attribute" id="wfu-sort-attribute"></a>
 
-Place this attribute on the **parent** element, to indicate it will be sorted. No value is needed.&#x20;
+**Required.** Place this attribute on the **parent** element, to indicate it will be sorted. No value is needed.&#x20;
 
 ### `wfu-sort-dir` attribute <a href="#wfu-sort-dir-attribute" id="wfu-sort-dir-attribute"></a>
 
@@ -111,21 +118,5 @@ Future features we're considering...
 * Memory of past sort settings&#x20;
 * Option to re-init IX2&#x20;
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
-
-### STEP 2 - Apply `wfu-sort` and configuration attributes to the elements you want to filter <a href="#step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter"></a>
-
-See above for details.
-
-### STEP 3 - \[ OPTIONAL ] Change the default sort type ( _string_ ) and order ( _ascending_ ), using the `wfu-sort-dir` and `wfu-sort-type` attributes.
-
-See above for details.
-
-### STEP 4 - Use the `wfu-sort-key` to define your item sort key
-
-See above for details.
 

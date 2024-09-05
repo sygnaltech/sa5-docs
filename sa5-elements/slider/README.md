@@ -53,7 +53,15 @@ SA5 Slider is primarily API-based, see the left nav for the API docs.&#x20;
 | User wishes to advance to next slide  |            | slideNextRequest event                                         |
 | User wished to navigate to prev slide |            | slidePrevRequest event                                         |
 
-## Setup <a href="#prepare-your-collection-list" id="prepare-your-collection-list"></a>
+
+
+## Getting Started  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+1. First, **add the library** as detailed in [Quick Start](../quick-start.md).
+2. Apply the custom attributes to the elements you want to affect
+3. Use the API & Callbacks to control the element from your custom code
+
+See above for details.
 
 * Setup your Webflow slider element however you like
 * Setup other "control" elements that will affect it, such as buttons, etc ( optional ).&#x20;
@@ -68,19 +76,7 @@ Add the `wfu-slider` custom attribute to the a Slider element. Give it a unique 
 
 This makes the slider element accessible in code.&#x20;
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-First, **add the library** as detailed in [Quick Start](../quick-start.md).
-
-### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
-
-See above for details.
-
-### STEP 3 - Use the API & Callbacks to control the element from your custom code
-
-See above for details.
 
 
 
