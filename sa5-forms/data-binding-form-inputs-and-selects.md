@@ -15,15 +15,13 @@ In SA, data-binding involves two steps;
 
 Setup is relatively simple, and you can use the Collection List’s built-in sorting and filtering options to precisely control the data you want in your Form controls.
 
-### Getting Started <a href="#getting-started" id="getting-started"></a>
+## Getting Started <a href="#getting-started" id="getting-started"></a>
 
 _Use the_ [_demo examples_](https://github.com/sygnaltech/webflow-util/tree/master/demo/webflow-forms/databinding) _as a current reference for using each feature._
 
 **NOTE:** Here is a _outdated_ [video overview](https://www.youtube.com/watch?v=xc7vx7YdK5I) of setting up databinding in WFU v2.0. I’ll re-record soon. For now I’m leaving it as it will show you some of the internals on how the setup works.
 
-#### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-There are currently no configuration options for the data-binding feature, so we’ll use a _lo-code_ integration approach.
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
 Paste this code, exactly, into the **Before `</body>` tag** script area of your Page settings. If you are using data-binding on multiple pages, you might choose to do this in your site-wide settings.
 
