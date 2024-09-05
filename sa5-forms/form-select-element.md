@@ -6,7 +6,7 @@ description: Extend and control Webflow's Form Select Element
 
 HTML `<select>` fields are form elements that allow users to choose one or more options from a dropdown list. They are used to present a list of choices, enabling users to select the most appropriate option(s) for their input.&#x20;
 
-### Multi-Selects
+### Multi-Selects - Why this is needed.
 
 When used with the `multiple` attribute, they allow for the selection of multiple items simultaneously.
 
@@ -48,7 +48,7 @@ Assign a meaningful name. The name is only used for referencing this element.&#x
 
 ### Multi-Select Capabilities
 
-If you nave your select element set to multiple in Webflow, it will display as a list-style element and support the selection of multiple items.&#x20;
+If you have your select element set to multiple in Webflow, it will display as a list-style element and support the selection of multiple items.&#x20;
 
 SA5 allows you to change the browser's default multi-select behavior, so that a click will select/deselect each item individually.&#x20;
 
