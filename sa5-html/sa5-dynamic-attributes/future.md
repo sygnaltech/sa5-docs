@@ -4,6 +4,11 @@ description: Future plans for SA5 dynamic attributes
 
 # Future
 
+## Smart options
+
+* Force overwrite
+* Overwrite only if non-blank
+
 ## Change to `x:` prefix
 
 Currently we prefix attributes with `x-` however this convention is already used in Alpine JS.  While this is unlikely to create conflicts, we'd like to avoid the possibility of confusion as well.
