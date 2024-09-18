@@ -204,7 +204,8 @@
 
 * [🔍 About SA5's Hotkeys Lib](sa5-hotkeys/about.md)
 * [🚀 Quick Start | SA5 Hotkeys](sa5-hotkeys/quick-start.md)
-* [Hotkeys ❺](sa5-hotkeys/hotkeys.md)
+* [Hotkeys ❺](sa5-hotkeys/hotkeys/README.md)
+  * [Future](sa5-hotkeys/hotkeys/future.md)
 
 ## 📘 sa5-trigger
 

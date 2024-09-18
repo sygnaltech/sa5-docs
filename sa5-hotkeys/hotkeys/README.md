@@ -77,7 +77,7 @@ There are currently no configuration options for the data-binding feature, so we
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](quick-start.md).
+First, **add the library** as detailed in [Quick Start](../quick-start.md).
 
 ### STEP 2 - Implement your callback handlers <a href="#step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter" id="step-2---apply-wfu-sort-and-configuration-attributes-to-the-elements-you-want-to-filter"></a>
 
