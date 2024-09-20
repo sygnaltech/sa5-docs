@@ -1,5 +1,17 @@
 # Future
 
+## Image Previews
+
+Some content will just be too large to display in the intended space.
+
+Three options;
+
+* Image Previews
+* Scaling
+* Scrolling
+
+[https://codepen.io/memetican/pen/LYwPRBR/70a3703d238a50d5e11f349f7be15aef](https://codepen.io/memetican/pen/LYwPRBR/70a3703d238a50d5e11f349f7be15aef)
+
 ## Content Embeds Future&#x20;
 
 Possibly add smart URL conversions,&#x20;
