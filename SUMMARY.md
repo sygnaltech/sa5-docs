@@ -8,7 +8,7 @@
 * [Sygnal Attributes v5](README.md)
 * [How to Add Custom Code](overview/how-to-add-custom-code.md)
 * [What is Sygnal Attributes?](<README (1).md>)
-* [Sponsor a Feature](overview/sponsor.md)
+* [Sponsor a Feature ✨](overview/sponsor.md)
 * [What's New?](overview/whats-new.md)
 * [Library Modules](overview/whats-new-1.md)
 * [Technical Notes & Goals](overview/technical-notes-and-goals/README.md)
@@ -217,11 +217,12 @@
 
 ## 📘 sa5-commerce
 
-* [Payment Providers ❺](sa5-commerce/payment-providers.md)
+* [Payment Providers](sa5-commerce/payment-providers.md)
+* [Price in Local Currency 🧪](sa5-commerce/price-in-local-currency.md)
 
 ## 📘 sa5-demo
 
-* [Webflow Preview Link ❺](sa5-demo/webflow-preview-link.md)
+* [Webflow Preview Link](sa5-demo/webflow-preview-link.md)
 
 ## 📘 sa5-ui
 
@@ -233,20 +234,20 @@
 
 * [🔍 About SA5's Url Lib](sa5-url/about.md)
 * [🚀 Quick Start | SA5 Url](sa5-url/quick-start.md)
-* [Query Param Passthrough ❺](sa5-url/query-param-passthrough/README.md)
+* [Query Param Passthrough](sa5-url/query-param-passthrough/README.md)
   * [Future](sa5-url/query-param-passthrough/future.md)
-* [External Link Targeting ❺](sa5-url/external-link-targeting.md)
-* [Relative Link Fixups ❺⛔](sa5-url/relative-link-fixups.md)
+* [External Link Targeting](sa5-url/external-link-targeting.md)
+* [Relative Link Fixups ⛔](sa5-url/relative-link-fixups.md)
 
 ## 📘 sa5-video
 
 * [🔍 About SA5's Webflow Video Lib](sa5-video/about.md)
 * [🚀 Quick Start | SA5 Video](sa5-video/quick-start.md)
-* [Background Video Poster ❺](sa5-video/background-video-poster.md)
-* [YouTube Hide Related Videos \[BETA\] ❺](sa5-video/youtube-hide-related-videos-beta/README.md)
+* [Background Video Poster](sa5-video/background-video-poster.md)
+* [YouTube Hide Related Videos \[BETA\]](sa5-video/youtube-hide-related-videos-beta/README.md)
   * [Styling Options](sa5-video/youtube-hide-related-videos-beta/styling-options.md)
   * [Future](sa5-video/youtube-hide-related-videos-beta/future.md)
-* [Video Player ❺](sa5-video/video-player/README.md)
+* [Video Player](sa5-video/video-player/README.md)
   * [Video Playback Spec 🧪](sa5-video/video-player/video-playback-spec.md)
   * [YouTube Video Data 🧪](sa5-video/video-player/youtube-video-data.md)
   * [Loom Video Data 🧪](sa5-video/video-player/loom-video-data.md)
@@ -256,7 +257,7 @@
 * [🔍 About SA5's Elements Lib](sa5-elements/about/README.md)
   * [Elements Lib Future Plans](sa5-elements/about/elements-lib-future-plans.md)
 * [🚀 Quick Start | SA5 Elements](sa5-elements/quick-start.md)
-* [Element Actions ❺🧪](sa5-elements/element-actions.md)
+* [Element Actions 🧪](sa5-elements/element-actions.md)
 * [Tabs Element ❺](sa5-elements/tabs/README.md)
   * [Tabs Future Plans](sa5-elements/tabs/tabs.md)
   * [Tabs API](sa5-elements/tabs/tabs-api.md)
