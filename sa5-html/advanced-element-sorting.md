@@ -17,12 +17,10 @@ Webflow's collection lists offer a native sort functionality, however it has a n
 This attribute allows to do all of these;
 
 * Sort by ref & option field types
-* Sort by text, date, numbers, or even semvers
-* Sort ascending, descending or randomly ( on every page refresh )
+* Sort by text, date, numbers, or even version numbers ( aka semvers )
+* Sort ascending, descending or randomly, on every page refresh&#x20;
 
 ## Demonstrations
-
-Sort elements dynamically using a script
 
 {% embed url="https://webflow-smart-elements.webflow.io/collection-lists" %}
 Demonstration site
@@ -31,8 +29,6 @@ Demonstration site
 {% embed url="https://webflow.com/made-in-webflow/website/webflow-tabs-hacks" %}
 Cloneable
 {% endembed %}
-
-### Additional demos
 
 {% embed url="https://sort-by-option-or-ref.webflow.io/" %}
 Demonstration
