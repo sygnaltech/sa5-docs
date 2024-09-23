@@ -1,4 +1,11 @@
-# Auto-Size IFRAMEs
+# Auto-Size IFRAMEs 🧪
+
+{% hint style="info" %}
+UNRELEASED\
+This was a part of SA4 we may revive.&#x20;
+{% endhint %}
+
+## Auto-Sizing IFrames
 
 **This tool allows you to auto-size IFRAMES to their content.**
 
@@ -19,5 +26,10 @@ Automatically sizes the IFRAME to fit its content.
 * May not work with cross-domain content.
 * May not respond to dynamic IFRAME content changes.
 
-\
-\
+## Custom Src Changes
+
+[https://codepen.io/memetican/pen/ZEjxxZP/9f48514d4c34682223a748e0288eed12](https://codepen.io/memetican/pen/ZEjxxZP/9f48514d4c34682223a748e0288eed12)
+
+[https://stackoverflow.com/questions/16449445/how-can-i-set-image-source-with-base64](https://stackoverflow.com/questions/16449445/how-can-i-set-image-source-with-base64)
+
+## ![](<../.gitbook/assets/image (60).png>)
