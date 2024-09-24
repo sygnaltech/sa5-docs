@@ -27,7 +27,7 @@ Features;
 
 * Drop in one references, and all libs are automatically accessible ( same version as core )
 * Detection of unknown attributes, or misspelled attributes, or obsolete
-*
+* Controlled order of execution, internal dependencies&#x20;
 
 ## Loading Technique
 
@@ -52,3 +52,4 @@ if (document.readyState !== 'loading') {
 
 function myInitCode() {}
 ```
+

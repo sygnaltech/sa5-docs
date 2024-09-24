@@ -18,7 +18,9 @@
 * [Documentation](overview/documentation.md)
 * [Preloaders](overview/preloaders.md)
 * [Sygnal Attributes ( SA5 ) Support](overview/sygnal-attributes-sa5-support.md)
-* [SA5 Core](overview/sa5-core.md)
+* [SA5 Core](overview/sa5-core/README.md)
+  * [Core Processing](overview/sa5-core/core-processing.md)
+  * [Element Tracking](overview/sa5-core/element-tracking.md)
 
 ## 📘 sa5-cache
 
