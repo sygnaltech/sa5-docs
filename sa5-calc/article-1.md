@@ -58,7 +58,7 @@ Indicates the attribute to retrieve the data item from.
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](../404/quick-start-or-sa5-404.md).&#x20;
+First, **add the library** as detailed in [Quick Start](../sa5-404/quick-start-or-sa5-404.md).&#x20;
 
 ### STEP 2 - Add `wfu-404-search` to your Search input
 

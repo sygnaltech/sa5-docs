@@ -20,26 +20,26 @@
 * [Sygnal Attributes ( SA5 ) Support](overview/sygnal-attributes-sa5-support.md)
 * [SA5 Core](overview/sa5-core.md)
 
-## 📘 sa5-cache <a href="#cache" id="cache"></a>
+## 📘 sa5-cache
 
-* [🔍 About SA5's Cache Lib](cache/about.md)
-* [Data Caching ❺](cache/cache/README.md)
-  * [Cache Setup v4](cache/cache/v4.md)
+* [🔍 About SA5's Cache Lib](sa5-cache/about.md)
+* [Data Caching ❺](sa5-cache/cache/README.md)
+  * [Cache Setup v4](sa5-cache/cache/v4.md)
 
 ## 📘 sa5-socialshare
 
 * [🔍 About SA5's Socialshare Lib](sa5-socialshare/about.md)
 * [Email Social Share ❺](sa5-socialshare/cache.md)
 
-## 📘 sa5-detect <a href="#detect" id="detect"></a>
+## 📘 sa5-detect 🧪
 
-* [🔍 About SA5's Detect Lib](detect/about.md)
-* [🚀 Quick Start | SA5 Detect](detect/quick-start.md)
-* [Page](detect/page.md)
-* [User Agent Detection](detect/user-agent-detection.md)
-* [Geolocation Detection ❺🧪](detect/geo/README.md)
-  * [Cache Setup v4](detect/geo/v4.md)
-* [Detect Incognito Mode](detect/detect-incognito-mode.md)
+* [🔍 About SA5's Detect Lib](sa5-detect/about.md)
+* [🚀 Quick Start | SA5 Detect](sa5-detect/quick-start.md)
+* [Page](sa5-detect/page.md)
+* [User Agent Detection](sa5-detect/user-agent-detection.md)
+* [Geolocation Detection ❺🧪](sa5-detect/geo/README.md)
+  * [Cache Setup v4](sa5-detect/geo/v4.md)
+* [Detect Incognito Mode](sa5-detect/detect-incognito-mode.md)
 
 ## 📘 sa5-analytics
 
@@ -144,7 +144,7 @@
 * [Text Formatting ❺🧪](sa5-html/text-formatting.md)
 * [Components ❺🧪](sa5-html/components/README.md)
   * [Component Object Positioning](sa5-html/components/component-object-positioning.md)
-* [Auto-Size IFRAMEs 🧪](sa5-html/auto-size-iframes.md)
+* [Auto-Size IFRAMEs 🧪](deprecated/auto-size-iframes.md)
 * [Scroll Anchor](sa5-html/scroll-anchor.md)
 
 ## 📘 sa5-layout
@@ -158,7 +158,7 @@
   * [Slider Layout Handler 🧪](sa5-layout/layout/slider-layout-handler.md)
   * [Future](sa5-layout/layout/future.md)
 
-## 📘 sa5-logic
+## 📘 sa5-logic 🧪
 
 * [🔍 About SA5's Logic Lib](sa5-logic/about/README.md)
   * [Future](sa5-logic/about/future.md)
@@ -366,32 +366,32 @@
 * [🚀 Quick Start | SA5 Effects](sa5-effects/quick-start.md)
 * [Depthmap (Fake 3D) Image ❺🧪](sa5-effects/article.md)
 
-## 📘 sa5-fixup <a href="#fixup" id="fixup"></a>
+## 📘 sa5-fixup
 
-* [Viewport META](fixup/viewport-meta.md)
-* [Webflow Fixups ❺](fixup/article.md)
+* [Viewport META](sa5-fixup/viewport-meta.md)
+* [Webflow Fixups ❺](sa5-fixup/article.md)
 
 ## 📘 sa5-countup
 
 * [CountUp Animated Numbers](webflow-countup/countup.md)
 
-## 📘 sa5-seo <a href="#seo" id="seo"></a>
+## 📘 sa5-seo
 
-* [🔍 About SA5's SEO Lib](seo/about.md)
-* [🚀 Quick Start | SA5 SEO](seo/quick-start.md)
-* [Noindex ❺🧪](seo/noindex.md)
-* [Nofollow ❺🧪](seo/nofollow.md)
-* [JSON-LD ❺🧪](seo/json-ld/README.md)
-  * [JSON-LD Article ❺🧪](seo/json-ld/article.md)
-  * [JSON-LD Video ❺🧪](seo/json-ld/article-1.md)
-  * [JSON-LD Course Info ❺🧪](seo/json-ld/article-2.md)
-  * [JSON-LD WebPage](seo/json-ld/json-ld-webpage.md)
-  * [JSON-LD Sitelinks Searchbox ❺🧪](seo/json-ld/article-3.md)
+* [🔍 About SA5's SEO Lib](sa5-seo/about.md)
+* [🚀 Quick Start | SA5 SEO](sa5-seo/quick-start.md)
+* [Noindex ❺🧪](sa5-seo/noindex.md)
+* [Nofollow ❺🧪](sa5-seo/nofollow.md)
+* [JSON-LD ❺🧪](sa5-seo/json-ld/README.md)
+  * [JSON-LD Article ❺🧪](sa5-seo/json-ld/article.md)
+  * [JSON-LD Video ❺🧪](sa5-seo/json-ld/article-1.md)
+  * [JSON-LD Course Info ❺🧪](sa5-seo/json-ld/article-2.md)
+  * [JSON-LD WebPage](sa5-seo/json-ld/json-ld-webpage.md)
+  * [JSON-LD Sitelinks Searchbox ❺🧪](sa5-seo/json-ld/article-3.md)
 
-## 📘 sa5-core <a href="#core" id="core"></a>
+## 📘 sa5-core
 
-* [SA5 Core ❺](core/overview.md)
-* [Webflow Designer Support ❺](core/overview-1.md)
+* [SA5 Core ❺](sa5-core/overview.md)
+* [Webflow Designer Support ❺](sa5-core/overview-1.md)
 
 ## 📘 sa5-embeds
 
@@ -420,11 +420,11 @@
 * [Locale URLs](sa5-localization/locale-urls.md)
 * [Sort locales in the order you choose](sa5-localization/sort-locales-in-the-order-you-choose.md)
 
-## 📘 sa5-404 <a href="#id-404" id="id-404"></a>
+## 📘 sa5-404
 
-* [🔍 About SA5's 404 Lib](404/article.md)
-* [🚀 Quick Start | SA5 404](404/quick-start-or-sa5-404.md)
-* [404 Smart Search ❺](404/article-1.md)
+* [🔍 About SA5's 404 Lib](sa5-404/article.md)
+* [🚀 Quick Start | SA5 404](sa5-404/quick-start-or-sa5-404.md)
+* [404 Smart Search ❺](sa5-404/article-1.md)
 
 ## 📘 sa5-calc
 
