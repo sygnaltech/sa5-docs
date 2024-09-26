@@ -2,11 +2,18 @@
 description: Need a capability that SA5 doesn't have yet?  You can sponsor it.
 ---
 
-# Sponsor a Feature
+# Sponsor a Feature ✨
 
 **SA5 has been under development for 6 years, and its development is largely directed by the needs of Sygnal's clients and the projects we're working on.**&#x20;
 
-Occasionally, library users request special features or enhancements that aren't currently on our roadmap, or that we're planning, but haven't needed to implement yet.&#x20;
+Occasionally, library users request special features or enhancements that aren't currently on our roadmap, or that we're planning, or that are under development but which we haven't needed to implement yet.&#x20;
+
+{% hint style="success" %}
+**UNDER DEVELOPMENT** \
+In these docs, feature pages marked with a green test-tube 🧪 in the title are experimental and under-development.  These are likely already built in our own code bases, but not redesigned as attributes for the general public,, tested, or fully documented.&#x20;
+
+_These are the closest features to completion._&#x20;
+{% endhint %}
 
 Now you can sponsor the development of those features, and they will be added to the library for everyone to use. &#x20;
 

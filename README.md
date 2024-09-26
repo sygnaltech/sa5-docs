@@ -11,7 +11,7 @@ The tools here are 100% free, 100% open-source, and 100% designed for Webflow. &
 
 ## Libraries
 
-SA5 is divided into a series of individual libraries for the functionality you&#x20;
+SA5 is divided into a series of individual libraries.&#x20;
 
 ### Our Most Popular Libs
 
@@ -52,13 +52,11 @@ SA5 is divided into a series of individual libraries for the functionality you&#
 | [SA5 Commerce](broken-reference)     | Simple commerce solutions for one-off purchases.                                                              | <ul><li>Paypal</li><li>Windcave</li></ul>                                                                                                                                                                                          |
 | [SA5 Trigger](broken-reference)      | Custom trigger items and interactions from text links and buttons.                                            | <ul><li>Trigger interactions, such as pop-ups and modals from a link</li><li>Support CMS-driven scenarios </li></ul>                                                                                                               |
 
+### Experimental Libraries & Features 🧪
 
+_These are libraries we're experimenting with._&#x20;
 
-
-
-### Experimental Libraries 🧪
-
-Libraries we're experimenting with;&#x20;
+Now you can [sponsor the development](overview/sponsor.md) of those features, and they will be added to the library for everyone to use.&#x20;
 
 | Library                                 | Purpose                                                                                                                          | Features                                                    |
 | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -75,21 +73,14 @@ Libraries we're experimenting with;&#x20;
 
 
 
+{% hint style="info" %}
+We've also begun including our dev team and roadmap notes in these docs so that they are available for community comment and discussion. You can expand most features for a Future notes document.&#x20;
+{% endhint %}
 
+## Feature Requests
 
-
-
-We've begun including our dev team and roadmap notes in these docs so that they are available for community comment and discussion.&#x20;
-
-## Who Funds SA5?
-
-Sygnal&#x20;
-
-### Feature Requests
-
-
-
-* If you'd like a specific feature built
+* Share your ideas in SA5's forum.&#x20;
+* If you'd like a specific feature built that you already see on our design board here, you can sponsor a feature.  Features marked with&#x20;
 
 ## 2023 Review of SA5's Capabilities
 

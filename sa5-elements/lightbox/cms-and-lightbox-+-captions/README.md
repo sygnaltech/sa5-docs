@@ -35,27 +35,21 @@ In Webflow there are _three_ different ways to define and manage alt-text, depen
 Cloneable demo site.
 {% endembed %}
 
-## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+## Getting Started <a href="#usage-notes" id="usage-notes"></a>
 
-### Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+1. **Add the library** as detailed in [Quick Start](../../quick-start.md).
+2. Add the required attributes below
+3. Publish and test your site&#x20;
 
-First, **add the library** as detailed in [Quick Start](../../quick-start.md).
+{% hint style="info" %}
+To correct setup your lightboxes and bind alt-text to your images, refer to the clonable
+{% endhint %}
 
-### Prepare your CMS <a href="#prepare-your-cms" id="prepare-your-cms"></a>
-
-* Include a photo in your collection items
-* Include a plain text, single-line caption
-
-### Prepare your Collection List <a href="#prepare-your-collection-list" id="prepare-your-collection-list"></a>
-
-* Setup your Collection List
-* Add your Lightbox Element
-* Data bind it, as usual, to the thumb and main images you want
-  * Also set Alt Text to the plain text caption you want
+## Required Attributes
 
 ### `wfu-lightbox-captions` attribute <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
-Add the `wfu-lightbox-captions` custom attribute (no value needed) to the Lightbox Link, which is the _outermost_ lightbox element.
+Add the `wfu-lightbox-captions` custom attribute ( no value needed ) to the Lightbox Link, which is the _outermost_ part of your lightbox element.&#x20;
 
 _That's it!_&#x20;
 
