@@ -36,7 +36,43 @@ Here's a sample;&#x20;
 </style>
 ```
 
+```html
+<style>
+figcaption.w-lightbox-caption {
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .w-richtext figure.w-richtext-align-floatright {
+    max-width: 50% !important; 
+  }
+}
+@media screen and (max-width: 479px) {
+  .w-richtext figure.w-richtext-align-floatright {
+    float: none !important; /* Remove the float */
+    margin-left: 0 !important; /* Reset the left margin */
+    clear: none !important; /* Reset any clearing */
+    width: 100%; 
+    max-width: none !important; 
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .w-richtext figure.w-richtext-align-floatleft {
+    max-width: 50% !important; 
+  }
+}
+@media screen and (max-width: 479px) {
+  .w-richtext figure.w-richtext-align-floatleft {
+    float: none !important; /* Remove the float */
+    margin-left: 0 !important; /* Reset the left margin */
+    clear: none !important; /* Reset any clearing */
+    width: 100%; 
+    max-width: none !important; 
+  }
+}
+
+</style>
+```
 
 
 
