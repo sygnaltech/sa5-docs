@@ -16,6 +16,7 @@
   * [Callback Handlers](overview/technical-notes-and-goals/callback-handlers.md)
   * [Custom Attributes](overview/technical-notes-and-goals/custom-attributes.md)
 * [Documentation](overview/documentation.md)
+* [Configuration Blocks](overview/configuration-blocks.md)
 * [Preloaders](overview/preloaders.md)
 * [Sygnal Attributes ( SA5 ) Support](overview/sygnal-attributes-sa5-support.md)
 * [SA6](overview/sa6.md)
@@ -237,6 +238,12 @@
 * [🚀 Quick Start | SA5 UI](sa5-ui/quick-start.md)
 * [5-Star Ratings Component ❺](sa5-ui/5-star-ratings-component.md)
 
+## 📘 sa5-cro
+
+* [🔍 About SA5's CRO Lib](sa5-cro/about.md)
+* [🚀 Quick Start | SA5 CRO](sa5-cro/quick-start.md)
+* [Conversion Tracking Event](sa5-cro/conversion-tracking-event.md)
+
 ## 📘 sa5-url
 
 * [🔍 About SA5's Url Lib](sa5-url/about.md)
@@ -257,6 +264,7 @@
 * [Media Pop-Ups 🧪](sa5-video/media-pop-ups.md)
 * [Video Player ( Direct )](sa5-video/video-player-direct.md)
 * [Video Controller File Format](sa5-video/video-controller-file-format.md)
+* [Media Controller](sa5-video/media-controller.md)
 * [Video Player Controller](sa5-video/video-player/README.md)
   * [Video Playback Spec 🧪](sa5-video/video-player/video-playback-spec.md)
   * [YouTube Video Data 🧪](sa5-video/video-player/youtube-video-data.md)
