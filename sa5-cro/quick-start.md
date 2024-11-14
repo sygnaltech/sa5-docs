@@ -11,7 +11,7 @@ description: How to Easily Add SA5's UI Enhancements to Your Webflow Site
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | CRO --> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.20/dist/nocode/webflow-cro.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.21/dist/nocode/webflow-cro.js"></script>
 ```
 {% endcode %}
 
