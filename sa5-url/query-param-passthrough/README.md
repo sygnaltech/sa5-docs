@@ -4,17 +4,24 @@ description: >-
   navigate through your site.
 ---
 
-# Query Param Passthrough ❺
+# Query Param Passthrough
 
-{% hint style="info" %}
-**BETA:** This library has just been released and has a lot of configuration options that have not been fully tested by our community.  Please report any issues in the forum, link above.
-{% endhint %}
+## Features
+
+* Automatically detects querystring params on your page, and applies them to links within the page so that that data is passed through during navigation&#x20;
+* Dynamic- handles links created and loaded by scripts or AJAX just as efficiently as static links
+* Ignores `mailto:` and `tel:` links automatically
+
+Options;
+
+* Ignore specific page querystring params, such as Webflow's pagination params&#x20;
+* Apply the page's querystring params to external links as well&#x20;
 
 ## Use Cases
 
-* Pass UTM tracking params from the landing page, as the user navigates through the site. Capture them when the user submits a form.
+* Pass UTM tracking params from the landing page, as the user navigates through the site. This allows you to track them in analytics tools, and capture them when the user submits a form.
   * See SA5's Data-binding features for no-code binding of [querystring params](../../sa5-data/data-sources/url-query-params.md) to form inputs.&#x20;
-* Pass referrer-tracking params in the same way&#x20;
+* Pass your custom referrer-tracking params in the same way&#x20;
 
 ## Configuration
 
@@ -49,13 +56,21 @@ _Defaults to false._
 
 Enables or disables query param passthrough.
 
+{% hint style="warning" %}
+Unless you enable this, the entire querystring passthrough feature is disabled by default.
+{% endhint %}
+
 ### passthroughConfig
 
 Specifies query param passthrough config options.&#x20;
 
+{% hint style="success" %}
+A primary role of the SA5 passthrough handler is to merge the current page's querystring params into relevant links.  This config allows you to determine how that occurs- some page level params should be ignored, others may or may not take precedence over the link's own params.&#x20;
+{% endhint %}
+
 #### passthroughConfig.ignorePatterns
 
-Defines which param keys to ignore, for example, this configuration will not pass through param keys of `ignore` or Webflow's pagination params like `j2l89skd_page`.&#x20;
+Defines which page querystring param keys to ignore, for example, this configuration will not pass through param keys of `ignore` or Webflow's pagination params like `j2l89skd_page`.&#x20;
 
 ```javascript
 config.passthroughConfig = {
@@ -64,7 +79,7 @@ config.passthroughConfig = {
 ```
 
 {% hint style="info" %}
-You can have as many ignore patterns as you like, and can specify both literal strings and regex strings.
+You can have as many ignore patterns as you like, and can specify both literal strings and use regex strings for complex querystring key pattern-matching.
 {% endhint %}
 
 Defaults to  `[ /_page$/ ]`.&#x20;
@@ -83,7 +98,7 @@ Defaults to _false_.
 
 #### passthroughConfig.internalOnly = true | false
 
-Determines whether param passing targets internal links only, or external links as well.&#x20;
+Determines whether the page's querystring params are applied to internal links only, or external links as well.&#x20;
 
 Defaults to _true_.
 
