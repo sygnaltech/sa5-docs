@@ -75,7 +75,7 @@ First, **add the library** as detailed in [Quick Start](quick-start.md).
 
 Now, clicking any of those links will trigger your interactions.&#x20;
 
-### OR STEP 2 - Setup your data-binding attributes ( Advanced Setup ) <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
+### OR/ STEP 2 - Setup your data-binding attributes ( Advanced Setup ) <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 
 When you are want CMS-sourced modals such as product pop-ups or glossary pop-ups, here are some tips;
 

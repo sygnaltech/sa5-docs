@@ -10,8 +10,6 @@ description: >-
 Important, the attributes on this feature are likely to change as we complete development on the new modals feature.  We'll retain the "dismiss-only" feature, but it may change names to e.g. `wfu-dismiss` &#x20;
 {% endhint %}
 
-
-
 This feature enables you to easily "close" and suppress UI elements so that they will not appear for a specified number of days, even on page reload.&#x20;
 
 It's primarily used for;
@@ -28,17 +26,18 @@ But can be used for any elements that you want to suppress.
 
 ## Use Cases&#x20;
 
+* Suppress a notification element&#x20;
 * Suppress an interactions-based modal popup
 * Suppress a CTA or other banner&#x20;
 
 ## Usage Notes
 
-This library simplifies modal design into two parts-
+This library simplifies dismissable elements into two parts-
 
-1. The modal element itself, which can be any popup, DIV, or other element
-2. Close button element(s). These must be positioned _within_ the modal element as descendants.&#x20;
+1. The dismissable element itself, which can be any popup, DIV, or other element
+2. Close button element(s), such as a corner "X" or a "Close" button. These must be positioned _within_ the dismissable element as descendants.&#x20;
 
-To implement this, build your modals or CTAs however you like.&#x20;
+To implement this, design your elements, alerts, modals or CTAs however you like.&#x20;
 
 The close functionality will be an element with a special custom attribute on it. When closed, SA5 will _remove_ the element from the DOM, and suppress it for as long as you've requested. &#x20;
 
@@ -46,11 +45,15 @@ The close functionality will be an element with a special custom attribute on it
 In Webflow, modals are commonly "closed" using an interaction. It may include fade-out, slide-out, or spin-off-screen effects. SA5 simply deletes the element outright, so those exit animations would not be seen, the modal will simply disappear.&#x20;
 {% endhint %}
 
-### Add the SA5 Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+## Getting Started
+
+Once your elements are setup as described in Usage Notes, you can apply the attributes.&#x20;
+
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
 First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
 
-### I want this element to represent my suppressible content
+### STEP 2 - Identify your dismissable element <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 
 To the outermost element you want to suppress;
 
@@ -58,14 +61,20 @@ To the outermost element you want to suppress;
 * Add a custom attribute of `wfu-modal-trigger` = `load`.&#x20;
 * Add the suppression duration you want, using `wfu-modal-suppress-days` = ( days ). If unspecified, defaults to about 1 year.&#x20;
 
-### I want this element to be the close button
+### STEP 3 - Identify your close button element <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 
 To the close element(s) within the modal;
 
 * Add an attribute of `wfu-modal-close` = `true`
 * Add an attribute of `wfu-modal-close-type` = `auto`
 
-## Considering
+{% hint style="success" %}
+Repeat this process for any number of elements you want.&#x20;
+
+The name you specify is site-wide, so all elements with the same name will be suppressed. Use this to suppress an announcement banner-site wide, or even to suppress several variations of the same banner that might appear throughout the page.&#x20;
+{% endhint %}
+
+## Future
 
 wfu-modal-action = open | close
 
@@ -74,18 +83,6 @@ wfu-modal-action-method = auto | interaction
 wfu-modal-action-trigger = click | timer | scroll | exit
 
 wfu-modal-action-trigger-ms = 10000
-
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
-
-This library uses attributes only, so we've taken a NOCODE approach to its design.
-
-{% hint style="info" %}
-First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
-{% endhint %}
-
-### Apply the custom attributes based on your configuration needs <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-See above, and the feature-specific sub pages for details.
 
 ## Questions? Feature Requests?
 
