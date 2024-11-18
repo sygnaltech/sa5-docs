@@ -4,26 +4,47 @@ description: Trigger Your Click Interactions with Links
 
 # Dynamic Interaction Trigger Links ❺
 
-**Webflow's interactions are powerful, but they are not easily script-accessible.**&#x20;
+**Webflow's interactions are powerful, but they are not easily triggered from JavaScript.**&#x20;
 
-Our goal is to make them even more useful by making them easier to trigger specific interactions from dynamic content such as rich-text links throughout your page.
+This library is designed to make interactions easier to trigger and easier to associate with specific CMS items, to open up a range of use cases.&#x20;
 
 ## Use Cases
 
-Perhaps the most common use case for this is triggering Interaction-based modal pop-ups;
+* Interactions-based CMS-driven pop-ups triggered;&#x20;
+  * from within within a slider or other overflow: hidden container, where the modal would be cut off if it were placed inside of the slider with the trigger button.&#x20;
+  * from a script-generated map pin&#x20;
+  * from simple user-generated links within a blog or article text
+  * from script-generated text links such as automatically tagged glossary terms with a definition pop-up&#x20;
+* Other complex CMS-based modal + trigger setups&#x20;
 
-* Trigger a CTA pop-up from text-links easily, even within CMS rich text content like a blog post.
-* Trigger CMS-based pop-ups, targeting the exact pop-up you want. Different offers, different CTA's, additional info, or display a definition when someone clicks a glossary term. &#x20;
+Although we primarily use this as an interaction trigger, you can think of this more as a CMS-friendly proxy-click capability. This means that you can similarly trigger a tab change, a form submission, a slider advance, or anything else that can be clicked.&#x20;
 
-Although we primarily use this as an interaction trigger, you can think of this more as a proxy-click capability. This means that you can similarly trigger a tab change, a form submission, a slider advance, or anything else that can be clicked.&#x20;
+## How Does it Work?&#x20;
 
-## Special Note
+The basic idea is a very simple proxy-click.&#x20;
+
+* You build your normal interactions setup, such as a set of CMS-driven modals ( rightmost collection list here )&#x20;
+* You setup a hidden trigger button for each modal, that targets the interaction relative relative to the button, e.g. parent-only or sibling-only.  This ensures you only display the desired popup.&#x20;
+* That trigger button is then tagged with some custom attributes so that the SA5 scripts can identify it easily.&#x20;
+* You generate a second collection list ( shown leftmost here ), which generates the buttons you want users to see.  These proxy buttons are also tagged with attributes to match them up to the hidden buttons you want to trigger.&#x20;
+  * This can be used with Finsweet CMS Slider to generate slides
+  * They can be rendered as map pins&#x20;
+  * Or any other setup you want
+* SA5's Trigger lib identifies both the trigger buttons and the proxy buttons, and establishes click handlers. Any click on the proxy button will issue a JavaScript click on the interactions trigger button, which will trigger whatever interaction you've setup- popup, animation, etc.&#x20;
+
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+## Proxy Trigger Setups
 
 Once you've setup your interactions and click-triggers as described below, you can trigger your named interactions in one of two ways-
 
-You can assign a custom attribute to the button or element you want to use as a trigger, with a value identifying the specific interaction you want to fire.
+### Attribute-Based Trigger&#x20;
 
-Or as a shortcut, we have a special link format.
+You can assign a custom attribute to the button or element you want to use as a trigger, with a value identifying the specific interaction you want to fire.&#x20;
+
+### Link-Based Trigger&#x20;
+
+Or in a link element, we support a special link format.
 
 `##my-interaction-id`
 
@@ -40,17 +61,21 @@ Because these are set as the link URLs, the test displayed to the user can be an
 
 ## Usage Notes
 
-### Basic Setup
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+First, **add the library** as detailed in [Quick Start](quick-start.md).
+
+### STEP 2 - Setup your data-binding attributes ( Basic Setup ) <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 
 * Create your interaction to do whatever you want
 * Create a button element, and set it to trigger your interaction on click
 * Assign the `[wfu-ix-id]` attribute to that button element, and give it a unique ID
-* Now on any link or button anywhere in your page, you can assign a `[wfu-ix-trigger]` attribute to that element
+* Now on any link or button anywhere in your page, you can assign a `[wfu-ix-trigger]` attribute to that element. Give it that same ID to proxy-trigger your interaction.&#x20;
 * Or, in any link on your page, assign a URL with `##` with the ID you've assigned to the interaction you want
 
 Now, clicking any of those links will trigger your interactions.&#x20;
 
-### Advanced Setup
+### OR STEP 2 - Setup your data-binding attributes ( Advanced Setup ) <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 
 When you are want CMS-sourced modals such as product pop-ups or glossary pop-ups, here are some tips;
 
@@ -62,7 +87,7 @@ When you are want CMS-sourced modals such as product pop-ups or glossary pop-ups
 
 Now, anywhere in your page, you can link to `##slug` to trigger that item.&#x20;
 
-## Use Cases
+## Specific Setup Examples&#x20;
 
 ### You want to click an element, and have a popup appear
 
@@ -76,21 +101,11 @@ Now, anywhere in your page, you can link to `##slug` to trigger that item.&#x20;
 * Add the `wfu-ix-id` custom attribute to that button&#x20;
 * In your text, create any link you want, and set the link href so that it begins with `##` and then the ID you've assigned to the your modal button&#x20;
 
-You can generate the modals and their triggering buttons from the CMS, and use the slug as the ID.  This makes it easy for you to invoke CMS-generated popups. &#x20;
+You can generate the modals and their triggering buttons from the CMS, and use the slug as the ID.  This makes it easy for you to invoke CMS-generated popups.  &#x20;
+
+## Future <a href="#getting-started-locode" id="getting-started-locode"></a>
 
 ### You want an interaction to trigger automatically after N seconds
 
 FUTURE.&#x20;
-
-## Getting Started ( NOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
-
-There are currently no configuration options for the data-binding feature, so we’ll use a _no-code_ integration approach.
-
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-First, **add the library** as detailed in [Quick Start](quick-start.md).
-
-### STEP 2 - Setup your data-binding attributes <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
-
-Apply the attributes you want. See above.&#x20;
 
