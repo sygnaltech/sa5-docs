@@ -8,17 +8,18 @@ description: Sort Webflow's collection list items any way you like
 
 Webflow's collection lists offer a native sort functionality, however it has a number of limitations;&#x20;
 
-* The inability to sort on **Ref** fields
-* The inability to sort on **Option** fields
-* The inability to sort nested collection list items
-* The inability to sort content in fields within an item
-* Random sorting works well, but only changes the order every 12 hours&#x20;
+* No ability to sort on **Ref** fields
+* No ability to sort on **Option** fields
+* No ability to sort nested collection list items
+* No ability to sort content in fields within an item in a de-normalized field structure
+  * e.g. fields like "Faq 1", "Faq 1 description", "Faq 2", "Faq 2 description" &#x20;
+* Random sorting only changes the order every 12 hours&#x20;
 
-This attribute allows to do all of these;
+This attribute allows to do sort in all of these scenarios.&#x20;
 
-* Sort by ref & option field types
-* Sort by text, date, numbers, or even version numbers ( aka semvers )
-* Sort ascending, descending or randomly, on every page refresh&#x20;
+1. Sort any elements, in any part of your page&#x20;
+2. Sort intelligently by data type - text, date, numbers, or even semver version numbers&#x20;
+3. Sort ascending, descending or randomly, on every page refresh &#x20;
 
 ## Demonstrations
 
