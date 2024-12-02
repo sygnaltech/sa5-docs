@@ -7,7 +7,7 @@ description: Easily create and manage popups and modals in your Webflow projects
 {% hint style="info" %}
 **BETA RELEASE**\
 SA5 Modals is fully available, but attributes and features may change in the final release. \
-_Drop a message in the forum if you'd like to join the beta team._&#x20;
+&#xNAN;_&#x44;rop a message in the forum if you'd like to join the beta team._&#x20;
 {% endhint %}
 
 In Webflow, building popups and modals has several challenges;

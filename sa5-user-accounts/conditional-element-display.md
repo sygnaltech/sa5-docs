@@ -20,7 +20,7 @@ You can currently;
 {% hint style="danger" %}
 **SECURITY NOTE:** This attributes-based approach only affects the _visibility_ of the target elements, _not their existence_. Do not use this for secure information, as it cannot prevent users from accessing that content if they view source or disable scripts.\
 \
-_Webflow's solution handles conditional visibility securely server-side, so you will want to utilize Webflow's native CV feature as soon as you are able to._
+&#xNAN;_&#x57;ebflow's solution handles conditional visibility securely server-side, so you will want to utilize Webflow's native CV feature as soon as you are able to._
 {% endhint %}
 
 ## Future Plans

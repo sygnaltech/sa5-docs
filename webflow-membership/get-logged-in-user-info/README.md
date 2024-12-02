@@ -25,15 +25,15 @@ Use cases include;
 Features;
 
 * Get the current user's email, name, and marketing opt-in status&#x20;
-* Get a unique, User-specific alternate ID which can be used for system integrations&#x20;
+* Get the Webflow UserID ( experimental ).&#x20;
+* Get an additional unique, User-specific alternate ID which can be used for system integrations&#x20;
 * Get [custom user fields](../../sa5-user-accounts/logged-in-user-info/custom-user-fields.md)&#x20;
 * Get [access groups](../../sa5-user-accounts/logged-in-user-info/access-groups/)&#x20;
 * Heavily optimized, with a multi-layered, asynchronous load approach to assembling the user data. &#x20;
 
 Limitations;&#x20;
 
-* For custom user fields, the File field type is unsupported for now&#x20;
-* Currently the Webflow UserID is not easily available. See here for [solutions](../../sa5-user-accounts/logged-in-user-info/getting-webflows-userid.md), if you need it for external system integrations with Webflow's API.&#x20;
+* For custom user fields, the File field type is unsupported for now &#x20;
 * Currently this library depends on the User Account screen in order to access user data and compose the user object. You can do what you want with your User Account page however those user fields must exist in the page ( even hidden ) in order for this library to work.  &#x20;
 * Read-only. The library is designed to read user data, but not to update it.&#x20;
 
@@ -52,6 +52,7 @@ When a user is logged in, the User Info is constructed and the object contains t
 * `name_short` - A pseudonym, composed from the email's name@ portion
 * `name_short_clean` - The name\_short pseudonym, without the @
 * `name_short_tcase` - The name\_short\_clean pseudonym, title cased
+* `user_id` - _EXPERIMENTAL_. The Webflow user ID.&#x20;
 * `user_id_alt` - A unique ID for the User. This is _not_ the Webflow Membership's ID, and cannot be used with Webflow's API - but is equally usable for 3rd party system integration and tracking.
 * `data` - A map of the user's custom fields. These are named using Webflow's internal data field names, which is based on your individual user field slugs.
 

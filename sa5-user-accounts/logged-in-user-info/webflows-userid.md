@@ -4,7 +4,15 @@ description: How to get Webflow's UserID for the currently logged in user.
 
 # Webflow's UserID
 
-Webflow does not expose the UserID in an accessible way. This is a core limitation as it means you cannot capture information relating to the current user, and connect it to the user through Webflow's API - a key component of application builds.
+Webflow does not expose the UserID in an accessible way.&#x20;
+
+{% hint style="success" %}
+However as of SA5 v5.4.23 we have an experimental approach to obtaining this, which we're currently evaluating.&#x20;
+
+This should be considered EXPERIMENTAL.&#x20;
+
+Please test it thoroughly before using in a production system.&#x20;
+{% endhint %}
 
 ## Custom Data Workaround
 
