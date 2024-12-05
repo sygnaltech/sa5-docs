@@ -8,18 +8,22 @@ description: Sort Webflow's collection list items any way you like
 
 Webflow's collection lists offer a native sort functionality, however it has a number of limitations;&#x20;
 
+* Alphabetic sorting is unicode-based and sorts uppercase and lowercase letters as separate ranges&#x20;
+  * Apple, Banana, aardvark...&#x20;
 * No ability to sort on **Ref** fields
 * No ability to sort on **Option** fields
 * No ability to sort nested collection list items
+* No locale-aware sorting ability&#x20;
 * No ability to sort content in fields within an item in a de-normalized field structure
   * e.g. fields like "Faq 1", "Faq 1 description", "Faq 2", "Faq 2 description" &#x20;
 * Random sorting only changes the order every 12 hours&#x20;
 
-This attribute allows to do sort in all of these scenarios.&#x20;
+SA5 Advanced sort allows to do sort in all of these scenarios.&#x20;
 
 1. Sort any elements, in any part of your page&#x20;
 2. Sort intelligently by data type - text, date, numbers, or even semver version numbers&#x20;
 3. Sort ascending, descending or randomly, on every page refresh &#x20;
+4. Sort by page locale ( for localized sites ) or browser locale&#x20;
 
 ## Demonstrations
 
@@ -43,6 +47,16 @@ Cloneable
 Tutorial
 {% endembed %}
 
+Locale-specific sorting;
+
+{% embed url="https://sa5-html.webflow.io/demo/sa5-advanced-sorting" %}
+Demonstration Page
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/sa5-html" %}
+Cloneable&#x20;
+{% endembed %}
+
 ## Getting Started  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 1. First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
@@ -64,19 +78,19 @@ If you are not sorting a collection list, any parent-item set can be configured 
 
 ### `wfu-sort-dir` attribute <a href="#wfu-sort-dir-attribute" id="wfu-sort-dir-attribute"></a>
 
-Sort direction defaults to ascending. If you want to specify the direction, add this attribute with a value of;
+**Optional.**  Sort direction defaults to ascending. If you want to specify the direction, add this attribute with a value of;
 
-* `asc` for ascending
+* `asc` for ascending ( default )&#x20;
 * `desc` for descending
 * `random` for random ( on every page refresh )
 
-Place this attribute on the **parent** element.
+Place this attribute on the **parent** element.&#x20;
 
 ### `wfu-sort-type` attribute <a href="#wfu-sort-type-attribute" id="wfu-sort-type-attribute"></a>
 
-Sort type always defaults to string-based sorting ( an alphanumeric sort ). If you want to specify the data type of the field being sorted, add this attribute with a value of;
+**Optional.**  Sort type always defaults to string-based sorting ( an alphanumeric sort ). If you want to specify the data type of the field being sorted, add this attribute with a value of;
 
-* `string` to sort as strings
+* `string` to sort as strings ( default )&#x20;
 * `number` to parse sort as numbers
 * `date` to parse and sort as dates
 * `semver` to parse and sort as [semantic versions](https://semver.org/) \*\*
@@ -92,6 +106,21 @@ Note that this library does not currently have any localization configurations, 
 {% hint style="info" %}
 `semver` sorting is a simplified numeric-only implementation of the sort rules. It is not designed to handle alphanumerics, such as pre-release identifiers.
 {% endhint %}
+
+### `wfu-sort-locale` attribute  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+**Optional.**  Allows you to apply locale-specific sorting to a list.
+
+{% hint style="warning" %}
+**EXPERIMENTAL** \
+Currently implemented on ascending string sorting only.&#x20;
+{% endhint %}
+
+* `none` ( default ) - No locale-specific sorting applied
+* `auto` - Locale is determined from the HTML lang attribute, which is automatically set in Webflow Localized sites&#x20;
+* ( language / locale code ) - You can specify a specific language code like `en` or locale code like `en-US`&#x20;
+
+Place this attribute on the **parent** element.
 
 ### `wfu-sort-key` attribute <a href="#creating-your-sort-key" id="creating-your-sort-key"></a>
 
