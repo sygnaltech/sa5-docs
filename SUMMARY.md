@@ -412,7 +412,8 @@
 * [🔍 About SA5's Embeds Lib](sa5-embeds/about.md)
 * [🚀 Quick Start | SA5 Embeds](sa5-embeds/quick-start.md)
 * [Table Embeds ❺🧪](sa5-embeds/table-embeds/README.md)
-  * [Google Doc Table Embeds](sa5-embeds/table-embeds/google-doc-table-embeds.md)
+  * [Google Doc Table Embeds](sa5-embeds/table-embeds/google-doc-table-embeds/README.md)
+    * [Styling Table Embeds](sa5-embeds/table-embeds/google-doc-table-embeds/styling-table-embeds.md)
   * [Google Sheets Table Embeds](sa5-embeds/table-embeds/google-sheets-table-embeds.md)
   * [Future](sa5-embeds/table-embeds/future.md)
 
