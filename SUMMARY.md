@@ -93,6 +93,7 @@
 * [Advanced Use](sa5-data/advanced-use.md)
 * [Future 📝](sa5-data/future/README.md)
   * [External Data](sa5-data/future/external-data.md)
+* [Parse RichText 🧪](sa5-data/parse-to.md)
 
 ## 📘 sa5-forms
 
@@ -198,7 +199,6 @@
 * [Lightboxes 🧪](sa5-richtext/lightboxes/README.md)
   * [Future](sa5-richtext/lightboxes/future.md)
 * [Embeddables](sa5-richtext/embeddables.md)
-* [Parse To](sa5-richtext/parse-to.md)
 * [Richtext ❺🧪](sa5-richtext/richtext/README.md)
   * [CSS Isolation](sa5-richtext/richtext/css-isolation.md)
 * [Blockquotes](sa5-richtext/blockquotes.md)

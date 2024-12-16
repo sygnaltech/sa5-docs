@@ -1,11 +1,15 @@
-# Parse To
+---
+description: Convert Rich Text into a datasource, based of certain profile rules
+---
+
+# Parse RichText 🧪
 
 
 
-Parsing mode
+Parsing mode, basic;
 
 * Element type mode&#x20;
-*
+* List mode&#x20;
 * Group mode ( uses headings as dividers )&#x20;
   * Group at Hn or smaller
     * e.g. Group at H2 means H1 and H2 are groups, H3 and below are content

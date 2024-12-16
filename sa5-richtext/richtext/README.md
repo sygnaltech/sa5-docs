@@ -26,8 +26,8 @@ Suppression. Ability of SA5 to suppress unnecessary actions if it's being revers
     * Prefacing any RTE, we apply a subclass to that item
   * Example  blockquote with prefix?&#x20;
 * Blockquotes
-  * Merging of adjacent blockquotes and
-* Nested lists
+  * Merging of adjacent blockquotes, conversion to paragraphs&#x20;
+  * Addition of citations&#x20;
 * Auto-link expansions
   * Add **nofollow** by default ( config )&#x20;
   * Intelligent handler and expansion options
@@ -38,6 +38,9 @@ Suppression. Ability of SA5 to suppress unnecessary actions if it's being revers
   * link ## or #\~# rule - ##!popup ###popup ###zoom ###popup2 ###popupzoom ###custom1
   * Can include custom handlers?&#x20;
   * Pre trigger handler
+* Footnotes&#x20;
+  * Identify all `##` links, and format them as footnotes&#x20;
+  * Styling&#x20;
 
 ## Usage Notes
 
