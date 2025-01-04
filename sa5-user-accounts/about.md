@@ -6,8 +6,8 @@ description: Why it exists and how it extends Webflow's Memberships
 
 {% hint style="danger" %}
 **IMPORTANT**\
-Webflow has announced the [deprecation of User accounts](https://help.webflow.com/hc/en-us/articles/36046006227731-User-Accounts-sunset) in 2025, with new sites unable to enable the User account feature after Jan 31, 2025. \
-The official sunset date were User accounts will be fully removed is Jan 29, 2026.
+Webflow has announced the [deprecation of User accounts](https://help.webflow.com/hc/en-us/articles/36046006227731-User-Accounts-sunset) in 2025, with new sites unable to enable the User account feature after **Jan 31, 2025**. \
+The official sunset date where User accounts will be fully removed is about a year later, on **Jan 29, 2026**.
 {% endhint %}
 
 This library extends Webflow's Memberships feature with a few much needed features;

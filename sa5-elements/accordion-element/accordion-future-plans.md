@@ -2,15 +2,20 @@
 
 
 
+Add auto positioning for longer accordions;
+
+
+
 ## Roadmap&#x20;
 
-| Feature                   | Now                                                                              | Planned                                         | Considering                                                              |
-| ------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------ |
-| Setup                     | Using DIVs                                                                       |                                                 | Using a Tab Component, with automatic detection                          |
-| Modes                     | Single-item mode. One panel open at a time                                       | Multi-item mode. Ability to open multiple items |                                                                          |
-| Orientation               | Vertical or horizontal, defined 100% by your open-state and closed-state classes |                                                 |                                                                          |
-| Animations for open/close | None                                                                             |                                                 | Considering some means to support WF Interactions, or else GSAP themes.  |
-| Dynamic initialization    |                                                                                  | Select on # or query param, and scroll-to       |                                                                          |
+| Feature                   | Now                                                                              | Planned                                                                                                                                                                                                                                                      | Considering                                                              |
+| ------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Setup                     | Using DIVs                                                                       |                                                                                                                                                                                                                                                              | Using a Tab Component, with automatic detection                          |
+| Modes                     | Single-item mode. One panel open at a time                                       | Multi-item mode. Ability to open multiple items                                                                                                                                                                                                              |                                                                          |
+| Orientation               | Vertical or horizontal, defined 100% by your open-state and closed-state classes |                                                                                                                                                                                                                                                              |                                                                          |
+| Animations for open/close | None                                                                             |                                                                                                                                                                                                                                                              | Considering some means to support WF Interactions, or else GSAP themes.  |
+| Dynamic initialization    |                                                                                  | Select on # or query param, and scroll-to                                                                                                                                                                                                                    |                                                                          |
+| Auto-scroll               | None                                                                             | <p>Allow auto-scrolling when an accordion opens, so that the top of the new panel is visible.<br><a href="https://discourse.webflow.com/t/dropdown-accordion-behavior/300142/7">https://discourse.webflow.com/t/dropdown-accordion-behavior/300142/7</a></p> |                                                                          |
 
 ## JavaScript API
 
