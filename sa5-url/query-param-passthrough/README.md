@@ -6,6 +6,17 @@ description: >-
 
 # Query Param Passthrough
 
+{% hint style="warning" %}
+**IMPORTANT**\
+This feature was designed to provide a quick and dirty solution for _very simplistic_ referral tracking setups. It hijacks standard link clicks and modifies them to support query param passthrough.&#x20;
+
+There's a huge caveat to this approach - Urls can contain a lot of information, and browsers can vary in how they process Urls.  While this solution supports most basic scenarios, make certain to test your primary navigation and CTA links, in particular anything with a complex formation, query params, and hash fragments.&#x20;
+
+**Query param passthrough is&#x20;**_**not**_**&#x20;the approach that Sygnal uses for&#x20;**_**enterprise-grade**_**&#x20;referral tracking, which has a lot of other considrations such as the ability to remember referrals on a repeat-visit within 30 days.**&#x20;
+
+If this library does not work for your use case or you need a more robust, feature-rich solution, [contact us](https://www.sygnal.com/webflow) for a custom solution .&#x20;
+{% endhint %}
+
 ## Features
 
 * Automatically detects querystring params on your page, and applies them to links within the page so that that data is passed through during navigation&#x20;
