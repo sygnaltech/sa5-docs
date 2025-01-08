@@ -119,6 +119,7 @@
 * [Form Select Element](sa5-forms/form-select-element.md)
 * [SA5 Forms API](sa5-forms/sa5-forms-api.md)
 * [Dynamic Forms](sa5-forms/dynamic-forms.md)
+* [Form Success Redirect 🧪](sa5-forms/form-success-redirect.md)
 * [Show / Hide Password 🧪](sa5-forms/show-hide-password.md)
 
 ## 📘 sa5-html

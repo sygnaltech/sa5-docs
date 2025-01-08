@@ -108,6 +108,14 @@ Determines whether the page's querystring params are applied to internal links o
 
 Defaults to _true_.
 
+## Attributes <a href="#getting-started-locode" id="getting-started-locode"></a>
+
+These attributes can be placed directly on any link element for special behavior.&#x20;
+
+### `wfu-query-passthrough` = ( setting )&#x20;
+
+* `ignore` = this link will be ignored for query param passthrough
+
 ## Getting Started ( LOCODE ) <a href="#getting-started-locode" id="getting-started-locode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
