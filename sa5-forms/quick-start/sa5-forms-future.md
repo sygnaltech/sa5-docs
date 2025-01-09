@@ -2,6 +2,14 @@
 
 
 
+## Form Data Capture
+
+Localization Data, what locale was being viewed when the form was submitted
+
+Page form submitted from&#x20;
+
+User agent info&#x20;
+
 ## Expandable Forms
 
 Design concept&#x20;

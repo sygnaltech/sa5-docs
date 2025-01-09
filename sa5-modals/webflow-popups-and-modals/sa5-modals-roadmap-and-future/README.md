@@ -1,5 +1,11 @@
 # SA5 Modals Roadmap & Future
 
+## ESC key support
+
+[https://discourse.webflow.com/t/escape-key-working-only-on-the-first-cms-modal-but-not-the-others/280010/6](https://discourse.webflow.com/t/escape-key-working-only-on-the-first-cms-modal-but-not-the-others/280010/6)
+
+Non-closeable modal&#x20;
+
 ## Roadmap
 
 | Feature                             | Short Term                                                                                                        | Medium Term                                                                                                                                                                                                                                    | Future                                                                                                                                                                   |
