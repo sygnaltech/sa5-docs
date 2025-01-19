@@ -185,7 +185,8 @@
 * [🔍 About SA5's Rich Text Lib](sa5-richtext/about/README.md)
   * [Future](sa5-richtext/about/future.md)
 * [🚀 Quick Start | SA5 Rich Text](sa5-richtext/quick-start.md)
-* [Nested Lists ❺](sa5-richtext/nested-lists.md)
+* [Nested Lists ❺](sa5-richtext/nested-lists/README.md)
+  * [Legacy Feature Notes](sa5-richtext/nested-lists/legacy-feature-notes.md)
 * [GitHub Gists ❺](sa5-richtext/github-gists/README.md)
   * [▶️ Video Tutorials](sa5-richtext/github-gists/video-tutorials.md)
   * [Why Gist?](sa5-richtext/github-gists/why-gist.md)
@@ -380,6 +381,7 @@
 * [🔍 About SA5's Effects Lib](sa5-effects/about.md)
 * [🚀 Quick Start | SA5 Effects](sa5-effects/quick-start.md)
 * [Depthmap (Fake 3D) Image ❺🧪](sa5-effects/article.md)
+* [Image Zoom](sa5-effects/image-zoom.md)
 
 ## 📘 sa5-fixup
 

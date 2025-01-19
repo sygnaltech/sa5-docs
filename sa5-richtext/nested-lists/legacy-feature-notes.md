@@ -2,7 +2,7 @@
 description: Add nested lists to Webflow's rich text elements
 ---
 
-# Nested Lists ❺
+# Legacy Feature Notes
 
 {% hint style="info" %}
 **Webflow Update!**
@@ -121,7 +121,7 @@ All aspects of this feature are attributes-based for your convenience.&#x20;
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
+First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20;
 
 ### STEP 2 - Apply the custom attributes you want <a href="#step-2---apply-wfu-listsnested-to-desired-elements" id="step-2---apply-wfu-listsnested-to-desired-elements"></a>
 
