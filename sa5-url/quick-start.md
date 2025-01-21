@@ -11,7 +11,7 @@ description: How to Easily Add SA5's Url Enhancements to Your Webflow Site
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Url --> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.25/dist/nocode/webflow-url.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.29/dist/nocode/webflow-url.js"></script>
 ```
 {% endcode %}
 
@@ -29,12 +29,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | Url --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.25/dist/css/webflow-url.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.29/dist/css/webflow-url.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-url.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.25/dist/nocode/webflow-url.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.29/dist/nocode/webflow-url.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-url.js"
   devproxy-group="sa5"
   ></script>
