@@ -143,7 +143,8 @@
 * [Encoded Email](sa5-html/encoded-email.md)
 * [Hide Section w/ Empty Collection Lists ❺](sa5-html/hide-section-w-empty-collection-lists.md)
 * [Decode HTML ❺](sa5-html/decode-html.md)
-* [Markdown ❺](sa5-html/markdown.md)
+* [Markdown ❺](sa5-html/markdown/README.md)
+  * [Themes](sa5-html/markdown/themes.md)
 * [Transform ❺🧪](sa5-html/transform.md)
 * [Code Formatting ❺🧪](sa5-html/code-formatting.md)
 * [CMS Code Injection ❺🧪](sa5-html/cms-code-injection.md)
@@ -152,6 +153,7 @@
 * [Components ❺🧪](sa5-html/components/README.md)
   * [Component Object Positioning](sa5-html/components/component-object-positioning.md)
 * [Auto-Size IFRAMEs 🧪](deprecated/auto-size-iframes.md)
+* [Lazy Load](sa5-html/lazy-load.md)
 * [Scroll Anchor](sa5-html/scroll-anchor.md)
 
 ## 📘 sa5-layout
@@ -210,6 +212,11 @@
 ## 📘 sa5-table
 
 * [HTML Tables](sa5-table/html-tables.md)
+
+## 📘 sa5-kiosk
+
+* [Kiosk Base 🧪](sa5-kiosk/kiosk-base.md)
+* [Inactivity Timer 🧪](sa5-kiosk/html-tables.md)
 
 ## 📘 sa5-hotkeys
 
