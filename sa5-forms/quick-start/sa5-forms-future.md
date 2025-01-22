@@ -2,6 +2,19 @@
 
 
 
+## Specialized Validation&#x20;
+
+
+
+
+
+## Custom Submit Button&#x20;
+
+* support data-wait &#x20;
+*
+
+
+
 ## Form Data Capture
 
 Localization Data, what locale was being viewed when the form was submitted
