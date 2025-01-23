@@ -219,7 +219,7 @@
 
 * [HTML Tables](sa5-table/html-tables.md)
 
-## 📘 sa5-kiosk
+## 📘 sa5-kiosk 🧪
 
 * [🔍 About SA5's Kiosk Lib](sa5-kiosk/about.md)
 * [🚀 Quick Start | SA5 Hotkeys](sa5-kiosk/quick-start.md)

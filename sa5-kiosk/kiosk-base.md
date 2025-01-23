@@ -11,9 +11,17 @@ Not available for public use&#x20;
 
 
 
+
+
 * Use Chrome in `--kiosk` mode
 * Set a user agent to identify it to scripts&#x20;
 * Support conditional visibility based on that state &#x20;
+
+
+
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+
 
 
 

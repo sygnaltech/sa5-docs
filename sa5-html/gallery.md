@@ -42,7 +42,7 @@ wfu-gallery-layout
 
 wfu-gallery-layout = tight-collage
 
-
+[https://storytailorapps.com/storytailor-blog/?v=c97b334ffd41](https://storytailorapps.com/storytailor-blog/?v=c97b334ffd41)
 
 * CMS compatible
 * Can possibly optimizes portrait and landscape and square orientations
