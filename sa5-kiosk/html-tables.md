@@ -12,6 +12,23 @@ Conceptual
 
 
 
+```html
+<script type="application/sa5+json">
+{
+  "@context": "https://attr.sygnal.com",
+  "@type": "KioskConfig",
+  "@version": "0.1",
+  "homePath": "/kiosk", 
+  "userAgent": "KioskApp/1.0", 
+  "inactivityTimer": "180"  
+}
+</script>
+```
+
+
+
+
+
 ```
     // Set the inactivity timeout duration in milliseconds (3 minutes)
     const INACTIVITY_TIMEOUT = 3 * 60 * 1000; // 3 minutes

@@ -222,7 +222,7 @@
 ## 📘 sa5-kiosk 🧪
 
 * [🔍 About SA5's Kiosk Lib](sa5-kiosk/about.md)
-* [🚀 Quick Start | SA5 Hotkeys](sa5-kiosk/quick-start.md)
+* [🚀 Quick Start | SA5 Kiosk](sa5-kiosk/quick-start.md)
 * [Kiosk Setup](sa5-kiosk/kiosk-setup.md)
 * [Kiosk Base 🧪](sa5-kiosk/kiosk-base.md)
 * [Inactivity Timer 🧪](sa5-kiosk/html-tables.md)

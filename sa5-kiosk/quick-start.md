@@ -2,7 +2,7 @@
 description: How to Easily Add SA5's Hotkeys Support to Your Webflow Site
 ---
 
-# 🚀 Quick Start | SA5 Hotkeys
+# 🚀 Quick Start | SA5 Kiosk
 
 ## How to Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
@@ -10,9 +10,9 @@ description: How to Easily Add SA5's Hotkeys Support to Your Webflow Site
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attributes 5 | Hotkeys -->
+<!-- Sygnal Attributes 5 | Kiosk -->
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-hotkeys.js"
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.31/dist/nocode/webflow-kiosk.js"
 ></script> 
 ```
 {% endcode %}
@@ -31,15 +31,15 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 
 {% code overflow="wrap" %}
 ```html
-<!-- Sygnal Attributes 5 | Hotkeys --> 
+<!-- Sygnal Attributes 5 | Kiosk --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/css/webflow-hotkeys.css"
-  dev-href="http://127.0.0.1:4000/dist/css/webflow-hotkeys.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.31/dist/css/webflow-kiosk.css"
+  dev-href="http://127.0.0.1:4000/dist/css/webflow-kiosk.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/nocode/webflow-hotkeys.js" 
-  dev-src="http://127.0.0.1:4000/dist/nocode/webflow-hotkeys.js"
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.31/dist/nocode/webflow-kiosk.js" 
+  dev-src="http://127.0.0.1:4000/dist/nocode/webflow-kiosk.js"
   devproxy-group="sa5"
   ></script>
 ```
