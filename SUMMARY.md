@@ -111,6 +111,8 @@
   * [▶️ Make ( Integromat ) Handler](sa5-forms/webhook-handler/make.md)
   * [Future](sa5-forms/webhook-handler/future.md)
 * [Form Data Validation](sa5-forms/form-data-validation/README.md)
+  * [Invalid Field Indicators (Real-Time) 🧪](sa5-forms/form-data-validation/invalid-field-indicators-real-time.md)
+  * [Invalid Field Indicators on Submit Attempt 🧪](sa5-forms/form-data-validation/invalid-field-indicators-on-submit-attempt.md)
   * [Email validation](sa5-forms/form-data-validation/email-validation.md)
 * [Remove Unchecked Checkboxes ✨](sa5-forms/remove-unchecked-checkboxes.md)
 * [Preserve Line Breaks](sa5-forms/form-data-fixups.md)
@@ -155,7 +157,9 @@
 * [Components ❺🧪](sa5-html/components/README.md)
   * [Component Object Positioning](sa5-html/components/component-object-positioning.md)
 * [Auto-Size IFRAMEs 🧪](deprecated/auto-size-iframes.md)
+* [Switch Case](sa5-html/switch-case.md)
 * [Lazy Load](sa5-html/lazy-load.md)
+* [Gallery](sa5-html/gallery.md)
 * [Scroll Anchor](sa5-html/scroll-anchor.md)
 
 ## 📘 sa5-layout
@@ -217,8 +221,15 @@
 
 ## 📘 sa5-kiosk
 
+* [🔍 About SA5's Kiosk Lib](sa5-kiosk/about.md)
+* [🚀 Quick Start | SA5 Hotkeys](sa5-kiosk/quick-start.md)
+* [Kiosk Setup](sa5-kiosk/kiosk-setup.md)
 * [Kiosk Base 🧪](sa5-kiosk/kiosk-base.md)
 * [Inactivity Timer 🧪](sa5-kiosk/html-tables.md)
+* [Display Mode](sa5-kiosk/display-mode.md)
+* [Technical Notes](sa5-kiosk/technical-notes.md)
+* [Future](sa5-kiosk/future.md)
+* [Smart Watch Notes](sa5-kiosk/smart-watch-notes.md)
 
 ## 📘 sa5-hotkeys
 

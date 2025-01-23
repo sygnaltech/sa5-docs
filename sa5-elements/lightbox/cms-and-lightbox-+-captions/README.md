@@ -2,7 +2,7 @@
 description: Display CMS-Managed Captions in Webflow’s Lightboxes
 ---
 
-# CMS & Lightbox + Captions ❺
+# CMS & Lightbox + Captions
 
 ## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
@@ -80,7 +80,7 @@ figcaption.w-lightbox-caption {
 </style>
 ```
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
