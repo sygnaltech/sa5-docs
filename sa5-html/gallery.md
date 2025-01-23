@@ -1,9 +1,9 @@
-# Gallery
+# Gallery 🧪
 
 
 
 {% hint style="info" %}
-CONCEPTUAL.
+CONCEPTUAL&#x20;
 {% endhint %}
 
 
@@ -37,12 +37,6 @@ wfu-gallery-layout
 *
 
 ## Layout Engines
-
-
-
-
-
-
 
 ### Tight Collage
 

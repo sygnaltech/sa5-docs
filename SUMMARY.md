@@ -159,7 +159,7 @@
 * [Auto-Size IFRAMEs 🧪](deprecated/auto-size-iframes.md)
 * [Switch Case](sa5-html/switch-case.md)
 * [Lazy Load](sa5-html/lazy-load.md)
-* [Gallery](sa5-html/gallery.md)
+* [Gallery 🧪](sa5-html/gallery.md)
 * [Scroll Anchor](sa5-html/scroll-anchor.md)
 
 ## 📘 sa5-layout
