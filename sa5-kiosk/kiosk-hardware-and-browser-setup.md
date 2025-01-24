@@ -1,4 +1,4 @@
-# Kiosk Setup
+# Kiosk Hardware & Browser Setup
 
 There are many hardware profiles you can use.
 
@@ -7,19 +7,22 @@ In general they will consist of;&#x20;
 * Small pc
 * Touch screen
 * Internet connection&#x20;
+* Optional keyboard and/or mouse.&#x20;
 
-Plus optional keyboard and/or mouse.&#x20;
-
-{% hint style="info" %}
 It may help to think of your kiosk configuration as either a;
 
-* Desktop Kiosk, which has a keyboard and mouse and is used in a desktop-like fashion, plus the addition of a touch screen.&#x20;
-* Tablet Kiosk, which has no keyboard and mouse and relies entirely on touch.&#x20;
-{% endhint %}
+* **Desktop Kiosk**, which has a keyboard and mouse and is used in a desktop-like fashion, plus the addition of a touch screen.&#x20;
+* **Tablet Kiosk**, which has no keyboard and mouse and relies entirely on touch. For any text entry, an on-screen keyboard is used. &#x20;
+
+SA5 Kiosk will work with either.&#x20;
 
 
 
 ## Using Google Chrome as your Kiosk Platform
+
+{% hint style="info" %}
+SA5 Kiosk is built & tested around use of Google Chrome as the operating environment.  This is a very simple setup, but it saves you the cost of custom software development for your kiosk device.&#x20;
+{% endhint %}
 
 Google Chrome has a built in kiosk mode, which runs full screen, hides the URL bar, right click menu and other features.
 

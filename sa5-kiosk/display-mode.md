@@ -75,3 +75,35 @@ Auto-detect any form of failed load
 
 * non-200&#x20;
 * network freeze, spinning wheel&#x20;
+
+
+
+
+
+### Display mode
+
+Hands-off display mode
+
+Goals;
+
+* Highlight
+
+
+
+
+
+|                   | Default mode                                             | Kiosk mode                                                                                                                                                                         | Display mode                                                                                                                                                                        |
+| ----------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                   | Standard access from a desktop browser, tablet, or phone | Interactive, on-site                                                                                                                                                               | Hands-free                                                                                                                                                                          |
+| Use cases         | Normal website access and functionality                  | <ul><li>Booking, at a front desk</li><li>Enrollment at a doctors office, at reception </li></ul>                                                                                   | <ul><li>A screen in a doctor's waiting room</li><li>A kiosk, when it's asleep, like a screensaver type mode</li></ul>                                                               |
+| Goals             |                                                          | <ul><li>Provide current product / service catalog to users in-store, easily</li><li>Support user info capture, enrollments, newsletter signups </li><li>Customer reivews</li></ul> | <ul><li>Screensaver - protect the kiosk from screen burn </li><li>Feature specials and new products</li><li>Play video content seamlessly, start to end, and then advance</li></ul> |
+| Specific features |                                                          | <ul><li>Touch-only interaction support</li><li>On-screen keyboard </li></ul>                                                                                                       | <ul><li>Content queue</li><li>IFRAME controller?</li></ul>                                                                                                                          |
+
+
+
+
+
+
+
+
+

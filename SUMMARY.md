@@ -223,13 +223,15 @@
 
 * [🔍 About SA5's Kiosk Lib](sa5-kiosk/about.md)
 * [🚀 Quick Start | SA5 Kiosk](sa5-kiosk/quick-start.md)
-* [Kiosk Setup](sa5-kiosk/kiosk-setup.md)
+* [Usage Notes](sa5-kiosk/usage-notes.md)
+* [Kiosk Hardware & Browser Setup](sa5-kiosk/kiosk-hardware-and-browser-setup.md)
 * [Kiosk Base 🧪](sa5-kiosk/kiosk-base.md)
 * [Inactivity Timer 🧪](sa5-kiosk/html-tables.md)
 * [Display Mode](sa5-kiosk/display-mode.md)
 * [Technical Notes](sa5-kiosk/technical-notes.md)
-* [Future](sa5-kiosk/future.md)
-* [Smart Watch Notes](sa5-kiosk/smart-watch-notes.md)
+* [Future](sa5-kiosk/future/README.md)
+  * [Smart Watch Notes](sa5-kiosk/future/smart-watch-notes.md)
+* [ToDo](sa5-kiosk/todo.md)
 
 ## 📘 sa5-hotkeys
 
