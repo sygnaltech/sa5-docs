@@ -28,11 +28,11 @@ You can paste this into your site-wide code section immediately after the librar
 
 ## Configuration Settings
 
-|                 |                                                                                                     |            |
-| --------------- | --------------------------------------------------------------------------------------------------- | ---------- |
-| homePath        | Identifies the home page of the kiosk. This is where the kiosk will return to on inactivity reset.  |            |
-| userAgent       |                                                                                                     |            |
-| inactivityTimer | The amount of time                                                                                  | In seconds |
+|                 |                                                                                                     | Default         |
+| --------------- | --------------------------------------------------------------------------------------------------- | --------------- |
+| homePath        | Identifies the home page of the kiosk. This is where the kiosk will return to on inactivity reset.  | /kiosk          |
+| userAgent       |                                                                                                     | KioskApp/1.0    |
+| inactivityTimer | The amount of time                                                                                  | 180 ( seconds ) |
 
 
 

@@ -12,7 +12,7 @@ description: How to Easily Add SA5's Hotkeys Support to Your Webflow Site
 ```html
 <!-- Sygnal Attributes 5 | Kiosk -->
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.31/dist/nocode/webflow-kiosk.js"
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.34/dist/nocode/webflow-kiosk.js"
 ></script> 
 ```
 {% endcode %}
@@ -33,12 +33,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | Kiosk --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.31/dist/css/webflow-kiosk.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.34/dist/css/webflow-kiosk.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-kiosk.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.31/dist/nocode/webflow-kiosk.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.34/dist/nocode/webflow-kiosk.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-kiosk.js"
   devproxy-group="sa5"
   ></script>
