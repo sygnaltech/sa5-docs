@@ -4,10 +4,50 @@
 
 {% hint style="info" %}
 **EXPERIMENTAL** \
-Not available for public use&#x20;
+Not yet available for public use&#x20;
 {% endhint %}
 
+SA5 Kiosk enables a standard Webflow-hosted site to deliver some or all of its content through a kiosk.&#x20;
 
+Showcase products and services, collect customer feedback and orders all through your same Webflow-hosted site, while the customer is physically in-store at your retail shop or clinic.&#x20;
+
+The primary advantages of this approach is;
+
+* Low cost.  The kiosk setup uses a browser - Chrome is best for our setup, and requires only a cheap PC and touchscreen.&#x20;
+* Branding consistency with your website. &#x20;
+* Centralized CMS data and ECom products&#x20;
+
+## Overview&#x20;
+
+Base functionality;
+
+* Kiosk detection&#x20;
+* Conditional visibility
+  * Show kiosk-only elements only when in kiosk mode&#x20;
+  * Show browser-only elements only when in browser mode&#x20;
+
+### Kiosk Detection & Kiosk Modes
+
+SA5 Kiosk is designed to work in 3 possible modes;&#x20;
+
+| Mode                                      | Description                    | Notes                                                                                                   |
+| ----------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| Browser mode                              | Default, normal-website mode.  | <ul><li>Website operates as normal</li><li>Any kiosk-only elements are hidden </li></ul>                |
+| Kiosk mode                                | Kiosk-specific mode            | Triggered by the user-agent string                                                                      |
+| <p>Display mode<br>( currently RFC ) </p> | Hands-free display mode        | <p>Triggered by either;</p><ul><li>The user-agent string </li><li>Kiosk mode inactivity timer</li></ul> |
+
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+## Conditional Visibility&#x20;
+
+Elements
+
+
+
+* Kiosk detection&#x20;
+* Conditional visibility
+  * Show kiosk-only elements only when in kiosk mode&#x20;
+  * Show browser-only elements only when in browser mode&#x20;
 
 
 
@@ -19,7 +59,11 @@ Not available for public use&#x20;
 
 
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+
+## Advanced Discussions
+
+Although it's generally not necessary, it's possible to implement conditional visibility at a reverse proxy level to ensure the best SEO.&#x20;
 
 
 

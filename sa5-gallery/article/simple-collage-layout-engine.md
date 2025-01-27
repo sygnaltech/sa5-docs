@@ -35,14 +35,70 @@ Ideal for-
 
 None, currently.&#x20;
 
+
+
+
+
+
+
 Future;
 
 * Perhaps min and max items preferred per row
 * Perhaps the colspan options, e.g. 3, 6, 9, 4, 8... &#x20;
 * Hinting, on landscape, portrait, and square imagery&#x20;
-* Hinting, on image focal point ( grid of 9, like top-left, center-middle )  &#x20;
+
+
+
+
+
+
+
+Hinting, on image focal point ( grid of 9, like top-left, center-middle )  &#x20;
+
+* top-left
+* top-center
+* top-right
+* left
+* center
+* right
+* bottom-left
+* bottom-center
+* bottom-right
+
+{% hint style="info" %}
+Easily implemented using an option field in the the CMS with the above values.  This allows you to&#x20;
+{% endhint %}
+
+
 
 <img src="../../.gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">
+
+
+
+Reference from&#x20;
+
+wfu-gallery-layout-config="x"&#x20;
+
+
+
+```html
+<script type="application/sa5+json" name="x">
+{
+  "@context": "https://attr.sygnal.com",
+  "@type": "GallerySimpleCollageConfig",
+  "@version": "0.1", 
+ 
+  ... 
+  
+}
+</script> 
+```
+
+
+
+
+
+
 
 ## Designer Controls&#x20;
 

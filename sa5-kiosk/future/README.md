@@ -2,6 +2,14 @@
 
 
 
+
+
+* Future-&#x20;
+  * Exposed on a window var for custom programming use&#x20;
+  * State change event&#x20;
+
+
+
 ## Modes
 
 Some window vars indicating current mode-
