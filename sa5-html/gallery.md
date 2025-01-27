@@ -47,7 +47,7 @@ wfu-gallery-layout = tight-collage
 * CMS compatible
 * Can possibly optimizes portrait and landscape and square orientations
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Approach;
 

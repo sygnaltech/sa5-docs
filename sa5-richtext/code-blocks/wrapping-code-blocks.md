@@ -8,7 +8,7 @@ When you're dropping in something like a regex, which cannot have line breaks in
 
 * We want to be able to wrap code blocks like this;&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Live example on <a href="https://sygnal.webflow.io/lessons/validating-emails">https://sygnal.webflow.io/lessons/validating-emails</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Live example on <a href="https://sygnal.webflow.io/lessons/validating-emails">https://sygnal.webflow.io/lessons/validating-emails</a></p></figcaption></figure>
 
 * Control by syntax type, e.g. Plain Text, JavaScript... which is set for each block&#x20;
 
@@ -69,7 +69,7 @@ As of 27-Aug-2024 the list below contains the languages supported.  In most, the
 
 You can see this on the `<code>` element;
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>A Code Block set to JavaScript, showing <code>lauguage-javascript</code></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>A Code Block set to JavaScript, showing <code>lauguage-javascript</code></p></figcaption></figure>
 
 Some languages however vary that, for example C++ is classed as `language-cpp`.&#x20;
 

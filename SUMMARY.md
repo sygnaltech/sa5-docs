@@ -398,6 +398,13 @@
 * [🚀 Quick Start | SA5 Custom Form Select](sa5-selectcustom/quick-start.md)
 * [Custom Form Select ❺🧪](sa5-selectcustom/article.md)
 
+## 📘 sa5-gallery
+
+* [🔍 About SA5's Gallery Lib](sa5-gallery/about.md)
+* [🚀 Quick Start | SA5 Gallery](sa5-gallery/quick-start.md)
+* [Gallery ❺🧪](sa5-gallery/article/README.md)
+  * [Simple Collage Layout Engine](sa5-gallery/article/simple-collage-layout-engine.md)
+
 ## 📘 sa5-effects
 
 * [🔍 About SA5's Effects Lib](sa5-effects/about.md)
