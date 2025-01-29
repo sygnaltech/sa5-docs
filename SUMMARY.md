@@ -18,6 +18,7 @@
 * [Documentation](overview/documentation.md)
 * [Configuration Blocks](overview/configuration-blocks.md)
 * [Preloaders](overview/preloaders.md)
+* [Breakpoints](overview/breakpoints.md)
 * [Sygnal Attributes ( SA5 ) Support](overview/sygnal-attributes-sa5-support.md)
 * [SA6](overview/sa6.md)
 * [SA5 Core](overview/sa5-core/README.md)
@@ -443,7 +444,7 @@
 
 * [🔍 About SA5's Embeds Lib](sa5-embeds/about.md)
 * [🚀 Quick Start | SA5 Embeds](sa5-embeds/quick-start.md)
-* [Table Embeds ❺🧪](sa5-embeds/table-embeds/README.md)
+* [Table Embeds ❺](sa5-embeds/table-embeds/README.md)
   * [Google Doc Table Embeds](sa5-embeds/table-embeds/google-doc-table-embeds/README.md)
     * [Styling Table Embeds](sa5-embeds/table-embeds/google-doc-table-embeds/styling-table-embeds.md)
   * [Google Sheets Table Embeds](sa5-embeds/table-embeds/google-sheets-table-embeds.md)

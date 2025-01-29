@@ -1,6 +1,18 @@
 # Future
 
-**SA5 Layout** is continually evolving.  Want to [sponsor a feature](../../overview/sponsor.md)?  Learn more at the link.&#x20;
+{% hint style="success" %}
+**SA5** is continually evolving.  Want to [sponsor a feature](../../overview/sponsor.md)?  Learn more at the link. &#x20;
+{% endhint %}
+
+
+
+
+
+
+
+
+
+
 
 Future ideas include;&#x20;
 
@@ -9,6 +21,7 @@ Future ideas include;&#x20;
 * Part control
 * Position control
   * Sorting control?&#x20;
+  * Move to child position &#x20;
 * Handlers
   * Slider&#x20;
   * SwiperJS

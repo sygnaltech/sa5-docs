@@ -2,21 +2,57 @@
 description: Embed tables and more, directly from sources such as Google Docs.
 ---
 
-# Table Embeds ❺🧪
+# Table Embeds ❺
 
 {% hint style="success" %}
 **RELEASED in SA5 v5.3.13**
-
-Currently in BETA.&#x20;
 {% endhint %}
 
-Embed content from Google Docs directly in your Webflow pages.
+## Goals
 
+* Embed tables from Google Docs directly in your Webflow pages
+* Support embedding in;
+  * Standalone elements
+  * Rich text blocks&#x20;
+  * CMS-bound rich text blocks&#x20;
+* Support specific content formatting
+  * Bulleted lists
+  * Links
+* Remove all other content formatting to be brand-compliant&#x20;
 
+## Demonstration
 
+Here's a demo of SA5 embedded tables in action;&#x20;
 
+[https://www.sygnal.com/lessons/client-seats](https://www.sygnal.com/lessons/client-seats)
 
-### Embedding Tables from Google Docs
+And the source content; &#x20;
+
+[https://docs.google.com/document/d/1rIWGo3yUQvEfJNDrykgP7amqSdI5p45USXpVQGHj6rc/edit?tab=t.0](https://docs.google.com/document/d/1rIWGo3yUQvEfJNDrykgP7amqSdI5p45USXpVQGHj6rc/edit?tab=t.0)
+
+Here's how and why to integrate them;&#x20;
+
+{% embed url="https://www.loom.com/share/293e86a178ef4cc19458354d82bcae68" %}
+
+## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+First, **add the library** as detailed in [Quick Start](../../sa5-html/quick-start.md).&#x20;
+
+### STEP 2 - Prepare your Google Doc Table
+
+Make certain to make the document read-only to anyone with the link.&#x20;
+
+### STEP 3 - Create an Embed Where you Want the Table
+
+* Either standalone in your page design
+* Or within static rich text content
+* Or within CMS-stored rich text content
+
+Paste this in.
+
+Replace the src with your own document.&#x20;
 
 {% code overflow="wrap" %}
 ```html
@@ -33,33 +69,5 @@ Embed content from Google Docs directly in your Webflow pages.
 {% endcode %}
 
 
-
-
-
-## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
-
-Create a Google Document containing the table(s) you want.
-
-&#x20;
-
-
-
-n HTML Embed or plain-text element on your page, data-bound to the CMS if you like.
-
-### `wfu-decode` attribute <a href="#wfu-decode-attribute" id="wfu-decode-attribute"></a>
-
-Add this to the HTML Embed element you want the contents decoded for. No value needed.
-
-Note that the CSS will hide this element initially until after it’s decoded, at which point we make it visible.
-
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
-
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-First, **add the library** as detailed in [Quick Start](../../sa5-html/quick-start.md).&#x20;
-
-### STEP 2 - Apply `wfu-decode` to the HTML Embed element you want to decode <a href="#step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode" id="step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode"></a>
-
-See above for details.
 
 \
