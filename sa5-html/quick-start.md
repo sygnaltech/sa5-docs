@@ -21,8 +21,8 @@ This feature is using SA5's new TypeScript-based library, so it is has different
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | HTML --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.28/dist/css/webflow-html.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.28/dist/nocode/webflow-html.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.36/dist/css/webflow-html.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.36/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 
@@ -36,12 +36,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | HTML --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.28/dist/css/webflow-html.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.36/dist/css/webflow-html.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-html.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.28/dist/nocode/webflow-html.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.36/dist/nocode/webflow-html.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-html.js"
   devproxy-group="sa5"
   ></script>

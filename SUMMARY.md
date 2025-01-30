@@ -136,9 +136,10 @@
 * [Advanced Element Filtering ❺](sa5-html/advanced-element-filtering/README.md)
   * [Useful Filtering Examples](sa5-html/advanced-element-filtering/useful-filtering-examples.md)
 * [Dynamic Attributes](sa5-html/sa5-dynamic-attributes/README.md)
-  * [Smart Attributes 🧪](sa5-html/sa5-dynamic-attributes/smart-attributes.md)
   * [Prefix, Postfix, and Formatted Attributes 🧪](sa5-html/sa5-dynamic-attributes/prefix-postfix-and-formatted-attributes.md)
-  * [Future](sa5-html/sa5-dynamic-attributes/future.md)
+  * [Future](sa5-html/sa5-dynamic-attributes/future/README.md)
+    * [Smart Attributes 🧪](sa5-html/sa5-dynamic-attributes/future/smart-attributes.md)
+  * [CMS-Bound Custom Attributes ⛔](sa5-html/sa5-dynamic-attributes/cms-bound-custom-attributes.md)
 * [Scroll to Section](sa5-html/scroll-to-section.md)
 * [Breakpoints ❺](sa5-html/breakpoints.md)
 * [Limit Items by Breakpoint ❺](sa5-html/limit-items-by-breakpoint.md)
@@ -485,5 +486,4 @@
 
 * [Repeater ⛔](deprecated/repeater.md)
 * [Lipsum Generator ⛔](deprecated/lipsum-generator.md)
-* [CMS-Bound Custom Attributes ⛔](deprecated/cms-bound-custom-attributes.md)
 * [JSON Formatter ⛔](deprecated/json-formatter.md)

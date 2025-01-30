@@ -26,6 +26,54 @@ For demonstration purposes, I’ve applied the attributes as `style` attributes,
 
 * None identified.
 
+
+
+
+
+```
+<script type="application/sa5+json" handler="DynamicAttribute">
+{
+  "@context": "https://attr.sygnal.com",
+  "@type": "DynamicAttribute",
+  "@version": "0.1",
+  "name": "style", 
+  "target": "parent", 
+  "value": "font-weight: bold;", 
+  "pre1": "font-style: italic;",
+  "post2": "color: blue;"  
+}
+</script>
+```
+
+
+
+
+
+```html
+<script type="application/sa5+json" handler="DynamicAttribute">
+{
+  "@context": "https://attr.sygnal.com",
+  "@type": "DynamicAttribute",
+  "@version": "0.1",
+  "name": "someAttr", 
+  "target": "parent", 
+  "value": "query", 
+  "pre": "transactionId",
+  "post": "contact"  
+}
+</script>
+```
+
+* Data pulled in from session var&#x20;
+
+
+
+
+
+
+
+
+
 ### Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 #### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>

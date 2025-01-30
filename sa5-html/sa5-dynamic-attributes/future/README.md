@@ -13,29 +13,67 @@ description: Future plans for SA5 dynamic attributes
 
 Currently we prefix attributes with `x-` however this convention is already used in Alpine JS.  While this is unlikely to create conflicts, we'd like to avoid the possibility of confusion as well.
 
+
+
+## Transformer Functions     &#x20;
+
+
+
+
+
 ## Removing Attributes After processing
 
 Default false, but can enable this as a lib config option.&#x20;
 
 ## Prefix and Postfix
 
-`x:pre:(name)` = ( value )&#x20;
+`x:(attr):pre` = ( value )&#x20;
 
-`x:post:(name)` = ( value )
-
-`x:format:(name)` = ( value )
+`x:(attr):post` = ( value )
 
 
 
-`x:pre:(attribute)` = ( value )
 
-`x:post:(attribute)` = ( value )
+
+Future;&#x20;
+
+
+
+`x:(attr):format` = ( value )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```
 <img 
   x:src="image.jpg" 
-  x:pre:src="https://cdn.example.com/" 
-  x:post:src="?version=123">
+  
+  
+  x:src:pre="https://cdn.example.com/" 
+  x:src:post="?version=123">
+  
+  
+  
+  x:src:start
+  x:src:end
+  
+  x:src:before
+  x:src:after
+  
+  
+  
+  
 ```
 
 Would result in;
@@ -51,12 +89,34 @@ Would result in;
 ```
 <img 
     src="image.jpg" 
-    x:pre:src="https://cdn.example.com/" 
-    x:post:src="?version=123" 
-    x:format:src="{x:pre:src}{src}{x:post:src}" 
+    x:src:pre="https://cdn.example.com/" 
+    x:src:post="?version=123"  
 />
+```
+
+
+
+Future;&#x20;
+
+
 
 ```
+<img 
+    src="image.jpg" 
+    x:src:pre="https://cdn.example.com/" 
+    x:src:post="?version=123" 
+    x:src:format="{x:pre:src}{src}{x:post:src}" 
+    x:src:transform="funcName" 
+/>
+```
+
+
+
+Calls a JS function on window.funcName, and passes the element.  The function returns a value, which is then applied to the attribute. &#x20;
+
+
+
+
 
 Use cases;
 
@@ -109,7 +169,7 @@ Ideally design this so that it can also support Hyperflow processing.&#x20;
 
 ## Transforms
 
-[Learn more](../transform.md)
+[Learn more](../../transform.md)
 
 Dynamic Attributes are likely to become a facet of a larger SA5 concept we'll call DOM Transforms. Transforms allow for broad changes to happen, and have a specific instructional paradigm;
 
@@ -148,6 +208,38 @@ We're looking at adding&#x20;
    encode="querystring" 
    ></script>
 ```
+
+
+
+
+
+
+
+```
+// Some code
+<script type="sa5:transform:attr"
+   target="closest"
+   selector="'a'"
+   transform="append"
+   attr="href"   
+   val="{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}"
+   encode="querystring" 
+   ></script>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
