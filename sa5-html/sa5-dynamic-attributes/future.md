@@ -169,7 +169,7 @@ Ideally design this so that it can also support Hyperflow processing.&#x20;
 
 ## Transforms
 
-[Learn more](../../transform.md)
+[Learn more](../transform.md)
 
 Dynamic Attributes are likely to become a facet of a larger SA5 concept we'll call DOM Transforms. Transforms allow for broad changes to happen, and have a specific instructional paradigm;
 
