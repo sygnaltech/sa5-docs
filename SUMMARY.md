@@ -135,6 +135,8 @@
 * [Advanced Element Sorting ❺](sa5-html/advanced-element-sorting.md)
 * [Advanced Element Filtering ❺](sa5-html/advanced-element-filtering/README.md)
   * [Useful Filtering Examples](sa5-html/advanced-element-filtering/useful-filtering-examples.md)
+* [Dynamic URLs 🧪](sa5-html/dynamic-urls/README.md)
+  * [Future](sa5-html/dynamic-urls/future.md)
 * [Dynamic Attributes](sa5-html/sa5-dynamic-attributes/README.md)
   * [Future](sa5-html/sa5-dynamic-attributes/future.md)
     * [Smart Attributes 🧪](sa5-html/sa5-dynamic-attributes/smart-attributes.md)
