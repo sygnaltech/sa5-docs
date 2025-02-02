@@ -1,54 +1,76 @@
+---
+description: Modify links and other URLs dynamically using CMS data.
+---
+
 # Dynamic URLs 🧪
 
-SA5's Dynamic URLs works similiarly to Dynamic Attributes. It supports the modification of URLs by using custom attributes.&#x20;
-
-
-
 {% hint style="info" %}
-PROTOTYPING\
+**CONCEPTUAL** \
 Feature under consideration.&#x20;
 {% endhint %}
 
+## Goals&#x20;
 
+Conceptually SA5's Dynamic URLs would work similiarly to [Dynamic Attributes](../sa5-dynamic-attributes/). However rather than overwriting an attribute's value completely, it would be contextually aware of urls and support the modification of the primary URL on an element by using custom attributes.&#x20;
 
+* Add or replace a querystring param on URL-supporting elements
+* Add or replate a hash value&#x20;
 
+Future goals ( possible );&#x20;
 
-* Add or replace a querystring param
-*
+* Remove a querystring param&#x20;
+* Transform a querystring param&#x20;
+* Prepend/append static or CMS content to a param&#x20;
+  * Compose a param from multiple pieces, both static and CMS sourced&#x20;
+* Support certain path mods ( must distinguish absolute v. relative v. rooted URLs )  &#x20;
+  * Hostname
+  * Protocol
+  * etc.&#x20;
 
+### Use Cases
 
+* Navigate from a Collection List item or Collection List page to another page, carrying key CMS content for;
+  * Context&#x20;
+  * Form filling in hidden fields&#x20;
+  * Finsweet filter initialization, from querystring&#x20;
+* Customize IFRAME urls so that the hosted content is CMS-item-specific&#x20;
+* Component-driven URL and IFRAME customizations &#x20;
 
+### Supported Elements & Attributes&#x20;
 
+[Certain elements](future.md) have a primary attribute which specifies a URL. The name of that attribute varies depending on the element, so to manage this we'll detect and support specific element types.&#x20;
 
-* IMG src
-* A href
+Initially, these are the ones we're focused on;&#x20;
+
+* A href &#x20;
 * IFRAME src &#x20;
 
+{% hint style="info" %}
+[Other element types](future.md) may be supported in the future.&#x20;
+{% endhint %}
+
+### Related Concepts
+
+* Externally trackable links. GTM, Posthog, etc.&#x20;
+* Internally trackable links
+  * Capture link click
+  * Store in sessionStorage  &#x20;
+  * Feed into forms &#x20;
+
 ## Usage Notes
+
+Here's the conceptual attribute protocol, mirrored from `x:` as used in Dynamic Attributes.&#x20;
 
 ### Query string changes
 
 Query string changes &#x20;
 
-`q:*`  &#x20;
-
-
-
-`q:*:pre` &#x20;
-
-
-
-
-
-`u:*:post`&#x20;
-
-
-
-Future;
-
-`u:*:remove`  &#x20;
-
-
+|                  |   |        |
+| ---------------- | - | ------ |
+| `uq:*`           |   |        |
+| `uq:*:pre`       |   |        |
+| `uq:*:post`      |   |        |
+| `uq:*:remove`    |   | Future |
 
 
 
@@ -58,7 +80,10 @@ Future;
 
 
 
-`u::`  &#x20;
+| Attribute     | Description                    | Notes   |
+| ------------- | ------------------------------ | ------- |
+| `uh:*`        | Set the `#hash` of the URL     |         |
+| `uh::remove`  | Remove the `#hash` of the URL  | Future  |
 
 
 
@@ -66,15 +91,17 @@ Future;
 
 ### URL changes&#x20;
 
+URL attribute changes can be applied directly using existing Dynamic Attributes functionality.&#x20;
+
+| Attribute      | Description          | Notes  |
+| -------------- | -------------------- | ------ |
+| `x:src`        | Set the URL path     |        |
+| `x:src:pre`    | Prefix the URL path  |        |
+| `x:src:post`   | Postfix the URL path |        |
 
 
-Url path changes;&#x20;
 
-`x:src:post` =&#x20;
 
-URL changes;
-
-Path addition? &#x20;
 
 
 

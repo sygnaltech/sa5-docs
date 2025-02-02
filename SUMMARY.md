@@ -385,6 +385,7 @@
 * [🚀 Quick Start | SA5 Modals & Popups](sa5-modals/quick-start.md)
 * [Webflow Popups & Modals](sa5-modals/webflow-popups-and-modals/README.md)
   * [Modal Design Notes](sa5-modals/webflow-popups-and-modals/modal-design-notes.md)
+  * [Triggers](sa5-modals/webflow-popups-and-modals/triggers.md)
   * [Page-Specific Modal Control](sa5-modals/webflow-popups-and-modals/page-specific-modal-control.md)
   * [Common Configurations](sa5-modals/webflow-popups-and-modals/common-configurations.md)
   * [Pro-Tips](sa5-modals/webflow-popups-and-modals/pro-tips.md)

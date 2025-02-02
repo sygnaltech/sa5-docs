@@ -74,11 +74,31 @@ DIV wfu-modal = ( name )
 
 ## Modal Lifecycle
 
-SA5 Modals have a lifecycle;
+SA5 Modals are designed to be flexible, but there is a typical lifecycle;
 
 * Closed ( pending )
 * Open
 * Closed ( suppressed )
+
+
+
+<img src="../../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+
+
+In a typical setup there is a lifecycle;&#x20;
+
+* Closed ( pending )
+* Opened, by trigger ( user button click, timer trigger, scroll to position, etc&#x20;
+* Closed ( suppressed )&#x20;
+
+In some situations, you may also want to be able to re-open the modal, which can be allowed by user click even when the modal is suppressed to automatic triggers &#x20;
+
+
+
+
+
+
 
 
 

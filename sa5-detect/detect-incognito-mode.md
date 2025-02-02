@@ -26,7 +26,7 @@ There are of course many illicit use cases here, but the scenario we're interest
 
 ## Implementation Notes
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1) (1) (1).svg" alt="" class="gitbook-drawing">
 
 ### Detecting Incognito Mode
 
