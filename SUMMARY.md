@@ -171,6 +171,7 @@
   * [Future](sa5-layout/about/future.md)
 * [🚀 Quick Start | SA5 Layout Lib](sa5-layout/quick-start.md)
 * [Element Groups ❺🧪](sa5-layout/element-groups.md)
+* [Equal Height Rows ❺🧪](sa5-layout/equal-height-rows.md)
 * [Layout ❺](sa5-layout/layout/README.md)
   * [Tabs Layout Handler](sa5-layout/layout/tabs-layout-handler.md)
   * [Slider Layout Handler 🧪](sa5-layout/layout/slider-layout-handler.md)
@@ -247,7 +248,10 @@
 
 * [🔍 About SA5's Trigger Lib](sa5-trigger/about.md)
 * [🚀 Quick Start | SA5 Trigger](sa5-trigger/quick-start.md)
-* [Dynamic Interaction Trigger Links ❺](sa5-trigger/dynamic-interaction-trigger-links.md)
+* [Trigger Events](sa5-trigger/trigger-events/README.md)
+  * [Link Triggers ❺](sa5-trigger/trigger-events/dynamic-interaction-trigger-links.md)
+* [Trigger Actions](sa5-trigger/trigger-actions.md)
+* [Trigger Script from Interaction](sa5-trigger/trigger-script-from-interaction.md)
 * [Future Plans 🧪📝](sa5-trigger/future-plans.md)
 
 ## 📘 sa5-commerce

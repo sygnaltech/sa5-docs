@@ -71,7 +71,7 @@ Easily implemented using an option field in the the CMS with the above values.  
 
 
 
-<img src="../../.gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (3) (1).svg" alt="" class="gitbook-drawing">
 
 
 

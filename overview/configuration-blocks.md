@@ -37,7 +37,90 @@ e.g. a typical Basin Contact Us form&#x20;
 * Overridden with data here
 * TransactionID created / set&#x20;
 
-## Supported Data Format
+
+
+Make these easier to find&#x20;
+
+```html
+<script type="application/sa5+json" handler="ConversionEvent">
+{
+  "@context": "https://attr.sygnal.com",
+  "@type": "ConversionEvent",
+  "@version": "0.1",
+  "url": "https://conversion-tracker-url.com", 
+  "transactionIdType": "query", 
+  "transactionId": "transactionId",
+  "type": "contact",
+  "item": ""  
+}
+</script>
+```
+
+
+
+
+
+? change @type to @handler   &#x20;
+
+? is there value to context and type?  &#x20;
+
+SEO?&#x20;
+
+Docs?&#x20;
+
+Make these easier to find&#x20;
+
+```html
+<script type="application/sa5+json" handler="ConversionEvent">
+{
+  "@context": "https://attr.sygnal.com",
+  "@type": "ConversionEvent",
+  "@version": "0.1",
+  "url": "https://conversion-tracker-url.com", 
+  "transactionIdType": "query", 
+  "transactionId": "transactionId",
+  "type": "contact",
+  "item": ""  
+}
+</script>
+```
+
+
+
+
+
+
+
+
+
+
+
+### Named Config Blocks
+
+Used when referenced from a `:config` modifier on a base attribute.&#x20;
+
+```html
+<script type="application/sa5+json" name="foo">
+{
+  "@context": "https://attr.sygnal.com",
+  "@type": "ConversionEvent",
+  "@version": "0.1",
+  "url": "https://conversion-tracker-url.com", 
+  "transactionIdType": "query", 
+  "transactionId": "transactionId",
+  "type": "contact",
+  "item": ""  
+}
+</script>
+```
+
+* `name` added&#x20;
+
+
+
+
+
+## Supported Data Formats
 
 * JSON
 * HSON ( coming soon )&#x20;

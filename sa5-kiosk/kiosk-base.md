@@ -36,7 +36,7 @@ SA5 Kiosk is designed to work in 3 possible modes;&#x20;
 | Kiosk mode                                | Kiosk-specific mode            | Triggered by the user-agent string                                                                      |
 | <p>Display mode<br>( currently RFC ) </p> | Hands-free display mode        | <p>Triggered by either;</p><ul><li>The user-agent string </li><li>Kiosk mode inactivity timer</li></ul> |
 
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="" class="gitbook-drawing">
 
 ## Conditional Visibility&#x20;
 
