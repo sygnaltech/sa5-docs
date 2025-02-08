@@ -20,6 +20,7 @@
   * [Configuration Block Specification](overview/configuration-blocks/configuration-block-specification.md)
 * [Preloaders](overview/preloaders.md)
 * [Breakpoints](overview/breakpoints.md)
+* [Component Support](overview/component-support.md)
 * [Sygnal Attributes ( SA5 ) Support](overview/sygnal-attributes-sa5-support.md)
 * [SA6](overview/sa6.md)
 * [SA5 Core](overview/sa5-core/README.md)
