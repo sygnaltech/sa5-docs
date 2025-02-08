@@ -1,4 +1,8 @@
-# Trigger Script from Interaction
+---
+description: Invoke a script as an SA5 Action.
+---
+
+# Script Action
 
 
 

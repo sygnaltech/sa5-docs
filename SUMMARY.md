@@ -16,7 +16,8 @@
   * [Callback Handlers](overview/technical-notes-and-goals/callback-handlers.md)
   * [Custom Attributes](overview/technical-notes-and-goals/custom-attributes.md)
 * [Documentation](overview/documentation.md)
-* [Configuration Blocks](overview/configuration-blocks.md)
+* [Configuration Blocks](overview/configuration-blocks/README.md)
+  * [Configuration Block Specification](overview/configuration-blocks/configuration-block-specification.md)
 * [Preloaders](overview/preloaders.md)
 * [Breakpoints](overview/breakpoints.md)
 * [Sygnal Attributes ( SA5 ) Support](overview/sygnal-attributes-sa5-support.md)
@@ -244,14 +245,22 @@
 * [Hotkeys ❺](sa5-hotkeys/hotkeys/README.md)
   * [Future](sa5-hotkeys/hotkeys/future.md)
 
-## 📘 sa5-trigger
+## 📘 sa5-trigger 🧪
 
 * [🔍 About SA5's Trigger Lib](sa5-trigger/about.md)
 * [🚀 Quick Start | SA5 Trigger](sa5-trigger/quick-start.md)
-* [Trigger Events](sa5-trigger/trigger-events/README.md)
-  * [Link Triggers ❺](sa5-trigger/trigger-events/dynamic-interaction-trigger-links.md)
-* [Trigger Actions](sa5-trigger/trigger-actions.md)
-* [Trigger Script from Interaction](sa5-trigger/trigger-script-from-interaction.md)
+* [IX Triggers ( Legacy ) ❺](sa5-trigger/dynamic-interaction-trigger-links.md)
+* [Triggers 🧪](sa5-trigger/triggers/README.md)
+  * [Link Triggers ❺](sa5-trigger/triggers/dynamic-interaction-trigger-links.md)
+  * [Timer Trigger](sa5-trigger/triggers/timer-trigger.md)
+  * [Click Triggers](sa5-trigger/triggers/click-triggers.md)
+  * [ECommerce Triggers](sa5-trigger/triggers/ecommerce-triggers.md)
+  * [Interaction Trigger](sa5-trigger/triggers/interaction-trigger.md)
+* [Events 🧪](sa5-trigger/events.md)
+* [Actions 🧪](sa5-trigger/actions/README.md)
+  * [Click Action](sa5-trigger/actions/click-action.md)
+  * [Interaction Action](sa5-trigger/actions/interaction-action.md)
+  * [Script Action](sa5-trigger/actions/script-action.md)
 * [Future Plans 🧪📝](sa5-trigger/future-plans.md)
 
 ## 📘 sa5-commerce

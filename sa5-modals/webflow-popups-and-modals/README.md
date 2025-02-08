@@ -82,7 +82,7 @@ SA5 Modals are designed to be flexible, but there is a typical lifecycle;
 
 
 
-<img src="../../.gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (4).svg" alt="" class="gitbook-drawing">
 
 
 

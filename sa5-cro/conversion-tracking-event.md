@@ -23,7 +23,7 @@ Goals;
 
 ## Conversion Event Config
 
-Conversion events are configured in an [SA5 Configuration Block](../overview/configuration-blocks.md)&#x20;
+Conversion events are configured in an [SA5 Configuration Block](../overview/configuration-blocks/)&#x20;
 
 
 
