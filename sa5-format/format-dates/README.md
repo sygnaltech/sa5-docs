@@ -6,7 +6,11 @@ description: Give your dates the formatting you want
 
 Webflow supports the storage of dates and datetimes in the CMS, with a wide range of formatting options. However it's missing a few and more complex formats require hacks and javascript to achieve a desired result.&#x20;
 
-This library allows you to format your dates and times in a huge range of recognized [formats](https://momentjs.com/docs/#/displaying/format/).
+This library allows you to format your dates and times in a huge range of recognized [formats](https://momentjs.com/docs/#/displaying/format/). &#x20;
+
+* Use a format string to explicitly describe the formatting you want.&#x20;
+* Supports relative-time phrasing as in "10 months ago" or "in 8 days" using the specified date relative to today.  You can work with past dates, future dates, or use an "age" mode which shows the number of years elapsed since a date.&#x20;
+* Automatic localized formatting is supported, based on the `<html lang>` attribute which Webflow Localization uses.&#x20;
 
 ## Demonstration <a href="#usage-notes" id="usage-notes"></a>
 
@@ -18,6 +22,18 @@ Demo page
 Demonstration and Cloneable
 {% endembed %}
 
+## Getting Started <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+First, **add the library** as detailed in [Quick Start](../quick-start.md).
+
+### STEP 2 - Apply the custom attributes <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
+
+SA5's formatting attributes are element-specific.  You simply apply the custom attributes to the date elements you want specially formatted.&#x20;
+
+The details on the attributes are below.&#x20;
+
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
 {% hint style="info" %}
@@ -26,9 +42,9 @@ Webflow offers a range of formats, and you ideally want to choose one that is th
 
 <figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption><p>Ideally use this date format to ensure correct datetime parsing. </p></figcaption></figure>
 
-### `wfu-format-date` attribute ( required ) <a href="#wfu-format-attribute" id="wfu-format-attribute"></a>
+### `wfu-format-date` attribute <a href="#wfu-format-attribute" id="wfu-format-attribute"></a>
 
-Use `wfu-format-date` directly on the CMS-bound date field.
+**Required.**  Use `wfu-format-date` directly on the element containing your date.
 
 ```
 wfu-format-date = (format string)
@@ -57,6 +73,12 @@ These are the modes;
 * `to` - Indicates the approximate relative timeperiod between today and the specified date. This is the inverse of `from`.&#x20;
 * `age` - Indicates the exact age, in years, between the specified date and today. Designed for past dates, such as birthdates.&#x20;
 
+{% hint style="info" %}
+
+{% endhint %}
+
+
+
 ### `wfu-format-handler` attribute ( optional )
 
 Use `wfu-format-handler` directly on the CMS-bound date field.
@@ -83,10 +105,9 @@ Use `wfu-format-suffix` directly on the CMS-bound date field. &#x20;
 
 ### `wfu-format-locale` attribute ( optional )
 
-{% hint style="danger" %}
-UNDER DEVELOPMENT
-
-Not yet available publicly.&#x20;
+{% hint style="warning" %}
+**EXPERIMENTAL** \
+Try it out, share feedback in the SA5 forum, link at top.&#x20;
 {% endhint %}
 
 If specified,&#x20;
@@ -94,19 +115,3 @@ If specified,&#x20;
 * Locale will be determined by the `<html lang>` attribute in the page
 * Use with the `dayjs` processor&#x20;
 * Use [localized format strings](https://day.js.org/docs/en/display/format#localized-formats), listed here&#x20;
-
-Internal;
-
-* May be able to preload the lib regardless, and simply allow the locale string to define everything&#x20;
-
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
-
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-First, **add the library** as detailed in [Quick Start](../quick-start.md).
-
-### STEP 2 - Apply the custom attributes to the elements you want to affect <a href="#step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect" id="step-2---apply-the-custom-attributes-to-the-elements-you-want-to-affect"></a>
-
-See above for details.
-
-\

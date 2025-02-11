@@ -7,7 +7,7 @@ description: Future plans for SA5 dynamic attributes
 ## Smart options
 
 * Force overwrite
-* Overwrite only if non-blank
+* Overwrite only if non-blank ( coalesce )&#x20;
 
 ## Change to `x:` prefix
 
@@ -16,6 +16,63 @@ Currently we prefix attributes with `x-` however this convention is already used
 
 
 ## Transformer Functions     &#x20;
+
+Combine information from several sources and set it as a dynamic attribute value.&#x20;
+
+* Other attributes on this element
+* Other attributes on other elements&#x20;
+* Static text&#x20;
+
+```
+x:attr:transform = {{#abc}}def{{#ghi}}
+```
+
+
+
+
+
+
+
+This technique can also be adjusted to the target the parent element's attribute or immediate siblings. &#x20;
+
+| Target Element                   | Attribute                                                       | InnerText      | InnerHTML     |
+| -------------------------------- | --------------------------------------------------------------- | -------------- | ------------- |
+|                                  | Here `attr` is an example attribute name we want to reference.  |                |               |
+| Current element attribute        | `{x:myval=#attr}}`                                              |                |               |
+| Parent element attribute         | `{{^#attr}}`                                                    |                |               |
+| Prev sibling element attribute   | `{{<#attr}}`                                                    |                |               |
+| Next sibling element attribute   | `{{>#attr}}`                                                    |                |               |
+| Current element innerText        |                                                                 |                |               |
+| Specific named element           | `{{name.#attr}}`                                                | `{{name.$}}`   | `{{name.%}}`  |
+|                                  |                                                                 |                |               |
+
+
+
+
+
+## Examples&#x20;
+
+
+
+```
+<div abc="123" ghi="456">789</div>
+```
+
+
+
+|                        | Interpreted As                                                                       | Resulting Value |
+| ---------------------- | ------------------------------------------------------------------------------------ | --------------- |
+| `12{{#abc}}`           | <ul><li>String "12"</li><li>Attribute abc value</li></ul>                            | `12123`         |
+|                        |                                                                                      |                 |
+|                        |                                                                                      |                 |
+| `{{#abc}}def{{#ghi}}`  | <ul><li>Attribute abc value</li><li>String def</li><li>Attribute ghi value</li></ul> | `123def456`     |
+|                        |                                                                                      |                 |
+
+
+
+
+
+
 
 
 

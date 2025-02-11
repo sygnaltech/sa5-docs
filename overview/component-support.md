@@ -1,24 +1,130 @@
-# Component Support
+# Component Support 🧪
+
+Webflow Components are great, but have quite a few limitations that can make them very difficult to work with in more functional setups;
+
+## Key Limitations
+
+* HTML Embeds within a component cannot +Add Field any content from the component properties.&#x20;
+* Custom Attributes on elements within a component can only data-bind to "Attribute" type properties.
+  * These must be created directly from the attribute-binding&#x20;
+  * No binding to e.g. an Image url, or plain text &#x20;
+* Limited property types&#x20;
+  * No general URL type, for e.g. specifying a video or file download&#x20;
+    * Plain text can work but does not validate the field
+  * No option-list setups &#x20;
+* Attribute content cannot be automatically exposed as e.g. CSS vars or JS vars for use in custom styling code
+
+## Rethinking Embeds&#x20;
+
+As of 2025-02-08 Embeds do not support the dynamic integration of data from component properties.  However, it's possible to bind a custom attribute to aproperty,&#x20;
+
+|                     |                                                                                                                          |   |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------ | - |
+| Attribute property  | Add a propertyBind it to the                                                                                             |   |
+| Text property       | Add a text property. Bind it to a text element within the component.  T                                                  |   |
+| Rich text property  |                                                                                                                          |   |
+| Image property      | Add an image property.  Bind it to an image element within the component ( can be hidden ).  Use script to retrieve it.  |   |
+| Visibility property |                                                                                                                          |   |
 
 
 
 
 
-## Embeds
+## Referencing Data
 
-As of 2025-02-08 Embeds do not support the dynamic integration of data from component properties.  However, it's possible to bind a custom attribute to a property
+To do this we first want to establish a standard for referencing data simply and flexibly from other elements within the Webflow Component's generated HTML.&#x20;
 
-|                     |                              |   |
-| ------------------- | ---------------------------- | - |
-| Attribute property  | Add a propertyBind it to the |   |
-| Text property       |                              |   |
-| Rich text property  |                              |   |
-| Image property      | Add an adj                   |   |
-| Visibility property |                              |   |
+There are t
+
+Component n
 
 
 
-## Attribute Property      &#x20;
+
+
+This technique can also be adjusted to the target the parent element's attribute or immediate siblings. &#x20;
+
+| Target Element                   | Attribute                                                       | InnerText      | InnerHTML     |
+| -------------------------------- | --------------------------------------------------------------- | -------------- | ------------- |
+|                                  | Here `attr` is an example attribute name we want to reference.  |                |               |
+| Current element attribute        | `{{#attr}}`                                                     |                |               |
+| Parent element attribute         | `{{^#attr}}`                                                    |                |               |
+| Prev sibling element attribute   | `{{<#attr}}`                                                    |                |               |
+| Next sibling element attribute   | `{{>#attr}}`                                                    |                |               |
+| Current element innerText        |                                                                 |                |               |
+| Specific named element           | `{{name.#attr}}`                                                | `{{name.$}}`   | `{{name.%}}`  |
+|                                  |                                                                 |                |               |
+
+{% hint style="info" %}
+Theoretically, we'd want to populate attributes first, then embeds, to allow some advanced changing.&#x20;
+{% endhint %}
+
+
+
+## Referencing Data from an Attribute &#x20;
+
+To populate a custom attribute with Property values, we want
+
+To do this we'll leverage SA5's existing spec for Dynamic Attributes.  &#x20;
+
+
+
+Under consideration
+
+```
+x:attr:= 
+xx:attr=  
+x::attr= 
+
+```
+
+
+
+```
+x:attr = {{#attr}} 
+```
+
+
+
+
+
+This technique can also be adjusted to the target the parent element's attribute or immediate siblings. &#x20;
+
+| Target Element                   | Attribute                                                       | InnerText      | InnerHTML     |
+| -------------------------------- | --------------------------------------------------------------- | -------------- | ------------- |
+|                                  | Here `attr` is an example attribute name we want to reference.  |                |               |
+| Current element attribute        | `{x:myval=#attr}}`                                              |                |               |
+| Parent element attribute         | `{{^#attr}}`                                                    |                |               |
+| Prev sibling element attribute   | `{{<#attr}}`                                                    |                |               |
+| Next sibling element attribute   | `{{>#attr}}`                                                    |                |               |
+| Current element innerText        |                                                                 |                |               |
+| Specific named element           | `{{name.#attr}}`                                                | `{{name.$}}`   | `{{name.%}}`  |
+|                                  |                                                                 |                |               |
+
+
+
+
+
+## Referencing Data from an Embed&#x20;
+
+
+
+This technique can also be adjusted to the target the parent element's attribute or immediate siblings. &#x20;
+
+| Target Element                   | Attribute                                                       | InnerText      | InnerHTML     |
+| -------------------------------- | --------------------------------------------------------------- | -------------- | ------------- |
+|                                  | Here `attr` is an example attribute name we want to reference.  |                |               |
+| Current element attribute        | `{{#attr}}`                                                     |                |               |
+| Parent element attribute         | `{{^#attr}}`                                                    |                |               |
+| Prev sibling element attribute   | `{{<#attr}}`                                                    |                |               |
+| Next sibling element attribute   | `{{>#attr}}`                                                    |                |               |
+| Current element innerText        |                                                                 |                |               |
+| Specific named element           | `{{name.#attr}}`                                                | `{{name.$}}`   | `{{name.%}}`  |
+|                                  |                                                                 |                |               |
+
+
+
+### Attribute Property      &#x20;
 
 {% hint style="info" %}
 As of 2025-02-08 attribute properties need to be created from the custom attribute binding directly.  Select an element, add a custom attribute, and choose the option to bind it to a component property.  You will be given an option to create a new one.&#x20;
@@ -53,12 +159,21 @@ We're using the distinctive `{{...}}` construction because Webflow styles these 
 
 This technique can also be adjusted to the target the parent element's attribute or immediate siblings. &#x20;
 
-|                                  |                  |   |
-| -------------------------------- | ---------------- | - |
-| Current element attribute        | `{{#my-attr}}`   |   |
-| Parent element attribute         | `{{^#my-attr}}`  |   |
-| Prev sibling element attribute   | `{{<#my-attr}}`  |   |
-| Next sibling element attribute   | `{{>#my-attr}}`  |   |
+| Target Element                   | Attribute        | InnerText | InnerHTML  |
+| -------------------------------- | ---------------- | --------- | ---------- |
+| Current element attribute        | `{{#my-attr}}`   |           |            |
+| Parent element attribute         | `{{^#my-attr}}`  |           |            |
+| Prev sibling element attribute   | `{{<#my-attr}}`  |           |            |
+| Next sibling element attribute   | `{{>#my-attr}}`  |           |            |
+| Current element innerText        |                  |           |            |
+
+
+
+
+
+
+
+
 
 
 
@@ -71,6 +186,30 @@ This technique can also be adjusted to the target the parent element's attribute
 ```html
 <a href="{{<#src}}" target="_blank">Open this image in a new tab</a> 
 ```
+
+
+
+
+
+## Named
+
+The component itself MUST have an attribute;
+
+This identifies the outer bound of the component cleanly, so that variables can be scoped within it.&#x20;
+
+```
+wfu-component-name="foo" 
+```
+
+Within that
+
+
+
+```
+<img src="..." wfu-component-value=""    
+```
+
+
 
 
 
