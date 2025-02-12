@@ -81,6 +81,7 @@
     * [Developing Concepts | Collection List Data Sources](sa5-data/data-sources/collection-list-data-source/developing-concepts-or-collection-list-data-sources.md)
   * [User Info Data Source](sa5-data/data-sources/user-info-data-source.md)
   * [Cookies & Web Storage Data Sources 📝](sa5-data/data-sources/cookies-and-web-storage-data-sources.md)
+  * [RichText Data Source 🧪](sa5-data/data-sources/parse-to.md)
 * [Data Sources ( External ) 🧪](sa5-data/data-sources-external/README.md)
   * [Google Sheets Data Source ⛔](sa5-data/data-sources/google-sheets-data-source.md)
   * [GitHub Data Data Source ⛔](sa5-data/data-sources/github-data-data-source.md)
@@ -96,7 +97,6 @@
 * [Advanced Use](sa5-data/advanced-use.md)
 * [Future 📝](sa5-data/future/README.md)
   * [External Data](sa5-data/future/external-data.md)
-* [Parse RichText 🧪](sa5-data/parse-to.md)
 
 ## 📘 sa5-forms
 
