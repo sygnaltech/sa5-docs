@@ -51,7 +51,7 @@ Here are some quick samples of the layout options; &#x20;
 
 {% tabs %}
 {% tab title="simple-collage" %}
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Second Tab" %}

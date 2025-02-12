@@ -153,7 +153,7 @@ This cosntruction will pull the exact contents of the attribute named `hex-color
 We're using the distinctive `{{...}}` construction because Webflow styles these specially in Embeds.  For example;&#x20;
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Parent & Sibling Attributes  &#x20;
 

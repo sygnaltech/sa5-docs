@@ -8,7 +8,7 @@ When you're dropping in something like a regex, which cannot have line breaks in
 
 * We want to be able to wrap code blocks like this;&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Live example on <a href="https://sygnal.webflow.io/lessons/validating-emails">https://sygnal.webflow.io/lessons/validating-emails</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Live example on <a href="https://sygnal.webflow.io/lessons/validating-emails">https://sygnal.webflow.io/lessons/validating-emails</a></p></figcaption></figure>
 
 * Control by syntax type, e.g. Plain Text, JavaScript... which is set for each block&#x20;
 
