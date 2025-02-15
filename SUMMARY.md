@@ -248,13 +248,14 @@
 
 ## 📘 sa5-trigger 🧪
 
-* [🔍 About SA5's Trigger Lib](sa5-trigger/about.md)
+* [🔍 About SA5's Trigger Lib](sa5-trigger/about/README.md)
+  * [Page 1](sa5-trigger/about/page-1.md)
 * [🚀 Quick Start | SA5 Trigger](sa5-trigger/quick-start.md)
 * [IX Triggers ( Legacy ) ❺](sa5-trigger/dynamic-interaction-trigger-links.md)
 * [Triggers 🧪](sa5-trigger/triggers/README.md)
+  * [Click Triggers](sa5-trigger/triggers/click-triggers.md)
   * [Link Triggers ❺](sa5-trigger/triggers/dynamic-interaction-trigger-links.md)
   * [Timer Trigger](sa5-trigger/triggers/timer-trigger.md)
-  * [Click Triggers](sa5-trigger/triggers/click-triggers.md)
   * [ECommerce Triggers](sa5-trigger/triggers/ecommerce-triggers.md)
   * [Interaction Trigger](sa5-trigger/triggers/interaction-trigger.md)
 * [Events 🧪](sa5-trigger/events.md)

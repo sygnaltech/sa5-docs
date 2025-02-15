@@ -4,6 +4,22 @@
 
 
 
+## Eventing&#x20;
+
+Blocking / non-blocking ??&#x20;
+
+* SA5 load starting
+  * SA5 lib load starting
+    * Custom lib events&#x20;
+    * ...&#x20;
+  * SA5 lib load finished&#x20;
+  * ...&#x20;
+* SA5 load finished&#x20;
+
+
+
+
+
 ## Identify All SA Classed Elements
 
 

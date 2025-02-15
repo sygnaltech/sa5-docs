@@ -36,7 +36,13 @@ Sa5.Events.Invoke("event1");&#x20;
 
 Currently, all events must be named.&#x20;
 
+## Technical Notes & Consideration&#x20;
 
+### Preventing Loops&#x20;
+
+Simple - threading. limit the number of automated events that can chain. &#x20;
+
+Event stack?  Breadcrumbs?  Detect loops? &#x20;
 
 
 

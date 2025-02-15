@@ -1,5 +1,21 @@
 # Future Plans 🧪📝
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 The underlying link approach has proven very useful. We want to expand the capabilities to handle other use cases;
 
 * Trigger interactions ( via a button trigger )&#x20;
@@ -202,6 +218,34 @@ Pre-processing;
   * Identified with a wfu-trigger-area custom attribute. It can optionally be given a unique name
   * Optionally, set the default type with wfu-trigger-default-type =&#x20;
 * Resolves links in those areas, including the parent node&#x20;
+
+
+
+
+
+
+
+## Triggers Invoking Multiple Different Events&#x20;
+
+We're considering the ability for a _single_ Trigger to invoke _multiple_ Events.&#x20;
+
+For example, `wfu-trigger-click` = `event1,event2,event3`&#x20;
+
+If built, this may be limited to certain trigger types, owever at this point we have not identified key use cases where this adds substantial value.&#x20;
+
+## Chained Events&#x20;
+
+We're also considering the concept of a Trigger as an Action type, so that we can chain Trigger-Event-Action sequences.&#x20;
+
+
+
+
+
+
+
+
+
+
 
 
 

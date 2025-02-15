@@ -6,6 +6,12 @@ description: Trigger an SA5 Event from an Interaction
 
 
 
+In Webflow's current Interactions ( IX2 ), the button would then be set as a click trigger to trigger the interaction.&#x20;
+
+
+
+
+
 Use cases;&#x20;
 
 * Start a video after an interaction has completed

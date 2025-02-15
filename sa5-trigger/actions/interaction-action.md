@@ -30,6 +30,16 @@ In Webflow's current Interactions ( IX2 ), the button would then be set as a cli
 
 
 
+In IX2, this is setup as a script click event, on a click-based Interactions Trigger.&#x20;
+
+In Webflow's current Interactions ( IX2 ), the button would then be set as a click trigger to trigger the interaction.&#x20;
+
+
+
+
+
+
+
 
 
 
