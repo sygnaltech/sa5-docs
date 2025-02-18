@@ -2,6 +2,29 @@
 
 
 
+
+
+
+
+
+
+### Event&#x20;
+
+An **SA5 Event** is effectively a messaging pipeline, which has a name.  When an event fires, it triggers a series of _SA5 Actions_. &#x20;
+
+* Multiple Triggers can invoke the same Event.&#x20;
+* An Event can perform several Actions&#x20;
+
+{% hint style="info" %}
+We're considering the ability for a single Trigger to invoke multiple Events. This may be limited to certain trigger types.&#x20;
+{% endhint %}
+
+
+
+
+
+
+
 An SA5 Event is a named construction, which connects Triggers and Actions.&#x20;
 
 <img src="../.gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">

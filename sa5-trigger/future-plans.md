@@ -10,22 +10,21 @@
 
 
 
+## Context&#x20;
+
+
+
+Kiosk mode &#x20;
 
 
 
 
 
 
-The underlying link approach has proven very useful. We want to expand the capabilities to handle other use cases;
 
-* Trigger interactions ( via a button trigger )&#x20;
-* Trigger chatbots
-* Trigger Gista with a query&#x20;
-* Trigger custom JS, JS-based modals, etc.&#x20;
 
-And also possibly;&#x20;
 
-* Trigger GTM datalayer and events &#x20;
+
 
 
 

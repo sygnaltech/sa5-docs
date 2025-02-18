@@ -79,6 +79,10 @@ The Event is the center of the TEA architecture, and there are two crucial conce
 
 ## So Many Types of TEA&#x20;
 
+{% hint style="info" %}
+If you're familiar with systems engineering, TEA follows a familiar Pub/Sub style pattern.&#x20;
+{% endhint %}
+
 ### Triggers&#x20;
 
 Here are a few types of **SA5 Triggers** we're working on, which can invoke _SA5 Events_;&#x20;
@@ -194,6 +198,9 @@ Considering;&#x20;
 * Sub-triggers, such as `##link` items for&#x20;
   * Invoke dictionary pop-ups&#x20;
   * Map pin pop-ups&#x20;
+  * Trigger chatbots, with content
+  * Trigger AI chatbots ( like Gista ) with a query&#x20;
+  * Trigger GTM datalayer and events &#x20;
 
 
 

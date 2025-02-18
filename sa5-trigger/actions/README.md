@@ -1,5 +1,25 @@
 # Actions 🧪
 
+An **SA5 Action** is an action that is be performed when an [SA5 Event](../events.md) occurs.
+
+Example Actions include;
+
+* Simulate a click on an element&#x20;
+* Navigate to another URL&#x20;
+* Call a webhook&#x20;
+* Submit a form&#x20;
+* Switch a tab&#x20;
+* etc.&#x20;
+
+### Types of Actions&#x20;
+
+Broadly, there are two types of SA5 Actions...&#x20;
+
+* **Element Actions.**  An element-specific action such as clicking a button or submitting a form. These are generally configured directly on the target element, using custom attributes.&#x20;
+* **Page Actions.** These are actions that occur in the context of the page, but are not tied to any specific element. We generally configure these using a special SA5 script action block.&#x20;
+
+
+
 
 
 ## Element-Level Actions
@@ -8,8 +28,8 @@ These actions are generally defined using custom attributes.&#x20;
 
 | Action                                          | Detail         | Applies to                   | Description                                          | Notes                                                                                               |
 | ----------------------------------------------- | -------------- | ---------------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| <p>Click<br>wfu-action-click </p>               |                | Any element                  | Fire a click event from script to trigger an element | `wfu-action-click`                                                                                  |
-| Interaction                                     |                |                              |                                                      | `wfu-action-click`, with the element also configured as a click trigger for a Webflow interaction.  |
+| <p>Click<br>wfu-action-click </p>               |                | Any element                  | Fire a click event from script to trigger an element |                                                                                                     |
+| [Interaction](interaction-action.md)            |                |                              |                                                      | `wfu-action-click`, with the element also configured as a click trigger for a Webflow interaction.  |
 | <p>Script<br>wfu-action-script </p>             |                | ? Special SA5 block element  | Invoke a script, or function                         |                                                                                                     |
 | <p>Function<br>wfu-action-function </p>         |                |                              |                                                      | Invoke a function                                                                                   |
 | Scroll Into View                                |                | Any Element                  |                                                      | Offset?                                                                                             |
@@ -23,15 +43,65 @@ These actions are generally defined using custom attributes.&#x20;
 
 
 
+### Video Element
+
+Play
+
+Pause
+
+Seek   sec or %&#x20;
+
+Fullscreen&#x20;
+
+
+
+
+
+
+
+### Lottie & Rive Elements&#x20;
+
+Play
+
+Pause&#x20;
+
+
+
+
+
+
+
+
+
+The underlying link approach has proven very useful. We want to expand the capabilities to handle other use cases;
+
+* Trigger interactions ( via a button trigger )&#x20;
+* Trigger chatbots
+* Trigger Gista with a query&#x20;
+* Trigger custom JS, JS-based modals, etc.&#x20;
+
+And also possibly;&#x20;
+
+* Trigger GTM datalayer and events &#x20;
+
+
+
+
+
+
+
 ## Page-Level Actions&#x20;
 
 These actions are generally defined by an SA5 Configuration Block;&#x20;
 
-| Action   |                             |   |
-| -------- | --------------------------- | - |
-| Navigate |                             |   |
-| Script   | nvoke a script, or function |   |
-|          |                             |   |
+| Action      |                             |   |
+| ----------- | --------------------------- | - |
+| Navigate    |                             |   |
+| Script      | nvoke a script, or function |   |
+| OnLoad      |                             |   |
+| OnScroll%   |                             |   |
+| Exit Intent |                             |   |
+| Timer       |                             |   |
 
 
 
@@ -211,6 +281,51 @@ Defined a timer as a trigger&#x20;
 }
 </script>
 ```
+
+
+
+
+
+
+
+## Technical Notes
+
+### Categories of Actions&#x20;
+
+We have...&#x20;
+
+* **Element Actions.**  An element-specific action such as clicking a button of submitting a form. These are generally configured directly on the target element.&#x20;
+* **Script Actions.**  An action that is defined by a special SA5 script action block.&#x20;
+
+Timer example;&#x20;
+
+```html
+<script type="application/sa+json" handler="Action.Script" event="my-event">
+{
+  "@context": "https://attr.sygnal.com",
+  "@type": "TimerAction", 
+  "@version": "0.1",
+  "timer": "60", 
+  "timerRepeat": "120"
+}
+</script>
+```
+
+Navigation example;&#x20;
+
+```html
+<script type="application/sa+json" handler="Action.Script" event="event1">
+{
+  "@context": "https://attr.sygnal.com",
+  "@type": "NavigationAction", 
+  "@version": "0.1",
+  "url": "https://something.com",
+  "target": "_blank" 
+}
+</script>
+```
+
+
 
 
 
