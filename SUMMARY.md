@@ -497,7 +497,7 @@
 * [🔍 About SA5's Calc Lib](sa5-calc/article/README.md)
   * [Future](sa5-calc/article/future.md)
 * [🚀 Quick Start | SA5 Calc](sa5-calc/quick-start-or-sa5-calc.md)
-* [Count & Sum Items ❺🧪](sa5-calc/article-1/README.md)
+* [Count & Sum Items ❺](sa5-calc/article-1/README.md)
   * [Source Types](sa5-calc/article-1/source-types.md)
   * [Calc Use Cases](sa5-calc/article-1/calc-use-cases.md)
 

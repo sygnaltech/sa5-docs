@@ -2,14 +2,13 @@
 description: Count and sum items in your collection lists.
 ---
 
-# Count & Sum Items ❺🧪
+# Count & Sum Items ❺
 
-{% hint style="danger" %}
-**These are 100% internal R\&D.**\
-No public product is available, but if you need these features, contact us for details on how we can implement them for you.&#x20;
+{% hint style="warning" %}
+While the base functionality for **SA5 Calc** is fully implmented, there are a number of advanced features indicated with a ~~strikethrough~~ that are not yet available.&#x20;
 {% endhint %}
 
-## Use Cases
+## Use Cases&#x20;
 
 * Count the number of items with a specific CMS field
   * Also works with option fields and single-ref fields&#x20;
@@ -59,8 +58,8 @@ Place this on the **display element** where you wish the calculation result to a
 _Source Type_ is one of;&#x20;
 
 * `field` - ( default ) the name of a field tagged with `wfu-calc-field`&#x20;
-* `selector` - a CSS selector&#x20;
-* `sitemap` - 🧪 indicates the sitemap as the source &#x20;
+* ~~`selector` - a CSS selector~~&#x20;
+* ~~`sitemap` - 🧪 indicates the sitemap as the source~~ &#x20;
 
 Learn more about [Source Types](source-types.md).&#x20;
 
@@ -74,11 +73,11 @@ Place this on the **display element** with the `wfu-calc` attribute. &#x20;
 
 This table shows the different settings you can use, depending on the Source Type;&#x20;
 
-| Source Type  | Value                                                               | Notes                                                                       |
-| ------------ | ------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| `field`      | The name of the field to use, as tagged with `wfu-calc-field`       | e.g. `blog` would match all items which have `wfu-calc-field` = `blog`      |
-| `selector`   | Any valid CSS selector for identifying the unique elements we want. | <p>e.g. <code>[my-type=foo]</code> <br></p>                                 |
-| `sitemap` 🧪 | The path prefix to match, e.g. `/blog/`                             | e.g. `/blog/` would count all items with the path beginning with `/blog/`.  |
+| Source Type      | Value                                                               | Notes                                                                       |
+| ---------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| `field`          | The name of the field to use, as tagged with `wfu-calc-field`       | e.g. `blog` would match all items which have `wfu-calc-field` = `blog`      |
+| ~~`selector`~~   | Any valid CSS selector for identifying the unique elements we want. | <p>e.g. <code>[my-type=foo]</code> <br></p>                                 |
+| ~~`sitemap` 🧪~~ | The path prefix to match, e.g. `/blog/`                             | e.g. `/blog/` would count all items with the path beginning with `/blog/`.  |
 
 Learn more about [Source Types](source-types.md).&#x20;
 
@@ -98,7 +97,7 @@ Place this on the **source elements** directly which you are counting or using i
 
 See [Use Cases](calc-use-cases.md) for an understanding of common setup possibilities.&#x20;
 
-### `wfu-preload` = ( preload method )
+### ~~`wfu-preload` = ( preload method )~~
 
 **Optional.** See [preloaders](../../overview/preloaders.md).&#x20;
 

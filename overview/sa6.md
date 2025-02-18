@@ -38,9 +38,14 @@ Add docs, debug info&#x20;
 
 
 
-## Execution order
+## Execution order&#x20;
 
 * Custom Attributes
+* Organization and data manipulation
+  * SA5 Calc
+  * SA5 Layout&#x20;
+  * pulling external data&#x20;
+* Formatting&#x20;
 
 
 
