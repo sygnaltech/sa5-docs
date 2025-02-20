@@ -37,20 +37,23 @@ Make certain to ready the About page for an understanding of&#x20;
 
 A Trigger invokes an Event which results in Actions.&#x20;
 
-| Trigger                                                                                 | Applies to             | Notes                                |
-| --------------------------------------------------------------------------------------- | ---------------------- | ------------------------------------ |
-| <ul><li>An interaction occurring, reaching a certain point in the interaction</li></ul> |                        |                                      |
-| Click                                                                                   | Any element            | Also touch                           |
-| Mousover on an element                                                                  | Any element            | Only works on devices with a pointer |
-| Scroll into view                                                                        | Any element            |                                      |
-| Focus                                                                                   | Any focusable element  |                                      |
-| Blur                                                                                    |                        |                                      |
-| Change                                                                                  | Input elements         |                                      |
-| Scroll to                                                                               |                        |                                      |
-| Video played                                                                            | Video elements         |                                      |
-| Video paused                                                                            |                        |                                      |
-| Video at %                                                                              |                        |                                      |
-| Link Click                                                                              |                        |                                      |
+| Trigger                                                                                 | Applies to                    | Notes                                                                                                     |
+| --------------------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------- |
+| <ul><li>An interaction occurring, reaching a certain point in the interaction</li></ul> |                               | Triggered by affecting a specific element, and a mutation observer is watching that element for chagnes.  |
+| Click                                                                                   | Any element                   | Also touch                                                                                                |
+| Mousover on an element                                                                  | Any element                   | Only works on devices with a pointer                                                                      |
+| Scroll into view                                                                        | Any element                   |                                                                                                           |
+| Focus                                                                                   | Any focusable element         |                                                                                                           |
+| Blur                                                                                    |                               |                                                                                                           |
+| Change                                                                                  | Input elements                |                                                                                                           |
+| Scroll to                                                                               |                               |                                                                                                           |
+| Video played                                                                            | Video elements                |                                                                                                           |
+| Video paused                                                                            |                               |                                                                                                           |
+| Video at %                                                                              |                               |                                                                                                           |
+| Link Click                                                                              |                               |                                                                                                           |
+| Hash change, like nav to `#hash`                                                        | hashchange event              | wfu-trigger-hashchange                                                                                    |
+| Load w/ Hash                                                                            | load event, with the hash set | wfu-trigger-hashload                                                                                      |
+| Hash                                                                                    | load or change                | wfu-trigger-hash                                                                                          |
 
 
 

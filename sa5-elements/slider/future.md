@@ -34,3 +34,40 @@ Plan to add;&#x20;
 * Auto-select N ( e.g. if first is conditionally hidden, we get tab 2 )&#x20;
 * Addition of informational attributes on the tabs outer element
   * no tabs state, tab count&#x20;
+
+
+
+
+
+## Per-Slide Advance Timing     &#x20;
+
+```javascript
+function slideNext() {
+    console.log("Sliding to next"); // Replace with your actual slide advancing logic
+}
+
+const delays = [2000, 5000, 3000, 1000, 8000]; // Array of delay times in milliseconds
+
+function executeSlideSequence(index = 0) {
+    if (index >= delays.length) return; // Stop when all delays are used
+
+    setTimeout(() => {
+        slideNext();
+        executeSlideSequence(index + 1); // Recursive call for the next delay
+    }, delays[index]);
+}
+
+// Start the sequence
+executeSlideSequence();
+```
+
+
+
+
+
+
+
+
+
+
+

@@ -55,6 +55,28 @@ Like...
 ## Execute Modules in Order
 
 * Dynamic Attributes&#x20;
+  * First, do config blocks
+  * Then attributes&#x20;
+
+
+
+Layout  &#x20;
+
+
+
+| Type    | Module             |                                                                    |                                  |
+| ------- | ------------------ | ------------------------------------------------------------------ | -------------------------------- |
+| Event   | SA5 Init Starting  |                                                                    |                                  |
+| Action  | Dynamic Attributes | <ul><li>First, do config blocks </li><li>Then attributes</li></ul> | Includes start and finish events |
+| Action  | Decode             |                                                                    |                                  |
+| Action  | SA5 Layout         |                                                                    |                                  |
+|         |                    |                                                                    |                                  |
+| Action  | SA5 TEA            |                                                                    |                                  |
+|         |                    |                                                                    |                                  |
+| Action  | Unwrap             |                                                                    |                                  |
+| Event   | SA5 Init Finished  |                                                                    |                                  |
+
+
 
 
 

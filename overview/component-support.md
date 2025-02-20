@@ -14,6 +14,102 @@ Webflow Components are great, but have quite a few limitations that can make the
   * No option-list setups &#x20;
 * Attribute content cannot be automatically exposed as e.g. CSS vars or JS vars for use in custom styling code
 
+
+
+CMS
+
+
+
+Custom Attributes can only bind to a special custom attribute type.&#x20;
+
+
+
+
+
+Text element - text property
+
+Rich text element - rich text property&#x20;
+
+Div - text property
+
+
+
+
+
+
+
+
+
+
+
+[https://www.sygnal.com/lessons/component-data-binding](https://www.sygnal.com/lessons/component-data-binding)
+
+
+
+
+
+## Conditional Visibility
+
+Leverage the current set of property capabilities
+
+Conceptual
+
+\`wfu-if-set\` = ( value )
+
+`wfu-if-true` = ( truthy value )&#x20;
+
+wfu-if-hide-method = remove | hide&#x20;
+
+
+
+
+
+
+
+wfu-switch&#x20;
+
+wfu-switch-case = x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### How Webflow Elements Bind to Component Properties&#x20;
+
+[https://docs.google.com/document/d/1D5lfPycDO9G-Y0-1yFtYiz6EbKhbRzsjvSZSAGU0IDE/edit?tab=t.0#heading=h.o112x0xag8a1](https://docs.google.com/document/d/1D5lfPycDO9G-Y0-1yFtYiz6EbKhbRzsjvSZSAGU0IDE/edit?tab=t.0#heading=h.o112x0xag8a1)
+
+
+
+### How Component Properties Bind to CMS Fields
+
+Within a collection list or collection page.&#x20;
+
+[https://docs.google.com/document/d/1D5lfPycDO9G-Y0-1yFtYiz6EbKhbRzsjvSZSAGU0IDE/edit?tab=t.0#heading=h.e7y6xt8gwe9q](https://docs.google.com/document/d/1D5lfPycDO9G-Y0-1yFtYiz6EbKhbRzsjvSZSAGU0IDE/edit?tab=t.0#heading=h.e7y6xt8gwe9q)
+
+
+
+
+
+
+
+
+
 ## Rethinking Embeds&#x20;
 
 As of 2025-02-08 Embeds do not support the dynamic integration of data from component properties.  However, it's possible to bind a custom attribute to aproperty,&#x20;

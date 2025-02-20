@@ -69,7 +69,7 @@ For a _collection list_, this should be on the Collection List ( middle ) elemen
 Place this attribute on the element with `wfu-sort`.&#x20;
 {% endhint %}
 
-### `wfu-sort-type` = ( type ) <a href="#wfu-sort-type-attribute" id="wfu-sort-type-attribute"></a>
+### `wfu-sort-type` = ( type )  <a href="#wfu-sort-type-attribute" id="wfu-sort-type-attribute"></a>
 
 **Optional.**  Sort type always defaults to string-based sorting ( an alphanumeric sort ). If you want to specify the data type of the field being sorted, add this attribute with a value of;
 
@@ -80,6 +80,14 @@ Place this attribute on the element with `wfu-sort`.&#x20;
 
 {% hint style="info" %}
 Place this attribute on the element with `wfu-sort`.&#x20;
+{% endhint %}
+
+### `wfu-sort-startwith` = ( _item number_ )  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+**Optional.**  When specified, starts sorting with the specified item.  Numbering starts with 1.  This is used for special situations.&#x20;
+
+{% hint style="info" %}
+Place this attribute on the element with `wfu-sort`. &#x20;
 {% endhint %}
 
 ### `wfu-sort-locale` = ( _setting_ )  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
