@@ -1,6 +1,6 @@
 # Actions 🧪
 
-An **SA5 Action** is an action that is be performed when an [SA5 Event](../events.md) occurs.
+An **SA5 Action** is an action that is be performed when an [SA5 Event](../events/) occurs.
 
 Example Actions include;
 
@@ -38,6 +38,29 @@ These actions are generally defined using custom attributes.&#x20;
 | <p>Add Class<br>wfu-action-class-add</p>        | Class name     |                              | Adds a class                                         |                                                                                                     |
 | <p>Remove Class <br>wfu-action-class-remove</p> | Class name     |                              | Removes a class                                      |                                                                                                     |
 | <p>Toggle Class<br>wfu-action-class-toggle</p>  | Class name     |                              | Toggles the presence/absence of a class              |                                                                                                     |
+| Hide / Show Elements                            |                |                              |                                                      |                                                                                                     |
+
+
+
+
+
+
+
+Mode
+
+Hide/show certain elements
+
+Class adder, etc&#x20;
+
+
+
+Based on localStorage / cookie / sessionStorage &#x20;
+
+
+
+
+
+
 
 
 

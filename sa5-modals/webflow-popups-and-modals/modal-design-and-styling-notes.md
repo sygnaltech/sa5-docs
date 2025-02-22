@@ -1,4 +1,4 @@
-# Modal Design Notes
+# Modal Design & Styling Notes
 
 ## Pro Tips
 
@@ -63,9 +63,15 @@ If your clients use the Content Editor, rather than the designer, you can make t
 
 ## Scroll Bars
 
-On the modal\_content area, make it scrollable for larger content.
+If your modal may contain too much content to display, especially on mobile devices, we recommend that you add a scrollbar to the `modal_content` class in our design ( see the cloneable ).&#x20;
 
-You can custom-style the scrollbar elegantly;
+This can be best done by adding a custom property of `overflow-y: scroll`  &#x20;
+
+{% hint style="info" %}
+Custom properties are custom styles at the bottom of the style panel, which allow you to apply specialized CSS to your element.  They are different from custom attributes, and not related to component properties. &#x20;
+{% endhint %}
+
+You can custom-style the scrollbar elegantly;&#x20;
 
 ```html
 <style>

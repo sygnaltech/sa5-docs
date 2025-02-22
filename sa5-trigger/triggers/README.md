@@ -54,6 +54,7 @@ A Trigger invokes an Event which results in Actions.&#x20;
 | Hash change, like nav to `#hash`                                                        | hashchange event              | wfu-trigger-hashchange                                                                                    |
 | Load w/ Hash                                                                            | load event, with the hash set | wfu-trigger-hashload                                                                                      |
 | Hash                                                                                    | load or change                | wfu-trigger-hash                                                                                          |
+| Gated Trigger                                                                           |                               |                                                                                                           |
 
 
 

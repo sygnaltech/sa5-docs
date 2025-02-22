@@ -39,7 +39,7 @@ Post-DOM load
 
 Most work is done here&#x20;
 
-```
+```javascript
 if (document.readyState !== 'loading') {
     console.log('document is already ready, just execute code here');
     myInitCode();
@@ -52,4 +52,8 @@ if (document.readyState !== 'loading') {
 
 function myInitCode() {}
 ```
+
+
+
+
 

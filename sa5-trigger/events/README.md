@@ -27,7 +27,7 @@ We're considering the ability for a single Trigger to invoke multiple Events. Th
 
 An SA5 Event is a named construction, which connects Triggers and Actions.&#x20;
 
-<img src="../.gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">
 
 Events are tracked by SA5 and always have a name, so that they can be invoked and logged. &#x20;
 

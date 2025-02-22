@@ -30,7 +30,7 @@ At the center of this model is a more versatile structure we refer to as **Trigg
 
 This is the simplest TEA arrangement.&#x20;
 
-<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="" class="gitbook-drawing">
 
 Here's the basic mechanic.  Elements in your webpage are marked up with attributes that identify the Triggers, Events, and Actions you want configured.&#x20;
 
@@ -75,7 +75,7 @@ The Event is the center of the TEA architecture, and there are two crucial conce
 * Any number of Triggers can invoke the same Event.&#x20;
 * When the Event is invoked, any number of Actions may be performed.&#x20;
 
-<img src="../../.gitbook/assets/file.excalidraw (2).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2) (1).svg" alt="" class="gitbook-drawing">
 
 ## So Many Types of TEA&#x20;
 
@@ -143,7 +143,7 @@ We're also considering the concept of a Trigger as an Action type, so that we ca
 
 Here are some rough examples;
 
-<img src="../../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2).svg" alt="" class="gitbook-drawing">
 
 
 

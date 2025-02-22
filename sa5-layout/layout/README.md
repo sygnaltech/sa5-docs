@@ -17,7 +17,7 @@ SA5 Layout was designed to make complex layouts much easier by allowing elements
 
 _Here is a exceptionally simple example of how elements can be targeted to containers, and re-organized on page load.  The_ `wfu-layout-target` _attribute is used to match and identify the wfu_`-layout` _container, and the element is moved._
 
-<img src="../../.gitbook/assets/file.excalidraw (2) (1).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2) (1) (1).svg" alt="" class="gitbook-drawing">
 
 This technique can expanded in many ways;
 

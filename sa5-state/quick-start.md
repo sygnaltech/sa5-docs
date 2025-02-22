@@ -4,10 +4,16 @@ description: How to Setup SA5's State Library
 
 # 🚀 Quick Start | SA5 State
 
-## How to Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+{% hint style="danger" %}
+**NOT YET AVAILABLE FOR PUBLIC USE.**
+{% endhint %}
+
+## How to Add the Library   <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
 {% hint style="warning" %}
-**NOT YET AVAILABLE FOR PUBLIC USE.**
+**IMPORTANT** \
+We've made some enhancements to SA5 Core in v5.5.0. \
+If you are already using other SA5 Libs, please make certain to upgrade them to at least v5.5.0 as well to ensure cross-compatibility.&#x20;
 {% endhint %}
 
 There are currently no configuration options for this library, so we’ll use a _no-code_ integration approach.
@@ -19,8 +25,8 @@ There are currently no configuration options for this library, so we’ll use a 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | State --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/css/webflow-state.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.0/dist/nocode/webflow-state.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/css/webflow-state.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/nocode/webflow-state.js"></script>
 ```
 {% endcode %}
 
@@ -34,12 +40,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | State --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/css/webflow-state.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/css/webflow-state.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-state.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.4.1/dist/nocode/webflow-state.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/nocode/webflow-state.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-state.js"
   devproxy-group="sa5"
   ></script>

@@ -32,7 +32,7 @@ The basic idea is a very simple proxy-click.&#x20;
   * Or any other setup you want
 * SA5's Trigger lib identifies both the trigger buttons and the proxy buttons, and establishes click handlers. Any click on the proxy button will issue a JavaScript click on the interactions trigger button, which will trigger whatever interaction you've setup- popup, animation, etc.&#x20;
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1) (1).svg" alt="" class="gitbook-drawing">
 
 ## Proxy Trigger Setups
 
