@@ -76,11 +76,12 @@ DIV wfu-modal = ( name )
 
 SA5 Modals are designed to be flexible, but there is a typical lifecycle;
 
-* Closed ( pending )
-* Open
-* Closed ( suppressed )
+* Closed ( pending ).  This is generally the initial state of a modal for a new user visiting the site, it is not suppressed, but it is also initially hidden.&#x20;
+* Open.  Some trigger has occurred like click, timer, scroll, exit intent, which open the modal.&#x20;
+  * When the user closes it, it can be configured to suppress so that it won't auto-open again for e.g. 3 days&#x20;
+* Closed ( suppressed ).  It's closed and a natural trigger such as a timer won't re-open it.&#x20;
 
-
+Here's a state diagram;&#x20;
 
 <img src="../../.gitbook/assets/file.excalidraw (4).svg" alt="" class="gitbook-drawing">
 

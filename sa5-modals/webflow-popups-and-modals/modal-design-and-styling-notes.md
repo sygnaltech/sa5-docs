@@ -1,12 +1,32 @@
 # Modal Design & Styling Notes
 
-## Pro Tips
+**SA5 Modals** leverage the capabilities of the Webflow designer fully, to give you complete control over how modals look.  The library governs the _functional_ aspects only;
+
+* Triggering modals, through various triggers&#x20;
+* Showing and hiding modals&#x20;
+* Suppressing modals from automatic display, when they have already been viewed and closed&#x20;
+* The close button action
+* The ability to close by clicking outside of the modal, on the overlay
+
+Everything else regarding the modal design is up to you, including;
+
+* Where the modal appears on the screen
+* How big the modal is&#x20;
+* Corners, shadow, border, color, style, padding&#x20;
+* Scrolling and scrollbar styling&#x20;
+
+However, there are some important design considerations to be aware of when it comes to modal responsiveness, modal sidebars, and scrolling.&#x20;
+
+{% hint style="success" %}
+SA5's Modal cloneable has some carefully designed modals that are a great starting point to work with.  We highly recommend you copy-paste from there.&#x20;
+{% endhint %}
+
+## Pro Tips&#x20;
 
 ### Best Practices for Responsive Design
 
-Set the width of the modal element as you want it to appear for each breakpoint. &#x20;
-
-Set a max-height on the content part to support scrollable content.&#x20;
+* Set the `width` of the modal element as you want it to appear for each breakpoint. &#x20;
+* Set a `max-height` on the content part to support scrollable content.&#x20;
 
 {% hint style="info" %}
 For modal sizing you can use most units, e.g. `px`, `vh`, `vw`, `svh`, `svw`, `dvh`, `dvw` units, but avoid `%`.  The modal will be wrapped in a hidden container for layout purposes so % widths will be measured from the container, not the page.&#x20;
@@ -105,3 +125,8 @@ You can custom-style the scrollbar elegantly;&#x20;
     }
 </style>
 ```
+
+## CMS-Driven Modals
+
+
+
