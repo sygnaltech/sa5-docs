@@ -4,12 +4,6 @@ description: Easily create and manage popups and modals in your Webflow projects
 
 # Webflow Popups & Modals
 
-{% hint style="info" %}
-**BETA RELEASE**\
-SA5 Modals is fully available, but attributes and features may change in the final release. \
-&#xNAN;_&#x44;rop a message in the forum if you'd like to join the beta team._&#x20;
-{% endhint %}
-
 In Webflow, building popups and modals has several challenges;
 
 * Editing them is not designer-friendly&#x20;
@@ -81,25 +75,13 @@ SA5 Modals are designed to be flexible, but there is a typical lifecycle;
   * When the user closes it, it can be configured to suppress so that it won't auto-open again for e.g. 3 days&#x20;
 * Closed ( suppressed ).  It's closed and a natural trigger such as a timer won't re-open it.&#x20;
 
+{% hint style="success" %}
+In some situations, you may also want to be able to re-open the modal even when it is suppressed.  This scenario is common when you want a modal to automatically open ( e.g. on a timer ), but then allow the user to manually re-open it later by clicking a link.  This is supported by SA5. &#x20;
+{% endhint %}
+
 Here's a state diagram;&#x20;
 
 <img src="../../.gitbook/assets/file.excalidraw (4).svg" alt="" class="gitbook-drawing">
-
-
-
-In a typical setup there is a lifecycle;&#x20;
-
-* Closed ( pending )
-* Opened, by trigger ( user button click, timer trigger, scroll to position, etc&#x20;
-* Closed ( suppressed )&#x20;
-
-In some situations, you may also want to be able to re-open the modal, which can be allowed by user click even when the modal is suppressed to automatic triggers &#x20;
-
-
-
-
-
-
 
 
 
@@ -107,9 +89,9 @@ In some situations, you may also want to be able to re-open the modal, which can
 
 Create your DIV containing your modal content, and apply the attributes below, depending on the configuration and behavior you choose;&#x20;
 
-### I want this DIV to define a modal
+### `wfu-modal` = ( _name_ )&#x20;
 
-`wfu-modal` = ( name )
+**Required.** Place this on the DIV you want to be a **modal element**.  &#x20;
 
 Give your modal a unique name, like `modal-1`. This will be used in places like your modal trigger buttons.&#x20;
 
@@ -118,14 +100,12 @@ Use standard identifier conventions, e.g. avoid spaces. We recommend names that 
 {% endhint %}
 
 {% hint style="info" %}
-Any DIV you apply the `wfu-modal` attribute to is referred to as a **modal element**, for the configuration docs below.&#x20;
-{% endhint %}
-
-{% hint style="info" %}
 You can use a CMS-bound value such as a slug for the name. Just ensure it is also unique from any other modals on the page to prevent naming conflicts.&#x20;
 {% endhint %}
 
-## Usage Notes ( Modal Trigger Setup )
+## Usage Notes ( Modal Trigger Setup ) &#x20;
+
+There are many different ways to trigger a modal open. Depending on the type of trigger, these attributes will be placed either on a triggering element, or on the modal element itself.&#x20;
 
 ### I want this button or element to trigger my modal on click
 
@@ -133,7 +113,7 @@ On the button or element to be clicked, add this attribute;
 
 `wfu-modal-trigger-click` = ( modal-name )
 
-Specify the modal's name. &#x20;
+Specify the modal's name that you want to open.&#x20;
 
 ### I want the modal to appear after X milliseconds
 
@@ -147,11 +127,25 @@ Place this directly on the modal element.&#x20;
 1 second = 1,000 ms, so if you want to wait 5 seconds, set the value to `5000`.
 {% endhint %}
 
+<table><thead><tr><th>Trigger</th><th width="130">Trigger Type</th><th>Attribute </th><th>Value</th><th>Notes </th></tr></thead><tbody><tr><td>Click</td><td>Direct</td><td><code>wfu-modal-trigger-click</code> </td><td>Modal name</td><td>Place on the triggering button, link, or element</td></tr><tr><td>Timer</td><td>In-Direct</td><td><code>wfu-modal-trigger-timer</code> </td><td>Time in milliseconds</td><td>Place on the modal element directly</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+
+{% hint style="success" %}
+This is being combined with SA5 Trigger.  \
+Event = open modal\
+Action&#x20;
+{% endhint %}
+
+
+
+##
+
 ## Usage Notes ( Modal Suppression Setup )
 
 After a modal is closed, we will likely want to suppress it for some period of time.
 
-`wfu-modal-suppress` = ( suppression setting )
+### `wfu-modal-suppress` = ( _suppression setting_ )
+
+**Optional.**  Place directly on the modal element.&#x20;
 
 * `forever` - suppresses indefinitely
 * `session` - suppresses only for the duration of the webstorage session

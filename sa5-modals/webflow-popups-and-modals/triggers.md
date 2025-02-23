@@ -4,13 +4,7 @@
 
 
 
-| Trigger          | Type      |                                                             |
-| ---------------- | --------- | ----------------------------------------------------------- |
-| Click            | Manual    | Defined on any button, link, or other element               |
-| Timer            | Automatic | Configured in seconds                                       |
-| Scroll Position  | Automatic | Configured for a specific page % or a specific px position  |
-| Scroll into View | Automatic | Tied to an element                                          |
-| Exit Intent      | Automatic | When the mouse moves outside of the page canvas             |
+<table><thead><tr><th width="202">Trigger</th><th>Type </th><th></th></tr></thead><tbody><tr><td>Click </td><td>Manual</td><td>Defined on any button, link, or other element </td></tr><tr><td>Timer</td><td>Automatic</td><td>Configured in seconds </td></tr><tr><td>Scroll Position 🧪</td><td>Automatic</td><td>Configured for a specific page % or a specific px position </td></tr><tr><td>Scroll into View 🧪</td><td>Automatic</td><td>Tied to an element</td></tr><tr><td>Exit Intent 🧪</td><td>Automatic</td><td>When the mouse moves outside of the page canvas </td></tr></tbody></table>
 
 
 

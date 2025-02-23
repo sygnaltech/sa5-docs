@@ -21,6 +21,14 @@ Not supported...
 
 
 
+
+
+<img src="../../.gitbook/assets/file.excalidraw (5).svg" alt="" class="gitbook-drawing">
+
+
+
+
+
 ## Where Gating Can be Implemented&#x20;
 
 * Links... put the gate directly on a link or button.  User must complete the modal gate, and is then redirected to the requested content.&#x20;
@@ -32,6 +40,16 @@ Not supported...
   * Modal 2 then intervenes&#x20;
 * Form Submit
   * A final gate is presented before the form submission can occur, e.g. a cancellation policy&#x20;
+
+
+
+### wfu-modal-gate = ( modal name )&#x20;
+
+
+
+
+
+wfu-
 
 
 
