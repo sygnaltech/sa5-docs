@@ -6,11 +6,11 @@ description: >-
 
 # Limit Items by Breakpoint ❺
 
-## Overview
+Webflow has a built-in **Limit Items** feature on Collection Lists, however it is not [breakpoint](https://university.webflow.com/lesson/intro-to-breakpoints)-sensitive.&#x20;
 
-Webflow has a built-in **Limit Items** feature on Collection Lists, however it is not [breakpoint](https://university.webflow.com/lesson/intro-to-breakpoints)-sensitive.
+This often presents a problem for designers because if you're displaying e.g. blog posts in a grid, you may want to show a 4x3 grid at desktop, 3x3 on tablet, 2x2 on mobile landscape and 1x4 on mobile portrait.&#x20;
 
-This Sygnal Attributes solution dynamically adjusts the number of items shown for the breakpoint that the site is being viewed at, with no refresh needed.
+SA5 allows you to specify and adjust the number of items you want to appear at each breakpoint _dynamically_.&#x20;
 
 ### Demonstration
 
@@ -18,36 +18,62 @@ This Sygnal Attributes solution dynamically adjusts the number of items shown fo
 Cloneable
 {% endembed %}
 
+{% hint style="success" %}
+If you're unsure of how to apply the documentation, use the demo cloneables above as an implementation reference.&#x20;
+{% endhint %}
+
+## Getting Started <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
+
+### STEP 2 - Apply the attributes for the limits you want applied <a href="#step-2---apply-the-attributes-for-the-limits-you-want-applied" id="step-2---apply-the-attributes-for-the-limits-you-want-applied"></a>
+
+See below for the attributes.&#x20;
+
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
-Place the custom attributes you want on the Collection List element directly ( not the Collection List Wrapper element ).&#x20;
+There three different approaches you can use, depending on your goals;&#x20;
 
-For each attribute you use, specify the number of items you want to show from 1 to 12.&#x20;
+* OPTION 1 - Responsive list item counts at desktop and below&#x20;
+* OPTION 2 - Responsive list item counts at all breakpoints&#x20;
+* OPTION 3 - Limit list items ( non-responsive ) to display a random selection&#x20;
+
+Place the custom attributes you want on the Collection List element directly ( not the Collection List Wrapper element ).&#x20;
 
 {% hint style="danger" %}
 Important, use only ONE of these configuration approaches per collection list.
 {% endhint %}
 
-### OPTION 1 - Use the Desktop-max, Tablet, and Mobile configs <a href="#or-use-the-breakpoint-variations" id="or-use-the-breakpoint-variations"></a>
+### OPTION 1 - Responsive List Item Counts at Desktop and Below <a href="#or-use-the-breakpoint-variations" id="or-use-the-breakpoint-variations"></a>
 
 Use this when you want breakpoint-specific item counts, but desktop and higher breakpoints should all show the same item count.&#x20;
 
-{% embed url="https://limit-collection-items-by-breakpoint.webflow.io/desktop" %}
-Demonstration
-{% endembed %}
+{% hint style="success" %}
+For each attribute you use, set the value of the attribute to the number of items you want to show from 1 to 12.&#x20;
+{% endhint %}
 
 * `wfu-limit-items-D-max` the number to show for desktops and _higher breakpoints_
 * `wfu-limit-items-T` the number to show for tablet
 * `wfu-limit-items-L` the number to show for mobile landscape
 * `wfu-limit-items-P` the number to show for mobile portrait
 
-### OPTION 2 - Specify _every_ breakpoint config <a href="#or-use-the-breakpoint-variations" id="or-use-the-breakpoint-variations"></a>
+{% hint style="warning" %}
+Make sure to specify all 4. Skipping any will have unpredictable CSS behavior.
+{% endhint %}
+
+{% embed url="https://limit-collection-items-by-breakpoint.webflow.io/desktop" %}
+Demonstration
+{% endembed %}
+
+### OPTION 2 - Responsive List Item Counts at All Breakpoints <a href="#or-use-the-breakpoint-variations" id="or-use-the-breakpoint-variations"></a>
 
 Use this if you want breakpoint-specific counts at every breakpoint. &#x20;
 
-{% embed url="https://limit-collection-items-by-breakpoint.webflow.io/" %}
-Demonstration
-{% endembed %}
+{% hint style="success" %}
+For each attribute you use, set the value of the attribute to the number of items you want to show from 1 to 12.&#x20;
+{% endhint %}
 
 * `wfu-limit-items-1920` the number to show for 1920px
 * `wfu-limit-items-1440` the number to show for 1440px
@@ -61,9 +87,19 @@ Demonstration
 Make sure to specify all 7. Skipping any will have unpredictable CSS behavior.
 {% endhint %}
 
-### OPTION 3 - Use the global `wfu-limit-items` attribute <a href="#wfu-limit-items-attribute" id="wfu-limit-items-attribute"></a>
+{% embed url="https://limit-collection-items-by-breakpoint.webflow.io/" %}
+Demonstration
+{% endembed %}
 
-This will limit all items, at all breakpoints.
+### OPTION 3 - Limit List Items ( non-responsive ) to Display a Random Selection <a href="#wfu-limit-items-attribute" id="wfu-limit-items-attribute"></a>
+
+{% hint style="success" %}
+For each attribute you use, set the value of the attribute to the number of items you want to show from 1 to 12.&#x20;
+{% endhint %}
+
+* `wfu-limit-items` = ( num items to display )&#x20;
+
+This will limit all items, at all breakpoints.&#x20;
 
 {% hint style="info" %}
 This is most commonly used in combination with `wfu-sort`, using the `random` setting. With the combination of random sorting and item limits, you can display a random set of items on every page refresh.
@@ -71,7 +107,7 @@ This is most commonly used in combination with `wfu-sort`, using the `random` se
 
 ### Advanced note <a href="#advanced-note" id="advanced-note"></a>
 
-If you want to have the item limits also shown directly in the Designer, you can add the CSS code directly into an HTML Embed. Copy and paste the code below. It's longer than it looks, however it will fit within Webflow's 10,000 character limit.
+If you want to have the item limits also shown _directly in the Designer_, you can add the CSS code directly into an HTML Embed. Copy and paste the code below. It's longer than it looks, however it will fit within Webflow's 10,000 character limit.
 
 ```html
 <!-- Limit Items by Breakpoint | Sygnal Attributes -->
@@ -84,13 +120,5 @@ If you want to have the item limits also shown directly in the Designer, you can
 Place the HTML Embed inside of your site-wide nav or footer symbol if you want it to be available on all pages.&#x20;
 {% endhint %}
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
-
-### STEP 2 - Apply the attributes for the limits you want applied <a href="#step-2---apply-the-attributes-for-the-limits-you-want-applied" id="step-2---apply-the-attributes-for-the-limits-you-want-applied"></a>
-
-See above for details.
 
