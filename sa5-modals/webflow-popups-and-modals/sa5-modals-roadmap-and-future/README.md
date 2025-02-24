@@ -6,6 +6,24 @@
 
 Non-closeable modal&#x20;
 
+
+
+## Template Modals&#x20;
+
+Pulling content from another source, as specified from the trigger;
+
+wfu-modal-content = ( content-name )
+
+
+
+wfu-modal-content-area &#x20;
+
+
+
+##
+
+##
+
 ## Roadmap
 
 | Feature                             | Short Term                                                                                                        | Medium Term                                                                                                                                                                                                                                    | Future                                                                                                                                                                   |
