@@ -405,7 +405,7 @@
 * [🚀 Quick Start | SA5 Modals & Popups](sa5-modals/quick-start.md)
 * [Webflow Popups & Modals](sa5-modals/webflow-popups-and-modals/README.md)
   * [Triggers](sa5-modals/webflow-popups-and-modals/triggers.md)
-  * [Gating Modals 🧪](sa5-modals/webflow-popups-and-modals/gating-modals.md)
+  * [Gating Modals](sa5-modals/webflow-popups-and-modals/gating-modals.md)
   * [Modal Design & Styling Notes](sa5-modals/webflow-popups-and-modals/modal-design-and-styling-notes.md)
   * [Simple Modals v. Custom Modals](sa5-modals/webflow-popups-and-modals/simple-modals-v.-custom-modals.md)
   * [Modal JS API](sa5-modals/webflow-popups-and-modals/modal-js-api.md)

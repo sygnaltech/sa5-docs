@@ -2,7 +2,7 @@
 description: Restrict access to content with an SA5 gate
 ---
 
-# Gating Modals 🧪
+# Gating Modals
 
 **SA5 Gating Modals** are the same as a regular modal, but they are automatically invoked when the user attempts to perform specific actions, like;
 
@@ -11,17 +11,23 @@ description: Restrict access to content with an SA5 gate
 * Click an SA5 Modal click trigger element &#x20;
   * This would usually open an SA5 Modal&#x20;
 
-A Gating Modal setup "interrupts" these user actions and displays a special modal to complete a designated action first.
+An SA5 Gating Modal setup "interrupts" these user actions and displays a special modal to complete a designated action first.&#x20;
+
+Depending on your configuration the user must do one of three things to open the gate, and proceed to the link or modal content they've requested.&#x20;
+
+1. Simply view the gating modal.  Once it's dismissed, the gate is open and the action proceeds.&#x20;
+2. Click a specific button in the gating modal. When clicked, the action proceeds.&#x20;
+3. Complete and submit a form.  When the validated form is submitted, the action proceeds.&#x20;
+
+{% hint style="success" %}
+**SA5 Gating Modals** are specially designed so that they only need to appear once per device.  Once the gating modal's requirements are satified, the gate is opened and the user does not need to repeat the gating action.  &#x20;
+
+_This is true even if the gate is used on different pages throughout the site._&#x20;
+{% endhint %}
 
 The flow looks like this;&#x20;
 
 <img src="../../.gitbook/assets/file.excalidraw (6).svg" alt="" class="gitbook-drawing">
-
-{% hint style="success" %}
-**SA5 Gating Modals** are specially designed so that they only need to appear once per device.  Once they are accepted the user does not need to repeat the gating action.&#x20;
-
-_This is true even if the gate is used on different pages throughout the site._&#x20;
-{% endhint %}
 
 ## Use Cases&#x20;
 
@@ -63,27 +69,37 @@ Once the Gating Modal appears, there are a few ways to configure the completion 
 SA5 Modal still have normal "pop-up" style behavior, in which they can easily be closed by the user.  However if the user does not perform the required gate action, the gate will not be "opened" and the requested action will not be performed.&#x20;
 {% endhint %}
 
-### No Action Required&#x20;
+### View the Gating Modal&#x20;
 
-**Default.**  If you just want the user to see the modal once, and then dismiss it normally ( click close, click on the overlay, etc. ) then you do not need to do any special configuration. &#x20;
+If you just want the user to see the modal once, and then dismiss it normally ( click close, click on the overlay, etc. ) then use this attribute;&#x20;
+
+`wfu-modal-gate-view` = ( no value needed ) &#x20;
+
+{% hint style="info" %}
+Add this attribute directly to the gating modal's modal element.&#x20;
+{% endhint %}
 
 ### Button Click Required&#x20;
 
-If a button must be clicked to complete the gate successfully, add this attribute to that button directly.
+If a button must be clicked to complete the gate successfully, use;&#x20;
 
 `wfu-modal-gate-button` = ( no value needed )&#x20;
 
 {% hint style="info" %}
-This button must be within the Gating Modal.   The modal will be automatically closed on button click, before the next action is performed.&#x20;
+Add this attribute to one or more buttons.&#x20;
+
+These buttons must be within the Gating Modal.   The modal will be automatically closed on button click, before the next action is performed.&#x20;
 {% endhint %}
 
 ### Form Submission Required&#x20;
 
-If a form must be successfully submitted to complete the gate successfully, add this attribute to that form element directly ( not the form wrapper element ).
+If a form must be successfully submitted to complete the gate successfully, add;&#x20;
 
 `wfu-modal-gate-form` = ( no value needed )&#x20;
 
 {% hint style="info" %}
+Add this attribute to that Form element directly ( not the form wrapper element ).&#x20;
+
 This form must be within the Gating Modal. The form submission must be successful in order to complete the gate.  The modal will be automatically closed on successful form submission, before the next action is performed.&#x20;
 {% endhint %}
 
@@ -91,134 +107,11 @@ This form must be within the Gating Modal. The form submission must be successfu
 
 ## Technical Notes
 
-### Gate Tracking&#x20;
-
-Tracking&#x20;
-
-## Code Notes&#x20;
-
-Gated link &#x20;
-
-```
-<script> 
-document.addEventListener("DOMContentLoaded", () => { 
-
-    const modalElements = document.querySelectorAll('[gated-link="configure"]');
-    modalElements.forEach(element => {
-        element.addEventListener("click", () => {
-						event.preventDefault(); 
-
-            // Check if form was already submitted
-            const formSubmitted = localStorage.getItem("formSubmitted");
-            if (formSubmitted) {
-            
-            		navigateToLink(element); 
-            		// redirect to link
-//                 window.location.href = element.href;
-                
-            } else {
-                console.log("Form not submitted yet. Showing modalForm...");
-                sa5.controllers.modals.display("modalForm", true); 
-                
-                // Store the clicked link for later use
-                localStorage.setItem("pendingRedirect", JSON.stringify({ href: element.href, target: element.target }));                
-            } 
-            
-        });
-    });
-    
-    const form = document.getElementById("email-form");
-    form.addEventListener("submit", function (event) {
-        
-				// Set formSubmitted flag
-        localStorage.setItem("formSubmitted", "true"); 
-        
-        sa5.controllers.modals.closeAll(); 
-        
-				// redirect to link
-        // Retrieve and navigate to the stored pending redirect link
-        const pendingRedirect = localStorage.getItem("pendingRedirect");
-        if (pendingRedirect) {
-            const { href, target } = JSON.parse(pendingRedirect);
-            localStorage.removeItem("pendingRedirect"); // Clean up
-
-            const tempLink = document.createElement("a");
-            tempLink.href = href;
-            tempLink.target = target;
-            navigateToLink(tempLink);
-        }
-        
-    });    
-    
-}); 
-
-/**
- * Handles link navigation while respecting the target attribute.
- * @param {HTMLAnchorElement} linkElement - The link element to navigate to.
- */
-function navigateToLink(linkElement) {
-    if (linkElement.target && linkElement.target !== "_self") {
-        window.open(linkElement.href, linkElement.target);
-    } else {
-        window.location.href = linkElement.href;
-    }
-}
-</script>
-```
-
-
-
-### Gated Modal
-
-```
-<script> 
-document.addEventListener("DOMContentLoaded", () => { 
-
-    const modalElements = document.querySelectorAll('[gated-modal="modalForm"]');
-    modalElements.forEach(element => {
-        element.addEventListener("click", () => {
-
-            // Check if form was already submitted
-            const formSubmitted = localStorage.getItem("formSubmitted");
-            if (formSubmitted) {
-                console.log("Form already submitted. Showing modal1...");
-                sa5.controllers.modals.display("modal1", true); 
-            } else {
-                console.log("Form not submitted yet. Showing modalForm...");
-                sa5.controllers.modals.display("modalForm", true); 
-            } 
-            
-        });
-    });
-    
-    const form = document.getElementById("email-form");
-    form.addEventListener("submit", function (event) {
-        
-				// Set formSubmitted flag
-        localStorage.setItem("formSubmitted", "true"); 
-        
-        sa5.controllers.modals.closeAll(); 
-        sa5.controllers.modals.display("modal1", true); 
-
-    });    
-    
-}); 
-</script>
-
-
-```
-
-
-
-
+All gating is currently tracked as localStorage.&#x20;
 
 ## Future&#x20;
 
 Future goals include e.g. partial page gating, like show a part of an article, prevent scrolling, and then undo that once the gate is opened.&#x20;
-
-
-
-
 
 ### Suppression Options&#x20;
 
@@ -228,27 +121,15 @@ Future goals include e.g. partial page gating, like show a part of an article, p
 
 Must be on the modal used for gating.&#x20;
 
+### Function Gate  &#x20;
 
-
-
-
-
-
-Future possibilities -&#x20;
-
-* `func` - call a function to determine gate passage&#x20;
+* `func` - call a function to determine gate passage  &#x20;
 
 {% hint style="info" %}
 Func could be used for e.g. calculate age from date of birth in a form, and confirm. &#x20;
 {% endhint %}
 
-
-
-
-
-
-
-## Future&#x20;
+### SA5 Trigger&#x20;
 
 Considering how this works with SA5 Trigger. &#x20;
 
