@@ -8,7 +8,7 @@ description: Restrict access to content with an SA5 gate
 
 
 
-<img alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (6).svg" alt="" class="gitbook-drawing">
 
 
 
