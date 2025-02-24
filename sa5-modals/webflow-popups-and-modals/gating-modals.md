@@ -4,6 +4,20 @@ description: Restrict access to content with an SA5 gate
 
 # Gating Modals 🧪
 
+**SA5 Gating Modals** are the same as a regular modal, but they describe a special "gating trigger" configuration.  When the user&#x20;
+
+
+
+<img alt="" class="gitbook-drawing">
+
+
+
+
+
+
+
+wfu-trigger-ga
+
 
 
 {% hint style="warning" %}
@@ -27,19 +41,27 @@ Depending on how the gated modal is configured, it will require different action
 
 ### `wfu-modal-gate` = ( _name_ )&#x20;
 
-**Required.**  Indicates that this item is gated.&#x20;
+**Required.**  Indicates that a specific link or modal click trigger element is gated.&#x20;
 
-Must be placed on one of these element types;&#x20;
+Its behavior depends on the type of element it is placed on which must be one of;&#x20;
 
 | Element Type                                   | Behavior                                                                                           |
 | ---------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Link, Link Block, or Button element            | Gates the link. Once the gate is passed, the link is navigated.                                    |
 | SA5 Modal, containing the `wfu-modal` element  | Gates the modal with a pre-modal.  Used when you are giving content, but want a gate before that.  |
-| ~~Body element~~ 🧪                            | Gates the page. Covers the page with a "blur" and a modal state that                               |
+| Link, Link Block, or Button element            | Gates the link. Once the gate is passed, the link is navigated.                                    |
+| ~~Body element~~ 🧪                            | Gates the page. Covers the page with a "blur" and a modal state that.                              |
 
 {% hint style="info" %}
 Future goals include e.g. partial page gating, like show a part of an article, prevent scrolling, and then undo that once the gate is opened.&#x20;
 {% endhint %}
+
+
+
+
+
+
+
+
 
 ### `wfu-modal-gate-type` = ( _type_ )
 
@@ -105,6 +127,123 @@ wfu-
 ## Future&#x20;
 
 Considering how this works with SA5 Trigger. &#x20;
+
+
+
+## Code Notes&#x20;
+
+Gated link &#x20;
+
+```
+<script> 
+document.addEventListener("DOMContentLoaded", () => { 
+
+    const modalElements = document.querySelectorAll('[gated-link="configure"]');
+    modalElements.forEach(element => {
+        element.addEventListener("click", () => {
+						event.preventDefault(); 
+
+            // Check if form was already submitted
+            const formSubmitted = localStorage.getItem("formSubmitted");
+            if (formSubmitted) {
+            
+            		navigateToLink(element); 
+            		// redirect to link
+//                 window.location.href = element.href;
+                
+            } else {
+                console.log("Form not submitted yet. Showing modalForm...");
+                sa5.controllers.modals.display("modalForm", true); 
+                
+                // Store the clicked link for later use
+                localStorage.setItem("pendingRedirect", JSON.stringify({ href: element.href, target: element.target }));                
+            } 
+            
+        });
+    });
+    
+    const form = document.getElementById("email-form");
+    form.addEventListener("submit", function (event) {
+        
+				// Set formSubmitted flag
+        localStorage.setItem("formSubmitted", "true"); 
+        
+        sa5.controllers.modals.closeAll(); 
+        
+				// redirect to link
+        // Retrieve and navigate to the stored pending redirect link
+        const pendingRedirect = localStorage.getItem("pendingRedirect");
+        if (pendingRedirect) {
+            const { href, target } = JSON.parse(pendingRedirect);
+            localStorage.removeItem("pendingRedirect"); // Clean up
+
+            const tempLink = document.createElement("a");
+            tempLink.href = href;
+            tempLink.target = target;
+            navigateToLink(tempLink);
+        }
+        
+    });    
+    
+}); 
+
+/**
+ * Handles link navigation while respecting the target attribute.
+ * @param {HTMLAnchorElement} linkElement - The link element to navigate to.
+ */
+function navigateToLink(linkElement) {
+    if (linkElement.target && linkElement.target !== "_self") {
+        window.open(linkElement.href, linkElement.target);
+    } else {
+        window.location.href = linkElement.href;
+    }
+}
+</script>
+```
+
+
+
+### Gated Modal
+
+```
+<script> 
+document.addEventListener("DOMContentLoaded", () => { 
+
+    const modalElements = document.querySelectorAll('[gated-modal="modalForm"]');
+    modalElements.forEach(element => {
+        element.addEventListener("click", () => {
+
+            // Check if form was already submitted
+            const formSubmitted = localStorage.getItem("formSubmitted");
+            if (formSubmitted) {
+                console.log("Form already submitted. Showing modal1...");
+                sa5.controllers.modals.display("modal1", true); 
+            } else {
+                console.log("Form not submitted yet. Showing modalForm...");
+                sa5.controllers.modals.display("modalForm", true); 
+            } 
+            
+        });
+    });
+    
+    const form = document.getElementById("email-form");
+    form.addEventListener("submit", function (event) {
+        
+				// Set formSubmitted flag
+        localStorage.setItem("formSubmitted", "true"); 
+        
+        sa5.controllers.modals.closeAll(); 
+        sa5.controllers.modals.display("modal1", true); 
+
+    });    
+    
+}); 
+</script>
+
+
+```
+
+
 
 
 

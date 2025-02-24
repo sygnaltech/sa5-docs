@@ -127,13 +127,27 @@ Place this directly on the modal element.&#x20;
 1 second = 1,000 ms, so if you want to wait 5 seconds, set the value to `5000`.
 {% endhint %}
 
-<table><thead><tr><th>Trigger</th><th width="130">Trigger Type</th><th>Attribute </th><th>Value</th><th>Notes </th></tr></thead><tbody><tr><td>Click</td><td>Direct</td><td><code>wfu-modal-trigger-click</code> </td><td>Modal name</td><td>Place on the triggering button, link, or element</td></tr><tr><td>Timer</td><td>In-Direct</td><td><code>wfu-modal-trigger-timer</code> </td><td>Time in milliseconds</td><td>Place on the modal element directly</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th>Trigger</th><th width="130">Trigger Type</th><th>Attribute </th><th>Value</th><th>Notes </th></tr></thead><tbody><tr><td>Click</td><td>Direct</td><td><code>wfu-modal-trigger-click</code> </td><td>Modal name</td><td>Place on the triggering button, link, or element</td></tr><tr><td>Timer</td><td>In-Direct</td><td><code>wfu-modal-trigger-timer</code> </td><td>Time in milliseconds</td><td>Place on the modal element directly</td></tr></tbody></table>
 
 {% hint style="success" %}
 This is being combined with SA5 Trigger.  \
 Event = open modal\
 Action&#x20;
 {% endhint %}
+
+
+
+
+
+{% hint style="info" %}
+**GATED MODALS**&#x20;
+
+SA5 has a special modal trigger configuration referred to as a "gate."  In this setup, when the user attempts to follow a link or display a modal, another modal can be presented and must be completed before the user's action can proceed.
+
+Learn more about [Gated Modals](gating-modals.md) here.&#x20;
+{% endhint %}
+
+
 
 
 
