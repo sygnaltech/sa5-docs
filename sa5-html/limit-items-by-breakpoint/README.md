@@ -32,74 +32,65 @@ First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20
 
 See below for the attributes.&#x20;
 
-## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+## Usage Notes  <a href="#usage-notes" id="usage-notes"></a>
 
-There three different approaches you can use, depending on your goals;&#x20;
+### About Webflow Breakpoints&#x20;
 
-* OPTION 1 - Responsive list item counts at desktop and below&#x20;
-* OPTION 2 - Responsive list item counts at all breakpoints&#x20;
-* OPTION 3 - Limit list items ( non-responsive ) to display a random selection&#x20;
+From [Webflow Help Center](https://help.webflow.com/hc/en-us/articles/33961300305811-Breakpoints-overview#01JDAHFPB3NZBQYN7BE61NWH26);&#x20;
+
+Each breakpoint view lets you style elements for a particular viewport range:
+
+* Styles set on the **1920px** breakpoint apply to screens 1920px wide and above
+* Styles set on the **1440px** breakpoint apply to screens 1440px wide and above
+* Styles set on the **1280px** breakpoint apply to screens 1280px wide and above
+* Styles set on the **desktop (base)** breakpoint apply to all devices unless overridden at other device breakpoints
+* Styles set on the **tablet** breakpoint apply to screens 991px wide and below
+* Styles set on the **mobile landscape** breakpoint apply to screens 767px wide and below
+* Styles set on the **mobile portrait** breakpoint apply to screens 478px wide and below
+
+
+
+<img src="../../.gitbook/assets/file.excalidraw (7).svg" alt="" class="gitbook-drawing">
+
+
+
+
 
 Place the custom attributes you want on the Collection List element directly ( not the Collection List Wrapper element ).&#x20;
 
-{% hint style="danger" %}
-Important, use only ONE of these configuration approaches per collection list.
-{% endhint %}
-
-### OPTION 1 - Responsive List Item Counts at Desktop and Below <a href="#or-use-the-breakpoint-variations" id="or-use-the-breakpoint-variations"></a>
-
-Use this when you want breakpoint-specific item counts, but desktop and higher breakpoints should all show the same item count.&#x20;
+For each breakpoint-specific attribute, set the value to the number of items you want to show, 1 to 30.&#x20;
 
 {% hint style="success" %}
-For each attribute you use, set the value of the attribute to the number of items you want to show from 1 to 12.&#x20;
+SA5's breakpoint-specific attributes works the same way that Webflow's breakpoints work
 {% endhint %}
 
-* `wfu-limit-items-D-max` the number to show for desktops and _higher breakpoints_
-* `wfu-limit-items-T` the number to show for tablet
-* `wfu-limit-items-L` the number to show for mobile landscape
-* `wfu-limit-items-P` the number to show for mobile portrait
+
+
+| Attribute               | Breakpoints Affected            | Notes                           |
+| ----------------------- | ------------------------------- | ------------------------------- |
+| `wfu-limit-items`       | Desktop ( base breakpoint )     | the number to show for desktops |
+| `wfu-limit-items:t`     | Tablet ( and below )            |                                 |
+| `wfu-limit-items:l`     | Mobile Landscape ( and below )  |                                 |
+| `wfu-limit-items:p`     | Mobile Portrait                 |                                 |
+| `wfu-limit-items:1280`  | Large ( 1280+ )                 |                                 |
+| `wfu-limit-items:1440`  | X-Large ( 1440+ )               |                                 |
+| `wfu-limit-items:1920`  | XX-Large ( 1920+ )              |                                 |
+|                         |                                 |                                 |
+
+
+
+
+
+
+
+
 
 {% hint style="warning" %}
-Make sure to specify all 4. Skipping any will have unpredictable CSS behavior.
+IMPORTANT\
+This attribute works by hiding extra items.  The Collection List itself must contain enough items&#x20;
 {% endhint %}
 
-{% embed url="https://limit-collection-items-by-breakpoint.webflow.io/desktop" %}
-Demonstration
-{% endembed %}
-
-### OPTION 2 - Responsive List Item Counts at All Breakpoints <a href="#or-use-the-breakpoint-variations" id="or-use-the-breakpoint-variations"></a>
-
-Use this if you want breakpoint-specific counts at every breakpoint. &#x20;
-
-{% hint style="success" %}
-For each attribute you use, set the value of the attribute to the number of items you want to show from 1 to 12.&#x20;
-{% endhint %}
-
-* `wfu-limit-items-1920` the number to show for 1920px
-* `wfu-limit-items-1440` the number to show for 1440px
-* `wfu-limit-items-1280` the number to show for 1280px
-* `wfu-limit-items-D` the number to show for desktops
-* `wfu-limit-items-T` the number to show for tablet
-* `wfu-limit-items-L` the number to show for mobile landscape
-* `wfu-limit-items-P` the number to show for mobile portrait
-
-{% hint style="warning" %}
-Make sure to specify all 7. Skipping any will have unpredictable CSS behavior.
-{% endhint %}
-
-{% embed url="https://limit-collection-items-by-breakpoint.webflow.io/" %}
-Demonstration
-{% endembed %}
-
-### OPTION 3 - Limit List Items ( non-responsive ) to Display a Random Selection <a href="#wfu-limit-items-attribute" id="wfu-limit-items-attribute"></a>
-
-{% hint style="success" %}
-For each attribute you use, set the value of the attribute to the number of items you want to show from 1 to 12.&#x20;
-{% endhint %}
-
-* `wfu-limit-items` = ( num items to display )&#x20;
-
-This will limit all items, at all breakpoints.&#x20;
+&#x20;
 
 {% hint style="info" %}
 This is most commonly used in combination with `wfu-sort`, using the `random` setting. With the combination of random sorting and item limits, you can display a random set of items on every page refresh.
