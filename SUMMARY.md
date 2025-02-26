@@ -154,7 +154,7 @@
 * [Scroll to Section](sa5-html/scroll-to-section.md)
 * [Breakpoints ❺](sa5-html/breakpoints.md)
 * [Limit Items by Breakpoint ❺](sa5-html/limit-items-by-breakpoint/README.md)
-  * [v2](sa5-html/limit-items-by-breakpoint/v2.md)
+  * [Designer CSS Embed](sa5-html/limit-items-by-breakpoint/designer-css-embed.md)
 * [Limit Items to Multiple-of ❺](sa5-html/limit-items-to-multiple-of.md)
 * [Numeric Sequencing ❺](sa5-html/numeric-sequencing.md)
 * [Truncate Text w/ Ellipsis ❺](sa5-html/truncate-text-w-ellipsis.md)

@@ -1,8 +1,10 @@
-# v2
+# Designer CSS Embed
 
-New;&#x20;
+To get full **SA5 Limit Items** support in the designer;&#x20;
 
-
+* Add an HTML Embed on the page&#x20;
+  * If this is used on multiple pages, you can put that embed in a site-wide component such as your nav or footer&#x20;
+* Copy the code below into that Embed&#x20;
 
 ```css
 <style>
