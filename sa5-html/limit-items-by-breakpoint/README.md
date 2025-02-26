@@ -34,7 +34,23 @@ See below for the attributes.&#x20;
 
 ## Usage Notes  <a href="#usage-notes" id="usage-notes"></a>
 
+This attribute uses breakpoint suffixes; which appear like this;
+
+```
+wfu-limit-items:t = 10
+```
+
+The `:t` indicates that this attribute applies to Webflow's tablet breakpoint and below, until it is overridden by another more specific breakpoint like `:l` ( mobile landscape ) or `:p` ( mobile portrait ).&#x20;
+
+It's important to understand the fundamentals of how Webflow's breakpoints work in order to configure this attribute properly.&#x20;
+
 ### About Webflow Breakpoints&#x20;
+
+If you're unf
+
+{% hint style="info" %}
+Learn how responsiveness works with [Webflow' breakpoints](https://university.webflow.com/videos/intro-to-breakpoints).&#x20;
+{% endhint %}
 
 From [Webflow Help Center](https://help.webflow.com/hc/en-us/articles/33961300305811-Breakpoints-overview#01JDAHFPB3NZBQYN7BE61NWH26);&#x20;
 
