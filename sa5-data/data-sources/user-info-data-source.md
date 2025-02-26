@@ -4,9 +4,15 @@ description: Data-binding Current User
 
 # User Info Data Source
 
-## User Info
+{% hint style="danger" %}
+Webflow has announced the deprecation of **Webflow User Accounts**. This data source will continue working until it is fully deprecated.&#x20;
+{% endhint %}
 
-If you are using **Webflow User Accounts** and [SA5's User Info library](user-info-data-source.md#user-info), then SA5 constructs a User Info object whenever a user is currently logged in.
+{% hint style="success" %}
+This functionality is available when you are using [SA5's User Info](../../webflow-membership/get-logged-in-user-info/) library.
+{% endhint %}
+
+If you are using **Webflow User Accounts** and [SA5's User Info library](user-info-data-source.md#user-info), then SA5 constructs a User Info object whenever a user is currently logged in.&#x20;
 
 The details of that object can be data-bound.&#x20;
 
@@ -15,11 +21,15 @@ The details of that object can be data-bound.&#x20;
 
 [user-info-data-source.md](user-info-data-source.md "mention")
 
+## Custom User Fields&#x20;
+
 [Custom user fields](../../sa5-user-accounts/logged-in-user-info/custom-user-fields.md) can also be accessed, under `$user.data.your-field-name`.
 
 You can use this in element data-binding, with the&#x20;
 
-`{{ $user.data.your-field-name }}`&#x20;
+```
+{{ $user.data.your-field-name }}
+```
 
 {% hint style="success" %}
 **Shortcut.** `@` can be used as a shortcut in place of `$user.`, for example `@name` is equivalent to `$user.name`&#x20;
@@ -30,10 +40,6 @@ You can use this in element data-binding, with the&#x20;
 wfu-bind = $user.data.link-field
 
 \{{ $user.data.link-field \}}&#x20;
-
-{% hint style="success" %}
-This functionality is available when you are using [SA5's User Info](../../webflow-membership/get-logged-in-user-info/) library.
-{% endhint %}
 
 
 

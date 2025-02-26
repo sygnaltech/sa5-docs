@@ -1,10 +1,16 @@
----
-description: Concepts & Terms You Need to Know in SA5
----
+# Complex Data Sources
 
-# Concepts & Terminology
 
-{% hint style="info" %}
+
+
+
+Simple Binding does not require any special terminology as the data-binding target element is easy to identify, and the data source is easy to specify.&#x20;
+
+
+
+The most popular simple-binding use cases are e.g. the binding of a querystring parameter to a form input element.&#x20;
+
+{% hint style="success" %}
 There are a lot of new things happening here, so terminology is stabilizing as we vector words a specific paradigm.&#x20;
 {% endhint %}
 
@@ -51,7 +57,9 @@ Data sources are typed, for example;&#x20;
 * Collection list
 * 3rd party public API
 * Static CSV file&#x20;
-* Static JSON file
+* Static JSON file&#x20;
+* JSON-LD&#x20;
+* EXIF data&#x20;
 * A remote JSON source, such as a public API endpoint
 * A remote CSV source, such as a Google Sheet
 * User data
@@ -67,8 +75,9 @@ Some Data Sources require a name to reference them, since you can have several o
 
 In some places you'll see the abbreviation DSN used in attributes and docs. This refers to the unique name of a data source, which is used to locate the database within the datastore.&#x20;
 
-## Data Path
+##
 
-{% content-ref url="data-paths.md" %}
-[data-paths.md](data-paths.md)
-{% endcontent-ref %}
+
+
+
+

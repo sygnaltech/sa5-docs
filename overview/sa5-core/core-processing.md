@@ -64,17 +64,19 @@ Layout  &#x20;
 
 
 
-| Type    | Module             |                                                                    |                                  |
-| ------- | ------------------ | ------------------------------------------------------------------ | -------------------------------- |
-| Event   | SA5 Init Starting  |                                                                    |                                  |
-| Action  | Dynamic Attributes | <ul><li>First, do config blocks </li><li>Then attributes</li></ul> | Includes start and finish events |
-| Action  | Decode             |                                                                    |                                  |
-| Action  | SA5 Layout         |                                                                    |                                  |
-|         |                    |                                                                    |                                  |
-| Action  | SA5 TEA            |                                                                    |                                  |
-|         |                    |                                                                    |                                  |
-| Action  | Unwrap             |                                                                    |                                  |
-| Event   | SA5 Init Finished  |                                                                    |                                  |
+| Type    | Module                                                       |                                                                    |                                  |
+| ------- | ------------------------------------------------------------ | ------------------------------------------------------------------ | -------------------------------- |
+| Event   | SA5 Init Starting                                            |                                                                    |                                  |
+| Action  | SA5 Data init                                                | <ul><li>Initialize Data Sources </li></ul>                         |                                  |
+| Action  | [Dynamic Attributes](../../sa5-html/sa5-dynamic-attributes/) | <ul><li>First, do config blocks </li><li>Then attributes</li></ul> | Includes start and finish events |
+| Action  | SA5 Data binding                                             |                                                                    |                                  |
+| Action  | Decode                                                       |                                                                    |                                  |
+| Action  | SA5 Layout                                                   |                                                                    |                                  |
+|         |                                                              |                                                                    |                                  |
+| Action  | SA5 TEA                                                      |                                                                    |                                  |
+|         |                                                              |                                                                    |                                  |
+| Action  | Unwrap                                                       |                                                                    |                                  |
+| Event   | SA5 Init Finished                                            |                                                                    |                                  |
 
 
 

@@ -18,6 +18,20 @@ Broadly, there are two types of SA5 Actions...&#x20;
 * **Element Actions.**  An element-specific action such as clicking a button or submitting a form. These are generally configured directly on the target element, using custom attributes.&#x20;
 * **Page Actions.** These are actions that occur in the context of the page, but are not tied to any specific element. We generally configure these using a special SA5 script action block.&#x20;
 
+## Element Actions&#x20;
+
+
+
+|                                                |   |   |
+| ---------------------------------------------- | - | - |
+| [Tab Element Actions](tab-element-actions.md)  |   |   |
+| Slider Element Actions                         |   |   |
+|                                                |   |   |
+
+
+
+
+
 
 
 
@@ -29,7 +43,7 @@ These actions are generally defined using custom attributes.&#x20;
 | Action                                          | Detail         | Applies to                   | Description                                          | Notes                                                                                               |
 | ----------------------------------------------- | -------------- | ---------------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | <p>Click<br>wfu-action-click </p>               |                | Any element                  | Fire a click event from script to trigger an element |                                                                                                     |
-| [Interaction](interaction-action.md)            |                |                              |                                                      | `wfu-action-click`, with the element also configured as a click trigger for a Webflow interaction.  |
+| [Interaction](interaction-actions.md)           |                |                              |                                                      | `wfu-action-click`, with the element also configured as a click trigger for a Webflow interaction.  |
 | <p>Script<br>wfu-action-script </p>             |                | ? Special SA5 block element  | Invoke a script, or function                         |                                                                                                     |
 | <p>Function<br>wfu-action-function </p>         |                |                              |                                                      | Invoke a function                                                                                   |
 | Scroll Into View                                |                | Any Element                  |                                                      | Offset?                                                                                             |

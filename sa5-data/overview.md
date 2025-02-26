@@ -1,17 +1,13 @@
 ---
-description: Creatively data into your Webflow sites
+description: Creatively merge data into your Webflow sites
 ---
 
-# Data Sources & Data-Binding ❺
+# Usage Notes
 
 SA5's Data features have two facets-&#x20;
 
 * **Data Sources** refer to the ability to assemble, store, and retrieve data from Collection Lists, remote sources, the querystring, webStorage, cookies, and more. The data is collected and organized into a Datastore.&#x20;
-* **Data Binding** uses these sources to pull data into your page, text element, rich text templates, form fields, and more. It lets you easily display data from these sources using simple markup.&#x20;
-
-{% hint style="success" %}
-The **Data Source** & **Data Binding** portions of Sygnal Attributes comprise probably the largest and most complex part of our libraries. They're used by themselves, but are also relied on by our other libraries. We'll be migrating and adding new capabilities as we go.  &#x20;
-{% endhint %}
+* **Data-Bound Elements** uses these sources to pull data into your page, text element, rich text templates, form fields, and more. It lets you easily display data from these sources using simple markup.&#x20;
 
 ## Use Cases
 
@@ -23,100 +19,32 @@ The features here are meant to be very flexible, but here are a few common use c
 * Populate form fields with current user data, such as the user's email & name
 * Perform "mad libs" style text replacements in rich text content, mixed from Collection List fields and other sources ( see [demo](https://data-binding.webflow.io/cms) )&#x20;
 
+{% hint style="info" %}
 In combination, these can be used to move data easily through your site, and to pass information back to your server in hidden fields as users submit forms.&#x20;
-
-### Features Coming Soon
-
-We'll be rebuilding and adding these features soon;&#x20;
-
-* Pulling external data from Google Sheets and Google Docs
-* Pulling external data from custom public ( unsecured ) APIs&#x20;
-* Support for custom data source registrations, such as adding your own objects for databinding purposes&#x20;
-* Display the count of items in a data source
-
-## Key Points
-
-SA5 Data Sources & Data-Binding are;&#x20;
-
-* **Inbound-only.** Our data & data-binding features are one-way. They're designed to integrate information into your site from various sources - but not to update external data stores. If you are looking for round-trip capabilities, it's likely you need an application platform like Wized + Xano.&#x20;
-* **Versatile.** Mix and match static and dynamic data at will.&#x20;
-* **Extensible.** Add your own data sources.&#x20;
-
-Data Sources include;
-
-* Collection-lists, which are prepared to allow&#x20;
-* Arbitrary, static data-sets
-* Query string params
-* The current URL & URL parts
-* LocalStorage items
-* SessionStorage items
-* Cookies
-
-Data Binding can be applied to;
-
-* Any text element&#x20;
-* Rich text elements, to `{{ expand }}` macro content&#x20;
-* Form input fields, specifically
-  * Text fields, to set the current text input
-  * Textarea fields, to set the current text input
-  * Checkboxes, to set the checked/unchecked state
-  * Select fields, to select the current item&#x20;
-
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
-
-### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-Install this code in **before HEAD**, site-wide or on the specific pages you want the script to affect.
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Data --> 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.25/dist/css/webflow-data.css">
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.2.25/dist/nocode/webflow-data.js"></script> 
-```
-{% endcode %}
-
-### STEP 2 - Setup any custom data sources you want <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
-
-Currently this primarily refers to Collection List based data sources.&#x20;
-
-{% content-ref url="data-sources/collection-list-data-source/" %}
-[collection-list-data-source](data-sources/collection-list-data-source/)
-{% endcontent-ref %}
-
-### STEP 3 - Setup your data-binding attributes <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
-
-Apply your data-binding attributes to the elements you want, and create the templates you want. The specifics depend on the elemnts you are binding, and the data sources you are using.
-
-See the [Binding Data](binding-data/) section for details.&#x20;
-
-Here are some popular data sources you can bind to-
-
-* Query string params
-* Url & url parts
-* Collection list data
-* User Info&#x20;
-* Cookies & Web Storage
-
-### STEP 4 - ( Optional ) Add a callback that executes custom code once data is loaded <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
-
-{% hint style="warning" %}
-NOT YET RELEASED: Coming soon
 {% endhint %}
 
-```html
-<script>
-window.sa5 = window.sa5 || [];
-window.sa5.push(['datastoreLoaded', 
-  (ds) => {
-    console.log("DATASTORE LOADED", ds); 
-  }]); 
-</script> 
-```
+## Getting Started  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
+### STEP 1 - Add the Library  <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
+First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
 
-&#x20;
+### STEP 2 - Apply `wfu-bind` to Desired Elements <a href="#step-2---apply-wfu-query-param-to-desired-elements" id="step-2---apply-wfu-query-param-to-desired-elements"></a>
+
+Where you place the element and the value you use depend entirely on the element you want to bind and the data source.&#x20;
+
+{% hint style="success" %}
+For example, if you want the `name` querystring value to automatically intialize a form input, you would add the `wfu-bind=?name` attribute to your form input element.
+{% endhint %}
+
+## Usage Notes&#x20;
+
+See [Data Sources](data-sources/) to learn about the many possible data sources.&#x20;
+
+See [Data Binding](binding-data/) to learn about;
+
+* The data binding syntax and how to connect a data source to an element&#x20;
+* The effect the attribute has on different element types. &#x20;
 
 
 

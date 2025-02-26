@@ -15,6 +15,16 @@ Currently we prefix attributes with `x-` however this convention is already used
 
 
 
+
+
+## Binding to SA5 Simple Data Sources&#x20;
+
+```
+x:attr:bind = ?query
+```
+
+? Use cases ??&#x20;
+
 ## Transformer Functions     &#x20;
 
 Combine information from several sources and set it as a dynamic attribute value.&#x20;

@@ -2,7 +2,7 @@
 description: How SA5's databinding works
 ---
 
-# Binding Data
+# Data Binding
 
 SA5 supports binding data in two ways;&#x20;
 
@@ -17,7 +17,7 @@ Currently, all binding is specific to a **Data Item**, which always resolves to 
 Data-Binding is read-only. It's designed to integrate information into your site from various internal and external sources - but not to update those data sources.
 {% endhint %}
 
-## `wfu-bind = (data-path)`
+## `wfu-bind` = ( _data-path_ )
 
 Apply the `wfu-bind` attribute to any element which you want to replace the full content of with your data-bound content.&#x20;
 
@@ -113,6 +113,18 @@ These context elements can be on the same element as your `wfu-bind-content` tag
 
 
 
+
+
+
+Data Binding can be applied to;
+
+* Any text element&#x20;
+* Rich text elements, to `{{ expand }}` macro content&#x20;
+* Form input fields, specifically
+  * Text fields, to set the current text input
+  * Textarea fields, to set the current text input
+  * Checkboxes, to set the checked/unchecked state
+  * Select fields, to select the current item&#x20;
 
 
 

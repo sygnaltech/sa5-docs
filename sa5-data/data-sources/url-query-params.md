@@ -38,7 +38,33 @@ Demonstration page
 Cloneable site
 {% endembed %}
 
+
+
+## Getting Started  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+### STEP 1 - Add the Library  <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
+
+First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20;
+
+### STEP 2 - Apply `wfu-bind` to Desired Elements <a href="#step-2---apply-wfu-query-param-to-desired-elements" id="step-2---apply-wfu-query-param-to-desired-elements"></a>
+
+{% hint style="success" %}
+For example, use `wfu-bind=?name` if you want to apply the value of querystring param `name` to that element.
+{% endhint %}
+
+See below for details.&#x20;
+
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
+
+### `wfu-bind` = ( _data source_ )&#x20;
+
+**Required.** Place on any element where you want data binded from a source. &#x20;
+
+For query
+
+
+
+
 
 Configure everything using simple custom attributes.
 
@@ -54,20 +80,4 @@ This tool will carry any URL querystring params into your webpage, and apply the
 * The querystring param you use in `wfu-bind` is case-sensitive. `?name` and `?Name` are different.&#x20;
 * Checkbox elements will be set to the boolean truthy value.
 * Select elements will be set to the matching select value.&#x20;
-* On any other elements with a custom attribute of `wfu-bind=X`, WFU will replace the inner text of the element with the value of the querystring param `X`.
-
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
-
-### STEP 1 - Add the Library  <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
-
-First, **add the library** as detailed in [Quick Start](../quick-start.md).&#x20;
-
-### STEP 2 - Apply `wfu-bind` to Desired Elements <a href="#step-2---apply-wfu-query-param-to-desired-elements" id="step-2---apply-wfu-query-param-to-desired-elements"></a>
-
-{% hint style="success" %}
-For example, use `wfu-bind=?name` if you want to apply the value of querystring param `name` to that element.
-{% endhint %}
-
-See above for details.&#x20;
-
-\
+* On any other elements with a custom attribute of `wfu-bind=X`, WFU will replace the inner text of the element with the value of the querystring param `X`.&#x20;
