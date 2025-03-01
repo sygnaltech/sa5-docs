@@ -2,7 +2,7 @@
 description: Invoke a script as an SA5 Action.
 ---
 
-# Script Action
+# Script Actions 🧪
 
 
 
@@ -15,7 +15,53 @@ Technical notes
 
 
 
-### wfu-ix-trigger-script = ( ... ) &#x20;
+### sa-action-script = ( ... ) &#x20;
+
+
+
+This Action requires an SA5 config block
+
+```html
+<script type="application/sa+json" handler="action.script" event="alert1">
+{
+  "@context": "https://attr.sygnal.com",
+  "@version": "0.1",
+  "script": [
+    { "action": "class-add", "data": "class1" }, 
+    { "action": "class-remove", "data": "class1" }     
+  ]
+}
+</script>
+```
+
+
+
+This Action requires an SA5 config block
+
+```html
+<script type="application/sa+json" handler="action.script" event="alert1">
+function test1() {
+}
+</script>
+```
+
+This Action requires an SA5 config block; &#x20;
+
+
+
+```html
+<script type="application/sa+json" handler="action.script" event="alert1">
+{
+  "@context": "https://attr.sygnal.com",
+  "@version": "0.1",
+  "function": "myFunc1"  
+}
+</script>
+```
+
+
+
+
 
 
 
