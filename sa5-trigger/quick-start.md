@@ -47,5 +47,23 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```
 {% endcode %}
 
+## Prototyping &#x20;
 
+Events;&#x20;
+
+{% code overflow="wrap" %}
+```html
+<!-- Sygnal Attributes 5 | Events --> 
+<link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/css/webflow-events.css"
+  dev-href="http://127.0.0.1:4000/dist/css/webflow-events.css"
+  devproxy-group="sa5"
+  > 
+<script defer 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/nocode/webflow-events.js" 
+  dev-src="http://127.0.0.1:4000/dist/nocode/webflow-events.js"
+  devproxy-group="sa5"
+  ></script>
+```
+{% endcode %}
 

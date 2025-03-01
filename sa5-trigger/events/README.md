@@ -1,4 +1,26 @@
-# Events 🧪
+# Events
+
+
+
+
+
+
+
+## Frequency Gating
+
+Unlimited ( default )&#x20;
+
+Once&#x20;
+
+N-Times&#x20;
+
+Max frequency ( no more than once every 500ms )    &#x20;
+
+
+
+
+
+
 
 
 

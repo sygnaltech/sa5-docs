@@ -1,4 +1,4 @@
-# Triggers 🧪
+# Triggers
 
 An **SA5 Trigger** is a user action or system state-change that occurs, which invokes an _SA5 Event_.  These are generally classified as;
 
@@ -40,9 +40,9 @@ A Trigger invokes an Event which results in Actions.&#x20;
 | Trigger                                                                                 | Applies to                    | Notes                                                                                                     |
 | --------------------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------- |
 | <ul><li>An interaction occurring, reaching a certain point in the interaction</li></ul> |                               | Triggered by affecting a specific element, and a mutation observer is watching that element for chagnes.  |
-| Click                                                                                   | Any element                   | Also touch                                                                                                |
+| <p>Click<br><code>sa-trigger-click</code> </p>                                          | Any element                   | Also touch                                                                                                |
+| <p>Scroll into view <br><code>sa-trigger-scrollintoview</code> </p>                     | Any element                   | Currently fires only once                                                                                 |
 | Mousover on an element                                                                  | Any element                   | Only works on devices with a pointer                                                                      |
-| Scroll into view                                                                        | Any element                   |                                                                                                           |
 | Focus                                                                                   | Any focusable element         |                                                                                                           |
 | Blur                                                                                    |                               |                                                                                                           |
 | Change                                                                                  | Input elements                |                                                                                                           |

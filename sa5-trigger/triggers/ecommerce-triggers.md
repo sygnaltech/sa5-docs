@@ -1,4 +1,14 @@
-# ECommerce Triggers
+# ECommerce Triggers 🧪
+
+
+
+
+
+
+
+## Types
+
+### Cart Item Count Changes &#x20;
 
 
 
@@ -16,6 +26,8 @@ Considering;
 
 
 [https://discourse.webflow.com/t/close-cart-go-back-to-top-of-the-page/215008/6](https://discourse.webflow.com/t/close-cart-go-back-to-top-of-the-page/215008/6)
+
+
 
 
 
