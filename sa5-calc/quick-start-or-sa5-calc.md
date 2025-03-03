@@ -17,8 +17,8 @@ If you are already using other SA5 Libs, please make certain to upgrade them to 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Calc --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/css/webflow-calc.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/nocode/webflow-calc.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/css/webflow-calc.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/nocode/webflow-calc.js"></script>
 ```
 {% endcode %}
 
@@ -32,12 +32,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | Calc --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/css/webflow-calc.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/css/webflow-calc.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-calc.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/nocode/webflow-calc.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/nocode/webflow-calc.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-calc.js"
   devproxy-group="sa5"
   ></script>

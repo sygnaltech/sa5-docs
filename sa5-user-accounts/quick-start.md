@@ -19,8 +19,8 @@ If you are already using other SA5 Libs, please make certain to upgrade them to 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | User Accounts --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/css/webflow-membership.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/nocode/webflow-membership.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/css/webflow-membership.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/nocode/webflow-membership.js"></script>
 <script>
 window.sa5 = window.sa5 || [];
 window.sa5.push(['getMembershipConfig', 
@@ -81,12 +81,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | Memberships --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/css/webflow-membership.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/css/webflow-membership.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-membership.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/nocode/webflow-membership.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/nocode/webflow-membership.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-membership.js"
   devproxy-group="sa5"
   ></script>

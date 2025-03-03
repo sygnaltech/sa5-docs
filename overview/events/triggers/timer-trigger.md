@@ -9,7 +9,7 @@ Defines a timer as a trigger.&#x20;
 
 
 ```html
-<script type="application/sa+json" handler="Trigger.Timer">
+<script type="application/sa+json" handler="trigger.timer" event="timer1">
 {
   "@context": "https://attr.sygnal.com",
   "@version": "0.1",

@@ -17,7 +17,7 @@ If you are already using other SA5 Libs, please make certain to upgrade them to 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Trigger --> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/nocode/webflow-ix.js"></script> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/nocode/webflow-ix.js"></script> 
 ```
 {% endcode %}
 
@@ -35,35 +35,17 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | Trigger --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/css/webflow-ix.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/css/webflow-ix.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-ix.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/nocode/webflow-ix.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/nocode/webflow-ix.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-ix.js"
   devproxy-group="sa5"
   ></script>
 ```
 {% endcode %}
 
-## Prototyping &#x20;
 
-Events;&#x20;
-
-{% code overflow="wrap" %}
-```html
-<!-- Sygnal Attributes 5 | Events --> 
-<link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/css/webflow-events.css"
-  dev-href="http://127.0.0.1:4000/dist/css/webflow-events.css"
-  devproxy-group="sa5"
-  > 
-<script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/nocode/webflow-events.js" 
-  dev-src="http://127.0.0.1:4000/dist/nocode/webflow-events.js"
-  devproxy-group="sa5"
-  ></script>
-```
-{% endcode %}
 

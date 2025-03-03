@@ -23,7 +23,7 @@ Currently no `defer` used during the experimental phase.
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | SEO --> 
-<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/webflow-seo.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/webflow-seo.js"></script>
 ```
 {% endcode %}
 
@@ -39,12 +39,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | SEO --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/css/webflow-seo.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/css/webflow-seo.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-seo.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.5.0/dist/nocode/webflow-seo.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/nocode/webflow-seo.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-seo.js"
   devproxy-group="sa5"
   ></script>

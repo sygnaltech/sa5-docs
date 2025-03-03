@@ -24,3 +24,13 @@ This Action requires an SA5 config block
 
 
 
+### `message` = ( _plain-text_ )&#x20;
+
+Plain-text message to display in the alert. &#x20;
+
+
+
+## Future&#x20;
+
+
+

@@ -2,7 +2,7 @@
 description: Trigger Your Click Interactions with a Link click
 ---
 
-# Link Triggers ❺
+# Link Triggers 🧪
 
 **Webflow's interactions are powerful, but they are not easily triggered from JavaScript.**&#x20;
 
@@ -32,7 +32,7 @@ The basic idea is a very simple proxy-click.&#x20;
   * Or any other setup you want
 * SA5's Trigger lib identifies both the trigger buttons and the proxy buttons, and establishes click handlers. Any click on the proxy button will issue a JavaScript click on the interactions trigger button, which will trigger whatever interaction you've setup- popup, animation, etc.&#x20;
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1) (1).svg" alt="" class="gitbook-drawing">
+<img src="../../../.gitbook/assets/file.excalidraw (1) (1) (1) (1).svg" alt="" class="gitbook-drawing">
 
 ## Proxy Trigger Setups
 
@@ -63,7 +63,7 @@ Because these are set as the link URLs, the test displayed to the user can be an
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
-First, **add the library** as detailed in [Quick Start](../quick-start.md).
+First, **add the library** as detailed in [Quick Start](../../../sa5-trigger/quick-start.md).
 
 ### STEP 2 - Setup your data-binding attributes ( Basic Setup ) <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 

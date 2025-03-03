@@ -40,9 +40,10 @@ This Action requires an SA5 config block
 
 ```html
 <script type="application/sa+json" handler="action.script" event="alert1">
-function test1() {
+function test1() { 
+  sa.events.invoke("test1"); 
 }
-</script>
+</script> 
 ```
 
 This Action requires an SA5 config block; &#x20;

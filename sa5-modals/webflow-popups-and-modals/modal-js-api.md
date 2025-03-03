@@ -4,6 +4,14 @@
 
 The JS API is primarily configured through SA5's Modal [Controller](../../overview/sa5-core/controllers.md). &#x20;
 
+This is exposed dorectly through SA5 Core's controllers;&#x20;
+
+```
+window.sa5.controllers.modals
+```
+
+
+
 
 
 ## Use Cases&#x20;
