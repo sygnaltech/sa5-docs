@@ -22,6 +22,8 @@
 * [Breakpoints](overview/breakpoints.md)
 * [Component Support 🧪](overview/component-support.md)
 * [Sygnal Attributes ( SA5 ) Support](overview/sygnal-attributes-sa5-support.md)
+* [Dev Team Notes](overview/dev-team-notes.md)
+* [GDPR](overview/gdpr.md)
 * [SA6](overview/sa6.md)
 * [Triggers, Events & Actions](overview/events/README.md)
   * [Triggers](overview/events/triggers/README.md)
@@ -29,22 +31,28 @@
     * [Scroll Into View Trigger](overview/events/triggers/scroll-into-view-trigger.md)
     * [Hover Trigger](overview/events/triggers/hover-trigger.md)
     * [Timer Trigger](overview/events/triggers/timer-trigger.md)
-    * [ECommerce Triggers 🧪](overview/events/triggers/ecommerce-triggers.md)
-    * [Gated Trigger 🧪](overview/events/triggers/gated-trigger.md)
+    * [Form Triggers 🧪](overview/events/triggers/form-triggers/README.md)
+      * [Form Submit Trigger 🧪](overview/events/triggers/form-triggers/form-submit-trigger.md)
     * [Exit Intent Trigger 🧪](overview/events/triggers/exit-intent-trigger.md)
+    * [ECommerce Triggers 🧪](overview/events/triggers/ecommerce-triggers.md)
+    * [Inactivity Trigger 🧪](overview/events/triggers/inactivity-trigger.md)
+    * [Gated Trigger 🧪](overview/events/triggers/gated-trigger.md)
     * [Link Triggers 🧪](overview/events/triggers/dynamic-interaction-trigger-links.md)
     * [Reactiv Triggers 🧪](overview/events/triggers/reactiv-triggers.md)
-    * [Form Submit Trigger 🧪](overview/events/triggers/form-submit-trigger.md)
     * [Interaction Trigger 🧪](overview/events/triggers/interaction-trigger.md)
   * [Events](overview/events/events/README.md)
+    * [Namespacing](overview/events/events/namespacing.md)
+    * [Event Data](overview/events/events/event-data.md)
+    * [Link-Based Triggers 🧪](overview/events/events/future-plans.md)
     * [Breakpoints 🧪](overview/events/events/breakpoints.md)
     * [Persistent Events 🧪](overview/events/events/persistent-events.md)
     * [Gated Events 🧪](overview/events/events/gated-events.md)
   * [Actions](overview/events/actions/README.md)
     * [Click Actions](overview/events/actions/click-actions.md)
     * [Alert Action](overview/events/actions/alert-action.md)
+    * [Visibility Actions](overview/events/actions/visibility-actions.md)
+    * [Video Actions 🧪](overview/events/actions/video-actions.md)
     * [Audio Action 🧪](overview/events/actions/audio-action.md)
-    * [Visibility Actions 🧪](overview/events/actions/visibility-actions.md)
     * [Class Adder Actions 🧪](overview/events/actions/class-adder-actions.md)
     * [Tab Element Actions 🧪](overview/events/actions/tab-element-actions.md)
     * [Interaction Actions 🧪](overview/events/actions/interaction-actions.md)
@@ -57,14 +65,6 @@
   * [Core Technical Notes](overview/sa5-core/core-technical-notes/README.md)
     * [Element Tracking](overview/sa5-core/core-technical-notes/element-tracking.md)
 
-## 📘 sa5-trigger 🧪
-
-* [🔍 About SA5's Trigger Lib](sa5-trigger/about.md)
-* [🚀 Quick Start | SA5 Trigger](sa5-trigger/quick-start.md)
-* [IX Triggers ( Legacy ) ❺](sa5-trigger/dynamic-interaction-trigger-links.md)
-* [Use Cases](sa5-trigger/use-cases.md)
-* [Future Plans 🧪📝](sa5-trigger/future-plans.md)
-
 ## 📘 sa5-cache
 
 * [🔍 About SA5's Cache Lib](sa5-cache/about.md)
@@ -73,7 +73,8 @@
 
 ## 📘 sa5-socialshare
 
-* [🔍 About SA5's Socialshare Lib](sa5-socialshare/about.md)
+* [🔍 About SA5's Social Share Lib](sa5-socialshare/about.md)
+* [🚀 Quick Start | SA5 Social Share](sa5-socialshare/quick-start.md)
 * [Email Social Share ❺](sa5-socialshare/cache.md)
 
 ## 📘 sa5-detect 🧪
@@ -93,6 +94,7 @@
 * [A/B and Multivariate Testing](sa5-analytics/a-b-and-multivariate-testing.md)
 * [UTM Tracking](sa5-analytics/utm-tracking.md)
 * [Rel Attributes](sa5-analytics/rel-attributes.md)
+* [GA Events](sa5-analytics/ga-events.md)
 * [GTM Events ❺🧪](sa5-analytics/geo/README.md)
   * [Important dataLayer Notes](sa5-analytics/geo/important-datalayer-notes.md)
   * [Facebook](sa5-analytics/geo/facebook.md)
@@ -326,6 +328,7 @@
 * [🔍 About SA5's Webflow Video Lib](sa5-video/about.md)
 * [🚀 Quick Start | SA5 Video](sa5-video/quick-start.md)
 * [Background Video Poster](sa5-video/background-video-poster.md)
+* [Events](sa5-video/events.md)
 * [YouTube Hide Related Videos \[BETA\]](sa5-video/youtube-hide-related-videos-beta/README.md)
   * [Styling Options](sa5-video/youtube-hide-related-videos-beta/styling-options.md)
   * [Future](sa5-video/youtube-hide-related-videos-beta/future.md)
@@ -354,10 +357,11 @@
   * [Future](sa5-elements/slider/future.md)
 * [Deck Controller Element ⛔](sa5-elements/deck-controller-element.md)
 * [Button Element](sa5-elements/button.md)
-* [Dropdown Element](sa5-elements/dropdown.md)
+* [Dropdown Element](sa5-elements/dropdown/README.md)
+  * [Future](sa5-elements/dropdown/future.md)
 * [Lightbox Element](sa5-elements/lightbox/README.md)
-  * [CMS & Lightbox + Groups](sa5-elements/lightbox/cms-and-lightbox-+-groups.md)
-  * [CMS & Lightbox + Captions](sa5-elements/lightbox/cms-and-lightbox-+-captions/README.md)
+  * [CMS Lightbox + Groups](sa5-elements/lightbox/cms-and-lightbox-+-groups.md)
+  * [CMS Lightbox + Captions](sa5-elements/lightbox/cms-and-lightbox-+-captions/README.md)
     * [Popular Lightbox Setups](sa5-elements/lightbox/cms-and-lightbox-+-captions/popular-lightbox-setups.md)
   * [Lightbox JS API](sa5-elements/lightbox/slider-code-examples.md)
   * [SA5 Lightbox Future](sa5-elements/lightbox/sa5-lightbox-future.md)
@@ -379,7 +383,13 @@
 * [🚀 Quick Start | SA5 Format](sa5-format/quick-start.md)
 * [Format Numbers & Currencies ❺](sa5-format/format-numbers-and-currencies.md)
 * [Format Dates ❺](sa5-format/format-dates/README.md)
+  * [Use Cases](sa5-format/format-dates/use-cases/README.md)
+    * [Custom Format a Date](sa5-format/format-dates/use-cases/custom-format-a-date.md)
+    * [Localize a Date](sa5-format/format-dates/use-cases/localize-a-date.md)
+    * [From and To Relative Timespans](sa5-format/format-dates/use-cases/from-and-to-relative-timespans.md)
+    * [Age](sa5-format/format-dates/use-cases/age.md)
   * [Future - Date formatting](sa5-format/format-dates/future-date-formatting.md)
+  * [Setup Your Date Field for Good Parsing](sa5-format/format-dates/setup-your-date-field-for-good-parsing.md)
 
 ## 📘 sa5-user-accounts
 
@@ -529,6 +539,12 @@
 * [Count & Sum Items ❺](sa5-calc/article-1/README.md)
   * [Source Types](sa5-calc/article-1/source-types.md)
   * [Calc Use Cases](sa5-calc/article-1/calc-use-cases.md)
+
+## 📘 sa5-trigger ⛔
+
+* [🔍 About SA5's Trigger Lib](sa5-trigger/about.md)
+* [🚀 Quick Start | SA5 Trigger](sa5-trigger/quick-start.md)
+* [IX Triggers ( Legacy ) ❺](sa5-trigger/dynamic-interaction-trigger-links.md)
 
 ## 📘 Deprecated Features <a href="#deprecated" id="deprecated"></a>
 

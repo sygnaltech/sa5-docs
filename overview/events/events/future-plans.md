@@ -1,40 +1,10 @@
-# Future Plans 🧪📝
+---
+description: Trigger SA5 Events from a link click.
+---
 
+# Link-Based Triggers 🧪
 
-
-
-
-
-
-
-
-
-
-## Context&#x20;
-
-
-
-Kiosk mode &#x20;
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Considering <a href="#getting-started-nocode" id="getting-started-nocode"></a>
-
-wfu-ix-trigger-type ( optional ) = click | timer
-
-wfu-ix-trigger-ms = 10000
-
-
+Certain triggers such as click&#x20;
 
 
 
@@ -86,13 +56,19 @@ Typed trigger wiring process;
 
 ## Other Trigger Types
 
-Currently we have **click** trigger types
 
-Considering scrolling triggers, and timer-based triggers.&#x20;
 
-Inactivity-timer based triggers&#x20;
 
-## Technical Notes
+
+
+
+
+
+
+
+
+
+## Future&#x20;
 
 ### What is a Trigger?
 
@@ -143,7 +119,13 @@ Some trigger handlers such as the **click handler** can utilize a target element
 
 These are identified by wfu-trigger-target = ID. OPTIONALLY They can be namespaced, by wfu-trigger-target-group, which must match.&#x20;
 
-## Setting It Up
+
+
+
+
+##
+
+
 
 ### Configure the Trigger Library ( optional )
 
@@ -224,7 +206,7 @@ Pre-processing;
 
 
 
-## Triggers Invoking Multiple Different Events&#x20;
+### Triggers Invoking Multiple Different Events&#x20;
 
 We're considering the ability for a _single_ Trigger to invoke _multiple_ Events.&#x20;
 
@@ -232,7 +214,7 @@ For example, `wfu-trigger-click` = `event1,event2,event3`&#x20;
 
 If built, this may be limited to certain trigger types, owever at this point we have not identified key use cases where this adds substantial value.&#x20;
 
-## Chained Events&#x20;
+### Chained Events&#x20;
 
 We're also considering the concept of a Trigger as an Action type, so that we can chain Trigger-Event-Action sequences.&#x20;
 
@@ -240,7 +222,7 @@ We're also considering the concept of a Trigger as an Action type, so that we ca
 
 
 
-
+##
 
 
 

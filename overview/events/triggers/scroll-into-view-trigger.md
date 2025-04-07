@@ -8,6 +8,10 @@ description: Invoke the specified event when the element scrolls into view
 This Trigger fires only once.&#x20;
 {% endhint %}
 
+{% hint style="warning" %}
+Scroll trigger interactions currently don’t work on iOS devices (iPhone, iPad, iPod) due to Apple’s security restrictions on running scripts during browser scrolling. This limitation is documented in the Apple developer library.&#x20;
+{% endhint %}
+
 ## Use Cases&#x20;
 
 * Trigger a modal   &#x20;

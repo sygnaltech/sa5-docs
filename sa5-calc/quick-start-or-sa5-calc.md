@@ -8,8 +8,8 @@ description: How to Setup SA5's 404 Library
 
 {% hint style="warning" %}
 **IMPORTANT** \
-We've made some enhancements to SA5 Core in v5.5.0. \
-If you are already using other SA5 Libs, please make certain to upgrade them to at least v5.5.0 as well to ensure cross-compatibility.&#x20;
+We've made some enhancements to SA5 Core in v5.6.0. \
+If you are already using other SA5 Libs, please make certain to upgrade them to at least v5.6.0 as well to ensure cross-compatibility.&#x20;
 {% endhint %}
 
 [Add this script](../overview/how-to-add-custom-code.md) to the **site wide** custom code **HEAD** area of your site. If this functionality is only needed on specific pages, you can add it to those page-specific HEADs instead. &#x20;

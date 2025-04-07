@@ -6,11 +6,18 @@ description: Give your dates the formatting you want
 
 Webflow supports the storage of dates and datetimes in the CMS, with a wide range of formatting options. However it's missing a few and more complex formats require hacks and javascript to achieve a desired result.&#x20;
 
-This library allows you to format your dates and times in a huge range of recognized [formats](https://momentjs.com/docs/#/displaying/format/). &#x20;
+Webflow localization also doesn't currently support locale-specific date formatting.&#x20;
 
-* Use a format string to explicitly describe the formatting you want.&#x20;
-* Supports relative-time phrasing as in "10 months ago" or "in 8 days" using the specified date relative to today.  You can work with past dates, future dates, or use an "age" mode which shows the number of years elapsed since a date.&#x20;
-* Automatic localized formatting is supported, based on the `<html lang>` attribute which Webflow Localization uses.&#x20;
+SA5 Format allows you to format your dates and times in a huge range of recognized [formats](https://momentjs.com/docs/#/displaying/format/). &#x20;
+
+* Use a format string to explicitly describe the formatting you want, supporting;
+  * Full date-time strings of different arrangements&#x20;
+  * Full date strings of different arrangements&#x20;
+  * Partial, custom date or time constructions like "10 Mar"&#x20;
+* Display relative-time phrasing as in "10 months ago" or "in 8 days" using the specified date relative to today.  You can work with past dates, future dates, or use an "age" mode which shows the number of years elapsed since a date.&#x20;
+  * Good for "updated" dates on blogs and articles&#x20;
+  * Good for "years in service" dates on bio pages&#x20;
+* Automatic localized formatting is supported, based on the `<html lang>` attribute which Webflow Localization uses. No matter what locale the user is switched to, your dates will display correctly for them.&#x20;
 
 ## Demonstration <a href="#usage-notes" id="usage-notes"></a>
 
@@ -22,7 +29,22 @@ Demo page
 Demonstration and Cloneable
 {% endembed %}
 
+## Use Cases  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+SA5 Format has a lot of different settings, which can be used to achieve a lot of different results, and it can be confusing to wade through all of the options.&#x20;
+
+To help make setup easy, here are common setups for popular use cases.&#x20;
+
+* [Custom-format a date](use-cases/custom-format-a-date.md)&#x20;
+* [Show relative time](use-cases/from-and-to-relative-timespans.md) "since" or "until" a date, from today&#x20;
+* [Show age](use-cases/age.md), years in service, years since a business was established &#x20;
+* [Localized dates](use-cases/localize-a-date.md)  &#x20;
+
 ## Getting Started <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+
+{% hint style="success" %}
+For easiest setup, refer to your specific use case above.&#x20;
+{% endhint %}
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
@@ -36,26 +58,19 @@ The details on the attributes are below.&#x20;
 
 ## Usage Notes <a href="#usage-notes" id="usage-notes"></a>
 
-{% hint style="info" %}
-Webflow offers a range of formats, and you ideally want to choose one that is the most internationally recognizable so that your localization settings do not confuse the parser. The best date format for this is halfway down the list and is shown here.&#x20;
-{% endhint %}
+This module is built on top of day.js, which is the recognized standard for JS date-time formatting.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption><p>Ideally use this date format to ensure correct datetime parsing. </p></figcaption></figure>
+{% hint style="warning" %}
+We strongly recommend that you use an ISO-8601 compatible format in the designer to ensure clear, consistent parsing of your dates.&#x20;
+
+[Learn more here](setup-your-date-field-for-good-parsing.md).&#x20;
+{% endhint %}
 
 ### `wfu-format-date` = ( format string ) <a href="#wfu-format-attribute" id="wfu-format-attribute"></a>
 
 **Required.**  Place this directly on the element containing your date.
 
 The format strings you can use depends on the configuration settings you have specified, especially `wfu-format-mode`, `wfu-format-handler`, and `wfu-format-locale`.&#x20;
-
-{% hint style="success" %}
-We recommend you read through the attributes first to familiarize yourself with them before you jump ahead to the format strings section below.&#x20;
-{% endhint %}
-
-{% hint style="warning" %}
-**CAUTION** \
-Date formats are inherently ambiguous, see Best Practices below for tips on how to ensure your Webflow dates are parsed correctly.&#x20;
-{% endhint %}
 
 ### `wfu-format-mode` = ( mode ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
@@ -138,7 +153,7 @@ Here's a breakdown of the different types of format strings you can use;&#x20;
 
 ### Standard Date Formats&#x20;
 
-Use when `wfu-format-mode` = `date` and you have not enabled the `wfu-format-locale` attribute.&#x20;
+Use when `wfu-format-mode` = `date`.  If `wfu-format-locale` is being used, these should work as well for custom localized date construction.&#x20;
 
 |        |                  |                                       |
 | ------ | ---------------- | ------------------------------------- |

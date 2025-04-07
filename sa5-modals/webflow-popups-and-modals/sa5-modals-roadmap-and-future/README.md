@@ -128,6 +128,22 @@ JS API;
 
 
 
+## a11y&#x20;
+
+
+
+## Native HTML elements&#x20;
+
+Consider using internal HTML \<dialog> element&#x20;
+
+[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)
+
+
+
+
+
+
+
 
 
 

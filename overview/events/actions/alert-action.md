@@ -12,6 +12,8 @@ description: A simple alert message, primarily for testing
 
 This Action requires an SA5 config block
 
+
+
 ```html
 <script type="application/sa+json" handler="action.alert" event="alert1">
 {
@@ -28,7 +30,7 @@ This Action requires an SA5 config block
 
 Plain-text message to display in the alert. &#x20;
 
-
+If you want a multi-line message, you can use the `\n` linefeed sequence in your string.&#x20;
 
 ## Future&#x20;
 

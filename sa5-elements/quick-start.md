@@ -26,8 +26,8 @@ If you are already using other SA5 Libs, please make certain to upgrade them to 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Elements --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/css/webflow-elements.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/nocode/webflow-elements.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.1/dist/css/webflow-elements.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.1/dist/nocode/webflow-elements.js"></script>
 ```
 {% endcode %}
 
@@ -35,22 +35,22 @@ If you are already using other SA5 Libs, please make certain to upgrade them to 
 Once the library is installed, use the attributes you want for the specific features you're looking for in this library. Those are documented with each feature.&#x20;
 {% endhint %}
 
-Add the custom attributes for the features you need, described in each feature separately. &#x20;
+Add the custom attributes for the features you need, described in each feature separately.  &#x20;
 
-## SA5 Library Developers
+## SA5 Library Developers&#x20;
 
-For SA5 library developers, use the extended syntax to support [Sygnal DevProxy](https://engine.sygnal.com/devproxy).&#x20;
+For SA5 library developers, use the extended syntax to support [Sygnal DevProxy](https://engine.sygnal.com/devproxy). &#x20;
 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Elements --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/css/webflow-elements.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.1/dist/css/webflow-elements.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-elements.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/nocode/webflow-elements.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.1/dist/nocode/webflow-elements.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-elements.js"
   devproxy-group="sa5"
   ></script>
