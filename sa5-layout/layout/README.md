@@ -13,6 +13,34 @@ Webflow is great at designing static pages but its CMS layouts come with inheren
 
 SA5 Layout was designed to make complex layouts much easier by allowing elements to be moved automatically _after_ the page has loaded, and we do this with a very versatile item / slot tagging approach.&#x20;
 
+## Use Cases
+
+* Build a week-calendar view, where items are grouped by weekday ( using only one collection list )&#x20;
+* Build a month-calendar view, where items are grouped by date ( using only one collection list ) &#x20;
+* A-Z bar, with glossary items organized under each group heading ( using only one collection list ).  Currently requires each item to be "tagged" for the group it will be placed in, which can be easily stored in a separate CMS field.&#x20;
+* Dynamic tab generation, from a collection list&#x20;
+* Complex, CMS-based nested tab generation
+
+Future;&#x20;
+
+* Dynamic slide generation, from a collection list&#x20;
+* "Grouped" items, with max-count&#x20;
+* A-Z bar, with glossary items automatically organized into those groupings based on the first letter
+  * May not support localization, if translated terms start with e.g. an A-umlaut. In localized sites the manual grouping may be more effective here.   &#x20;
+
+## Goals
+
+* Flexible rearrangement of the page
+* Support for specific use cases above&#x20;
+* Ability to have placeholder content in a group that is only replaced when items are added ( this allows a no items default )&#x20;
+  * e.g. A-Z glossary but "no terms yet" on empty groups &#x20;
+* Ability to suppress an entire container in which no items are inserted.&#x20;
+  * e.g. A-Z glossary but we don't want empty letters&#x20;
+* Group item counts
+  * Possibly supported even outside of the target group&#x20;
+
+## How it Works&#x20;
+
 **In the broadest sense tag any container element ( e.g. a DIV ) as a slot, and tag any elements as items to be put into that slot, and SA5's Layout engine will reorganize your entire page according to those rules.**&#x20;
 
 _Here is a exceptionally simple example of how elements can be targeted to containers, and re-organized on page load.  The_ `wfu-layout-target` _attribute is used to match and identify the wfu_`-layout` _container, and the element is moved._
@@ -112,6 +140,73 @@ The primary reason for this is that in the designer, you may want to use placeho
 * `visible` ( default ) - keep the element visible&#x20;
 * `hidden` - completely hidden from view
 * `invisible` - takes up space but otherwise not visible&#x20;
+
+### Future
+
+`wfu-layout-priority` = ( number )&#x20;
+
+Allows you to specify distribution priority.&#x20;
+
+Multiple layouts with the same ID get progressively distributed.&#x20;
+
+`wfu-layout-maxitems` = ( number )&#x20;
+
+Allows you to specify a limit on the number of items to be added to this group.  When used in conjunction with priority, this allows for progressive distribution across a series of groups.&#x20;
+
+`wfu-layout-rule` = ( rule name )
+
+* `exact` ( default ) means an exact match on the wfu-layout name. &#x20;
+
+String matching;&#x20;
+
+* `startswith` means that the group is matched if the item's key starts with the specified string&#x20;
+* `regex` means that the group is matched if the item's key matches a regex string&#x20;
+
+Numeric matching, can be used when the item key is numeric&#x20;
+
+* greaterthan greater or equal (
+  * e.g. 1000 &#x20;
+* lessthan less or equal ( use eval if you need strict less )&#x20;
+  * e.g. 1000&#x20;
+* range between x and y, including the range endpoints ( use eval if you need a different approach )&#x20;
+  * e.g. 1000-2000
+* eval matches an evaluation string&#x20;
+  * e.g. 1000 < x <= 2000&#x20;
+
+
+
+wfu-layout-range-min
+
+wfu-layout-range-max&#x20;
+
+
+
+
+
+wfu-layout-container
+
+Place on a wrapper
+
+Implementation note: during layout an attribute can be added to indicate that content was added, wfu-layout-state = content&#x20;
+
+After layout, a cleanup process occurs.  We look for wfu-layout-container elements and if there are only wfu-layouts within it that have a wfu-layout-state = empty  ( match cvis ) then&#x20;
+
+
+
+
+
+Does it make sense to use the key here as the range value ?&#x20;
+
+
+
+`wfu-layout-rule-mode`&#x20;
+
+* `caseinsensitive` ( default ) -&#x20;
+* `casesensitive` -&#x20;
+
+Range
+
+
 
 ## Usage Notes - Configuring a Layout Item
 
