@@ -6,6 +6,15 @@ description: Embed markdown content, including tables and more.
 
 This feature brings basic Markdown capabilities into Webflow projects.&#x20;
 
+## Goals
+
+* Support the embedding of simple, small chunks of markdown content directly in your Webflow page, including both;&#x20;
+  * "Chunk" format with multiple elements&#x20;
+  * Single-line format, where you only are using inline styles like bold, italics, highlight, strikethrough, etc.&#x20;
+* Make them Embed compatible for simple editing&#x20;
+* Support CMS use, within Rich Text field Embeds&#x20;
+* Support Components, and component properties&#x20;
+
 ## Use Cases
 
 * Small table generation, in an easily-editable fashion&#x20;
@@ -16,7 +25,10 @@ This feature brings basic Markdown capabilities into Webflow projects.&#x20;
 
 ### Rendering a block of Markdown
 
-Use the `<markdown>` or `<md>` element inside of any HTML Embed.&#x20;
+SA5 supports two approaches for Markdown content;&#x20;
+
+1. Use the `<markdown>` or `<md>` element inside of any HTML Embed.&#x20;
+2. Use a standard `<div>` with a custom attribute of `wfu-markdown` on it.&#x20;
 
 Here's an example of an H1 followed by a table;
 
@@ -36,10 +48,40 @@ Here's an example of an H1 followed by a table;
 </markdown>
 ```
 
+And another example, using the `<div>` approach;
+
+```html
+<div wfu-markdown>
+# This is more markdown
+
+- List
+  - Indented
+    - And more
+  - Less Indented
+  
+1. Numbered
+2. List
+
+> Blockquote
+> here. 
+
+</div>
+```
+
+Both approaches are widely-supported;&#x20;
+
 * Works in standalone embed elements or as an embed within a rich text block
 * In rich text blocks, works with both static rich text blocks, and CMS-bound RTBs&#x20;
 
-## Rendering an individual element as Markdown
+{% hint style="warning" %}
+Note that some users report that the `<markdown>` approach may be ignored by Webflow's Site Search feature.  If you need that content indexed, try the `<div>` approach.  The markdown content within it should be treated as plaintext for indexing purposes.&#x20;
+{% endhint %}
+
+{% hint style="success" %}
+If you need to use Markdown extensively, and need _server-side rendering_ to ensure 100% SEO support, Sygnal Hyperflow supports this.  Contact us for details about a custom build.&#x20;
+{% endhint %}
+
+### Rendering an individual element as Markdown
 
 In some cases, you may want only a small amount of Markdown rendered, for inline styling. &#x20;
 
@@ -68,9 +110,7 @@ See the markdown&#x20;
 
 Other markdown-generated styling can be similarly targeted.&#x20;
 
-<table><thead><tr><th>Style</th><th>Markdown</th><th width="130">Element</th></tr></thead><tbody><tr><td>Italics</td><td><code>*Text*</code></td><td>em</td></tr><tr><td>Bold</td><td><code>**Text**</code></td><td>strong</td></tr><tr><td>Highlighting</td><td><code>==Text==</code></td><td>mark</td></tr><tr><td>Strikethrough</td><td><code>~~Text~~</code></td><td>del</td></tr></tbody></table>
-
-
+<table><thead><tr><th>Style</th><th>Markdown</th><th width="130">Element</th></tr></thead><tbody><tr><td><em>Italics</em></td><td><code>*Text*</code></td><td><code>&#x3C;em></code> </td></tr><tr><td><strong>Bold</strong></td><td><code>**Text**</code></td><td><code>&#x3C;strong></code> </td></tr><tr><td>Highlighting</td><td><code>==Text==</code></td><td><code>&#x3C;mark></code> </td></tr><tr><td><del>Strikethrough</del></td><td><code>~~Text~~</code></td><td><code>&#x3C;del></code> </td></tr></tbody></table>
 
 
 
@@ -106,7 +146,7 @@ Markdown can be themed by specifying a theme attribute, e.g.;
 
 See the [Themes page](themes.md) for more details.&#x20;
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Getting Started <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 
