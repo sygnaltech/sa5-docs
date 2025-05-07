@@ -1,6 +1,8 @@
 # Accordion API
 
-
+{% hint style="warning" %}
+Because accordions are a card deck UX, they use use SA5's card deck controller interface for the JS API ( first, last, next, prev, open item #... ).  However this API is not fully implemented yet on the Accordion element.&#x20;
+{% endhint %}
 
 ## Initialization <a href="#wfu-lightbox-captions-attribute" id="wfu-lightbox-captions-attribute"></a>
 
@@ -72,6 +74,33 @@ For example, suppose we have a button with an ID of `buttonNext` and we want it 
 document.querySelector('#buttonNext').addEventListener('click', function() {
   accordionDemo.goToNext();
 });
+```
+
+## Events
+
+### accordionChanged
+
+```html
+<script>
+window.sa5 = window.sa5 || [];
+window.sa5.push(['accordionChanged', 
+  (accordion, index) => {
+    
+    console.log("ACCORDION CHANGED", accordion.name, accordion, index); 
+
+    switch(accordion.name) {
+      case "demo1": 
+        // An accordion was clicked in the Demo 1 accordion element
+        // index indicates which tab was clicked ( 0-based )
+        break;
+      case "demo2": 
+        // An accordion was clicked in the Demo 2 accordion element
+        // index indicates which tab was clicked ( 0-based )
+        break;
+    }
+
+  }]); 
+</script>
 ```
 
 

@@ -2,7 +2,7 @@
 description: Interact with Webflow's Tabs Element
 ---
 
-# Tabs Element ❺
+# Tabs Element
 
 ## Overview <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
@@ -68,7 +68,7 @@ Tab names should be unique within the tabs element. Tab names are a discrete att
 
 **2023-Aug-19** - Added `tabChanged` callback event. Tabs has also been moved into the elements library, and is using our standarized "deck" interface which means the methods and properties here should align with similar deck-type elements such as the Slider.&#x20;
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Getting Started  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 

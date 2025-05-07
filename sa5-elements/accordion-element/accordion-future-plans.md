@@ -35,7 +35,32 @@ Add auto positioning for longer accordions;
 
 
 
+wfu-accordion-item-trigger
 
+* open -&#x20;
+* close -&#x20;
+
+
+
+
+
+Initial state&#x20;
+
+First open? Defined by classes ( they will be removed later )&#x20;
+
+
+
+
+
+Transition
+
+Closing transition, Opening transition, pre-set&#x20;
+
+
+
+Interaction to open  trigger button on that panel
+
+Interaction to close  ( call on currently open one only )
 
 
 

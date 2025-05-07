@@ -26,8 +26,8 @@ If you are already using other SA5 Libs, please make certain to upgrade them to 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | Elements --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.1/dist/css/webflow-elements.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.1/dist/nocode/webflow-elements.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.2/dist/css/webflow-elements.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.2/dist/nocode/webflow-elements.js"></script>
 ```
 {% endcode %}
 
@@ -45,12 +45,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | Elements --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.1/dist/css/webflow-elements.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.2/dist/css/webflow-elements.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-elements.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.1/dist/nocode/webflow-elements.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.2/dist/nocode/webflow-elements.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-elements.js"
   devproxy-group="sa5"
   ></script>
