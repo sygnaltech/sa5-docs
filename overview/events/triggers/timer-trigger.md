@@ -1,12 +1,10 @@
+---
+description: Defines a timer as a trigger.
+---
+
 # Timer Trigger
 
-Defines a timer as a trigger.&#x20;
-
-
-
-
-
-
+Create a timer as a trigger.  You can specify both the time to the first trigger event, and an optional recurring trigger event as well.&#x20;
 
 ```html
 <script type="application/sa+json" handler="trigger.timer" event="timer1">
@@ -15,7 +13,6 @@ Defines a timer as a trigger.&#x20;
   "@version": "0.1",
   "timer": "60", 
   "timerRepeat": "120",
-  "event": "my-event" 
 }
 </script>
 ```
@@ -26,23 +23,31 @@ Defines a timer as a trigger.&#x20;
 
 ## Usage Notes
 
-### `event`  = ( event name )
+### Script Configuration
 
-**Required.**&#x20;
+These are the settings of the script element.&#x20;
 
-The event to trigger.&#x20;
+### type  = application/sa+json
 
-### `timer` = ( sec )
+**Required.**  Identifies the script block as an SA5 configuration block, formatted as JSON.&#x20;
 
-**Required.** &#x20;
+### handler = trigger.timer
 
-Indicates the number of seconds before the timer will fire.&#x20;
+**Required.**  Identifies that this is a timer trigger.&#x20;
 
-### `timerRepeat` = ( sec )&#x20;
+### event  = ( _event name_ )
 
-**Optional.** &#x20;
+**Required.**  The event to trigger.&#x20;
 
-If specified, the timer will repeat after the first firing every timerRepeat
+### JSON Configuration&#x20;
+
+### timer = ( _seconds_ )
+
+**Required.**  Indicates the number of seconds before the timer will fire.&#x20;
+
+### timerRepeat = ( _seconds_ )&#x20;
+
+**Optional.**  If specified, the timer will repeat after the first firing every timerRepeat
 
 
 

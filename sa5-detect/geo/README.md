@@ -2,7 +2,7 @@
 description: Route Visitors and Display Conditional Elements Based on Country or City.
 ---
 
-# Geolocation Detection ❺🧪
+# Geolocation Detection 🧪
 
 {% hint style="danger" %}
 **UNDER DEVELOPMENT**\
@@ -120,9 +120,23 @@ window['sa5_route'] = [{
 </script>
 ```
 
-###
 
 
+
+
+
+
+
+
+## IPinfo Lite&#x20;
+
+| <p>IPinfo Lite gives you essential IP data completely free, with no restrictions. Here’s what you have to look forward to:</p><ul><li>Industry-leading, enterprise-grade accuracy</li><li>Country, continent, and ASN data</li><li>Use it commercially with no caps or usage limits</li><li>Data updated daily</li><li>Unlimited usage via API or download</li></ul><p>Here's an example of the Lite API, showing the ASN and county level geolocation fields that are included:</p><p> </p><p>$ curl <a href="https://api.ipinfo.io/lite/8.8.8.8?token=$TOKEN">https://api.ipinfo.io/lite/8.8.8.8?token=$TOKEN</a></p> |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+<table data-header-hidden><thead><tr><th align="center" valign="top"></th></tr></thead><tbody><tr><td align="center" valign="top"><a href="https://email.ipinfo.io/e3t/Ctc/DP+113/d2R-Zr04/VVTdCq7srf4wW1P5jv82Xrv-zW1KLHGL5wktfyN9k7M9C3qgyTW6N1vHY6lZ3m2VHCn2L8j2v8NW2JlGNV3BzPbFW6GT3q44xh3B4W8pG6Hj4-Z16-VP74-966_m2xW4jT-z95D3kCvVsnF-W7RCFv0W7lKscX50ZgnyW7BfTxF3XZ08LW60LPvY3-kdV0N4gxjl_h9m4cW3CJmn07BtlyHW1W8dxK8gq0S3W2NZlBX7StsGBW9d0TKF2rq5bDW4V6tmK4ttwVPW6bhNlM1qRy-JVvLHP08pj4sLW10210G1PGqwjW2TtbRb5D3gYLN9l3zLgCk9VjW8qmjFx3WRWHjf6QRJ7204"><img src="https://ci3.googleusercontent.com/meips/ADKq_Nb2cqr0MJsLpoynVFdlkwwBLuHAyexUDxO6fDrEyo14VOrsQVeuk1dkCJ4dWBN7YGGSY_ICKH0SkcKHEefLckzZ4Y4JGGYd3mnvlBo6lV9OqiXcZLrIXJ3qVjZTjFbfew_pX4JZ0vyjzoatP5cdntkIcGX5FS0gUbUKjN2S8xxOSw=s0-d-e1-ft#https://email.ipinfo.io/hs-fs/hubfs/sample%20response.png?width=900&#x26;upscale=true&#x26;name=sample%20response.png" alt="sample response"></a></td></tr></tbody></table>
+
+| <p>Prefer working with files? The data is also available as a download, in JSON, CSV, MMDB and Parquet formats – ready to integrate into your tools, dashboards, or workflows.</p><p><br>IPinfo Lite is your new go-to – and built to support everything from side projects to production systems. While IPinfo Lite only includes a subset of all of the data we offer, there's no compromise to the data quality, or the refresh rate.</p> |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 
 

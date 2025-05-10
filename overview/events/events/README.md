@@ -6,6 +6,48 @@
 
 
 
+## Simple v. Complex Events
+
+Most events in SA5 Events are defined by attributes directly on the affected element.  However, there is a potential for "attribute glut" and complexity here in two situations;&#x20;
+
+* If a single element has many possible Events triggering many possible Actions.&#x20;
+  * e.g. A tabstrip where 10 buttons might activate 10 different tabstrip actions.&#x20;
+* If an Event fires many different Actions on many different elements to a point where it's easy to lose track of the attributes in use.&#x20;
+  * e.g. A button Trigger, whose Action triggers 100 different Events.&#x20;
+
+In both cases, we can potentially centralize the admin with an Event configuration block.
+
+This would look something like;
+
+```
+<script type="sa5-event+json" name="event1">
+{
+  "actions": [
+    {
+      "type": "scrollToPercent",
+      "value": "50%"
+    },
+    {
+      "type": "selectTabNum",
+      "target": "tab1",
+      "value": "2" 
+    }
+  ]
+}
+</script> 
+
+```
+
+
+
+
+
+There may be a case for supportin&#x20;
+
+
+
+
+
 
 
 ## Frequency Gating

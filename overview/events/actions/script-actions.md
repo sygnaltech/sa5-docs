@@ -4,6 +4,15 @@ description: Invoke a script as an SA5 Action.
 
 # Script Actions 🧪
 
+IMPORTANT: Differentiate;
+
+* "Sequence" action specifications from
+* JS actions that run a function&#x20;
+
+Goals;
+
+
+
 
 
 Use cases;&#x20;
@@ -28,7 +37,8 @@ This Action requires an SA5 config block
   "@version": "0.1",
   "script": [
     { "action": "class-add", "data": "class1" }, 
-    { "action": "class-remove", "data": "class1" }     
+    { "action": "class-remove", "data": "class1" },
+    { "action": "scroll-into-view", "behavior": "instant", "block": "start" }      
   ]
 }
 </script>
