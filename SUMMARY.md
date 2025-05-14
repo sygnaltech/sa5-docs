@@ -37,6 +37,7 @@
     * [ECommerce Triggers 🧪](overview/events/triggers/ecommerce-triggers.md)
     * [Inactivity Trigger 🧪](overview/events/triggers/inactivity-trigger.md)
     * [Page Load Trigger 🧪](overview/events/triggers/page-load-trigger.md)
+    * [Url Hash Trigger 🧪](overview/events/triggers/url-hash-trigger.md)
     * [Gated Trigger 🧪](overview/events/triggers/gated-trigger.md)
     * [Link Triggers 🧪](overview/events/triggers/dynamic-interaction-trigger-links.md)
     * [Reactiv Triggers 🧪](overview/events/triggers/reactiv-triggers.md)
