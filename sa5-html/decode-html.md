@@ -23,7 +23,7 @@ Add this to the HTML Embed element you want the contents decoded for. No value n
 
 Note that the CSS will hide this element initially until after it’s decoded, at which point we make it visible.
 
-## Getting Started ( NOCODE ) <a href="#getting-started-nocode" id="getting-started-nocode"></a>
+## Getting Started <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
 ### STEP 1 - Add the Library <a href="#step-1---add-the-library" id="step-1---add-the-library"></a>
 

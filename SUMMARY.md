@@ -201,6 +201,7 @@
 * [Truncate Text w/ Ellipsis ❺](sa5-html/truncate-text-w-ellipsis.md)
 * [Encoded Email](sa5-html/encoded-email.md)
 * [Hide Section w/ Empty Collection Lists ❺](sa5-html/hide-section-w-empty-collection-lists.md)
+* [Download File](sa5-html/download-file.md)
 * [Decode HTML ❺](sa5-html/decode-html.md)
 * [Markdown ❺](sa5-html/markdown/README.md)
   * [Themes](sa5-html/markdown/themes.md)
