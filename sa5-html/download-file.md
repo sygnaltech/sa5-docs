@@ -2,7 +2,7 @@
 description: Download file assets like PDFs or images, rather than displaying them
 ---
 
-# Download File
+# Download File ❺
 
 <img src="../.gitbook/assets/file.excalidraw (8).svg" alt="" class="gitbook-drawing">
 
@@ -28,28 +28,41 @@ description: Download file assets like PDFs or images, rather than displaying th
 
 First, **add the library** as detailed in [Quick Start](quick-start.md).&#x20;
 
-### Create your Button in Webflow <a href="#step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode" id="step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode"></a>
+### Create your Link or Button in Webflow <a href="#step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode" id="step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode"></a>
 
-* Configure it to File download&#x20;
-* Attach to your asset, or CMS file field, depending on your desired setup&#x20;
+* Configure the link as a File link &#x20;
+* Reference your asset, or bind it to a CMS file field, depending on your desired setup&#x20;
 
-### Apply `wfu-download-file` to the HTML Embed element you want to decode <a href="#step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode" id="step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode"></a>
+### Apply Attributes to the Button element  <a href="#step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode" id="step-2---apply-wfu-decode-to-the-html-embed-element-you-want-to-decode"></a>
 
-See above for details.
+_See below for details._&#x20;
 
 ## Usage Notes&#x20;
 
-wfu-download-file = ( filename )&#x20;
+### wfu-download-file = ( _filename_ )&#x20;
 
-**Required.**&#x20;
+**Required.** Set the value to the clean filename you want the file downloaded as.&#x20;
 
+{% hint style="success" %}
+You can specify this as a literal value, or bind the attribute's value to a CMS text field that contains your desired filename.&#x20;
+{% endhint %}
 
-
-
+{% hint style="info" %}
+If you filename specifies an extension, it will be used automatically.  If it does not specify an extension, then most browsers will automatically add the extension depending on the file type you are downloading.&#x20;
+{% endhint %}
 
 ## Technical Notes&#x20;
 
+Uses a blob approach to sidestep issues regarding Webflow's cross-domain assets CDN setup, lack of support for custom MIME encoding, and browser CORS restrictions relating to the `download` attribute.&#x20;
 
+## Testing Notes
+
+|          | Windows      | iOS  | Android      |
+| -------- | ------------ | ---- | ------------ |
+| Chrome   | 2025-Jun-01  |      | 2025-Jun-01  |
+| Edge     | 2025-Jun-01  |      |              |
+| Safari   | n/a          |      | n/a          |
+| Firefox  |              |      |              |
 
 ## Future&#x20;
 
