@@ -20,21 +20,7 @@ description: Download file assets like PDFs or images, rather than displaying th
 
 ## Demonstration
 
-[https://sa5-html.webflow.io/file-download](https://sa5-html.webflow.io/file-download)
-
-{% embed url="https://sa5-html.webflow.io/file-download" %}
-Demonstration page
-{% endembed %}
-
-{% embed url="https://webflow.com/made-in-webflow/website/sa5-html" %}
-Cloneable&#x20;
-{% endembed %}
-
-
-
-<table data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>Demonstration Page</td><td><a href="https://sa5-html.webflow.io/file-download">https://sa5-html.webflow.io/file-download</a></td><td><a href="../.gitbook/assets/file.excalidraw (8).svg">file.excalidraw (8).svg</a></td></tr><tr><td>Cloneable</td><td><a href="https://webflow.com/made-in-webflow/website/sa5-html">https://webflow.com/made-in-webflow/website/sa5-html</a></td><td><a href="../.gitbook/assets/Frame 1.png">Frame 1.png</a></td></tr></tbody></table>
-
-
+<table data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>Demonstration Page</td><td><a href="https://sa5-html.webflow.io/file-download">https://sa5-html.webflow.io/file-download</a></td><td><a href="../.gitbook/assets/Frame 2.png">Frame 2.png</a></td></tr><tr><td>Cloneable</td><td><a href="https://webflow.com/made-in-webflow/website/sa5-html">https://webflow.com/made-in-webflow/website/sa5-html</a></td><td><a href="../.gitbook/assets/Frame 1.png">Frame 1.png</a></td></tr></tbody></table>
 
 ## Getting Started  <a href="#getting-started-nocode" id="getting-started-nocode"></a>
 
