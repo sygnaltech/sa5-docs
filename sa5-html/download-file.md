@@ -74,3 +74,7 @@ Uses a blob approach to sidestep issues regarding Webflow's cross-domain assets 
 
 ? Test with components&#x20;
 
+## Credits&#x20;
+
+Shout out to Matt Evans and Eric R for discussions that led to the addition of this solution to SA5.&#x20;
+
