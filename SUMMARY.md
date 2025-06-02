@@ -213,7 +213,7 @@
 * [Components ❺🧪](sa5-html/components/README.md)
   * [Component Object Positioning](sa5-html/components/component-object-positioning.md)
 * [Auto-Size IFRAMEs 🧪](deprecated/auto-size-iframes.md)
-* [Switch Case](sa5-html/switch-case.md)
+* [Switch Case ❺🧪](sa5-html/switch-case.md)
 * [Lazy Load](sa5-html/lazy-load.md)
 * [Gallery 🧪](sa5-html/gallery.md)
 * [Scroll Anchor](sa5-html/scroll-anchor.md)
