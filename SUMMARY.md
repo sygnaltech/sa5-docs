@@ -459,7 +459,7 @@
   * [SA5 Modals Roadmap & Future](sa5-modals/webflow-popups-and-modals/sa5-modals-roadmap-and-future/README.md)
     * [Future Attributes](sa5-modals/webflow-popups-and-modals/sa5-modals-roadmap-and-future/future-attributes.md)
     * [Future Triggers](sa5-modals/webflow-popups-and-modals/sa5-modals-roadmap-and-future/future-triggers.md)
-* [Dismissible Elements](sa5-modals/article.md)
+* [Dismissible Elements](sa5-modals/dismissible.md)
 * [Triggers, Events & Actions 🧪](sa5-modals/triggers-events-and-actions.md)
 * [Webflow Modals & Popups Auto-Open and Auto-Close](sa5-modals/article-1.md)
 * [Side Panels 🧪](sa5-modals/page-1.md)
