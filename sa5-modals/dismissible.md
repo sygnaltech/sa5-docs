@@ -23,6 +23,12 @@ But can be used for any elements that you want to suppress.&#x20;
 ## Demonstration <a href="#display-captions-in-webflows-lightboxes" id="display-captions-in-webflows-lightboxes"></a>
 
 {% embed url="https://sa5-modals.webflow.io/dismissable" %}
+Demo Page
+{% endembed %}
+
+{% embed url="https://webflow.com/made-in-webflow/website/sa5-modals" %}
+Cloneable
+{% endembed %}
 
 ## Use Cases&#x20;
 
