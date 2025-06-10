@@ -284,7 +284,7 @@
 * [Usage Notes](sa5-kiosk/usage-notes.md)
 * [Kiosk Hardware & Browser Setup](sa5-kiosk/kiosk-hardware-and-browser-setup.md)
 * [Kiosk Base 🧪](sa5-kiosk/kiosk-base.md)
-* [Inactivity Timer 🧪](sa5-kiosk/html-tables.md)
+* [Inactivity Timer](sa5-kiosk/html-tables.md)
 * [Display Mode](sa5-kiosk/display-mode.md)
 * [Technical Notes](sa5-kiosk/technical-notes.md)
 * [Future](sa5-kiosk/future/README.md)
