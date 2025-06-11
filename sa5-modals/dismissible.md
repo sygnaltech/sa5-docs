@@ -61,11 +61,15 @@ To the outermost element you want to suppress;
 
 * Add a custom attribute of `wfu-dismiss` = ( name ). Give it any custom name you like. That name will be used in the suppression tracking so you can e.g. have the same modal on every page, and suppress it site-wide.
 * Add a custom attribute of `wfu-dismiss-trigger` = `load`.&#x20;
-* Add the suppression duration you want, using `wfu-dismiss-suppress-days` = ( days ). If unspecified, defaults to about 1 year.&#x20;
+* Add the suppression duration you want, using `wfu-dismiss-suppress-days` = ( days ).  &#x20;
+
+{% hint style="warning" %}
+Days must be an integer value like 1, 2, 3, 100. If unspecified or invalid, defaults to about 1 year.&#x20;
+{% endhint %}
 
 ### STEP 3 - Identify your close button element <a href="#step-2---setup-your-zap-and-link-your-webflow-form" id="step-2---setup-your-zap-and-link-your-webflow-form"></a>
 
-To the close element(s) _within the modal_;
+To the close element(s) _within the dismissible element_;
 
 * Add an attribute of `wfu-dismiss-close` = `true`
 * Add an attribute of `wfu-dismiss-close-type` = `auto`
