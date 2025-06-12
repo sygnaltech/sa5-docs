@@ -72,7 +72,7 @@ Days must be an integer value like 1, 2, 3, 100. If unspecified or invalid, defa
 To the close element(s) _within the dismissible element_;
 
 * Add an attribute of `wfu-dismiss-close` = `true`
-* Add an attribute of `wfu-dismiss-close-type` = `auto`
+* Add an attribute of `wfu-dismiss-close-type` = `auto`&#x20;
 
 {% hint style="success" %}
 Repeat this process for any number of elements you want.&#x20;
@@ -80,9 +80,23 @@ Repeat this process for any number of elements you want.&#x20;
 The name you specify is site-wide, so all elements with the same name will be suppressed. Use this to suppress an announcement banner-site wide, or even to suppress several variations of the same banner that might appear throughout the page.&#x20;
 {% endhint %}
 
+## Best Practices&#x20;
+
+### Preload&#x20;
+
+Dismissible elements also support [Preload](../overview/preloaders.md).  This allows you to hide an element completely with CSS before the script runs, and before its dismiss state is determined.&#x20;
+
+e.g. You can add this on the element with `wfu-dismiss` .    &#x20;
+
+```
+wfu-preload = hidden
+```
+
 ## Technical Notes
 
 We're currently using a cookie for the suppression, so that it automatically expires.&#x20;
+
+This can be easily deleted through your browser's devtools if you choose, during testing.&#x20;
 
 ## Future
 

@@ -36,7 +36,9 @@ There are a few key goals in our design of this library;
 * Separation of the styling in interactions from the timing, so that the timing can be easily changed or exist in many variations throughout your project. For example, we want to be able to use interactions to define how a modal "flies in" to the page, but we do not want interactions to specify when that happens, or what kinds of things can trigger it.&#x20;
   * We also want to separate the "what", so that we can arbitrarily set this up on any element. That can currently be achieved by using Webflow class-based targeting, a hidden sibling trigger button, and a sibling targeting constraint.&#x20;
 
+## Updates&#x20;
 
+<table><thead><tr><th width="129.6666259765625">Date</th><th width="181.99993896484375">Feature </th><th>Updates </th></tr></thead><tbody><tr><td>12-Jun-2025</td><td><a href="dismissible.md">Dismissible Elements</a> </td><td><ul><li>Added <code>wfu-preload</code> support </li><li>Updated cloneable demos </li></ul></td></tr></tbody></table>
 
 
 
