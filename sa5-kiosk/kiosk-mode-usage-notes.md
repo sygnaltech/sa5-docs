@@ -1,4 +1,14 @@
-# Usage Notes
+# Kiosk Mode Usage Notes
+
+Typically a kiosk-enabled sites pages are structured as follows;
+
+* Web-only pages are in their normal site design arrangement&#x20;
+* Kiosk-only pages are separated, e.g. in a subdirectory like `/kiosk`&#x20;
+* Hybrid pages can be anywhere&#x20;
+
+
+
+
 
 * Add the kiosk library, as in quick start
 * Add the configuration block&#x20;

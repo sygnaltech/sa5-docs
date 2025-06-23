@@ -281,7 +281,8 @@
 
 * [🔍 About SA5's Kiosk Lib](sa5-kiosk/about.md)
 * [🚀 Quick Start | SA5 Kiosk](sa5-kiosk/quick-start.md)
-* [Usage Notes](sa5-kiosk/usage-notes.md)
+* [Kiosk Mode Usage Notes](sa5-kiosk/kiosk-mode-usage-notes.md)
+* [Display Mode Usage Notes](sa5-kiosk/display-mode-usage-notes.md)
 * [Kiosk Hardware & Browser Setup](sa5-kiosk/kiosk-hardware-and-browser-setup.md)
 * [Kiosk Base 🧪](sa5-kiosk/kiosk-base.md)
 * [Inactivity Timer](sa5-kiosk/html-tables.md)

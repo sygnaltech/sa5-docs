@@ -18,10 +18,10 @@ If you are already using other SA5 Libs, please make certain to upgrade them to 
 ```html
 <!-- Sygnal Attributes 5 | Kiosk -->
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.2/dist/css/webflow-kiosk.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.4/dist/css/webflow-kiosk.css"
   > 
 <script defer
-src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.2/dist/nocode/webflow-kiosk.js"
+src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.4/dist/nocode/webflow-kiosk.js"
 ></script> 
 ```
 {% endcode %}
@@ -42,12 +42,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | Kiosk --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.2/dist/css/webflow-kiosk.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.4/dist/css/webflow-kiosk.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-kiosk.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.2/dist/nocode/webflow-kiosk.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.4/dist/nocode/webflow-kiosk.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-kiosk.js"
   devproxy-group="sa5"
   ></script>
