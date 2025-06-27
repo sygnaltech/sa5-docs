@@ -16,13 +16,14 @@ Webflow's custom attributes feature has a powerful data-binding capability that 
 This is a more technical feature, but it has an incredible range of uses. Here are a few;
 
 * Forms
-  * Initialize form field values on INPUTs, TEXTAREAs, SELECTs, CHECKBOXes and other elements with data from a CMS collection item or component property. &#x20;
+  * [Initialize form field values](https://sa5-html.webflow.io/demo/sa5-dynamic-attributes) on INPUTs, TEXTAREAs, SELECTs, CHECKBOXes and other elements with data from a CMS collection item or component property. &#x20;
     * e.g. Use `x:value` = ( your value ) to initialize an INPUT, TEXTBOX, or SELECT element from a CMS collection item.    &#x20;
     * e.g. Use `x:checked` = ( boolean value ) to initialize a checkbox element.&#x20;
   * Special field configuration&#x20;
     * e.g. Use `x:type` = `date` on an INPUT element to change it to a date type&#x20;
   * Set hidden form fields to capture data silently, such as the Collection page you're on when the form is submitted. &#x20;
-* Element behavior
+* CMS-driven [in-page navigation](https://sa5-html.webflow.io/demo/sa5-dynamic-attributes-navigation)&#x20;
+* Element behavior&#x20;
   * Such as onclick&#x20;
 * Supporting other SA5 libraries, such as CMS Lightbox Captions and Groups&#x20;
   * And making these work with ECommerce content    &#x20;
@@ -30,6 +31,14 @@ This is a more technical feature, but it has an incredible range of uses. Here a
 {% hint style="warning" %}
 As of 2024-Jun-03, Webflow does not yet support attribute binding to switch ( boolean ) field types or to select ( option ) field types. In a pinch you could use CMS text fields instead.&#x20;
 {% endhint %}
+
+## Demonstration <a href="#usage-notes" id="usage-notes"></a>
+
+See the above **Use Cases** section for direct links to some of the demo pages.&#x20;
+
+{% embed url="https://webflow.com/made-in-webflow/website/sa5-html" %}
+Cloneable
+{% endembed %}
 
 ## How it Works <a href="#usage-notes" id="usage-notes"></a>
 
