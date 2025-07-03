@@ -15,8 +15,10 @@ description: Download file assets like PDFs or images, rather than displaying th
 
 ## Use Cases&#x20;
 
+* Fix downloaded filenames so they look nice rather than containing CDN filename identifiers &#x20;
 * Download a PDF, rather than displaying it&#x20;
 * Download an image&#x20;
+* Upload a ZIP into the CMS file field ( by adding a second, supported extension like `.odt`  ) and then download it as a ZIP when the link is clicked, with the correct `.zip`-suffixed filename.&#x20;
 
 ## Demonstration
 
