@@ -9,13 +9,35 @@ description: Future plans for SA5 dynamic attributes
 * Force overwrite
 * Overwrite only if non-blank ( coalesce )&#x20;
 
-## Change to `x:` prefix
+## Multiple Suffixes &#x20;
 
-Currently we prefix attributes with `x-` however this convention is already used in Alpine JS.  While this is unlikely to create conflicts, we'd like to avoid the possibility of confusion as well.
+### Prefix & postfix&#x20;
 
+`:post` - Add as a suffix.
 
+`:pre` - Add as a prefix.&#x20;
 
+### Data-binding&#x20;
 
+`:bind` - Indicates the value will be pulled from a datasource&#x20;
+
+### Localization
+
+Applies this dynamic attribute rule only when the locale matches.&#x20;
+
+`:locale(en)` -&#x20;
+
+`:locale(en-gb)` -&#x20;
+
+{% hint style="info" %}
+Locale is always lowercased for matching.&#x20;
+{% endhint %}
+
+### Transform&#x20;
+
+`:transform(lower)` - Lowercase  &#x20;
+
+`:transform(upper)` - Uppercase &#x20;
 
 ## Binding to SA5 Simple Data Sources&#x20;
 
