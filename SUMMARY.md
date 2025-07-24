@@ -51,6 +51,7 @@
     * [Gated Events 🧪](overview/events/events/gated-events.md)
   * [Actions](overview/events/actions/README.md)
     * [Click Actions](overview/events/actions/click-actions.md)
+    * [Calendly Action](overview/events/actions/calendly-action.md)
     * [Alert Action](overview/events/actions/alert-action.md)
     * [Visibility Actions](overview/events/actions/visibility-actions.md)
     * [Scroll Into View Action](overview/events/actions/scroll-into-view-action.md)

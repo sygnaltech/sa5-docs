@@ -72,9 +72,26 @@ This Action requires an SA5 config block; &#x20;
 
 
 
+This Action requires an SA5 config block
 
+```html
+<script type="application/sa+json" handler="action.script" event="alert1">
+loadCssOnce("https://calendly.com/assets/external/widget.css"); 
+loadJsOnce("https://calendly.com/assets/external/widget.js", module?); 
 
+new CSSLoader({
+  url: "https://calendly.com/assets/external/widget.css"
+}).load();
+new CSSLoader({
+  url: "https://calendly.com/assets/external/widget.js"
+}).load();
 
+Calendly.initPopupWidget({ url: 'https://calendly.com/YOUR_SCHEDULING_LINK' }); 
+
+</script> 
+```
+
+This Action requires an SA5 config block; &#x20;
 
 
 
