@@ -8,6 +8,13 @@ description: Get details of the current URL
 
 * Grab the current path of the page, and push it into a hidden field in your contact form so that you can track which page ( or collection page ) the form was submitted from.&#x20;
 
+## Usage Notes
+
+* Use with the `wfu-bind`  attribute to inject the URL part into;
+  * Any text element as the content&#x20;
+  * Any input element as the value&#x20;
+    * Use `<input type=hidden>` to capture URL parts in form submission data&#x20;
+
 ## Options & Examples
 
 {% hint style="info" %}
