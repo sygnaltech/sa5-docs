@@ -159,16 +159,31 @@ After a modal is closed, we will likely want to suppress it for some period of t
 
 ### `wfu-modal-suppress` = ( _suppression setting_ )
 
-**Optional.**  Place directly on the modal element.&#x20;
+**Optional.**  Place;
+
+* On the `wfu-modal` element.&#x20;
+* On any element with `wfu-modal-close` button&#x20;
+
+Values;&#x20;
 
 * `forever` - suppresses indefinitely
 * `session` - suppresses only for the duration of the webstorage session
-* FUTURE - we'll add specific durations
+* `duration` - suppresses for a specific duration&#x20;
+  * Use the `wfu-modal-suppress-duration` attribute to specify the duration.&#x20;
+* `none` - no suppression&#x20;
 
 Note that the suppression is handled using a cookie-based or web-storage-based suppression key which includes the name of the modal.  If you ever change the name of the modal, and republish your site, any existing suppression keys would be ignored.&#x20;
 
 {% hint style="success" %}
 The defined suppression state on the modal is applied immediately after the modal is opened. This ensures that it is honored regardless of how the modal is closed- including a CTA button navigation within the modal.&#x20;
+{% endhint %}
+
+### `wfu-modal-suppress-duration` = ( [_duration_](../../overview/durations.md) )
+
+Place on any element with the `wfu-modal-suppress` = `duration`.&#x20;
+
+{% hint style="info" %}
+Duration uses a special string format.  [Durations](../../overview/durations.md)&#x20;
 {% endhint %}
 
 

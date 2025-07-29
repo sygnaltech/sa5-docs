@@ -25,6 +25,7 @@
 * [Dev Team Notes](overview/dev-team-notes.md)
 * [GDPR](overview/gdpr.md)
 * [SA6](overview/sa6.md)
+* [Durations](overview/durations.md)
 * [Triggers, Events & Actions](overview/events/README.md)
   * [Triggers](overview/events/triggers/README.md)
     * [Click Triggers](overview/events/triggers/click-triggers.md)
