@@ -83,6 +83,12 @@
 * [🚀 Quick Start | SA5 Social Share](sa5-socialshare/quick-start.md)
 * [Email Social Share ❺](sa5-socialshare/cache.md)
 
+## 📘 sa5-components
+
+* [🔍 About SA5's Components Lib](sa5-components/about.md)
+* [🚀 Quick Start | SA5 Components](sa5-components/quick-start.md)
+* [Components ❺](sa5-components/cache.md)
+
 ## 📘 sa5-detect 🧪
 
 * [🔍 About SA5's Detect Lib](sa5-detect/about.md)
