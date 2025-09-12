@@ -4,6 +4,16 @@ description: Sort Webflow's collection list items any way you like
 
 # Advanced Element Sorting ❺
 
+{% hint style="warning" %}
+**RANDOM SORT NOTE** \
+Mid-2024, Webflow changed the random sort feature so that it randomizes at site publication and no longer re-randomizes every 12 hours.  SA5's current random sort feature randomizes on every page refresh.
+
+We've frequently used both approaches in our client site builds. Our team realizes that there may be an important use case still for a **delayed random sort** feature, where you need randomization to occur, but to persist during a user's individual session.
+
+To comment- add your thoughts to the SA5 forum thread-\
+[https://sygnal-attr.discourse.group/t/sa5-sort-random-sort-and-a-possible-re-sort-delay-feature/1179](https://sygnal-attr.discourse.group/t/sa5-sort-random-sort-and-a-possible-re-sort-delay-feature/1179)
+{% endhint %}
+
 Webflow's collection lists offer a native sort functionality, however it has a number of limitations;&#x20;
 
 * Alphabetic sorting is unicode-based and sorts uppercase and lowercase letters as separate ranges&#x20;
