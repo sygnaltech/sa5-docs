@@ -23,14 +23,14 @@ If you are already using other SA5 Libs, please make certain to upgrade them to 
 {% code overflow="wrap" %}
 ```html
 <!-- Sygnal Attributes 5 | HTML --> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.1/dist/css/webflow-html.css"> 
-<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.1/dist/nocode/webflow-html.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.8/dist/css/webflow-html.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.8/dist/nocode/webflow-html.js"></script>
 ```
 {% endcode %}
 
 Add the custom attributes for the features you need, described in each feature separately. &#x20;
 
-## SA5 Library Developers
+## SA5 Library Developers&#x20;
 
 For SA5 library developers, use the extended syntax to support [Sygnal DevProxy](https://engine.sygnal.com/devproxy).&#x20;
 
@@ -38,12 +38,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 ```html
 <!-- Sygnal Attributes 5 | HTML --> 
 <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.1/dist/css/webflow-html.css"
+  href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.8/dist/css/webflow-html.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-html.css"
   devproxy-group="sa5"
   > 
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.1/dist/nocode/webflow-html.js" 
+  src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.8.8/dist/nocode/webflow-html.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-html.js"
   devproxy-group="sa5"
   ></script>
