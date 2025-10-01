@@ -335,6 +335,7 @@
 * [🚀 Quick Start | SA5 Url](sa5-url/quick-start.md)
 * [Query Param Passthrough](sa5-url/query-param-passthrough/README.md)
   * [Future](sa5-url/query-param-passthrough/future.md)
+* [Pretty Pagination Querystring](sa5-url/pretty-pagination-querystring.md)
 * [External Link Targeting](sa5-url/external-link-targeting.md)
 * [Relative Link Fixups ⛔](sa5-url/relative-link-fixups.md)
 
