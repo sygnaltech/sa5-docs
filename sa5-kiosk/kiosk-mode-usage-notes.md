@@ -99,6 +99,27 @@ body.kiosk form.lg\:col-span-5 > :nth-child(2) {
 
 
 
+## Testing&#x20;
+
+In some cases you need to be able to test kiosk mode while on a desktop computer&#x20;
+
+
+
+* Set persistent “true” cookie (1 year):
+  * document.cookie = "sa5\_kiosk=true; max-age=31536000; path=/";
+* Set session cookie (clears on tab/browser close):
+  * document.cookie = "sa5\_kiosk=true; path=/";
+* Verify:
+  * document.cookie or document.cookie.includes("sa5\_kiosk=true")
+* Clear:
+  * document.cookie = "sa5\_kiosk=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+* Optional domain (if you need subdomain-wide):
+  * document.cookie = "sa5\_kiosk=true; max-age=31536000; path=/; domain=.yourdomain.com";
+
+Alternate: Just visit with ?kiosk=true to set it automatically; ?kiosk=false sets false; ?kiosk=clear deletes it
+
+
+
 
 
 
