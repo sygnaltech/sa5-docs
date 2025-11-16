@@ -37,7 +37,7 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 <script defer 
   src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.6.0/dist/nocode/webflow-cro.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-cro.js"
-  devproxy-group="sa5"
+  group="SA5 CRO"  
   ></script>
 ```
 {% endcode %}

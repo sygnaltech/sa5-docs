@@ -43,12 +43,12 @@ For SA5 library developers, use the extended syntax to support [Sygnal DevProxy]
 <link rel="stylesheet" 
   href="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.1/dist/css/webflow-socialshare.css"
   dev-href="http://127.0.0.1:4000/dist/css/webflow-socialshare.css"
-  devproxy-group="sa5"
+  group="SA5 Social Share"
   > 
 <script defer 
   src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.7.1/dist/nocode/webflow-socialshare.js" 
   dev-src="http://127.0.0.1:4000/dist/nocode/webflow-socialshare.js"
-  devproxy-group="sa5"
+  group="SA5 Social Share"
   ></script>
 ```
 {% endcode %}
