@@ -75,7 +75,7 @@ Add the custom attributes for the features you need, described in each feature s
 
 ## SA5 Library Developers
 
-For SA5 library developers, use the extended syntax to support [Sygnal DevProxy](https://engine.sygnal.com/devproxy).&#x20;
+For SA5 library developers, use the extended syntax to support [Sygnal Devmode](https://devmode.sygnal.com/) and [Sygnal DevProxy](https://engine.sygnal.com/devproxy).  These make it easier to develop and test code changes with Webflow sites.&#x20;
 
 {% code overflow="wrap" %}
 ```html
